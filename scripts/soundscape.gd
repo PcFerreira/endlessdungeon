@@ -1,4 +1,6 @@
 extends Node
+signal spell_played(spell: String)
+const Registry = preload("res://scripts/asset_registry.gd")
 
 const SAMPLE_RATE := 22050
 const NOTES := {"bolt": [540.0, .12], "fire": [170.0, .30], "nova": [820.0, .42], "blink": [380.0, .23], "impact": [90.0, .28], "hurt": [130.0, .18], "pickup": [1040.0, .14], "gate": [660.0, .65]}
@@ -17,6 +19,8 @@ const TRACKS := {
 var players: Array[AudioStreamPlayer] = []
 var music_players: Array[AudioStreamPlayer] = []
 var music_cache: Dictionary = {}
+var registry := Registry.new()
+var world_music: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/world_construction/catalog.json")).roles
 var current_track := ""
 var pending_track := ""
 var context := ""
@@ -25,6 +29,7 @@ var active_music := 0
 var fade: Tween
 var music_level := .7
 var sfx_level := 1.0
+var ambience_level := .65
 var sounds: Dictionary = {}
 var cursor := 0
 var muted := false
@@ -32,7 +37,7 @@ var muted := false
 func _ready() -> void:
 	if DisplayServer.get_name() == "headless":
 		return
-	for bus in ["Music", "Effects"]:
+	for bus in ["Music", "Effects", "Ambience"]:
 		if AudioServer.get_bus_index(bus) < 0:
 			AudioServer.add_bus()
 			AudioServer.set_bus_name(AudioServer.bus_count - 1, bus)
@@ -44,6 +49,7 @@ func _ready() -> void:
 		music_players.append(player)
 	set_music_level(music_level)
 	set_sfx_level(sfx_level)
+	set_ambience_level(ambience_level)
 	for index in range(8):
 		var player := AudioStreamPlayer.new()
 		player.bus = "Effects"
@@ -52,10 +58,12 @@ func _ready() -> void:
 		players.append(player)
 	for key in NOTES:
 		sounds[key] = _tone(NOTES[key][0], NOTES[key][1])
+	sounds.wonder = _wonder()
+	sounds.aether = _aether()
 
 func music_stream(file: String) -> AudioStream:
 	if not music_cache.has(file):
-		var stream: AudioStream = load("res://assets/music/" + file)
+		var stream: AudioStream = registry.resource(file) if registry.get_asset(file).get("kind") == "audio" else load("res://assets/music/" + file)
 		stream.loop = true
 		music_cache[file] = stream
 	return music_cache[file]
@@ -73,8 +81,18 @@ func track_for(state: String, layer: String, biome: int, city: bool, coast: bool
 		return TRACKS.coast
 	return TRACKS[["forest", "meadow", "desert", "frost"][biome % 4]]
 
-func update_context(state: String, layer: String, biome: int, city: bool, delta: float, coast: bool = false) -> void:
+func update_context(state: String, layer: String, biome: int, city: bool, delta: float, coast: bool = false, identity: String = "", theme: String = "") -> void:
 	var desired := track_for(state, layer, biome, city, coast)
+	if state != "title" and not identity.is_empty():
+		var role: String = "music_magic" if layer == "sanctum" else ("music_city" if city else ["music_forest", "music_meadow", "", "music_frost"][posmod(biome,4)])
+		if theme == "city_mushroom_common":
+			role = "music_magic"
+		if layer == "dungeon":
+			role = ""
+		var seed_value := hash("music:" + identity) & 0x7fffffff
+		var choices: Array = world_music.get(role, [])
+		if not coast and not choices.is_empty() and seed_value % 3 != 0:
+			desired = choices[seed_value % choices.size()]
 	var area := "title" if state == "title" else layer
 	if desired != pending_track:
 		pending_track = desired
@@ -116,6 +134,37 @@ func set_sfx_level(value: float) -> void:
 		AudioServer.set_bus_volume_db(bus, linear_to_db(maxf(sfx_level, .0001)))
 		AudioServer.set_bus_mute(bus, sfx_level == 0)
 
+func set_ambience_level(value: float) -> void:
+	ambience_level = clampf(value, 0, 1)
+	var bus := AudioServer.get_bus_index("Ambience")
+	if bus >= 0:
+		AudioServer.set_bus_volume_db(bus, linear_to_db(maxf(ambience_level, .0001)))
+		AudioServer.set_bus_mute(bus, ambience_level == 0)
+
+func _wonder() -> AudioStreamWAV:
+	var stream := _tone(880, .85)
+	var data := stream.data
+	for index in range(data.size() / 2):
+		var time := float(index) / SAMPLE_RATE
+		var sample := 0.0
+		for note in range(3):
+			var age := time - note * .14
+			if age >= 0:
+				sample += sin(TAU * [659.25, 880.0, 1174.66][note] * age) * exp(-age * 8) * minf(age * 150, 1) * .13
+		data.encode_s16(index * 2, int(clampf(sample, -1, 1) * 32767))
+	stream.data = data
+	return stream
+
+func _aether() -> AudioStreamWAV:
+	var stream := _tone(110, 4.0)
+	var data := stream.data
+	for index in range(data.size() / 2):
+		var time := float(index) / SAMPLE_RATE
+		var sample := (sin(TAU * 110 * time) + sin(TAU * 165 * time) * .45 + sin(TAU * 220 * time) * .3) * .055
+		data.encode_s16(index * 2, int(sample * 32767))
+	stream.data = data
+	return stream
+
 func _tone(frequency: float, duration: float) -> AudioStreamWAV:
 	var stream := AudioStreamWAV.new()
 	stream.format = AudioStreamWAV.FORMAT_16_BITS
@@ -133,6 +182,7 @@ func _tone(frequency: float, duration: float) -> AudioStreamWAV:
 	return stream
 
 func play_spell(spell: String) -> void:
+	spell_played.emit(spell)
 	if muted or players.is_empty():
 		return
 	var player := players[cursor]

@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "items": {
+    "sanctum_sigil": {
+      "name": "Sanctum Sigil",
+      "kind": "bound",
+      "stack": 1,
+      "description": "Your bound pocket home. H opens the sanctum away from danger.",
+      "icon": "res://assets/sanctum_sigil.svg"
+    },
+    "health_potion": {
+      "name": "Vitality Potion",
+      "kind": "consumable",
+      "stack": 20,
+      "description": "Restore 35 vitality. Only consumed when needed.",
+      "icon": "res://assets/items/health_potion.svg",
+      "restore_health": 35
+    },
+    "aether_potion": {
+      "name": "Recovery Potion",
+      "kind": "consumable",
+      "stack": 20,
+      "description": "Restore 40 aether or stamina. Only consumed when needed.",
+      "icon": "res://assets/items/aether_potion.svg",
+      "restore_mana": 40
+    },
+    "ember_shard": {
+      "name": "Ember Shard",
+      "kind": "material",
+      "stack": 99,
+      "description": "A warm fragment recovered from defeated creatures.",
+      "icon": "res://assets/items/ember_shard.svg"
+    },
+    "oak_chair": {
+      "name": "Oak Chair",
+      "kind": "furnishing",
+      "stack": 10,
+      "description": "A sturdy chair for your sanctum. Keep it for furnishing your home.",
+      "icon": "res://assets/items/oak_chair.svg"
+    },
+    "rune_lantern": {
+      "name": "Rune Lantern",
+      "kind": "furnishing",
+      "stack": 10,
+      "description": "A lantern filled with gentle arcane light for your sanctum.",
+      "icon": "res://assets/items/rune_lantern.svg"
+    },
+    "wool_rug": {
+      "name": "Woven Rug",
+      "kind": "furnishing",
+      "stack": 10,
+      "description": "A patterned rug to make the sanctum feel like home.",
+      "icon": "res://assets/items/wool_rug.svg"
+    },
+    "iron_sword": {
+      "name": "Tempered Sword",
+      "kind": "equipment",
+      "stack": 1,
+      "slot": "weapon",
+      "classes": [
+        "sword",
+        "spellsword"
+      ],
+      "power": 0.1,
+      "description": "+10% ability damage. Sword and Spellsword.",
+      "icon": "res://assets/spells/strike.svg",
+      "asset_id": "kaykit_fantasy_weapons/content/KayKit_FantasyWeaponsBits_1.0_FREE/Assets/gltf/sword_A.gltf"
+    },
+    "arcane_staff": {
+      "name": "Runed Staff",
+      "kind": "equipment",
+      "stack": 1,
+      "slot": "weapon",
+      "classes": [
+        "mage",
+        "spellsword"
+      ],
+      "power": 0.1,
+      "description": "+10% ability damage. Mage and Spellsword.",
+      "icon": "res://assets/spells/bolt.svg",
+      "asset_id": "kaykit_fantasy_weapons/content/KayKit_FantasyWeaponsBits_1.0_FREE/Assets/gltf/staff_A.gltf"
+    },
+    "traveler_coat": {
+      "name": "Traveler's Coat",
+      "kind": "equipment",
+      "stack": 1,
+      "slot": "armor",
+      "classes": [
+        "mage",
+        "sword",
+        "spellsword"
+      ],
+      "hp": 20,
+      "description": "+20 maximum vitality. All classes.",
+      "icon": "res://assets/items/traveler_coat.svg"
+    },
+    "silver_charm": {
+      "name": "Silver Charm",
+      "kind": "equipment",
+      "stack": 1,
+      "slot": "charm",
+      "classes": [
+        "mage",
+        "sword",
+        "spellsword"
+      ],
+      "mana": 15,
+      "description": "+15 maximum aether or stamina. All classes.",
+      "icon": "res://assets/items/silver_charm.svg"
+    },
+    "item:crafting_material_icons/nails-21fa935f72": {
+      "kind": "material",
+      "stack": 99,
+      "icon": "res://assets/imported/packs/crafting_material_icons/nails.png",
+      "description": "A mixed collection of materials recovered along the road.",
+      "id": "item:crafting_material_icons/nails-21fa935f72",
+      "name": "Recovered Materials",
+      "source_asset": "crafting_material_icons/nails.png",
+      "source_pack": "crafting_material_icons",
+      "retired": true
+    },
+    "gold_coin": {
+      "name": "Gold Coin",
+      "kind": "material",
+      "stack": 999,
+      "description": "Coins accepted by traveling merchants.",
+      "icon": "res://assets/items/gold_coin.svg",
+      "asset_id": "bundle_voxel_loot/coin-b3a1984b.glb",
+      "source_asset": "bundle_voxel_loot/coin-b3a1984b.glb",
+      "source_pack": "bundle_voxel_loot",
+      "currency": "gold"
+    }
+  }
+}

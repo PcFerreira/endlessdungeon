@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "families": {
+    "cube_creatures": {
+      "environment_family": "block_voxel",
+      "queries": [
+        {
+          "pack": "quaternius_cube_world",
+          "patterns": [
+            "*/Animals/glTF/*.gltf",
+            "*/Enemies/glTF/*.gltf"
+          ]
+        }
+      ]
+    },
+    "voxel_creatures": {
+      "environment_family": "block_voxel",
+      "queries": [
+        {
+          "pack": "bundle_voxel_creature_pack",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "bundle_padadu_fantasy_voxels",
+          "patterns": [
+            "*"
+          ]
+        }
+      ]
+    },
+    "faceted_monsters": {
+      "environment_family": "flat_lowpoly",
+      "queries": [
+        {
+          "pack": "quaternius_ultimate_monsters",
+          "patterns": [
+            "*/glTF/*.gltf"
+          ]
+        }
+      ]
+    },
+    "faceted_skeletons": {
+      "environment_family": "flat_lowpoly",
+      "queries": [
+        {
+          "pack": "kaykit_skeletons",
+          "patterns": [
+            "*/Characters/gltf/*.glb"
+          ]
+        }
+      ]
+    },
+    "faceted_kenney_creatures": {
+      "environment_family": "flat_lowpoly",
+      "queries": [
+        {
+          "pack": "kenney_graveyard_kit",
+          "patterns": [
+            "*/Models/GLB format/character-*.glb"
+          ]
+        },
+        {
+          "pack": "kenney_holiday_kit",
+          "patterns": [
+            "*/Models/GLB format/reindeer.glb"
+          ]
+        }
+      ]
+    },
+    "block_animal_samples": {
+      "environment_family": "block_voxel",
+      "queries": [
+        {
+          "pack": "bundle_animal_samples",
+          "patterns": [
+            "*"
+          ]
+        }
+      ]
+    }
+  },
+  "sprite_presentations": {
+    "isometric_skeleton_warrior/skeleton_0.png": {
+      "block_voxel": "quaternius_cube_world/Enemies/glTF/Skeleton.gltf",
+      "flat_lowpoly": "kaykit_skeletons/content/addons/kaykit_character_pack_skeletons/Characters/gltf/Skeleton_Warrior.glb"
+    }
+  },
+  "scope": "creatures"
+}

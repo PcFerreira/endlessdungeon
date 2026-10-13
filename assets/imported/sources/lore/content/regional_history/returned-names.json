@@ -1,0 +1,45 @@
+{
+  "id": "history_returned_names",
+  "title": "Names Kept for Returning",
+  "motif": "returned-names",
+  "text": "The oldest register in {city_name} leaves space after every name. It began with travelers going to {dungeon_name}; the empty space was meant for whatever they would call themselves on return. The town kept the custom when the ink faded.",
+  "landmark_text": "Names cut beside the road have a second, smaller line underneath. Most are empty. Beside one, someone carved: I came back. I still like my name.",
+  "book_text": "The town copy records a keeper refusing to close the register. A name could be corrected by its owner. Nobody else was allowed to decide that a journey was finished.",
+  "witness_text": "We keep a space for the returning name. If you visit {dungeon_name}, come back and tell us what you'd put there. Leave it empty if you like. I'll be glad to see you either way.",
+  "kind": "regional_history",
+  "version": 2,
+  "author": "The local archive of {city_name}",
+  "biomes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "requires": [
+    "regional_history",
+    "collection",
+    "event_aftermath"
+  ],
+  "collection": [
+    "landmark",
+    "book",
+    "witness"
+  ],
+  "event_notes": [
+    {
+      "kind": "supper",
+      "phase": "aftermath",
+      "text": "At supper, the keeper learned a traveler's name. By the time the cups were gathered, half the table was using it."
+    },
+    {
+      "kind": "delivery",
+      "phase": "aftermath",
+      "text": "The delivery arrived. The receiver signed the ledger, then asked the carter whether anyone was waiting for them at home."
+    }
+  ],
+  "tags": [
+    "regional_history",
+    "exploration",
+    "original"
+  ]
+}

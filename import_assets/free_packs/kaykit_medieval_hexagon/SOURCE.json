@@ -1,0 +1,31 @@
+{
+  "id": "kaykit_medieval_hexagon",
+  "title": "KayKit Medieval Hexagon Pack: Free",
+  "author": "Kay Lousberg",
+  "source": "https://github.com/KayKit-Game-Assets/KayKit-Medieval-Hexagon-Pack-1.0",
+  "revision": "84fa4e91af6a88989be7c99e0891cede11f2ca38",
+  "scope": "Public free repository; paid EXTRA units and source files are excluded. Buildings have faction color variants. Hexagonal terrain needs adaptation to the game square grid.",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://codeload.github.com/KayKit-Game-Assets/KayKit-Medieval-Hexagon-Pack-1.0/zip/84fa4e91af6a88989be7c99e0891cede11f2ca38",
+      "filename": "kaykit_medieval_hexagon.zip",
+      "bytes": 8428823,
+      "sha256": "cfa7faff403c93fb90e8eeb448c78e6192782802a532bebed0bdb853b39f7028",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly modular 3D",
+  "categories": [
+    "Settlements",
+    "Castles",
+    "Churches",
+    "Markets",
+    "Mills"
+  ],
+  "attribution_required": false,
+  "attribution_text": "KayKit Medieval Hexagon Pack: Free by Kay Lousberg. Source: https://github.com/KayKit-Game-Assets/KayKit-Medieval-Hexagon-Pack-1.0. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original models, dependencies and publisher license notices are preserved unchanged. Archive contents were placed in content/; the KayKit GitHub archive wrapper was removed."
+}

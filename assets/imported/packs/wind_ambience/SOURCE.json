@@ -1,0 +1,59 @@
+{
+  "id": "wind_ambience",
+  "title": "Synthesized Wind Ambience",
+  "author": "Luke.RUSTLTD",
+  "source": "https://opengameart.org/content/wind1",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/wind1.wav",
+      "filename": "wind1.wav",
+      "bytes": 5291948,
+      "sha256": "a2856f794fbf77e05f8241dc4adeade7f62fa21c3c9dc49f7725b6c6218060c3",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/wind2.wav",
+      "filename": "wind2.wav",
+      "bytes": 5291948,
+      "sha256": "76a05480733ee021bdf7c255b44695b57fd0dedca09dccadccd2aaf67d32f127",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/wind3.wav",
+      "filename": "wind3.wav",
+      "bytes": 5291948,
+      "sha256": "8def85e8546fb4850f017ede32b938593aeca5dfd3a9361cbabd80d455ff954d",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/wind4.wav",
+      "filename": "wind4.wav",
+      "bytes": 5291948,
+      "sha256": "99d7f197ee2de47f977f4d6370a28d16a25f751025578e8ca25055c0c11d4534",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/wind5.wav",
+      "filename": "wind5.wav",
+      "bytes": 5291948,
+      "sha256": "b82658d203a2f6ff8b5f7630e21aa13a2a1681dda43b927553a67bb2e43a0ce6",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": false
+    }
+  ],
+  "style": "Audio",
+  "categories": [
+    "Wind",
+    "Outdoor ambience"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Synthesized Wind Ambience by Luke.RUSTLTD. Source: https://opengameart.org/content/wind1. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

@@ -1,0 +1,1173 @@
+{
+  "version": 1,
+  "packs": {
+    "kenney_nature_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_fantasy_town_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_survival_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_graveyard_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_holiday_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_food_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_modular_cave_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "kenney_castle_kit": {
+      "include": [
+        "**/*.glb"
+      ]
+    },
+    "quaternius_fantasy_props": {
+      "include": [
+        "**/*.gltf"
+      ]
+    },
+    "quaternius_medieval_village": {
+      "include": [
+        "**/*.gltf"
+      ]
+    },
+    "kaykit_halloween": {
+      "include": [
+        "**/*.gltf"
+      ]
+    },
+    "kaykit_medieval_hexagon": {
+      "include": [
+        "**/*.gltf"
+      ]
+    },
+    "kaykit_furniture": {
+      "include": [
+        "**/*.gltf"
+      ]
+    },
+    "quaternius_cube_world": {
+      "include": [
+        "Environment/glTF/*.gltf"
+      ]
+    },
+    "fsp_modular_temple": {
+      "include": [
+        "**/*.obj"
+      ]
+    },
+    "kaykit_dungeon_full": {
+      "include": [
+        "Assets/gltf/*.gltf"
+      ]
+    },
+    "quaternius_modular_ruins_full": {
+      "include": [
+        "OBJ/*.obj"
+      ]
+    },
+    "kenney_particles_full": {
+      "include": [
+        "PNG (Transparent)/*.png"
+      ]
+    },
+    "arcane_magic_effect": {
+      "include": [
+        "**/*.png"
+      ]
+    },
+    "wind_ambience": {
+      "include": [
+        "**/*.wav"
+      ]
+    },
+    "river_forest_ambience": {
+      "include": [
+        "**/*.wav"
+      ]
+    },
+    "wildlife_ambience": {
+      "include": [
+        "**/*.wav"
+      ]
+    },
+    "dungeon_ambience": {
+      "include": [
+        "**/*.ogg"
+      ]
+    },
+    "rain_ambience": {
+      "include": [
+        "**/*.ogg"
+      ]
+    },
+    "kenney_rpg_audio": {
+      "include": [
+        "**/*.ogg"
+      ]
+    },
+    "kenney_impact_sounds": {
+      "include": [
+        "**/*.ogg"
+      ]
+    },
+    "kenney_interface_sounds": {
+      "include": [
+        "**/*.ogg"
+      ]
+    },
+    "fantasy_song_pack_volume_1": {
+      "include": [
+        "*.mp3"
+      ]
+    },
+    "voxel_micro_farm": {
+      "include": [
+        "models/**/*.glb"
+      ]
+    }
+  },
+  "roles": {
+    "canopy": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full"
+      ],
+      "include": [
+        "tree*"
+      ],
+      "exclude": [
+        "*pine*",
+        "*palm*",
+        "*dead*",
+        "*fall*",
+        "*trunk*",
+        "*log*",
+        "*cut*"
+      ]
+    },
+    "pine": {
+      "packs": [
+        "kenney_nature_kit",
+        "kenney_holiday_kit",
+        "kenney_graveyard_kit"
+      ],
+      "include": [
+        "tree_pine*",
+        "tree-snow*",
+        "pine"
+      ],
+      "exclude": [
+        "*fall*",
+        "*crooked*"
+      ]
+    },
+    "deadwood": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full",
+        "kaykit_halloween"
+      ],
+      "include": [
+        "deadtree*",
+        "tree_dead*",
+        "stump*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "cactus": {
+      "packs": [
+        "kenney_nature_kit"
+      ],
+      "include": [
+        "cactus*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "stone": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full",
+        "kenney_survival_kit",
+        "kenney_graveyard_kit",
+        "kaykit_medieval_hexagon"
+      ],
+      "include": [
+        "rock_*",
+        "rock-*",
+        "rock[0-9]*",
+        "rocks*",
+        "stone_*",
+        "rock_single*",
+        "resource-stone"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "bush": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full"
+      ],
+      "include": [
+        "bush*",
+        "plant_bush*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "flowers": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full"
+      ],
+      "include": [
+        "flower*",
+        "grass_leafs*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "mushroom": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full"
+      ],
+      "include": [
+        "mushroom*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "understory": {
+      "packs": [
+        "kenney_nature_kit",
+        "quaternius_cube_world",
+        "quaternius_modular_ruins_full"
+      ],
+      "include": [
+        "plant*",
+        "grass*"
+      ],
+      "exclude": [
+        "*bush*",
+        "*grass_dark*"
+      ]
+    },
+    "table": {
+      "packs": [
+        "kaykit_furniture",
+        "quaternius_fantasy_props"
+      ],
+      "include": [
+        "table_small*",
+        "table_medium*",
+        "Table_Large"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "bench": {
+      "packs": [
+        "kenney_fantasy_town_kit",
+        "kaykit_furniture",
+        "quaternius_fantasy_props"
+      ],
+      "include": [
+        "bench*",
+        "stall-bench"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "cart": {
+      "packs": [
+        "kenney_fantasy_town_kit",
+        "quaternius_medieval_village",
+        "kaykit_medieval_hexagon"
+      ],
+      "include": [
+        "cart",
+        "cart-high",
+        "Prop_Wagon",
+        "wheelbarrow"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "crate": {
+      "packs": [
+        "quaternius_fantasy_props",
+        "kaykit_medieval_hexagon",
+        "kaykit_dungeon_full"
+      ],
+      "include": [
+        "crate*",
+        "FarmCrate*"
+      ],
+      "exclude": [
+        "*metal*"
+      ]
+    },
+    "barrel": {
+      "packs": [
+        "quaternius_fantasy_props",
+        "kaykit_medieval_hexagon",
+        "kenney_survival_kit",
+        "kaykit_dungeon_full"
+      ],
+      "include": [
+        "barrel*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "anvil": {
+      "packs": [
+        "quaternius_fantasy_props",
+        "kaykit_medieval_hexagon",
+        "kenney_survival_kit"
+      ],
+      "include": [
+        "anvil",
+        "Anvil_Log",
+        "workbench-anvil"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "tools": {
+      "packs": [
+        "kenney_survival_kit",
+        "quaternius_fantasy_props"
+      ],
+      "include": [
+        "tool-hammer",
+        "tool-axe",
+        "tool-pickaxe",
+        "Pickaxe_Bronze",
+        "Table_Knife"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "bookstand": {
+      "packs": [
+        "quaternius_fantasy_props"
+      ],
+      "include": [
+        "BookStand"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "book": {
+      "packs": [
+        "quaternius_fantasy_props"
+      ],
+      "include": [
+        "Book_*",
+        "BookGroup_*",
+        "Scroll_*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "bottle": {
+      "packs": [
+        "quaternius_fantasy_props",
+        "kenney_survival_kit"
+      ],
+      "include": [
+        "Potion*",
+        "Bottle*",
+        "SmallBottle*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "plate": {
+      "packs": [
+        "kenney_food_kit",
+        "quaternius_fantasy_props"
+      ],
+      "include": [
+        "plate",
+        "plate-dinner",
+        "Table_Plate"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "fruit": {
+      "packs": [
+        "kenney_food_kit"
+      ],
+      "include": [
+        "apple",
+        "pear",
+        "orange",
+        "grapes",
+        "cherries"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "tea": {
+      "packs": [
+        "kenney_food_kit"
+      ],
+      "include": [
+        "cup-tea",
+        "mug",
+        "cup",
+        "honey",
+        "cookie"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "camp": {
+      "packs": [
+        "kenney_survival_kit",
+        "kenney_nature_kit",
+        "kaykit_medieval_hexagon"
+      ],
+      "include": [
+        "tent",
+        "tent_*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "bedroll": {
+      "packs": [
+        "kenney_survival_kit"
+      ],
+      "include": [
+        "bedroll",
+        "bedroll-packed"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "campfire": {
+      "packs": [
+        "kenney_survival_kit",
+        "kenney_nature_kit"
+      ],
+      "include": [
+        "campfire-pit",
+        "campfire_*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "statue": {
+      "packs": [
+        "quaternius_modular_ruins_full",
+        "kenney_nature_kit"
+      ],
+      "include": [
+        "Statue*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "grave": {
+      "packs": [
+        "kenney_graveyard_kit",
+        "kaykit_halloween"
+      ],
+      "include": [
+        "gravestone*",
+        "gravemarker*",
+        "urn*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "lantern": {
+      "packs": [
+        "kenney_holiday_kit",
+        "kaykit_halloween"
+      ],
+      "include": [
+        "lantern",
+        "lantern_standing"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "banner": {
+      "packs": [
+        "quaternius_fantasy_props",
+        "kenney_fantasy_town_kit",
+        "kaykit_medieval_hexagon",
+        "fsp_modular_temple",
+        "kaykit_dungeon_full"
+      ],
+      "include": [
+        "Banner*",
+        "Flag*",
+        "Prop_Flag_*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "column": {
+      "packs": [
+        "fsp_modular_temple",
+        "quaternius_modular_ruins_full",
+        "kenney_castle_kit",
+        "kenney_graveyard_kit"
+      ],
+      "include": [
+        "Pillar_Large_Middle",
+        "Column*",
+        "pillar*"
+      ],
+      "exclude": [
+        "*top*",
+        "*base*",
+        "*wall*",
+        "*arch*",
+        "*beam*"
+      ]
+    },
+    "portal": {
+      "packs": [
+        "quaternius_modular_ruins_full",
+        "kaykit_halloween"
+      ],
+      "include": [
+        "Arch_Gothic",
+        "Arch",
+        "arch"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "arcane_frames": {
+      "packs": [
+        "arcane_magic_effect"
+      ],
+      "include": [
+        "Arcane_Effect_*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "magic_particles": {
+      "packs": [
+        "kenney_particles_full"
+      ],
+      "include": [
+        "magic*",
+        "spark*",
+        "light*",
+        "circle*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "fire_particles": {
+      "packs": [
+        "kenney_particles_full"
+      ],
+      "include": [
+        "fire*",
+        "flame*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "bird": {
+      "packs": [
+        "wildlife_ambience"
+      ],
+      "include": [
+        "amb_bird*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "frog": {
+      "packs": [
+        "wildlife_ambience"
+      ],
+      "include": [
+        "amb_frog*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "cricket": {
+      "packs": [
+        "wildlife_ambience"
+      ],
+      "include": [
+        "amb_cricket*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "wind": {
+      "packs": [
+        "wind_ambience"
+      ],
+      "include": [
+        "wind*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "rain": {
+      "packs": [
+        "rain_ambience"
+      ],
+      "include": [
+        "*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "forest_air": {
+      "packs": [
+        "river_forest_ambience"
+      ],
+      "include": [
+        "amb_forest"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "river": {
+      "packs": [
+        "river_forest_ambience"
+      ],
+      "include": [
+        "amb_river",
+        "amb_stream"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "mountain_air": {
+      "packs": [
+        "river_forest_ambience"
+      ],
+      "include": [
+        "amb_mountains",
+        "amb_wind*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "waterfall": {
+      "packs": [
+        "river_forest_ambience"
+      ],
+      "include": [
+        "amb_waterfall"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "dungeon_air": {
+      "packs": [
+        "dungeon_ambience"
+      ],
+      "include": [
+        "*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "steps_grass": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "footstep00",
+        "footstep01",
+        "footstep02",
+        "footstep03",
+        "footstep05"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "steps_stone": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "footstep04",
+        "footstep06",
+        "footstep07",
+        "footstep08",
+        "footstep09"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "books_open": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "bookOpen"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "books_close": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "bookClose"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "books_page": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "bookFlip*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "door": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "doorOpen*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "room": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "creak*",
+        "cloth*"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "music_forest": {
+      "packs": [
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "wandering_woodlands",
+        "back_to_nature"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "music_meadow": {
+      "packs": [
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "jaunt",
+        "springly_sprigs"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "music_city": {
+      "packs": [
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "homestead"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "music_frost": {
+      "packs": [
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "snow_day",
+        "bells_of_winter"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "music_magic": {
+      "packs": [
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "fairy_lights"
+      ],
+      "exclude": [
+
+      ]
+    },
+    "soil": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Soil_Dry",
+        "SM_VMF_Soil_Wet"
+      ]
+    },
+    "crop_carrot": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Crop_Carrot_*"
+      ]
+    },
+    "crop_corn": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Crop_Corn_*"
+      ]
+    },
+    "crop_tomato": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Crop_Tomato_*"
+      ]
+    },
+    "crop_daikon": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Crop_Daikon_*"
+      ]
+    },
+    "crop_wheat": {
+      "packs": [
+        "kenney_nature_kit"
+      ],
+      "include": [
+        "crops_wheat*"
+      ]
+    },
+    "bread": {
+      "packs": [
+        "kenney_food_kit"
+      ],
+      "include": [
+        "bread",
+        "loaf",
+        "loaf-*",
+        "croissant"
+      ]
+    },
+    "harvest": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Harvest_*"
+      ]
+    },
+    "market_roof": {
+      "packs": [
+        "kenney_fantasy_town_kit"
+      ],
+      "include": [
+        "roof-flat"
+      ]
+    },
+    "standing_fire": {
+      "packs": [
+        "kenney_graveyard_kit"
+      ],
+      "include": [
+        "fire-basket"
+      ]
+    },
+    "banner_wall": {
+      "packs": [
+        "quaternius_fantasy_props",
+        "kenney_fantasy_town_kit",
+        "kaykit_dungeon_full"
+      ],
+      "include": [
+        "Banner*"
+      ],
+      "exclude": [
+        "*Cloth*"
+      ]
+    },
+    "rug_floor": {
+      "packs": [
+        "fsp_modular_temple"
+      ],
+      "include": [
+        "Prop_Rug_Sun",
+        "Prop_Rug_Moon",
+        "Prop_Rug_Stars",
+        "Prop_Rug_Eclipse"
+      ]
+    },
+    "farm_tool": {
+      "packs": [
+        "voxel_micro_farm"
+      ],
+      "include": [
+        "SM_VMF_Tool_WateringCan"
+      ]
+    },
+    "smoke_particles": {
+      "packs": [
+        "kenney_particles_full"
+      ],
+      "include": [
+        "smoke*"
+      ]
+    }
+  },
+  "libraries": {
+    "architecture": {
+      "packs": [
+        "kenney_nature_kit",
+        "kenney_fantasy_town_kit",
+        "kenney_survival_kit",
+        "kenney_graveyard_kit",
+        "kenney_holiday_kit",
+        "kenney_food_kit",
+        "kenney_modular_cave_kit",
+        "kenney_castle_kit",
+        "quaternius_fantasy_props",
+        "quaternius_medieval_village",
+        "kaykit_halloween",
+        "kaykit_medieval_hexagon",
+        "kaykit_furniture",
+        "quaternius_cube_world",
+        "fsp_modular_temple",
+        "kaykit_dungeon_full",
+        "quaternius_modular_ruins_full",
+        "kenney_particles_full",
+        "arcane_magic_effect",
+        "wind_ambience",
+        "river_forest_ambience",
+        "wildlife_ambience",
+        "dungeon_ambience",
+        "rain_ambience",
+        "kenney_rpg_audio",
+        "kenney_impact_sounds",
+        "kenney_interface_sounds",
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "wall*",
+        "roof*",
+        "floor*",
+        "pillar*",
+        "column*",
+        "stairs*",
+        "building*",
+        "corner*",
+        "door*",
+        "tower*",
+        "bridge*",
+        "crypt*",
+        "ground*",
+        "hex*",
+        "balcony*",
+        "window*",
+        "overhang*",
+        "puzzle*",
+        "terrain*"
+      ]
+    },
+    "furnishings": {
+      "packs": [
+        "kenney_nature_kit",
+        "kenney_fantasy_town_kit",
+        "kenney_survival_kit",
+        "kenney_graveyard_kit",
+        "kenney_holiday_kit",
+        "kenney_food_kit",
+        "kenney_modular_cave_kit",
+        "kenney_castle_kit",
+        "quaternius_fantasy_props",
+        "quaternius_medieval_village",
+        "kaykit_halloween",
+        "kaykit_medieval_hexagon",
+        "kaykit_furniture",
+        "quaternius_cube_world",
+        "fsp_modular_temple",
+        "kaykit_dungeon_full",
+        "quaternius_modular_ruins_full",
+        "kenney_particles_full",
+        "arcane_magic_effect",
+        "wind_ambience",
+        "river_forest_ambience",
+        "wildlife_ambience",
+        "dungeon_ambience",
+        "rain_ambience",
+        "kenney_rpg_audio",
+        "kenney_impact_sounds",
+        "kenney_interface_sounds",
+        "fantasy_song_pack_volume_1"
+      ],
+      "include": [
+        "bed*",
+        "chair*",
+        "stool*",
+        "cabinet*",
+        "chest*",
+        "shelf*",
+        "candle*",
+        "bowl*",
+        "pot*",
+        "vase*",
+        "urn*",
+        "crate*",
+        "tool*",
+        "cauldron*",
+        "torch*",
+        "rack*",
+        "lantern*",
+        "bench*",
+        "sack*",
+        "wheel*",
+        "bucket*",
+        "cart*",
+        "plank*",
+        "fence*",
+        "mug*",
+        "rope*",
+        "chain*",
+        "shovel*",
+        "farm*"
+      ]
+    },
+    "combat_audio": {
+      "packs": [
+        "kenney_impact_sounds"
+      ],
+      "include": [
+        "*"
+      ]
+    },
+    "interface_audio": {
+      "packs": [
+        "kenney_interface_sounds"
+      ],
+      "include": [
+        "*"
+      ]
+    },
+    "food": {
+      "packs": [
+        "kenney_food_kit"
+      ],
+      "include": [
+        "*"
+      ]
+    },
+    "interaction_audio": {
+      "packs": [
+        "kenney_rpg_audio"
+      ],
+      "include": [
+        "*"
+      ]
+    }
+  }
+}

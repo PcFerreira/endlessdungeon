@@ -1,0 +1,106 @@
+{
+  "id": "gem_icon_collection",
+  "title": "CC0 Gem Icons",
+  "author": "AntumDeluge, compiling works by the authors credited in the bundled source records",
+  "source": "https://opengameart.org/content/cc0-gem-icons",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-ocal_0.zip",
+      "filename": "gem-ocal_0.zip",
+      "bytes": 33677,
+      "sha256": "742d7bc526fe871a253c4511b84e916ef011cca758eae7842450af4a5d722697",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-ocal-scalable_0.zip",
+      "filename": "gem-ocal-scalable_0.zip",
+      "bytes": 60267,
+      "sha256": "54ad4b05d81a05ad5bf7974d1ed1ba5e3736258c5e9f13f9578064b5b8e15a60",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-7soul1_20201212.zip",
+      "filename": "gem-7soul1_20201212.zip",
+      "bytes": 14797,
+      "sha256": "1b736a667e2b3724b4e640415bc548392ac559eb46ad0250463c5d947a2ded35",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-ettingrinder.zip",
+      "filename": "gem-ettingrinder.zip",
+      "bytes": 13115,
+      "sha256": "ad9765dcf405c6d3f79059281a7f14b684575a13873706f90e900f94a016cf77",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-firestorm200_20201230.zip",
+      "filename": "gem-firestorm200_20201230.zip",
+      "bytes": 45189,
+      "sha256": "f92cabbafc5a43775fcbd8c391cf12bf6f0a319f808ec26b4469e073759950bd",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-firestorm200-scalable_20201230.zip",
+      "filename": "gem-firestorm200-scalable_20201230.zip",
+      "bytes": 109047,
+      "sha256": "f9ccb095b419580797c49e0ed5eefbc3c10828c383e2804d9053dba84c9e03e5",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-melle_0.zip",
+      "filename": "gem-melle_0.zip",
+      "bytes": 265410,
+      "sha256": "5d8bf94dcaab9bf0596c7c0bca30ce942257cbea99322920cebae04aeea60a6f",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-rcorre.zip",
+      "filename": "gem-rcorre.zip",
+      "bytes": 2884,
+      "sha256": "09a3d64715b00a1bb7795eba8c79db4a287c4592a9f6b00788e2ad12509c4602",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-software_atelier.zip",
+      "filename": "gem-software_atelier.zip",
+      "bytes": 17633,
+      "sha256": "40da44da7b458910b471d3f48f6d0daf397edb061b6f06b43c2ce5c691a03ce0",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-spriteattack.zip",
+      "filename": "gem-spriteattack.zip",
+      "bytes": 17725,
+      "sha256": "625e302e9c62556a1bd394be2fe547721fa933c85634367dcb3db1be7d1638e4",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-spriteattack-scalable.zip",
+      "filename": "gem-spriteattack-scalable.zip",
+      "bytes": 27919,
+      "sha256": "ab89e7186a8ad849bbb545126174e21d9067ffabdbe6e76e1c9b552d684bc6e0",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/gem-thekingphoenix.zip",
+      "filename": "gem-thekingphoenix.zip",
+      "bytes": 3708,
+      "sha256": "577667da12f7e2581ee12bcdf3ef112949dfa2c8ee8b21a571818ca9d303c264",
+      "archive_crc_checked": true
+    }
+  ],
+  "scope": "All files linked in the publisher download section, extracted with author subcollections kept separate.",
+  "style": "Pixel art and SVG icons",
+  "categories": [
+    "Gems",
+    "Jewelry",
+    "Treasure",
+    "Enchanting"
+  ],
+  "attribution_required": false,
+  "attribution_text": "CC0 Gem Icons by AntumDeluge, compiling works by the authors credited in the bundled source records. Source: https://opengameart.org/content/cc0-gem-icons. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None. Original asset bytes and bundled notices are preserved; archives in author collections were extracted into separate subdirectories."
+}

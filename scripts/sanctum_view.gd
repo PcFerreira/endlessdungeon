@@ -3,16 +3,27 @@ extends Node3D
 const Voxels = preload("res://scripts/voxel_kit.gd")
 const Scenery = preload("res://scripts/scenery.gd")
 const Ambience = preload("res://scripts/ambience.gd")
+const Furnishings = preload("res://scripts/furnishings.gd")
 var scenery := Scenery.new()
 var motes: Array[MeshInstance3D] = []
 var portal_light: OmniLight3D
 var time := 0.0
+var furniture_nodes: Dictionary = {}
+var furniture_root: Node3D
+var alcove_walls: Array[Dictionary] = []
+var faded_wall: StandardMaterial3D
 
 func build(home) -> void:
+	if faded_wall == null:
+		faded_wall = Voxels.material().duplicate()
+		faded_wall.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+		faded_wall.albedo_color.a = .25
 	for child in get_children():
 		remove_child(child)
 		child.queue_free()
 	motes.clear()
+	alcove_walls.clear()
+	furniture_nodes.clear()
 	var blocks := []
 	for cell in home.tiles:
 		var garden: bool = cell.x < 3 or cell.x > 17 or cell.y < 2 or cell.y > 18
@@ -23,15 +34,20 @@ func build(home) -> void:
 		var thickness := .8 + float(absi(hash(cell)) % 4) * .35
 		blocks.append([Vector3(cell.x, -.3 - thickness * .5, cell.y), Vector3(.94, thickness, .94), Color("393b55")])
 	add_child(Voxels.instance(Voxels.mesh(blocks)))
-	for plot in home.furnishing_plots:
-		var outline := []
-		for x in range(plot.position.x, plot.end.x):
-			for y in [plot.position.y, plot.end.y - 1]:
-				outline.append([Vector3(x, .025, y), Vector3(.8, .04, .07), Color("b3a885")])
-		for y in range(plot.position.y, plot.end.y):
-			for x in [plot.position.x, plot.end.x - 1]:
-				outline.append([Vector3(x, .025, y), Vector3(.07, .04, .8), Color("b3a885")])
-		add_child(Voxels.instance(Voxels.mesh(outline)))
+	for wall in home.furnishing_walls:
+		var along_x: bool = wall.normal.y != 0
+		var node := Node3D.new()
+		node.position = Vector3(wall.point.x, 0, wall.point.y)
+		var mesh := Voxels.instance(Voxels.mesh([
+			[Vector3(0, .9, 0), Vector3(wall.length, 1.8, .12) if along_x else Vector3(.12, 1.8, wall.length), Color("656078")],
+			[Vector3(0, 1.84, 0), Vector3(wall.length, .10, .18) if along_x else Vector3(.18, .10, wall.length), Color("b7a185")]
+		]))
+		node.add_child(mesh)
+		add_child(node)
+		alcove_walls.append({"node": node, "mesh": mesh, "normal": wall.normal})
+	furniture_root = Node3D.new()
+	add_child(furniture_root)
+	refresh_furnishings(home)
 	var pavilion := []
 	for cell in [Vector2(7, 3), Vector2(13, 3), Vector2(7, 7), Vector2(13, 7)]:
 		pavilion.append([Vector3(cell.x, .9, cell.y), Vector3(.5, 1.8, .5), Color("838596")])
@@ -91,6 +107,24 @@ func build(home) -> void:
 		star.position = Vector3(10 + cos(angle) * radius, random.randf_range(-3, 5), 10 + sin(angle) * radius)
 		add_child(star)
 		motes.append(star)
+
+func refresh_furnishings(home) -> void:
+	for child in furniture_root.get_children():
+		furniture_root.remove_child(child)
+		child.queue_free()
+	furniture_nodes.clear()
+	for record in home.placements:
+		var model := Furnishings.Catalog.model(record, scenery, "block_voxel")
+		var point := Furnishings.point(record)
+		model.position = Vector3(point.x, Furnishings.elevation(record, home.placements), point.y)
+		model.set_meta("furnishing_uid", record.uid)
+		furniture_root.add_child(model)
+		furniture_nodes[record.uid] = model
+
+func update_camera(yaw: float, furnishing: bool = false) -> void:
+	var forward := Vector2(sin(yaw), cos(yaw))
+	for wall in alcove_walls:
+		wall.mesh.material_override = faded_wall if wall.normal.dot(forward) > .05 and not furnishing else Voxels.material()
 
 func _label(text: String, point: Vector3) -> void:
 	var label := Label3D.new()

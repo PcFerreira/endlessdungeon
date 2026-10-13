@@ -1,8 +1,12 @@
-# Area guide for the Endless Realm
+# Area guide for the Endless World
 
-Status: draft content and implementation brief. Scope: documentation in `lore/` only. The coding agent owns game changes. None of the new area types below are implemented by this guide.
+Status: draft content and implementation brief, with a focused subset now playable. This guide records the broader catalogue; [the implementation guide](../docs/WORLD_EXPANSION.md) records current support.
 
-The Endless Realm contains ordinary farms, trade towns, old crypts, and places whose inhabitants live by stranger customs. A road can lead from a grain market into a district of living pottery, then past a pale grove toward an abandoned star observatory. Travelers remain in the same continuous world.
+The Endless World contains ordinary farms, trade towns, old crypts, and places whose inhabitants live by stranger customs. A road can lead from a grain market into a district of living pottery, then past a pale grove toward an abandoned star observatory. These lands joined when the multiverse collapsed. Travelers now follow roads through one continuous infinite world.
+
+## Implemented subset
+
+The focused expansion now implements six town archetypes, six dungeon families, Mycelium Downs, Cinder Verge, and three route approaches. The full 72-area catalogue remains the expansion guide for later work. See [the implementation guide](../docs/WORLD_EXPANSION.md) for the playable subset, asset choices, resident roles, book placement, and saved journal.
 
 ## Catalogue
 
@@ -16,11 +20,11 @@ The Endless Realm contains ordinary farms, trade towns, old crypts, and places w
 
 There are 72 archetypes in this catalogue. An archetype can have many separately named instances. A unique historical person or event needs its own stored identity; selecting the same archetype does not duplicate that person or event.
 
-## One realm with many facets
+## One world with many facets
 
 People call a place with an unusual local character a facet. A facet has geography, residents, resources, and routes to its neighbors. Its size can range from a clearing to a district spanning several regions.
 
-The Unfinished Dawn is one proposed explanation for some facets. Other places developed through natural history, long habitation, old enchantments, or deliberate construction. Their inhabitants disagree about origins. This catalogue does not establish a literal former multiverse, prove that the Dawn created infinity, or require portals between towns.
+The multiverse collapsed into the Endless World during the Unfinished Dawn. Some facets retain materials and traditions from former worlds. Others developed through natural history, long habitation, old enchantments, or deliberate construction after the collapse. Their inhabitants can disagree about a particular place's origin. Travel between neighboring facets follows physical geography; the premise does not require portals between towns.
 
 The common foundations are stable geography, shared roads, sanctuary hospitality, and the practical limits of adventuring magic. Local variations should be visible and discoverable. A facet's broad theme does not silently alter movement, combat, time, death, or resource costs.
 
@@ -28,18 +32,18 @@ Give unusual communities everyday needs. A glassworker buys grain. Potfolk commi
 
 ## Current source baseline
 
-Guide edition: 2026-10-13. The project source inspected during this pass contains:
+Guide edition: 2026-10-13. The original source inspection before expansion contained:
 
 - Greenwood, Sunlit Meadows, Amber Wastes, and Frostlands, plus layered height generation.
-- 16-cell chunks and 64-cell regions, with one compact sanctuary city and two independently seeded ruin entrances per region.
+- 16-cell chunks and 128-cell regions, with one compact sanctuary city and two independently seeded ruin entrances per region.
 - City houses, fountain, tower, banners, containers, decorative citizens, roads, bridges, and ruin arches.
 - Finite dungeons of 1 to 20 floors, generated rooms and corridors, discovery fog, wardens, descent gates, and a final reward chest.
 - Crypt Skeleton, Sanctum Invoker, and Tomb Shade enemy kinds; Mage, Sword, and Spellsword classes.
 - A rotatable orthographic camera, jumping, journey capture/restore, save slots, and autosave code.
 
-These are source observations. This lore pass did not run the game or validate the other agent's changes. Older research notes may describe earlier camera or save limitations; use this snapshot and the current checkout when planning implementation. Dialogue, readable books, new creatures, and area-specific mechanics still require their own support.
+These are historical source observations from the writing pass. The later implementation adds resident dialogue, books, a saved journal, and the subset listed above. Older research notes may describe earlier camera or save limitations; use the implementation guide and current checkout when planning further work. New creatures and additional area mechanics still require support.
 
-The three underground themes currently follow floor depth. They are not persistent dungeon-family assignments. Most cities share one modular arrangement. Adding an archetype therefore means more than assigning a new display name.
+Before expansion, the three underground themes followed floor depth and most cities shared one modular arrangement. The implemented families now persist across floors, and town archetypes use distinct plot and dressing pools. Further archetypes still need layout, art, and interaction work beyond assigning a new display name.
 
 ## Reading each area entry
 

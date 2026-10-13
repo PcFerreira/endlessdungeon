@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/bow_32 vox.vox",
+      "source_sha256": "9ff958df6511f13449ee8ba39e9ae744576bd0eea7f31a315cabe1414e17df3d",
+      "object": "bow_32 vox",
+      "name": "bow_32 vox",
+      "runtime_file": "bow_32-vox.glb",
+      "sha256": "18565ac1b18960494c788e3113c94b726154b7e64d030e2c18b097772bcec39e",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/bow_48 vox.vox",
+      "source_sha256": "0bfe6bf8075ad9b6e681ea00d997143878e245daf6bd3029cbbd18b9bb12f753",
+      "object": "bow_48 vox",
+      "name": "bow_48 vox",
+      "runtime_file": "bow_48-vox.glb",
+      "sha256": "c9b6e7b7d2584e14903c8475013d295b174f99fdd21a739bd374667a7cd7d77e",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/broadsword_48 vox.vox",
+      "source_sha256": "9b928df6dbf8735959ba97423868b974f839e6cee3715ec40c8dd2beb53a3771",
+      "object": "broadsword_48 vox",
+      "name": "broadsword_48 vox",
+      "runtime_file": "broadsword_48-vox.glb",
+      "sha256": "cf883407336e4a6b408befbc814013de8eaa4f02a93845225bd8d4186fc21875",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/brontosaurus_32 vox.vox",
+      "source_sha256": "005eabd435392f1f07a20c8020d611e069f4926487c90f42fa8c1dff3b27e5a2",
+      "object": "brontosaurus_32 vox",
+      "name": "brontosaurus_32 vox",
+      "runtime_file": "brontosaurus_32-vox.glb",
+      "sha256": "73103a2619fc9a5e85839843b30bb75af53c512e638c487fdbff7bfba175c7b6",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/brontosaurus_48 vox.vox",
+      "source_sha256": "b8e2381db9f6491262abb09f088da1804e6e96cf0e446579c1a7ca0e1c93d7a0",
+      "object": "brontosaurus_48 vox",
+      "name": "brontosaurus_48 vox",
+      "runtime_file": "brontosaurus_48-vox.glb",
+      "sha256": "5d6962286e17b271c79bb86862c466da52aaab3f1de749c1f7fbd7dba70b0a4f",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/cannon_mesh_32 vox.vox",
+      "source_sha256": "71534d15e442603ffead41abed4d48815287898e00461b6aa8893e446b70fc8f",
+      "object": "cannon_mesh_32 vox",
+      "name": "cannon_mesh_32 vox",
+      "runtime_file": "cannon_mesh_32-vox.glb",
+      "sha256": "427b0d65153fc13ec3206979d3610593009fca4b8055291cfc8f742713780c70",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/cannon_mesh_48 voxs.vox",
+      "source_sha256": "f1921e0aa17b1a84457b1a3c8202d07e877e0163d2c5658ebfe9bd5861bb67db",
+      "object": "cannon_mesh_48 voxs",
+      "name": "cannon_mesh_48 voxs",
+      "runtime_file": "cannon_mesh_48-voxs.glb",
+      "sha256": "3fa4b827d2d3bdfdfb82cda23bd0c4767970fd6de7fa12683652d627efd58f96",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/crossbow_32 vox.vox",
+      "source_sha256": "b667b8cddbe989e0c276c1dbe499588d8bb28190fe98dbc9438704c7a6d5c68a",
+      "object": "crossbow_32 vox",
+      "name": "crossbow_32 vox",
+      "runtime_file": "crossbow_32-vox.glb",
+      "sha256": "8517ab7c9127db18d5bf9498f6d7604ade01722461160fd15ab5d295637f9750",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/padadu_fantasy_voxels/crossbow_48 vox.vox",
+      "source_sha256": "7c9825dc4082a04a88157807d224c8a9b8f62c6e45e7533a7dbd5377ab2051db",
+      "object": "crossbow_48 vox",
+      "name": "crossbow_48 vox",
+      "runtime_file": "crossbow_48-vox.glb",
+      "sha256": "5d4241ed16f3ada090250a5b41b56e9b529a799d8d406485adaf0f1ad4f97077",
+      "converter_version": 4
+    }
+  ]
+}

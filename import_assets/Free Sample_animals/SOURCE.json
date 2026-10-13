@@ -1,0 +1,13 @@
+{
+  "id": "animal_samples",
+  "title": "Workspace Animal Samples",
+  "author": "Publisher not specified in supplied files",
+  "source": "workspace://import_assets/Free Sample_animals",
+  "license": "Unspecified in supplied files",
+  "license_url": "workspace://import_assets/Free Sample_animals/PROVENANCE-LICENSE.md",
+  "categories": [
+    "animals"
+  ],
+  "attribution_required": false,
+  "source_asset_changes": "User supplied source files preserved; publisher and terms are not asserted."
+}

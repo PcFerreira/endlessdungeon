@@ -1,0 +1,2685 @@
+[
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Base_Bridge_Ramp.obj",
+    "vertices": 100,
+    "faces": 196,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Base_Curved_Large.obj",
+    "vertices": 60,
+    "faces": 116,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Base_Curved_Small.obj",
+    "vertices": 60,
+    "faces": 116,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Base_Straight.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Base_Tower.obj",
+    "vertices": 60,
+    "faces": 116,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Railing_Bridge_Ramp.obj",
+    "vertices": 204,
+    "faces": 404,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Railing_Curved_Large.obj",
+    "vertices": 132,
+    "faces": 260,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Railing_Curved_Small.obj",
+    "vertices": 132,
+    "faces": 260,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Railing_End.obj",
+    "vertices": 98,
+    "faces": 192,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Railing_Straight.obj",
+    "vertices": 73,
+    "faces": 142,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Balcony_Railing_Tower.obj",
+    "vertices": 196,
+    "faces": 388,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Bridge_Ramp.obj",
+    "vertices": 34,
+    "faces": 64,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Curved_Large.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Curved_Large_Outer.obj",
+    "vertices": 6,
+    "faces": 8,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Curved_Small.obj",
+    "vertices": 10,
+    "faces": 16,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Curved_Small_Outer.obj",
+    "vertices": 6,
+    "faces": 8,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Normal_Square.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Ruined_Corner_Inner_1.obj",
+    "vertices": 138,
+    "faces": 272,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Ruined_Corner_Inner_2.obj",
+    "vertices": 98,
+    "faces": 192,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Ruined_Corner_Outer_1.obj",
+    "vertices": 80,
+    "faces": 156,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Ruined_Corner_Outer_2.obj",
+    "vertices": 78,
+    "faces": 152,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Ruined_Straight_1.obj",
+    "vertices": 123,
+    "faces": 242,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Ruined_Straight_2.obj",
+    "vertices": 85,
+    "faces": 166,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Floor_Tower_Balcony.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Arch.obj",
+    "vertices": 100,
+    "faces": 196,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Arch_Top.obj",
+    "vertices": 114,
+    "faces": 220,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Base.obj",
+    "vertices": 60,
+    "faces": 112,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Beam.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Beam_Top.obj",
+    "vertices": 28,
+    "faces": 52,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Middle.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Large_Top.obj",
+    "vertices": 68,
+    "faces": 128,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Wall_Base.obj",
+    "vertices": 16,
+    "faces": 24,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Wall_Middle.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Pillar_Wall_Top.obj",
+    "vertices": 24,
+    "faces": 40,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_1.obj",
+    "vertices": 114,
+    "faces": 220,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_3",
+      "Blue_Fabric_2"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_2.obj",
+    "vertices": 180,
+    "faces": 348,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_2",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_3.obj",
+    "vertices": 192,
+    "faces": 376,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_2",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_Eclipse.obj",
+    "vertices": 173,
+    "faces": 338,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_2",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_Moon.obj",
+    "vertices": 146,
+    "faces": 284,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_2",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_Stand_Extension.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_Stand_Top.obj",
+    "vertices": 32,
+    "faces": 60,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_Stars.obj",
+    "vertices": 179,
+    "faces": 350,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_3",
+      "Blue_Fabric_2"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Flag_Sun.obj",
+    "vertices": 147,
+    "faces": 286,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Blue_Fabric_2",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rubble_1.obj",
+    "vertices": 63,
+    "faces": 114,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rubble_2.obj",
+    "vertices": 68,
+    "faces": 128,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Corner_Inner.obj",
+    "vertices": 46,
+    "faces": 88,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_2",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Corner_Outer.obj",
+    "vertices": 42,
+    "faces": 80,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3",
+      "Blue_Fabric_2"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Eclipse.obj",
+    "vertices": 114,
+    "faces": 224,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Middle.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Moon.obj",
+    "vertices": 88,
+    "faces": 172,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Side.obj",
+    "vertices": 20,
+    "faces": 36,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3",
+      "Blue_Fabric_2"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Stars.obj",
+    "vertices": 121,
+    "faces": 238,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Rug_Sun.obj",
+    "vertices": 89,
+    "faces": 174,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Blue_Fabric_3"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Vase.obj",
+    "vertices": 174,
+    "faces": 344,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Vase_1.obj",
+    "vertices": 98,
+    "faces": 192,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Vase_2.obj",
+    "vertices": 153,
+    "faces": 312,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Prop_Vase_3.obj",
+    "vertices": 164,
+    "faces": 332,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Closed_Conduit_Control_Connector.obj",
+    "vertices": 18,
+    "faces": 32,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Closed_Conduit_Straight.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Closed_Conduit_Terminator.obj",
+    "vertices": 26,
+    "faces": 48,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Control_Lever.obj",
+    "vertices": 115,
+    "faces": 222,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Control_Pressure_Plate.obj",
+    "vertices": 26,
+    "faces": 48,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Control_Rising_Switch.obj",
+    "vertices": 223,
+    "faces": 434,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_6",
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Control_Housing_Corner.obj",
+    "vertices": 120,
+    "faces": 232,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Control_Housing_Cross.obj",
+    "vertices": 184,
+    "faces": 352,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Control_Housing_End.obj",
+    "vertices": 88,
+    "faces": 172,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Control_Housing_Straight.obj",
+    "vertices": 120,
+    "faces": 232,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Control_Housing_TJoint.obj",
+    "vertices": 152,
+    "faces": 292,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Control_Housing_Unconnected.obj",
+    "vertices": 60,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Housing_Corner.obj",
+    "vertices": 120,
+    "faces": 232,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Housing_Cross.obj",
+    "vertices": 180,
+    "faces": 344,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Housing_End.obj",
+    "vertices": 90,
+    "faces": 176,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Housing_Straight.obj",
+    "vertices": 120,
+    "faces": 232,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Housing_TJoint.obj",
+    "vertices": 150,
+    "faces": 288,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Platform_Corner.obj",
+    "vertices": 109,
+    "faces": 210,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Platform_End.obj",
+    "vertices": 100,
+    "faces": 192,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Platform_Straight.obj",
+    "vertices": 81,
+    "faces": 154,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj",
+    "vertices": 111,
+    "faces": 214,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Standard_Corner.obj",
+    "vertices": 64,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Standard_Cross.obj",
+    "vertices": 92,
+    "faces": 176,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Standard_End.obj",
+    "vertices": 57,
+    "faces": 106,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Standard_Straight.obj",
+    "vertices": 36,
+    "faces": 64,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Conduit_Standard_TJoint.obj",
+    "vertices": 64,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Wall_Conduit_Connector.obj",
+    "vertices": 40,
+    "faces": 72,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Floor_Wall_Conduit_Connector_Base.obj",
+    "vertices": 26,
+    "faces": 44,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Base.obj",
+    "vertices": 62,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Emitter.obj",
+    "vertices": 241,
+    "faces": 474,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_6",
+      "Gray"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Key.obj",
+    "vertices": 356,
+    "faces": 704,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Mirror.obj",
+    "vertices": 84,
+    "faces": 164,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Gray",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Pillar.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Pillar_Platform_Top.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Platform_1x1.obj",
+    "vertices": 53,
+    "faces": 102,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Platform_1x2.obj",
+    "vertices": 75,
+    "faces": 146,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Sliding_Platform_1x3.obj",
+    "vertices": 97,
+    "faces": 190,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Steps_Conduit.obj",
+    "vertices": 170,
+    "faces": 364,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Green_Stone_-_Dark",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Button_Corner.obj",
+    "vertices": 236,
+    "faces": 468,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Button_Cross.obj",
+    "vertices": 418,
+    "faces": 832,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Button_End.obj",
+    "vertices": 132,
+    "faces": 260,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Button_Straight.obj",
+    "vertices": 196,
+    "faces": 388,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Button_TJoint.obj",
+    "vertices": 322,
+    "faces": 640,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Housing_Corner.obj",
+    "vertices": 124,
+    "faces": 248,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Housing_Cross.obj",
+    "vertices": 188,
+    "faces": 376,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Housing_End.obj",
+    "vertices": 92,
+    "faces": 184,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Housing_Straight.obj",
+    "vertices": 124,
+    "faces": 248,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Housing_TJoint.obj",
+    "vertices": 156,
+    "faces": 312,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Housing_Unconnected.obj",
+    "vertices": 64,
+    "faces": 128,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Platform_Corner.obj",
+    "vertices": 115,
+    "faces": 226,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Platform_End.obj",
+    "vertices": 79,
+    "faces": 154,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Platform_Straight.obj",
+    "vertices": 77,
+    "faces": 150,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Platform_TJoint.obj",
+    "vertices": 135,
+    "faces": 266,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Rotating_Platform_Unconnected.obj",
+    "vertices": 129,
+    "faces": 254,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Standard_Corner.obj",
+    "vertices": 78,
+    "faces": 152,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Standard_Cross.obj",
+    "vertices": 132,
+    "faces": 260,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Standard_End.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Standard_Straight.obj",
+    "vertices": 40,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Track_Standard_TJoint.obj",
+    "vertices": 100,
+    "faces": 196,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_Corner.obj",
+    "vertices": 299,
+    "faces": 586,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_Cross.obj",
+    "vertices": 361,
+    "faces": 702,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_6",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_End.obj",
+    "vertices": 268,
+    "faces": 528,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_Straight.obj",
+    "vertices": 299,
+    "faces": 586,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_6",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_TJoint.obj",
+    "vertices": 330,
+    "faces": 644,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_6",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_Unconnected.obj",
+    "vertices": 239,
+    "faces": 474,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_6",
+      "Green_Stone_-_Dark",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Indicator_1.obj",
+    "vertices": 271,
+    "faces": 526,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Keyhole_Corner.obj",
+    "vertices": 197,
+    "faces": 382,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_4",
+      "Sandstone_Trim",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Keyhole_Cross.obj",
+    "vertices": 257,
+    "faces": 494,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Keyhole_End.obj",
+    "vertices": 167,
+    "faces": 326,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_4",
+      "Sandstone_Trim",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Keyhole_Straight.obj",
+    "vertices": 197,
+    "faces": 382,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_4",
+      "Sandstone_Trim",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Keyhole_TJoint.obj",
+    "vertices": 227,
+    "faces": 438,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_6",
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Keyhole_Unconnected.obj",
+    "vertices": 141,
+    "faces": 278,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_4",
+      "Sandstone_6",
+      "Green_Stone_-_Dark"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Passthrough.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Passthrough_Base.obj",
+    "vertices": 28,
+    "faces": 52,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_Corner.obj",
+    "vertices": 64,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_Cross.obj",
+    "vertices": 92,
+    "faces": 176,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_Curved_Small_Inner.obj",
+    "vertices": 72,
+    "faces": 136,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_Curved_Small_Outer.obj",
+    "vertices": 72,
+    "faces": 136,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_End.obj",
+    "vertices": 57,
+    "faces": 106,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_Straight.obj",
+    "vertices": 36,
+    "faces": 64,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Path_TJoint.obj",
+    "vertices": 64,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_5",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Pillar_Conduit_Passthrough.obj",
+    "vertices": 44,
+    "faces": 88,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Coping_Ramp_Curved_Large.obj",
+    "vertices": 26,
+    "faces": 48,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Coping_Ramp_Curved_Small.obj",
+    "vertices": 36,
+    "faces": 68,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Coping_Ramp_Straight.obj",
+    "vertices": 12,
+    "faces": 20,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Newel_Base.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Newel_Middle.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Newel_Top.obj",
+    "vertices": 24,
+    "faces": 40,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Steps_Curved.obj",
+    "vertices": 88,
+    "faces": 172,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Steps_Straight.obj",
+    "vertices": 68,
+    "faces": 132,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Under_Ramp_Curved.obj",
+    "vertices": 14,
+    "faces": 24,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Stairs_Under_Ramp_Straight.obj",
+    "vertices": 6,
+    "faces": 8,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Terrain_Water_Large.obj",
+    "vertices": 9,
+    "faces": 8,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Water"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Bottom.obj",
+    "vertices": 371,
+    "faces": 726,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Center_Pillar.obj",
+    "vertices": 26,
+    "faces": 48,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Decoration_Base.obj",
+    "vertices": 20,
+    "faces": 36,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Landing.obj",
+    "vertices": 10,
+    "faces": 16,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Parapet_Braced_Crowned.obj",
+    "vertices": 262,
+    "faces": 520,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Blue_Fabric_1",
+      "Sandstone_5",
+      "Blue_Fabric_2"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Parapet_Simple_Crowned.obj",
+    "vertices": 106,
+    "faces": 208,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Blue_Fabric_1",
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Steps.obj",
+    "vertices": 113,
+    "faces": 222,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Top.obj",
+    "vertices": 46,
+    "faces": 80,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Normal_Plain.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Normal_Window.obj",
+    "vertices": 44,
+    "faces": 88,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Normal_Windows.obj",
+    "vertices": 74,
+    "faces": 152,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Tall_Doorway.obj",
+    "vertices": 24,
+    "faces": 40,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Tall_Doorway_Base.obj",
+    "vertices": 30,
+    "faces": 52,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Tall_Window.obj",
+    "vertices": 46,
+    "faces": 92,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Tower_Wall_Tall_Windows.obj",
+    "vertices": 72,
+    "faces": 148,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Arch_Corner_Inner.obj",
+    "vertices": 30,
+    "faces": 56,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Arch_Corner_Outer.obj",
+    "vertices": 36,
+    "faces": 68,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Arch_Straight.obj",
+    "vertices": 18,
+    "faces": 32,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Large_Base.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Large_Coping.obj",
+    "vertices": 24,
+    "faces": 44,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Large_Middle.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Large_Top.obj",
+    "vertices": 32,
+    "faces": 60,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Small_Base.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Small_Coping.obj",
+    "vertices": 24,
+    "faces": 44,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Small_Middle.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Small_Top.obj",
+    "vertices": 32,
+    "faces": 60,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Small_Window.obj",
+    "vertices": 46,
+    "faces": 92,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Curved_Small_Window_Tall.obj",
+    "vertices": 46,
+    "faces": 92,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_End_Base.obj",
+    "vertices": 18,
+    "faces": 32,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_End_Coping.obj",
+    "vertices": 25,
+    "faces": 46,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_End_Middle.obj",
+    "vertices": 18,
+    "faces": 32,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_End_Top.obj",
+    "vertices": 34,
+    "faces": 64,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Corner_Inner_1.obj",
+    "vertices": 68,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Corner_Inner_2.obj",
+    "vertices": 58,
+    "faces": 100,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Corner_Outer_1.obj",
+    "vertices": 44,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Corner_Outer_2.obj",
+    "vertices": 42,
+    "faces": 72,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Full_1.obj",
+    "vertices": 248,
+    "faces": 444,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Full_2.obj",
+    "vertices": 166,
+    "faces": 304,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Full_Cracked_1.obj",
+    "vertices": 36,
+    "faces": 68,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Full_Cracked_2.obj",
+    "vertices": 30,
+    "faces": 56,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Half_1.obj",
+    "vertices": 92,
+    "faces": 164,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Ruined_Half_2.obj",
+    "vertices": 68,
+    "faces": 120,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Arch_Top.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Base.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Coping.obj",
+    "vertices": 12,
+    "faces": 20,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Cubby.obj",
+    "vertices": 54,
+    "faces": 104,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door.obj",
+    "vertices": 224,
+    "faces": 440,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_6",
+      "Sandstone_5",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Eclipse.obj",
+    "vertices": 280,
+    "faces": 556,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Large.obj",
+    "vertices": 280,
+    "faces": 552,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_Trim",
+      "Sandstone_6",
+      "Sandstone_4"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Large_Pocket.obj",
+    "vertices": 294,
+    "faces": 576,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Green_Stone_-_Dark",
+      "Sandstone_6",
+      "Sandstone_4",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Moon.obj",
+    "vertices": 226,
+    "faces": 448,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Stars.obj",
+    "vertices": 288,
+    "faces": 572,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_6",
+      "Sandstone_4",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Sun.obj",
+    "vertices": 228,
+    "faces": 452,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_4",
+      "Sandstone_5",
+      "Sandstone_6"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Doorway.obj",
+    "vertices": 84,
+    "faces": 160,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Doorway_Large.obj",
+    "vertices": 96,
+    "faces": 184,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor",
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Doorway_Large_Extension.obj",
+    "vertices": 30,
+    "faces": 56,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Doorway_Large_Pocket.obj",
+    "vertices": 112,
+    "faces": 220,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5",
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Middle.obj",
+    "vertices": 8,
+    "faces": 12,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Floor",
+      "Sandstone_Trim"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Top.obj",
+    "vertices": 16,
+    "faces": 28,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_5"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Window.obj",
+    "vertices": 37,
+    "faces": 74,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Window_Tall.obj",
+    "vertices": 38,
+    "faces": 76,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Windows.obj",
+    "vertices": 66,
+    "faces": 136,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  },
+  {
+    "path": "fsp_modular_temple/content/Modular Temple/Wall_Straight_Windows_Tall.obj",
+    "vertices": 64,
+    "faces": 132,
+    "material_libraries": [
+      "Materials_Modular_Temple.mtl"
+    ],
+    "materials_used": [
+      "Sandstone_Trim",
+      "Sandstone_Floor"
+    ]
+  }
+]

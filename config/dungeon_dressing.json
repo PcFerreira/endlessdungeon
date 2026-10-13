@@ -1,0 +1,678 @@
+{
+  "version": 1,
+  "cells_per_fixture": 7,
+  "fixture_cap": 12,
+  "templates": {
+    "burial": {
+      "kind": "coffin",
+      "purpose": "A sealed burial laid against the chamber wall",
+      "footprint": [
+        0.7,
+        1.35
+      ],
+      "height": 0.48,
+      "query": {
+        "pack": "kaykit_halloween",
+        "patterns": [
+          "*/coffin.gltf",
+          "*/coffin_decorated.gltf"
+        ]
+      },
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "memorial": {
+      "kind": "altar",
+      "purpose": "A memorial altar with lights left for the dead",
+      "footprint": [
+        0.95,
+        0.65
+      ],
+      "height": 0.65,
+      "surface": true,
+      "query": {
+        "pack": "kenney_graveyard_kit",
+        "patterns": [
+          "*/altar-stone.glb"
+        ]
+      },
+      "contents": [
+        {
+          "kind": "candle",
+          "query": {
+            "pack": "kenney_graveyard_kit",
+            "patterns": [
+              "*/candle.glb"
+            ]
+          },
+          "point": [
+            -0.24,
+            0
+          ],
+          "footprint": [
+            0.13,
+            0.13
+          ],
+          "height": 0.22
+        },
+        {
+          "kind": "candle",
+          "query": {
+            "pack": "kenney_graveyard_kit",
+            "patterns": [
+              "*/candle.glb"
+            ]
+          },
+          "point": [
+            0.24,
+            0
+          ],
+          "footprint": [
+            0.13,
+            0.13
+          ],
+          "height": 0.22
+        }
+      ]
+    },
+    "names": {
+      "kind": "gravestone",
+      "purpose": "A named memorial marks the remembered burial",
+      "footprint": [
+        0.7,
+        0.38
+      ],
+      "height": 0.85,
+      "query": {
+        "pack": "kaykit_halloween",
+        "patterns": [
+          "*/gravestone.gltf"
+        ]
+      },
+      "contents": [
+
+      ]
+    },
+    "attendant_store": {
+      "kind": "barrel",
+      "purpose": "Oil and provisions stored for burial attendants",
+      "footprint": [
+        0.7,
+        0.7
+      ],
+      "height": 0.75,
+      "contents": [
+
+      ],
+      "placement": "wall"
+    },
+    "registration": {
+      "kind": "table",
+      "purpose": "A registration desk holds the open ledger and incoming records",
+      "footprint": [
+        0.95,
+        0.65
+      ],
+      "height": 0.7,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "book",
+          "point": [
+            -0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.27
+          ],
+          "height": 0.09
+        },
+        {
+          "kind": "scroll",
+          "point": [
+            0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.2
+          ],
+          "height": 0.08
+        }
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "practice": {
+      "kind": "workbench",
+      "purpose": "A practice bench holds the working spell and its reference book",
+      "footprint": [
+        0.85,
+        0.6
+      ],
+      "height": 0.8,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "scroll",
+          "point": [
+            -0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.2
+          ],
+          "height": 0.08
+        },
+        {
+          "kind": "book",
+          "point": [
+            0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.27
+          ],
+          "height": 0.09
+        }
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "preparation": {
+      "kind": "workbench",
+      "purpose": "A preparation bench holds labeled reagent bottles and instructions",
+      "footprint": [
+        0.85,
+        0.6
+      ],
+      "height": 0.8,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "book",
+          "point": [
+            -0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.27
+          ],
+          "height": 0.09
+        },
+        {
+          "kind": "bottle",
+          "query": {
+            "pack": "kaykit_dungeon_full",
+            "patterns": [
+              "*/bottle_A_labeled_*.gltf"
+            ]
+          },
+          "point": [
+            0.22,
+            0
+          ],
+          "footprint": [
+            0.18,
+            0.18
+          ],
+          "height": 0.25
+        }
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "examination": {
+      "kind": "bookstand",
+      "purpose": "An examination lectern displays the reference text",
+      "footprint": [
+        0.65,
+        0.65
+      ],
+      "height": 0.85,
+      "contents": [
+
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "garden": {
+      "kind": "plant",
+      "purpose": "Memorial planting survives in the old garden court",
+      "footprint": [
+        0.65,
+        0.65
+      ],
+      "height": 0.5,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "roots": {
+      "kind": "stump",
+      "purpose": "An old root remnant has broken through the burial court",
+      "footprint": [
+        0.75,
+        0.65
+      ],
+      "height": 0.65,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "forecourt": {
+      "kind": "cart",
+      "purpose": "An ore cart waits in the quarry's work forecourt",
+      "footprint": [
+        0.82,
+        0.65
+      ],
+      "height": 0.8,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "extraction": {
+      "kind": "workbench",
+      "purpose": "A tool bench holds the pick used on the extraction face",
+      "footprint": [
+        0.85,
+        0.6
+      ],
+      "height": 0.8,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "pickaxe",
+          "query": {
+            "pack": "kenney_survival_kit",
+            "patterns": [
+              "*/tool-pickaxe.glb",
+              "*/tool-pickaxe-upgraded.glb"
+            ]
+          },
+          "point": [
+            0,
+            0
+          ],
+          "footprint": [
+            0.65,
+            0.32
+          ],
+          "height": 0.12
+        }
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "supply": {
+      "kind": "crates",
+      "purpose": "Crated supplies are stacked beside the room's working area",
+      "footprint": [
+        0.85,
+        0.65
+      ],
+      "height": 0.8,
+      "contents": [
+
+      ],
+      "placement": "wall"
+    },
+    "older_chamber": {
+      "kind": "rock",
+      "purpose": "Unworked stone remains beyond the older extraction branch",
+      "footprint": [
+        0.8,
+        0.65
+      ],
+      "height": 0.6,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "cistern_entry": {
+      "kind": "barrel",
+      "purpose": "A service water vessel stands beside the cistern entry",
+      "footprint": [
+        0.7,
+        0.7
+      ],
+      "height": 0.75,
+      "contents": [
+
+      ],
+      "placement": "wall"
+    },
+    "colony": {
+      "kind": "mushroom_tall",
+      "purpose": "A fungal colony occupies the damp chamber edge",
+      "footprint": [
+        0.85,
+        0.75
+      ],
+      "height": 1.35,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "specimens": {
+      "kind": "workbench",
+      "purpose": "Specimen bottles and a recording book occupy the collection bench",
+      "footprint": [
+        0.85,
+        0.6
+      ],
+      "height": 0.8,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "book",
+          "point": [
+            -0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.27
+          ],
+          "height": 0.09
+        },
+        {
+          "kind": "bottle",
+          "query": {
+            "pack": "kaykit_dungeon_full",
+            "patterns": [
+              "*/bottle_A_labeled_green.gltf"
+            ]
+          },
+          "point": [
+            0.22,
+            0
+          ],
+          "footprint": [
+            0.18,
+            0.18
+          ],
+          "height": 0.25
+        }
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "water_hall": {
+      "kind": "mushroom",
+      "purpose": "Low fungal growth follows the old water hall",
+      "footprint": [
+        0.75,
+        0.65
+      ],
+      "height": 0.8,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "files": {
+      "kind": "bookcase",
+      "purpose": "Stored records fill the filing gallery shelves",
+      "footprint": [
+        0.9,
+        0.45
+      ],
+      "height": 1.5,
+      "contents": [
+
+      ]
+    },
+    "approval": {
+      "kind": "table",
+      "purpose": "An approval desk holds the pending register and submitted papers",
+      "footprint": [
+        0.95,
+        0.65
+      ],
+      "height": 0.7,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "book",
+          "point": [
+            -0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.27
+          ],
+          "height": 0.09
+        },
+        {
+          "kind": "scroll",
+          "point": [
+            0.22,
+            0
+          ],
+          "footprint": [
+            0.3,
+            0.2
+          ],
+          "height": 0.08
+        }
+      ],
+      "limit": 1
+    },
+    "assembly": {
+      "kind": "table",
+      "purpose": "The assembly record table holds meeting minutes for the gathered officials",
+      "footprint": [
+        0.95,
+        0.65
+      ],
+      "height": 0.7,
+      "surface": true,
+      "contents": [
+        {
+          "kind": "book",
+          "point": [
+            0,
+            0
+          ],
+          "footprint": [
+            0.32,
+            0.29
+          ],
+          "height": 0.1
+        }
+      ],
+      "placement": "floor",
+      "limit": 1
+    },
+    "bench": {
+      "kind": "bench",
+      "purpose": "A bench provides seating for the room's visitors",
+      "footprint": [
+        0.8,
+        0.4
+      ],
+      "height": 0.5,
+      "contents": [
+
+      ],
+      "placement": "floor"
+    },
+    "task_lamp": {
+      "kind": "wall_lantern",
+      "purpose": "A mounted task lantern lights the room's working and reference area",
+      "placement": "wall",
+      "footprint": [
+        0.3,
+        0.18
+      ],
+      "height": 0.65,
+      "elevation": 0.35,
+      "contents": [
+
+      ],
+      "limit": 2
+    }
+  },
+  "families": {
+    "dungeon_ashen_crypt": {
+      "Vestibule": [
+        "names",
+        "memorial",
+        "bench"
+      ],
+      "Burial chamber": [
+        "burial",
+        "burial",
+        "names",
+        "memorial"
+      ],
+      "Attendant store": [
+        "attendant_store",
+        "supply",
+        "attendant_store"
+      ],
+      "Memorial hall": [
+        "memorial",
+        "names",
+        "names",
+        "bench"
+      ]
+    },
+    "dungeon_violet_sanctum": {
+      "Registration": [
+        "registration",
+        "files",
+        "bench"
+      ],
+      "Practice chamber": [
+        "practice",
+        "examination",
+        "preparation",
+        "supply",
+        "bench",
+        "task_lamp"
+      ],
+      "Preparation store": [
+        "preparation",
+        "supply",
+        "supply"
+      ],
+      "Examination hall": [
+        "examination",
+        "practice",
+        "files",
+        "bench"
+      ]
+    },
+    "dungeon_verdant_tomb": {
+      "Entry court": [
+        "names",
+        "roots",
+        "garden"
+      ],
+      "Memorial garden": [
+        "garden",
+        "garden",
+        "names",
+        "roots"
+      ],
+      "Remembrance hall": [
+        "memorial",
+        "names",
+        "garden",
+        "bench"
+      ],
+      "Root court": [
+        "roots",
+        "garden",
+        "roots",
+        "names"
+      ]
+    },
+    "dungeon_quarry_depths": {
+      "Work forecourt": [
+        "forecourt",
+        "supply",
+        "bench"
+      ],
+      "Extraction branch": [
+        "extraction",
+        "older_chamber",
+        "forecourt"
+      ],
+      "Supply room": [
+        "supply",
+        "supply",
+        "attendant_store",
+        "extraction"
+      ],
+      "Older chamber": [
+        "older_chamber",
+        "older_chamber",
+        "roots"
+      ]
+    },
+    "dungeon_fungal_cistern": {
+      "Service entry": [
+        "cistern_entry",
+        "supply",
+        "cistern_entry"
+      ],
+      "Colony chamber": [
+        "colony",
+        "water_hall",
+        "colony",
+        "water_hall"
+      ],
+      "Specimen store": [
+        "specimens",
+        "supply",
+        "water_hall"
+      ],
+      "Water hall": [
+        "cistern_entry",
+        "water_hall",
+        "water_hall",
+        "cistern_entry"
+      ]
+    },
+    "dungeon_unclosed_office": {
+      "Receiving room": [
+        "registration",
+        "bench",
+        "files"
+      ],
+      "Filing gallery": [
+        "files",
+        "files",
+        "files",
+        "registration"
+      ],
+      "Approval office": [
+        "approval",
+        "files",
+        "bench"
+      ],
+      "Assembly hall": [
+        "assembly",
+        "bench",
+        "bench",
+        "files"
+      ]
+    }
+  }
+}

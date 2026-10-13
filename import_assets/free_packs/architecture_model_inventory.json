@@ -1,0 +1,3786 @@
+[
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_archeryrange_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_barracks_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_blacksmith_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_castle_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_church_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_home_A_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_home_B_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_lumbermill_blue.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_market_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_mine_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tavern_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_A_blue.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_B_blue.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_base_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_catapult_blue.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_watermill_blue.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_well_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_windmill_blue.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_archeryrange_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_barracks_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_blacksmith_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_castle_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_church_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_home_A_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_home_B_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_lumbermill_green.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_market_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_mine_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_tavern_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_tower_A_green.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_tower_B_green.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_tower_base_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_tower_catapult_green.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_watermill_green.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_well_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/green/building_windmill_green.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_bridge_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_bridge_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_destroyed.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_dirt.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_grain.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_scaffolding.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_stage_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_stage_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_stage_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/fence_stone_straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/fence_stone_straight_gate.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/fence_wood_straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/fence_wood_straight_gate.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/projectile_catapult.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_corner_A_gate.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_corner_A_inside.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_corner_A_outside.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_corner_B_inside.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_corner_B_outside.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/wall_straight_gate.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_archeryrange_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_barracks_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_blacksmith_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_castle_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_church_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_home_A_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_home_B_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_lumbermill_red.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_market_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_mine_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_tavern_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_tower_A_red.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_tower_B_red.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_tower_base_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_tower_catapult_red.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_watermill_red.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_well_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_windmill_red.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_archeryrange_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_barracks_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_blacksmith_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_castle_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_church_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_home_A_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_home_B_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_lumbermill_yellow.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_market_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_mine_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_tavern_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_tower_A_yellow.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_tower_B_yellow.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_tower_base_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_tower_catapult_yellow.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_watermill_yellow.gltf",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_well_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/yellow/building_windmill_yellow.gltf",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/cloud_big.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/cloud_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hill_single_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hill_single_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hill_single_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_A_trees.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_B_trees.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_C_trees.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_A_grass.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_A_grass_trees.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_B_grass.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_B_grass_trees.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_C_grass.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_C_grass_trees.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_D.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_E.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/tree_single_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/tree_single_A_cut.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/tree_single_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/tree_single_B_cut.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_cut.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_large.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_medium.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_B_cut.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_B_large.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_B_medium.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_B_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/waterlily_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/waterlily_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/waterplant_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/waterplant_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/waterplant_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/barrel.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/bucket_arrows.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/bucket_empty.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/bucket_water.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_A_big.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_A_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_B_big.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_B_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_long_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_long_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_long_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_long_empty.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_open.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/flag_blue.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/flag_green.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/flag_red.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/flag_yellow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/ladder.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/pallet.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/resource_lumber.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/resource_stone.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/sack.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/target.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/tent.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/weaponrack.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/wheelbarrow.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hex_grass.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hex_grass_bottom.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hex_grass_sloped_high.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hex_grass_sloped_low.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hex_water.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/hex_coast_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/hex_coast_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/hex_coast_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/hex_coast_D.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/hex_coast_E.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/waterless/hex_coast_A_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/waterless/hex_coast_B_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/waterless/hex_coast_C_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/waterless/hex_coast_D_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/coast/waterless/hex_coast_E_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_A_curvy.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_D.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_E.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_F.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_G.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_H.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_I.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_J.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_K.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_crossing_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_crossing_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_A_curvy_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_A_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_B_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_C_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_D_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_E_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_F_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_G_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_H_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_I_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_J_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_K_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_L_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_crossing_A_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/waterless/hex_river_crossing_B_waterless.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_A_sloped_high.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_A_sloped_low.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_D.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_E.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_F.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_G.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_H.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_I.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_J.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_K.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_M.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/bridge-draw.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/bridge-straight-pillar.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/bridge-straight.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/door.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/flag-banner-long.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/flag-banner-short.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/flag-pennant.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/flag-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/flag.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/gate.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/ground-hills.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/ground.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/metal-gate.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/rocks-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/rocks-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-ballista-demolished.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-ballista.glb",
+    "meshes": 4,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-catapult-demolished.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-catapult.glb",
+    "meshes": 6,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-ram-demolished.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-ram.glb",
+    "meshes": 8,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-tower-demolished.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-tower.glb",
+    "meshes": 5,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-trebuchet-demolished.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/siege-trebuchet.glb",
+    "meshes": 10,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/stairs-stone-square.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/stairs-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-base.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-base.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-mid.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-roof-secondary.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-roof.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-top-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-slant-roof.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-arch.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-base-border.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-base-color.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-base.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-color.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-door.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-open-simple.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-open.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-windows.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-mid.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-roof.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-top-color.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-top-roof-high-windows.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-top-roof-high.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-top-roof-rounded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-top-roof.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-square.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tower-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tree-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tree-log.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tree-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/tree-trunk.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-corner-half-tower.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-corner-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-corner-slant.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-doorway.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-half-modular.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow-gate.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow-stairs-rail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow-stairs.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow-wood-fence.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-narrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-pillar.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-stud.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall-to-narrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_castle_kit/content/Models/GLB format/wall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Balcony_Cross_Corner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Balcony_Cross_Straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Balcony_Simple_Corner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Balcony_Simple_Straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_ExteriorWide_Brick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_ExteriorWide_Wood.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_Exterior_Brick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_Exterior_TopDown.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_Exterior_TopOnly.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_Exterior_Wood.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_Interior_Big.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Corner_Interior_Small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/DoorFrame_Flat_Brick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/DoorFrame_Flat_WoodDark.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/DoorFrame_Round_Brick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/DoorFrame_Round_WoodDark.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_1_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_2_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_2_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_4_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_4_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_8_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Door_8_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_Brick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_RedBrick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_UnevenBrick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodDark_Half1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodDark_Half2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodDark_Half3.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodDark_OverhangCorner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodDark_OverhangCorner2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodLight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodLight_OverhangCorner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Floor_WoodLight_OverhangCorner2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/HoleCover_90Angle.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/HoleCover_90Half.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/HoleCover_90Stairs.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/HoleCover_Straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/HoleCover_StraightHalf.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Plaster_Corner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Plaster_Corner_Front.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Plaster_Long.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Plaster_Short.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_RoofIncline_Plaster.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_RoofIncline_UnevenBricks.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Roof_Plaster.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Roof_UnevenBricks.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_Plaster_Long_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_Plaster_Long_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_Plaster_Short_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_Plaster_Short_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_UnevenBrick_Long_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_UnevenBrick_Long_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_UnevenBrick_Short_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_Side_UnevenBrick_Short_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_UnevenBrick_Corner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_UnevenBrick_Corner_Front.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_UnevenBrick_Long.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Overhang_UnevenBrick_Short.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Brick1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Brick2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Brick3.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Brick4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Chimney.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Chimney2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Crate.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_ExteriorBorder_Corner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_ExteriorBorder_Straight1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_ExteriorBorder_Straight2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_MetalFence_Ornament.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_MetalFence_Simple.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Support.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Vine1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Vine2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Vine4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Vine5.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Vine6.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Vine9.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_Wagon.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_WoodenFence_Extension1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_WoodenFence_Extension2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Prop_WoodenFence_Single.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_2x4_RoundTile.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Dormer_RoundTile.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_FrontSupports.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick4_Half_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick4_Half_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick6.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick6_Half_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick6_Half_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick8.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick8_Half_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Front_Brick8_Half_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Log.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Modular_RoundTiles.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTile_2x1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTile_2x1_Long.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x6.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x8.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_6x10.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_6x12.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_6x14.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_6x4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_6x6.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_6x8.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_8x10.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_8x12.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_8x14.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_RoundTiles_8x8.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Support2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Tower_RoundTiles.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1_Center.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1_Center_Mirror.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1_Corner.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1_Middle.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Roof_Wooden_2x1_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stair_Interior_Rails.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stair_Interior_Simple.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stair_Interior_Solid.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stair_Interior_SolidExtended.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_NoFirstStep.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Platform.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Platform45.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Platform45Clean.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_PlatformU.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_SidePlatform.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Sides.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Sides45.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_SidesU.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_SingleSide.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_SingleSideThick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Straight_Center.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Straight_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Stairs_Exterior_Straight_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Arch.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_BottomCover.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Door_RoundInset.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Straight_Base.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Straight_L.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Straight_R.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Window_Thin_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Window_Wide_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Window_Wide_Flat2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_Window_Wide_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_Plaster_WoodGrid.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_UnevenBrick_Door_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_UnevenBrick_Door_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_UnevenBrick_Straight.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_UnevenBrick_Window_Thin_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_UnevenBrick_Window_Wide_Flat.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Wall_UnevenBrick_Window_Wide_Round.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Thin_Flat_Closed.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Thin_Flat_Open.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Thin_Round_Closed.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Thin_Round_Open.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Wide_Flat_Closed.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Wide_Flat_Open.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Wide_Round_Closed.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/WindowShutters_Wide_Round_Open.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Window_Roof_Thin.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Window_Roof_Wide.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Window_Thin_Flat1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Window_Thin_Round1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Window_Wide_Flat1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_medieval_village/glTF/Window_Wide_Round1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  }
+]

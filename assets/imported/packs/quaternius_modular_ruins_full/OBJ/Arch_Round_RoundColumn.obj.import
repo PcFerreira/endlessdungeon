@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://oe6ifkxq23ro"
+path="res://.godot/imported/Arch_Round_RoundColumn.obj-ad5be6b413f2fbf61207b5fcb41e1aac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Arch_Round_RoundColumn.obj-ad5be6b413f2fbf61207b5fcb41e1aac.mesh"]
+
+source_file="res://assets/imported/packs/quaternius_modular_ruins_full/OBJ/Arch_Round_RoundColumn.obj"
+dest_files=["res://.godot/imported/Arch_Round_RoundColumn.obj-ad5be6b413f2fbf61207b5fcb41e1aac.mesh", "res://.godot/imported/Arch_Round_RoundColumn.obj-ad5be6b413f2fbf61207b5fcb41e1aac.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

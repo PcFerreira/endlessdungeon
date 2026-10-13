@@ -1,0 +1,26 @@
+{
+  "id": "bundle_voxel_loot",
+  "title": "Voxel Loot / game-ready conversions",
+  "author": "AV Reference / Rob Mooci",
+  "source": "https://opengameart.org/content/voxel-loot",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/voxel_loot_avr.blend",
+      "filename": "voxel_loot_avr.blend",
+      "bytes": 1455592,
+      "sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "archive_crc_checked": false
+    }
+  ],
+  "style": "Voxel 3D source",
+  "categories": [
+    "Loot",
+    "items"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Voxel Loot by AV Reference / Rob Mooci. Source: https://opengameart.org/content/voxel-loot. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Derived GLB exports. Original file and per-object identities and hashes are retained in CONVERSIONS.json."
+}

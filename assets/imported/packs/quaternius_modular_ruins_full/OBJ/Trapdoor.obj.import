@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tshlnf4153tu"
+path="res://.godot/imported/Trapdoor.obj-e532b6893c9c86770189f3bae1721ca1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Trapdoor.obj-e532b6893c9c86770189f3bae1721ca1.mesh"]
+
+source_file="res://assets/imported/packs/quaternius_modular_ruins_full/OBJ/Trapdoor.obj"
+dest_files=["res://.godot/imported/Trapdoor.obj-e532b6893c9c86770189f3bae1721ca1.mesh", "res://.godot/imported/Trapdoor.obj-e532b6893c9c86770189f3bae1721ca1.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

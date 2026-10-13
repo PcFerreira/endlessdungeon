@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjal8sowlxdtp"
+path="res://.godot/imported/Prop_Rug_Corner_Inner.obj-1f1d554b221799fdc538d03149d4e637.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Rug_Corner_Inner.obj-1f1d554b221799fdc538d03149d4e637.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Prop_Rug_Corner_Inner.obj"
+dest_files=["res://.godot/imported/Prop_Rug_Corner_Inner.obj-1f1d554b221799fdc538d03149d4e637.mesh", "res://.godot/imported/Prop_Rug_Corner_Inner.obj-1f1d554b221799fdc538d03149d4e637.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

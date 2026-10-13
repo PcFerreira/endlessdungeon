@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "height": 1.15,
+  "skins": ["f1d1b0", "dcb38e", "bc8862", "956447", "704a39", "4c332b"],
+  "hair_colors": ["302720", "60432e", "9a6940", "c9a461", "bc633c", "c5c0b1", "ece3ce", "563f65"],
+  "builds": {
+    "slender": {"width": 7, "head": 7},
+    "regular": {"width": 8, "head": 8},
+    "broad": {"width": 10, "head": 8}
+  },
+  "palettes": {
+    "river": {"cloth":"507c81", "trim":"d8c294", "pants":"445361", "leather":"80593e", "metal":"a5bac0"},
+    "moss": {"cloth":"657849", "trim":"d9be7b", "pants":"4b5243", "leather":"70503b", "metal":"a2aaa1"},
+    "plum": {"cloth":"7c638d", "trim":"dec899", "pants":"49435c", "leather":"6e4c46", "metal":"b6b4ce"},
+    "ink": {"cloth":"435a78", "trim":"b6d5db", "pants":"393f54", "leather":"69504d", "metal":"b6c7d8"},
+    "rust": {"cloth":"a46746", "trim":"edce91", "pants":"63574b", "leather":"754830", "metal":"aaa59a"},
+    "slate": {"cloth":"69787a", "trim":"dec79c", "pants":"414b53", "leather":"7f5d41", "metal":"c0c9c9"},
+    "orchard": {"cloth":"758957", "trim":"dfe2aa", "pants":"4a594a", "leather":"876443", "metal":"a6b6a5"},
+    "rose": {"cloth":"aa7174", "trim":"ecd8af", "pants":"64545d", "leather":"7d5549", "metal":"c9b6b6"}
+  },
+  "biomes": {"0":["river","moss"], "1":["plum","ink"], "2":["rust","slate"], "3":["orchard","rose"]},
+  "hair": {
+    "bald": [],
+    "short": [
+      {"bone":"Head", "point":[0,8,0], "size":[8,2,8], "color":"hair"},
+      {"bone":"Head", "point":[0,5.5,-3.5], "size":[8,5,1], "color":"hair"}
+    ],
+    "swept": [
+      {"bone":"Head", "point":[0,8,0], "size":[8,2,8], "color":"hair"},
+      {"bone":"Head", "point":[-2,7,3.5], "size":[4,2,1], "color":"hair"},
+      {"bone":"Head", "point":[0,6,-3.5], "size":[8,4,1], "color":"hair"}
+    ],
+    "bob": [
+      {"bone":"Head", "point":[0,8,0], "size":[8,2,8], "color":"hair"},
+      {"bone":"Head", "point":[0,4.5,-3.5], "size":[8,7,1], "color":"hair"},
+      {"bone":"Head", "point":[-4,5,0], "size":[1,6,7], "color":"hair"},
+      {"bone":"Head", "point":[4,5,0], "size":[1,6,7], "color":"hair"}
+    ],
+    "braid": [
+      {"bone":"Head", "point":[0,8,0], "size":[8,2,8], "color":"hair"},
+      {"bone":"Head", "point":[0,5,-3.5], "size":[8,6,1], "color":"hair"},
+      {"bone":"Head", "point":[0,0,-4], "size":[3,6,2], "color":"hair"},
+      {"bone":"Head", "point":[0,-2.5,-4], "size":[3,1,2], "color":"trim"}
+    ],
+    "crest": [
+      {"bone":"Head", "point":[0,8,0], "size":[8,2,8], "color":"hair"},
+      {"bone":"Head", "point":[0,9.5,-0.5], "size":[3,1,6], "color":"hair"}
+    ]
+  },
+  "beards": {
+    "none": [],
+    "stubble": [{"bone":"Head", "point":[0,1,3.5], "size":[5,1,1], "color":"hair"}],
+    "full": [
+      {"bone":"Head", "point":[0,0.5,3.5], "size":[6,3,1], "color":"hair"},
+      {"bone":"Head", "point":[0,-1,3.5], "size":[4,1,1], "color":"hair"}
+    ]
+  },
+  "outfits": {
+    "tunic": [{"bone":"Torso", "point":[0,6,2.75], "size":[1,5,0.5], "color":"trim"}],
+    "coat": [
+      {"bone":"Torso", "point":[0,1,-3], "size":[9,8,1], "color":"cloth"},
+      {"bone":"Torso", "point":[-2,6,2.75], "size":[1,4,0.5], "color":"trim"},
+      {"bone":"Torso", "point":[2,6,2.75], "size":[1,4,0.5], "color":"trim"}
+    ],
+    "apron": [
+      {"bone":"Torso", "point":[0,2.5,3], "size":[6,10,1], "color":"leather"},
+      {"bone":"Torso", "point":[0,7.5,3], "size":[4,1,1], "color":"trim"},
+      {"bone":"Torso", "point":[0,1,3.75], "size":[3,2,0.5], "color":"trim"}
+    ],
+    "robe": [
+      {"bone":"Torso", "point":[0,-1,0], "size":[9,8,6], "color":"cloth"},
+      {"bone":"Torso", "point":[0,2,3.25], "size":[1,13,0.5], "color":"trim"}
+    ],
+    "mail": [
+      {"bone":"Torso", "point":[0,4.5,3], "size":[7,8,1], "color":"metal"},
+      {"bone":"LeftArm", "point":[0,-1,0], "size":[4,3,5], "color":"metal"},
+      {"bone":"RightArm", "point":[0,-1,0], "size":[4,3,5], "color":"metal"},
+      {"bone":"Torso", "point":[0,4.5,3.75], "size":[2,3,0.5], "color":"trim"}
+    ]
+  },
+  "hats": {
+    "none": [],
+    "cap": [
+      {"bone":"Head", "point":[0,9,0], "size":[9,2,8], "color":"cloth"},
+      {"bone":"Head", "point":[0,8,4], "size":[9,1,3], "color":"trim"}
+    ],
+    "brim": [
+      {"bone":"Head", "point":[0,8.5,0], "size":[12,1,11], "color":"leather"},
+      {"bone":"Head", "point":[0,10.5,0], "size":[7,3,7], "color":"leather"},
+      {"bone":"Head", "point":[0,9.5,0], "size":[8,1,8], "color":"trim"}
+    ],
+    "hood": [
+      {"bone":"Head", "point":[0,8.5,0], "size":[10,1,9], "color":"cloth"},
+      {"bone":"Head", "point":[-4.5,4.5,-0.5], "size":[1,7,8], "color":"cloth"},
+      {"bone":"Head", "point":[4.5,4.5,-0.5], "size":[1,7,8], "color":"cloth"},
+      {"bone":"Head", "point":[0,4.5,-4], "size":[9,7,1], "color":"cloth"}
+    ],
+    "helm": [
+      {"bone":"Head", "point":[0,8.5,0], "size":[9,1,8], "color":"metal"},
+      {"bone":"Head", "point":[-4,5,0], "size":[1,6,8], "color":"metal"},
+      {"bone":"Head", "point":[4,5,0], "size":[1,6,8], "color":"metal"},
+      {"bone":"Head", "point":[0,7,4], "size":[9,1,1], "color":"trim"}
+    ],
+    "wizard": [
+      {"bone":"Head", "point":[0,8.5,0], "size":[12,1,11], "color":"cloth"},
+      {"bone":"Head", "point":[0,10.5,0], "size":[7,3,7], "color":"cloth"},
+      {"bone":"Head", "point":[0,13,0], "size":[5,2,5], "color":"cloth"},
+      {"bone":"Head", "point":[0,14.5,0], "size":[3,1,3], "color":"trim"}
+    ]
+  },
+  "accessories": {
+    "none": [],
+    "keys": [
+      {"bone":"Torso", "point":[4,0.5,3], "size":[1,1,1], "color":"trim"},
+      {"bone":"Torso", "point":[4,-1,3], "size":[1,2,1], "color":"metal"}
+    ],
+    "satchel": [
+      {"bone":"Torso", "point":[-5,1,0], "size":[3,5,5], "color":"leather"},
+      {"bone":"Torso", "point":[-5,3.5,0], "size":[3,1,5], "color":"trim"}
+    ],
+    "book": [
+      {"bone":"LeftArm", "point":[0,-7,2], "size":[4,5,1], "color":"cloth"},
+      {"bone":"LeftArm", "point":[0,-7,2.75], "size":[3,4,0.5], "color":"paper"},
+      {"bone":"LeftArm", "point":[0,-7,3.25], "size":[1,3,0.5], "color":"trim"}
+    ],
+    "pack": [
+      {"bone":"Torso", "point":[0,3,-4], "size":[7,8,3], "color":"leather"},
+      {"bone":"Torso", "point":[0,7,-4], "size":[8,2,4], "color":"trim"},
+      {"bone":"Torso", "point":[0,2,-5.75], "size":[3,3,0.5], "color":"cloth"}
+    ],
+    "blade": [
+      {"bone":"RightArm", "point":[0,-7,3], "size":[1,2,1], "color":"leather"},
+      {"bone":"RightArm", "point":[0,-5.5,3], "size":[4,1,1], "color":"trim"},
+      {"bone":"RightArm", "point":[0,-1,3], "size":[1,8,1], "color":"metal"}
+    ],
+    "staff": [
+      {"bone":"RightArm", "point":[0,-3,3], "size":[1,18,1], "color":"leather"},
+      {"bone":"RightArm", "point":[0,7,3], "size":[3,2,3], "color":"trim"},
+      {"bone":"RightArm", "point":[0,9,3], "size":[2,2,2], "color":"cloth"}
+    ]
+  },
+  "roles": {
+    "fountain_keeper": {"outfits":["tunic","coat"], "hats":["cap","brim","none"], "accessories":["keys"]},
+    "milewarden": {"outfits":["mail"], "hats":["helm","none"], "accessories":["blade"]},
+    "relic_mender": {"outfits":["robe","apron"], "hats":["hood","wizard","none"], "accessories":["book","staff"]},
+    "retired_delver": {"outfits":["coat","tunic"], "hats":["brim","cap","none"], "accessories":["pack"]},
+    "guard": {"outfits":["mail"], "hats":["helm"], "accessories":["blade"]},
+    "merchant": {"outfits":["apron","coat"], "hats":["brim","cap"], "accessories":["satchel","pack"]},
+    "pilgrim": {"outfits":["robe","coat"], "hats":["hood","none"], "accessories":["staff","satchel"]},
+    "courier": {"outfits":["tunic","coat"], "hats":["cap","none"], "accessories":["satchel"]},
+    "villager": {"outfits":["tunic","coat"], "hats":["none","cap"], "accessories":["none"]},
+    "scholar": {"outfits":["robe","coat"], "hats":["cap","hood","none"], "accessories":["book"]},
+    "hunter": {"outfits":["coat","tunic"], "hats":["brim","hood","none"], "accessories":["pack","blade"]}
+  }
+}

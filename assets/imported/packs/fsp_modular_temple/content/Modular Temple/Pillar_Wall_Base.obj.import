@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jnssenjvuh50"
+path="res://.godot/imported/Pillar_Wall_Base.obj-396ec9b8fa6ecb893efc663b56182fca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pillar_Wall_Base.obj-396ec9b8fa6ecb893efc663b56182fca.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Pillar_Wall_Base.obj"
+dest_files=["res://.godot/imported/Pillar_Wall_Base.obj-396ec9b8fa6ecb893efc663b56182fca.mesh", "res://.godot/imported/Pillar_Wall_Base.obj-396ec9b8fa6ecb893efc663b56182fca.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

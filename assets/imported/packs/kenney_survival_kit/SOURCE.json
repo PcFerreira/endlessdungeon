@@ -1,0 +1,28 @@
+{
+  "id": "kenney_survival_kit",
+  "title": "Kenney Survival Kit",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/survival-kit",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/survival-kit/4065a8185b-1712149243/kenney_survival-kit.zip",
+      "filename": "kenney_survival-kit.zip",
+      "bytes": 1948174,
+      "sha256": "c3586341b5932c87eb43d75d915434f47daed168b17ed36a03e8ca9977c7443e",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Camping",
+    "Travel",
+    "Tools",
+    "Workshops"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney Survival Kit by Kenney. Source: https://kenney.nl/assets/survival-kit. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

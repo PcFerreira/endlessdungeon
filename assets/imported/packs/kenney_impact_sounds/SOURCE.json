@@ -1,0 +1,26 @@
+{
+  "id": "kenney_impact_sounds",
+  "title": "Kenney Impact Sounds",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "filename": "kenney_impact-sounds.zip",
+      "bytes": 800850,
+      "sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Audio",
+  "categories": [
+    "Combat",
+    "impacts"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney Impact Sounds by Kenney. Source: https://kenney.nl/assets/impact-sounds. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

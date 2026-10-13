@@ -1,0 +1,45 @@
+{
+  "id": "quest_borrowed_light",
+  "kind": "local_quest",
+  "version": 2,
+  "title": "Whose Light Remains",
+  "author": "The local archive of {city_name}",
+  "text": "You're a Milewarden, aren't you? Perhaps you can settle an argument. We pass a lamp from house to house, but the inscription in {dungeon_name} may tell a different story. Read our ledger before you go, then bring me the words you find there.",
+  "history_motifs": [
+    "borrowed-light"
+  ],
+  "giver_roles": [
+    "fountain_keeper"
+  ],
+  "requires": [
+    "compare_inscription"
+  ],
+  "target": {
+    "kind": "ruin_archive",
+    "label": "Archive inscription"
+  },
+  "ledger_prompt": "Copy the lamp account from the town book in {city_name} before setting out.",
+  "inscription": "The keeper who tends this lamp owns it. After the keeper departs, the lamp passes to the next keeper as their own property.",
+  "choices": [
+    {
+      "id": "same",
+      "label": "The two customs agree."
+    },
+    {
+      "id": "different",
+      "label": "The customs differ."
+    }
+  ],
+  "answer": "different",
+  "finding": "Here the lamp is borrowed. There it belongs to whoever tends it. The two places kept different customs.",
+  "completion": "So they called it their own. My grandmother would have had words with them. I'll keep your copy beside ours. Let the next reader see both.",
+  "reward": {
+    "item": "rune_lantern",
+    "quantity": 1
+  },
+  "tags": [
+    "local-quest",
+    "original",
+    "exploration"
+  ]
+}

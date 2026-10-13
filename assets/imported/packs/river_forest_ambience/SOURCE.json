@@ -1,0 +1,104 @@
+{
+  "id": "river_forest_ambience",
+  "title": "Ambient Mountain, River, Wind, Forest and Waterfall",
+  "author": "Blender Foundation; submitted by Lamoot",
+  "source": "https://opengameart.org/content/ambient-mountain-river-wind-and-forest-and-waterfall",
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/ambient_mountains_forest_river_waterfall_wind.7z",
+      "filename": "ambient_mountains_forest_river_waterfall_wind.7z",
+      "bytes": 3982631,
+      "sha256": "4c5d5b57eeb14a8e053f18e17b3392f2c53c226acbf2a79cce6d843b3ebed401",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": true
+    }
+  ],
+  "derived_files": [
+    {
+      "source": "content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_forest.flac",
+      "source_sha256": "8af3318e24feb41025dc7705e28fe460276291b5790249df4c7d7e872965ca5c",
+      "output": "godot_wav/amb_forest.wav",
+      "output_sha256": "6c5502008f6610908b396936c3a906cb7f986e319ab3ca850b740521d3b34277",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "253764b82e5de64cf774de2e5e79e07d849bb6cddca11130af8cb75c19345f07",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_mountains.flac",
+      "source_sha256": "03d1c556599bf772737aadb4574287b8245ad1d2ebeb50c2c72d1cc3f8e93c43",
+      "output": "godot_wav/amb_mountains.wav",
+      "output_sha256": "835070dfe8c1ce39e333bc07df0b25355f899546fe54343e78a7005f0931d019",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 2,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "b44fc96d37d4b4b3d5c1ac518805595aa69c9e43524138669ce2e0a87fd39100",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_river.flac",
+      "source_sha256": "1816383c2b65a5c2babc2ff9a7a19ed26a2c9ca8664018954f3d42d481c79b1f",
+      "output": "godot_wav/amb_river.wav",
+      "output_sha256": "e555cb264063bad0c1999d818c2999aeaa67e17aec655cee0f1a197939ee5c0a",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "409c74702822cb7ed224dbb169d22a076aefb723170607a6c6e8f792072a93d4",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_stream.flac",
+      "source_sha256": "e613a45a04b80c6336bf5354dacafb3c707a9d163ce939eb742fd8372d25b1ca",
+      "output": "godot_wav/amb_stream.wav",
+      "output_sha256": "d510fb82d083c663e3bb265150c529d0245a567d1cff968ad90a5ea5c880505c",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 2,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "8ecf91fd063c134a6b8a58ada951ccffb4592fe10af664ac601d6aafffd538f3",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_waterfall.flac",
+      "source_sha256": "d49f69374270b43ff45eb49b057bc65f70c8b8964ed7794aa67bf7b8caffcd40",
+      "output": "godot_wav/amb_waterfall.wav",
+      "output_sha256": "dee0159950bd463dadaf3d73909296d2c2b298d351b0b287b532d0b75a18cc5d",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 2,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "e670082bc1b3de4998cf62797995e15ac30b4bc4707ce8110a343bb9d9c3488b",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_wind_1.flac",
+      "source_sha256": "83ebb7da229da833594d655a63515ccb565a747aeb302e710df1184430aad81a",
+      "output": "godot_wav/amb_wind_1.wav",
+      "output_sha256": "cae17f3d56c0da668efd1e0d7664db5dea1a23c49ec9f2318531d264c6770128",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "b9d10083a25bce091b25390bfde398a5ed9ffdc9b4ec9d8d6c81f430a1c4342c",
+      "decoded_pcm_equivalent": true
+    }
+  ],
+  "style": "Audio",
+  "categories": [
+    "Rivers",
+    "Streams",
+    "Waterfalls",
+    "Forests",
+    "Mountains"
+  ],
+  "attribution_required": true,
+  "attribution_text": "Ambient Mountain, River, Wind, Forest and Waterfall by Blender Foundation; submitted by Lamoot. Source: https://opengameart.org/content/ambient-mountain-river-wind-and-forest-and-waterfall. License: CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

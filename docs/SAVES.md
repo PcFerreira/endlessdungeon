@@ -1,6 +1,6 @@
 # Saves and menus
 
-The main menu offers Continue, New Game, Load Game, Options, Credits, and Quit. Continue resumes the current in-memory journey or loads the newest valid save after a launch. New Game opens class selection. Beginning a new journey replaces the autosave; manual slots stay available.
+The main menu offers Continue, New Game, Load Game, Options, Credits, and Quit. Continue resumes the current in-memory journey or loads the newest valid save after a launch. New Game opens class selection. Beginning a new journey replaces the autosave; manual slots stay available after the one-time expansion reset.
 
 Esc pauses after clearing a selected target. The pause menu offers resume, manual save, load, grimoire, options, return to the sanctuary, main menu, and save-and-quit. Inside a dungeon it also offers return to the surface. Return to sanctuary preserves progression and provides a recovery route if the character gets trapped.
 
@@ -16,17 +16,21 @@ Opening the Sanctum Sigil, returning from the pocket home, and resting at its he
 
 Saves include the world seed; character class, skill ranks, unspent points, and action bar; vitality, class resource, cooldowns, guard, and invulnerability; position, jump height and velocity, facing, and movement heading; camera angle and zoom; sanctuary and route marker; current dungeon and floor; defeated and surviving enemies; live enemy health and attack timers; chest claims, visited cities, and discovered dungeon cells; active projectiles and pickups; and the random-number generator state.
 
-Terrain and dungeon geometry regenerate from the seed. Live actors and progression are then restored. If the saved position overlaps an obstacle, loading chooses a nearby open position. Transient cosmetic particles and camera shake are not stored. Audio and fullscreen preferences are separate from journey slots.
+Terrain and dungeon geometry regenerate from the seed. Live actors and progression are then restored. If the saved position overlaps an obstacle, loading chooses a nearby open position. Transient cosmetic particles and camera shake are not stored. Audio, fullscreen and window-resolution preferences are separate from journey slots.
 
-Home saves contain the current sanctum state and a suspended outside journey. The character's build, health/resource, cooldowns, and elapsed play time carry back when leaving home. Existing version-1 saves without the optional home field remain compatible. A return destination cannot itself be another home.
+Home saves contain the current sanctum state and a suspended outside journey. The character's build, appearance, inventory, health/resource, cooldowns, elapsed play time, lore and placed furnishings carry back when leaving home. A return destination cannot itself be another home. Optional `progress.furnishings` holds the home arrangement in every location layer; missing data defaults to an empty home, and invalid item/support/collision records are rejected before replacing live state. Furniture previews are transient, while completed placement, movement and pickup request autosaves. See [SANCTUM.md](SANCTUM.md) for controls and the placement contract.
+
+`progress.lore` stores discovered book IDs, met speaker IDs, heard dialogue lines, and the last actual ruin visited from each town. Dialogue and reader panels pause simulation. Their display state is transient; loading resumes gameplay. A new character starts with an empty journal and fresh conversation history.
+
+Optional `progress.world_items` stores removed source objects, placed items, city claims/refusals, dungeon bases and rest/respawn checkpoints. Optional inventory `stolen` records preserve each city's source ownership through placement and restitution. Loading cross-checks backpack and placed custody against the source ledger before replacing live state. Older journeys default to empty portable/base state and clean inventory. Completed pickup, placement, restitution and base/rest changes request autosaves; placement previews stay transient. These additive fields preserve the generator edition. See [WORLD_ITEMS_BASES.md](WORLD_ITEMS_BASES.md).
 
 ## Storage and recovery
 
-Files live in Godot's application data directory, under `user://saves/slot-0.json` through `slot-3.json`. Slot 0 is the autosave. `user://settings.cfg` stores audio and fullscreen preferences. `user://records.cfg` keeps the deepest-floor record separately.
+Files live in Godot's application data directory, under `user://saves/slot-0.json` through `slot-3.json`. Slot 0 is the autosave. `user://settings.cfg` stores audio, fullscreen and window-resolution preferences. `user://records.cfg` keeps the deepest-floor record separately. See [DISPLAY_VISIBILITY.md](DISPLAY_VISIBILITY.md) for resolution choices and native checks.
 
 Each save has a format version, generator version, and checksum. The writer creates and validates a temporary file before replacing a slot. It retains the preceding valid file as a `.bak` backup. If the primary file is damaged, loading can recover the backup and reports this in the menu. Unsupported or invalid files do not replace the current journey.
 
-`scripts/save_store.gd` handles validation and disk writes. `scripts/journey.gd` captures and restores the game state. A future terrain generator change must update `World.GENERATOR_VERSION` and provide a migration if existing saves are to remain compatible.
+`scripts/save_store.gd` handles validation and disk writes. `scripts/journey.gd` captures and restores the game state. The save envelope remains format 2. New journeys still use generator edition 4 while independent geography is staged as edition 5. The validator accepts both editions, and restoration requests the edition stored in the journey. Home and indoor return journeys must use the same seed and edition as their enclosing save. Edition initialization records the existing `generation-4.reset` marker but preserves all slot, backup and temporary files, including damaged files that may have recoverable backups. Optional component fields do not trigger a reset. Settings and the deepest-floor record are preserved.
 
 ## Checks
 

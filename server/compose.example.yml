@@ -1,0 +1,37 @@
+services:
+  world:
+    platform: linux/amd64
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+      args:
+        GODOT_URL: ${GODOT_URL:-https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip}
+        GODOT_SHA256: ${GODOT_SHA256:-cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4}
+    restart: unless-stopped
+    environment:
+      ALLOWED_ORIGINS: https://${GAME_DOMAIN:?Set the public domain}
+      TRUST_PROXY: "1"
+      MAX_PLAYERS: "32"
+    volumes:
+      - world_data:/data
+    expose:
+      - "8080"
+  web:
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      GAME_DOMAIN: ${GAME_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile.example:/etc/caddy/Caddyfile:ro
+      - ../builds/web:/srv/web:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - world
+volumes:
+  world_data:
+  caddy_data:
+  caddy_config:

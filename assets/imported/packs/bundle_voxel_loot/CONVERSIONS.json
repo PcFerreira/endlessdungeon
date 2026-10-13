@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "book",
+      "name": "book",
+      "runtime_file": "book-92719fe0.glb",
+      "sha256": "c98c12401d242e32002322efeda9c6d706d7a836f861ec97ece2b590152da8ef",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "clock",
+      "name": "clock",
+      "runtime_file": "clock-d8198efa.glb",
+      "sha256": "f25ea42042ca0cb6ce20ec2be1a275dac12826c39b69005950de4962e5e17c24",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "coin",
+      "name": "coin",
+      "runtime_file": "coin-b3a1984b.glb",
+      "sha256": "8b6d422e0f698e87a85e8242d49f3c7764c39bfbe18640ae3260745029542c4d",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "key",
+      "name": "key",
+      "runtime_file": "key-2c70e12b.glb",
+      "sha256": "7e28efbc956c053105810aea792bcf8646abeb663239d88f4f09914c731a48f9",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "paper",
+      "name": "paper",
+      "runtime_file": "paper-382635c9.glb",
+      "sha256": "b785b656a0671cd732fc6fdc4b5d00ae1b4e1763c8d5ae9caa9795f07b121679",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "potion",
+      "name": "potion",
+      "runtime_file": "potion-a6e65fce.glb",
+      "sha256": "bdbd65a29552010e6bf2077bcd21ba0856bc00dca6f1ce6483eb18b7c60e5c0b",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "star",
+      "name": "star",
+      "runtime_file": "star-525eca1d.glb",
+      "sha256": "fe69f2843a5826bbca973eea4b68abb351c900b6ac48c57d9648f66d043bf89c",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/free_packs/voxel_loot/voxel_loot_avr.blend",
+      "source_sha256": "ef2482bdbd32394ba3d5ea780061db7404ae96e37669d0f013a42aab40a3970a",
+      "object": "thunder",
+      "name": "thunder",
+      "runtime_file": "thunder-49eff747.glb",
+      "sha256": "a6df92851cd6331471b95e0670642c4860984e1248247e044997524253e739f5",
+      "converter_version": 4
+    }
+  ]
+}

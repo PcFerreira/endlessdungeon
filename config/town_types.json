@@ -1,0 +1,3016 @@
+{
+  "version": 1,
+  "base_weight": 2,
+  "forms": {
+    "sheaf": [
+      [
+        [
+          -0.22,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.48,
+          0.1
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.6,
+          0.1
+        ],
+        "color"
+      ],
+      [
+        [
+          0.22,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.48,
+          0.1
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          -0.12,
+          0
+        ],
+        [
+          0.6,
+          0.1,
+          0.14
+        ],
+        "accent"
+      ]
+    ],
+    "hammer": [
+      [
+        [
+          0,
+          -0.06,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0.1
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0.23,
+          0
+        ],
+        [
+          0.58,
+          0.2,
+          0.24
+        ],
+        "color"
+      ]
+    ],
+    "lantern": [
+      [
+        [
+          0,
+          -0.24,
+          0
+        ],
+        [
+          0.46,
+          0.1,
+          0.46
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.22,
+          0.32,
+          0.22
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.24,
+          0
+        ],
+        [
+          0.46,
+          0.1,
+          0.46
+        ],
+        "accent"
+      ]
+    ],
+    "pages": [
+      [
+        [
+          -0.16,
+          0,
+          0
+        ],
+        [
+          0.28,
+          0.12,
+          0.48
+        ],
+        "color"
+      ],
+      [
+        [
+          0.16,
+          0.05,
+          0
+        ],
+        [
+          0.28,
+          0.12,
+          0.48
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.12,
+          0
+        ],
+        [
+          0.06,
+          0.25,
+          0.52
+        ],
+        "accent"
+      ]
+    ],
+    "root": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.48,
+          0.12
+        ],
+        "accent"
+      ],
+      [
+        [
+          -0.2,
+          -0.17,
+          0
+        ],
+        [
+          0.4,
+          0.12,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0.2,
+          0.17,
+          0
+        ],
+        [
+          0.4,
+          0.12,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0.2
+        ],
+        [
+          0.12,
+          0.12,
+          0.4
+        ],
+        "color"
+      ]
+    ],
+    "leaf": [
+      [
+        [
+          0,
+          -0.12,
+          0
+        ],
+        [
+          0.08,
+          0.36,
+          0.08
+        ],
+        "accent"
+      ],
+      [
+        [
+          -0.15,
+          0.09,
+          0
+        ],
+        [
+          0.28,
+          0.18,
+          0.16
+        ],
+        "color"
+      ],
+      [
+        [
+          0.15,
+          0.21,
+          0
+        ],
+        [
+          0.28,
+          0.18,
+          0.16
+        ],
+        "color"
+      ]
+    ],
+    "glass": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.24,
+          0.54,
+          0.24
+        ],
+        "color"
+      ],
+      [
+        [
+          -0.22,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.28,
+          0.12
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.22,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.28,
+          0.12
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0,
+          0.22
+        ],
+        [
+          0.12,
+          0.28,
+          0.12
+        ],
+        "accent"
+      ]
+    ],
+    "clock": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.48,
+          0.12,
+          0.48
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.1,
+          0
+        ],
+        [
+          0.06,
+          0.1,
+          0.32
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.12,
+          0.1,
+          0
+        ],
+        [
+          0.24,
+          0.1,
+          0.06
+        ],
+        "accent"
+      ]
+    ],
+    "pilgrim": [
+      [
+        [
+          -0.24,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0.1
+        ],
+        "color"
+      ],
+      [
+        [
+          0.24,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0.1
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.24,
+          0
+        ],
+        [
+          0.58,
+          0.1,
+          0.1
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.2,
+          0.12
+        ],
+        "color"
+      ]
+    ],
+    "fruit": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.42,
+          0.36,
+          0.42
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.25,
+          0
+        ],
+        [
+          0.08,
+          0.18,
+          0.08
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.12,
+          0.28,
+          0
+        ],
+        [
+          0.24,
+          0.08,
+          0.12
+        ],
+        "accent"
+      ]
+    ],
+    "aurora": [
+      [
+        [
+          -0.24,
+          -0.12,
+          0
+        ],
+        [
+          0.14,
+          0.14,
+          0.18
+        ],
+        "color"
+      ],
+      [
+        [
+          -0.12,
+          0.06,
+          0
+        ],
+        [
+          0.14,
+          0.14,
+          0.18
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0.24,
+          0
+        ],
+        [
+          0.14,
+          0.14,
+          0.18
+        ],
+        "color"
+      ],
+      [
+        [
+          0.12,
+          0.06,
+          0
+        ],
+        [
+          0.14,
+          0.14,
+          0.18
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.24,
+          -0.12,
+          0
+        ],
+        [
+          0.14,
+          0.14,
+          0.18
+        ],
+        "color"
+      ]
+    ],
+    "bell": [
+      [
+        [
+          0,
+          0.04,
+          0
+        ],
+        [
+          0.26,
+          0.3,
+          0.26
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          -0.16,
+          0
+        ],
+        [
+          0.48,
+          0.12,
+          0.48
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          -0.24,
+          0
+        ],
+        [
+          0.08,
+          0.08,
+          0.08
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.25,
+          0
+        ],
+        [
+          0.08,
+          0.12,
+          0.08
+        ],
+        "accent"
+      ]
+    ],
+    "paper_fold": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.48,
+          0.08,
+          0.32
+        ],
+        "color"
+      ],
+      [
+        [
+          -0.16,
+          0.12,
+          0
+        ],
+        [
+          0.16,
+          0.16,
+          0.32
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.16,
+          -0.12,
+          0
+        ],
+        [
+          0.16,
+          0.16,
+          0.32
+        ],
+        "accent"
+      ]
+    ],
+    "rain_slats": [
+      [
+        [
+          -0.22,
+          0,
+          0
+        ],
+        [
+          0.08,
+          0.48,
+          0.16
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.08,
+          0.48,
+          0.16
+        ],
+        "color"
+      ],
+      [
+        [
+          0.22,
+          0,
+          0
+        ],
+        [
+          0.08,
+          0.48,
+          0.16
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.2,
+          0
+        ],
+        [
+          0.6,
+          0.08,
+          0.16
+        ],
+        "accent"
+      ]
+    ],
+    "joined_beam": [
+      [
+        [
+          0,
+          -0.14,
+          0
+        ],
+        [
+          0.18,
+          0.22,
+          0.18
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0.08,
+          0.22
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0.12,
+          0
+        ],
+        [
+          0.6,
+          0.08,
+          0.3
+        ],
+        "color"
+      ]
+    ],
+    "tea_bowl": [
+      [
+        [
+          0,
+          -0.2,
+          0
+        ],
+        [
+          0.22,
+          0.08,
+          0.22
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          -0.08,
+          0
+        ],
+        [
+          0.38,
+          0.16,
+          0.38
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.08,
+          0
+        ],
+        [
+          0.5,
+          0.08,
+          0.5
+        ],
+        "color"
+      ]
+    ],
+    "warm_stone": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.42,
+          0.18,
+          0.42
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.2,
+          0
+        ],
+        [
+          0.24,
+          0.1,
+          0.24
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0.32,
+          0
+        ],
+        [
+          0.12,
+          0.08,
+          0.12
+        ],
+        "accent"
+      ]
+    ],
+    "moon_jar": [
+      [
+        [
+          0,
+          -0.2,
+          0
+        ],
+        [
+          0.24,
+          0.08,
+          0.24
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.5,
+          0.32,
+          0.5
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.22,
+          0
+        ],
+        [
+          0.28,
+          0.1,
+          0.28
+        ],
+        "color"
+      ]
+    ],
+    "pumpkin": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.5,
+          0.38,
+          0.44
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.26,
+          0
+        ],
+        [
+          0.08,
+          0.16,
+          0.08
+        ],
+        "accent"
+      ],
+      [
+        [
+          -0.12,
+          0.06,
+          0.23
+        ],
+        [
+          0.06,
+          0.06,
+          0.035
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.12,
+          0.06,
+          0.23
+        ],
+        [
+          0.06,
+          0.06,
+          0.035
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          -0.08,
+          0.23
+        ],
+        [
+          0.22,
+          0.05,
+          0.035
+        ],
+        "accent"
+      ]
+    ],
+    "candle": [
+      [
+        [
+          0,
+          -0.08,
+          0
+        ],
+        [
+          0.22,
+          0.36,
+          0.22
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.21,
+          0
+        ],
+        [
+          0.12,
+          0.18,
+          0.12
+        ],
+        "accent"
+      ]
+    ],
+    "fir": [
+      [
+        [
+          0,
+          -0.16,
+          0
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          -0.05,
+          0
+        ],
+        [
+          0.56,
+          0.12,
+          0.38
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.09,
+          0
+        ],
+        [
+          0.4,
+          0.12,
+          0.28
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.23,
+          0
+        ],
+        [
+          0.2,
+          0.12,
+          0.14
+        ],
+        "color"
+      ]
+    ],
+    "gift": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.42,
+          0.38,
+          0.42
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0.22
+        ],
+        [
+          0.08,
+          0.38,
+          0.035
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0.2,
+          0
+        ],
+        [
+          0.46,
+          0.05,
+          0.08
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0.2,
+          0
+        ],
+        [
+          0.08,
+          0.05,
+          0.46
+        ],
+        "accent"
+      ]
+    ],
+    "relay": [
+      [
+        [
+          0,
+          -0.18,
+          0
+        ],
+        [
+          0.34,
+          0.08,
+          0.24
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.08,
+          0.3,
+          0.08
+        ],
+        "accent"
+      ],
+      [
+        [
+          -0.2,
+          0.16,
+          0
+        ],
+        [
+          0.08,
+          0.24,
+          0.08
+        ],
+        "color"
+      ],
+      [
+        [
+          0.2,
+          0.16,
+          0
+        ],
+        [
+          0.08,
+          0.24,
+          0.08
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.24,
+          0
+        ],
+        [
+          0.48,
+          0.06,
+          0.08
+        ],
+        "accent"
+      ]
+    ],
+    "circuit": [
+      [
+        [
+          -0.22,
+          0,
+          0
+        ],
+        [
+          0.06,
+          0.44,
+          0.06
+        ],
+        "color"
+      ],
+      [
+        [
+          0.22,
+          0,
+          0
+        ],
+        [
+          0.06,
+          0.44,
+          0.06
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.19,
+          0
+        ],
+        [
+          0.44,
+          0.06,
+          0.06
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          -0.19,
+          0
+        ],
+        [
+          0.44,
+          0.06,
+          0.06
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.12,
+          0.12
+        ],
+        "color"
+      ]
+    ],
+    "spell_star": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.58,
+          0.12
+        ],
+        "accent"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.58,
+          0.12,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.12,
+          0.58
+        ],
+        "color"
+      ]
+    ],
+    "observatory": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.18,
+          0.18,
+          0.18
+        ],
+        "accent"
+      ],
+      [
+        [
+          -0.25,
+          0,
+          0
+        ],
+        [
+          0.08,
+          0.36,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0.25,
+          0,
+          0
+        ],
+        [
+          0.08,
+          0.36,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.2,
+          0
+        ],
+        [
+          0.48,
+          0.08,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          -0.2,
+          0
+        ],
+        [
+          0.48,
+          0.08,
+          0.12
+        ],
+        "color"
+      ]
+    ],
+    "dewbell": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.16,
+          0.4,
+          0.16
+        ],
+        "color"
+      ],
+      [
+        [
+          -0.18,
+          0.12,
+          0
+        ],
+        [
+          0.2,
+          0.1,
+          0.16
+        ],
+        "accent"
+      ],
+      [
+        [
+          0.18,
+          0.12,
+          0
+        ],
+        [
+          0.2,
+          0.1,
+          0.16
+        ],
+        "accent"
+      ]
+    ],
+    "flower": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0.12,
+          0.14
+        ],
+        "accent"
+      ],
+      [
+        [
+          -0.18,
+          0,
+          0
+        ],
+        [
+          0.22,
+          0.16,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0.18,
+          0,
+          0
+        ],
+        [
+          0.22,
+          0.16,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          0.18,
+          0
+        ],
+        [
+          0.16,
+          0.22,
+          0.12
+        ],
+        "color"
+      ],
+      [
+        [
+          0,
+          -0.18,
+          0
+        ],
+        [
+          0.16,
+          0.22,
+          0.12
+        ],
+        "color"
+      ]
+    ]
+  },
+  "types": {
+    "city_grain": {
+      "name": "Grain Commons",
+      "base": "city_crossroads",
+      "biomes": [
+        0,
+        1
+      ],
+      "weight": 2,
+      "trade": "grain, bread and road provisions",
+      "signature_use": "bakery",
+      "architecture": {
+        "wall_color": "c6b38b",
+        "roof_colors": [
+          "9c7744",
+          "b68f52"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Millers Lane",
+        "Bread Row",
+        "Seed End",
+        "Carter Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "general_store",
+          "bakery"
+        ],
+        [
+          "farmhouse",
+          "home"
+        ],
+        [
+          "home",
+          "outfitter"
+        ]
+      ],
+      "market": "Bread and Seed Market",
+      "farm": {
+        "name": "Common Grain Beds",
+        "color": "d7b755",
+        "crop_shape": "grain"
+      },
+      "magic": {
+        "name": "The Shared Sheaf",
+        "form": "sheaf",
+        "color": "e6c76a",
+        "accent": "fff1bb",
+        "account": "A bright sheaf floats over the well. Millers call it the first harvest carried from their lost world.",
+        "custom": "Households keep an arrival cup ready for a traveler who has yet to reach the square."
+      }
+    },
+    "city_quarry": {
+      "name": "Quarry Borough",
+      "base": "city_crossroads",
+      "biomes": [
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "trade": "stone repair and tools",
+      "signature_use": "smithy",
+      "architecture": {
+        "wall_color": "85878b",
+        "roof_colors": [
+          "55616b",
+          "707882"
+        ],
+        "roof_shape": "flat"
+      },
+      "quarters": [
+        "Stonecutters Lane",
+        "Tool Row",
+        "Hearth End",
+        "Masons Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "smithy"
+        ],
+        [
+          "smithy",
+          "outfitter"
+        ],
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Tools and Hearthstone Market",
+      "farm": {
+        "name": "Quarry Kitchen Beds",
+        "color": "ada777",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Patient Hammer",
+        "form": "hammer",
+        "color": "a2bcd6",
+        "accent": "f4cc84",
+        "account": "A stone-colored hammer hangs above the well. Masons say its shape survived the collapse before any of their houses did.",
+        "custom": "Masons name a repaired stone for the neighbor who helped put it back."
+      }
+    },
+    "city_lantern_court": {
+      "name": "Lantern Court",
+      "base": "city_market",
+      "biomes": [
+        0,
+        1,
+        3
+      ],
+      "weight": 1,
+      "trade": "lamps and household charms",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "bba589",
+        "roof_colors": [
+          "535575",
+          "71647d"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Wick Lane",
+        "Lamplighters Row",
+        "Oilseed End",
+        "Courtesy Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "charmwright"
+        ],
+        [
+          "charmwright",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "scribe"
+        ]
+      ],
+      "market": "Lamplighters Market",
+      "farm": {
+        "name": "Lampseed Beds",
+        "color": "b7bc63",
+        "crop_shape": "grain"
+      },
+      "magic": {
+        "name": "The Neighbors Lantern",
+        "form": "lantern",
+        "color": "ffd896",
+        "accent": "ca96ea",
+        "account": "The court keeps a lantern-shaped light above the well. Its makers tell travelers that every former world had a different way to welcome the dark.",
+        "custom": "Neighbors lend a lamp to a guest who arrives after dark."
+      }
+    },
+    "city_archive_steps": {
+      "name": "Archive Steps",
+      "base": "city_market",
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "trade": "letters, maps and copied books",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "b3bbc2",
+        "roof_colors": [
+          "506b86",
+          "6b8394"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Copyists Lane",
+        "Letter Row",
+        "Paper Garden",
+        "Surveyors Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "scribe"
+        ]
+      ],
+      "market": "Paper and Ink Market",
+      "farm": {
+        "name": "Copyists Herb Beds",
+        "color": "7faaa0",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Open Pages",
+        "form": "pages",
+        "color": "d8e7ed",
+        "accent": "74b7e4",
+        "account": "Two bright pages float over the well. Copyists disagree about their missing words, but Milewardens record every account beside its speaker's name.",
+        "custom": "Copyists preserve disagreeing accounts beside their speakers' names rather than choosing one for everyone."
+      }
+    },
+    "city_rootbound": {
+      "name": "Rootbound Ward",
+      "base": "city_woodland",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "trade": "woodland provisions and household repairs",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "827c58",
+        "roof_colors": [
+          "456e59",
+          "5c8064"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Oldroot Lane",
+        "Pruners Row",
+        "Seedling End",
+        "Treeward Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "charmwright",
+          "outfitter"
+        ],
+        [
+          "farmhouse",
+          "home"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Wood and Seed Market",
+      "farm": {
+        "name": "Seedling Kitchen Beds",
+        "color": "77b582",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Root Remembered",
+        "form": "root",
+        "color": "85d79c",
+        "accent": "c8b47d",
+        "account": "A branching light hangs above the well. Families keep copies of agreements their ancestors made with forests that no longer stand in the same sky.",
+        "custom": "Households ask their neighbors before pruning shared roots."
+      }
+    },
+    "city_herbkeepers": {
+      "name": "Herbkeepers Common",
+      "base": "city_woodland",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "trade": "herbs and apothecary supplies",
+      "signature_use": "apothecary",
+      "architecture": {
+        "wall_color": "b9b79b",
+        "roof_colors": [
+          "607d6a",
+          "84966c"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Driers Lane",
+        "Remedy Row",
+        "Leaf End",
+        "Brewers Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "apothecary"
+        ],
+        [
+          "apothecary",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "scribe"
+        ]
+      ],
+      "market": "Dried Herb Market",
+      "farm": {
+        "name": "Herbkeepers Leaf Beds",
+        "color": "77adab",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Well Leaf",
+        "form": "leaf",
+        "color": "8fe2ca",
+        "accent": "eccd97",
+        "account": "A leaf-shaped light floats over the well. Gardeners keep old names for plants brought together from worlds that once had separate seasons.",
+        "custom": "Each household gives a neighbor a labeled cutting when it begins a new garden."
+      }
+    },
+    "city_glasswater": {
+      "name": "Glasswater",
+      "base": "city_caravan",
+      "biomes": [
+        2
+      ],
+      "weight": 1,
+      "trade": "vessels, repairs and caravan provisions",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "b8c8c5",
+        "roof_colors": [
+          "688b9c",
+          "91abb3"
+        ],
+        "roof_shape": "flat"
+      },
+      "quarters": [
+        "Glaziers Lane",
+        "Vessel Row",
+        "Shaded Garden",
+        "Waterkeepers Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "charmwright"
+        ],
+        [
+          "general_store",
+          "outfitter"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "smithy"
+        ]
+      ],
+      "market": "Vessel and Shade Bazaar",
+      "farm": {
+        "name": "Shaded Root Beds",
+        "color": "b9a18b",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Unbroken Prism",
+        "form": "glass",
+        "color": "a2e3ea",
+        "accent": "f2d68d",
+        "account": "A faceted light hovers over the well. Glassworkers call it a piece of the sea their grandparents lost when the worlds became one.",
+        "custom": "Residents shade their water vessels and offer guests a drink before asking for news."
+      }
+    },
+    "city_clockwork_ward": {
+      "name": "Clockwork Ward",
+      "base": "city_caravan",
+      "biomes": [
+        2
+      ],
+      "weight": 1,
+      "trade": "tools and mechanical repairs",
+      "signature_use": "smithy",
+      "architecture": {
+        "wall_color": "ad9876",
+        "roof_colors": [
+          "756b63",
+          "96836a"
+        ],
+        "roof_shape": "flat"
+      },
+      "quarters": [
+        "Springmakers Lane",
+        "Tool Row",
+        "Kitchen End",
+        "Menders Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "smithy"
+        ],
+        [
+          "smithy",
+          "outfitter"
+        ],
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Springs and Tools Bazaar",
+      "farm": {
+        "name": "Menders Grain Beds",
+        "color": "b1ae6c",
+        "crop_shape": "grain"
+      },
+      "magic": {
+        "name": "The Agreed Hour",
+        "form": "clock",
+        "color": "e0ba70",
+        "accent": "9de0dc",
+        "account": "A bright dial rests above the well. Makers inherited clocks from several lost worlds, each certain that its own hour was correct.",
+        "custom": "When clocks disagree, a human caller announces the time for a meeting."
+      }
+    },
+    "city_pilgrim_court": {
+      "name": "Pilgrim Court",
+      "base": "city_mushroom_common",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "trade": "pilgrim provisions and household blessings",
+      "signature_use": "shrine",
+      "architecture": {
+        "wall_color": "c8c2b4",
+        "roof_colors": [
+          "81698b",
+          "aa819c"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Travelers Lane",
+        "Offering Row",
+        "Supper Garden",
+        "Keepers Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "shrine"
+        ],
+        [
+          "outfitter",
+          "shrine"
+        ],
+        [
+          "farmhouse",
+          "bakery"
+        ],
+        [
+          "home",
+          "scribe"
+        ]
+      ],
+      "market": "Pilgrims Provision Market",
+      "farm": {
+        "name": "Common Supper Beds",
+        "color": "b38dba",
+        "crop_shape": "mushroom"
+      },
+      "magic": {
+        "name": "The Open Arch",
+        "form": "pilgrim",
+        "color": "e7d6f0",
+        "accent": "c1aeea",
+        "account": "A small shining arch stands in the air above the well. The court welcomes pilgrims whose old holy places now lie beneath unfamiliar stars.",
+        "custom": "Guests may share a remembered faith or custom without being asked to adopt the neighbors' beliefs."
+      }
+    },
+    "city_orchard_common": {
+      "name": "Orchard Commons",
+      "base": "city_mushroom_common",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "trade": "preserves, bread and garden provisions",
+      "signature_use": "bakery",
+      "architecture": {
+        "wall_color": "b4a78c",
+        "roof_colors": [
+          "a5675b",
+          "bc8a69"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Preservers Lane",
+        "Bread Row",
+        "Grafting End",
+        "Supper Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "general_store",
+          "bakery"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "scribe"
+        ]
+      ],
+      "market": "Preserves and Bread Market",
+      "farm": {
+        "name": "Orchard Kitchen Beds",
+        "color": "aaa368",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Lasting Fruit",
+        "form": "fruit",
+        "color": "f3ae7c",
+        "accent": "a6d99b",
+        "account": "A fruit-shaped light hangs over the well. Grafting families trace their oldest trees to orchards that once grew in different worlds.",
+        "custom": "Growers leave part of each harvest for travelers who arrive late."
+      }
+    },
+    "city_aurora_watch": {
+      "name": "Aurora Watch",
+      "base": "city_winter_hearth",
+      "biomes": [
+        3
+      ],
+      "weight": 1,
+      "trade": "winter provisions, maps and repairs",
+      "signature_use": "outfitter",
+      "architecture": {
+        "wall_color": "8ca2ae",
+        "roof_colors": [
+          "b8cad6",
+          "899cbb"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Watchers Lane",
+        "Winter Kit Row",
+        "Root End",
+        "Surveyors Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "outfitter",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "bakery"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Winter Kit Market",
+      "farm": {
+        "name": "Watch Winterroot Beds",
+        "color": "b7a78f",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Borrowed Sky",
+        "form": "aurora",
+        "color": "91e2d2",
+        "accent": "c6a7f2",
+        "account": "A ribbon of light hangs above the well. Watchers name its colors after skies their ancestors saw before the multiverse collapsed.",
+        "custom": "The watch wraps its road bells in cloth when a traveler is overdue."
+      }
+    },
+    "city_bellkeepers_hearth": {
+      "name": "Bellkeepers Hearth",
+      "base": "city_winter_hearth",
+      "biomes": [
+        3
+      ],
+      "weight": 1,
+      "trade": "bell repairs, fuel and warm provisions",
+      "signature_use": "smithy",
+      "architecture": {
+        "wall_color": "aa9694",
+        "roof_colors": [
+          "d2c8bb",
+          "a99b93"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Bellmakers Lane",
+        "Fuel Row",
+        "Hearth Garden",
+        "Listening Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "smithy"
+        ],
+        [
+          "smithy",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "bakery"
+        ],
+        [
+          "home",
+          "shrine"
+        ]
+      ],
+      "market": "Fuel and Bell Market",
+      "farm": {
+        "name": "Hearth Winterroot Beds",
+        "color": "bea283",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Silent Bell",
+        "form": "bell",
+        "color": "edbe9b",
+        "accent": "dfe2ff",
+        "account": "A bell-shaped light floats above the well without a sound. Families say it remembers the last call heard in their former world.",
+        "custom": "Neighbors unwrap the road bells when a missing traveler returns."
+      }
+    },
+    "city_rainwood": {
+      "name": "Rainwood Street",
+      "base": "city_crossroads",
+      "biomes": [
+        0,
+        1
+      ],
+      "weight": 1,
+      "theme_id": "japanese",
+      "exterior_style": "timber_lattice",
+      "trade": "timber, cloth repairs and road letters",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "c8bd9e",
+        "roof_colors": [
+          "434b56",
+          "626873"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Lattice Lane",
+        "Dyers Row",
+        "Rain Garden",
+        "Carpenters Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Rainwood Cloth Market",
+      "farm": {
+        "name": "Rainwood Leaf Beds",
+        "color": "9ab488",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Rainwood Screen",
+        "form": "rain_slats",
+        "color": "a1cddd",
+        "accent": "e9c68f",
+        "account": "A slatted light floats over the well. Woodworkers remember streets lined with household workshops in the world their ancestors left.",
+        "custom": "Neighbors offer visitors a dry cloth and a place to wait for the rain."
+      }
+    },
+    "city_reedpaper": {
+      "name": "Reedpaper Court",
+      "base": "city_woodland",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "theme_id": "japanese",
+      "exterior_style": "timber_lattice",
+      "trade": "paper, copied letters and garden provisions",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "d1c9ae",
+        "roof_colors": [
+          "4f5966",
+          "707a87"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Papermakers Lane",
+        "Letter Row",
+        "Reed Garden",
+        "Bookbinders Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Paper and Cloth Market",
+      "farm": {
+        "name": "Papermakers Herb Beds",
+        "color": "9ac2a3",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Folded Letter",
+        "form": "paper_fold",
+        "color": "e9e1bc",
+        "accent": "afc9e5",
+        "account": "A folded light hangs above the well. Families carried the habit of keeping handwritten letters when their old streets vanished.",
+        "custom": "A host asks whether a traveler wants company or a quiet corner before bringing tea."
+      }
+    },
+    "city_jadebeam": {
+      "name": "Jadebeam Court",
+      "base": "city_market",
+      "biomes": [
+        0,
+        1,
+        2
+      ],
+      "weight": 1,
+      "theme_id": "chinese",
+      "exterior_style": "bracket_eaves",
+      "trade": "joinery, household fittings and repairs",
+      "signature_use": "smithy",
+      "architecture": {
+        "wall_color": "c9b990",
+        "roof_colors": [
+          "48716d",
+          "628784"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Joiners Lane",
+        "Beam Row",
+        "Kitchen Garden",
+        "Crafts Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "smithy"
+        ],
+        [
+          "smithy",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Joiners Exchange",
+      "farm": {
+        "name": "Courtyard Kitchen Beds",
+        "color": "8baa6a",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Joined Beam",
+        "form": "joined_beam",
+        "color": "a8d7bc",
+        "accent": "efd09a",
+        "account": "A stepped beam of light floats above the well. Joiners say it recalls houses rebuilt from the timbers of several former worlds.",
+        "custom": "Neighbors keep a shared list of useful offcuts before buying new timber."
+      }
+    },
+    "city_porcelain_exchange": {
+      "name": "Porcelain Exchange",
+      "base": "city_caravan",
+      "biomes": [
+        2
+      ],
+      "weight": 1,
+      "theme_id": "chinese",
+      "exterior_style": "bracket_eaves",
+      "trade": "ceramic vessels, tea supplies and caravan repairs",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "d6cbb2",
+        "roof_colors": [
+          "4b7190",
+          "6b8ca6"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Glazers Lane",
+        "Tea Row",
+        "Shaded Garden",
+        "Carters Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "charmwright"
+        ],
+        [
+          "charmwright",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Tea and Vessel Exchange",
+      "farm": {
+        "name": "Shaded Leaf Beds",
+        "color": "9bb486",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Offered Bowl",
+        "form": "tea_bowl",
+        "color": "d5e8ef",
+        "accent": "85b9cf",
+        "account": "A bright bowl rests in the air above the well. Potters and caravan households keep different accounts of which former world first taught them its shape.",
+        "custom": "A host asks guests how they prefer their tea before pouring it."
+      }
+    },
+    "city_warmstone": {
+      "name": "Warmstone Village",
+      "base": "city_crossroads",
+      "biomes": [
+        0,
+        1,
+        3
+      ],
+      "weight": 1,
+      "theme_id": "korean",
+      "exterior_style": "quiet_tiles",
+      "trade": "hearth provisions, roof repairs and household tools",
+      "signature_use": "bakery",
+      "architecture": {
+        "wall_color": "d0c6b0",
+        "roof_colors": [
+          "566269",
+          "73818a"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Roofers Lane",
+        "Supper Row",
+        "Root Garden",
+        "Neighbors Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "bakery",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Warmstone Provision Market",
+      "farm": {
+        "name": "Hearth Kitchen Beds",
+        "color": "b6a588",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Kept Warmth",
+        "form": "warm_stone",
+        "color": "e5b98d",
+        "accent": "d5e8d9",
+        "account": "A warm-colored stone hangs above the well. Families remember homes where stone floors and airy wooden rooms served different seasons.",
+        "custom": "Hosts make space for guests shoes before inviting them into the household room."
+      }
+    },
+    "city_moonjar": {
+      "name": "Moonjar Commons",
+      "base": "city_market",
+      "biomes": [
+        0,
+        1,
+        3
+      ],
+      "weight": 1,
+      "theme_id": "korean",
+      "exterior_style": "quiet_tiles",
+      "trade": "white vessels, repairs and shared kitchen supplies",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "d7d4c7",
+        "roof_colors": [
+          "596b7a",
+          "83929d"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Potters Lane",
+        "Vessel Row",
+        "Leaf Garden",
+        "Menders Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "charmwright"
+        ],
+        [
+          "charmwright",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Moonjar Vessel Market",
+      "farm": {
+        "name": "Potters Kitchen Beds",
+        "color": "95b19c",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Round Vessel",
+        "form": "moon_jar",
+        "color": "e5ece7",
+        "accent": "a5c1d6",
+        "account": "A milk-white vessel of light floats above the well. Potters prize the slight differences left by each pair of working hands.",
+        "custom": "Neighbors return a borrowed vessel with a little food inside."
+      }
+    },
+    "city_harvestmask": {
+      "name": "Harvestmask Hollow",
+      "base": "city_mushroom_common",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "theme_id": "halloween",
+      "exterior_style": "pumpkin_lights",
+      "trade": "harvest bread, masks and household lanterns",
+      "signature_use": "bakery",
+      "architecture": {
+        "wall_color": "c2a47e",
+        "roof_colors": [
+          "563b67",
+          "755079"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Maskmakers Lane",
+        "Harvest Row",
+        "Squash Garden",
+        "Lantern Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "bakery",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Harvestmask Evening Market",
+      "farm": {
+        "name": "Harvest Kitchen Beds",
+        "color": "daa154",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Grinning Harvest",
+        "form": "pumpkin",
+        "color": "f5a453",
+        "accent": "c9a0e2",
+        "account": "A grinning harvest light floats above the well. Maskmakers treat the frightening faces as invitations to an evening meal.",
+        "custom": "Guests may borrow a mask, and anyone may decline without being teased."
+      }
+    },
+    "city_candlewake": {
+      "name": "Candlewake Borough",
+      "base": "city_crossroads",
+      "biomes": [
+        0,
+        1,
+        3
+      ],
+      "weight": 1,
+      "theme_id": "halloween",
+      "exterior_style": "pumpkin_lights",
+      "trade": "candles, remembrance books and autumn provisions",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "a99b9f",
+        "roof_colors": [
+          "403b55",
+          "62596d"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Candlemakers Lane",
+        "Story Row",
+        "Late Garden",
+        "Rememberers Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Candle and Story Market",
+      "farm": {
+        "name": "Candlewake Kitchen Beds",
+        "color": "b49881",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Name Kept Lit",
+        "form": "candle",
+        "color": "e8d5a8",
+        "accent": "ef996d",
+        "account": "A candle-shaped light hangs above the well. Residents remember absent neighbors through stories that include their jokes and everyday kindness.",
+        "custom": "A guest may offer a name for the evening remembrance, or sit quietly with the others."
+      }
+    },
+    "city_evergreen_hearth": {
+      "name": "Evergreen Hearth",
+      "base": "city_winter_hearth",
+      "biomes": [
+        3
+      ],
+      "weight": 1,
+      "theme_id": "christmas",
+      "exterior_style": "evergreen_lights",
+      "trade": "warm bread, winter fuel and shared provisions",
+      "signature_use": "bakery",
+      "architecture": {
+        "wall_color": "d8c6ad",
+        "roof_colors": [
+          "3e705d",
+          "5b8b76"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Bakers Lane",
+        "Winter Row",
+        "Root Garden",
+        "Supper Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "bakery"
+        ],
+        [
+          "bakery",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Evergreen Supper Market",
+      "farm": {
+        "name": "Evergreen Winterroot Beds",
+        "color": "b5a38a",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Evergreen Welcome",
+        "form": "fir",
+        "color": "91d2aa",
+        "accent": "f1d29c",
+        "account": "An evergreen-shaped light floats above the well. Winter households carried their feast customs into the Endless World and kept room for new neighbors.",
+        "custom": "Residents set aside a warm meal for someone traveling after the feast has begun."
+      }
+    },
+    "city_giftmakers": {
+      "name": "Giftmakers Square",
+      "base": "city_winter_hearth",
+      "biomes": [
+        3
+      ],
+      "weight": 1,
+      "theme_id": "christmas",
+      "exterior_style": "evergreen_lights",
+      "trade": "small gifts, toy repairs and winter clothing",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "d4b8a0",
+        "roof_colors": [
+          "975950",
+          "b07969"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Toymenders Lane",
+        "Ribbon Row",
+        "Hearth Garden",
+        "Givers Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "charmwright"
+        ],
+        [
+          "charmwright",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Ribbon and Gift Market",
+      "farm": {
+        "name": "Giftmakers Winterroot Beds",
+        "color": "c0a993",
+        "crop_shape": "root"
+      },
+      "magic": {
+        "name": "The Unfinished Gift",
+        "form": "gift",
+        "color": "e99e94",
+        "accent": "d9e9b7",
+        "account": "A ribbon-wrapped light hangs over the well. Makers say the best gifts still leave their recipients room to choose what they become.",
+        "custom": "The town repairs old gifts alongside making new ones, and keeps giving voluntary."
+      }
+    },
+    "city_neon_relay": {
+      "name": "Neon Relay",
+      "base": "city_market",
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "theme_id": "cyberpunk",
+      "exterior_style": "arcane_circuit",
+      "trade": "message relays, etched plates and circuit repairs",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "41465d",
+        "roof_colors": [
+          "202a43",
+          "34425d"
+        ],
+        "roof_shape": "flat"
+      },
+      "quarters": [
+        "Relay Lane",
+        "Signal Row",
+        "Night Garden",
+        "Repair Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Relay Component Market",
+      "farm": {
+        "name": "Nightleaf Beds",
+        "color": "8fabc3",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Shared Signal",
+        "form": "relay",
+        "color": "72e5df",
+        "accent": "eb88d8",
+        "account": "A bright relay form floats over the well. Technomancers rebuilt familiar signal patterns with the magic available after their worlds collapsed.",
+        "custom": "Neighbors post a plain-language copy beside every encoded public notice."
+      }
+    },
+    "city_chrome_bazaar": {
+      "name": "Chrome Bazaar",
+      "base": "city_caravan",
+      "biomes": [
+        2
+      ],
+      "weight": 1,
+      "theme_id": "cyberpunk",
+      "exterior_style": "arcane_circuit",
+      "trade": "conductive fittings, repairs and caravan components",
+      "signature_use": "smithy",
+      "architecture": {
+        "wall_color": "646e80",
+        "roof_colors": [
+          "293b54",
+          "3d526b"
+        ],
+        "roof_shape": "flat"
+      },
+      "quarters": [
+        "Platefitters Lane",
+        "Component Row",
+        "Shade Garden",
+        "Menders Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "smithy"
+        ],
+        [
+          "smithy",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Chrome Component Bazaar",
+      "farm": {
+        "name": "Bazaar Leaf Beds",
+        "color": "87a6ae",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Common Circuit",
+        "form": "circuit",
+        "color": "79dce5",
+        "accent": "f4a4d9",
+        "account": "A square circuit of light hangs above the well. Repairers reuse metal from a former world whose machines no longer understand the new sky.",
+        "custom": "Repairers explain a patch to its owner before closing the casing."
+      }
+    },
+    "city_spellbinders": {
+      "name": "Spellbinders Ward",
+      "base": "city_crossroads",
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "theme_id": "mage",
+      "exterior_style": "rune_lattice",
+      "trade": "spellbooks, ink and household charms",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "aca9c3",
+        "roof_colors": [
+          "695488",
+          "8673a8"
+        ],
+        "roof_shape": "gable"
+      },
+      "quarters": [
+        "Binders Lane",
+        "Ink Row",
+        "Herb Garden",
+        "Readers Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Ink and Charm Market",
+      "farm": {
+        "name": "Binders Herb Beds",
+        "color": "a4b1bb",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Public Working",
+        "form": "spell_star",
+        "color": "ceb0ef",
+        "accent": "aadfe4",
+        "account": "A small star of light floats over the well. Bookbinders copy the instructions for maintaining it beside the records of who last repaired it.",
+        "custom": "A charm maker explains what a household working does before asking anyone to trust it."
+      }
+    },
+    "city_observatory": {
+      "name": "Observatory Court",
+      "base": "city_market",
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "theme_id": "mage",
+      "exterior_style": "rune_lattice",
+      "trade": "star charts, lenses and copied observations",
+      "signature_use": "scribe",
+      "architecture": {
+        "wall_color": "a7b9c6",
+        "roof_colors": [
+          "405976",
+          "657d9d"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Observers Lane",
+        "Chart Row",
+        "Night Garden",
+        "Copyists Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "scribe"
+        ],
+        [
+          "scribe",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Lens and Chart Market",
+      "farm": {
+        "name": "Observers Leaf Beds",
+        "color": "96afbc",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Unfinished Chart",
+        "form": "observatory",
+        "color": "b2d7f2",
+        "accent": "e7c88c",
+        "account": "A bright frame circles a small light above the well. Observers map a sky assembled from histories that once belonged to separate worlds.",
+        "custom": "People date each observation and preserve the earlier chart when a new one disagrees."
+      }
+    },
+    "city_dewbell": {
+      "name": "Dewbell Commons",
+      "base": "city_woodland",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "theme_id": "fairy",
+      "exterior_style": "petal_trim",
+      "trade": "flower remedies, garden provisions and tiny bells",
+      "signature_use": "apothecary",
+      "architecture": {
+        "wall_color": "c2d3b7",
+        "roof_colors": [
+          "748d96",
+          "95aeb2"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Dewkeepers Lane",
+        "Remedy Row",
+        "Flower Garden",
+        "Bellmenders Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "apothecary"
+        ],
+        [
+          "apothecary",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Dew and Herb Market",
+      "farm": {
+        "name": "Dewkeepers Leaf Beds",
+        "color": "98c5b9",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Morning Drop",
+        "form": "dewbell",
+        "color": "a4e7d5",
+        "accent": "eec3e8",
+        "account": "A dew-shaped light hangs above the well. Garden households remember a former world where a flower could shelter an entire family.",
+        "custom": "Visitors ask before picking flowers, including blooms growing beside a public path."
+      }
+    },
+    "city_petalweave": {
+      "name": "Petalweave Court",
+      "base": "city_mushroom_common",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "theme_id": "fairy",
+      "exterior_style": "petal_trim",
+      "trade": "woven charms, household repairs and flower dyes",
+      "signature_use": "charmwright",
+      "architecture": {
+        "wall_color": "d7bed0",
+        "roof_colors": [
+          "936e9f",
+          "b38aaa"
+        ],
+        "roof_shape": "hip"
+      },
+      "quarters": [
+        "Weavers Lane",
+        "Dye Row",
+        "Petal Garden",
+        "Menders Court"
+      ],
+      "quarter_uses": [
+        [
+          "home",
+          "charmwright"
+        ],
+        [
+          "charmwright",
+          "general_store"
+        ],
+        [
+          "farmhouse",
+          "apothecary"
+        ],
+        [
+          "home",
+          "charmwright"
+        ]
+      ],
+      "market": "Petal and Thread Market",
+      "farm": {
+        "name": "Petalweavers Leaf Beds",
+        "color": "a9c3a0",
+        "crop_shape": "leaf"
+      },
+      "magic": {
+        "name": "The Borrowed Bloom",
+        "form": "flower",
+        "color": "edb1da",
+        "accent": "bbdfac",
+        "account": "A flower-shaped light floats above the well. Weavers kept a pattern from their lost world and let each new household add a color.",
+        "custom": "A borrower returns thread with a small repair they can offer in exchange."
+      }
+    }
+  }
+}

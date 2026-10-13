@@ -1,0 +1,45 @@
+{
+  "id": "quest_shared_measure",
+  "kind": "local_quest",
+  "version": 2,
+  "title": "The Third Measure",
+  "author": "The local archive of {city_name}",
+  "text": "The old wardens measured a road by the places where you could drink and rest. That's how our town book tells it. If your travels take you to {dungeon_name}, will you copy the archive inscription? Read our account first. I'd like to know whether they counted as we did.",
+  "history_motifs": [
+    "shared-measure"
+  ],
+  "giver_roles": [
+    "fountain_keeper"
+  ],
+  "requires": [
+    "compare_inscription"
+  ],
+  "target": {
+    "kind": "ruin_archive",
+    "label": "Archive inscription"
+  },
+  "ledger_prompt": "Copy the shared-measure account from the town book in {city_name} before setting out.",
+  "inscription": "A measure is entered only where water is offered and a traveler can rest.",
+  "choices": [
+    {
+      "id": "same",
+      "label": "The two customs agree."
+    },
+    {
+      "id": "different",
+      "label": "The customs differ."
+    }
+  ],
+  "answer": "same",
+  "finding": "Water and a place to rest count in both accounts. The old wardens used the same measure here and there.",
+  "completion": "Water and a place to sit. I'm glad those words lasted. I'll put your copy in the town book. Sit down while I find the ink.",
+  "reward": {
+    "item": "oak_chair",
+    "quantity": 1
+  },
+  "tags": [
+    "local-quest",
+    "original",
+    "exploration"
+  ]
+}

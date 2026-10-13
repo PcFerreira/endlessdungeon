@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c35fj7qs7sih3"
+path="res://.godot/imported/Stairs_Steps_Straight.obj-1d42fd79bf7229f3aad8682b7b5a3726.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stairs_Steps_Straight.obj-1d42fd79bf7229f3aad8682b7b5a3726.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Stairs_Steps_Straight.obj"
+dest_files=["res://.godot/imported/Stairs_Steps_Straight.obj-1d42fd79bf7229f3aad8682b7b5a3726.mesh", "res://.godot/imported/Stairs_Steps_Straight.obj-1d42fd79bf7229f3aad8682b7b5a3726.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

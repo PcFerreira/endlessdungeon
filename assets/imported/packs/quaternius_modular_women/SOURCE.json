@@ -1,0 +1,64 @@
+{
+  "id": "quaternius_modular_women",
+  "title": "Quaternius Ultimate Modular Women",
+  "author": "Quaternius",
+  "source": "https://quaternius.com/packs/ultimatemodularwomen.html",
+  "mirror": "https://github.com/agentkaerf/FreeModels",
+  "revision": "db3df04d1e4714298a09510b26fb6de6645138a2",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "categories": [
+    "npc",
+    "fantasy",
+    "characters"
+  ],
+  "scope": "3 complete animated characters with notices and dependencies; modular pieces and modern outfits omitted.",
+  "downloads": [
+    {
+      "path": "How To Use.txt",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Women%20-%20April%202022/How%20To%20Use.txt",
+      "bytes": 1224,
+      "git_blob_sha1": "2ef1119f9f27d12c1d644847a7a7d284f4468bae",
+      "sha256": "9b684add13cc5aa20e7671bd1f47202d762bae1839c00a247fcdd57e29a37439"
+    },
+    {
+      "path": "Individual Characters/glTF/Adventurer.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Women%20-%20April%202022/Individual%20Characters/glTF/Adventurer.gltf",
+      "bytes": 3205962,
+      "git_blob_sha1": "360f7653a875945f97818aa60416f0ddb7ec2c42",
+      "sha256": "65094211e53b49f6a834c617cc056834686fe794a0b515a6b97faa3e1130cc95"
+    },
+    {
+      "path": "Individual Characters/glTF/Medieval.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Women%20-%20April%202022/Individual%20Characters/glTF/Medieval.gltf",
+      "bytes": 3206051,
+      "git_blob_sha1": "96d7374e8dc248f59842df3ba632b98c10e40e8f",
+      "sha256": "32c3cd6d4e59bd1f433bc5eeca788b1430399ef15dfd2e0fb4a038a967c0c293"
+    },
+    {
+      "path": "Individual Characters/glTF/Witch.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Women%20-%20April%202022/Individual%20Characters/glTF/Witch.gltf",
+      "bytes": 3207958,
+      "git_blob_sha1": "095934ebf02dbd82a0b1b73fb9e2b1cc895d8bfd",
+      "sha256": "d886c8c134a92b2013529edf7352e286ef386ca7c0f5fa3a568039d7c11b05fe"
+    },
+    {
+      "path": "License.txt",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Women%20-%20April%202022/License.txt",
+      "bytes": 372,
+      "git_blob_sha1": "62341762fbd2f5eca68b8ab98d3ae1c4487087a1",
+      "sha256": "e8dbf915a2b82229913e301a0787696611241bdefec4832bc084f54161db1efe"
+    },
+    {
+      "path": "Preview.jpg",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Women%20-%20April%202022/Preview.jpg",
+      "bytes": 286665,
+      "git_blob_sha1": "e3e685d1d2d9d20421569298cfee1d51f956a889",
+      "sha256": "80daa5b48791a014d356c5107e6d312672400b87d247472ee72437f66a18efd6"
+    }
+  ],
+  "attribution_required": false,
+  "attribution_text": "Characters by Quaternius. Source: https://quaternius.com/packs/ultimatemodularwomen.html. License: CC0-1.0.",
+  "source_asset_changes": "None; downloaded source bytes are preserved."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "dungeon_ambience",
+  "title": "Loopable Dungeon Ambience",
+  "author": "JaggedStone",
+  "source": "https://opengameart.org/content/loopable-dungeon-ambience",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/dungeon_ambient_1_0.ogg",
+      "filename": "dungeon_ambient_1_0.ogg",
+      "bytes": 1626352,
+      "sha256": "df491823e4877371c34dbda4e9321cd83a4a14fa7573cee0ebca1ae423b70e6e",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": false
+    }
+  ],
+  "style": "Audio",
+  "categories": [
+    "Caves",
+    "Dungeon ambience"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Loopable Dungeon Ambience by JaggedStone. Source: https://opengameart.org/content/loopable-dungeon-ambience. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "currency": "gold_coin",
+  "purse": 250,
+  "stock_limit": 99,
+  "profiles": {
+    "provisions": {"name": "Provisions", "kinds": ["consumable", "material"], "slots": [], "selection": 8, "stock": 6},
+    "outfitter": {"name": "Expedition equipment", "kinds": ["equipment", "consumable"], "slots": [], "selection": 8, "stock": 3},
+    "smithy": {"name": "Workshop goods", "kinds": ["equipment", "material"], "slots": ["weapon", "armor"], "selection": 8, "stock": 3},
+    "charms": {"name": "Charms and lamps", "kinds": ["equipment", "furnishing", "consumable"], "slots": ["charm"], "selection": 8, "stock": 3},
+    "market": {"name": "Market stall", "kinds": ["consumable", "material", "furnishing"], "slots": [], "selection": 10, "stock": 5}
+  },
+  "uses": {"general_store": "market", "outfitter": "outfitter", "bakery": "provisions", "smithy": "smithy", "charmwright": "charms", "apothecary": "provisions", "scribe": "charms"},
+  "interiors": {
+    "shop": {"profile": "market", "point": [9, 5.5]},
+    "workshop": {"profile": "smithy", "point": [10, 3]}
+  },
+  "lots": {"market": "market"},
+  "prices": {"consumable": 4, "material": 2, "furnishing": 12, "equipment": 24},
+  "rarity_multipliers": {"common": 1, "uncommon": 2, "rare": 4},
+  "item_prices": {"health_potion": 4, "aether_potion": 4, "ember_shard": 2, "rune_lantern": 12},
+  "buyback_fraction": 0.4,
+  "staples": ["health_potion", "aether_potion", "ember_shard", "rune_lantern", "oak_chair", "wool_rug"]
+}

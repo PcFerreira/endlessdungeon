@@ -1,4 +1,4 @@
-# Magic in the Endless Realm
+# Magic in the Endless World
 
 Status: draft proposal. Placement: spellbook flavor, practitioner dialogue, books, domestic scenery, and future relic descriptions.
 

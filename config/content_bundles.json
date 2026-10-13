@@ -1,0 +1,602 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "pack": "quaternius_cube_world",
+      "include": [
+        "Animals/glTF/*.gltf"
+      ],
+      "role": "animal"
+    },
+    {
+      "pack": "quaternius_cube_world",
+      "include": [
+        "Enemies/glTF/*.gltf"
+      ],
+      "role": "enemy"
+    },
+    {
+      "pack": "quaternius_ultimate_monsters",
+      "include": [
+        "glTF/*.gltf"
+      ],
+      "role": "enemy"
+    },
+    {
+      "pack": "quaternius_ultimate_monsters",
+      "include": [
+        "glTF/{Dog,Chicken,Cat,Fish,Bunny,Birb,Pigeon,Frog,Alpaking}.gltf"
+      ],
+      "role": "animal"
+    },
+    {
+      "pack": "kaykit_skeletons",
+      "include": [
+        "**/Characters/gltf/*.glb"
+      ],
+      "role": "enemy"
+    },
+    {
+      "pack": "kaykit_skeletons",
+      "include": [
+        "**/Assets/gltf/*.gltf"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "kaykit_fantasy_weapons",
+      "include": [
+        "**/gltf/*.gltf"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "kaykit_adventures",
+      "include": [
+        "**/Assets/gltf/*.gltf"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "kaykit_furniture",
+      "include": [
+        "**/gltf/*.gltf"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "quaternius_fantasy_props",
+      "include": [
+        "Exports/glTF/*.gltf"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "kenney_food_kit",
+      "include": [
+        "**/GLB format/*.glb"
+      ],
+      "role": "item",
+      "kind": "consumable"
+    },
+    {
+      "pack": "voxel_micro_farm",
+      "include": [
+        "models/**/*.glb"
+      ],
+      "role": "item",
+      "kind": "furnishing",
+      "icon_template": "icons/I_{stem}.png"
+    },
+    {
+      "pack": "fantasy_rpg_icons_496",
+      "include": [
+        "*.png"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "rpg_item_icons_db32",
+      "include": [
+        "**/*.png"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "rpg_inventory_crafting_icons",
+      "include": [
+        "**/*.png"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "crafting_material_icons",
+      "include": [
+        "**/*.png"
+      ],
+      "role": "item",
+      "atlas_cell": 32,
+      "atlas_labels": [
+        "Nails",
+        "Timber",
+        "Wooden Rod",
+        "Feather",
+        "Copper Ore",
+        "Iron Ore",
+        "Silver Ore",
+        "Gold Ore",
+        "Copper Ingot",
+        "Iron Ingot",
+        "Silver Ingot",
+        "Gold Ingot",
+        "Purple Shard",
+        "Net",
+        "Crystal",
+        "Hide"
+      ]
+    },
+    {
+      "pack": "potion_icon_collection",
+      "include": [
+        "**/32x32/*.png",
+        "**/orig/*.png",
+        "**/scalable/*.svg"
+      ],
+      "exclude": [
+        "**/animation/**"
+      ],
+      "role": "item",
+      "kind": "consumable",
+      "group_resolutions": true
+    },
+    {
+      "pack": "gem_icon_collection",
+      "include": [
+        "**/32x32/*.png",
+        "**/24x24/*.png",
+        "**/scalable/*.svg"
+      ],
+      "exclude": [
+        "**/animation/**"
+      ],
+      "role": "item",
+      "kind": "material",
+      "group_resolutions": true
+    },
+    {
+      "pack": "assorted_rpg_icons",
+      "include": [
+        "**/*.png"
+      ],
+      "exclude": [
+        "**/*preview*"
+      ],
+      "role": "item",
+      "atlas_cell": 16
+    },
+    {
+      "pack": "isometric_skeleton_warrior",
+      "include": [
+        "*.png"
+      ],
+      "role": "enemy",
+      "sprite": {
+        "columns": 32,
+        "rows": 8,
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "walk": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "pack": "bundle_voxel_creature_pack",
+      "include": [
+        "*.glb"
+      ],
+      "role": "enemy"
+    },
+    {
+      "pack": "bundle_voxel_creature_pack",
+      "include": [
+        "{auroch,beagle,bear,beisa_oryx,rooster,bronto}.glb"
+      ],
+      "role": "animal"
+    },
+    {
+      "pack": "bundle_padadu_fantasy_voxels",
+      "include": [
+        "brontosaurus*.glb"
+      ],
+      "role": "animal"
+    },
+    {
+      "pack": "bundle_padadu_fantasy_voxels",
+      "include": [
+        "*.glb"
+      ],
+      "exclude": [
+        "brontosaurus*.glb"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "bundle_voxel_loot",
+      "include": [
+        "*.glb"
+      ],
+      "role": "item"
+    },
+    {
+      "pack": "bundle_animal_samples",
+      "include": [
+        "*.glb"
+      ],
+      "role": "animal"
+    },
+    {
+      "pack": "kaykit_dungeon_full",
+      "include": [
+        "Assets/gltf/{barrel*,bed*,bottle*,box*,candle*,chair*,chest*,coin*,crates*,keg*,key*,plate*,shelf*,stool*,sword*,table*,torch*}.gltf"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "quaternius_modular_ruins_full",
+      "include": [
+        "OBJ/{Barrel*,BearTrap*,Bookcase*,Candles*,Cart*,Chest*,Crate*,Pot*,Skull*,Statue*,Torch*}.obj"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "kenney_graveyard_kit",
+      "include": [
+        "Models/GLB format/character-{ghost,skeleton,vampire,zombie}.glb"
+      ],
+      "role": "enemy"
+    },
+    {
+      "pack": "kenney_holiday_kit",
+      "include": [
+        "Models/GLB format/reindeer.glb"
+      ],
+      "role": "animal"
+    },
+    {
+      "pack": "kaykit_halloween",
+      "include": [
+        "**/gltf/{bench*,bone*,candle*,coffin*,gravestone*,pumpkin*,skull*}.gltf"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "kenney_survival_kit",
+      "include": [
+        "Models/GLB format/{fish*,barrel*,bucket*,chest*,crate*,axe*,pickaxe*,shovel*,spear*,bow*,arrow*,torch*,bottle*,backpack*,tent*,tool*,bowl*,bed*,chair*,table*}.glb"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "kenney_holiday_kit",
+      "include": [
+        "Models/GLB format/{candy*,gift*,bag*,present*,stocking*,snowman*,cookie*,candle*,wreath*}.glb"
+      ],
+      "role": "item",
+      "kind": "furnishing"
+    },
+    {
+      "pack": "kenney_isometric_dungeon",
+      "include": [
+        "{Angle,Isometric}/{barrel*,chair*,chest*,table*,woodenCrate*}.png"
+      ],
+      "role": "item",
+      "kind": "furnishing",
+      "group_views": true
+    }
+  ],
+  "defaults": {
+    "enemy": {
+      "hp": 42,
+      "speed": 1.55,
+      "reach": 0.85,
+      "windup": 0.55,
+      "period": 1.8,
+      "damage": 10,
+      "height": 1.15,
+      "weight": 1,
+      "ranged": false,
+      "voxel_shape": 0,
+      "habitat": {
+        "biomes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "facets": [
+          "*"
+        ],
+        "families": [
+          "*"
+        ]
+      }
+    },
+    "animal": {
+      "habitats": [
+        "wild"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "height": 0.65,
+      "speed": 0.8,
+      "idle": "Idle",
+      "walk": "Walk",
+      "medium": "land"
+    },
+    "item": {
+      "kind": "material",
+      "stack": 99,
+      "icon": "res://assets/items/ember_shard.svg",
+      "description": "A recovered crafting material."
+    }
+  },
+  "profiles": {
+    "enemy": [
+      {
+        "match": "(?i)(wizard|mage|monk|alien|ghost|flying|cannon)",
+        "set": {
+          "ranged": true,
+          "hp": 36,
+          "speed": 1.15,
+          "reach": 5.5,
+          "damage": 9,
+          "windup": 0.7,
+          "period": 2.3
+        }
+      },
+      {
+        "match": "(?i)(giant|yeti|dragon|bear|demon|golem|auroch|bronto)",
+        "set": {
+          "hp": 66,
+          "speed": 1.25,
+          "damage": 15,
+          "height": 1.4
+        }
+      },
+      {
+        "match": "(?i)(skeleton|zombie|ghost)",
+        "set": {
+          "habitat": {
+            "biomes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "facets": [
+              "haunted"
+            ],
+            "families": [
+              "*"
+            ]
+          }
+        }
+      }
+    ],
+    "animal": [
+      {
+        "match": "(?i)(dog|cat|chick|sheep|horse|pig|beagle|rooster|cow)",
+        "set": {
+          "habitats": [
+            "town",
+            "wild"
+          ]
+        }
+      },
+      {
+        "match": "(?i)(horse|auroch|bear|bronto|oryx|cow|crocodile)",
+        "set": {
+          "height": 0.95,
+          "speed": 0.65
+        }
+      },
+      {
+        "match": "(?i)(fish$|dolphin|shark)",
+        "set": {
+          "habitats": [
+            "water"
+          ],
+          "medium": "water",
+          "height": 0.45
+        }
+      },
+      {
+        "match": "(?i)(birb|pigeon|toucan)",
+        "set": {
+          "medium": "air",
+          "height": 0.32,
+          "speed": 1.1
+        }
+      },
+      {
+        "match": "(?i)(snail|chick$|frog)",
+        "set": {
+          "height": 0.3,
+          "speed": 0.5
+        }
+      }
+    ],
+    "item": [
+      {
+        "match": "(?i)(sword|blade|axe|spear|dagger|bow|mace|hammer|crossbow|w_throw|weapon)",
+        "set": {
+          "kind": "equipment",
+          "stack": 1,
+          "slot": "weapon",
+          "classes": [
+            "sword",
+            "spellsword"
+          ],
+          "power": 0.08,
+          "description": "Weapon. +8% ability damage for Sword and Spellsword.",
+          "icon": "res://assets/spells/strike.svg"
+        }
+      },
+      {
+        "match": "(?i)(staff|wand)",
+        "set": {
+          "kind": "equipment",
+          "stack": 1,
+          "slot": "weapon",
+          "classes": [
+            "mage",
+            "spellsword"
+          ],
+          "power": 0.08,
+          "description": "Focus. +8% ability damage for Mage and Spellsword.",
+          "icon": "res://assets/spells/bolt.svg"
+        }
+      },
+      {
+        "match": "(?i)(armou?r|helmet|helm_|shield|boots|shoe|clothing|glove|chestplate)",
+        "set": {
+          "kind": "equipment",
+          "stack": 1,
+          "slot": "armor",
+          "classes": [
+            "mage",
+            "sword",
+            "spellsword"
+          ],
+          "hp": 12,
+          "description": "Armor. +12 maximum vitality for all classes.",
+          "icon": "res://assets/items/traveler_coat.svg"
+        }
+      },
+      {
+        "match": "(?i)(amulet|ring|charm|necklace|s_spell|rune|scroll)",
+        "set": {
+          "kind": "equipment",
+          "stack": 1,
+          "slot": "charm",
+          "classes": [
+            "mage",
+            "sword",
+            "spellsword"
+          ],
+          "mana": 10,
+          "description": "Charm. +10 maximum aether or stamina for all classes.",
+          "icon": "res://assets/items/silver_charm.svg"
+        }
+      },
+      {
+        "match": "(?i)(potion|medicine|antidote|food|harvest|consumables)",
+        "set": {
+          "kind": "consumable",
+          "stack": 20,
+          "restore_health": 20,
+          "description": "Consume to restore 20 vitality when needed.",
+          "icon": "res://assets/items/health_potion.svg"
+        }
+      },
+      {
+        "match": "(?i)(potion.*(blue|cyan|purple|violet)|mana|aether)",
+        "set": {
+          "kind": "consumable",
+          "stack": 20,
+          "restore_health": 0,
+          "restore_mana": 25,
+          "description": "Consume to restore 25 aether or stamina when needed.",
+          "icon": "res://assets/items/aether_potion.svg"
+        }
+      },
+      {
+        "match": "(?i)(books$)",
+        "set": {
+          "kind": "material",
+          "stack": 99,
+          "description": "A recovered book cover. Kept with your crafting materials."
+        }
+      },
+      {
+        "match": "(?i)(?:^| )(bag|barrel|bottle|bowl|crate|cup|mug|plate|pot|pan|utensil|fork|knife|spoon)(?: |$)",
+        "pack": "kenney_food_kit",
+        "set": {
+          "kind": "furnishing",
+          "stack": 10,
+          "restore_health": 0,
+          "description": "A furnishing collected for your sanctum."
+        }
+      }
+    ]
+  },
+  "conversions": [
+    {
+      "pack": "voxel_creature_pack",
+      "include": "qubicle_magicavoxel/*.vox",
+      "format": "vox"
+    },
+    {
+      "pack": "padadu_fantasy_voxels",
+      "include": "*.vox",
+      "format": "vox"
+    },
+    {
+      "pack": "voxel_loot",
+      "include": "*.blend",
+      "format": "blend_objects"
+    },
+    {
+      "pack": "animal_samples",
+      "include": "**/*.fbx",
+      "format": "fbx"
+    }
+  ],
+  "loot_sources": {
+    "furnishing": [
+      "chest"
+    ],
+    "material": [
+      "enemy"
+    ],
+    "consumable": [
+      "enemy"
+    ],
+    "equipment": [
+      "enemy"
+    ]
+  }
+}

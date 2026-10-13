@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "surface": [
+    {
+      "bed": "amb_forest",
+      "cue": "bird",
+      "color": "9df5d7",
+      "wisps": 3,
+      "water_cue": "frog"
+    },
+    {
+      "bed": "amb_meadow",
+      "cue": "bird",
+      "color": "f4d69a",
+      "wisps": 3,
+      "water_cue": "frog"
+    },
+    {
+      "bed": "amb_desert",
+      "cue": "wonder",
+      "color": "e1b1ef",
+      "wisps": 3,
+      "water_cue": "wonder"
+    },
+    {
+      "bed": "amb_frost",
+      "cue": "wonder",
+      "color": "a2d8fc",
+      "wisps": 3,
+      "water_cue": "wonder"
+    }
+  ],
+  "locations": {
+    "interior": {
+      "bed": "amb_room",
+      "cue": "room_creak",
+      "color": "f4d69a",
+      "wisps": 0
+    },
+    "sanctum": {
+      "bed": "aether",
+      "cue": "wonder",
+      "color": "c8b5fc",
+      "wisps": 3
+    },
+    "dungeon": {
+      "bed": "amb_dungeon",
+      "cue": "wonder",
+      "color": "b6a9fa",
+      "wisps": 2
+    }
+  },
+  "water": {
+    "bed": "amb_water",
+    "cue": "frog",
+    "wisps": 3
+  },
+  "town": {
+    "bed": "amb_fountain",
+    "cue": "wonder",
+    "wisps": 2
+  },
+  "npc_palettes": [
+    "8ce9d8",
+    "f7cc8b",
+    "dfb7f6",
+    "90bff1",
+    "f0aebc",
+    "b4de98"
+  ],
+  "npc_roles": {
+    "fountain_keeper": "keeper_hat",
+    "milewarden": "travel_satchel",
+    "relic_mender": "floating_book",
+    "retired_delver": "delver_pack"
+  },
+  "npc_recipes": {
+    "keeper_hat": {
+      "orbit": false,
+      "pieces": [
+        {
+          "size": [
+            0.32,
+            0.06,
+            0.32
+          ],
+          "point": [
+            0,
+            1.13,
+            0
+          ],
+          "color": "shade",
+          "charm": false,
+          "glow": false
+        },
+        {
+          "size": [
+            0.18,
+            0.1,
+            0.18
+          ],
+          "point": [
+            0,
+            1.2,
+            0
+          ],
+          "color": "accent",
+          "charm": false,
+          "glow": false
+        },
+        {
+          "size": [
+            0.12,
+            0.16,
+            0.12
+          ],
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "color": "accent",
+          "charm": true,
+          "glow": true
+        },
+        {
+          "size": [
+            0.18,
+            0.035,
+            0.18
+          ],
+          "point": [
+            0,
+            0.1,
+            0
+          ],
+          "color": "slate",
+          "charm": true,
+          "glow": false
+        }
+      ]
+    },
+    "travel_satchel": {
+      "orbit": false,
+      "pieces": [
+        {
+          "size": [
+            0.14,
+            0.32,
+            0.11
+          ],
+          "point": [
+            0.24,
+            0.77,
+            -0.02
+          ],
+          "color": "shade",
+          "charm": false,
+          "glow": false
+        },
+        {
+          "size": [
+            0.18,
+            0.04,
+            0.13
+          ],
+          "point": [
+            0.24,
+            0.96,
+            -0.02
+          ],
+          "color": "accent",
+          "charm": false,
+          "glow": false
+        },
+        {
+          "size": [
+            0.07,
+            0.13,
+            0.07
+          ],
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "color": "accent",
+          "charm": true,
+          "glow": true
+        }
+      ]
+    },
+    "floating_book": {
+      "orbit": true,
+      "pieces": [
+        {
+          "size": [
+            0.2,
+            0.045,
+            0.15
+          ],
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "color": "shade",
+          "charm": true,
+          "glow": false
+        },
+        {
+          "size": [
+            0.16,
+            0.022,
+            0.13
+          ],
+          "point": [
+            0,
+            0.032,
+            0
+          ],
+          "color": "paper",
+          "charm": true,
+          "glow": false
+        },
+        {
+          "size": [
+            0.06,
+            0.014,
+            0.06
+          ],
+          "point": [
+            0,
+            0.05,
+            0
+          ],
+          "color": "accent",
+          "charm": true,
+          "glow": true
+        }
+      ]
+    },
+    "delver_pack": {
+      "orbit": false,
+      "pieces": [
+        {
+          "size": [
+            0.24,
+            0.29,
+            0.15
+          ],
+          "point": [
+            0,
+            0.6,
+            -0.2
+          ],
+          "color": "shade",
+          "charm": false,
+          "glow": false
+        },
+        {
+          "size": [
+            0.28,
+            0.07,
+            0.17
+          ],
+          "point": [
+            0,
+            0.78,
+            -0.2
+          ],
+          "color": "accent",
+          "charm": false,
+          "glow": false
+        },
+        {
+          "size": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "color": "accent",
+          "charm": true,
+          "glow": true
+        }
+      ]
+    }
+  },
+  "npc_models": {
+    "fountain_keeper": [
+      {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "npc",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Characters/glTF/*.gltf"
+        ]
+      },
+      {
+        "pack": "kaykit_adventures",
+        "tags": [
+          "player",
+          "fantasy"
+        ],
+        "patterns": [
+          "*Mage.glb",
+          "*Rogue.glb"
+        ]
+      }
+    ],
+    "milewarden": [
+      {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "npc",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Characters/glTF/*.gltf"
+        ]
+      },
+      {
+        "pack": "kaykit_adventures",
+        "tags": [
+          "player",
+          "fantasy"
+        ],
+        "patterns": [
+          "*Knight.glb",
+          "*Rogue.glb"
+        ]
+      }
+    ],
+    "relic_mender": [
+      {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "npc",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Characters/glTF/*.gltf"
+        ]
+      },
+      {
+        "pack": "kaykit_adventures",
+        "tags": [
+          "player",
+          "fantasy"
+        ],
+        "patterns": [
+          "*Mage.glb",
+          "*Rogue_Hooded.glb"
+        ]
+      }
+    ],
+    "retired_delver": [
+      {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "npc",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Characters/glTF/*.gltf"
+        ]
+      },
+      {
+        "pack": "kaykit_adventures",
+        "tags": [
+          "player",
+          "fantasy"
+        ],
+        "patterns": [
+          "*Barbarian.glb",
+          "*Knight.glb",
+          "*Rogue.glb"
+        ]
+      }
+    ]
+  },
+  "bed_pools": {
+    "amb_meadow": "wind",
+    "amb_desert": "wind",
+    "amb_frost": "mountain_air"
+  },
+  "effect_pools": {
+    "step_grass": "steps_grass",
+    "step_stone": "steps_stone",
+    "book_open": "books_open",
+    "book_close": "books_close",
+    "book_page": "books_page",
+    "door_open": "door"
+  },
+  "cue_pools": {
+    "bird": [
+      "bird",
+      "bird",
+      "cricket"
+    ],
+    "frog": [
+      "frog"
+    ],
+    "room_creak": [
+      "room"
+    ],
+    "book_page": [
+      "books_page"
+    ]
+  },
+  "weather": {
+    "biomes": [
+      0,
+      1
+    ],
+    "region_modulus": 7,
+    "particles": 72,
+    "rain_pool": "rain"
+  }
+}

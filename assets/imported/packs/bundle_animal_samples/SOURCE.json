@@ -1,0 +1,13 @@
+{
+  "id": "bundle_animal_samples",
+  "title": "Workspace Animal Samples / game-ready conversions",
+  "author": "Publisher not specified in supplied files",
+  "source": "workspace://import_assets/Free Sample_animals",
+  "license": "Unspecified in supplied files",
+  "license_url": "workspace://import_assets/Free Sample_animals/PROVENANCE-LICENSE.md",
+  "categories": [
+    "animals"
+  ],
+  "attribution_required": false,
+  "source_asset_changes": "Derived GLB exports. Original file and per-object identities and hashes are retained in CONVERSIONS.json."
+}

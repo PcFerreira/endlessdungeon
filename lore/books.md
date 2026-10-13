@@ -1,6 +1,6 @@
 # Books and found texts
 
-Status: draft proposal. Placement below describes future readable items or panels. No book interaction currently exists. Display only the passage and its in-world title and author to players; keep placement and reliability notes in author data.
+The six authored books can be read and copied to the saved field journal. Display only each passage, its in-world title, and its author to players. Placement and reliability notes remain author data. Additional book families below are writing proposals.
 
 ## A Cup for Whoever Comes Next
 

@@ -1,0 +1,26 @@
+{
+  "id": "kenney_modular_cave_kit",
+  "title": "Kenney Modular Cave Kit",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/modular-cave-kit",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/modular-cave-kit/37ec3cb12d-1783667097/kenney_modular-cave-kit_1.0.zip",
+      "filename": "kenney_modular-cave-kit_1.0.zip",
+      "bytes": 7025078,
+      "sha256": "48f37a6d4f241124cd7da17da1c6d4ed1bf1820bb149dcb233fbd5ebdd8ba996",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Modular 3D",
+  "categories": [
+    "Caves",
+    "Dungeon scenery"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney Modular Cave Kit by Kenney. Source: https://kenney.nl/assets/modular-cave-kit. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

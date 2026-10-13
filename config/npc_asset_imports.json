@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "pack": "kenney_blocky_characters",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Models/GLB format/character-a.glb",
+        "Models/GLB format/character-b.glb",
+        "Models/GLB format/character-e.glb",
+        "Models/GLB format/character-f.glb",
+        "Models/GLB format/character-k.glb",
+        "Models/GLB format/character-l.glb",
+        "Models/GLB format/character-m.glb",
+        "Models/GLB format/character-n.glb",
+        "Models/GLB format/character-o.glb",
+        "Models/GLB format/character-p.glb",
+        "Models/GLB format/character-r.glb"
+      ],
+      "tags": [
+        "npc",
+        "fantasy"
+      ]
+    },
+    {
+      "pack": "kenney_mini_characters",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Models/GLB format/character-female-*.glb",
+        "Models/GLB format/character-male-a.glb",
+        "Models/GLB format/character-male-b.glb",
+        "Models/GLB format/character-male-d.glb",
+        "Models/GLB format/character-male-e.glb",
+        "Models/GLB format/character-male-f.glb"
+      ],
+      "tags": [
+        "npc",
+        "fantasy"
+      ]
+    },
+    {
+      "pack": "quaternius_modular_men",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Individual Characters/glTF/*.gltf"
+      ],
+      "tags": [
+        "npc",
+        "fantasy"
+      ]
+    },
+    {
+      "pack": "quaternius_modular_women",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Individual Characters/glTF/*.gltf"
+      ],
+      "tags": [
+        "npc",
+        "fantasy"
+      ]
+    },
+    {
+      "pack": "quaternius_pirate_characters",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "glTF/Characters_*.gltf"
+      ],
+      "tags": [
+        "npc",
+        "fantasy"
+      ]
+    }
+  ]
+}

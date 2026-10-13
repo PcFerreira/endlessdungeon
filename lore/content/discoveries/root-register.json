@@ -1,0 +1,16 @@
+{
+  "id": "discovery_root_register",
+  "kind": "discovery",
+  "version": 2,
+  "family": "memory",
+  "title": "The Root Register",
+  "author": "An unsigned woodland register",
+  "marker_label": "Root register",
+  "biomes": [0, 1],
+  "requires": ["read_discovery"],
+  "model_query": {"pack": "quaternius_cube_world", "tags": ["scenery", "voxel"], "patterns": ["*/DeadTree_*.gltf"]},
+  "marker_width": 0.70,
+  "marker_height": 1.20,
+  "text": "The roots took the lower shelves first. We moved the books upstairs. The branches took the upper shelves next. We stopped calling it damage.\n\n{city_name} keeps the living names. This register keeps a few older ones. Both lists have room for another entry.\n\nUnder {dungeon_name}, someone wrote that the trees remember every visitor. Someone else crossed it out. The ink has faded; the crossing-out has not.",
+  "tags": ["exploration", "roadside", "memory"]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "quest_returned_names",
+  "kind": "local_quest",
+  "version": 2,
+  "title": "A Space After the Name",
+  "author": "The local archive of {city_name}",
+  "text": "We leave a space after every traveler's name. Some say the old archive in {dungeon_name} did the same. Your guild goes to places the rest of us only talk about. Would you copy our register, read theirs, and tell me what you find?",
+  "history_motifs": [
+    "returned-names"
+  ],
+  "giver_roles": [
+    "fountain_keeper"
+  ],
+  "requires": [
+    "compare_inscription"
+  ],
+  "target": {
+    "kind": "ruin_archive",
+    "label": "Archive inscription"
+  },
+  "ledger_prompt": "Copy the returning-name account from the town book in {city_name} before setting out.",
+  "inscription": "At departure the name is entered. At return the traveler may add a name or leave the second line empty.",
+  "choices": [
+    {
+      "id": "same",
+      "label": "The two customs agree."
+    },
+    {
+      "id": "different",
+      "label": "The customs differ."
+    }
+  ],
+  "answer": "same",
+  "finding": "Both registers let the traveler choose what to write on returning. Both allow the line to stay empty.",
+  "completion": "They left the choice to the traveler too. Good. I was hoping we hadn't forgotten something kind.",
+  "reward": {
+    "item": "wool_rug",
+    "quantity": 1
+  },
+  "tags": [
+    "local-quest",
+    "original",
+    "exploration"
+  ]
+}

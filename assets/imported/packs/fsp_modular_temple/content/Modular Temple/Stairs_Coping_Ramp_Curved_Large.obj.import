@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcjcc41xbaoq"
+path="res://.godot/imported/Stairs_Coping_Ramp_Curved_Large.obj-1a26740a99510e474a9db263d99f6047.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stairs_Coping_Ramp_Curved_Large.obj-1a26740a99510e474a9db263d99f6047.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Stairs_Coping_Ramp_Curved_Large.obj"
+dest_files=["res://.godot/imported/Stairs_Coping_Ramp_Curved_Large.obj-1a26740a99510e474a9db263d99f6047.mesh", "res://.godot/imported/Stairs_Coping_Ramp_Curved_Large.obj-1a26740a99510e474a9db263d99f6047.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

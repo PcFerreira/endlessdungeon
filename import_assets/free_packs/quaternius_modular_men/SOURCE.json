@@ -1,0 +1,64 @@
+{
+  "id": "quaternius_modular_men",
+  "title": "Quaternius Ultimate Modular Men- Feb 2022",
+  "author": "Quaternius",
+  "source": "https://quaternius.com/packs/ultimatemodularcharacters.html",
+  "mirror": "https://github.com/agentkaerf/FreeModels",
+  "revision": "db3df04d1e4714298a09510b26fb6de6645138a2",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "categories": [
+    "npc",
+    "fantasy",
+    "characters"
+  ],
+  "scope": "3 complete animated characters with notices and dependencies; modular pieces and modern outfits omitted.",
+  "downloads": [
+    {
+      "path": "How To Use.txt",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Men-%20Feb%202022/How%20To%20Use.txt",
+      "bytes": 1224,
+      "git_blob_sha1": "2ef1119f9f27d12c1d644847a7a7d284f4468bae",
+      "sha256": "9b684add13cc5aa20e7671bd1f47202d762bae1839c00a247fcdd57e29a37439"
+    },
+    {
+      "path": "Individual Characters/glTF/Adventurer.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Men-%20Feb%202022/Individual%20Characters/glTF/Adventurer.gltf",
+      "bytes": 3671456,
+      "git_blob_sha1": "a6743e9b397efb7ee3e3175459d503783e39ef4c",
+      "sha256": "21f7a61afb6bd6cef6961490c367594e3c2fc01ec1f041662131172ce763063e"
+    },
+    {
+      "path": "Individual Characters/glTF/Farmer.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Men-%20Feb%202022/Individual%20Characters/glTF/Farmer.gltf",
+      "bytes": 2998119,
+      "git_blob_sha1": "b0982928320163d9d67d03d92990c3481769a4ca",
+      "sha256": "46d3e85fa8d848ee479ab8e4672c16724ee4ea51f3af5733705a153937f93555"
+    },
+    {
+      "path": "Individual Characters/glTF/King.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Men-%20Feb%202022/Individual%20Characters/glTF/King.gltf",
+      "bytes": 3790158,
+      "git_blob_sha1": "76f763cf96daacfa60c6aca6eec7eed37330386a",
+      "sha256": "659c7d84dcea8c6331698c3430484861944c83e629389425664b782d4aecd17c"
+    },
+    {
+      "path": "License.txt",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Men-%20Feb%202022/License.txt",
+      "bytes": 372,
+      "git_blob_sha1": "62341762fbd2f5eca68b8ab98d3ae1c4487087a1",
+      "sha256": "e8dbf915a2b82229913e301a0787696611241bdefec4832bc084f54161db1efe"
+    },
+    {
+      "path": "Preview.jpg",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Ultimate%20Modular%20Men-%20Feb%202022/Preview.jpg",
+      "bytes": 360869,
+      "git_blob_sha1": "38ad8470f460286b2215c91676e052971b34b0a1",
+      "sha256": "ccf065362f4035d5a62a7a18dcb092365670d1e0877e55c1de0b5cc184652e4b"
+    }
+  ],
+  "attribution_required": false,
+  "attribution_text": "Characters by Quaternius. Source: https://quaternius.com/packs/ultimatemodularcharacters.html. License: CC0-1.0.",
+  "source_asset_changes": "None; downloaded source bytes are preserved."
+}

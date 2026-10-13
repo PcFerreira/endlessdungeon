@@ -1,0 +1,27 @@
+{
+  "id": "kenney_nature_kit",
+  "title": "Kenney Nature Kit",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/nature-kit",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/nature-kit/37ac38a37b-1677698939/kenney_nature-kit.zip",
+      "filename": "kenney_nature-kit.zip",
+      "bytes": 10537521,
+      "sha256": "fa7974a0d342bfe63c38664ba9f8ec1a4aab8ea25f099bdc56870e33588c4d9d",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Vegetation",
+    "Rocks",
+    "Biome scenery"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney Nature Kit by Kenney. Source: https://kenney.nl/assets/nature-kit. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

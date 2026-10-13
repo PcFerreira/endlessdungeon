@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "scope": "items",
+  "families": {
+    "voxel_items": {
+      "environment_family": "block_voxel",
+      "queries": [
+        {
+          "pack": "bundle_voxel_loot",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "bundle_padadu_fantasy_voxels",
+          "patterns": [
+            "*"
+          ]
+        }
+      ]
+    },
+    "faceted_item_models": {
+      "environment_family": "flat_lowpoly",
+      "queries": [
+        {
+          "pack": "kaykit_fantasy_weapons",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kaykit_skeletons",
+          "patterns": [
+            "*/Assets/gltf/*.gltf"
+          ]
+        },
+        {
+          "pack": "quaternius_fantasy_props",
+          "patterns": [
+            "*/Exports/glTF/*.gltf"
+          ]
+        },
+        {
+          "pack": "quaternius_modular_ruins_full",
+          "patterns": [
+            "*/OBJ/*.obj"
+          ]
+        }
+      ]
+    }
+  },
+  "native_sources": [
+    "res://assets/sanctum_sigil.svg",
+    "res://assets/items/health_potion.svg",
+    "res://assets/items/aether_potion.svg",
+    "res://assets/items/ember_shard.svg",
+    "res://assets/items/oak_chair.svg",
+    "res://assets/items/rune_lantern.svg",
+    "res://assets/items/wool_rug.svg",
+    "res://assets/spells/strike.svg",
+    "res://assets/spells/bolt.svg",
+    "res://assets/items/traveler_coat.svg",
+    "res://assets/items/silver_charm.svg",
+    "res://assets/items/gold_coin.svg"
+  ],
+  "procedural_sources": {
+    "procedural:rug": "block_voxel",
+    "procedural:lantern": "block_voxel"
+  },
+  "reward_icons": {
+    "res://assets/items/gold_coin.svg": "coin",
+    "res://assets/items/health_potion.svg": "health",
+    "res://assets/items/aether_potion.svg": "mana",
+    "res://assets/items/ember_shard.svg": "ember"
+  },
+  "scenery_sources": [
+    "barrel",
+    "crates",
+    "banner_blue",
+    "banner_red",
+    "torch",
+    "floor",
+    "floor_broken",
+    "arch",
+    "stag",
+    "pot",
+    "tree_a",
+    "tree_b",
+    "tree_c",
+    "dead_a",
+    "dead_b",
+    "dead_c",
+    "bush",
+    "mushroom",
+    "rock",
+    "rock_b",
+    "flowers",
+    "flowers_b",
+    "plant",
+    "fence",
+    "cart",
+    "stall",
+    "bench",
+    "lantern",
+    "tent",
+    "bedroll",
+    "campfire",
+    "signpost",
+    "log",
+    "bookstand",
+    "book",
+    "bookcase",
+    "scroll",
+    "workbench",
+    "anvil",
+    "wall_lantern",
+    "bed",
+    "table",
+    "wall_shelf",
+    "cave_floor",
+    "cave_wall",
+    "mushroom_tall",
+    "stump"
+  ]
+}

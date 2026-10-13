@@ -8,12 +8,19 @@ func _init() -> void:
 	var floor_counts := {}
 	for run_seed in range(12):
 		var world = World.new()
-		world.generate(run_seed)
+		world.generate(run_seed, 4)
 		assert(world.load_around(Vector2(world.start)))
 		assert(world.chunks.size() == 25 and world.cells.size() == 6400)
 		assert(world.walkable(Vector2(world.start)))
 		var region: Dictionary = world.region_at(world.start)
 		assert(region.city.houses.size() >= 6 and region.dungeons.size() == 2)
+		assert(world.generator_version == 4)
+		assert(world.city_at(Vector2(world.start)).id == region.city.id)
+		assert(world.city_at(Vector2(region.dungeons[0].cell)).is_empty(), "A nearby dungeon is not town sanctuary")
+		for site in World.sites_in(region):
+			assert(world.site_by_id(site.id, site.cell) == site)
+			assert(world.site_by_id(site.id, site.cell + Vector2i.ONE).is_empty(), "Real-site resolution requires the actual cell")
+		assert(World.sites_in({"coordinate": Vector2i.ZERO, "city": {}, "dungeons": [], "locations": []}).is_empty(), "A town-free plan cannot invent a fallback city")
 		var visited := {world.start: true}
 		var frontier := [world.start]
 		while not frontier.is_empty():
@@ -37,14 +44,14 @@ func _init() -> void:
 		for chunk in world.chunks.values():
 			for spawn in chunk.spawns:
 				assert(world.tiles.has(spawn.cell))
-		var original: Dictionary = world.chunks[Vector2i(2, 2)].cells.duplicate(true)
+		var original: Dictionary = world.chunks[World.chunk_at(Vector2(world.start))].cells.duplicate(true)
 		world.load_around(Vector2(-1024, 2048))
 		assert(world.chunks.size() == 25 and world.cells.size() == 6400, "Streaming must remain bounded")
 		assert(world.bounds.has_point(Vector2i(-1024, 2048)))
 		world.load_around(Vector2(world.start))
-		assert(world.chunks[Vector2i(2, 2)].cells == original, "Reloaded chunks must be identical")
+		assert(world.chunks[World.chunk_at(Vector2(world.start))].cells == original, "Reloaded chunks must be identical")
 		var replay = World.new()
-		replay.generate(run_seed)
+		replay.generate(run_seed, 4)
 		replay.load_around(Vector2(replay.start))
 		assert(replay.cells == world.cells and replay.region_at(replay.start) == region)
 		for x in range(-512, 513, 32):
@@ -54,5 +61,5 @@ func _init() -> void:
 	assert(seen_biomes.size() == 4, "The world must generate all four biomes")
 	assert(seen_heights.size() > 8, "Terrain must have real vertical variation")
 	assert(floor_counts.size() > 8, "Dungeon lengths must vary across seeds")
-	print("PASS: 12 seeded worlds; varied terrain heights, four biomes, finite dungeon lengths, reachable entrances, city/prop collision, deterministic reloads, bounded streaming at negative/far coordinates")
+	print("PASS: 12 legacy edition-4 worlds; real site/empty-city queries, varied terrain heights, four biomes, finite dungeon lengths, reachable entrances, city/prop collision, deterministic reloads, bounded streaming at negative/far coordinates")
 	quit()

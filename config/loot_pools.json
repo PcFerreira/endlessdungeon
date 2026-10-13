@@ -1,0 +1,417 @@
+{
+  "version": 1,
+  "rarity_weights": {
+    "common": 82,
+    "uncommon": 16,
+    "rare": 2
+  },
+  "pools": {
+    "remains": {
+      "kinds": [
+        "material"
+      ],
+      "packs": [
+        "fantasy_rpg_icons_496",
+        "rpg_item_icons_db32",
+        "rpg_inventory_crafting_icons",
+        "crafting_material_icons",
+        "kaykit_skeletons"
+      ],
+      "names": [
+        "*bone*",
+        "*fur*",
+        "*feather*",
+        "*fang*",
+        "*hide*",
+        "*claw*",
+        "*leather*",
+        "*arrow*",
+        "*skull*",
+        "*horn*",
+        "*wing*"
+      ]
+    },
+    "forage": {
+      "kinds": [
+        "consumable",
+        "material"
+      ],
+      "packs": [
+        "kenney_food_kit",
+        "voxel_micro_farm",
+        "fantasy_rpg_icons_496",
+        "rpg_item_icons_db32",
+        "rpg_inventory_crafting_icons",
+        "crafting_material_icons"
+      ],
+      "names": [
+        "*apple*",
+        "*berry*",
+        "*mushroom*",
+        "*carrot*",
+        "*corn*",
+        "*tomato*",
+        "*daikon*",
+        "*seed*",
+        "*herb*",
+        "*timber*",
+        "*wood*",
+        "*root*",
+        "*leaf*",
+        "*nut*",
+        "*meat*",
+        "*fish*"
+      ]
+    },
+    "ore": {
+      "kinds": [
+        "material"
+      ],
+      "packs": [
+        "gem_icon_collection",
+        "crafting_material_icons",
+        "fantasy_rpg_icons_496",
+        "rpg_item_icons_db32",
+        "rpg_inventory_crafting_icons"
+      ],
+      "names": [
+        "*ore*",
+        "*ingot*",
+        "*gem*",
+        "*crystal*",
+        "*stone*",
+        "*diamond*",
+        "*ruby*",
+        "*sapphire*",
+        "*ameth*",
+        "*agate*",
+        "*opal*",
+        "*jade*",
+        "*jewel*",
+        "*metal*"
+      ]
+    },
+    "relics": {
+      "kinds": [
+        "material"
+      ],
+      "packs": [
+        "bundle_voxel_loot",
+        "fantasy_rpg_icons_496",
+        "rpg_item_icons_db32",
+        "rpg_inventory_crafting_icons",
+        "gem_icon_collection",
+        "kaykit_adventures",
+        "kaykit_fantasy_weapons",
+        "bundle_padadu_fantasy_voxels",
+        "kaykit_skeletons",
+        "crafting_material_icons",
+        "assorted_rpg_icons"
+      ],
+      "names": [
+        "*"
+      ]
+    },
+    "potions": {
+      "kinds": [
+        "consumable"
+      ],
+      "packs": [
+        "potion_icon_collection",
+        "rpg_inventory_crafting_icons",
+        "rpg_item_icons_db32",
+        "fantasy_rpg_icons_496"
+      ],
+      "names": [
+        "*"
+      ],
+      "base_items": [
+        "health_potion",
+        "aether_potion"
+      ]
+    },
+    "equipment": {
+      "kinds": [
+        "equipment"
+      ],
+      "packs": [
+        "kaykit_fantasy_weapons",
+        "kaykit_skeletons",
+        "kaykit_adventures",
+        "fantasy_rpg_icons_496",
+        "rpg_item_icons_db32",
+        "rpg_inventory_crafting_icons",
+        "quaternius_fantasy_props",
+        "voxel_micro_farm",
+        "bundle_padadu_fantasy_voxels",
+        "assorted_rpg_icons",
+        "kaykit_dungeon_full",
+        "kenney_survival_kit"
+      ],
+      "names": [
+        "*"
+      ]
+    },
+    "arcane_gear": {
+      "kinds": [
+        "equipment"
+      ],
+      "packs": [
+        "kaykit_fantasy_weapons",
+        "kaykit_skeletons",
+        "kaykit_adventures",
+        "fantasy_rpg_icons_496",
+        "rpg_item_icons_db32",
+        "rpg_inventory_crafting_icons",
+        "quaternius_fantasy_props",
+        "kaykit_dungeon_full",
+        "kenney_survival_kit"
+      ],
+      "names": [
+        "*staff*",
+        "*wand*",
+        "*rune*",
+        "*ring*",
+        "*scroll*",
+        "*spell*",
+        "*amulet*",
+        "*charm*",
+        "*necklace*"
+      ]
+    },
+    "provisions": {
+      "kinds": [
+        "consumable"
+      ],
+      "packs": [
+        "kenney_food_kit",
+        "voxel_micro_farm",
+        "quaternius_fantasy_props",
+        "bundle_voxel_loot",
+        "assorted_rpg_icons",
+        "potion_icon_collection",
+        "rpg_inventory_crafting_icons",
+        "rpg_item_icons_db32",
+        "fantasy_rpg_icons_496",
+        "kaykit_dungeon_full"
+      ],
+      "names": [
+        "*"
+      ]
+    }
+  },
+  "profiles": [
+    {
+      "id": "undead",
+      "enemies": [
+        "*skeleton*",
+        "*zombie*",
+        "*ghost*",
+        "*vampire*",
+        "*skull*"
+      ],
+      "weights": {
+        "remains": 50,
+        "relics": 20,
+        "potions": 20,
+        "equipment": 10
+      }
+    },
+    {
+      "id": "arcane",
+      "enemies": [
+        "*wizard*",
+        "*mage*",
+        "*demon*",
+        "*daemon*",
+        "*alien*",
+        "*monk*",
+        "*ninja*"
+      ],
+      "weights": {
+        "relics": 40,
+        "potions": 35,
+        "arcane_gear": 25
+      }
+    },
+    {
+      "id": "stone",
+      "enemies": [
+        "*golem*",
+        "*goleling*",
+        "*giant*",
+        "*cannon*"
+      ],
+      "weights": {
+        "ore": 60,
+        "relics": 20,
+        "potions": 10,
+        "equipment": 10
+      }
+    },
+    {
+      "id": "beast",
+      "enemies": [
+        "*wolf*",
+        "*bear*",
+        "*pig*",
+        "*fish*",
+        "*bird*",
+        "*birb*",
+        "*dog*",
+        "*cat*",
+        "*chick*",
+        "*bunny*",
+        "*frog*",
+        "*bronto*",
+        "*auroch*",
+        "*oryx*",
+        "*yeti*",
+        "*dragon*",
+        "*armabee*",
+        "*hywirl*",
+        "*hedgehog*",
+        "*mush*"
+      ],
+      "weights": {
+        "remains": 50,
+        "forage": 35,
+        "potions": 10,
+        "arcane_gear": 5
+      }
+    },
+    {
+      "id": "warrior",
+      "enemies": [
+        "*"
+      ],
+      "weights": {
+        "equipment": 30,
+        "potions": 35,
+        "relics": 35,
+        "provisions": 20
+      }
+    }
+  ],
+  "contexts": [
+    {
+      "families": [
+        "dungeon_quarry_depths"
+      ],
+      "weights": {
+        "ore": 55,
+        "equipment": 25,
+        "potions": 20
+      }
+    },
+    {
+      "families": [
+        "dungeon_fungal_cistern",
+        "dungeon_verdant_tomb"
+      ],
+      "weights": {
+        "forage": 45,
+        "remains": 25,
+        "potions": 20,
+        "arcane_gear": 10
+      }
+    },
+    {
+      "families": [
+        "dungeon_violet_sanctum"
+      ],
+      "weights": {
+        "arcane_gear": 35,
+        "relics": 35,
+        "potions": 30
+      }
+    },
+    {
+      "families": [
+        "dungeon_unclosed_office"
+      ],
+      "weights": {
+        "relics": 50,
+        "equipment": 25,
+        "potions": 25,
+        "provisions": 15
+      }
+    },
+    {
+      "facets": [
+        "surface_mycelium_downs"
+      ],
+      "add_weights": {
+        "forage": 25
+      }
+    },
+    {
+      "facets": [
+        "surface_cinder_verge"
+      ],
+      "add_weights": {
+        "ore": 25
+      }
+    },
+    {
+      "biomes": [
+        0,
+        1
+      ],
+      "add_weights": {
+        "forage": 15
+      }
+    },
+    {
+      "biomes": [
+        2,
+        3
+      ],
+      "add_weights": {
+        "ore": 15
+      }
+    }
+  ],
+  "rarity_rules": [
+    {
+      "rarity": "uncommon",
+      "kinds": [
+        "equipment"
+      ],
+      "names": [
+        "*gold*",
+        "*silver*",
+        "*crystal*",
+        "*rune*",
+        "*arcane*",
+        "*magic*"
+      ]
+    },
+    {
+      "rarity": "rare",
+      "kinds": [
+        "equipment"
+      ],
+      "names": [
+        "*dragon*",
+        "*demon*",
+        "*legend*",
+        "*royal*",
+        "*crystal*",
+        "*Blue Set*"
+      ]
+    }
+  ],
+  "rarity_bonuses": {
+    "uncommon": {
+      "hp": 18,
+      "mana": 15,
+      "power": 0.12
+    },
+    "rare": {
+      "hp": 28,
+      "mana": 22,
+      "power": 0.18
+    }
+  }
+}

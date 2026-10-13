@@ -1,0 +1,1872 @@
+{
+  "version": 1,
+  "enemies": [
+    {
+      "name": "Crypt Skeleton",
+      "hp": 48.0,
+      "speed": 1.2,
+      "reach": 0.85,
+      "windup": 0.45,
+      "period": 1.2,
+      "damage": 12.0,
+      "ranged": false,
+      "id": "crypt_skeleton",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 0,
+      "habitat": {
+        "biomes": [
+
+        ],
+        "facets": [
+
+        ],
+        "families": [
+          "dungeon_ashen_crypt",
+          "dungeon_verdant_tomb",
+          "dungeon_quarry_depths"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Enemies/glTF/Skeleton*.gltf"
+        ]
+      },
+      "legacy_kind": 0
+    },
+    {
+      "name": "Sanctum Invoker",
+      "hp": 58.0,
+      "speed": 1.2,
+      "reach": 5.5,
+      "windup": 0.65,
+      "period": 1.7,
+      "damage": 10.0,
+      "ranged": true,
+      "id": "sanctum_invoker",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 1,
+      "habitat": {
+        "biomes": [
+
+        ],
+        "facets": [
+
+        ],
+        "families": [
+          "dungeon_ashen_crypt",
+          "dungeon_violet_sanctum",
+          "dungeon_unclosed_office"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Enemies/glTF/Wizard.gltf",
+          "*monsters*/glTF/Wizard.gltf"
+        ]
+      },
+      "legacy_kind": 1
+    },
+    {
+      "name": "Tomb Shade",
+      "hp": 58.0,
+      "speed": 1.5,
+      "reach": 0.85,
+      "windup": 0.45,
+      "period": 1.2,
+      "damage": 12.0,
+      "ranged": false,
+      "id": "tomb_shade",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 2,
+      "habitat": {
+        "biomes": [
+
+        ],
+        "facets": [
+
+        ],
+        "families": [
+          "dungeon_ashen_crypt",
+          "dungeon_violet_sanctum",
+          "dungeon_fungal_cistern",
+          "dungeon_unclosed_office"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*monsters*/glTF/Ghost*.gltf"
+        ]
+      },
+      "legacy_kind": 2
+    },
+    {
+      "name": "Briar Wolf",
+      "hp": 40.0,
+      "speed": 2.0,
+      "reach": 0.9,
+      "windup": 0.5,
+      "period": 1.4,
+      "damage": 10.0,
+      "ranged": false,
+      "id": "briar_wolf",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 3,
+      "habitat": {
+        "biomes": [
+          0,
+          1,
+          3
+        ],
+        "facets": [
+          "surface_mycelium_downs"
+        ],
+        "families": [
+          "dungeon_verdant_tomb"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Animals/glTF/Wolf.gltf",
+          "*monsters*/glTF/Dog.gltf"
+        ]
+      }
+    },
+    {
+      "name": "Roadside Brigand",
+      "hp": 62.0,
+      "speed": 1.3,
+      "reach": 5.0,
+      "windup": 0.85,
+      "period": 2.0,
+      "damage": 10.0,
+      "ranged": true,
+      "id": "roadside_brigand",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 4,
+      "habitat": {
+        "biomes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "facets": [
+          "surface_cinder_verge"
+        ],
+        "families": [
+          "dungeon_unclosed_office"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Enemies/glTF/Goblin.gltf",
+          "*monsters*/glTF/Tribal*.gltf",
+          "*monsters*/glTF/Orc*.gltf"
+        ]
+      }
+    },
+    {
+      "name": "Wild Boar",
+      "hp": 84.0,
+      "speed": 1.35,
+      "reach": 1.0,
+      "windup": 0.8,
+      "period": 2.0,
+      "damage": 18.0,
+      "ranged": false,
+      "id": "wild_boar",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 5,
+      "habitat": {
+        "biomes": [
+          0,
+          1
+        ],
+        "facets": [
+          "surface_mycelium_downs"
+        ],
+        "families": [
+          "dungeon_fungal_cistern"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Animals/glTF/Pig.gltf"
+        ]
+      }
+    },
+    {
+      "name": "Rime Golem",
+      "hp": 110.0,
+      "speed": 0.85,
+      "reach": 1.1,
+      "windup": 0.95,
+      "period": 2.3,
+      "damage": 22.0,
+      "ranged": false,
+      "id": "rime_golem",
+      "height": 1.35,
+      "weight": 1,
+      "voxel_shape": 6,
+      "habitat": {
+        "biomes": [
+          3
+        ],
+        "facets": [
+
+        ],
+        "families": [
+          "dungeon_quarry_depths"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Enemies/glTF/Yeti.gltf",
+          "*monsters*/glTF/Yeti.gltf",
+          "*monsters*/glTF/Goleling*.gltf"
+        ]
+      }
+    },
+    {
+      "name": "Cinder Wisp",
+      "hp": 46.0,
+      "speed": 1.6,
+      "reach": 4.5,
+      "windup": 0.7,
+      "period": 1.5,
+      "damage": 10.0,
+      "ranged": true,
+      "id": "cinder_wisp",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 7,
+      "habitat": {
+        "biomes": [
+          2
+        ],
+        "facets": [
+          "surface_cinder_verge"
+        ],
+        "families": [
+          "dungeon_violet_sanctum"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*Enemies/glTF/Demon.gltf",
+          "*monsters*/glTF/Demon*.gltf"
+        ]
+      }
+    },
+    {
+      "name": "Spore Crawler",
+      "hp": 54.0,
+      "speed": 1.5,
+      "reach": 0.85,
+      "windup": 0.55,
+      "period": 1.3,
+      "damage": 12.0,
+      "ranged": false,
+      "id": "spore_crawler",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 8,
+      "habitat": {
+        "biomes": [
+          0
+        ],
+        "facets": [
+          "surface_mycelium_downs"
+        ],
+        "families": [
+          "dungeon_verdant_tomb",
+          "dungeon_fungal_cistern"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*monsters*/glTF/Mushnub*.gltf",
+          "*monsters*/glTF/MushroomKing.gltf"
+        ]
+      }
+    },
+    {
+      "name": "Dune Scarab",
+      "hp": 52.0,
+      "speed": 1.8,
+      "reach": 0.8,
+      "windup": 0.6,
+      "period": 1.5,
+      "damage": 11.0,
+      "ranged": false,
+      "id": "dune_scarab",
+      "height": 1.05,
+      "weight": 1,
+      "voxel_shape": 9,
+      "habitat": {
+        "biomes": [
+          2
+        ],
+        "facets": [
+          "surface_cinder_verge"
+        ],
+        "families": [
+          "dungeon_quarry_depths"
+        ]
+      },
+      "visual": {
+        "patterns": [
+          "*monsters*/glTF/Armabee*.gltf",
+          "*Enemies/glTF/Hedgehog.gltf"
+        ]
+      }
+    }
+  ],
+  "interiors": [
+    {
+      "id": "home",
+      "name": "Townhouse",
+      "size": [
+        12,
+        11
+      ],
+      "floor": "86745f",
+      "book": "book_waiting_cup",
+      "rest": null,
+      "layouts": [
+        {
+          "id": "furnished",
+          "props": [
+            {
+              "fallback": "bed",
+              "point": [
+                8,
+                1.5
+              ],
+              "footprint": [
+                1.1,
+                1.8
+              ],
+              "height": 0.6,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/bed*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "table",
+              "point": [
+                3,
+                6.5
+              ],
+              "footprint": [
+                1.5,
+                0.9
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                3,
+                7.7
+              ],
+              "footprint": [
+                0.65,
+                0.65
+              ],
+              "height": 0.85,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                3,
+                6.5
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "plants",
+          "props": [
+            {
+              "fallback": "bed",
+              "point": [
+                8,
+                1.5
+              ],
+              "footprint": [
+                1.1,
+                1.8
+              ],
+              "height": 0.6,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/bed*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "table",
+              "point": [
+                3,
+                6.5
+              ],
+              "footprint": [
+                1.5,
+                0.9
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                3,
+                7.7
+              ],
+              "footprint": [
+                0.65,
+                0.65
+              ],
+              "height": 0.85,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                3,
+                6.5
+              ]
+            },
+            {
+              "fallback": "pot",
+              "point": [
+                10.1,
+                5
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/pot*.gltf"
+                ]
+              },
+              "wall": "east",
+              "facing": [
+                -1,
+                0
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "names": [
+        "Townhouse",
+        "Roadside Home",
+        "Garden Cottage"
+      ]
+    },
+    {
+      "id": "inn",
+      "name": "Lantern Inn",
+      "size": [
+        18,
+        14
+      ],
+      "floor": "90785d",
+      "book": "book_warm_letter",
+      "rest": [
+        13,
+        4.2
+      ],
+      "layouts": [
+        {
+          "id": "furnished",
+          "props": [
+            {
+              "fallback": "table",
+              "point": [
+                4,
+                7
+              ],
+              "footprint": [
+                1.6,
+                1.1
+              ],
+              "height": 0.7,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                2.7,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                4,
+                7
+              ]
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                5.3,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                4,
+                7
+              ]
+            },
+            {
+              "fallback": "table",
+              "point": [
+                12,
+                7
+              ],
+              "footprint": [
+                1.6,
+                1.1
+              ],
+              "height": 0.7,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                10.7,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                12,
+                7
+              ]
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                13.3,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                12,
+                7
+              ]
+            },
+            {
+              "fallback": "bed",
+              "point": [
+                13,
+                1.5
+              ],
+              "footprint": [
+                1.3,
+                1.8
+              ],
+              "height": 0.6,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/bed*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "plants",
+          "props": [
+            {
+              "fallback": "table",
+              "point": [
+                4,
+                7
+              ],
+              "footprint": [
+                1.6,
+                1.1
+              ],
+              "height": 0.7,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                2.7,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                4,
+                7
+              ]
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                5.3,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                4,
+                7
+              ]
+            },
+            {
+              "fallback": "table",
+              "point": [
+                12,
+                7
+              ],
+              "footprint": [
+                1.6,
+                1.1
+              ],
+              "height": 0.7,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                10.7,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                12,
+                7
+              ]
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                13.3,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                12,
+                7
+              ]
+            },
+            {
+              "fallback": "bed",
+              "point": [
+                13,
+                1.5
+              ],
+              "footprint": [
+                1.3,
+                1.8
+              ],
+              "height": 0.6,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/bed*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "pot",
+              "point": [
+                16.099999999999998,
+                5
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/pot*.gltf"
+                ]
+              },
+              "wall": "east",
+              "facing": [
+                -1,
+                0
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "names": [
+        "The Lantern Inn",
+        "The Quiet Cup",
+        "The Resting Cart"
+      ]
+    },
+    {
+      "id": "shop",
+      "name": "Travellers' Shop",
+      "size": [
+        15,
+        12
+      ],
+      "floor": "7c7668",
+      "book": "book_handles",
+      "rest": null,
+      "layouts": [
+        {
+          "id": "furnished",
+          "props": [
+            {
+              "fallback": "table",
+              "point": [
+                9,
+                4
+              ],
+              "footprint": [
+                2.5,
+                0.9
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table_medium_long.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                8,
+                0.95
+              ],
+              "footprint": [
+                0.7,
+                0.7
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                10,
+                0.95
+              ],
+              "footprint": [
+                0.7,
+                0.7
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                12,
+                0.95
+              ],
+              "footprint": [
+                0.7,
+                0.7
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "barrel",
+              "point": [
+                11,
+                7
+              ],
+              "footprint": [
+                0.8,
+                0.8
+              ],
+              "height": 0.95,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/barrel*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "plants",
+          "props": [
+            {
+              "fallback": "table",
+              "point": [
+                9,
+                4
+              ],
+              "footprint": [
+                2.5,
+                0.9
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table_medium_long.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                8,
+                0.95
+              ],
+              "footprint": [
+                0.7,
+                0.7
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                10,
+                0.95
+              ],
+              "footprint": [
+                0.7,
+                0.7
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                12,
+                0.95
+              ],
+              "footprint": [
+                0.7,
+                0.7
+              ],
+              "height": 0.8,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "barrel",
+              "point": [
+                11,
+                7
+              ],
+              "footprint": [
+                0.8,
+                0.8
+              ],
+              "height": 0.95,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/barrel*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "pot",
+              "point": [
+                13.1,
+                5
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/pot*.gltf"
+                ]
+              },
+              "wall": "east",
+              "facing": [
+                -1,
+                0
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "names": [
+        "Travellers' Shop",
+        "The Wandering Shelf",
+        "The Brass Button"
+      ]
+    },
+    {
+      "id": "workshop",
+      "name": "Mender's Workshop",
+      "size": [
+        16,
+        12
+      ],
+      "floor": "6d7780",
+      "book": "book_handles",
+      "rest": null,
+      "layouts": [
+        {
+          "id": "furnished",
+          "props": [
+            {
+              "fallback": "workbench",
+              "point": [
+                10,
+                1.0
+              ],
+              "footprint": [
+                2,
+                0.8
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/workbench*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "anvil",
+              "point": [
+                11,
+                6
+              ],
+              "footprint": [
+                1.1,
+                0.8
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/anvil*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                12,
+                8
+              ],
+              "footprint": [
+                0.8,
+                0.8
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "plants",
+          "props": [
+            {
+              "fallback": "workbench",
+              "point": [
+                10,
+                1.0
+              ],
+              "footprint": [
+                2,
+                0.8
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/workbench*.gltf"
+                ]
+              },
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ]
+            },
+            {
+              "fallback": "anvil",
+              "point": [
+                11,
+                6
+              ],
+              "footprint": [
+                1.1,
+                0.8
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/anvil*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "crates",
+              "point": [
+                12,
+                8
+              ],
+              "footprint": [
+                0.8,
+                0.8
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/crate*.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "pot",
+              "point": [
+                14.1,
+                5
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/pot*.gltf"
+                ]
+              },
+              "wall": "east",
+              "facing": [
+                -1,
+                0
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "names": [
+        "Mender's Workshop",
+        "The Bent Nail",
+        "The Copper Workroom"
+      ]
+    },
+    {
+      "id": "shrine",
+      "name": "Wayfarers' Shrine",
+      "size": [
+        14,
+        14
+      ],
+      "floor": "82808f",
+      "book": "book_final_atlas",
+      "rest": [
+        7,
+        4.5
+      ],
+      "layouts": [
+        {
+          "id": "furnished",
+          "props": [
+            {
+              "fallback": "table",
+              "point": [
+                7,
+                3
+              ],
+              "footprint": [
+                2,
+                0.9
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table_medium_long.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                3,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                7,
+                3
+              ]
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                10,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                7,
+                3
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "plants",
+          "props": [
+            {
+              "fallback": "table",
+              "point": [
+                7,
+                3
+              ],
+              "footprint": [
+                2,
+                0.9
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/table_medium_long.gltf"
+                ]
+              }
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                3,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                7,
+                3
+              ]
+            },
+            {
+              "fallback": "bench",
+              "point": [
+                10,
+                7
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.9,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/chair*.gltf"
+                ]
+              },
+              "face": [
+                7,
+                3
+              ]
+            },
+            {
+              "fallback": "pot",
+              "point": [
+                12.1,
+                5
+              ],
+              "footprint": [
+                0.6,
+                0.6
+              ],
+              "height": 0.65,
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/pot*.gltf"
+                ]
+              },
+              "wall": "east",
+              "facing": [
+                -1,
+                0
+              ]
+            },
+            {
+              "fallback": "wall_shelf",
+              "point": [
+                5,
+                0.85
+              ],
+              "footprint": [
+                1.1,
+                0.5
+              ],
+              "height": 0.55,
+              "elevation": 1.0,
+              "wall": "north",
+              "facing": [
+                0,
+                1
+              ],
+              "query": {
+                "tags": [
+                  "furniture"
+                ],
+                "patterns": [
+                  "*/shelf*.gltf"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "names": [
+        "Wayfarers' Shrine",
+        "The Listening Room",
+        "The Lantern Chapel"
+      ]
+    }
+  ],
+  "interior_defaults": {
+    "props": [
+      {
+        "fallback": "bookcase",
+        "point": [
+          2,
+          0.875
+        ],
+        "footprint": [
+          1.1,
+          0.55
+        ],
+        "height": 1.25,
+        "query": {
+          "tags": [
+            "furniture"
+          ],
+          "patterns": [
+            "*/cabinet*.gltf",
+            "*/bookcase*.gltf"
+          ]
+        },
+        "wall": "north",
+        "facing": [
+          0,
+          1
+        ]
+      },
+      {
+        "fallback": "bookstand",
+        "point": [
+          3,
+          3
+        ],
+        "footprint": [
+          0.65,
+          0.65
+        ],
+        "height": 0.8
+      }
+    ],
+    "readable": {
+      "point": [
+        3,
+        3
+      ],
+      "approach": [
+        3,
+        4
+      ]
+    }
+  }
+}

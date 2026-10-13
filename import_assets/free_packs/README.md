@@ -1,6 +1,6 @@
 # Downloaded game assets
 
-This collection contains 46 free packs added on 2026-10-12 and 2026-10-13: voxel and low poly models, isometric art, item icons, HUD assets, music, sounds, seasonal props, and world expansion assets. Forty packs use CC0; five use CC BY 3.0 and one uses CC BY 4.0. The six CC BY packs require attribution.
+This collection contains 50 free packs added on 2026-10-12 and 2026-10-13: voxel and low poly models, isometric art, item icons, HUD assets, music, sounds, seasonal props, and world expansion assets. Forty-four packs use CC0; five use CC BY 3.0 and one uses CC BY 4.0. The six CC BY packs require attribution.
 
 | Pack | Style | Use | License | Contents |
 | --- | --- | --- | --- | --- |
@@ -50,8 +50,12 @@ This collection contains 46 free packs added on 2026-10-12 and 2026-10-13: voxel
 | [Ambient Bird, Cricket and Frog](wildlife_ambience/godot_wav) | Audio | Birds, Crickets, Frogs | CC-BY-3.0 (credit required) | Four original FLAC recordings plus PCM-equivalent WAV copies prepared for Godot. CC BY 3.0 credits required. |
 | [Ambient Mountain, River, Wind, Forest and Waterfall](river_forest_ambience/godot_wav) | Audio | Rivers, Streams, Waterfalls, Forests, Mountains | CC-BY-3.0 (credit required) | Six original FLAC recordings plus PCM-equivalent WAV copies prepared for Godot. CC BY 3.0 credits required. |
 | [Arcane Magic Effect](arcane_magic_effect/content/Arcane_Effect) | 2D effect frames | Arcane effects, Magic landmarks | CC0-1.0 | 42 PNG animation frames in six sequences. Can be used as a sprite effect around selected landmarks after animation/blending setup. |
+| [Kenney Castle Kit](kenney_castle_kit/content/Models/GLB%20format) | Low poly modular 3D | Castles, Fortifications, Bridges, Siege props | CC0-1.0 | 76 GLB files of castle walls, towers, doors, stairs, bridges, banners and siege props. OBJ/FBX alternatives and previews are retained. |
+| [KayKit Medieval Hexagon Pack: Free](kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf) | Low poly modular 3D | Settlements, Castles, Churches, Markets, Mills | CC0-1.0 | 221 glTF files, including faction color variants of castles, churches, homes, taverns, markets, mills and military buildings, plus walls, bridges, scenery and hex tiles. OBJ alternatives are retained. Hex terrain requires grid adaptation. |
+| [Quaternius Medieval Village MegaKit: Standard](quaternius_medieval_village/glTF) | Low poly modular 3D | Modular buildings, Settlements, Architecture | CC0-1.0 | 176 glTF files from the free Standard tier: walls, floors, roof sections, doors, frames, windows, stairs, balconies and overhangs, with buffers and textures. Paid models and engine scenes are excluded. |
+| [Modular Temple Pack](fsp_modular_temple/content/Modular%20Temple) | Low poly modular 3D | Temples, Palaces, Ruins, Puzzle props | CC0-1.0 | 213 OBJ meshes and one shared MTL file: temple/palace walls, floors, stairs, towers, pillars, balconies, ruined pieces, doors, levers and puzzle conduits. Godot ignores legacy ambient-light material settings during PBR import. |
 
-
+See [ARCHITECTURE_ASSETS.md](ARCHITECTURE_ASSETS.md) for cities, castles, temples and palace construction. Checks for this batch are in [architecture_validation.json](architecture_validation.json).
 
 See [WORLD_ASSETS.md](WORLD_ASSETS.md) for scenery, interiors, professions, monsters, magic effects and ambient recordings. The world expansion audit is in [world_expansion_validation.json](world_expansion_validation.json).
 
@@ -90,3 +94,14 @@ The fourteen world expansion additions passed a further check: 837 models instan
 The extra padadu fantasy pack is partial: nine of 17 uploads downloaded before itch.io returned HTTP 429. `padadu_fantasy_voxels/SOURCE.json` lists the eight missing uploads. The staged files are intact.
 
 Godot 4.7.2 imported the original 25-pack collection in an isolated temporary project. The resource check instantiated its 427 models and loaded 2750 textures and 290 audio streams. The texture count includes images extracted from models by Godot. Logs and the check script are saved in `validation/`. Visual style matching, scale, collisions, character attachment points, animation blending, audio loudness and loop behavior still need review when assets are adopted. The RPG audio preview contains a malformed vendor metadata comment; it imports and loads with a warning, and the original is preserved.
+
+## NPC expansion acquired on 2026-10-13
+
+Four additional CC0 sources support the curated NPC expansion. Source/license notices, official page copies, download hashes and original author credits are retained in each directory. See [NPC appearances](../../docs/NPC_STYLES.md) for the runtime selection and the full 32-appearance count, including eleven previously staged Blocky Characters.
+
+| Pack | Adopted complete characters | Acquisition |
+| --- | ---: | --- |
+| [Kenney Mini Characters](kenney_mini_characters/) | 11 | Complete original archive retained; police uniform and standalone aids excluded from runtime. |
+| [Quaternius Ultimate Modular Men](quaternius_modular_men/) | 3 | Adventurer, Farmer, King; complete glTF bodies with original notices. |
+| [Quaternius Ultimate Modular Women](quaternius_modular_women/) | 3 | Adventurer, Medieval, Witch; complete glTF bodies with original notices. |
+| [Quaternius Pirate Characters](quaternius_pirate_characters/) | 4 | Anne, Captain Barbarossa, Henry, Sharky; complete glTF bodies. |

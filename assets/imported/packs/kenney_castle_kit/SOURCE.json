@@ -1,0 +1,28 @@
+{
+  "id": "kenney_castle_kit",
+  "title": "Kenney Castle Kit",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/castle-kit",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/castle-kit/a395102d20-1711543616/kenney_castle-kit.zip",
+      "filename": "kenney_castle_kit.zip",
+      "bytes": 2232589,
+      "sha256": "921f3f73927bb23106cae34bc21d5ab4b033a9fc120475e96f714a406e3169df",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly modular 3D",
+  "categories": [
+    "Castles",
+    "Fortifications",
+    "Bridges",
+    "Siege props"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney Castle Kit by Kenney. Source: https://kenney.nl/assets/castle-kit. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original models, dependencies and publisher license notices are preserved unchanged. Archive contents were placed in content/; the KayKit GitHub archive wrapper was removed."
+}

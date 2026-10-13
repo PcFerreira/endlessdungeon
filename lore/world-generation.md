@@ -2,7 +2,7 @@
 
 Status: draft design proposal for the coding agent. All changes in this pass are documentation inside `lore/`. These rules are not yet implemented or playtested.
 
-The goal is for a journey to offer a destination, an approach choice, a discovery, and a reason to continue or return. The [Breath of the Wild research](research/breath-of-the-wild.md) provides the source observations. The generation pipeline below is our proposed adaptation for the Endless Realm.
+The goal is for a journey to offer a destination, an approach choice, a discovery, and a reason to continue or return. The [Breath of the Wild research](research/breath-of-the-wild.md) provides the source observations. The generation pipeline below is our proposed adaptation for the Endless World. Its collapsed multiverse explains different local traditions; the player's Milewarden guild gives exploration a purpose. Generation and asset terminology belongs in this author reference, not in found notes or dialogue.
 
 ## Build connected places
 

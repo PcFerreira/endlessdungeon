@@ -1,0 +1,71 @@
+{
+  "id": "quaternius_pirate_characters",
+  "title": "Quaternius Pirate Kit",
+  "author": "Quaternius",
+  "source": "https://quaternius.com/packs/piratekit.html",
+  "mirror": "https://github.com/agentkaerf/FreeModels",
+  "revision": "db3df04d1e4714298a09510b26fb6de6645138a2",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "categories": [
+    "npc",
+    "fantasy",
+    "characters"
+  ],
+  "scope": "4 complete animated characters with notices and dependencies; modular pieces and modern outfits omitted.",
+  "downloads": [
+    {
+      "path": "Atlas_Pirate.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/Atlas_Pirate.png",
+      "bytes": 9014,
+      "git_blob_sha1": "40392aae55643ecab061c25dad94f613373d4da2",
+      "sha256": "a538d23f834ab4233d871cb9688f98ff574fc31b00e4dd99b9b42750f577ede4"
+    },
+    {
+      "path": "Preview.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/Preview.png",
+      "bytes": 1683395,
+      "git_blob_sha1": "4dac4bfbe782b02e2557a83aa536cba0054b0e24",
+      "sha256": "43c892836ecf574b01eaba0fe7b2fbed96d771f2ef714134e4cf45f9840fd61b"
+    },
+    {
+      "path": "Preview2.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/Preview2.png",
+      "bytes": 2286562,
+      "git_blob_sha1": "0bed4270743c524d37b56a39df9782468abfe39d",
+      "sha256": "cbf094a62d0a6dd492aa71225dbc354b9e54c9c0dd547f8f77ecef5b4c2b76b9"
+    },
+    {
+      "path": "glTF/Characters_Anne.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/glTF/Characters_Anne.gltf",
+      "bytes": 1552200,
+      "git_blob_sha1": "2409e6a2d8f18243a30002d70f3077d7957decc2",
+      "sha256": "9eafbfc1250652bbfd338cfd29c258ba0e0fee31586162696ee4bc3217ac3485"
+    },
+    {
+      "path": "glTF/Characters_Captain_Barbarossa.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/glTF/Characters_Captain_Barbarossa.gltf",
+      "bytes": 1335348,
+      "git_blob_sha1": "d9d6f5e1d8930c271141e32783f95d66c92fe955",
+      "sha256": "db9499c91a143750031bcff287cab6c9b63a0682801bb120c128e244f0d6d5c4"
+    },
+    {
+      "path": "glTF/Characters_Henry.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/glTF/Characters_Henry.gltf",
+      "bytes": 1491195,
+      "git_blob_sha1": "396bd750f2a6a9cee832993b96d06f5898c5e36d",
+      "sha256": "fc52c1ea8b87a8c24e1710a75290e9f0b520d3f30d2e4be6d3616d82e41fef7e"
+    },
+    {
+      "path": "glTF/Characters_Sharky.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Pirate%20Kit%20-%20Nov%202023/glTF/Characters_Sharky.gltf",
+      "bytes": 1625097,
+      "git_blob_sha1": "63fccec14bcd5b4d0b840699e7c80c8c5b7b8dc1",
+      "sha256": "868c6f137926fe7cd8997e70e9200fa8ce0e81646866caa091dd125917bac07b"
+    }
+  ],
+  "attribution_required": false,
+  "attribution_text": "Characters by Quaternius. Source: https://quaternius.com/packs/piratekit.html. License: CC0-1.0.",
+  "source_asset_changes": "None; downloaded source bytes are preserved."
+}

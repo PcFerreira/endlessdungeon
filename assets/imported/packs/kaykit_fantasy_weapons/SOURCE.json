@@ -1,0 +1,32 @@
+{
+  "id": "kaykit_fantasy_weapons",
+  "title": "KayKit Fantasy Weapons Bits: Free",
+  "author": "Kay Lousberg",
+  "source": "https://kaylousberg.itch.io/fantasy-weapons-bits",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "scope": "Free tier only. The elemental EXTRA models and paid Blender source files are not included.",
+  "publisher_request": "The publisher asks users not to resell unmodified copies or claim authorship; preserved with its CC0 declaration.",
+  "downloads": [
+    {
+      "url": "https://kaylousberg.itch.io/fantasy-weapons-bits/file/16499093?source=game_download",
+      "upload_id": "16499093",
+      "publisher_filename": "Free",
+      "filename": "kaykit_fantasy_weapons.zip",
+      "bytes": 3375694,
+      "sha256": "1017144f85a994f405b731befa71ced360f5b60ed0b9c00c72e711c1633ce2d2",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Weapons",
+    "Staves",
+    "Wands",
+    "Shields"
+  ],
+  "attribution_required": false,
+  "attribution_text": "KayKit Fantasy Weapons Bits: Free by Kay Lousberg. Source: https://kaylousberg.itch.io/fantasy-weapons-bits. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None. Original asset bytes and bundled notices are preserved; archives in author collections were extracted into separate subdirectories."
+}

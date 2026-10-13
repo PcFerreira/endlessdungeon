@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "id": "city:lanternwake",
+  "name": "Lanternwake",
+  "center": [32, -4064],
+  "elevation": 14,
+  "default_theme": "halloween",
+  "spawn": [0, 6],
+  "portal": [0, 23],
+  "islands": [
+    {"id": "commons", "name": "Lanternwake Commons", "center": [0, 0], "radius": [14, 12]},
+    {"id": "guild_walk", "name": "Moonlit Guild Walk", "center": [-21, -1], "radius": [7, 8]},
+    {"id": "market", "name": "Ember Market", "center": [21, 0], "radius": [8, 8]},
+    {"id": "dock", "name": "Worldgate Dock", "center": [0, 21], "radius": [6, 5]}
+  ],
+  "bridges": [[-17, -1, 6, 3], [12, -1, 7, 3], [-1, 10, 3, 9]],
+  "halls": [
+    {"id": "lantern_wardens", "name": "Lantern Wardens", "position": [-24, -5], "size": [6, 5], "height": 3.6, "interior": "inn", "use": "inn", "color": "b47b4d", "charter": "The Wardens guide travelers between worlds and keep lights burning for those who arrive after dark. Their hall is a meeting place for scouts and expedition companions."},
+    {"id": "moonlit_archive", "name": "Moonlit Archive", "position": [-7, -9], "size": [5, 4], "height": 4.3, "interior": "shrine", "use": "scribe", "color": "8267bb", "charter": "The Archive studies the magic carried here from fallen worlds. Readers, spellcasters and curious newcomers meet beneath its violet roofs to compare their accounts."},
+    {"id": "coppermoon_artificers", "name": "Coppermoon Artificers", "position": [4, -8], "size": [5, 4], "height": 3.8, "interior": "workshop", "use": "charmwright", "color": "8b9372", "charter": "Coppermoon makers repair enchanted tools and teach one another how familiar crafts behave in a new world. The workshop welcomes builders, charmwrights and travelers with something to mend."}
+  ],
+  "markets": [
+    {"id": "lantern_provisions", "name": "Lantern Provisions", "position": [17, -3], "size": [3, 2]},
+    {"id": "ember_curios", "name": "Ember Curios", "position": [22, 2], "size": [3, 2]}
+  ],
+  "benches": [[-8, 3], [8, 3], [-22, 4]],
+  "lamps": [[-17, -1.25], [-17, 1.25], [17, -1.25], [17, 1.25], [-1.25, 16], [1.25, 16]],
+  "ornaments": [[-9, -3], [-9, 5], [9, 5], [-25, 2], [-18, -5], [17, 5], [25, -3], [-4, 22], [4, 22]],
+  "themes": {
+    "halloween": {"name": "The Lantern Vigil", "stone": "575268", "edge": "30283f", "roof": "594574", "accent": "db9352", "magic": "b388f2", "sky": "161329", "pumpkins": true},
+    "arcane": {"name": "Moonlit Lanternwake", "stone": "566277", "edge": "293747", "roof": "425c7e", "accent": "90c7cb", "magic": "8ecae7", "sky": "101a2b", "pumpkins": false}
+  },
+  "models": {
+    "pumpkin": "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange_jackolantern.gltf",
+    "candles": "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/candle_triple.gltf",
+    "bench": "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/bench.gltf"
+  }
+}

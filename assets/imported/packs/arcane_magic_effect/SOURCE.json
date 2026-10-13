@@ -1,0 +1,27 @@
+{
+  "id": "arcane_magic_effect",
+  "title": "Arcane Magic Effect",
+  "author": "Cethiel",
+  "source": "https://opengameart.org/content/arcane-magic-effect",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/Arcane_Effect.zip",
+      "filename": "Arcane_Effect.zip",
+      "bytes": 647048,
+      "sha256": "e404dd03289e41c87e64a67a781d4c5dc2b91cb1a45eb54883314231f1fd7b8d",
+      "archive_crc_checked": true,
+      "archive_extraction_checked": true
+    }
+  ],
+  "style": "2D effect frames",
+  "categories": [
+    "Arcane effects",
+    "Magic landmarks"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Arcane Magic Effect by Cethiel. Source: https://opengameart.org/content/arcane-magic-effect. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

@@ -6,10 +6,12 @@ class Terrace:
 	func ground_height(point: Vector2) -> float:
 		return 1.0 if point.x >= 1.5 else 0.0
 var game
+var directory := "user://test-gameplay-%s" % Time.get_ticks_usec()
 
 func _initialize() -> void:
 	game = Game.new()
 	game.records_enabled = false
+	game.save_directory = directory
 	root.add_child(game)
 	call_deferred("run_checks")
 
@@ -46,7 +48,9 @@ func run_checks() -> void:
 	for enemy in game.enemies:
 		enemy.node.queue_free()
 	game.enemies.clear()
-	game._spawn_enemy(game.player_point + Vector2(2, 0), 0)
+	var combat_point := _combat_point()
+	assert(combat_point.is_finite(), "Combat fixture needs a clear firing lane outside furnishings")
+	game._spawn_enemy(combat_point, 0)
 	assert(game.ACTION_BAR.size() == 10, "Action bar must have ten slots")
 	game.cast_slot(0)
 	assert(game.projectiles.is_empty(), "Offensive spells need a selected target")
@@ -205,4 +209,18 @@ func run_checks() -> void:
 	await process_frame
 	await process_frame
 	await create_timer(.15).timeout
+	var folder := DirAccess.open(directory)
+	for file in folder.get_files():
+		folder.remove(file)
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(directory))
 	quit()
+
+func _combat_point() -> Vector2:
+	for direction in [Vector2.RIGHT, Vector2.DOWN, Vector2.LEFT, Vector2.UP]:
+		var point: Vector2 = game.player_point + direction * 2
+		var clear := true
+		for index in range(21):
+			clear = clear and game.dungeon.walkable(game.player_point.lerp(point, index / 20.0))
+		if clear and game.dungeon.line_clear(game.player_point, point):
+			return point
+	return Vector2.INF

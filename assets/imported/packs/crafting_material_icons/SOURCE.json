@@ -1,0 +1,29 @@
+{
+  "id": "crafting_material_icons",
+  "title": "RPG Crafting Material Icons",
+  "author": "BizmasterStudios",
+  "source": "https://opengameart.org/content/rpg-crafting-material-icons",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/nails.png",
+      "filename": "nails.png",
+      "bytes": 3057,
+      "sha256": "1a500b7084bd8d3eb5233b3d29c18034838839c1a721262fb35db3829e6eb081",
+      "archive_crc_checked": false
+    }
+  ],
+  "scope": "All files linked in the publisher download section, extracted with author subcollections kept separate.",
+  "style": "32x32 pixel art sheet",
+  "categories": [
+    "Crafting",
+    "Metals",
+    "Leather",
+    "Monster materials"
+  ],
+  "attribution_required": true,
+  "attribution_text": "RPG Crafting Material Icons by BizmasterStudios. Source: https://opengameart.org/content/rpg-crafting-material-icons. License: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/).",
+  "source_asset_changes": "None. Original asset bytes and bundled notices are preserved; archives in author collections were extracted into separate subdirectories."
+}

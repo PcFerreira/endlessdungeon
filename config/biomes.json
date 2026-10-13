@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "edition": 6,
+  "size_multiplier": 5,
+  "zone_size": 2560,
+  "transition_width": 160,
+  "climate_transition": 0.035,
+  "profiles": {
+    "greenwood": {"name": "Greenwood", "climates": [0], "weight": 3, "color": "70965d", "earth": "766544", "rock": "737c65", "density": 75, "detail_chance": 0.08, "props": ["oak", "tree_a", "tree_b"], "details": ["bush", "biome:forest_understory"]},
+    "meadows": {"name": "Sunlit Meadows", "climates": [1], "weight": 4, "color": "a2ad74", "earth": "917957", "rock": "827d70", "density": 22, "detail_chance": 0.09, "props": ["rock", "rock_b"], "details": ["flowers", "flowers_b", "biome:coastal_grass"]},
+    "desert": {"name": "Amber Wastes", "climates": [2], "weight": 4, "color": "d1b37a", "earth": "aa8357", "rock": "9e8771", "density": 35, "detail_chance": 0.012, "props": ["cactus", "rock_b"], "details": ["biome:highland_rock"]},
+    "frostlands": {"name": "Frostlands", "climates": [3], "weight": 4, "color": "c5d8d5", "earth": "9aaba6", "rock": "8b9695", "density": 55, "detail_chance": 0.025, "props": ["pine", "rock"], "details": ["biome:highland_rock"]},
+    "dense_forest": {"name": "Deepwood Forest", "climates": [0], "weight": 4, "color": "435b36", "earth": "65543b", "rock": "63725b", "density": 220, "detail_chance": 0.32, "props": ["biome:dense_canopy", "biome:dense_canopy", "tree_b"], "details": ["biome:forest_understory", "biome:forest_understory", "bush"]},
+    "haunted_hollows": {"name": "Hallowwood", "climates": [0, 1, 2], "weight": 2, "color": "504456", "earth": "68515c", "rock": "777081", "density": 100, "detail_chance": 0.14, "props": ["biome:haunted_tree", "biome:haunted_tree", "biome:grave"], "details": ["biome:pumpkin", "biome:pumpkin", "biome:grave"]},
+    "marsh": {"name": "Reedfen Marsh", "climates": [0], "weight": 2, "color": "596c4f", "earth": "625c43", "rock": "6d756a", "density": 90, "detail_chance": 0.22, "props": ["biome:marsh_tree", "dead_a"], "details": ["biome:reeds", "biome:reeds", "biome:lily"]},
+    "jungle": {"name": "Emerald Jungle", "climates": [0, 2], "weight": 2, "color": "355e3e", "earth": "61533b", "rock": "68785f", "density": 190, "detail_chance": 0.29, "props": ["biome:jungle_canopy", "biome:jungle_canopy", "tree_c"], "details": ["biome:jungle_understory", "biome:reeds"]},
+    "autumn_woodland": {"name": "Amberleaf Woods", "climates": [0, 1], "weight": 3, "color": "927145", "earth": "795c3e", "rock": "95816b", "density": 100, "detail_chance": 0.12, "props": ["biome:autumn_tree", "biome:autumn_tree", "rock"], "details": ["biome:forest_understory", "biome:pumpkin"]},
+    "fungal_grove": {"name": "Mooncap Grove", "climates": [0, 1], "weight": 2, "color": "78818e", "earth": "676073", "rock": "77758c", "density": 120, "detail_chance": 0.15, "facet": "surface_mycelium_downs", "props": ["biome:giant_mushroom", "biome:giant_mushroom", "dead_a"], "details": ["mushroom", "biome:forest_understory"]},
+    "volcanic_wastes": {"name": "Cinderwaste", "climates": [2], "weight": 2, "color": "4e4946", "earth": "5f5049", "rock": "484443", "density": 65, "detail_chance": 0.07, "facet": "surface_cinder_verge", "props": ["biome:basalt"], "details": ["biome:lava_crack", "biome:basalt"]},
+    "highlands": {"name": "Windscar Highlands", "climates": [1, 2, 3], "weight": 2, "color": "799078", "earth": "81745d", "rock": "899289", "density": 45, "detail_chance": 0.06, "props": ["biome:highland_rock", "rock", "pine"], "details": ["biome:coastal_grass"]},
+    "coast": {"name": "Sunwash Coast", "climates": [0, 1, 2, 3], "weight": 0, "color": "bba876", "earth": "9e8969", "rock": "8a8c7f", "density": 30, "detail_chance": 0.11, "props": ["biome:coastal_palm", "rock"], "details": ["biome:coastal_grass", "biome:reeds"]},
+    "crystal_tundra": {"name": "Glaslight Tundra", "climates": [3], "weight": 2, "color": "a2bac6", "earth": "7d94a2", "rock": "677d97", "density": 70, "detail_chance": 0.08, "props": ["biome:crystal", "biome:crystal", "pine"], "details": ["biome:crystal", "biome:highland_rock"]}
+  }
+}

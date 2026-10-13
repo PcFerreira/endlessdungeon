@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "pack": "kaykit_dungeon_full",
+      "include": [
+        "Assets/gltf/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "quaternius_modular_ruins_full",
+      "include": [
+        "OBJ/*.obj"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "voxel_micro_farm",
+      "include": [
+        "models/**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "arcane_magic_effect",
+      "include": [
+        "**/*.png"
+      ],
+      "kinds": [
+        "texture"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "dungeon_ambience",
+      "include": [
+        "**/*.ogg"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "fantasy_song_pack_volume_1",
+      "include": [
+        "*.mp3"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "fsp_modular_temple",
+      "include": [
+        "**/*.obj"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kaykit_furniture",
+      "include": [
+        "**/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kaykit_halloween",
+      "include": [
+        "**/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kaykit_medieval_hexagon",
+      "include": [
+        "**/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_castle_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_fantasy_town_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_food_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_graveyard_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_holiday_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_impact_sounds",
+      "include": [
+        "**/*.ogg"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_interface_sounds",
+      "include": [
+        "**/*.ogg"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_modular_cave_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_nature_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_rpg_audio",
+      "include": [
+        "**/*.ogg"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_survival_kit",
+      "include": [
+        "**/*.glb"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "quaternius_cube_world",
+      "include": [
+        "Environment/glTF/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "quaternius_fantasy_props",
+      "include": [
+        "**/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "quaternius_medieval_village",
+      "include": [
+        "**/*.gltf"
+      ],
+      "kinds": [
+        "model"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "rain_ambience",
+      "include": [
+        "**/*.ogg"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "river_forest_ambience",
+      "include": [
+        "**/*.wav"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "wildlife_ambience",
+      "include": [
+        "**/*.wav"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "wind_ambience",
+      "include": [
+        "**/*.wav"
+      ],
+      "kinds": [
+        "audio"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    },
+    {
+      "pack": "kenney_particles_full",
+      "include": [
+        "PNG (Transparent)/*.png"
+      ],
+      "kinds": [
+        "texture"
+      ],
+      "tags": [
+        "world-construction"
+      ]
+    }
+  ]
+}

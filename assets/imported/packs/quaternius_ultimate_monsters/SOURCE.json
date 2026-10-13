@@ -1,0 +1,380 @@
+{
+  "id": "quaternius_ultimate_monsters",
+  "title": "Quaternius Ultimate Monsters",
+  "author": "Quaternius",
+  "source": "https://quaternius.com/packs/ultimatemonsters.html",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "mirror": "https://ferretforge.fr/lucastucious/Chatboat-Assets",
+  "revision": "456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f",
+  "download_note": "The publisher Google Drive returned a quota error. Downloaded the complete 50-model self-contained glTF subset and mirror-supplied license at a pinned public mirror revision. Godot-generated images and .import files from the mirror were omitted; original images are embedded in the models. The supplied license heading says Ultimate Platformer Pack, while the publisher Ultimate Monsters page and that license both declare CC0.",
+  "scope": "The publisher Google Drive returned a quota error. Downloaded the complete 50-model self-contained glTF subset and mirror-supplied license at a pinned public mirror revision. Godot-generated images and .import files from the mirror were omitted; original images are embedded in the models. The supplied license heading says Ultimate Platformer Pack, while the publisher Ultimate Monsters page and that license both declare CC0.",
+  "downloads": [
+    {
+      "path": "License.txt",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/License.txt",
+      "bytes": 362,
+      "git_blob_sha1": "6d1439ee6f04d354b9e491b3617c2a3cb5da614b",
+      "sha256": "f22fa91c48be8a5702579b317d69b4375a86ef10e16686d8a323cc7425fadb9d"
+    },
+    {
+      "path": "glTF/Alien.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Alien.gltf",
+      "bytes": 1295881,
+      "git_blob_sha1": "541db4370842c7a12b51dffe47e2b0aaf6bed58c",
+      "sha256": "e6fec42f9d4db3c3177da9027c5cdb2c4abd71cb934ea4f4788aea155f267124"
+    },
+    {
+      "path": "glTF/Alien_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Alien_Blob.gltf",
+      "bytes": 198883,
+      "git_blob_sha1": "d3a508ed46d09c6618d7d4e68e2cea85350c5872",
+      "sha256": "9779ff35883ddf0afea041d4e05628e2233d374472d242310ff2d31c7c0a5108"
+    },
+    {
+      "path": "glTF/Alpaking.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Alpaking.gltf",
+      "bytes": 304328,
+      "git_blob_sha1": "549b040c89d40fcdc1346ff49d66bf1c481bebfa",
+      "sha256": "91763421d7f193d0a6693094031b251f5aee1c8c689ef04ef43124e5797cfba7"
+    },
+    {
+      "path": "glTF/Alpaking_Evolved.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Alpaking_Evolved.gltf",
+      "bytes": 445787,
+      "git_blob_sha1": "426d6db6de4ebdd991cb74b416cecbddf21b00b6",
+      "sha256": "c91321aa08a94c58f4a05d73e1469adf4d0caec5472abeaccdb67ae001212c50"
+    },
+    {
+      "path": "glTF/Armabee.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Armabee.gltf",
+      "bytes": 297261,
+      "git_blob_sha1": "190f1a548dff0e445557f3cf8504b4f357a345f0",
+      "sha256": "10ca05955ab7f7f6e2f9bd8fd85f28ed1351c945e390b1fd0fa84428b43a5916"
+    },
+    {
+      "path": "glTF/Armabee_Evolved.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Armabee_Evolved.gltf",
+      "bytes": 357537,
+      "git_blob_sha1": "ab95074544bedc2ca4b19743a2aaafc388f271e5",
+      "sha256": "1ad3e42c088e01e0c179d54537c63efad0dd185031df61d2833b9f1709362730"
+    },
+    {
+      "path": "glTF/Birb.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Birb.gltf",
+      "bytes": 1223075,
+      "git_blob_sha1": "49532a2ff371e8d0c75d1eeba65549ee73c32081",
+      "sha256": "d2422f23943125b397078377026172d36ccfd5a657057ffc3803be4a9e983307"
+    },
+    {
+      "path": "glTF/Birb_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Birb_Blob.gltf",
+      "bytes": 250210,
+      "git_blob_sha1": "fc4c38b823c57a9fb5e1f33b24ef3081b1de7570",
+      "sha256": "af555c16465c10e1ea4c1c3a8e6df15d199fc3cbcbfa4b3c788e1aff685ce11f"
+    },
+    {
+      "path": "glTF/BlueDemon.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/BlueDemon.gltf",
+      "bytes": 1190068,
+      "git_blob_sha1": "52ec6f7bce0f753f2c6e539b39e52be6931c40cf",
+      "sha256": "9eb899fc619dff9a973669e0962452990c8ec44d4501dd41fe4f4fe5afd631f4"
+    },
+    {
+      "path": "glTF/Bunny.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Bunny.gltf",
+      "bytes": 1452855,
+      "git_blob_sha1": "bf3f8a5fcc049e5938a89156e8d8e2b9108f5937",
+      "sha256": "89fce228bdcefac4e498378fa061b9d928bca01b680101530648f8b28c9c9ad9"
+    },
+    {
+      "path": "glTF/Cactoro.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Cactoro.gltf",
+      "bytes": 1261358,
+      "git_blob_sha1": "1fd6994618c2ca7f74e2b633f871240caa8917c0",
+      "sha256": "29051fc39751fa5b3af69f7bce77297c620651b1b2235bbd644962bd6a895461"
+    },
+    {
+      "path": "glTF/Cactoro_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Cactoro_Blob.gltf",
+      "bytes": 209646,
+      "git_blob_sha1": "37ea0ea8766551c64b591a7d2da6051d8ea0837d",
+      "sha256": "a11045fd73ea27f43ddc4ba989e76d29acf569c8a6e6de865f0b3794fc637434"
+    },
+    {
+      "path": "glTF/Cat.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Cat.gltf",
+      "bytes": 175682,
+      "git_blob_sha1": "a954fcf3d5f5e1988be63e51c6de0f9730d081a8",
+      "sha256": "59aba7e4ea6da3ac11be9d5220304e649de8cb8cf975eef588d30a003c6cd275"
+    },
+    {
+      "path": "glTF/Chicken.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Chicken.gltf",
+      "bytes": 213187,
+      "git_blob_sha1": "e467a18f03573bf9a8ec91777465953be0542a18",
+      "sha256": "a8ad394817989e1e68c111a3a60b3203b203a3ab4563350b4f3a6e1b5a6c98b1"
+    },
+    {
+      "path": "glTF/Demon.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Demon.gltf",
+      "bytes": 1264925,
+      "git_blob_sha1": "77a74a32e368a28e0797a8803b689175dfa00228",
+      "sha256": "9ce361b41a0e80d42a70f6325169b9c70a6e3304b8d856b8344a2b7f185067af"
+    },
+    {
+      "path": "glTF/Demon_Flying.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Demon_Flying.gltf",
+      "bytes": 342726,
+      "git_blob_sha1": "757ee8cd344921ee967eb5a67aef299e0c5bebbc",
+      "sha256": "e836b7b97506b3032106528aa5c324fe4158df143f285209ac6d2b5b35e524f1"
+    },
+    {
+      "path": "glTF/Dino.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Dino.gltf",
+      "bytes": 1211215,
+      "git_blob_sha1": "94b261012f6d60fae8e58214dd632608617c2368",
+      "sha256": "d7c57a4ad6444f9c845ecdc13782a7430fcb377594a00f719cd2d37b9434b6de"
+    },
+    {
+      "path": "glTF/Dog.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Dog.gltf",
+      "bytes": 142124,
+      "git_blob_sha1": "1ed34fa3b17358a766707bc59d3798d3f1304091",
+      "sha256": "21ed475bbf4d5fb7016085290f79663ad7107aedd2a5856318f2716c7ecc6402"
+    },
+    {
+      "path": "glTF/Dragon.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Dragon.gltf",
+      "bytes": 427100,
+      "git_blob_sha1": "fed0a553ef1631e330e38d687627c1366e9fadff",
+      "sha256": "d219a29b5e928da26c24218a64284bbf999b88484a508ac6c01e0edad9f1f56c"
+    },
+    {
+      "path": "glTF/Dragon_Evolved.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Dragon_Evolved.gltf",
+      "bytes": 991335,
+      "git_blob_sha1": "f70ceaed1f52d26e8b2cd24f8a9bd43cd380ed6a",
+      "sha256": "39ba6ea24b5f27acf68bbf4c19fe80ba070dbec167ff14bbe933453303426f5c"
+    },
+    {
+      "path": "glTF/Fish.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Fish.gltf",
+      "bytes": 1261440,
+      "git_blob_sha1": "7ec922dd28b43581c14d7b3b3324df94a0c0a32e",
+      "sha256": "9549f80351ad7c8e97c6894662a80fb42e4df8ebc7588b6912ea8f9e2ec6b9b1"
+    },
+    {
+      "path": "glTF/Fish_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Fish_Blob.gltf",
+      "bytes": 239863,
+      "git_blob_sha1": "ece8c21a362ff60a81149fd472ed159174712dbd",
+      "sha256": "97f6439faff6a85a4ea390a4eb85a54feaa358db8436d920af0be5a1a0432d7e"
+    },
+    {
+      "path": "glTF/Frog.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Frog.gltf",
+      "bytes": 1173679,
+      "git_blob_sha1": "070d53e2ef34d36b9d22b3fb53c866696a8a176f",
+      "sha256": "8a73522affc7483fbd43736e95d5581ff993685312995d2c7ebb112eb7d5c004"
+    },
+    {
+      "path": "glTF/Ghost.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Ghost.gltf",
+      "bytes": 643180,
+      "git_blob_sha1": "c93cf0084ef108837fc94dd4d7fca5afbf9af3ee",
+      "sha256": "40bea9d887874cc86b391b83e72cc5ac2cac340892e23f3d8068a568b6e61457"
+    },
+    {
+      "path": "glTF/Ghost_Skull.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Ghost_Skull.gltf",
+      "bytes": 682385,
+      "git_blob_sha1": "8b6af9bca7bc05cc8056695b7ba75a1bf317148d",
+      "sha256": "5bf24cf0f22aa94b0b58315e7d879afc53a0964a5b326aa0c844ba3278cae1da"
+    },
+    {
+      "path": "glTF/Glub.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Glub.gltf",
+      "bytes": 308583,
+      "git_blob_sha1": "8fb72b15f89177705db2401eb638388a36cda1d1",
+      "sha256": "54f638cef5aae04f4d00874d8cbbfadd863697157fedad7c5e6e5cb9724abbb0"
+    },
+    {
+      "path": "glTF/Glub_Evolved.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Glub_Evolved.gltf",
+      "bytes": 395400,
+      "git_blob_sha1": "b27b8b2cd15be216c418e53cce52b2e4e06840dd",
+      "sha256": "5b9f9f35246eae72fa5907dc5120cf25c7f4810579d6e2b36fdf5d0aaa3ae6f6"
+    },
+    {
+      "path": "glTF/Goleling.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Goleling.gltf",
+      "bytes": 384972,
+      "git_blob_sha1": "2415f782947450f7e665d49775c120ae1ed5e5d7",
+      "sha256": "fad1c4d98e88b21a139fadd74e96c370f1c8ece8d1ae8c4b3bec80d1d7163c29"
+    },
+    {
+      "path": "glTF/Goleling_Evolved.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Goleling_Evolved.gltf",
+      "bytes": 494339,
+      "git_blob_sha1": "f98cd24d58e60fabace3c8402a1af84d6394f08f",
+      "sha256": "a36f8c1636b692d44fd74fbca07e1164ad14acc5db71300a92d5e51bc1a476ca"
+    },
+    {
+      "path": "glTF/GreenBlob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/GreenBlob.gltf",
+      "bytes": 148007,
+      "git_blob_sha1": "88d79c3d2369e12b2f483a2e290ea462ed8fa18f",
+      "sha256": "e2d2049ebe8d243bd0f60a3f48a7e174444f641ebc40cbea2f6c23cb97a82519"
+    },
+    {
+      "path": "glTF/GreenSpikyBlob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/GreenSpikyBlob.gltf",
+      "bytes": 312327,
+      "git_blob_sha1": "26355e35e4b6ccdb554b3e9fdce6fe283e4806eb",
+      "sha256": "ff55e6424f20576cac02578d012b3527af642ef15e7bab4abd2fd8d1f51b3e7e"
+    },
+    {
+      "path": "glTF/Hywirl.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Hywirl.gltf",
+      "bytes": 638684,
+      "git_blob_sha1": "3de288e2b4b208f9fe019b38ef502f104f88877c",
+      "sha256": "aed5759f91d18ce1922723d5698f5afad2c8d8b26f5c6f11b018ca967898fa50"
+    },
+    {
+      "path": "glTF/Monkroose.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Monkroose.gltf",
+      "bytes": 1230779,
+      "git_blob_sha1": "7e0f6f5952b68330febca7c12d3c1b796da6842d",
+      "sha256": "4e984e22bef1a49da0ff92154f5747d3e61997637937532bc066867f08e8e719"
+    },
+    {
+      "path": "glTF/Mushnub.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Mushnub.gltf",
+      "bytes": 132465,
+      "git_blob_sha1": "a2a01a6f6fd302417ae826a2337a82e8711451c4",
+      "sha256": "15e44e46e6c52ff677d946c70d41c4cbb1acb6598e7ec09f8642ee942d7751e2"
+    },
+    {
+      "path": "glTF/Mushnub_Evolved.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Mushnub_Evolved.gltf",
+      "bytes": 246194,
+      "git_blob_sha1": "2da5ff1d9b0645d43321c5841453f9c2a23a7c9e",
+      "sha256": "ea6c90e8522eeeba7c6c4cece3a031706de55e9b7e660b362f261a4e5bfaff95"
+    },
+    {
+      "path": "glTF/MushroomKing.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/MushroomKing.gltf",
+      "bytes": 1219690,
+      "git_blob_sha1": "bae830ab4e061cc5b4e300af4d9178f2e121d7d2",
+      "sha256": "ccf27e126b881d80a2046c3ab96ddd94eb996837480e783142009ecd6629a3a4"
+    },
+    {
+      "path": "glTF/Ninja.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Ninja.gltf",
+      "bytes": 1226528,
+      "git_blob_sha1": "a10aad34384b9b334c3665e4fb1620b6c8819c21",
+      "sha256": "f1042e533bd24b98ceee179eaf4119517051fd745feb8d71af1b78a4ac3c88a3"
+    },
+    {
+      "path": "glTF/Ninja_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Ninja_Blob.gltf",
+      "bytes": 182184,
+      "git_blob_sha1": "049837a7e6066158dc5a1b43f139bfe96dee1218",
+      "sha256": "41974ce0c56d660950e554d672742e056776518a888e376341bebcce5951178e"
+    },
+    {
+      "path": "glTF/Orc.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Orc.gltf",
+      "bytes": 1280189,
+      "git_blob_sha1": "750b2401542551ef4fc01e7b5d85b96195119622",
+      "sha256": "e61a37f8d9b2eee28928bdfad2c55e0798cc0a212e925cc5dcc66b243526c1a3"
+    },
+    {
+      "path": "glTF/Orc_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Orc_Blob.gltf",
+      "bytes": 213802,
+      "git_blob_sha1": "a6e0e7b77cad40cb702f4e9c315ac6beecd963f7",
+      "sha256": "23d3e6e15c9594e8d958e642208ddade1f369e31b762caf2b14c4ef89358b026"
+    },
+    {
+      "path": "glTF/Orc_Skull.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Orc_Skull.gltf",
+      "bytes": 1286559,
+      "git_blob_sha1": "332e4b2233bd1e7654a896790bb9f3d393a27c46",
+      "sha256": "e27e3acf826e9f5cad021c647bd3ce6f1c82d2aaa3530c03ee442df4828a710e"
+    },
+    {
+      "path": "glTF/Pigeon.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Pigeon.gltf",
+      "bytes": 178568,
+      "git_blob_sha1": "06bcd7ec1e5c2d8280aec3894da1d8bc5eed0c31",
+      "sha256": "32a03c1018936d06e4dd0c8c5e93e0f6ff5ff73aad47a1653216a7be32e3c62f"
+    },
+    {
+      "path": "glTF/Pigeon_Flying.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Pigeon_Flying.gltf",
+      "bytes": 368129,
+      "git_blob_sha1": "addf7b3f17a50955568abb73a681b5a92139b9ee",
+      "sha256": "502f0530567fd912b24ba15990e4a4ccca84cf4e4f63f1d7376d73202089a763"
+    },
+    {
+      "path": "glTF/PinkBlob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/PinkBlob.gltf",
+      "bytes": 123900,
+      "git_blob_sha1": "2691de8385e3e03b430d13580b32d1237c4e4f9d",
+      "sha256": "0cc6c64f3e2bad775a7ff82b3ccc11e26359266967a765740655cdaccc5c7ff4"
+    },
+    {
+      "path": "glTF/Squidle.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Squidle.gltf",
+      "bytes": 805758,
+      "git_blob_sha1": "5bd45ef447bdc8d7b731a544cb6acef6a0b8725b",
+      "sha256": "ed41b8a3e4a49d0eb9522e52d3055a85e7c051607c6f1092aeb4242e0c87c77b"
+    },
+    {
+      "path": "glTF/Tribal.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Tribal.gltf",
+      "bytes": 1327295,
+      "git_blob_sha1": "4d0fabdb03811c79cf6a9536ea8868d55a0d4435",
+      "sha256": "ffe686b0f0e7a2fb968ea9829358f059df903d2a60c9a94bd3516b1c3d42b7c4"
+    },
+    {
+      "path": "glTF/Tribal_Flying.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Tribal_Flying.gltf",
+      "bytes": 777249,
+      "git_blob_sha1": "ba7cb8cc927b20e819404d55e71881942c360798",
+      "sha256": "689db4c3375bc14a82a831f8fc575c0791a85bee40d1fe42ec8ac16545940afa"
+    },
+    {
+      "path": "glTF/Wizard.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Wizard.gltf",
+      "bytes": 162486,
+      "git_blob_sha1": "a40ae9559b8cdae81736079a438e54c969faf05c",
+      "sha256": "074302ab7039f3a6644c8f0be2580a0d747e8981bfa9725bcc6af422222c155a"
+    },
+    {
+      "path": "glTF/Yeti.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Yeti.gltf",
+      "bytes": 1227684,
+      "git_blob_sha1": "f7051e8bccdacf03245730dc79b9ed198c98847a",
+      "sha256": "ab60f4fbc1c2e1fdc3ed4f63023dc2185240dbd55751df568099557b29af6fd5"
+    },
+    {
+      "path": "glTF/Yeti_Blob.gltf",
+      "url": "https://ferretforge.fr/lucastucious/Chatboat-Assets/raw/commit/456f2f74fb7eae05fed6ed4aaca3a95fd4b92b7f/Quaternius/Models/Ultimate%20Monsters/Yeti_Blob.gltf",
+      "bytes": 191774,
+      "git_blob_sha1": "175a4363e3aa9dd26ceea5f461119aeb7e074fbe",
+      "sha256": "44b0627cc65112756642f2d0de529a1fba9d74c4fbc9829b572d90625bbb842f"
+    }
+  ],
+  "style": "Animated low poly 3D",
+  "categories": [
+    "Enemies",
+    "Boss candidates"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Quaternius Ultimate Monsters by Quaternius. Source: https://quaternius.com/packs/ultimatemonsters.html. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

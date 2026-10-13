@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "source_file": "import_assets/Free Sample_animals/Skinned FBX - Free Sample/Crocodile.fbx",
+      "source_sha256": "66e06e647144b914fb325ac603b1d86179078f2485e59bcaaff83a774f95177f",
+      "object": "Crocodile",
+      "name": "Crocodile",
+      "runtime_file": "Crocodile-0a6806dd.glb",
+      "sha256": "070373731ddb4b2c3ac46005b805675710beaa3dc44a2cc2013b1c8d8d50cc52",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Skinned FBX - Free Sample/Dolphin.fbx",
+      "source_sha256": "dd8007536b161592a4cb04c5ba80e8d632fd01d7ab70fe6922f254755a7c39f4",
+      "object": "Dolphin",
+      "name": "Dolphin",
+      "runtime_file": "Dolphin-1af9db1e.glb",
+      "sha256": "95b5a1e517e680bd0c259bf7b72b21a60f447c2b4b16a6f58ba25c7e7ad7ed19",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Skinned FBX - Free Sample/Snail.fbx",
+      "source_sha256": "8750a54a0e434dd1fae53c047f99d55ddbfa15678b73c1cf60480e572308bb33",
+      "object": "Snail",
+      "name": "Snail",
+      "runtime_file": "Snail-19c62aa1.glb",
+      "sha256": "f601e2f2ad8d6168b2bd129acab38de166b5320919ae7481a0bc00ecb9aa1296",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-0-cow.fbx",
+      "source_sha256": "9ba99fda8e97f365858b0bdb1251c73eb7491ce27d22a1c7330161c00bc8d989",
+      "object": "animals-0-cow",
+      "name": "animals-0-cow",
+      "runtime_file": "animals-0-cow-6802129a.glb",
+      "sha256": "72142806f4dba7797938185899c3e00b112f4201403cdb5aadeb1bcae05c1ef0",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-1-horse.fbx",
+      "source_sha256": "2f47ddd135643044d3c5f071320ad8d183262914e49952ae022c8ea97c1b6ec6",
+      "object": "animals-1-horse",
+      "name": "animals-1-horse",
+      "runtime_file": "animals-1-horse-fb953c78.glb",
+      "sha256": "6f0a46c549d5597c4bf9545f3687e50ba6ae4fd003afc6e9e700d63cbb00b212",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-2-shark.fbx",
+      "source_sha256": "d197b076c2fd66e85f219e3e42024100a9e4201925e052d402322238f6d77993",
+      "object": "animals-2-shark",
+      "name": "animals-2-shark",
+      "runtime_file": "animals-2-shark-fa4e2242.glb",
+      "sha256": "9090a41dfe0e5dadf210e71b1d51476db86b6bff5a2ecf3c6933a2a23278729b",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-3-salamander.fbx",
+      "source_sha256": "1b3a26df4ba0803d091a9499e9847a77bb9ca7bcdb0031c3614251374a05496a",
+      "object": "animals-3-salamander",
+      "name": "animals-3-salamander",
+      "runtime_file": "animals-3-salamander-fd38831c.glb",
+      "sha256": "14dd1d567ed0de6fec64a3de92a11ac2a9eb934d4dab7c68fcc8087b9b9ffc8a",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-4-komodo.fbx",
+      "source_sha256": "8eb3ac9663cbc7d77b048183681844e79ab2ab79508225fff8f0343cbab9879d",
+      "object": "animals-4-komodo",
+      "name": "animals-4-komodo",
+      "runtime_file": "animals-4-komodo-cf44ebcb.glb",
+      "sha256": "25e2c6d055c0a052d85f0a222aa8b2e7b99d25c08f42014913e6069952718459",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-5-toucan.fbx",
+      "source_sha256": "99d2b6b725ad0a8ea820beb2d035dc9cdae934f174fc9e7c0f33d93e26efc2bb",
+      "object": "animals-5-toucan",
+      "name": "animals-5-toucan",
+      "runtime_file": "animals-5-toucan-fc72f26a.glb",
+      "sha256": "99d0213849cda8be6d546aaa6c65c572dd88f7d06cbeb5797e7cf5a00f76f388",
+      "converter_version": 4
+    },
+    {
+      "source_file": "import_assets/Free Sample_animals/Static FBX - Free Sample/animals-6-toucan.fbx",
+      "source_sha256": "f3e5bb485ce880df8b115eadb48d59e5f7799dea78474e38313953cc325e0011",
+      "object": "animals-6-toucan",
+      "name": "animals-6-toucan",
+      "runtime_file": "animals-6-toucan-9381cb86.glb",
+      "sha256": "a5589c148b5738580c1a40d56aeaf990c72cd204a4c288a93c0dc1d1daebfc3e",
+      "converter_version": 4
+    }
+  ]
+}

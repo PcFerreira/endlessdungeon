@@ -1,0 +1,3766 @@
+{
+  "version": 1,
+  "templates": {
+    "hex_home_a": {
+      "name": "Cottage",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse"
+      ],
+      "themes": [
+        "generic",
+        "woodland"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_home_A_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_home_b": {
+      "name": "Tall House",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "apothecary",
+        "bakery",
+        "charmwright",
+        "general_store"
+      ],
+      "themes": [
+        "generic",
+        "merchant",
+        "mage"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_home_B_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_tavern": {
+      "name": "Roadside Inn",
+      "kind": "house",
+      "uses": [
+        "inn"
+      ],
+      "themes": [
+        "generic",
+        "woodland",
+        "winter",
+        "caravan",
+        "merchant",
+        "halloween",
+        "christmas"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tavern_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_blacksmith": {
+      "name": "Smithy",
+      "kind": "house",
+      "uses": [
+        "smithy"
+      ],
+      "themes": [
+        "generic",
+        "merchant"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_blacksmith_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_barracks": {
+      "name": "Expedition Hall",
+      "kind": "house",
+      "uses": [
+        "outfitter"
+      ],
+      "themes": [
+        "generic"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_barracks_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_church": {
+      "name": "Shrine Hall",
+      "kind": "house",
+      "uses": [
+        "shrine"
+      ],
+      "themes": [
+        "generic"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_church_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_tower_a": {
+      "name": "Watchtower",
+      "kind": "civic",
+      "uses": [
+
+      ],
+      "themes": [
+        "generic",
+        "mage"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_A_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_tower_b": {
+      "name": "Study Tower",
+      "kind": "house",
+      "uses": [
+        "scribe"
+      ],
+      "themes": [
+        "generic",
+        "mage"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_B_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_castle": {
+      "name": "Town Keep",
+      "kind": "civic",
+      "uses": [
+
+      ],
+      "themes": [
+        "generic",
+        "merchant",
+        "mage"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_castle_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_lumbermill": {
+      "name": "Timber Mill",
+      "kind": "civic",
+      "uses": [
+
+      ],
+      "themes": [
+        "woodland"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_lumbermill_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_windmill": {
+      "name": "Windmill",
+      "kind": "civic",
+      "uses": [
+
+      ],
+      "themes": [
+        "generic"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_windmill_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "hex_market": {
+      "name": "Covered Market",
+      "kind": "civic",
+      "uses": [
+
+      ],
+      "themes": [
+        "generic",
+        "woodland",
+        "winter",
+        "caravan",
+        "merchant",
+        "fungal",
+        "japanese",
+        "chinese",
+        "korean",
+        "halloween",
+        "christmas",
+        "cyberpunk",
+        "fairy"
+      ],
+      "series": "hexagon",
+      "parts": [
+        {
+          "asset": "kaykit_medieval_hexagon/content/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_market_blue.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "village_tile_cottage": {
+      "name": "Tiled Cottage",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "generic",
+        "fungal",
+        "japanese",
+        "chinese",
+        "korean",
+        "fairy"
+      ],
+      "series": "village",
+      "parts": [
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.88,
+            0.05,
+            0.88
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.4175
+          ],
+          "size": [
+            0.88,
+            0.57,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0,
+            0.05,
+            -0.4175
+          ],
+          "size": [
+            0.88,
+            0.57,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.4175,
+            0.05,
+            0
+          ],
+          "size": [
+            0.88,
+            0.57,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.4175,
+            0.05,
+            0
+          ],
+          "size": [
+            0.88,
+            0.57,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.448
+          ],
+          "size": [
+            0.2024,
+            0.45599999999999996,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x4.gltf",
+          "point": [
+            0,
+            0.62,
+            0
+          ],
+          "size": [
+            0.94,
+            0.3,
+            0.94
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0,
+            0.62,
+            -0.4175
+          ],
+          "size": [
+            0.88,
+            0.27,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0,
+            0.62,
+            0.4175
+          ],
+          "size": [
+            0.88,
+            0.27,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "village_long_hall": {
+      "name": "Reading Hall",
+      "kind": "house",
+      "uses": [
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "inn",
+        "shrine",
+        "home",
+        "farmhouse"
+      ],
+      "themes": [
+        "generic",
+        "caravan",
+        "merchant",
+        "japanese",
+        "chinese",
+        "korean",
+        "mage"
+      ],
+      "series": "village",
+      "parts": [
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1.08,
+            0.05,
+            0.63
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.2925
+          ],
+          "size": [
+            1.08,
+            0.54,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0,
+            0.05,
+            -0.2925
+          ],
+          "size": [
+            1.08,
+            0.54,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.5175000000000001,
+            0.05,
+            0
+          ],
+          "size": [
+            0.63,
+            0.54,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.5175000000000001,
+            0.05,
+            0
+          ],
+          "size": [
+            0.63,
+            0.54,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.323
+          ],
+          "size": [
+            0.24840000000000004,
+            0.43200000000000005,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x6.gltf",
+          "point": [
+            0,
+            0.59,
+            0
+          ],
+          "size": [
+            1.1400000000000001,
+            0.29,
+            0.69
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick6.gltf",
+          "point": [
+            0,
+            0.59,
+            -0.2925
+          ],
+          "size": [
+            1.08,
+            0.261,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick6.gltf",
+          "point": [
+            0,
+            0.59,
+            0.2925
+          ],
+          "size": [
+            1.08,
+            0.261,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "village_stacked_manor": {
+      "name": "Tiled Manor",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "generic",
+        "merchant",
+        "japanese",
+        "chinese",
+        "korean",
+        "halloween",
+        "mage"
+      ],
+      "series": "village",
+      "parts": [
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.96,
+            0.05,
+            0.88
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.4175
+          ],
+          "size": [
+            0.96,
+            0.38,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0,
+            0.05,
+            -0.4175
+          ],
+          "size": [
+            0.96,
+            0.38,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.45749999999999996,
+            0.05,
+            0
+          ],
+          "size": [
+            0.88,
+            0.38,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.45749999999999996,
+            0.05,
+            0
+          ],
+          "size": [
+            0.88,
+            0.38,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.448
+          ],
+          "size": [
+            0.2208,
+            0.30400000000000005,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0,
+            0.43,
+            0
+          ],
+          "size": [
+            0.96,
+            0.05,
+            0.88
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0,
+            0.48,
+            0.4175
+          ],
+          "size": [
+            0.96,
+            0.38,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0,
+            0.48,
+            -0.4175
+          ],
+          "size": [
+            0.96,
+            0.38,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.45749999999999996,
+            0.48,
+            0
+          ],
+          "size": [
+            0.88,
+            0.38,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.45749999999999996,
+            0.48,
+            0
+          ],
+          "size": [
+            0.88,
+            0.38,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0,
+            0.48,
+            0.448
+          ],
+          "size": [
+            0.2208,
+            0.30400000000000005,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x4.gltf",
+          "point": [
+            0,
+            0.86,
+            0
+          ],
+          "size": [
+            1.02,
+            0.3,
+            0.94
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0,
+            0.86,
+            -0.4175
+          ],
+          "size": [
+            0.96,
+            0.27,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0,
+            0.86,
+            0.4175
+          ],
+          "size": [
+            0.96,
+            0.27,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "village_courtyard_house": {
+      "name": "Courtyard House",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "woodland",
+        "fungal",
+        "japanese",
+        "chinese",
+        "korean",
+        "fairy"
+      ],
+      "series": "village",
+      "parts": [
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            -0.27,
+            0,
+            0
+          ],
+          "size": [
+            0.46,
+            0.05,
+            1.0
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            -0.27,
+            0.05,
+            0.4775
+          ],
+          "size": [
+            0.46,
+            0.55,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.27,
+            0.05,
+            -0.4775
+          ],
+          "size": [
+            0.46,
+            0.55,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.4775,
+            0.05,
+            0
+          ],
+          "size": [
+            1.0,
+            0.55,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.0625,
+            0.05,
+            0
+          ],
+          "size": [
+            1.0,
+            0.55,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            -0.27,
+            0.05,
+            0.508
+          ],
+          "size": [
+            0.1058,
+            0.44000000000000006,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x4.gltf",
+          "point": [
+            -0.27,
+            0.6,
+            0
+          ],
+          "size": [
+            0.52,
+            0.3,
+            1.06
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0.23,
+            0,
+            -0.27
+          ],
+          "size": [
+            0.54,
+            0.05,
+            0.46
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0.23,
+            0.05,
+            -0.0625
+          ],
+          "size": [
+            0.54,
+            0.55,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.23,
+            0.05,
+            -0.4775
+          ],
+          "size": [
+            0.54,
+            0.55,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.01750000000000001,
+            0.05,
+            -0.27
+          ],
+          "size": [
+            0.46,
+            0.55,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.4775,
+            0.05,
+            -0.27
+          ],
+          "size": [
+            0.46,
+            0.55,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0.23,
+            0.05,
+            -0.03200000000000001
+          ],
+          "size": [
+            0.12420000000000002,
+            0.44000000000000006,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_RoundTiles_4x4.gltf",
+          "point": [
+            0.23,
+            0.6,
+            -0.27
+          ],
+          "size": [
+            0.6000000000000001,
+            0.3,
+            0.52
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            -0.27,
+            0.6,
+            -0.4775
+          ],
+          "size": [
+            0.46,
+            0.27,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            -0.27,
+            0.6,
+            0.4775
+          ],
+          "size": [
+            0.46,
+            0.27,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0.23,
+            0.6,
+            -0.4775
+          ],
+          "size": [
+            0.54,
+            0.27,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0.23,
+            0.6,
+            -0.0625
+          ],
+          "size": [
+            0.54,
+            0.27,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "village_study_tower": {
+      "name": "Tiled Study Tower",
+      "kind": "house",
+      "uses": [
+        "home",
+        "scribe",
+        "charmwright",
+        "shrine",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "inn",
+        "smithy",
+        "farmhouse",
+        "apothecary"
+      ],
+      "themes": [
+        "japanese",
+        "chinese",
+        "halloween",
+        "mage"
+      ],
+      "series": "village",
+      "parts": [
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.65,
+            0.05,
+            0.65
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.3025
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0,
+            0.05,
+            -0.3025
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.3025,
+            0.05,
+            0
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.3025,
+            0.05,
+            0
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0,
+            0.05,
+            0.333
+          ],
+          "size": [
+            0.14950000000000002,
+            0.30400000000000005,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Floor_WoodDark.gltf",
+          "point": [
+            0,
+            0.43,
+            0
+          ],
+          "size": [
+            0.65,
+            0.05,
+            0.65
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Door_Flat.gltf",
+          "point": [
+            0,
+            0.48,
+            0.3025
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0,
+            0.48,
+            -0.3025
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            -0.3025,
+            0.48,
+            0
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Wall_Plaster_Straight.gltf",
+          "point": [
+            0.3025,
+            0.48,
+            0
+          ],
+          "size": [
+            0.65,
+            0.38,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Door_1_Flat.gltf",
+          "point": [
+            0,
+            0.48,
+            0.333
+          ],
+          "size": [
+            0.14950000000000002,
+            0.30400000000000005,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Tower_RoundTiles.gltf",
+          "point": [
+            0,
+            0.86,
+            0
+          ],
+          "size": [
+            0.71,
+            0.34,
+            0.71
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "town_timber_cottage": {
+      "name": "Timber Cottage",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "generic",
+        "woodland",
+        "fungal",
+        "halloween",
+        "fairy"
+      ],
+      "series": "town",
+      "parts": [
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/planks.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.84,
+            0.05,
+            0.84
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-square.glb",
+          "point": [
+            0,
+            0.05,
+            0.39749999999999996
+          ],
+          "size": [
+            0.84,
+            0.55,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            0,
+            0.05,
+            -0.39749999999999996
+          ],
+          "size": [
+            0.84,
+            0.55,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            -0.39749999999999996,
+            0.05,
+            0
+          ],
+          "size": [
+            0.84,
+            0.55,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            0.39749999999999996,
+            0.05,
+            0
+          ],
+          "size": [
+            0.84,
+            0.55,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-door.glb",
+          "point": [
+            0,
+            0.05,
+            0.428
+          ],
+          "size": [
+            0.1932,
+            0.44000000000000006,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/roof-gable.glb",
+          "point": [
+            0,
+            0.6,
+            0
+          ],
+          "size": [
+            0.8999999999999999,
+            0.3,
+            0.8999999999999999
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            -0.3975,
+            0.6,
+            0
+          ],
+          "size": [
+            0.84,
+            0.27,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0.3975,
+            0.6,
+            0
+          ],
+          "size": [
+            0.84,
+            0.27,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        }
+      ],
+      "front_yaw": 0
+    },
+    "town_arcaded_hall": {
+      "name": "Veranda Hall",
+      "kind": "house",
+      "uses": [
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "inn",
+        "shrine"
+      ],
+      "themes": [
+        "woodland",
+        "caravan",
+        "merchant",
+        "japanese",
+        "korean",
+        "fairy"
+      ],
+      "series": "town",
+      "parts": [
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/planks.glb",
+          "point": [
+            0,
+            0,
+            -0.16
+          ],
+          "size": [
+            0.88,
+            0.05,
+            0.6
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-square.glb",
+          "point": [
+            0,
+            0.05,
+            0.1175
+          ],
+          "size": [
+            0.88,
+            0.56,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            0,
+            0.05,
+            -0.43749999999999994
+          ],
+          "size": [
+            0.88,
+            0.56,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            -0.4175,
+            0.05,
+            -0.16
+          ],
+          "size": [
+            0.6,
+            0.56,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            0.4175,
+            0.05,
+            -0.16
+          ],
+          "size": [
+            0.6,
+            0.56,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-door.glb",
+          "point": [
+            0,
+            0.05,
+            0.148
+          ],
+          "size": [
+            0.2024,
+            0.44800000000000006,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/planks.glb",
+          "point": [
+            0,
+            0,
+            0.34
+          ],
+          "size": [
+            0.88,
+            0.05,
+            0.4
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-wood.glb",
+          "point": [
+            -0.4,
+            0.05,
+            0.47
+          ],
+          "size": [
+            0.07,
+            0.56,
+            0.07
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-wood.glb",
+          "point": [
+            0.4,
+            0.05,
+            0.47
+          ],
+          "size": [
+            0.07,
+            0.56,
+            0.07
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/roof-gable.glb",
+          "point": [
+            0,
+            0.61,
+            0
+          ],
+          "size": [
+            0.96,
+            0.28,
+            1.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            -0.4275,
+            0.61,
+            0
+          ],
+          "size": [
+            1.02,
+            0.252,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "quaternius_medieval_village/glTF/Roof_Front_Brick4.gltf",
+          "point": [
+            0.4275,
+            0.61,
+            0
+          ],
+          "size": [
+            1.02,
+            0.252,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        }
+      ],
+      "front_yaw": 0
+    },
+    "town_point_roof_house": {
+      "name": "High-Roofed House",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "woodland",
+        "fungal",
+        "halloween",
+        "fairy"
+      ],
+      "series": "town",
+      "parts": [
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/planks.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.92,
+            0.05,
+            0.92
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-square.glb",
+          "point": [
+            0,
+            0.05,
+            0.4375
+          ],
+          "size": [
+            0.92,
+            0.53,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            0,
+            0.05,
+            -0.4375
+          ],
+          "size": [
+            0.92,
+            0.53,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            -0.4375,
+            0.05,
+            0
+          ],
+          "size": [
+            0.92,
+            0.53,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+          "point": [
+            0.4375,
+            0.05,
+            0
+          ],
+          "size": [
+            0.92,
+            0.53,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-door.glb",
+          "point": [
+            0,
+            0.05,
+            0.468
+          ],
+          "size": [
+            0.2116,
+            0.42400000000000004,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/roof-point.glb",
+          "point": [
+            0,
+            0.58,
+            0
+          ],
+          "size": [
+            0.98,
+            0.4,
+            0.98
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "town_colonnade": {
+      "name": "Open Hall",
+      "kind": "civic",
+      "uses": [
+        "shrine",
+        "scribe"
+      ],
+      "themes": [
+        "generic",
+        "woodland",
+        "caravan",
+        "merchant",
+        "fungal",
+        "japanese",
+        "chinese",
+        "korean",
+        "halloween",
+        "mage",
+        "fairy"
+      ],
+      "series": "town",
+      "parts": [
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/planks.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1.04,
+            0.05,
+            0.76
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+          "point": [
+            -0.46,
+            0.05,
+            -0.31
+          ],
+          "size": [
+            0.08,
+            0.58,
+            0.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+          "point": [
+            -0.46,
+            0.05,
+            0.31
+          ],
+          "size": [
+            0.08,
+            0.58,
+            0.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+          "point": [
+            0,
+            0.05,
+            -0.31
+          ],
+          "size": [
+            0.08,
+            0.58,
+            0.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+          "point": [
+            0,
+            0.05,
+            0.31
+          ],
+          "size": [
+            0.08,
+            0.58,
+            0.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+          "point": [
+            0.46,
+            0.05,
+            -0.31
+          ],
+          "size": [
+            0.08,
+            0.58,
+            0.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+          "point": [
+            0.46,
+            0.05,
+            0.31
+          ],
+          "size": [
+            0.08,
+            0.58,
+            0.08
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_fantasy_town_kit/Models/GLB format/roof-gable.glb",
+          "point": [
+            0,
+            0.63,
+            0
+          ],
+          "size": [
+            1.12,
+            0.28,
+            0.88
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "holiday_snow_cottage": {
+      "name": "Log Cottage",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "winter",
+        "christmas"
+      ],
+      "series": "holiday",
+      "parts": [
+        {
+          "primitive": "wood",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.86,
+            0.05,
+            0.86
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-doorway.glb",
+          "point": [
+            0,
+            0.05,
+            0.4075
+          ],
+          "size": [
+            0.86,
+            0.54,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0,
+            0.05,
+            -0.4075
+          ],
+          "size": [
+            0.86,
+            0.54,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            -0.4075,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.54,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0.4075,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.54,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-door-rotate.glb",
+          "point": [
+            0,
+            0.05,
+            0.438
+          ],
+          "size": [
+            0.1978,
+            0.43200000000000005,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            -0.23,
+            0.59,
+            0
+          ],
+          "size": [
+            0.46,
+            0.32,
+            0.9199999999999999
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            0.23,
+            0.59,
+            0
+          ],
+          "size": [
+            0.46,
+            0.32,
+            0.9199999999999999
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            0,
+            0.59,
+            -0.4075
+          ],
+          "size": [
+            0.86,
+            0.272,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            0,
+            0.59,
+            0.4075
+          ],
+          "size": [
+            0.86,
+            0.272,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "holiday_cross_gables": {
+      "name": "Log Hall",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright"
+      ],
+      "themes": [
+        "winter",
+        "christmas"
+      ],
+      "series": "holiday",
+      "parts": [
+        {
+          "primitive": "wood",
+          "point": [
+            -0.23,
+            0,
+            0
+          ],
+          "size": [
+            0.5,
+            0.05,
+            1.0
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-doorway.glb",
+          "point": [
+            -0.23,
+            0.05,
+            0.4775
+          ],
+          "size": [
+            0.5,
+            0.53,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            -0.23,
+            0.05,
+            -0.4775
+          ],
+          "size": [
+            0.5,
+            0.53,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            -0.45749999999999996,
+            0.05,
+            0
+          ],
+          "size": [
+            1.0,
+            0.53,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            -0.002500000000000009,
+            0.05,
+            0
+          ],
+          "size": [
+            1.0,
+            0.53,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-door-rotate.glb",
+          "point": [
+            -0.23,
+            0.05,
+            0.508
+          ],
+          "size": [
+            0.115,
+            0.42400000000000004,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            -0.37,
+            0.58,
+            0
+          ],
+          "size": [
+            0.28,
+            0.32,
+            1.06
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            -0.09,
+            0.58,
+            0
+          ],
+          "size": [
+            0.28,
+            0.32,
+            1.06
+          ],
+          "yaw": 0
+        },
+        {
+          "primitive": "wood",
+          "point": [
+            0.24,
+            0,
+            -0.25
+          ],
+          "size": [
+            0.46,
+            0.05,
+            0.5
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-doorway.glb",
+          "point": [
+            0.24,
+            0.05,
+            -0.0225
+          ],
+          "size": [
+            0.46,
+            0.53,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0.24,
+            0.05,
+            -0.4775
+          ],
+          "size": [
+            0.46,
+            0.53,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0.03249999999999998,
+            0.05,
+            -0.25
+          ],
+          "size": [
+            0.5,
+            0.53,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0.44749999999999995,
+            0.05,
+            -0.25
+          ],
+          "size": [
+            0.5,
+            0.53,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-door-rotate.glb",
+          "point": [
+            0.24,
+            0.05,
+            0.008
+          ],
+          "size": [
+            0.1058,
+            0.42400000000000004,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            0.11,
+            0.58,
+            -0.25
+          ],
+          "size": [
+            0.26,
+            0.32,
+            0.56
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            0.37,
+            0.58,
+            -0.25
+          ],
+          "size": [
+            0.26,
+            0.32,
+            0.56
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            -0.23,
+            0.58,
+            -0.4775
+          ],
+          "size": [
+            0.5,
+            0.272,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            -0.23,
+            0.58,
+            0.4775
+          ],
+          "size": [
+            0.5,
+            0.272,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            0.24,
+            0.58,
+            -0.4775
+          ],
+          "size": [
+            0.46,
+            0.272,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            0.24,
+            0.58,
+            -0.0225
+          ],
+          "size": [
+            0.46,
+            0.272,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "holiday_stacked_lodge": {
+      "name": "Lodge",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright"
+      ],
+      "themes": [
+        "winter",
+        "christmas"
+      ],
+      "series": "holiday",
+      "parts": [
+        {
+          "primitive": "wood",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.92,
+            0.05,
+            0.86
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-doorway.glb",
+          "point": [
+            0,
+            0.05,
+            0.4075
+          ],
+          "size": [
+            0.92,
+            0.34,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0,
+            0.05,
+            -0.4075
+          ],
+          "size": [
+            0.92,
+            0.34,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            -0.4375,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.34,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0.4375,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.34,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-door-rotate.glb",
+          "point": [
+            0,
+            0.05,
+            0.438
+          ],
+          "size": [
+            0.2116,
+            0.272,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "primitive": "wood",
+          "point": [
+            0,
+            0.39,
+            0
+          ],
+          "size": [
+            0.92,
+            0.05,
+            0.86
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-doorway.glb",
+          "point": [
+            0,
+            0.44,
+            0.4075
+          ],
+          "size": [
+            0.92,
+            0.34,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0,
+            0.44,
+            -0.4075
+          ],
+          "size": [
+            0.92,
+            0.34,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            -0.4375,
+            0.44,
+            0
+          ],
+          "size": [
+            0.86,
+            0.34,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall.glb",
+          "point": [
+            0.4375,
+            0.44,
+            0
+          ],
+          "size": [
+            0.86,
+            0.34,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-door-rotate.glb",
+          "point": [
+            0,
+            0.44,
+            0.438
+          ],
+          "size": [
+            0.2116,
+            0.272,
+            0.03
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            -0.245,
+            0.78,
+            0
+          ],
+          "size": [
+            0.49,
+            0.32,
+            0.9199999999999999
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-roof-snow.glb",
+          "point": [
+            0.245,
+            0.78,
+            0
+          ],
+          "size": [
+            0.49,
+            0.32,
+            0.9199999999999999
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            0,
+            0.78,
+            -0.4075
+          ],
+          "size": [
+            0.92,
+            0.272,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_holiday_kit/Models/GLB format/cabin-wall-roof-center.glb",
+          "point": [
+            0,
+            0.78,
+            0.4075
+          ],
+          "size": [
+            0.92,
+            0.272,
+            0.045
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "survival_metal_house": {
+      "name": "Metal House",
+      "kind": "house",
+      "uses": [
+        "home",
+        "farmhouse",
+        "inn",
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "shrine"
+      ],
+      "themes": [
+        "caravan",
+        "cyberpunk"
+      ],
+      "series": "survival",
+      "parts": [
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-floor.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.86,
+            0.05,
+            0.86
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-doorway.glb",
+          "point": [
+            0,
+            0.05,
+            0.4075
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            0,
+            0.05,
+            -0.4075
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            -0.4075,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            0.4075,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-roof.glb",
+          "point": [
+            0,
+            0.62,
+            0
+          ],
+          "size": [
+            0.9199999999999999,
+            0.12,
+            0.9199999999999999
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0,
+            0.05,
+            -0.4075
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.022
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.4075,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.022
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.2795,
+            0.05,
+            0.4075
+          ],
+          "size": [
+            0.301,
+            0.57,
+            0.022
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.4075,
+            0.05,
+            0
+          ],
+          "size": [
+            0.86,
+            0.57,
+            0.022
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.2795,
+            0.05,
+            0.4075
+          ],
+          "size": [
+            0.301,
+            0.57,
+            0.022
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "survival_dual_workshop": {
+      "name": "Metal Workshop",
+      "kind": "house",
+      "uses": [
+        "general_store",
+        "outfitter",
+        "bakery",
+        "smithy",
+        "apothecary",
+        "scribe",
+        "charmwright",
+        "inn"
+      ],
+      "themes": [
+        "caravan",
+        "cyberpunk"
+      ],
+      "series": "survival",
+      "parts": [
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-floor.glb",
+          "point": [
+            -0.25,
+            0,
+            0
+          ],
+          "size": [
+            0.5,
+            0.05,
+            0.94
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-doorway.glb",
+          "point": [
+            -0.25,
+            0.05,
+            0.44749999999999995
+          ],
+          "size": [
+            0.5,
+            0.58,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            -0.25,
+            0.05,
+            -0.44749999999999995
+          ],
+          "size": [
+            0.5,
+            0.58,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            -0.4775,
+            0.05,
+            0
+          ],
+          "size": [
+            0.94,
+            0.58,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            -0.0225,
+            0.05,
+            0
+          ],
+          "size": [
+            0.94,
+            0.58,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-roof.glb",
+          "point": [
+            -0.25,
+            0.63,
+            0
+          ],
+          "size": [
+            0.56,
+            0.12,
+            1.0
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-floor.glb",
+          "point": [
+            0.25,
+            0,
+            -0.1
+          ],
+          "size": [
+            0.5,
+            0.05,
+            0.74
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-doorway.glb",
+          "point": [
+            0.25,
+            0.05,
+            0.24750000000000003
+          ],
+          "size": [
+            0.5,
+            0.43,
+            0.045
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            0.25,
+            0.05,
+            -0.44749999999999995
+          ],
+          "size": [
+            0.5,
+            0.43,
+            0.045
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            0.0225,
+            0.05,
+            -0.1
+          ],
+          "size": [
+            0.74,
+            0.43,
+            0.045
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            0.4775,
+            0.05,
+            -0.1
+          ],
+          "size": [
+            0.74,
+            0.43,
+            0.045
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-roof.glb",
+          "point": [
+            0.25,
+            0.48,
+            -0.1
+          ],
+          "size": [
+            0.56,
+            0.12,
+            0.8
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.25,
+            0.05,
+            -0.4475
+          ],
+          "size": [
+            0.5,
+            0.58,
+            0.022
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.4775,
+            0.05,
+            0
+          ],
+          "size": [
+            0.94,
+            0.58,
+            0.022
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.4125,
+            0.05,
+            0.44749999999999995
+          ],
+          "size": [
+            0.175,
+            0.58,
+            0.022
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.0225,
+            0.05,
+            0
+          ],
+          "size": [
+            0.94,
+            0.58,
+            0.022
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            -0.0875,
+            0.05,
+            0.44749999999999995
+          ],
+          "size": [
+            0.175,
+            0.58,
+            0.022
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.25,
+            0.05,
+            -0.4475
+          ],
+          "size": [
+            0.5,
+            0.43,
+            0.022
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.0225,
+            0.05,
+            -0.1
+          ],
+          "size": [
+            0.74,
+            0.43,
+            0.022
+          ],
+          "yaw": 1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.0875,
+            0.05,
+            0.24750000000000003
+          ],
+          "size": [
+            0.175,
+            0.43,
+            0.022
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.4775,
+            0.05,
+            -0.1
+          ],
+          "size": [
+            0.74,
+            0.43,
+            0.022
+          ],
+          "yaw": -1.5707963267948966
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+          "point": [
+            0.4125,
+            0.05,
+            0.24750000000000003
+          ],
+          "size": [
+            0.175,
+            0.43,
+            0.022
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "survival_canvas_hall": {
+      "name": "Makers' Pavilion",
+      "kind": "civic",
+      "uses": [
+        "smithy",
+        "outfitter",
+        "charmwright"
+      ],
+      "themes": [
+        "caravan",
+        "cyberpunk"
+      ],
+      "series": "survival",
+      "parts": [
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-floor.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.94,
+            0.05,
+            0.9
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-canvas.glb",
+          "point": [
+            0,
+            0.05,
+            0
+          ],
+          "size": [
+            0.94,
+            0.67,
+            0.9
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+          "point": [
+            0,
+            0.05,
+            -0.42
+          ],
+          "size": [
+            0.82,
+            0.55,
+            0.04
+          ],
+          "yaw": 3.141592653589793
+        }
+      ],
+      "front_yaw": 0
+    },
+    "castle_hexagonal_watch": {
+      "name": "Stone Watchtower",
+      "kind": "civic",
+      "uses": [
+
+      ],
+      "themes": [
+        "generic",
+        "winter",
+        "halloween",
+        "christmas",
+        "cyberpunk"
+      ],
+      "series": "castle",
+      "parts": [
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-base.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.84,
+            0.14,
+            0.84
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-mid.glb",
+          "point": [
+            0,
+            0.14,
+            0
+          ],
+          "size": [
+            0.76,
+            0.57,
+            0.76
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-hexagon-roof.glb",
+          "point": [
+            0,
+            0.71,
+            0
+          ],
+          "size": [
+            0.92,
+            0.31,
+            0.92
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "castle_square_library": {
+      "name": "Stone Hall",
+      "kind": "house",
+      "uses": [
+        "scribe",
+        "shrine",
+        "charmwright"
+      ],
+      "themes": [
+        "winter",
+        "christmas",
+        "cyberpunk",
+        "mage"
+      ],
+      "series": "castle",
+      "parts": [
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-square-base.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.88,
+            0.14,
+            0.88
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-door.glb",
+          "point": [
+            0,
+            0.14,
+            0
+          ],
+          "size": [
+            0.82,
+            0.38,
+            0.82
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-square-mid-windows.glb",
+          "point": [
+            0,
+            0.52,
+            0
+          ],
+          "size": [
+            0.82,
+            0.38,
+            0.82
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_castle_kit/content/Models/GLB format/tower-square-top-roof-rounded.glb",
+          "point": [
+            0,
+            0.9,
+            0
+          ],
+          "size": [
+            0.94,
+            0.31,
+            0.94
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    },
+    "halloween_memorial_hall": {
+      "name": "Memorial Hall",
+      "kind": "house",
+      "uses": [
+        "shrine"
+      ],
+      "themes": [
+        "halloween"
+      ],
+      "series": "halloween",
+      "parts": [
+        {
+          "asset": "kenney_graveyard_kit/Models/GLB format/crypt-large.glb",
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.84,
+            0.64,
+            0.94
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_graveyard_kit/Models/GLB format/crypt-large-door.glb",
+          "point": [
+            0,
+            0,
+            0.49
+          ],
+          "size": [
+            0.25,
+            0.5,
+            0.04
+          ],
+          "yaw": 0
+        },
+        {
+          "asset": "kenney_graveyard_kit/Models/GLB format/crypt-large-roof.glb",
+          "point": [
+            0,
+            0.64,
+            0
+          ],
+          "size": [
+            0.94,
+            0.28,
+            1.04
+          ],
+          "yaw": 0
+        }
+      ],
+      "front_yaw": 0
+    }
+  },
+  "themes": {
+    "generic": {
+      "palette": "blue",
+      "houses": [
+        "hex_home_a",
+        "hex_home_b",
+        "hex_tavern",
+        "hex_blacksmith",
+        "hex_barracks",
+        "hex_church",
+        "hex_tower_b",
+        "village_tile_cottage",
+        "village_long_hall",
+        "village_stacked_manor",
+        "town_timber_cottage"
+      ],
+      "civics": [
+        "hex_castle",
+        "hex_tower_a",
+        "hex_market",
+        "hex_windmill",
+        "town_colonnade",
+        "castle_hexagonal_watch"
+      ]
+    },
+    "woodland": {
+      "palette": "green",
+      "houses": [
+        "town_timber_cottage",
+        "town_point_roof_house",
+        "town_arcaded_hall",
+        "village_courtyard_house",
+        "hex_home_a",
+        "hex_tavern"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_lumbermill",
+        "hex_market"
+      ]
+    },
+    "winter": {
+      "palette": "blue",
+      "houses": [
+        "holiday_snow_cottage",
+        "holiday_cross_gables",
+        "holiday_stacked_lodge",
+        "castle_square_library",
+        "hex_tavern"
+      ],
+      "civics": [
+        "castle_hexagonal_watch",
+        "hex_market"
+      ]
+    },
+    "caravan": {
+      "palette": "yellow",
+      "houses": [
+        "survival_metal_house",
+        "survival_dual_workshop",
+        "town_arcaded_hall",
+        "village_long_hall",
+        "hex_tavern"
+      ],
+      "civics": [
+        "survival_canvas_hall",
+        "town_colonnade",
+        "hex_market"
+      ]
+    },
+    "merchant": {
+      "palette": "red",
+      "houses": [
+        "village_stacked_manor",
+        "village_long_hall",
+        "town_arcaded_hall",
+        "hex_home_b",
+        "hex_tavern",
+        "hex_blacksmith"
+      ],
+      "civics": [
+        "hex_market",
+        "hex_castle",
+        "town_colonnade"
+      ]
+    },
+    "fungal": {
+      "palette": "green",
+      "houses": [
+        "town_point_roof_house",
+        "village_courtyard_house",
+        "village_tile_cottage",
+        "town_timber_cottage"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_market"
+      ]
+    },
+    "japanese": {
+      "palette": "blue",
+      "houses": [
+        "village_tile_cottage",
+        "village_long_hall",
+        "village_stacked_manor",
+        "village_courtyard_house",
+        "village_study_tower",
+        "town_arcaded_hall"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_market"
+      ]
+    },
+    "chinese": {
+      "palette": "red",
+      "houses": [
+        "village_long_hall",
+        "village_courtyard_house",
+        "village_stacked_manor",
+        "village_study_tower",
+        "village_tile_cottage"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_market"
+      ]
+    },
+    "korean": {
+      "palette": "blue",
+      "houses": [
+        "village_courtyard_house",
+        "village_tile_cottage",
+        "village_long_hall",
+        "village_stacked_manor",
+        "town_arcaded_hall"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_market"
+      ]
+    },
+    "halloween": {
+      "palette": "red",
+      "houses": [
+        "town_point_roof_house",
+        "village_study_tower",
+        "village_stacked_manor",
+        "town_timber_cottage",
+        "halloween_memorial_hall",
+        "hex_tavern"
+      ],
+      "civics": [
+        "town_colonnade",
+        "castle_hexagonal_watch",
+        "hex_market"
+      ]
+    },
+    "christmas": {
+      "palette": "green",
+      "houses": [
+        "holiday_snow_cottage",
+        "holiday_cross_gables",
+        "holiday_stacked_lodge",
+        "hex_tavern",
+        "castle_square_library"
+      ],
+      "civics": [
+        "castle_hexagonal_watch",
+        "hex_market"
+      ]
+    },
+    "cyberpunk": {
+      "palette": "blue",
+      "houses": [
+        "survival_metal_house",
+        "survival_dual_workshop",
+        "castle_square_library"
+      ],
+      "civics": [
+        "survival_canvas_hall",
+        "castle_hexagonal_watch",
+        "hex_market"
+      ]
+    },
+    "mage": {
+      "palette": "blue",
+      "houses": [
+        "village_study_tower",
+        "castle_square_library",
+        "village_long_hall",
+        "village_stacked_manor",
+        "hex_tower_b",
+        "hex_home_b"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_tower_a",
+        "hex_castle"
+      ]
+    },
+    "fairy": {
+      "palette": "green",
+      "houses": [
+        "town_point_roof_house",
+        "village_courtyard_house",
+        "village_tile_cottage",
+        "town_timber_cottage",
+        "town_arcaded_hall"
+      ],
+      "civics": [
+        "town_colonnade",
+        "hex_market"
+      ]
+    }
+  },
+  "families": {
+    "architecture_sources": {
+      "environment_family": "flat_lowpoly",
+      "queries": [
+        {
+          "pack": "kaykit_medieval_hexagon",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "quaternius_medieval_village",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kenney_fantasy_town_kit",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kenney_holiday_kit",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kenney_castle_kit",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kenney_survival_kit",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kenney_graveyard_kit",
+          "patterns": [
+            "*"
+          ]
+        }
+      ]
+    }
+  }
+}

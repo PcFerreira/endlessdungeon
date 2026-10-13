@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "items": {
+    "oak_chair": {
+      "profile": "seat",
+      "model": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_A_wood.gltf"
+    },
+    "rune_lantern": {
+      "profile": "lantern",
+      "model": "procedural:lantern"
+    },
+    "wool_rug": {
+      "profile": "rug",
+      "model": "procedural:rug"
+    }
+  },
+  "profiles": {
+    "seat": {
+      "footprint": [
+        0.8,
+        0.8
+      ],
+      "height": 0.85,
+      "support": "floor",
+      "solid": true
+    },
+    "bench": {
+      "footprint": [
+        1.8,
+        0.75
+      ],
+      "height": 0.85,
+      "support": "floor",
+      "solid": true
+    },
+    "bed": {
+      "footprint": [
+        1.3,
+        2.0
+      ],
+      "height": 0.7,
+      "support": "floor",
+      "solid": true,
+      "wall_back": true
+    },
+    "table": {
+      "footprint": [
+        1.8,
+        1.0
+      ],
+      "height": 0.78,
+      "support": "floor",
+      "solid": true,
+      "surface": true
+    },
+    "storage": {
+      "footprint": [
+        1.2,
+        0.6
+      ],
+      "height": 1.45,
+      "support": "floor",
+      "solid": true,
+      "surface": false,
+      "wall_back": true
+    },
+    "container": {
+      "footprint": [
+        0.75,
+        0.75
+      ],
+      "height": 0.8,
+      "support": "floor",
+      "solid": true
+    },
+    "lantern": {
+      "footprint": [
+        0.45,
+        0.45
+      ],
+      "height": 0.8,
+      "support": "floor",
+      "solid": true,
+      "light": true
+    },
+    "rug": {
+      "footprint": [
+        2.0,
+        1.4
+      ],
+      "height": 0.035,
+      "support": "floor",
+      "solid": false,
+      "rug": true
+    },
+    "wall_shelf": {
+      "footprint": [
+        1.2,
+        0.5
+      ],
+      "height": 0.55,
+      "elevation": 1.05,
+      "support": "wall",
+      "solid": true,
+      "surface": false
+    },
+    "wall_light": {
+      "footprint": [
+        0.3,
+        0.2
+      ],
+      "height": 0.5,
+      "elevation": 0.65,
+      "support": "wall",
+      "solid": true,
+      "light": true
+    },
+    "picture": {
+      "footprint": [
+        0.7,
+        0.12
+      ],
+      "height": 0.65,
+      "elevation": 0.8,
+      "support": "wall",
+      "solid": true
+    },
+    "display": {
+      "footprint": [
+        0.3,
+        0.3
+      ],
+      "height": 0.3,
+      "support": "surface",
+      "solid": false
+    },
+    "plant": {
+      "footprint": [
+        0.65,
+        0.65
+      ],
+      "height": 0.7,
+      "support": "floor",
+      "solid": true
+    },
+    "workbench": {
+      "footprint": [
+        1.8,
+        0.8
+      ],
+      "height": 0.9,
+      "support": "floor",
+      "solid": true,
+      "wall_back": true
+    },
+    "flat_display": {
+      "footprint": [
+        0.4,
+        0.3
+      ],
+      "height": 0.035,
+      "support": "surface",
+      "solid": false
+    }
+  },
+  "rules": [
+    {
+      "profile": "flat_display",
+      "patterns": [
+        "table_fork",
+        "table_knife",
+        "table_plate",
+        "table_spoon",
+        "plate*"
+      ]
+    },
+    {
+      "profile": "display",
+      "patterns": [
+        "pictureframe_standing*"
+      ]
+    },
+    {
+      "profile": "wall_shelf",
+      "patterns": [
+        "shelf_a_*"
+      ],
+      "surface": true
+    },
+    {
+      "profile": "storage",
+      "patterns": [
+        "cabinet_medium",
+        "cabinet_small"
+      ],
+      "surface": true
+    },
+    {
+      "profile": "workbench",
+      "patterns": [
+        "workbench*"
+      ]
+    },
+    {
+      "profile": "wall_light",
+      "patterns": [
+        "*torch_mounted*",
+        "*lantern_wall*",
+        "*wall_lantern*"
+      ]
+    },
+    {
+      "profile": "wall_shelf",
+      "patterns": [
+        "shelf_*"
+      ]
+    },
+    {
+      "profile": "picture",
+      "patterns": [
+        "pictureframe_*",
+        "painting_*"
+      ]
+    },
+    {
+      "profile": "storage",
+      "patterns": [
+        "cabinet_*",
+        "bookcase*",
+        "bookshelf*"
+      ]
+    },
+    {
+      "profile": "bench",
+      "patterns": [
+        "bench*",
+        "couch*",
+        "sofa*"
+      ]
+    },
+    {
+      "profile": "seat",
+      "patterns": [
+        "chair*",
+        "armchair*",
+        "stool*"
+      ]
+    },
+    {
+      "profile": "bed",
+      "patterns": [
+        "bed_single*",
+        "bed_double*",
+        "bed_decorated*"
+      ]
+    },
+    {
+      "profile": "table",
+      "patterns": [
+        "table*"
+      ]
+    },
+    {
+      "profile": "container",
+      "patterns": [
+        "barrel*",
+        "crate*",
+        "chest*"
+      ]
+    },
+    {
+      "profile": "rug",
+      "patterns": [
+        "rug*",
+        "carpet*"
+      ]
+    },
+    {
+      "profile": "lantern",
+      "patterns": [
+        "lantern_standing*",
+        "lamp_standing*"
+      ]
+    },
+    {
+      "profile": "display",
+      "patterns": [
+        "bottle*",
+        "book_*",
+        "scroll*",
+        "cup*",
+        "mug*",
+        "plate*",
+        "bowl*"
+      ]
+    },
+    {
+      "profile": "plant",
+      "patterns": [
+        "cactus_*",
+        "pot_*"
+      ]
+    }
+  ]
+}

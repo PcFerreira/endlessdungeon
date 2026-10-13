@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brpgdy10g65er"
+path="res://.godot/imported/Puzzle_Wall_Conduit_Emitter_Straight.obj-46c9e7fc61b7fcf5bffdc262ead1196e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Puzzle_Wall_Conduit_Emitter_Straight.obj-46c9e7fc61b7fcf5bffdc262ead1196e.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Puzzle_Wall_Conduit_Emitter_Straight.obj"
+dest_files=["res://.godot/imported/Puzzle_Wall_Conduit_Emitter_Straight.obj-46c9e7fc61b7fcf5bffdc262ead1196e.mesh", "res://.godot/imported/Puzzle_Wall_Conduit_Emitter_Straight.obj-46c9e7fc61b7fcf5bffdc262ead1196e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

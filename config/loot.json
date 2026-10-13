@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "enemy_item_chance": 0.2,
+  "chest_catalogue_items": 2,
+  "enemy_shard_chance": 0.08
+}

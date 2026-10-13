@@ -1,0 +1,45 @@
+{
+  "id": "history_shared_measure",
+  "title": "The Shared Measure",
+  "motif": "shared-measure",
+  "text": "The old survey at {city_name} counted water jars and places to rest along the road. Its last entry names {dungeon_name}. A later warden added a question beside it: who will open the door?",
+  "landmark_text": "The roadside marks belong to that survey. Their spacing measures the help a traveler could expect, rather than the length of a stride.",
+  "book_text": "A local margin explains the same measure. A filled water jar counts as one interval; a closed door counts as none. The keeper still asks households to leave room for a traveler.",
+  "witness_text": "My grandparents argued over the numbers, but both left water by the door. The register ends at {dungeon_name}. I wonder who was there to meet the last surveyor.",
+  "kind": "regional_history",
+  "version": 2,
+  "author": "The local archive of {city_name}",
+  "biomes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "requires": [
+    "regional_history",
+    "collection",
+    "event_aftermath"
+  ],
+  "collection": [
+    "landmark",
+    "book",
+    "witness"
+  ],
+  "event_notes": [
+    {
+      "kind": "supper",
+      "phase": "aftermath",
+      "text": "The supper table is clear again. One stool stayed empty until a late traveler arrived. Nobody had to ask for it."
+    },
+    {
+      "kind": "delivery",
+      "phase": "aftermath",
+      "text": "The carter delivered the supplies. Before counting the crates, a neighbor brought them water and a stool."
+    }
+  ],
+  "tags": [
+    "regional_history",
+    "exploration",
+    "original"
+  ]
+}

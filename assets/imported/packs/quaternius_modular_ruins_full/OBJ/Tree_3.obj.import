@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2lgh4f2l7sle"
+path="res://.godot/imported/Tree_3.obj-f9d709d44e60ca9972df49734c8db0fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Tree_3.obj-f9d709d44e60ca9972df49734c8db0fd.mesh"]
+
+source_file="res://assets/imported/packs/quaternius_modular_ruins_full/OBJ/Tree_3.obj"
+dest_files=["res://.godot/imported/Tree_3.obj-f9d709d44e60ca9972df49734c8db0fd.mesh", "res://.godot/imported/Tree_3.obj-f9d709d44e60ca9972df49734c8db0fd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

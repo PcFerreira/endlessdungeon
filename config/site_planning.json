@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "region_size": 128,
+  "macro_size": 4,
+  "town_chance": 28,
+  "location_chance": 50,
+  "dungeon_counts": [0, 0, 0, 1, 1, 2],
+  "clearance": 4,
+  "placement_trials": 16,
+  "locations": {"ruin": 4, "castle": 2, "church": 2, "temple": 2},
+  "profiles": {
+    "city": {"radius": 13, "flatten": 21, "approach": 3},
+    "dungeon": {"radius": 4, "flatten": 8, "approach": 2},
+    "ruin": {"radius": 11, "flatten": 17, "approach": 13},
+    "castle": {"radius": 15, "flatten": 21, "approach": 17},
+    "church": {"radius": 10, "flatten": 16, "approach": 12},
+    "temple": {"radius": 11, "flatten": 17, "approach": 13}
+  }
+}

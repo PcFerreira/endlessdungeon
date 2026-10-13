@@ -288,5 +288,470 @@
     "source": "free_packs/kenney_fantasy_ui_borders/License.txt",
     "runtime": "assets/ui/fantasy/License.txt",
     "sha256": "f7185bbb59c1a5dec131621e76bddde6855035224119927bba21f3b0bbc3ca83"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Tree_1.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Tree_1.gltf",
+    "sha256": "f4f4bd56416e432721cdc1f42c2ca2a17793660455ca494fe3bb44a738cd02f4"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Tree_2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Tree_2.gltf",
+    "sha256": "a3dcf4fc33b70e6844afdb9f8f6a2543b373f6973f438b0377e3309b08acabee"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Tree_3.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Tree_3.gltf",
+    "sha256": "acbbf1ed786a58ce2f31843a59127e38c7cde70e7ba2e34af01df37aabca9004"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/DeadTree_1.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/DeadTree_1.gltf",
+    "sha256": "71cc94823df5830d373c00428fd6258cb47cd9f87d8c1446065b0d9f0c7cbbf0"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/DeadTree_2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/DeadTree_2.gltf",
+    "sha256": "aaa699d11a8c46953c2bf9f5491a7f49d7c30d094c404ab64b249e4e7b2ae4b8"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/DeadTree_3.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/DeadTree_3.gltf",
+    "sha256": "de36c4c0bdfda26df1f3fc388fcbb4bdded92b98e12d874468a3b0b1ae838794"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Bush.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Bush.gltf",
+    "sha256": "2e1e490f8018c9956ec001936d529d5883a21ef0778a7f8a22cd67027d3b08ee"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Mushroom.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Mushroom.gltf",
+    "sha256": "99a04171502c28b0a46ca34a8153bb949ae35d1bb3d3d37a077333d69cb5e639"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Rock1.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Rock1.gltf",
+    "sha256": "8aafa87d57cdf4649480ed09c78e292d2573f2a53855f9dabeb5deb9d33d3b77"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Rock2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Rock2.gltf",
+    "sha256": "b1450d24b1f18730502d3e4eb18273c8cc151b086ae2bea280181fd7f26f3a6f"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Flowers_1.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Flowers_1.gltf",
+    "sha256": "a79267e588fb84207655b42ebefaffd1f248c2ecc8f852ba30fd8a65fb4d7cfb"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Flowers_2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Flowers_2.gltf",
+    "sha256": "04068581f19bb875eb29cf118a67d9320f2ea410409353231a97e0f8f9c64899"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Fence_Center.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Fence_Center.gltf",
+    "sha256": "fddc948a54d567616a6a664b0fa28890a05bcd0347dcfca59698c8a576a56688"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Fence_Corner.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Fence_Corner.gltf",
+    "sha256": "e21caa5e59710855c26eca79e6a45244d64c28dd1a87c0c9564437db20f679e0"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Fence_End.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Fence_End.gltf",
+    "sha256": "ec925273b3f243bf8e1d2ec0fcc9eb9f685e63559cc922a272ce27ad3ff49b8f"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Cart.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Cart.gltf",
+    "sha256": "710e69623c27f3ca944ccaa9c80bf16a9a6f5fcb47f3fd1ba86bebc5c72b99fc"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Environment/glTF/Plant_2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Environment/glTF/Plant_2.gltf",
+    "sha256": "a39874a6a17050d46735468c7a43272732aa9950ab412aef98e305ca2c007a02"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/quaternius_cube_world/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/quaternius_cube_world/LICENSE_SOURCE.md",
+    "sha256": "44b24773cc3c98e2492bdb10e28661522015db5331fd41ad854afc80e0b8f54a"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/SOURCE.json",
+    "runtime": "assets/expansion/quaternius_cube_world/SOURCE.json",
+    "sha256": "ef6280da81f129a6bfde074380ff51439bf90b0250b22b9ba994ccda42039835"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/Models/GLB format/stall.glb",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/Models/GLB format/stall.glb",
+    "sha256": "f0a636fccb7d57c38f5acd58881c468f4872f1bcda1e9fd9b1118e76110565a1"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/Models/GLB format/Textures/colormap.png",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/Models/GLB format/Textures/colormap.png",
+    "sha256": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/Models/GLB format/stall-bench.glb",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/Models/GLB format/stall-bench.glb",
+    "sha256": "5a4b379488241394916991c4b482ec4863c05bb548ca8751f5c3935f1f6e5b9c"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/Models/GLB format/lantern.glb",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/Models/GLB format/lantern.glb",
+    "sha256": "f270637e3083d6e84a30626ee05df2b09597a642985a7f5c3e4ab5bb1c7a8d55"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/LICENSE_SOURCE.md",
+    "sha256": "8083963aa8966303f7c2473edcac82110c0c4a53670dde3e48c20fe8557f3613"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/SOURCE.json",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/SOURCE.json",
+    "sha256": "d2a5b3d4c3331534c24da3bbc0cbe5ca4131b4c1baa01a97403c43591036d79c"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_town_kit/License.txt",
+    "runtime": "assets/expansion/kenney_fantasy_town_kit/License.txt",
+    "sha256": "fb8e4817197ef9f62215e95b4451a0f09c769c8e03e416e3a2ce108dfa6117e4"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/Models/GLB format/tent.glb",
+    "runtime": "assets/expansion/kenney_survival_kit/Models/GLB format/tent.glb",
+    "sha256": "2c1c5fcc213929af0904a84921084361599ffab5077423a44d3d72a81d8c87c6"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/Models/GLB format/Textures/colormap.png",
+    "runtime": "assets/expansion/kenney_survival_kit/Models/GLB format/Textures/colormap.png",
+    "sha256": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/Models/GLB format/bedroll.glb",
+    "runtime": "assets/expansion/kenney_survival_kit/Models/GLB format/bedroll.glb",
+    "sha256": "2ad9baa2d800845195c7c92bd8423b0d99519530dee0afd3bd0ac4b2e255d728"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/Models/GLB format/campfire-pit.glb",
+    "runtime": "assets/expansion/kenney_survival_kit/Models/GLB format/campfire-pit.glb",
+    "sha256": "a78ce38de408456649146077e1917d70bb39f7c87c3c7370276d809d2409b0ab"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/Models/GLB format/signpost-single.glb",
+    "runtime": "assets/expansion/kenney_survival_kit/Models/GLB format/signpost-single.glb",
+    "sha256": "ca011990b4e1a48240bb78edeb4b6f3b1bf7265dcc6500a5268fc8de1a54262c"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/Models/GLB format/tree-log.glb",
+    "runtime": "assets/expansion/kenney_survival_kit/Models/GLB format/tree-log.glb",
+    "sha256": "bd358e55e63a75bd54bea1e4b40ed362baa937ce8e503f2aa2370a5a1d9da11c"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/kenney_survival_kit/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/kenney_survival_kit/LICENSE_SOURCE.md",
+    "sha256": "43529666ce8adac94679bca3ec24c20d78a182c7df8a5cafdb6dcdfb3b70a792"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/SOURCE.json",
+    "runtime": "assets/expansion/kenney_survival_kit/SOURCE.json",
+    "sha256": "06a189df346bf9fd682bb54b6b846219bd8a786c3478362e41b7ff64f253584f"
+  },
+  {
+    "source": "free_packs/kenney_survival_kit/License.txt",
+    "runtime": "assets/expansion/kenney_survival_kit/License.txt",
+    "sha256": "62c8356876481204fa4d40dc59183dfed777adf987d7f2a1390fffe8a699f3ff"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/BookStand.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/BookStand.gltf",
+    "sha256": "c7b717e6388bc151cb026256aee8a0b611bf759d294f5070a1c11157483eb07e"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/BookStand.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/BookStand.bin",
+    "sha256": "153aa58a6296d61d39832600c80ceeb2f00011d90c7da477c3f326f4744140dd"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Furniture_Normal.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Furniture_Normal.png",
+    "sha256": "3340c4cc47ff06d5e94a2dbe2a2a12d914d0ef055fcf66f63d876666bd160e42"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Furniture_BaseColor.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Furniture_BaseColor.png",
+    "sha256": "075fbc9ec2fabc15732bd4025b6f63a0b25762df38440d06bf30437565d39bab"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Furniture_ORM.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Furniture_ORM.png",
+    "sha256": "7bf417e82baf313793c5791bf48cdc8e573f1f7136197785bf0eb235cb0f8153"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Book_Simplified_Single.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Book_Simplified_Single.gltf",
+    "sha256": "70c50a7dd573f49e17a2767c9eabe249f82d72098d5080c553538eecbba814bf"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Book_Simplified_Single.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Book_Simplified_Single.bin",
+    "sha256": "22aeb14e052eb5ffffa30a2565fa7e075dab1742f3d12c8ebf3646218d62cad1"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Props_Normal.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Props_Normal.png",
+    "sha256": "c4b28a8ba8efe3108cd11356ecab67e8bf75a10cebf29c78ee7724552c305a3e"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Props_BaseColor.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Props_BaseColor.png",
+    "sha256": "75225a4ccfd8cc358c871de7a7a3cab7118ef197419a88464e807b81716215c8"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Props_ORM.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Props_ORM.png",
+    "sha256": "2d83d8df79aca2c8f630d389b43f09113afee98e746dfd42ddc3ce3302a136a2"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Bookcase_2.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Bookcase_2.gltf",
+    "sha256": "58bb7dcdc7f0a9e49b4edb6b9d6d142999133104965bd5ab1d0237dd3b5c1b55"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Bookcase_2.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Bookcase_2.bin",
+    "sha256": "2d61ba836ecd93e3c0ac9d590b183c600bcb9e1bd32a84960e83b5f77520f2bb"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Metal_Normal.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Metal_Normal.png",
+    "sha256": "ab7315c864c9a9e6d716c940a599928506e1569d3b0c9085f8f1a64ec520d790"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Metal_BaseColor.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Metal_BaseColor.png",
+    "sha256": "50422bbda9661effc259caf8b386224cac4b5ca811d2c5b3b8b25ae8efc714db"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Trim_Metal_ORM.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Trim_Metal_ORM.png",
+    "sha256": "7407bccfc39ca74ecd68a61217395959bf56ac2063e6c93b384b11f07f5687c5"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Scroll_1.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Scroll_1.gltf",
+    "sha256": "f8b03860718121bfe6975b31996a0bb36e978e208a7df5a52fe4b0f3efbb14aa"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Scroll_1.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Scroll_1.bin",
+    "sha256": "884fe80cb3075c274acbac22d44e1cb6dba63ac3e62d7df167ccbf52f8f35308"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/T_Page_Noise.png",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/T_Page_Noise.png",
+    "sha256": "4d4069a8d588dab3dcd36f9ea309fc617815b766ce225b78bcd487751585e312"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Workbench.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Workbench.gltf",
+    "sha256": "518fc5c955def18cfcb781b3b955da0e8edcf4f37830a21561ef32c03ad0397e"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Workbench.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Workbench.bin",
+    "sha256": "d26f2a0ba01b4a8db8d6820d1bd0d281297fea30e48c9952484167d18a637b39"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Anvil.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Anvil.gltf",
+    "sha256": "29e0a6a19f9a579ffe8d463c2a8d445c531a39271ba4eab9754d3f5d9f9d9ce1"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Anvil.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Anvil.bin",
+    "sha256": "d52a9ab436577e8ee8ca00b2929b15595a60b0294c6275a39ecfe1f27408bfcf"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Lantern_Wall.gltf",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Lantern_Wall.gltf",
+    "sha256": "9e7623e1d3a16f9212ff7cb41c939746435187f0071bd94849ee7bc6a59785a2"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/Exports/glTF/Lantern_Wall.bin",
+    "runtime": "assets/expansion/quaternius_fantasy_props/Exports/glTF/Lantern_Wall.bin",
+    "sha256": "fe9f3816130587308b73bb8b4b28031b71fe9405a111f115463022709fa04b2e"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/quaternius_fantasy_props/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/quaternius_fantasy_props/LICENSE_SOURCE.md",
+    "sha256": "1adca5bfb3f13529b6e61f2fab0c0c4179d7eaf4909432c0037095f07796f809"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/SOURCE.json",
+    "runtime": "assets/expansion/quaternius_fantasy_props/SOURCE.json",
+    "sha256": "5b5e9f754f33b557a7a3fcb2ed073368b051c76cc8b09f809cb6d43fcfae75fd"
+  },
+  {
+    "source": "free_packs/quaternius_fantasy_props/License_Standard.txt",
+    "runtime": "assets/expansion/quaternius_fantasy_props/License_Standard.txt",
+    "sha256": "edad12240087a33e08fc031e4e66c2b2b4b2a6d4f086339bde04f741b385fbda"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_single_A.gltf",
+    "runtime": "assets/expansion/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_single_A.gltf",
+    "sha256": "7b2852bb66bf82cad3e0d03a499b1480879790fa66b645347e3e73761c4fe3f5"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_single_A.bin",
+    "runtime": "assets/expansion/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_single_A.bin",
+    "sha256": "fc7631db4540d31cbe76dac3c672bc8836ee302796d14bba428bda84b9237f5b"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/furniturebits_texture.png",
+    "runtime": "assets/expansion/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/furniturebits_texture.png",
+    "sha256": "de62db37a80d1801c3d9eb674890ae04b04469e0c149481a51fa250562c628dc"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_medium.gltf",
+    "runtime": "assets/expansion/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_medium.gltf",
+    "sha256": "fd5e5fe8bbf1d3729b6bd725165d58490e9cbd8dd46ce42314b01f20951a302b"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_medium.bin",
+    "runtime": "assets/expansion/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_medium.bin",
+    "sha256": "0e6ba8fd006f673d946979e45487067f4e274be9bbd07816fd371578d2a37518"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/kaykit_furniture/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/kaykit_furniture/LICENSE_SOURCE.md",
+    "sha256": "b5fd2deaa903261fee3bc8e88fc0e24bc103fb351d541dccb830a9124f862c30"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/SOURCE.json",
+    "runtime": "assets/expansion/kaykit_furniture/SOURCE.json",
+    "sha256": "1469be7923f92bf32a1d002b2f0d774585858defb6900393df2f915f326a8693"
+  },
+  {
+    "source": "free_packs/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/LICENSE.txt",
+    "runtime": "assets/expansion/kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/LICENSE.txt",
+    "sha256": "cd675f2adc31eb5fedaedc1072d8ddc27b917f523682f0561837c03dc56393cb"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/Models/GLB format/template-floor.glb",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/Models/GLB format/template-floor.glb",
+    "sha256": "80d3e8a6b06707082fe4464e29650fee5cecda6441e683c3945b856f05723d36"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/Models/GLB format/Textures/colormap.png",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/Models/GLB format/Textures/colormap.png",
+    "sha256": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/Models/GLB format/template-wall.glb",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/Models/GLB format/template-wall.glb",
+    "sha256": "b51cd5a1e1a7612c7cb8673148407bb73ec71dc5cd1900e8376889b068af9069"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/Models/GLB format/template-wall-corner.glb",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/Models/GLB format/template-wall-corner.glb",
+    "sha256": "4ceeeec7aab1383b671d2bbdf1f3d2728c45f3ab6af09e578dc0fd9c5c9206d5"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/LICENSE_SOURCE.md",
+    "sha256": "6bc03fff97d9d4f6d5a692cbd5160ebcc4d3224bf9824d7e36ebe97e1ee57543"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/SOURCE.json",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/SOURCE.json",
+    "sha256": "dfdee87eea6ddae72f31a65e138912c75cd7fe3f831da2a00e820ff424b2531c"
+  },
+  {
+    "source": "free_packs/kenney_modular_cave_kit/License.txt",
+    "runtime": "assets/expansion/kenney_modular_cave_kit/License.txt",
+    "sha256": "0889f6cf5c972b42de634c2f1f8bec37d92e8d65acf28830afb159c04e3c6954"
+  },
+  {
+    "source": "free_packs/kenney_nature_kit/Models/GLTF format/mushroom_tanTall.glb",
+    "runtime": "assets/expansion/kenney_nature_kit/Models/GLTF format/mushroom_tanTall.glb",
+    "sha256": "58d0078e531d6118c0cb39110c77fe3d564398379bb7f2e3f5f572321c0fc4ff"
+  },
+  {
+    "source": "free_packs/kenney_nature_kit/Models/GLTF format/stump_old.glb",
+    "runtime": "assets/expansion/kenney_nature_kit/Models/GLTF format/stump_old.glb",
+    "sha256": "4c2d2da34804c1662c6a776a9d60fe4449e6f6fdd50914bfec7d5cca3e9ceddb"
+  },
+  {
+    "source": "free_packs/kenney_nature_kit/LICENSE_CC0-1.0.txt",
+    "runtime": "assets/expansion/kenney_nature_kit/LICENSE_CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "source": "free_packs/kenney_nature_kit/LICENSE_SOURCE.md",
+    "runtime": "assets/expansion/kenney_nature_kit/LICENSE_SOURCE.md",
+    "sha256": "af6139fa704c7449a86bdfec04d43845671111ba8c13e3d9172371df70cdbf28"
+  },
+  {
+    "source": "free_packs/kenney_nature_kit/SOURCE.json",
+    "runtime": "assets/expansion/kenney_nature_kit/SOURCE.json",
+    "sha256": "83ea5a1533e2ec84f9271c02bb5946ac7160ae60edf8d288de67cd00d5937053"
+  },
+  {
+    "source": "free_packs/kenney_nature_kit/License.txt",
+    "runtime": "assets/expansion/kenney_nature_kit/License.txt",
+    "sha256": "cb96b75e3560ac78d7a53ce6f083f4cdb5c53faea6141b62d63458dcfe1e4b9d"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Characters/glTF/Character_Female_1.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Characters/glTF/Character_Female_1.gltf",
+    "sha256": "e964fa235a490678fa7e630327403f0fb7b619b3aacceab5cc2139c53ce8bf07"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Characters/glTF/Character_Female_2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Characters/glTF/Character_Female_2.gltf",
+    "sha256": "4d8131f22cd1c7c21d7e207f861706c0aafc982ed7c9c137a3520880473c4ef3"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Characters/glTF/Character_Male_1.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Characters/glTF/Character_Male_1.gltf",
+    "sha256": "115a112834453eddb9eee06cb014b729d374ec61c08ee23c1610941c604d6a68"
+  },
+  {
+    "source": "free_packs/quaternius_cube_world/Characters/glTF/Character_Male_2.gltf",
+    "runtime": "assets/expansion/quaternius_cube_world/Characters/glTF/Character_Male_2.gltf",
+    "sha256": "27722e29a224bfa04440f759490fa226c56d5cffc6b86d52bc0aceacc3c69ba7"
   }
 ]

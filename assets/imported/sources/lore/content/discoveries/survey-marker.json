@@ -1,0 +1,16 @@
+{
+  "id": "discovery_survey_marker",
+  "kind": "discovery",
+  "version": 2,
+  "family": "survey",
+  "title": "The Second Measure",
+  "author": "A Milewarden's field note",
+  "marker_label": "Survey stone",
+  "biomes": [0, 1, 2, 3],
+  "requires": ["read_discovery"],
+  "model_query": {"pack": "quaternius_cube_world", "tags": ["scenery", "voxel"], "patterns": ["*/Rock*.gltf"]},
+  "marker_width": 0.75,
+  "marker_height": 0.55,
+  "text": "This stone was measured twice. The first surveyor counted the road from {city_name}. The second counted the footsteps of everyone who had walked it.\n\nTheir figures disagreed. Their stone did not move.\n\nThe margin names {dungeon_name}. A Milewarden has added: I am taking a fresh sheet. If the old surveyors kept a third account there, I mean to bring a copy home.",
+  "tags": ["exploration", "roadside", "survey"]
+}

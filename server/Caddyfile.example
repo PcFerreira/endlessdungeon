@@ -1,0 +1,17 @@
+{$GAME_DOMAIN} {
+	@socket path /play
+	handle @socket {
+		reverse_proxy world:8080
+	}
+	@health path /healthz
+	handle @health {
+		reverse_proxy world:8080
+	}
+	handle {
+		root * /srv/web
+		file_server {
+			precompressed gzip
+		}
+		header X-Content-Type-Options nosniff
+	}
+}

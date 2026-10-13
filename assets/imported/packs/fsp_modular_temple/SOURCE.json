@@ -1,0 +1,29 @@
+{
+  "id": "fsp_modular_temple",
+  "title": "Modular Temple Pack",
+  "author": "Keith at Fertile Soil Productions",
+  "source": "https://fertile-soil-productions.itch.io/temple-modular-collection",
+  "scope": "Original OBJ models and shared MTL material file. Temple and palace structural pieces, ruined pieces and puzzle props.",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://fertile-soil-productions.itch.io/temple-modular-collection/file/1169222?source=game_download",
+      "filename": "fsp_modular_temple.zip",
+      "bytes": 847498,
+      "sha256": "93abe0df8d11aa7d5d230817dbc9ab7aea543b1a27c5024389cb7bb90f8db85a",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly modular 3D",
+  "categories": [
+    "Temples",
+    "Palaces",
+    "Ruins",
+    "Puzzle props"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Modular Temple Pack by Keith at Fertile Soil Productions. Source: https://fertile-soil-productions.itch.io/temple-modular-collection. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original models, dependencies and publisher license notices are preserved unchanged. Archive contents were placed in content/; the KayKit GitHub archive wrapper was removed."
+}

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jixs8p1r63ma"
+path="res://.godot/imported/Wall_Arch_Corner_Inner.obj-fca9d88263e38a0b7e21934c8cdbfbf9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wall_Arch_Corner_Inner.obj-fca9d88263e38a0b7e21934c8cdbfbf9.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Wall_Arch_Corner_Inner.obj"
+dest_files=["res://.godot/imported/Wall_Arch_Corner_Inner.obj-fca9d88263e38a0b7e21934c8cdbfbf9.mesh", "res://.godot/imported/Wall_Arch_Corner_Inner.obj-fca9d88263e38a0b7e21934c8cdbfbf9.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

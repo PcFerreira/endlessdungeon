@@ -1,0 +1,27 @@
+{
+  "id": "fantasy_rpg_icons_496",
+  "title": "496 Pixel Art Icons for Medieval/Fantasy RPG",
+  "author": "Henrique Lazarini (7Soul1); repacked by gnola14",
+  "source": "https://opengameart.org/content/496-pixel-art-icons-for-medievalfantasy-rpg",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/496_RPG_icons.zip",
+      "filename": "496_RPG_icons.zip",
+      "bytes": 1541171,
+      "sha256": "82167b463d20fdc2c0cb641e061503bb77816558087270e50eb66ad34cf75658",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Pixel art icons",
+  "categories": [
+    "Spells",
+    "magic",
+    "inventory"
+  ],
+  "attribution_required": false,
+  "attribution_text": "496 Pixel Art Icons for Medieval/Fantasy RPG by Henrique Lazarini (7Soul1); repacked by gnola14. Source: https://opengameart.org/content/496-pixel-art-icons-for-medievalfantasy-rpg. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

@@ -3,9 +3,12 @@ extends CanvasLayer
 const Minimap = preload("res://scripts/minimap.gd")
 const AimCursor = preload("res://scripts/aim_cursor.gd")
 const UISkin = preload("res://scripts/ui_skin.gd")
-const INK := Color("e5e0d5")
-const MUTED := Color("909caa")
-const GOLD := Color("c3a576")
+const HudSkin = preload("res://scripts/hud_skin.gd")
+const CharacterMenu = preload("res://scripts/character_menu.gd")
+const InventoryMenu = preload("res://scripts/inventory_menu.gd")
+const INK := HudSkin.INK
+const MUTED := HudSkin.MUTED
+const GOLD := HudSkin.GOLD
 const TEAL := Color("7bded0")
 var game
 var root := Control.new()
@@ -14,8 +17,6 @@ var depth_label: Label
 var theme_label: Label
 var objective_label: Label
 var map_title: Label
-var map_legend: Label
-var map_help: Label
 var vitality_label: Label
 var aether_label: Label
 var hp_bar: ProgressBar
@@ -39,6 +40,20 @@ var target_panel: PanelContainer
 var sanctum_button: Button
 var class_icon: TextureRect
 var previous_class := ""
+var inventory_selected := "sanctum_sigil"
+var inventory_filter := 0
+var profile_name: Label
+var action_dock: PanelContainer
+var location_panel: PanelContainer
+var map_panel: PanelContainer
+var map_button: Button
+var message_panel: PanelContainer
+var interaction_panel: PanelContainer
+var interaction_key: Label
+var spell_icons: Dictionary = {}
+var spell_shades: Dictionary = {}
+var spell_warnings: Dictionary = {}
+var utility_buttons: Array[Button] = []
 
 func _ready() -> void:
 	if ResourceLoader.exists("res://assets/fonts/Cinzel.ttf"):
@@ -47,6 +62,7 @@ func _ready() -> void:
 		title_font = ThemeDB.fallback_font
 	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	root.theme = HudSkin.theme()
 	add_child(root)
 	_build_hud()
 	var cursor := AimCursor.new()
@@ -62,10 +78,9 @@ func _panel(parent: Node, minimum: Vector2, accent: Color = Color("36444f")) -> 
 	var panel := PanelContainer.new()
 	panel.custom_minimum_size = minimum
 	panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var style := UISkin.frame("panel_blue", Color("333d50"), 18)
+	var style := HudSkin.surface(GOLD.darkened(.45) if accent == Color("766950") else Color("48596a"), 18)
 	panel.add_theme_stylebox_override("panel", style)
 	parent.add_child(panel)
-	UISkin.ornament(panel, GOLD if accent == Color("766950") else Color("778a9d"))
 	return panel
 
 func _label(parent: Node, text: String, font_size: int = 16, color: Color = INK, serif: bool = false) -> Label:
@@ -90,27 +105,40 @@ func _vbox(parent: Node, separation: int = 9) -> VBoxContainer:
 func _button(parent: Node, text: String, callback: Callable, minimum: Vector2 = Vector2(0, 49)) -> Button:
 	var button := Button.new()
 	button.text = text
+	if text.ends_with("]") and text.contains(" ["):
+		var caption := text.split(" [", false, 1)
+		button.text = caption[0].strip_edges()
+		button.tooltip_text = "Shortcut: " + caption[1].trim_suffix("]")
 	button.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	button.custom_minimum_size = minimum
 	button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	button.add_theme_font_size_override("font_size", 17)
 	button.add_theme_color_override("font_color", INK)
-	for state in ["normal", "hover", "pressed", "focus", "disabled"]:
-		var tint := Color("727e91") if state in ["hover", "focus"] else Color("4d596d")
-		if state == "disabled":
-			tint = Color("333c4d")
-		var style := UISkin.frame("buttonLong_blue_pressed" if state == "pressed" else "buttonLong_blue", tint, 10)
-		button.add_theme_stylebox_override(state, style)
-	button.pressed.connect(callback)
+	HudSkin.button(button)
+	if callback.is_valid():
+		button.pressed.connect(callback)
 	parent.add_child(button)
 	return button
 
-func _bar(parent: Node, color: String) -> ProgressBar:
+func _hud_panel(parent: Node, minimum: Vector2 = Vector2.ZERO, margin: int = 12) -> PanelContainer:
+	var panel := PanelContainer.new()
+	panel.custom_minimum_size = minimum
+	panel.mouse_filter = Control.MOUSE_FILTER_STOP
+	panel.add_theme_stylebox_override("panel", HudSkin.surface(HudSkin.EDGE, margin))
+	parent.add_child(panel)
+	return panel
+
+func _hud_button(parent: Node, text: String, tooltip: String, callback: Callable, minimum: Vector2 = Vector2(0, 30)) -> Button:
+	var button := _button(parent, text, callback, minimum)
+	button.focus_mode = Control.FOCUS_NONE
+	button.add_theme_font_size_override("font_size", 13)
+	button.tooltip_text = tooltip
+	return button
+
+func _meter(parent: Node, color: Color, minimum: Vector2) -> ProgressBar:
 	var bar := ProgressBar.new()
-	bar.custom_minimum_size = Vector2(245, 18)
-	bar.show_percentage = false
-	bar.add_theme_stylebox_override("background", UISkin.bar("Back"))
-	bar.add_theme_stylebox_override("fill", UISkin.bar(color))
+	bar.custom_minimum_size = minimum
+	HudSkin.meter(bar, color)
 	parent.add_child(bar)
 	return bar
 
@@ -118,114 +146,116 @@ func _build_hud() -> void:
 	root.add_child(hud)
 	hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	hud.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	var top := _panel(hud, Vector2(292, 0))
-	top.mouse_filter = Control.MOUSE_FILTER_STOP
-	top.position = Vector2(22, 22)
-	var column := _vbox(top, 5)
-	var row := HBoxContainer.new()
-	row.add_theme_constant_override("separation", 12)
-	column.add_child(row)
-	class_icon = TextureRect.new()
-	class_icon.custom_minimum_size = Vector2(40, 40)
-	class_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	class_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	row.add_child(class_icon)
-	var identity := _vbox(row, 2)
-	depth_label = _label(identity, "Mage", 22, INK, true)
-	_label(identity, "THE WANDERING LANDS", 10, GOLD)
-	vitality_label = _label(column, "VITALITY", 12, INK)
-	hp_bar = _bar(column, "Red")
-	aether_label = _label(column, "AETHER", 12, INK)
-	mana_bar = _bar(column, "Blue")
-	var top_right := _panel(hud, Vector2(206, 0))
-	top_right.mouse_filter = Control.MOUSE_FILTER_STOP
-	top_right.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
-	top_right.offset_left = -228
-	top_right.offset_right = -22
-	top_right.offset_top = 22
-	var map_column := _vbox(top_right, 6)
-	map_title = _label(map_column, "ATLAS OF THE LANDS", 12, GOLD, true)
+	location_panel = _hud_panel(hud, Vector2(400, 0))
+	location_panel.position = Vector2(24, 24)
+	var chapter := _vbox(location_panel, 5)
+	theme_label = _label(chapter, "", 20, INK, true)
+	theme_label.custom_minimum_size.x = 374
+	theme_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	objective_label = _label(chapter, "", 13, GOLD)
+	objective_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	map_panel = _hud_panel(hud, Vector2(192, 0), 10)
+	map_panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	map_panel.offset_left = -216
+	map_panel.offset_right = -24
+	map_panel.offset_top = 24
+	var map_column := _vbox(map_panel, 7)
+	map_title = _label(map_column, "LOCAL MAP", 11, GOLD, true)
+	map_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	map_button = _hud_button(map_column, "", "Local map\nClick to open the atlas.\nTab: atlas", game.toggle_map, Vector2(172, 156))
+	map_button.clip_contents = true
 	var map := Minimap.new()
 	map.game = game
-	map.custom_minimum_size = Vector2(170, 150)
+	map_button.add_child(map)
+	map.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	map.offset_left = 5
+	map.offset_top = 5
+	map.offset_right = -5
+	map.offset_bottom = -5
 	map.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	map_column.add_child(map)
-	map_legend = _label(map_column, "", 10, MUTED)
-	map_help = _label(map_column, "", 10, MUTED)
-	var utilities := HBoxContainer.new()
-	utilities.add_theme_constant_override("separation", 6)
-	map_column.add_child(utilities)
-	_button(utilities, "Book [G]", game.toggle_grimoire, Vector2(82, 30)).add_theme_font_size_override("font_size", 12)
-	_button(utilities, "Menu", game.toggle_pause, Vector2(82, 30)).add_theme_font_size_override("font_size", 12)
-	var chapter := VBoxContainer.new()
-	hud.add_child(chapter)
-	chapter.set_anchors_and_offsets_preset(Control.PRESET_CENTER_TOP)
-	chapter.offset_left = -255
-	chapter.offset_right = 255
-	chapter.offset_top = 33
-	theme_label = _label(chapter, "", 21, INK, true)
-	theme_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	theme_label.add_theme_color_override("font_shadow_color", Color("14212c"))
-	theme_label.add_theme_constant_override("shadow_outline_size", 3)
-	objective_label = _label(chapter, "", 13, GOLD)
-	objective_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	objective_label.add_theme_color_override("font_shadow_color", Color("14212c"))
-	objective_label.add_theme_constant_override("shadow_outline_size", 3)
-	target_panel = _panel(hud, Vector2(290, 0), Color("766950"))
-	target_panel.mouse_filter = Control.MOUSE_FILTER_STOP
+	target_panel = _hud_panel(hud, Vector2(280, 0), 10)
 	target_panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER_TOP)
-	target_panel.offset_left = -145
-	target_panel.offset_right = 145
-	target_panel.offset_top = 100
+	target_panel.offset_left = -140
+	target_panel.offset_right = 140
+	target_panel.offset_top = 24
 	var target_column := _vbox(target_panel, 5)
-	_label(target_column, "TARGET", 10, GOLD)
-	target_name = _label(target_column, "No target", 16, INK, true)
-	target_bar = _bar(target_column, "Red")
-	target_status = _label(target_column, "Left-click a warden to select", 11, MUTED)
-	var footer := VBoxContainer.new()
-	footer.add_theme_constant_override("separation", 8)
-	hud.add_child(footer)
-	footer.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
-	footer.offset_left = -416
-	footer.offset_right = 416
-	footer.offset_top = -126
-	footer.offset_bottom = -18
-	var tray := _panel(footer, Vector2.ZERO, Color("766950"))
-	tray.add_theme_stylebox_override("panel", UISkin.frame("panel_blue", Color("30384a"), 10))
+	target_name = _label(target_column, "", 16, INK, true)
+	target_name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	target_bar = _meter(target_column, Color("a84d53"), Vector2(260, 12))
+	target_status = _label(target_column, "", 12, MUTED)
+	target_status.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	action_dock = _hud_panel(hud, Vector2(866, 0), 12)
+	action_dock.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	action_dock.offset_left = -433
+	action_dock.offset_right = 433
+	action_dock.offset_top = -125
+	action_dock.offset_bottom = -16
+	var dock_column := _vbox(action_dock, 8)
 	var actions := HBoxContainer.new()
-	actions.add_theme_constant_override("separation", 18)
-	tray.add_child(actions)
+	actions.add_theme_constant_override("separation", 14)
+	dock_column.add_child(actions)
+	var vitals := _vbox(actions, 4)
+	vitals.custom_minimum_size.x = 188
+	var identity := HBoxContainer.new()
+	identity.add_theme_constant_override("separation", 7)
+	vitals.add_child(identity)
+	class_icon = TextureRect.new()
+	class_icon.custom_minimum_size = Vector2(21, 21)
+	class_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	class_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	class_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	identity.add_child(class_icon)
+	profile_name = _label(identity, "Wanderer", 14, INK, true)
+	profile_name.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	profile_name.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	profile_name.custom_minimum_size.x = 145
+	depth_label = _label(vitals, "", 11, GOLD)
+	depth_label.visible = false
+	hp_bar = _meter(vitals, Color("af5159"), Vector2(188, 16))
+	vitality_label = _label(hp_bar, "", 12, INK)
+	vitality_label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	vitality_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	vitality_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	mana_bar = _meter(vitals, Color("497fa5"), Vector2(188, 13))
+	aether_label = _label(mana_bar, "", 11, INK)
+	aether_label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	aether_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	aether_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	hotbar = HBoxContainer.new()
 	hotbar.add_theme_constant_override("separation", 4)
 	actions.add_child(hotbar)
 	_build_action_bar()
-	sanctum_button = _button(actions, "", game.use_sanctum_sigil, Vector2(76, 76))
-	sanctum_button.focus_mode = Control.FOCUS_NONE
+	sanctum_button = _hud_button(actions, "", "Sanctum Sigil\nH: visit your sanctum", game.use_sanctum_sigil, Vector2(52, 60))
 	sanctum_button.icon = load("res://assets/sanctum_sigil.svg")
 	sanctum_button.expand_icon = true
-	sanctum_button.add_theme_constant_override("icon_max_width", 40)
-	var sigil_key := _label(sanctum_button, "H", 12, GOLD)
-	sigil_key.position = Vector2(9, 5)
-	var sigil_name := _label(sanctum_button, "Sanctum", 10, INK)
-	sigil_name.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
-	sigil_name.offset_left = -31
-	sigil_name.offset_right = 31
-	sigil_name.offset_top = -18
-	sigil_name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	hint = _label(footer, "", 12, MUTED)
-	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	hint.add_theme_color_override("font_shadow_color", Color("14212c"))
-	hint.add_theme_constant_override("shadow_outline_size", 3)
-	message = _label(hud, "", 16, INK)
-	message.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
-	message.offset_left = -450
-	message.offset_right = 450
-	message.offset_top = -173
-	message.offset_bottom = -140
+	sanctum_button.add_theme_constant_override("icon_max_width", 32)
+	var sigil_key := _label(sanctum_button, "H", 10, GOLD)
+	sigil_key.position = Vector2(6, 4)
+	var utility_row := HBoxContainer.new()
+	utility_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	utility_row.add_theme_constant_override("separation", 6)
+	dock_column.add_child(utility_row)
+	utility_buttons.append(_hud_button(utility_row, "Character", "Character appearance\nC: customize", game.open_character_menu))
+	utility_buttons.append(_hud_button(utility_row, "Backpack", "Items and equipment\nI: backpack", game.toggle_inventory))
+	utility_buttons.append(_hud_button(utility_row, "Grimoire", "Skills and action-bar loadout\nG: grimoire", game.toggle_grimoire))
+	utility_buttons.append(_hud_button(utility_row, "Journal", "Read your field notes\nJ: journal", game.expansion.toggle_journal))
+	utility_buttons.append(_hud_button(utility_row, "Atlas", "Chart a route through the lands\nTab: atlas", game.toggle_map))
+	utility_buttons.append(_hud_button(utility_row, "Menu", "Pause, save and options\nEsc: pause", game.toggle_pause))
+	utility_buttons.append(_hud_button(utility_row, "Objects", "Take nearby objects with T\nV: place items and manage your base", game.world_items.open_placement))
+	interaction_panel = _hud_panel(hud, Vector2(0, 38), 8)
+	var interaction_row := HBoxContainer.new()
+	interaction_row.add_theme_constant_override("separation", 10)
+	interaction_panel.add_child(interaction_row)
+	interaction_key = _label(interaction_row, "E", 14, GOLD)
+	hint = _label(interaction_row, "", 14, INK)
+	hint.custom_minimum_size.x = 300
+	hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	message_panel = _hud_panel(hud, Vector2(0, 34), 8)
+	message_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	message = _label(message_panel, "", 14, INK)
+	message.custom_minimum_size.x = 380
+	message.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	message.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	message.add_theme_color_override("font_shadow_color", Color("101722"))
-	message.add_theme_constant_override("shadow_outline_size", 5)
 
 func _build_action_bar() -> void:
 	for child in hotbar.get_children():
@@ -234,133 +264,182 @@ func _build_action_bar() -> void:
 	spell_status.clear()
 	spell_buttons.clear()
 	spell_recharge.clear()
+	spell_icons.clear()
+	spell_shades.clear()
+	spell_warnings.clear()
 	previous_bar = game.ACTION_BAR.duplicate()
 	for index in range(game.ACTION_BAR.size()):
 		var spell: String = game.ACTION_BAR[index]
-		var empty := spell.is_empty()
-		var color: Color = MUTED.darkened(.5) if empty else game.ABILITIES[spell].color
-		var button := _button(hotbar, "", game.cast_slot.bind(index), Vector2(68, 76))
-		button.focus_mode = Control.FOCUS_NONE
-		button.disabled = empty
-		for state in ["normal", "hover", "pressed", "focus", "disabled"]:
-			var tint := Color("71899c") if state in ["hover", "focus"] else Color("aaa59b")
-			if empty or state == "disabled":
-				tint = Color("555d70")
-			var style := UISkin.frame("buttonSquare_brown_pressed" if state == "pressed" else "buttonSquare_brown", tint, 6)
-			button.add_theme_stylebox_override(state, style)
-		var box := _vbox(button, 3)
-		box.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		box.offset_left = 6
-		box.offset_right = -6
-		box.offset_top = 5
-		box.offset_bottom = -5
-		var key_label := _label(button, str((index + 1) % 10), 11, GOLD if not empty else MUTED)
-		key_label.position = Vector2(7, 4)
-		if empty:
-			var placeholder := _label(box, ".", 28, color)
-			placeholder.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-			button.tooltip_text = "Empty slot %s. G opens your grimoire to assign an ability." % ((index + 1) % 10)
+		var button := _hud_button(hotbar, "", "Empty slot\nAssign an ability in the grimoire (G).", game.cast_slot.bind(index), Vector2(52, 60))
+		button.disabled = spell.is_empty()
+		if spell.is_empty():
 			continue
+		var color: Color = game.ABILITIES[spell].color
+		HudSkin.button(button, color.darkened(.55))
 		var icon := TextureRect.new()
 		icon.texture = load("res://assets/spells/%s.svg" % spell)
-		icon.custom_minimum_size = Vector2(0, 34)
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		box.add_child(icon)
-		_label(box, game.ABILITIES[spell].short, 10, INK, true).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		spell_status[spell] = _label(box, "", 10, MUTED)
-		spell_status[spell].horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		button.add_child(icon)
+		icon.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		icon.offset_left = 9
+		icon.offset_top = 12
+		icon.offset_right = -9
+		icon.offset_bottom = -9
+		spell_icons[spell] = icon
+		var shade := ColorRect.new()
+		shade.color = Color(0.025, .04, .06, .78)
+		shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		button.add_child(shade)
+		shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		shade.offset_left = 2
+		shade.offset_top = 2
+		shade.offset_right = -2
+		shade.offset_bottom = -2
+		spell_shades[spell] = shade
+		var key_label := _label(button, str((index + 1) % 10), 10, GOLD)
+		key_label.position = Vector2(6, 3)
+		var counter := _label(button, "", 22, INK)
+		counter.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		counter.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		counter.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		counter.add_theme_color_override("font_shadow_color", Color("0b1017"))
+		counter.add_theme_constant_override("shadow_outline_size", 2)
+		spell_status[spell] = counter
 		spell_buttons[spell] = button
-		button.tooltip_text = "%s [%s]\n%s %s / %.2fs recharge\n%s" % [game.ABILITIES[spell].name, (index + 1) % 10, int(game.ABILITIES[spell].cost), game.CharacterBuild.CLASSES[game.build.class_id].resource.to_lower(), game.ABILITIES[spell].recharge, game.ABILITIES[spell].description]
-		var recharge := ProgressBar.new()
-		recharge.custom_minimum_size.y = 3
-		recharge.show_percentage = false
+		button.set_meta("ability_tooltip", "%s [%s]\n%s\n%s %s / %.2fs recharge" % [game.ABILITIES[spell].name, (index + 1) % 10, game.ABILITIES[spell].description, int(game.ABILITIES[spell].cost), game.CharacterBuild.CLASSES[game.build.class_id].resource, game.ABILITIES[spell].recharge])
+		var warning := _label(button, "!", 12, Color("efbe83"))
+		warning.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT)
+		warning.offset_left = -12
+		warning.offset_right = -4
+		warning.offset_top = -21
+		spell_warnings[spell] = warning
+		var recharge := _meter(button, color, Vector2(0, 3))
+		recharge.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+		recharge.offset_left = 4
+		recharge.offset_right = -4
+		recharge.offset_top = -5
+		recharge.offset_bottom = -2
 		recharge.max_value = 1.0
-		var fill := StyleBoxFlat.new()
-		fill.bg_color = color
-		recharge.add_theme_stylebox_override("fill", fill)
-		box.add_child(recharge)
 		spell_recharge[spell] = recharge
 
 func _process(_delta: float) -> void:
 	if game == null:
 		return
-	if previous_bar != game.ACTION_BAR:
-		_build_action_bar()
-	hud.visible = game.has_journey and not game.state in ["menu", "title", "credits"]
-	if previous_class != game.build.class_id:
+	if previous_bar != game.ACTION_BAR or previous_class != game.build.class_id:
 		previous_class = game.build.class_id
+		_build_action_bar()
 		class_icon.texture = load("res://assets/spells/%s.svg" % {"mage": "bolt", "sword": "strike", "spellsword": "runeblade"}[previous_class])
-		mana_bar.add_theme_stylebox_override("fill", UISkin.bar("Green" if previous_class == "sword" else "Blue"))
+		HudSkin.meter(mana_bar, Color("6b9366") if previous_class == "sword" else Color("497fa5"))
+	hud.visible = game.has_journey and game.state == "playing"
 	depth_label.text = game.CharacterBuild.CLASSES[game.build.class_id].name
-	theme_label.text = game.location_name()
+	profile_name.text = game.profile.display_name
+	profile_name.tooltip_text = "%s\n%s\nC: character appearance" % [game.profile.display_name, depth_label.text]
+	theme_label.text = game.location_name().replace(" / ", "\n")
 	if game.layer == "overworld":
-		map_title.text = "ATLAS OF THE LANDS"
-		map_legend.text = "Gold: city   /   Violet: dungeon"
-		map_help.text = "Tab: atlas   /   White: you"
-		objective_label.text = "Explore the lands. Tab opens the atlas."
+		map_title.text = "THE WANDERING LANDS"
+		map_panel.tooltip_text = "Gold squares: cities\nViolet diamonds: destinations\nOutlined: reported\nFilled: seen; marked center: visited\nWhite dot: you"
+		if game.online.session:
+			map_panel.tooltip_text = "Nearby downloaded terrain and places\nGold squares: cities\nViolet diamonds: destinations\nWhite dot: you"
+		objective_label.text = "Explore the lands"
+		if game.online.session:
+			objective_label.text = "Public world / %s nearby players" % game.online.players.size()
+		if game.floating_hub.active():
+			map_title.text = "LANTERNWAKE"
+			objective_label.text = "Guilds, markets and companions"
+			map_panel.tooltip_text = "Floating districts and sky bridges\nGold: arrival commons\nWhite: you"
 		if not game.waypoint.is_empty():
-			objective_label.text = "%s / %.0f away" % [game.waypoint.name, game.player_point.distance_to(game.waypoint.cell)]
-		hint.text = "WASD: move   Q/R: rotate   Space: jump   G: grimoire   1-0: abilities   E: interact   Tab: atlas   Esc: pause"
+			objective_label.text = "%s  /  %.0f away" % [game.waypoint.name, game.player_point.distance_to(game.waypoint.cell)]
 	elif game.layer == "sanctum":
-		map_title.text = "THE INNER SANCTUM"
-		map_legend.text = "Violet: hearth / Teal: portal"
-		map_help.text = "Your home beyond the world"
+		map_title.text = "INNER SANCTUM"
+		map_panel.tooltip_text = "Violet: hearth\nTeal: return portal\nFurnish any clear island floor"
 		objective_label.text = "A quiet place between journeys"
-		hint.text = "E: rest / portal   H: return   G: grimoire   Esc: menu"
+	elif game.layer == "interior":
+		map_title.text = "ROOM CHART"
+		map_panel.tooltip_text = "Gold: exit\nWhite: you"
+		objective_label.text = "A place to pause along the road"
 	else:
-		map_title.text = "CHART OF THE DEPTHS"
-		map_legend.text = "Rose: wardens   /   Gold: you"
-		map_help.text = "Squares: stairs and descent gate"
-		var goal: String = "%s wardens remain" % game.enemies.size() if not game.enemies.is_empty() else ("Final chest claimed" if game.claimed_chests.has(game.active_dungeon.id) else ("Claim the final chest: +1 skill point" if game.depth == game.active_dungeon.floors else "Find the descent gate"))
-		objective_label.text = "Floor %s / %s / %s" % [game.depth, game.active_dungeon.floors, goal]
-		hint.text = "WASD: move   Q/R: rotate   Space: jump   G: grimoire   1-0: abilities   E: interact   F: surface   Esc: pause"
-	vitality_label.text = "VITALITY    %s / %s" % [ceili(game.hp), int(game.max_hp)]
-	aether_label.text = "%s      %s / %s" % [game.CharacterBuild.CLASSES[game.build.class_id].resource.to_upper(), int(game.mana), int(game.max_mana)]
+		map_title.text = "FLOOR %s OF %s" % [game.depth, game.active_dungeon.floors]
+		map_panel.tooltip_text = "Rose dots: wardens\nGold outline: stairs\nTeal outline: open descent gate"
+		var goal: String = "%s wardens remain" % game.enemies.size() if not game.enemies.is_empty() else ("Final chest claimed" if game.claimed_chests.has(game.active_dungeon.id) else ("Claim the final chest" if game.depth == game.active_dungeon.floors else "Find the descent gate"))
+		objective_label.text = "Floor %s of %s  /  %s" % [game.depth, game.active_dungeon.floors, goal]
+	map_button.disabled = game.layer != "overworld"
+	map_button.tooltip_text = map_panel.tooltip_text + ("\nClick to open the atlas (Tab)." if game.layer == "overworld" else "\nThe atlas charts the surface.")
+	utility_buttons[4].disabled = game.layer != "overworld"
+	for index in [0, 1, 2, 3, 6]:
+		utility_buttons[index].disabled = game.online.session
+	utility_buttons[4].tooltip_text = "Chart a route through the lands\nTab: atlas" if game.layer == "overworld" else "The atlas charts the surface."
+	if game.online.session:
+		utility_buttons[4].tooltip_text = "Nearby downloaded places\nTab: atlas"
+	vitality_label.text = "%s / %s" % [ceili(game.hp), int(game.max_hp)]
+	aether_label.text = "%s / %s" % [int(game.mana), int(game.max_mana)]
 	hp_bar.max_value = game.max_hp
 	hp_bar.value = game.hp
 	mana_bar.max_value = game.max_mana
 	mana_bar.value = game.mana
-	sanctum_button.disabled = game.state != "playing"
-	sanctum_button.tooltip_text = "Sanctum Sigil [H]\nA bound home between worlds. Rest at its hearth and return to the place you left.\n" + ("Return to your journey." if game.layer == "sanctum" else (game.sanctum_problem() if not game.sanctum_problem().is_empty() else "Ready. Requires stable footing and distance from enemies."))
+	action_dock.tooltip_text = "%s\nHealth: %s\n%s: %s" % [depth_label.text, vitality_label.text, game.CharacterBuild.CLASSES[game.build.class_id].resource, aether_label.text]
+	var sigil_problem: String = game.sanctum_problem()
+	sanctum_button.disabled = game.state != "playing" or game.online.session
+	sanctum_button.tooltip_text = "Sanctum Sigil [H]\nRest at your hearth, then return to the place you left.\n" + (sigil_problem if not sigil_problem.is_empty() else ("Return to your journey." if game.layer == "sanctum" else "Ready to open your sanctum."))
+	sanctum_button.modulate = Color("a3b7cb") if not sigil_problem.is_empty() else Color.WHITE
 	target_panel.visible = game.valid_enemy(game.selected_target)
-	if game.valid_enemy(game.selected_target):
+	if target_panel.visible:
 		var target: Dictionary = game.selected_target
 		target_name.text = game.ENEMY_NAMES[target.kind]
 		target_bar.max_value = target.max_hp
 		target_bar.value = target.hp
 		var problem: String = game.target_problem()
-		target_status.text = "%s / %s   Range %.1f" % [ceili(target.hp), int(target.max_hp), game.player_point.distance_to(target.point)] if problem.is_empty() else problem
-		target_status.modulate = Color.WHITE if problem.is_empty() else Color("e5a097")
-	else:
-		target_name.text = "No target"
-		target_bar.value = 0
-		target_status.text = "Left-click a warden to select"
-		target_status.modulate = Color.WHITE
+		target_status.text = "%s / %s" % [ceili(target.hp), int(target.max_hp)] if problem.is_empty() else problem
+		target_status.modulate = Color.WHITE if problem.is_empty() else Color("eca49d")
+		target_panel.tooltip_text = "%s\nDistance: %.1f\n%s" % [target_name.text, game.player_point.distance_to(target.point), "In sight" if problem.is_empty() else problem]
 	message.text = game.notification if game.notification_time > 0 and game.state == "playing" else ""
-	var action_hint: String = game.interaction_hint()
-	if game.state == "playing" and not action_hint.is_empty():
-		message.text = action_hint
+	message_panel.visible = not message.text.is_empty()
+	var action_hint: String = game.interaction_hint() if game.state == "playing" else ""
+	interaction_key.text = "E" if action_hint.begins_with("E: ") else ("B" if action_hint.begins_with("B: ") else ("F" if action_hint == "Chest claimed. F: Return to the world" else ""))
+	hint.text = action_hint.trim_prefix("E: ").trim_prefix("B: ").replace("Chest claimed. F: ", "")
+	interaction_key.visible = not interaction_key.text.is_empty()
+	interaction_panel.visible = not action_hint.is_empty()
+	_layout_hud()
 	for spell in spell_status:
-		var label: Label = spell_status[spell]
 		var cooldown: float = game.cooldowns[spell]
-		var blocked: bool = game.ABILITIES[spell].range > 0 and not game.target_problem(game.ABILITIES[spell].range).is_empty()
-		label.text = "%.1fs" % cooldown if cooldown > 0 else ("Free" if game.ABILITIES[spell].cost == 0 else str(int(game.ABILITIES[spell].cost)))
-		if cooldown <= 0 and blocked:
-			label.text = "Target" if game.selected_target.is_empty() else "Blocked"
-		label.modulate = Color("d6978e") if blocked or game.mana < game.ABILITIES[spell].cost else Color.WHITE
-		spell_recharge[spell].value = cooldown / game.ABILITIES[spell].recharge
-		spell_buttons[spell].disabled = game.state != "playing"
+		var problem: String = game.target_problem(game.ABILITIES[spell].range) if game.ABILITIES[spell].range > 0 else ""
+		var lacks_resource: bool = game.mana < game.ABILITIES[spell].cost
+		var blocked := not problem.is_empty()
+		spell_status[spell].text = str(ceili(cooldown)) if cooldown >= 1 else ("%.1f" % cooldown if cooldown > 0 else "")
+		spell_shades[spell].visible = cooldown > 0
+		spell_shades[spell].anchor_bottom = clampf(cooldown / game.ABILITIES[spell].recharge, 0, 1)
+		spell_icons[spell].modulate = Color("929da9") if blocked or lacks_resource else Color.WHITE
+		spell_warnings[spell].visible = cooldown <= 0 and (lacks_resource or (blocked and game.valid_enemy(game.selected_target)))
+		spell_recharge[spell].visible = cooldown > 0
+		spell_recharge[spell].value = 1 - cooldown / game.ABILITIES[spell].recharge
+		spell_buttons[spell].disabled = game.state != "playing" or game.online.session
+		var status := "Ready"
+		if cooldown > 0:
+			status = "Recharging: %.1fs" % cooldown
+		elif lacks_resource:
+			status = "Not enough " + game.CharacterBuild.CLASSES[game.build.class_id].resource.to_lower()
+		elif blocked:
+			status = problem
+		spell_buttons[spell].tooltip_text = spell_buttons[spell].get_meta("ability_tooltip") + "\n" + status
 	if previous_state != game.state:
 		previous_state = game.state
 		_rebuild_overlay()
+
+func _layout_hud() -> void:
+	var width := hud.size.x
+	action_dock.position.x = (width - action_dock.size.x) * .5
+	action_dock.position.y = hud.size.y - action_dock.size.y - 16
+	map_panel.position.x = width - map_panel.size.x - 24
+	interaction_panel.position = Vector2((width - interaction_panel.size.x) * .5, action_dock.position.y - interaction_panel.size.y - 14)
+	var toast_y := interaction_panel.position.y - message_panel.size.y - 10 if interaction_panel.visible else action_dock.position.y - message_panel.size.y - 14
+	message_panel.position = Vector2((width - message_panel.size.x) * .5, toast_y)
 
 func _rebuild_overlay() -> void:
 	for child in overlay.get_children():
 		overlay.remove_child(child)
 		child.queue_free()
-	if game.state == "playing":
+	if game.state in ["playing", "online_lobby", "dialogue", "reader", "journal", "discovery_reader", "quest_reader", "furnishing", "guard_demand", "world_items", "store", "hub_board", "hub_travel_loading"]:
 		return
 	var shade := ColorRect.new()
 	shade.color = Color(0.025, 0.04, .065, .79)
@@ -369,29 +448,30 @@ func _rebuild_overlay() -> void:
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	overlay.add_child(center)
-	var panel := _panel(center, Vector2(1100 if game.state == "grimoire" else (760 if game.state in ["map", "credits"] else 650), 0), Color("766950"))
+	var width := 1100 if game.state == "grimoire" else (960 if game.state == "inventory" else (820 if game.state == "character" else (760 if game.state in ["map", "credits"] else 650)))
+	var panel := _panel(center, Vector2(width, 0), Color("766950"))
 	var box := _vbox(panel, 16)
-	var kicker := _label(box, "PROCEDURAL WORLD  /  VOXEL PROTOTYPE", 12, GOLD)
-	kicker.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	match game.state:
 		"menu":
 			_center_label(box, "The Wandering\nLands", 44, INK, true)
 			_center_label(box, "Steel and spells. A world beyond the gate.", 17, MUTED)
+			if not game.menu_notice.is_empty():
+				_center_label(box, game.menu_notice, 15, GOLD)
 			_separator(box)
-			var resume := _button(box, "Continue", game.continue_journey)
-			resume.disabled = not game.has_journey and game.saves.latest_slot() < 0
-			_button(box, "New Game", game.new_character)
-			_button(box, "Load Game", game.open_save_menu.bind(true))
+			_button(box, "Online world", game.online.open_lobby)
+			if not OS.has_feature("web"):
+				var resume := _button(box, "Continue", game.continue_journey)
+				resume.disabled = not game.has_journey and game.saves.latest_slot() < 0
+				_button(box, "New Game", game.new_character)
+				_button(box, "Load Game", game.open_save_menu.bind(true))
 			_button(box, "Options", game.open_options)
 			_button(box, "Credits", game.show_credits, Vector2(0, 36))
 			_button(box, "Quit", game.quit_game, Vector2(0, 36))
-			_center_label(box, "Voxel world  /  Godot  /  MVP 0.7", 11, GOLD)
 		"title":
 			_center_label(box, "The Wandering\nLands", 44, INK, true)
 			_center_label(box, "Steel and spells. A world beyond the gate.", 17, MUTED)
 			_separator(box)
 			_center_label(box, "Explore biomes. Rest in cities. Discover old dungeons.\nThe lands unfold as you travel.", 16, INK)
-			_center_label(box, "WASD: Move   Space: Jump   Click: Target\nQ/R or middle-drag: Rotate   Wheel: Zoom\n1-0: Abilities   G: Grimoire   E: Interact", 14, MUTED)
 			var classes := HBoxContainer.new()
 			classes.add_theme_constant_override("separation", 8)
 			box.add_child(classes)
@@ -401,20 +481,29 @@ func _rebuild_overlay() -> void:
 				button.tooltip_text = data.description
 			_center_label(box, "Selected: " + game.CharacterBuild.CLASSES[game.build.class_id].name, 15, GOLD)
 			_center_label(box, game.CharacterBuild.CLASSES[game.build.class_id].description, 13, MUTED)
+			_button(box, "Customize your character  [C]", game.open_character_menu, Vector2(0, 36))
 			_button(box, "Begin your journey  [Enter]", game.begin_journey)
+			_button(box, "Online world", game.online.open_lobby)
 			_button(box, "Back to main menu  [Esc]", func(): game.state = "menu", Vector2(0, 36))
 		"map":
-			_center_label(box, "Atlas of the wandering lands", 25, INK, true)
-			_center_label(box, "Gold squares: cities   /   Violet diamonds: dungeons", 13, GOLD)
+			_center_label(box, "Nearby lands" if game.online.session else "Atlas of the wandering lands", 25, INK, true)
+			_center_label(box, "Downloaded places around you" if game.online.session else "Outlined: reported   /   Filled: seen   /   Marked center: visited", 13, GOLD)
 			var atlas := Minimap.new()
 			atlas.game = game
 			atlas.world_map_mode = true
 			atlas.custom_minimum_size = Vector2(700, 440)
 			atlas.mouse_filter = Control.MOUSE_FILTER_STOP
 			box.add_child(atlas)
-			_center_label(box, "Click a city or dungeon to set your route. The chart covers this region and its neighbors.", 12, MUTED)
+			_center_label(box, "Nearby downloaded places are marked. Click a place to set your route." if game.online.session else "Only reported or discovered places are marked. Click a known place to set your route.", 12, MUTED)
 			_button(box, "Return to the journey  [Tab / Esc]", game.toggle_map)
 		"paused":
+			if game.online.session:
+				_center_label(box, "The public world", 30, INK, true)
+				_center_label(box, "The world continues while you rest here.\nCombat, trade and building are forthcoming.", 16, MUTED)
+				_button(box, "Continue  [Esc]", game.toggle_pause)
+				_button(box, "Options", game.open_options, Vector2(0, 36))
+				_button(box, "Leave the public world", game.online.disconnect_world)
+				return
 			_center_label(box, "A moment of stillness", 30, INK, true)
 			_center_label(box, game.location_name(), 16, MUTED)
 			_button(box, "Continue  [Esc]", game.toggle_pause)
@@ -424,12 +513,20 @@ func _rebuild_overlay() -> void:
 			_button(saves, "Save Game  [F5]", game.open_save_menu.bind(false), Vector2(296, 40))
 			_button(saves, "Load Game  [F9]", game.open_save_menu.bind(true), Vector2(296, 40))
 			_button(box, "Grimoire  [G]", game.toggle_grimoire, Vector2(0, 36))
+			_button(box, "Field journal  [J]", game.expansion.toggle_journal, Vector2(0,36))
+			var character_actions := HBoxContainer.new()
+			character_actions.add_theme_constant_override("separation", 12)
+			box.add_child(character_actions)
+			_button(character_actions, "Backpack [I]", game.toggle_inventory, Vector2(296, 36))
+			_button(character_actions, "Appearance [C]", game.open_character_menu, Vector2(296, 36))
 			_button(box, "Options", game.open_options, Vector2(0, 36))
-			if game.layer == "dungeon":
+			if game.layer in ["dungeon", "interior"]:
 				_button(box, "Return to the surface", game.return_to_surface, Vector2(0, 36))
 			if game.layer == "sanctum":
 				_button(box, "Return to your journey  [H]", func(): game.state = "playing"; game.leave_sanctum(), Vector2(0, 36))
 			_button(box, "Return to sanctuary / Unstuck", game.return_to_sanctuary, Vector2(0, 36))
+			if game.world.has_method("spawn_point") and game.layer == "overworld":
+				_button(box, "Return to Lanternwake", game.floating_hub.recall, Vector2(0, 36))
 			_button(box, "Main Menu", game.return_to_menu, Vector2(0, 36))
 			_button(box, "Save and Quit", game.quit_game, Vector2(0, 36))
 		"save", "load":
@@ -446,14 +543,37 @@ func _rebuild_overlay() -> void:
 			_center_label(box, "Options", 30, INK, true)
 			_audio_slider(box, "Music", game.sound.music_level, game.sound.set_music_level)
 			_audio_slider(box, "Effects", game.sound.sfx_level, game.sound.set_sfx_level)
+			_audio_slider(box, "Ambience", game.sound.ambience_level, game.sound.set_ambience_level)
 			_button(box, "Unmute sound" if game.sound.muted else "Mute sound", func(): game.sound.toggle_mute(); game.interface.previous_state = "", Vector2(0, 36))
+			var resolution_row := HBoxContainer.new()
+			resolution_row.add_theme_constant_override("separation", 16)
+			box.add_child(resolution_row)
+			_label(resolution_row, "Window resolution", 14, MUTED)
+			var resolution := OptionButton.new()
+			resolution.name = "Resolution"
+			resolution.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+			resolution.custom_minimum_size.y = 32
+			var choices: Array[Vector2i] = game.resolution_choices()
+			for size in choices:
+				var index := resolution.item_count
+				resolution.add_item("%s x %s" % [size.x,size.y])
+				resolution.set_item_disabled(index, not game.resolution_fits(size))
+				if size == game.windowed_resolution:
+					resolution.select(index)
+			resolution.disabled = game.is_fullscreen()
+			resolution.tooltip_text = "Choose a window size. Unavailable sizes exceed the current display."
+			resolution.item_selected.connect(func(index): game.set_resolution(choices[index]))
+			resolution_row.add_child(resolution)
 			var fullscreen := CheckBox.new()
-			fullscreen.text = "Fullscreen  [F11]"
-			fullscreen.button_pressed = DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN if DisplayServer.get_name() != "headless" else false
+			fullscreen.name = "Fullscreen"
+			fullscreen.text = "Fullscreen"
+			fullscreen.tooltip_text = "F11: toggle fullscreen"
+			fullscreen.button_pressed = game.is_fullscreen()
 			fullscreen.toggled.connect(game.set_fullscreen)
 			box.add_child(fullscreen)
+			_center_label(box, "Fullscreen uses your display's resolution.", 12, MUTED)
 			_separator(box)
-			_center_label(box, "WASD / arrows: Move   Space: Jump\nClick: Target   1-0: Abilities   G: Grimoire\nQ/R: Rotate   Middle-drag: Orbit   Wheel: Zoom\nE: Interact   Tab: Atlas   F: Surface   H: Sanctum\nF5: Save slot 1   F9: Load latest   M: Sound\nEsc: Clear target / Pause / Back", 14, MUTED)
+			_center_label(box, "WASD / arrows: Move   Space: Jump\nClick: Target   1-0: Abilities   G: Grimoire\nRight mouse drag: Orbit   Wheel: Zoom\nE: Interact   Tab: Atlas   F: Surface   H: Sanctum\nI: Backpack   C: Appearance   J: Journal\nF5: Save slot 1   F9: Load latest   M: Sound\nEsc: Clear target / Pause / Back", 14, MUTED)
 			_button(box, "Back  [Esc]", game.close_options, Vector2(0, 36))
 		"save_failed":
 			_center_label(box, "The journey could not be saved", 27, INK, true)
@@ -462,15 +582,29 @@ func _rebuild_overlay() -> void:
 			_button(box, "Continue without saving", game.finish_exit, Vector2(0, 36))
 		"credits":
 			_center_label(box, "The makers behind the lands", 28, INK, true)
-			_center_label(box, "Music by Eric Matyas\nwww.soundimage.org", 20, GOLD)
-			_center_label(box, "Fantascape  /  Netherplace  /  Lost Jungle\nFantasy Game Background  /  Our Mountain\nCity Beneath the Waves v001  /  Misty Bog\nSpells a-Brewin  /  Strange Phenomenon", 15, INK)
-			_center_label(box, "Music: Soundimage International Public License\nsoundimage.org/sample-page/\nSource recordings used unchanged; playback loops and crossfades.", 12, MUTED)
-			_separator(box)
-			_center_label(box, "KayKit Dungeon Pack 1.1: Kay Lousberg\nwww.kaylousberg.com\nUltimate Modular Ruins: Quaternius / quaternius.com\nParticle Pack: Kenney / kenney.nl", 15, INK)
-			_center_label(box, "RPG UI Pack and Fantasy UI Borders: Kenney / kenney.nl\nEnvironment, particles, and UI packs: CC0 1.0\nCinzel typeface: SIL Open Font License\nVoxel terrain, characters, spells, and synthesized effects: original project work", 12, MUTED)
+			var scroll := ScrollContainer.new()
+			scroll.custom_minimum_size = Vector2(0,530)
+			box.add_child(scroll)
+			var credits := VBoxContainer.new()
+			credits.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+			credits.add_theme_constant_override("separation",16)
+			scroll.add_child(credits)
+			_center_label(credits, "Music by Eric Matyas\nwww.soundimage.org", 20, GOLD)
+			_center_label(credits, "Fantascape  /  Netherplace  /  Lost Jungle\nFantasy Game Background  /  Our Mountain\nCity Beneath the Waves v001  /  Misty Bog\nSpells a-Brewin  /  Strange Phenomenon", 15, INK)
+			_center_label(credits, "Music: Soundimage International Public License\nsoundimage.org/sample-page/\nSource recordings used unchanged; playback loops and crossfades.", 12, MUTED)
+			_center_label(credits, "Fantasy Song Pack Volume 1 by troubadour (CC0)\nopengameart.org/content/fantasy-song-pack-volume-1", 13, GOLD)
+			_center_label(credits, "Forest, mountain, river and wildlife ambience: Blender Foundation; submitted by Lamoot\nCC-BY-3.0 / creativecommons.org/licenses/by/3.0/\nopengameart.org/content/ambient-bird-cricket-and-frog\nopengameart.org/content/ambient-mountain-river-wind-and-forest-and-waterfall\nWind: Luke.RUSTLTD / Rain: Ylmir / Dungeon ambience: JaggedStone\nRPG, impact and interface sounds: Kenney (CC0)", 12, MUTED)
+			_separator(credits)
+			_center_label(credits, "KayKit Dungeon, Furniture, Medieval Hexagon and Halloween: Kay Lousberg\nwww.kaylousberg.com\nRuins, Monsters, Cube World, Village and Fantasy Props: Quaternius\nquaternius.com\nNature, Town, Survival, Food, Castle, Holiday and Graveyard: Kenney\nkenney.nl", 13, INK)
+			_center_label(credits, "Modular Temple: Keith at Fertile Soil Productions (CC0)\nfertile-soil-productions.itch.io/temple-modular-collection\nArcane Magic Effect: Cethiel (CC0)\nParticle Pack: Kenney and credited filter contributors (CC0)\nVoxel Micro Farm: Dopamine King\nDopamine King Free Commercial Asset License 1.0", 12, MUTED)
+			_center_label(credits, "RPG UI Pack and Fantasy UI Borders: Kenney (CC0)\nCinzel typeface: SIL Open Font License\nOriginal terrain, spells, scene recipes, custom appearances and lore: project work", 12, MUTED)
 			_button(box, "Back  [Esc]", game.close_credits)
 		"grimoire":
 			_build_grimoire(box)
+		"character":
+			CharacterMenu.build(self, box)
+		"inventory":
+			InventoryMenu.build(self, box)
 		"dead":
 			_center_label(box, "The light fades", 40, Color("d6aaaa"), true)
 			_center_label(box, "Return to your sanctuary and continue the journey.", 17, INK)

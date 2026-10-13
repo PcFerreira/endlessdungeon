@@ -1,0 +1,45 @@
+{
+  "id": "history_borrowed_light",
+  "title": "The Borrowed Light",
+  "motif": "borrowed-light",
+  "text": "In {city_name}, a winter ledger follows a lamp from house to house. Each keeper wrote who would need it next. The last old entry names {dungeon_name}; below it, someone has drawn an empty hook.",
+  "landmark_text": "The road marker carries a lamp-shaped scratch. The ledger says a light can belong to a route, even while one person holds it.",
+  "book_text": "Beside the lamp entries, a later hand wrote: clean the glass before you pass it on. Underneath, in smaller letters: yes, you too.",
+  "witness_text": "We say the light is borrowed, even when we made the lamp ourselves. Someone will need it after us. My grandmother showed me the entry for {dungeon_name}. She made me clean the glass too.",
+  "kind": "regional_history",
+  "version": 2,
+  "author": "The local archive of {city_name}",
+  "biomes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "requires": [
+    "regional_history",
+    "collection",
+    "event_aftermath"
+  ],
+  "collection": [
+    "landmark",
+    "book",
+    "witness"
+  ],
+  "event_notes": [
+    {
+      "kind": "supper",
+      "phase": "aftermath",
+      "text": "After supper, someone washed the cups while another dried them. The keeper put a clean lamp beside the next stack."
+    },
+    {
+      "kind": "delivery",
+      "phase": "aftermath",
+      "text": "The crates arrived. A neighbor wiped down the borrowed tools before passing them to the next pair of hands."
+    }
+  ],
+  "tags": [
+    "regional_history",
+    "exploration",
+    "original"
+  ]
+}

@@ -1,0 +1,955 @@
+{
+  "version": 1,
+  "cells_per_fixture": 10,
+  "fixture_cap": 24,
+  "types": {
+    "home": [
+      "home_pantry",
+      "household_records",
+      "home_seat"
+    ],
+    "inn": [
+      "inn_stores",
+      "service_sideboard",
+      "linen_shelves",
+      "inn_seating"
+    ],
+    "shop": [
+      "stock_shelves",
+      "packing_table",
+      "stock_crates",
+      "display_stand"
+    ],
+    "workshop": [
+      "tool_storage",
+      "materials",
+      "supply_barrels",
+      "toolbench"
+    ],
+    "shrine": [
+      "offering_stand",
+      "ritual_records",
+      "memorial_plant",
+      "ritual_seating"
+    ],
+    "records": [
+      "reference_shelves",
+      "record_desk"
+    ]
+  },
+  "table_contents": {
+    "home": [
+      {
+        "id": "plate",
+        "fallback": "plate",
+        "point": [
+          -0.23,
+          0
+        ],
+        "footprint": [
+          0.32,
+          0.42
+        ],
+        "height": 0.025,
+        "support": "root"
+      },
+      {
+        "id": "bread",
+        "fallback": "bread",
+        "point": [
+          0,
+          0
+        ],
+        "footprint": [
+          0.7,
+          0.7
+        ],
+        "height": 0.1,
+        "support": "plate"
+      },
+      {
+        "id": "cup",
+        "fallback": "tea",
+        "point": [
+          0.24,
+          0
+        ],
+        "footprint": [
+          0.2,
+          0.3
+        ],
+        "height": 0.16,
+        "support": "root"
+      }
+    ],
+    "inn": [
+      {
+        "id": "plate",
+        "fallback": "plate",
+        "point": [
+          -0.23,
+          0
+        ],
+        "footprint": [
+          0.32,
+          0.42
+        ],
+        "height": 0.025,
+        "support": "root"
+      },
+      {
+        "id": "bread",
+        "fallback": "bread",
+        "point": [
+          0,
+          0
+        ],
+        "footprint": [
+          0.7,
+          0.7
+        ],
+        "height": 0.1,
+        "support": "plate"
+      },
+      {
+        "id": "cup",
+        "fallback": "tea",
+        "point": [
+          0.24,
+          0
+        ],
+        "footprint": [
+          0.2,
+          0.3
+        ],
+        "height": 0.16,
+        "support": "root"
+      }
+    ],
+    "shop": [
+      {
+        "id": "plate",
+        "fallback": "plate",
+        "point": [
+          -0.23,
+          0
+        ],
+        "footprint": [
+          0.32,
+          0.42
+        ],
+        "height": 0.025,
+        "support": "root"
+      },
+      {
+        "id": "fruit",
+        "fallback": "fruit",
+        "point": [
+          0,
+          0
+        ],
+        "footprint": [
+          0.7,
+          0.7
+        ],
+        "height": 0.14,
+        "support": "plate"
+      },
+      {
+        "id": "jar",
+        "fallback": "bottle",
+        "point": [
+          0.24,
+          0
+        ],
+        "footprint": [
+          0.2,
+          0.3
+        ],
+        "height": 0.22,
+        "support": "root"
+      }
+    ],
+    "workshop": [
+      {
+        "id": "tool",
+        "fallback": "tools",
+        "point": [
+          -0.18,
+          0
+        ],
+        "footprint": [
+          0.4,
+          0.35
+        ],
+        "height": 0.09,
+        "support": "root"
+      },
+      {
+        "id": "notes",
+        "fallback": "book",
+        "point": [
+          0.24,
+          0
+        ],
+        "footprint": [
+          0.25,
+          0.36
+        ],
+        "height": 0.08,
+        "support": "root"
+      }
+    ],
+    "shrine": [
+      {
+        "id": "candle",
+        "fallback": "candle",
+        "point": [
+          -0.24,
+          0
+        ],
+        "footprint": [
+          0.16,
+          0.24
+        ],
+        "height": 0.25,
+        "support": "root"
+      },
+      {
+        "id": "record",
+        "fallback": "book",
+        "point": [
+          0.18,
+          0
+        ],
+        "footprint": [
+          0.36,
+          0.42
+        ],
+        "height": 0.08,
+        "support": "root"
+      }
+    ],
+    "records": [
+      {
+        "id": "ledger",
+        "fallback": "book",
+        "point": [
+          -0.2,
+          0
+        ],
+        "footprint": [
+          0.36,
+          0.42
+        ],
+        "height": 0.08,
+        "support": "root"
+      },
+      {
+        "id": "ink",
+        "fallback": "bottle",
+        "point": [
+          0.25,
+          0
+        ],
+        "footprint": [
+          0.16,
+          0.24
+        ],
+        "height": 0.16,
+        "support": "root"
+      }
+    ]
+  },
+  "use_contents": {
+    "scribe": [
+      {
+        "id": "ledger",
+        "fallback": "book",
+        "point": [
+          -0.2,
+          0
+        ],
+        "footprint": [
+          0.36,
+          0.42
+        ],
+        "height": 0.08,
+        "support": "root"
+      },
+      {
+        "id": "ink",
+        "fallback": "bottle",
+        "point": [
+          0.25,
+          0
+        ],
+        "footprint": [
+          0.16,
+          0.24
+        ],
+        "height": 0.16,
+        "support": "root"
+      }
+    ],
+    "apothecary": [
+      {
+        "id": "preparation",
+        "fallback": "bottle",
+        "point": [
+          -0.2,
+          0
+        ],
+        "footprint": [
+          0.22,
+          0.35
+        ],
+        "height": 0.22,
+        "support": "root"
+      },
+      {
+        "id": "notes",
+        "fallback": "book",
+        "point": [
+          0.22,
+          0
+        ],
+        "footprint": [
+          0.3,
+          0.42
+        ],
+        "height": 0.08,
+        "support": "root"
+      }
+    ],
+    "smithy": [
+      {
+        "id": "tool",
+        "fallback": "tools",
+        "point": [
+          -0.18,
+          0
+        ],
+        "footprint": [
+          0.4,
+          0.35
+        ],
+        "height": 0.09,
+        "support": "root"
+      },
+      {
+        "id": "notes",
+        "fallback": "book",
+        "point": [
+          0.24,
+          0
+        ],
+        "footprint": [
+          0.25,
+          0.36
+        ],
+        "height": 0.08,
+        "support": "root"
+      }
+    ],
+    "bakery": [
+      {
+        "id": "plate",
+        "fallback": "plate",
+        "point": [
+          -0.23,
+          0
+        ],
+        "footprint": [
+          0.32,
+          0.42
+        ],
+        "height": 0.025,
+        "support": "root"
+      },
+      {
+        "id": "bread",
+        "fallback": "bread",
+        "point": [
+          0,
+          0
+        ],
+        "footprint": [
+          0.7,
+          0.7
+        ],
+        "height": 0.1,
+        "support": "plate"
+      },
+      {
+        "id": "cup",
+        "fallback": "tea",
+        "point": [
+          0.24,
+          0
+        ],
+        "footprint": [
+          0.2,
+          0.3
+        ],
+        "height": 0.16,
+        "support": "root"
+      }
+    ],
+    "charmwright": [
+      {
+        "id": "candle",
+        "fallback": "candle",
+        "point": [
+          -0.24,
+          0
+        ],
+        "footprint": [
+          0.16,
+          0.24
+        ],
+        "height": 0.25,
+        "support": "root"
+      },
+      {
+        "id": "record",
+        "fallback": "book",
+        "point": [
+          0.18,
+          0
+        ],
+        "footprint": [
+          0.36,
+          0.42
+        ],
+        "height": 0.08,
+        "support": "root"
+      }
+    ]
+  },
+  "templates": {
+    "home_pantry": {
+      "fallback": "barrel",
+      "purpose": "Household provisions",
+      "footprint": [
+        0.65,
+        0.65
+      ],
+      "height": 0.8,
+      "contents": [
+
+      ]
+    },
+    "household_records": {
+      "fallback": "bookcase",
+      "purpose": "Stored household records",
+      "footprint": [
+        0.95,
+        0.45
+      ],
+      "height": 1.25,
+      "contents": [
+
+      ]
+    },
+    "home_seat": {
+      "fallback": "bench",
+      "purpose": "Seating beside household work",
+      "footprint": [
+        1.2,
+        0.5
+      ],
+      "height": 0.6,
+      "contents": [
+
+      ]
+    },
+    "inn_stores": {
+      "fallback": "crates",
+      "purpose": "Supplies for guests",
+      "footprint": [
+        0.8,
+        0.6
+      ],
+      "height": 0.9,
+      "contents": [
+
+      ]
+    },
+    "service_sideboard": {
+      "fallback": "table",
+      "purpose": "Guest refreshments",
+      "footprint": [
+        1.0,
+        0.6
+      ],
+      "height": 0.7,
+      "contents": [
+        {
+          "id": "plate",
+          "fallback": "plate",
+          "point": [
+            -0.23,
+            0
+          ],
+          "footprint": [
+            0.32,
+            0.42
+          ],
+          "height": 0.025,
+          "support": "root"
+        },
+        {
+          "id": "bread",
+          "fallback": "bread",
+          "point": [
+            0,
+            0
+          ],
+          "footprint": [
+            0.7,
+            0.7
+          ],
+          "height": 0.1,
+          "support": "plate"
+        },
+        {
+          "id": "cup",
+          "fallback": "tea",
+          "point": [
+            0.24,
+            0
+          ],
+          "footprint": [
+            0.2,
+            0.3
+          ],
+          "height": 0.16,
+          "support": "root"
+        }
+      ],
+      "placement": "floor",
+      "limit": 1,
+      "companions": [
+        {
+          "fallback": "bench",
+          "point": [
+            0,
+            1.0
+          ],
+          "footprint": [
+            1.1,
+            0.45
+          ],
+          "height": 0.55
+        }
+      ]
+    },
+    "linen_shelves": {
+      "fallback": "bookcase",
+      "purpose": "Guest records and notices",
+      "footprint": [
+        1.0,
+        0.45
+      ],
+      "height": 1.3,
+      "contents": [
+
+      ]
+    },
+    "inn_seating": {
+      "fallback": "bench",
+      "purpose": "Waiting and shared meals",
+      "footprint": [
+        1.2,
+        0.5
+      ],
+      "height": 0.6,
+      "contents": [
+
+      ]
+    },
+    "stock_shelves": {
+      "fallback": "bookcase",
+      "purpose": "Stock and sales records",
+      "footprint": [
+        1.0,
+        0.45
+      ],
+      "height": 1.3,
+      "contents": [
+
+      ]
+    },
+    "packing_table": {
+      "fallback": "table",
+      "purpose": "Packing and checking goods",
+      "footprint": [
+        1.0,
+        0.6
+      ],
+      "height": 0.7,
+      "contents": [
+        {
+          "id": "ledger",
+          "fallback": "book",
+          "point": [
+            -0.2,
+            0
+          ],
+          "footprint": [
+            0.36,
+            0.42
+          ],
+          "height": 0.08,
+          "support": "root"
+        },
+        {
+          "id": "ink",
+          "fallback": "bottle",
+          "point": [
+            0.25,
+            0
+          ],
+          "footprint": [
+            0.16,
+            0.24
+          ],
+          "height": 0.16,
+          "support": "root"
+        }
+      ],
+      "placement": "floor",
+      "limit": 1,
+      "companions": [
+        {
+          "fallback": "bench",
+          "point": [
+            0,
+            1.0
+          ],
+          "footprint": [
+            1.1,
+            0.45
+          ],
+          "height": 0.55
+        }
+      ]
+    },
+    "stock_crates": {
+      "fallback": "crates",
+      "purpose": "Goods awaiting sale",
+      "footprint": [
+        0.8,
+        0.6
+      ],
+      "height": 0.9,
+      "contents": [
+
+      ]
+    },
+    "display_stand": {
+      "fallback": "table",
+      "purpose": "Displayed goods and price records",
+      "footprint": [
+        0.65,
+        0.55
+      ],
+      "height": 0.8,
+      "contents": [
+        {
+          "id": "plate",
+          "fallback": "plate",
+          "point": [
+            -0.23,
+            0
+          ],
+          "footprint": [
+            0.32,
+            0.42
+          ],
+          "height": 0.025,
+          "support": "root"
+        },
+        {
+          "id": "fruit",
+          "fallback": "fruit",
+          "point": [
+            0,
+            0
+          ],
+          "footprint": [
+            0.7,
+            0.7
+          ],
+          "height": 0.14,
+          "support": "plate"
+        },
+        {
+          "id": "jar",
+          "fallback": "bottle",
+          "point": [
+            0.24,
+            0
+          ],
+          "footprint": [
+            0.2,
+            0.3
+          ],
+          "height": 0.22,
+          "support": "root"
+        }
+      ]
+    },
+    "tool_storage": {
+      "fallback": "bookcase",
+      "purpose": "Stored work records",
+      "footprint": [
+        1.0,
+        0.45
+      ],
+      "height": 1.3,
+      "contents": [
+
+      ]
+    },
+    "materials": {
+      "fallback": "crates",
+      "purpose": "Material reserves",
+      "footprint": [
+        0.8,
+        0.6
+      ],
+      "height": 0.9,
+      "contents": [
+
+      ]
+    },
+    "supply_barrels": {
+      "fallback": "barrel",
+      "purpose": "Workshop supplies",
+      "footprint": [
+        0.65,
+        0.65
+      ],
+      "height": 0.8,
+      "contents": [
+
+      ]
+    },
+    "toolbench": {
+      "fallback": "workbench",
+      "purpose": "Tools prepared for work",
+      "footprint": [
+        1.0,
+        0.6
+      ],
+      "height": 0.7,
+      "contents": [
+        {
+          "id": "tool",
+          "fallback": "tools",
+          "point": [
+            -0.18,
+            0
+          ],
+          "footprint": [
+            0.4,
+            0.35
+          ],
+          "height": 0.09,
+          "support": "root"
+        },
+        {
+          "id": "notes",
+          "fallback": "book",
+          "point": [
+            0.24,
+            0
+          ],
+          "footprint": [
+            0.25,
+            0.36
+          ],
+          "height": 0.08,
+          "support": "root"
+        }
+      ],
+      "placement": "floor",
+      "limit": 1,
+      "companions": [
+        {
+          "fallback": "bench",
+          "point": [
+            0,
+            1.0
+          ],
+          "footprint": [
+            1.1,
+            0.45
+          ],
+          "height": 0.55
+        }
+      ]
+    },
+    "offering_stand": {
+      "fallback": "altar",
+      "purpose": "Offerings and observances",
+      "footprint": [
+        0.8,
+        0.65
+      ],
+      "height": 0.75,
+      "contents": [
+        {
+          "id": "candle",
+          "fallback": "candle",
+          "point": [
+            -0.24,
+            0
+          ],
+          "footprint": [
+            0.16,
+            0.24
+          ],
+          "height": 0.25,
+          "support": "root"
+        },
+        {
+          "id": "record",
+          "fallback": "book",
+          "point": [
+            0.18,
+            0
+          ],
+          "footprint": [
+            0.36,
+            0.42
+          ],
+          "height": 0.08,
+          "support": "root"
+        }
+      ],
+      "placement": "floor",
+      "limit": 1,
+      "companions": [
+        {
+          "fallback": "bench",
+          "point": [
+            0,
+            1.0
+          ],
+          "footprint": [
+            1.1,
+            0.45
+          ],
+          "height": 0.55
+        }
+      ]
+    },
+    "ritual_records": {
+      "fallback": "bookcase",
+      "purpose": "Community observance records",
+      "footprint": [
+        1.0,
+        0.45
+      ],
+      "height": 1.3,
+      "contents": [
+
+      ]
+    },
+    "memorial_plant": {
+      "fallback": "plant",
+      "purpose": "Memorial planting",
+      "footprint": [
+        0.65,
+        0.5
+      ],
+      "height": 0.55,
+      "contents": [
+
+      ]
+    },
+    "ritual_seating": {
+      "fallback": "bench",
+      "purpose": "Seating for observances",
+      "footprint": [
+        1.2,
+        0.5
+      ],
+      "height": 0.6,
+      "contents": [
+
+      ]
+    },
+    "reference_shelves": {
+      "fallback": "bookcase",
+      "purpose": "Keep reference books and records near the room reader.",
+      "footprint": [
+        0.95,
+        0.45
+      ],
+      "height": 1.25,
+      "contents": [
+
+      ]
+    },
+    "record_desk": {
+      "fallback": "table",
+      "purpose": "Study reference books and keep reading materials on a supported work surface.",
+      "footprint": [
+        1.0,
+        0.6
+      ],
+      "height": 0.7,
+      "contents": [
+        {
+          "id": "ledger",
+          "fallback": "book",
+          "point": [
+            -0.2,
+            0
+          ],
+          "footprint": [
+            0.36,
+            0.42
+          ],
+          "height": 0.08,
+          "support": "root"
+        },
+        {
+          "id": "ink",
+          "fallback": "bottle",
+          "point": [
+            0.25,
+            0
+          ],
+          "footprint": [
+            0.16,
+            0.24
+          ],
+          "height": 0.16,
+          "support": "root"
+        }
+      ],
+      "placement": "floor",
+      "limit": 1,
+      "companions": [
+        {
+          "fallback": "bench",
+          "point": [
+            0,
+            1.0
+          ],
+          "footprint": [
+            1.1,
+            0.45
+          ],
+          "height": 0.55
+        }
+      ]
+    }
+  },
+  "default_type": "records"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "rain_ambience",
+  "title": "Rain: Loopable",
+  "author": "Ylmir",
+  "source": "https://opengameart.org/content/rain-loopable",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/Rain%20MP3.zip",
+      "filename": "Rain MP3.zip",
+      "bytes": 3175809,
+      "sha256": "89c275fda7759584b471985af370386eff25a87ee7babfccd4e9d0ac2210c6df",
+      "archive_crc_checked": true,
+      "archive_extraction_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/Rain%20OGG.zip",
+      "filename": "Rain OGG.zip",
+      "bytes": 2736596,
+      "sha256": "e68f3e1c77493cf43bec84cebff5043bff6be9ce16d59b24caa988cd460aa75b",
+      "archive_crc_checked": true,
+      "archive_extraction_checked": true
+    }
+  ],
+  "style": "Audio",
+  "categories": [
+    "Rain",
+    "Weather"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Rain: Loopable by Ylmir. Source: https://opengameart.org/content/rain-loopable. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "rpg_item_icons_db32",
+  "title": "16x16 RPG Items (DB32)",
+  "author": "ARoachIFoundOnMyPillow",
+  "source": "https://opengameart.org/content/16x16-rpg-items-db32",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/db32_rpg_items_0.zip",
+      "filename": "db32_rpg_items_0.zip",
+      "bytes": 71214,
+      "sha256": "674d6217871e0953029e9267be2749df0377fd5245454ca7f24e4a3abcd2ee33",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Pixel art 2D",
+  "categories": [
+    "Inventory",
+    "items",
+    "weapons"
+  ],
+  "attribution_required": false,
+  "attribution_text": "16x16 RPG Items (DB32) by ARoachIFoundOnMyPillow. Source: https://opengameart.org/content/16x16-rpg-items-db32. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

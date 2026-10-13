@@ -4,7 +4,7 @@ const World = preload("res://scripts/world.gd")
 
 func _init() -> void:
 	for seed_value in range(64):
-		for center in [Vector2i(32, 32), Vector2i(-32, -32)]:
+		for center in [Vector2i.ONE * (World.REGION_SIZE / 2), -Vector2i.ONE * (World.REGION_SIZE / 2)]:
 			var world := World.new()
 			world.generate(seed_value)
 			world.load_around(Vector2(center))

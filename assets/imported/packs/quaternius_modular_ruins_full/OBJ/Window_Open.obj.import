@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://5uyqmp8ndest"
+path="res://.godot/imported/Window_Open.obj-6d48a3a743d3bdd30a7e0f621c1c8b8d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Window_Open.obj-6d48a3a743d3bdd30a7e0f621c1c8b8d.mesh"]
+
+source_file="res://assets/imported/packs/quaternius_modular_ruins_full/OBJ/Window_Open.obj"
+dest_files=["res://.godot/imported/Window_Open.obj-6d48a3a743d3bdd30a7e0f621c1c8b8d.mesh", "res://.godot/imported/Window_Open.obj-6d48a3a743d3bdd30a7e0f621c1c8b8d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

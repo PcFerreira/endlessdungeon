@@ -1,10 +1,36 @@
 extends RefCounted
 
-const VERSION := 1
+const VERSION := 2
+const WORLD_EDITIONS := [4, 5, 6]
 const Build = preload("res://scripts/character_build.gd")
 const World = preload("res://scripts/world.gd")
+const Profile = preload("res://scripts/character_profile.gd")
+const Inventory = preload("res://scripts/inventory.gd")
+const Expansion = preload("res://scripts/expansion.gd")
+const Exploration = preload("res://scripts/exploration.gd")
+const Life = preload("res://scripts/world_life.gd")
+const Furnishings = preload("res://scripts/furnishings.gd")
+const WorldItems = preload("res://scripts/world_item_state.gd")
+const Stores = preload("res://scripts/stores.gd")
+const FloatingHub = preload("res://scripts/floating_hub.gd")
 var directory := "user://saves"
 var last_error := ""
+
+func reset_expansion() -> bool:
+	var marker := directory.path_join("generation-%s.reset" % World.GENERATOR_VERSION)
+	if FileAccess.file_exists(marker):
+		return false
+	var base := ProjectSettings.globalize_path(directory)
+	if DirAccess.make_dir_recursive_absolute(base) != OK:
+		last_error = "The save folder could not be prepared."
+		return false
+	var file := FileAccess.open(marker, FileAccess.WRITE)
+	if file == null:
+		last_error = "The world edition could not be recorded."
+		return false
+	file.store_string("World generation %s\n" % World.GENERATOR_VERSION)
+	file.flush()
+	return file.get_error() == OK
 
 func slot_path(slot: int) -> String:
 	return directory.path_join("slot-%s.json" % slot)
@@ -23,8 +49,8 @@ static func strings(value) -> bool:
 			return false
 	return true
 
-func validate(data, allow_sanctum: bool = true) -> bool:
-	if not data is Dictionary or data.get("generator_version") != World.GENERATOR_VERSION or not number(data.get("saved_at")):
+func validate(data, allow_sanctum: bool = true, allow_interior: bool = true) -> bool:
+	if not data is Dictionary or not number(data.get("generator_version")) or data.generator_version != int(data.generator_version) or int(data.generator_version) not in WORLD_EDITIONS or not number(data.get("saved_at")):
 		return false
 	if not data.get("seed") is String or not data.seed.is_valid_int() or not data.get("rng_state") is String or not data.rng_state.is_valid_int():
 		return false
@@ -34,8 +60,14 @@ func validate(data, allow_sanctum: bool = true) -> bool:
 	var build := Build.new()
 	if not build.restore(data.build):
 		return false
+	var profile := Profile.new()
+	var inventory := Inventory.new()
+	if data.has("character") and not profile.restore(data.character, build.class_id):
+		return false
+	if data.has("inventory") and not inventory.restore(data.inventory, build.class_id):
+		return false
 	var place: Dictionary = data.location
-	if not place.get("layer") in ["overworld", "dungeon", "sanctum"] or not place.get("name") is String:
+	if not place.get("layer") in ["overworld", "dungeon", "sanctum", "interior"] or not place.get("name") is String:
 		return false
 	var home = data.get("home", {"item": "sanctum_sigil", "return_journey": {}})
 	if not home is Dictionary or home.get("item") != "sanctum_sigil" or not home.get("return_journey") is Dictionary:
@@ -43,9 +75,26 @@ func validate(data, allow_sanctum: bool = true) -> bool:
 	if place.layer == "sanctum":
 		if not allow_sanctum or home.return_journey.is_empty() or not validate(home.return_journey, false):
 			return false
-		if home.return_journey.seed != data.seed:
+		if home.return_journey.seed != data.seed or home.return_journey.generator_version != data.generator_version:
 			return false
 	elif not home.return_journey.is_empty():
+		return false
+	var indoors = data.get("indoors", {})
+	if not indoors is Dictionary:
+		return false
+	if place.layer == "interior":
+		if not allow_interior or not indoors.get("building_id") is String or not indoors.get("definition_id") is String or not indoors.get("layout_id") is String or not indoors.get("variants") is Dictionary or not vector(indoors.get("city_cell")):
+			return false
+		for key in indoors.variants:
+			if not key is String or not indoors.variants[key] is String:
+				return false
+		if indoors.has("name") and not indoors.name is String:
+			return false
+		if indoors.has("zoom") and (not number(indoors.zoom) or indoors.zoom < 10 or indoors.zoom > 46):
+			return false
+		if not indoors.get("return_journey") is Dictionary or not validate(indoors.return_journey, false, false) or indoors.return_journey.location.layer != "overworld" or indoors.return_journey.seed != data.seed or indoors.return_journey.generator_version != data.generator_version:
+			return false
+	elif not indoors.is_empty():
 		return false
 	for key in ["point", "surface_return", "sanctuary", "site_cell", "aim", "heading"]:
 		if not vector(place.get(key)):
@@ -70,11 +119,42 @@ func validate(data, allow_sanctum: bool = true) -> bool:
 		if not number(data.view.get(key)):
 			return false
 	var progress: Dictionary = data.progress
+	if not FloatingHub.valid(progress.get("floating_city", {})):
+		return false
+	if not Stores.valid(progress.get("stores", {})):
+		return false
+	if progress.has("furnishings") and not Furnishings.valid(progress.furnishings):
+		return false
+	var objects = progress.get("world_items", {})
+	if not WorldItems.valid(objects):
+		return false
+	var removed: Dictionary = objects.get("removed", {})
+	var placed: Array = objects.get("placed", [])
+	var stored_sources := {}
+	for record in placed:
+		if not record.owner.is_empty():
+			stored_sources[record.source] = true
+	for source in inventory.stolen:
+		var lot: Dictionary = inventory.stolen[source]
+		if not removed.has(source) or removed[source].item != lot.item or removed[source].owner != lot.owner or stored_sources.has(source):
+			return false
+	for source in removed:
+		if not removed[source].owner.is_empty() and not inventory.stolen.has(source) and not stored_sources.has(source):
+			return false
+	if not Expansion.valid_snapshot(progress.get("lore")):
+		return false
+	if progress.has("exploration") and not Exploration.valid_snapshot(progress.exploration, data.seed):
+		return false
+	if progress.has("life") and not Life.valid_snapshot(progress.life, data.seed, int(data.generator_version)):
+		return false
 	for key in ["encounters", "floors", "discovery"]:
 		if not progress.get(key) is Dictionary:
 			return false
 	for key in ["claimed", "cities"]:
 		if not strings(progress.get(key)):
+			return false
+	for site in objects.get("bases", {}):
+		if site not in progress.claimed:
 			return false
 	if not progress.get("waypoint") is String or not vector(progress.get("waypoint_cell")):
 		return false
@@ -91,6 +171,9 @@ func validate(data, allow_sanctum: bool = true) -> bool:
 				return false
 		if not record.get("active", false) is bool:
 			return false
+		for key in ["species", "variant"]:
+			if record.has(key) and not record[key] is String:
+				return false
 	for id in progress.discovery:
 		if not id is String or not progress.discovery[id] is Array:
 			return false
@@ -100,7 +183,7 @@ func validate(data, allow_sanctum: bool = true) -> bool:
 	if not data.get("pickups") is Array or not data.get("projectiles") is Array:
 		return false
 	for pickup in data.pickups:
-		if not pickup is Dictionary or not pickup.get("kind") in ["health", "mana"] or not vector(pickup.get("point")):
+		if not pickup is Dictionary or not (pickup.get("kind") in ["health", "mana"] or Inventory.ITEMS.has(pickup.get("kind"))) or not vector(pickup.get("point")):
 			return false
 	for shot in data.projectiles:
 		if not shot is Dictionary or not shot.get("spell") in ["bolt", "fire", "hostile"] or not shot.get("hostile") is bool or not shot.get("target") is String:
@@ -110,6 +193,8 @@ func validate(data, allow_sanctum: bool = true) -> bool:
 		for key in ["height", "life", "trail"]:
 			if not number(shot.get(key)):
 				return false
+		if not number(shot.get("damage", 10.0)) or shot.get("damage", 10.0) <= 0:
+			return false
 	return true
 
 func _read_file(path: String) -> Dictionary:

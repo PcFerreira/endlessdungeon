@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "notice_radius": 12.0,
+  "pursuit_radius": 18.0,
+  "demand_distance": 2.8,
+  "reach": 1.6,
+  "speed": 2.1,
+  "damage": 8.0,
+  "period_seconds": 1.6,
+  "windup_seconds": 0.45
+}

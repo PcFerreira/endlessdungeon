@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d272e42a6sg14"
+path="res://.godot/imported/Wall_Straight_Door_Stars.obj-f177e8f3c12a134615baab638a8c5e18.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wall_Straight_Door_Stars.obj-f177e8f3c12a134615baab638a8c5e18.mesh"]
+
+source_file="res://assets/imported/packs/fsp_modular_temple/content/Modular Temple/Wall_Straight_Door_Stars.obj"
+dest_files=["res://.godot/imported/Wall_Straight_Door_Stars.obj-f177e8f3c12a134615baab638a8c5e18.mesh", "res://.godot/imported/Wall_Straight_Door_Stars.obj-f177e8f3c12a134615baab638a8c5e18.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

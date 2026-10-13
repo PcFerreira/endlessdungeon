@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "movable_pools": ["table", "plate", "fruit", "bread", "tea", "bottle", "anvil", "tools", "bench", "cart", "barrel", "crate", "lantern", "farm_tool", "crop_carrot", "crop_wheat", "crop_daikon", "crop_tomato", "crop_corn", "mushroom", "understory", "flowers"],
+  "fixed_parts": ["counter", "trade_mat"],
+  "movable_decorations": ["barrel", "crates", "bench", "cart", "table", "chair", "pot", "lantern", "training_dummy", "anvil", "sack", "chest"]
+}

@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "travelers": [
+    {
+      "id": "merchant",
+      "name": "Traveling merchant",
+      "speed": 0.9,
+      "pause_seconds": 12,
+      "greetings": [
+        "I carry supplies between {city_name} and {destination}. Coins or shards will buy you provisions.",
+        "The road to {destination} is open. My pack is lighter after every stop."
+      ],
+      "offers": [
+        {
+          "item": "health_potion",
+          "cost": 3,
+          "coin_cost": 4
+        },
+        {
+          "item": "aether_potion",
+          "cost": 3,
+          "coin_cost": 4
+        },
+        {
+          "item": "rune_lantern",
+          "cost": 8,
+          "coin_cost": 12
+        }
+      ]
+    },
+    {
+      "id": "courier",
+      "name": "Road courier",
+      "speed": 1.25,
+      "pause_seconds": 5,
+      "greetings": [
+        "Messages for {destination}. Keep to the road; the creatures gather off the track.",
+        "I stop at {city_name} to exchange letters, then set off again."
+      ]
+    },
+    {
+      "id": "pilgrim",
+      "name": "Wandering pilgrim",
+      "speed": 0.7,
+      "pause_seconds": 16,
+      "greetings": [
+        "The fountains guide my journey from {city_name} to {destination}.",
+        "I rest at the milestones and listen for the town bells."
+      ]
+    },
+    {
+      "id": "scholar",
+      "name": "Traveling scholar",
+      "speed": 0.8,
+      "pause_seconds": 14,
+      "greetings": [
+        "The ruins near {city_name} deserve a careful survey. I am bound for {destination}.",
+        "Old stones remember things our books have forgotten. I copy what I find along the road."
+      ]
+    },
+    {
+      "id": "hunter",
+      "name": "Wilderness scout",
+      "speed": 1.05,
+      "pause_seconds": 9,
+      "greetings": [
+        "Tracks gather around the wilderness lairs. Watch the ground before leaving the road to {destination}.",
+        "I report the creature grounds to {city_name}. Their dens are easier to avoid when you know where to look."
+      ]
+    }
+  ],
+  "guards": {
+    "name": "Town guard",
+    "speed": 1.05,
+    "pause_seconds": 4,
+    "greetings": [
+      "We patrol the town approaches. The roads lead to other settlements; creature grounds lie beyond them.",
+      "Keep the fountain and doorways clear. If you venture to the ruins, expect creatures around their outskirts."
+    ]
+  },
+  "episodes": [
+    {
+      "start_seconds": 0,
+      "finish_seconds": 16,
+      "end_seconds": 28,
+      "choices": [
+        {
+          "id": "guard_muster",
+          "label": "Changing the watch",
+          "visual": "banner",
+          "aftermath": "The watch has departed"
+        },
+        {
+          "id": "road_departure",
+          "label": "Travelers share road news",
+          "visual": "crates",
+          "aftermath": "Travel packs collected"
+        }
+      ]
+    },
+    {
+      "start_seconds": 105,
+      "finish_seconds": 122,
+      "end_seconds": 134,
+      "choices": [
+        {
+          "id": "market",
+          "label": "Wayfarers' market",
+          "visual": "market",
+          "aftermath": "Market closed for the day"
+        },
+        {
+          "id": "repairs",
+          "label": "Repairing travel gear",
+          "visual": "crates",
+          "aftermath": "Repaired packs ready"
+        },
+        {
+          "id": "storytelling",
+          "label": "Stories from the old roads",
+          "visual": "books",
+          "aftermath": "Story circle finished"
+        }
+      ]
+    },
+    {
+      "start_seconds": 218,
+      "finish_seconds": 231,
+      "end_seconds": 240,
+      "choices": [
+        {
+          "id": "pilgrim_rest",
+          "label": "Pilgrims at rest",
+          "visual": "meal",
+          "aftermath": "Pilgrims continue their journey"
+        },
+        {
+          "id": "courier_exchange",
+          "label": "Couriers exchange letters",
+          "visual": "books",
+          "aftermath": "Letters dispatched"
+        }
+      ]
+    }
+  ],
+  "monster_areas": {
+    "radius": 7,
+    "members": 6,
+    "clearance": 16,
+    "labels": [
+      "Creature grove",
+      "Wild hunting ground",
+      "Ruins outskirts"
+    ],
+    "biome_labels": {
+      "0": [
+        "Forest den",
+        "Woodland hunting ground",
+        "Ruins outskirts"
+      ],
+      "1": [
+        "Creature grove",
+        "Meadow hunting ground",
+        "Ruins outskirts"
+      ],
+      "2": [
+        "Dune burrows",
+        "Desert hunting ground",
+        "Ruins outskirts"
+      ],
+      "3": [
+        "Ice hollow",
+        "Frost hunting ground",
+        "Ruins outskirts"
+      ]
+    }
+  }
+}

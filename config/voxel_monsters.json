@@ -1,0 +1,2121 @@
+{
+  "version": 1,
+  "default_template": "goblin",
+  "builds": {"lean":0.875,"regular":1.0,"heavy":1.125},
+  "tones": [-0.08,0,0.08],
+  "biomes": {
+    "0": [
+      ["bfc885","e4df9b"],
+      ["90c8b7","e5ead1"]
+    ],
+    "1": [
+      ["bda6d8","ead9ff"],
+      ["81bfcf","d9efff"]
+    ],
+    "2": [
+      ["e7aa78","ffdfb6"],
+      ["d6c185","f6e1aa"]
+    ],
+    "3": [
+      ["95d7dd","ddfbff"],
+      ["c6d4e8","eef2ff"]
+    ]
+  },
+  "palettes": {
+    "bone": {"body":"d4ccb3","dark":"7f7968","shade":"575b62","trim":"b59962","tooth":"e5dac1","metal":"adb8bf"},
+    "ash": {"body":"b2b8b1","dark":"5b646a","shade":"454550","trim":"9cad9d","tooth":"e5dac1","metal":"adb8bf"},
+    "arcane": {"body":"776191","dark":"413654","shade":"39304c","trim":"c5a678","tooth":"e5dac1","metal":"adb8bf"},
+    "spirit": {"body":"a598be","dark":"6a5b83","shade":"504269","trim":"cec4df","tooth":"e5dac1","metal":"adb8bf"},
+    "moss": {"body":"728651","dark":"3f5036","shade":"4f5f3e","trim":"b29c64","tooth":"e5dac1","metal":"adb8bf"},
+    "stone": {"body":"89949a","dark":"4e5b63","shade":"65747b","trim":"b6bcb6","tooth":"e5dac1","metal":"adb8bf"},
+    "iron": {"body":"9ca8af","dark":"4c5664","shade":"72858f","trim":"d0b178","tooth":"e5dac1","metal":"adb8bf"},
+    "ice": {"body":"bad4d6","dark":"7394a4","shade":"739eb1","trim":"e6dcd0","tooth":"e5dac1","metal":"adb8bf"},
+    "fur": {"body":"987657","dark":"564334","shade":"74543c","trim":"cab58e","tooth":"e5dac1","metal":"adb8bf"},
+    "ember": {"body":"b86345","dark":"713d3a","shade":"864539","trim":"deb36a","tooth":"e5dac1","metal":"adb8bf"},
+    "shell": {"body":"8874a1","dark":"4f4768","shade":"6e5d83","trim":"c9b18c","tooth":"e5dac1","metal":"adb8bf"},
+    "slime": {"body":"84b883","dark":"48755a","shade":"6a9d6d","trim":"c3dab1","tooth":"e5dac1","metal":"adb8bf"},
+    "fungal": {"body":"b66d70","dark":"754652","shade":"884b59","trim":"e4cbae","tooth":"e5dac1","metal":"adb8bf"},
+    "scales": {"body":"688c70","dark":"3c5e52","shade":"507360","trim":"c3b078","tooth":"e5dac1","metal":"adb8bf"}
+  },
+  "templates": {
+    "skeleton": {
+      "palettes": ["bone","ash"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[2,9,2],"color":"body"},
+            {"point":[0,2,1],"size":[8,1,3],"color":"body"},
+            {"point":[0,4,1],"size":[8,1,3],"color":"body"},
+            {"point":[0,6,1],"size":[8,1,3],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[2,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[2,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[2,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[2,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,9.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "caster": {
+      "palettes": ["arcane","spirit"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[8,9,5],"color":"body"},
+            {"point":[0,0.5,0],"size":[8.5,1,5.5],"color":"trim"},
+            {"point":[0,-1,0],"size":[9,8,6],"color":"shade"},
+            {"point":[0,2,3.25],"size":[1,13,0.5],"color":"accent"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"},
+            {"point":[0,8.5,0],"size":[11,1,10],"color":"shade"},
+            {"point":[0,10.5,0],"size":[6,3,6],"color":"shade"},
+            {"point":[0,13,0],"size":[3,2,3],"color":"accent"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"},
+            {"point":[0,-2,3],"size":[1,20,1],"color":"trim"},
+            {"point":[0,9,3],"size":[3,3,3],"color":"eye"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,15.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "goblin": {
+      "palettes": ["moss","ember"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[8,9,5],"color":"body"},
+            {"point":[0,0.5,0],"size":[8.5,1,5.5],"color":"trim"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"},
+            {"point":[-5,4,0],"size":[2,2,3],"color":"body"},
+            {"point":[5,4,0],"size":[2,2,3],"color":"body"},
+            {"point":[0,3,4],"size":[2,2,2],"color":"body"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,9.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "ghoul": {
+      "palettes": ["moss","spirit"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[8,9,5],"color":"body"},
+            {"point":[0,0.5,0],"size":[8.5,1,5.5],"color":"trim"},
+            {"point":[0,4,-3],"size":[9,10,1],"color":"shade"},
+            {"point":[-2,6,3],"size":[2,3,1],"color":"shade"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,9.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "golem": {
+      "palettes": ["stone","iron","ice"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[12,9,5],"color":"body"},
+            {"point":[0,0.5,0],"size":[12.5,1,5.5],"color":"trim"},
+            {"point":[0,5,3],"size":[3,3,1],"color":"eye"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[9,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-9,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[5,8,5],"color":"body"},
+            {"point":[0,-8.5,0],"size":[6,2,6],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-3.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[5,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [9,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[5,8,5],"color":"body"},
+            {"point":[0,-8.5,0],"size":[6,2,6],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [3.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[5,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,9.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "demon": {
+      "palettes": ["ember","arcane"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[8,9,5],"color":"body"},
+            {"point":[0,0.5,0],"size":[8.5,1,5.5],"color":"trim"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"},
+            {"point":[-3,10,0],"size":[2,4,2],"color":"tooth"},
+            {"point":[3,10,0],"size":[2,4,2],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,9.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "winged_demon": {
+      "palettes": ["ember","arcane"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[8,9,5],"color":"body"},
+            {"point":[0,0.5,0],"size":[8.5,1,5.5],"color":"trim"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"},
+            {"point":[-3,10,0],"size":[2,4,2],"color":"tooth"},
+            {"point":[3,10,0],"size":[2,4,2],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[3,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[3,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "LeftWing": {
+          "pivot": [-3,14,-1],
+          "pieces": [
+            {"point":[-3.5,0,0],"size":[7,1,9],"color":"shade"},
+            {"point":[-6,0,-2],"size":[4,1,5],"color":"body"},
+            {"point":[-3.5,0,4],"size":[7,1,1],"color":"trim"}
+          ],
+          "motion": "wing",
+          "phase": -1
+        },
+        "RightWing": {
+          "pivot": [3,14,-1],
+          "pieces": [
+            {"point":[3.5,0,0],"size":[7,1,9],"color":"shade"},
+            {"point":[6,0,-2],"size":[4,1,5],"color":"body"},
+            {"point":[3.5,0,4],"size":[7,1,1],"color":"trim"}
+          ],
+          "motion": "wing",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,9.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "wolf": {
+      "palettes": ["fur","ice"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[8,9,14],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[-2.5,5,0],"size":[2,3,3],"color":"body"},
+            {"point":[2.5,5,0],"size":[2,3,3],"color":"body"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "boar": {
+      "palettes": ["fur","stone"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[12,9,14],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[-2,-1,6],"size":[1.5,4,1.5],"color":"tooth"},
+            {"point":[2,-1,6],"size":[1.5,4,1.5],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-5.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-5.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [5.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [5.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "hoofed": {
+      "palettes": ["fur","moss"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[8,9,14],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[-2,6,0],"size":[1.5,6,1.5],"color":"trim"},
+            {"point":[2,6,0],"size":[1.5,6,1.5],"color":"trim"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "bear": {
+      "palettes": ["fur","ice"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[12,9,14],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-1],"size":[3,3,3],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-5.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-5.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [5.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [5.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[4,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[4.5,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "lizard": {
+      "palettes": ["scales","ember","ice"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[8,9,14],"color":"body"},
+            {"point":[0,7,-4],"size":[2,3,2],"color":"accent"},
+            {"point":[0,7,0],"size":[2,3,2],"color":"accent"},
+            {"point":[0,7,4],"size":[2,3,2],"color":"accent"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,-1.75,5],"size":[5,0.5,2],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "dragon": {
+      "palettes": ["scales","ember","ice"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[8,9,14],"color":"body"},
+            {"point":[0,7,-4],"size":[2,3,2],"color":"accent"},
+            {"point":[0,7,0],"size":[2,3,2],"color":"accent"},
+            {"point":[0,7,4],"size":[2,3,2],"color":"accent"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,-1.75,5],"size":[5,0.5,2],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "LeftWing": {
+          "pivot": [-3,14,-1],
+          "pieces": [
+            {"point":[-4.5,0,0],"size":[9,1,9],"color":"shade"},
+            {"point":[-8,0,-2],"size":[4,1,5],"color":"body"},
+            {"point":[-4.5,0,4],"size":[9,1,1],"color":"trim"}
+          ],
+          "motion": "wing",
+          "phase": -1
+        },
+        "RightWing": {
+          "pivot": [3,14,-1],
+          "pieces": [
+            {"point":[4.5,0,0],"size":[9,1,9],"color":"shade"},
+            {"point":[8,0,-2],"size":[4,1,5],"color":"body"},
+            {"point":[4.5,0,4],"size":[9,1,1],"color":"trim"}
+          ],
+          "motion": "wing",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "bronto": {
+      "palettes": ["scales","moss"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[8,9,14],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,4,0],"size":[4,10,4],"color":"body"},
+            {"point":[0,11,1],"size":[6,4,6],"color":"body"},
+            {"point":[-2,11.5,4.25],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,11.5,4.25],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"},
+            {"point":[0,0,-6],"size":[1.5,1.5,5],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,14.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "rodent": {
+      "palettes": ["fur","ice"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[8,7,9],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[-2.5,6,0],"size":[2,5,2],"color":"body"},
+            {"point":[2.5,6,0],"size":[2,5,2],"color":"body"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-3],"size":[2,2,6],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "bird": {
+      "palettes": ["fur","ember","ice"],
+      "locomotion": "fly",
+      "parts": {
+        "Torso": {
+          "pivot": [0,8,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[7,9,8],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,15,2],
+          "pieces": [
+            {"point":[0,1,0],"size":[6,6,6],"color":"body"},
+            {"point":[0,0,4],"size":[3,2,3],"color":"trim"},
+            {"point":[-2,2,3.25],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2,3.25],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,8,-4],
+          "pieces": [
+            {"point":[0,0,-3],"size":[4,1,6],"color":"shade"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "LeftWing": {
+          "pivot": [-3,14,-1],
+          "pieces": [
+            {"point":[-3.0,0,0],"size":[6,1,9],"color":"shade"},
+            {"point":[-5,0,-2],"size":[4,1,5],"color":"body"},
+            {"point":[-3.0,0,4],"size":[6,1,1],"color":"trim"}
+          ],
+          "motion": "wing",
+          "phase": -1
+        },
+        "RightWing": {
+          "pivot": [3,14,-1],
+          "pieces": [
+            {"point":[3.0,0,0],"size":[6,1,9],"color":"shade"},
+            {"point":[5,0,-2],"size":[4,1,5],"color":"body"},
+            {"point":[3.0,0,4],"size":[6,1,1],"color":"trim"}
+          ],
+          "motion": "wing",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2,4,0],
+          "pieces": [
+            {"point":[0,-2,0],"size":[1,4,1],"color":"trim"},
+            {"point":[0,-3.5,1],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2,4,0],
+          "pieces": [
+            {"point":[0,-2,0],"size":[1,4,1],"color":"trim"},
+            {"point":[0,-3.5,1],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "spider": {
+      "palettes": ["shell","stone"],
+      "locomotion": "crawler",
+      "parts": {
+        "Torso": {
+          "pivot": [0,5,-2],
+          "pieces": [
+            {"point":[0,0,0],"size":[9,6,10],"color":"body"},
+            {"point":[0,3,0],"size":[5,2,7],"color":"shade"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,5,5],
+          "pieces": [
+            {"point":[0,0,0],"size":[6,4,4],"color":"shade"},
+            {"point":[-2,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[-0.75,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[0.75,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[2,0.5,2.25],"size":[1,1,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LegL0": {
+          "pivot": [-3,4,-3],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        },
+        "LegL1": {
+          "pivot": [-3,4,0],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        },
+        "LegL2": {
+          "pivot": [-3,4,3],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        },
+        "LegR0": {
+          "pivot": [3,4,-3],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        },
+        "LegR1": {
+          "pivot": [3,4,0],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        },
+        "LegR2": {
+          "pivot": [3,4,3],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        },
+        "LegL3": {
+          "pivot": [-3,4,5],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        },
+        "LegR3": {
+          "pivot": [3,4,5],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,3.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "beetle": {
+      "palettes": ["shell","stone"],
+      "locomotion": "crawler",
+      "parts": {
+        "Torso": {
+          "pivot": [0,5,-2],
+          "pieces": [
+            {"point":[0,1,0],"size":[9,8,12],"color":"body"},
+            {"point":[0,5,0],"size":[6,2,9],"color":"shade"},
+            {"point":[0,1,6.25],"size":[1,8,0.5],"color":"accent"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,5,5],
+          "pieces": [
+            {"point":[0,0,0],"size":[6,4,4],"color":"shade"},
+            {"point":[-2,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[-0.75,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[0.75,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[2,0.5,2.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[0,4,1],"size":[2,5,2],"color":"trim"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LegL0": {
+          "pivot": [-3,4,-3],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        },
+        "LegL1": {
+          "pivot": [-3,4,0],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        },
+        "LegL2": {
+          "pivot": [-3,4,3],
+          "pieces": [
+            {"point":[-2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[-4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        },
+        "LegR0": {
+          "pivot": [3,4,-3],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        },
+        "LegR1": {
+          "pivot": [3,4,0],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": -1
+        },
+        "LegR2": {
+          "pivot": [3,4,3],
+          "pieces": [
+            {"point":[2,-1,0],"size":[5,1.5,1.5],"color":"shade"},
+            {"point":[4,-2.5,0],"size":[1.5,4,1.5],"color":"dark"}
+          ],
+          "motion": "crawler_leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,7.5,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "slime": {
+      "palettes": ["slime","arcane","ember"],
+      "locomotion": "slime",
+      "parts": {
+        "Core": {
+          "pivot": [0,0,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[10,8,10],"color":"body"},
+            {"point":[0,9,0],"size":[7,2,7],"color":"shade"},
+            {"point":[-2,6,5.25],"size":[2,2,0.5],"color":"eye"},
+            {"point":[2,6,5.25],"size":[2,2,0.5],"color":"eye"},
+            {"point":[0,3,5.25],"size":[3,1,0.5],"color":"dark"}
+          ],
+          "motion": "core",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Core","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Core","point":[0,11.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "shade": {
+      "palettes": ["spirit","arcane"],
+      "locomotion": "float",
+      "parts": {
+        "Core": {
+          "pivot": [0,7,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[7,10,6],"color":"body"},
+            {"point":[0,-5,0],"size":[5,2,4],"color":"shade"},
+            {"point":[0,-7,0],"size":[3,2,3],"color":"shade"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,15,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,3,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,3,3.75],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-4,11,0],
+          "pieces": [
+            {"point":[-1,-2,0],"size":[2,6,3],"color":"shade"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [4,11,0],
+          "pieces": [
+            {"point":[1,-2,0],"size":[2,6,3],"color":"shade"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,7.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "wisp": {
+      "palettes": ["ember","arcane","ice"],
+      "locomotion": "float",
+      "parts": {
+        "Core": {
+          "pivot": [0,7,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[7,7,7],"color":"body"},
+            {"point":[0,-5,0],"size":[3,3,3],"color":"shade"},
+            {"point":[0,5,0],"size":[5,3,5],"color":"accent"},
+            {"point":[0,8,0],"size":[2,3,2],"color":"eye"},
+            {"point":[-2,1,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,1,3.75],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-5,7,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[2,4,2],"color":"accent"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [5,7,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[2,4,2],"color":"accent"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Core","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Core","point":[0,10.5,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "mushroom": {
+      "palettes": ["fungal","ice"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,8,0],
+          "pieces": [
+            {"point":[0,2,0],"size":[4,12,4],"color":"tooth"},
+            {"point":[-2,4,2.25],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4,2.25],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,18,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[16,3,13],"color":"body"},
+            {"point":[0,2.5,0],"size":[12,2,10],"color":"body"},
+            {"point":[0,4.5,0],"size":[8,2,6],"color":"shade"},
+            {"point":[-4,2.75,4],"size":[2,0.5,2],"color":"tooth"},
+            {"point":[3,3.75,0],"size":[2,0.5,2],"color":"tooth"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2,4,0],
+          "pieces": [
+            {"point":[0,-2,0],"size":[2,4,3],"color":"shade"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightLeg": {
+          "pivot": [2,4,0],
+          "pieces": [
+            {"point":[0,-2,0],"size":[2,4,3],"color":"shade"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,6.5,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "plant": {
+      "palettes": ["moss","scales"],
+      "locomotion": "stationary",
+      "parts": {
+        "Core": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[5,14,5],"color":"body"},
+            {"point":[0,-8,0],"size":[9,2,8],"color":"shade"},
+            {"point":[0,8,0],"size":[7,3,7],"color":"body"},
+            {"point":[-2,3,2.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,3,2.75],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-3,8,0],
+          "pieces": [
+            {"point":[-2,0,0],"size":[4,3,3],"color":"body"},
+            {"point":[-3,3,0],"size":[3,5,3],"color":"body"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [3,12,0],
+          "pieces": [
+            {"point":[2,0,0],"size":[4,3,3],"color":"body"},
+            {"point":[3,3,0],"size":[3,5,3],"color":"body"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Core","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Core","point":[0,10.5,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "fish": {
+      "palettes": ["scales","ice","shell"],
+      "locomotion": "float",
+      "parts": {
+        "Core": {
+          "pivot": [0,8,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[7,9,12],"color":"body"},
+            {"point":[0,5,-1],"size":[1,4,7],"color":"accent"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,10,6],
+          "pieces": [
+            {"point":[0,0,0],"size":[7,6,5],"color":"body"},
+            {"point":[0,-1,3],"size":[5,2,1],"color":"dark"},
+            {"point":[0,-0.5,3.75],"size":[4,0.5,0.5],"color":"tooth"},
+            {"point":[-2,1,2.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,1,2.75],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,8,-7],
+          "pieces": [
+            {"point":[0,0,-2],"size":[1,7,5],"color":"shade"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "LeftWing": {
+          "pivot": [-4,8,0],
+          "pieces": [
+            {"point":[-2,0,0],"size":[4,1,5],"color":"shade"}
+          ],
+          "motion": "wing",
+          "phase": -1
+        },
+        "RightWing": {
+          "pivot": [4,8,0],
+          "pieces": [
+            {"point":[2,0,0],"size":[4,1,5],"color":"shade"}
+          ],
+          "motion": "wing",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,4.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "squid": {
+      "palettes": ["shell","arcane"],
+      "locomotion": "crawler",
+      "parts": {
+        "Core": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[8,9,8],"color":"body"},
+            {"point":[0,5,0],"size":[6,2,6],"color":"shade"},
+            {"point":[-2,-1,4.25],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,-1,4.25],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "TentacleL0": {
+          "pivot": [-3,7,-3],
+          "pieces": [
+            {"point":[-1,-3,0],"size":[3,6,2],"color":"shade"},
+            {"point":[-2,-6,0],"size":[4,2,3],"color":"body"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "TentacleL1": {
+          "pivot": [-3,7,0],
+          "pieces": [
+            {"point":[-1,-3,0],"size":[3,6,2],"color":"shade"},
+            {"point":[-2,-6,0],"size":[4,2,3],"color":"body"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "TentacleL2": {
+          "pivot": [-3,7,3],
+          "pieces": [
+            {"point":[-1,-3,0],"size":[3,6,2],"color":"shade"},
+            {"point":[-2,-6,0],"size":[4,2,3],"color":"body"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "TentacleR0": {
+          "pivot": [3,7,-3],
+          "pieces": [
+            {"point":[1,-3,0],"size":[3,6,2],"color":"shade"},
+            {"point":[2,-6,0],"size":[4,2,3],"color":"body"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "TentacleR1": {
+          "pivot": [3,7,0],
+          "pieces": [
+            {"point":[1,-3,0],"size":[3,6,2],"color":"shade"},
+            {"point":[2,-6,0],"size":[4,2,3],"color":"body"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "TentacleR2": {
+          "pivot": [3,7,3],
+          "pieces": [
+            {"point":[1,-3,0],"size":[3,6,2],"color":"shade"},
+            {"point":[2,-6,0],"size":[4,2,3],"color":"body"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Core","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Core","point":[0,7.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "cannon": {
+      "palettes": ["iron","stone"],
+      "locomotion": "stationary",
+      "parts": {
+        "Base": {
+          "pivot": [0,3,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[10,6,9],"color":"shade"},
+            {"point":[-6,0,0],"size":[3,6,8],"color":"dark"},
+            {"point":[6,0,0],"size":[3,6,8],"color":"dark"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Turret": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[8,7,8],"color":"metal"},
+            {"point":[0,1,7],"size":[4,4,10],"color":"metal"},
+            {"point":[0,1,12.25],"size":[3,3,0.5],"color":"dark"},
+            {"point":[-3,2,4.25],"size":[1,1,0.5],"color":"eye"},
+            {"point":[3,2,4.25],"size":[1,1,0.5],"color":"eye"}
+          ],
+          "motion": "turret",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Turret","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Turret","point":[0,4.5,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "frog": {
+      "palettes": ["moss","scales"],
+      "locomotion": "quadruped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,9,0],
+          "pieces": [
+            {"point":[0,0,0],"size":[8,7,9],"color":"body"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,13,8],
+          "pieces": [
+            {"point":[0,1,1],"size":[7,6,6],"color":"body"},
+            {"point":[0,-0.5,5],"size":[5,3,3],"color":"dark"},
+            {"point":[-2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,2.5,4],"size":[1.5,1.5,0.5],"color":"eye"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "Tail": {
+          "pivot": [0,12,-8],
+          "pieces": [
+            {"point":[0,0,-1],"size":[3,2,2],"color":"body"}
+          ],
+          "motion": "tail",
+          "phase": 1
+        },
+        "RearLeft": {
+          "pivot": [-3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "FrontLeft": {
+          "pivot": [-3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "RearRight": {
+          "pivot": [3.0,9,-5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        },
+        "FrontRight": {
+          "pivot": [3.0,9,5],
+          "pieces": [
+            {"point":[0,-4.5,0],"size":[2.5,9,3],"color":"dark"},
+            {"point":[0,-8.5,0.5],"size":[3,1,4],"color":"trim"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,5.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    },
+    "bone_mage": {
+      "palettes": ["bone","ash"],
+      "locomotion": "biped",
+      "parts": {
+        "Torso": {
+          "pivot": [0,11,0],
+          "pieces": [
+            {"point":[0,4.5,0],"size":[2,9,2],"color":"body"},
+            {"point":[0,2,1],"size":[8,1,3],"color":"body"},
+            {"point":[0,4,1],"size":[8,1,3],"color":"body"},
+            {"point":[0,6,1],"size":[8,1,3],"color":"body"},
+            {"point":[0,-1,0],"size":[9,8,6],"color":"shade"},
+            {"point":[0,2,3.25],"size":[1,13,0.5],"color":"accent"}
+          ],
+          "motion": "core",
+          "phase": 1
+        },
+        "Head": {
+          "pivot": [0,20,0],
+          "pieces": [
+            {"point":[0,4,0],"size":[8,8,7],"color":"body"},
+            {"point":[-2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[2,4.5,3.75],"size":[1.5,1.5,0.5],"color":"eye"},
+            {"point":[0,2,3.75],"size":[4,1,0.5],"color":"dark"},
+            {"point":[0,1,4],"size":[4,1,0.5],"color":"tooth"},
+            {"point":[0,8.5,0],"size":[11,1,10],"color":"shade"},
+            {"point":[0,10.5,0],"size":[6,3,6],"color":"shade"},
+            {"point":[0,13,0],"size":[3,2,3],"color":"accent"}
+          ],
+          "motion": "head",
+          "phase": 1
+        },
+        "LeftArm": {
+          "pivot": [-6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[2,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"}
+          ],
+          "motion": "arm",
+          "phase": 1
+        },
+        "LeftLeg": {
+          "pivot": [-2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[2,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": 1
+        },
+        "RightArm": {
+          "pivot": [6,19,0],
+          "pieces": [
+            {"point":[0,-4,0],"size":[2,8,3],"color":"body"},
+            {"point":[0,-8.5,0],"size":[3,2,3],"color":"dark"},
+            {"point":[0,-2,3],"size":[1,20,1],"color":"trim"},
+            {"point":[0,9,3],"size":[3,3,3],"color":"eye"}
+          ],
+          "motion": "arm",
+          "phase": -1
+        },
+        "RightLeg": {
+          "pivot": [2.5,11,0],
+          "pieces": [
+            {"point":[0,-3.5,0],"size":[2,7,3],"color":"body"},
+            {"point":[0,-9,1],"size":[3.5,4,6],"color":"dark"}
+          ],
+          "motion": "leg",
+          "phase": -1
+        }
+      },
+      "ornaments": {
+        "plain": [],
+        "scarred": [
+          {"part":"Head","point":[-2,2,4.25],"size":[0.5,3,0.5],"color":"accent"}
+        ],
+        "crested": [
+          {"part":"Head","point":[0,15.0,0],"size":[2,2,3],"color":"trim"}
+        ]
+      }
+    }
+  },
+  "selectors": [
+    {"ids":["crypt_skeleton"],"template":"skeleton"},
+    {"ids":["sanctum_invoker"],"template":"caster"},
+    {"ids":["tomb_shade"],"template":"shade"},
+    {"ids":["briar_wolf"],"template":"wolf"},
+    {"ids":["roadside_brigand"],"template":"goblin"},
+    {"ids":["wild_boar"],"template":"boar"},
+    {"ids":["rime_golem"],"template":"golem","palettes":["ice"]},
+    {"ids":["cinder_wisp"],"template":"wisp"},
+    {"ids":["spore_crawler"],"template":"spider"},
+    {"ids":["dune_scarab"],"template":"beetle"},
+    {"names":["*blob*","*slime*"],"template":"slime"},
+    {"names":["*ghost*","*shade*"],"template":"shade"},
+    {"names":["*skeleton mage*"],"template":"bone_mage"},
+    {"names":["*skeleton*","*skull*"],"template":"skeleton"},
+    {"names":["*cannon*"],"template":"cannon"},
+    {"names":["*mush*"],"template":"mushroom"},
+    {"names":["*cactoro*"],"template":"plant"},
+    {"names":["*squid*"],"template":"squid"},
+    {"names":["*spider*"],"template":"spider"},
+    {"names":["*armabee*","*beetle*"],"template":"beetle"},
+    {"names":["*dragon*"],"template":"dragon"},
+    {"names":["*bronto*"],"template":"bronto"},
+    {"names":["*dino*","*goblin chicken shark*"],"template":"lizard"},
+    {"names":["*demon flying*"],"template":"winged_demon"},
+    {"names":["*demon*","*daemon*"],"template":"demon"},
+    {"names":["*mage*","*wizard*","*invoker*"],"template":"caster"},
+    {"names":["*goleling*","*golem*","*giant*","*yeti*"],"template":"golem"},
+    {"names":["*beagle*","*wolf*","*dog*"],"template":"wolf"},
+    {"names":["*boar*"],"template":"boar"},
+    {"names":["*bear*"],"template":"bear"},
+    {"names":["*auroch*","*oryx*","*alpaking*"],"template":"hoofed"},
+    {"names":["*bunny*","*cat","*hedgehog*","*monkroose*"],"template":"rodent"},
+    {"names":["*rooster*","*duck*","*chicken*","*birb*","*pigeon*"],"template":"bird"},
+    {"names":["*fish*","*piranha*","*glub*","*hywirl*"],"template":"fish"},
+    {"names":["*zombie*","*vampire*","*alien*"],"template":"ghoul"},
+    {"names":["*goblin*","*orc*","*ninja*","*tribal*"],"template":"goblin"},
+    {"names":["*frog*"],"template":"frog"}
+  ]
+}

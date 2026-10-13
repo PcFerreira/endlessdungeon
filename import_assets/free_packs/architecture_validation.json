@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-10-13",
+  "scope": "Four architecture packs; older batches retain their separate validation records",
+  "new_packs": [
+    "kenney_castle_kit",
+    "kaykit_medieval_hexagon",
+    "quaternius_medieval_village",
+    "fsp_modular_temple"
+  ],
+  "new_gltf_glb_models": 473,
+  "temple_obj_models": 213,
+  "checks": [
+    "Three ZIP archives passed CRC checks and safe relative-path checks",
+    "All 376 mirrored village files matched pinned Git blob hashes and SHA-256",
+    "All 473 GLB/glTF models parsed with valid headers, buffers and dependencies",
+    "All 213 temple OBJ meshes reference an existing MTL and known materials",
+    "All catalog file hashes matched; staged counts matched for the four new packs"
+  ],
+  "godot": {
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "isolated_project": true,
+    "import_exit_code": 0,
+    "resource_check_exit_code": 0,
+    "gltf_glb_models_instantiated": 473,
+    "obj_meshes_instantiated": 213,
+    "textures_loaded": 138,
+    "errors": [
+
+    ],
+    "warning_count": 2556,
+    "warnings": [
+      "WARNING: OBJ: Ambient light for material 'Sandstone_Floor' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Sandstone_Trim' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Sandstone_4' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Sandstone_5' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Sandstone_6' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Green_Stone_-_Dark' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Light_Gray' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Gray' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Blue_Fabric_1' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Blue_Fabric_2' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Blue_Fabric_3' is ignored in PBR",
+      "WARNING: OBJ: Ambient light for material 'Water' is ignored in PBR"
+    ],
+    "warning_note": "The same shared MTL is parsed for every OBJ, repeating warnings about legacy ambient light ignored in PBR. Original material file is preserved."
+  },
+  "all_staged_file_hashes_verified": 13892,
+  "total_catalog_packs": 50,
+  "license_counts": {
+    "CC0-1.0": 44,
+    "CC-BY-3.0": 5,
+    "CC-BY-4.0": 1
+  },
+  "limits": [
+    "Rendered appearance, scale, pivots, collision and navigation were not reviewed",
+    "No game runtime or procedural generation integration performed",
+    "KayKit hexagonal terrain needs square-grid adaptation",
+    "Kenney and KayKit OBJ alternatives and FBX files were not import-checked",
+    "Quaternius Standard does not include paid PRO/SOURCE content"
+  ],
+  "local_markdown_documents_checked": 57
+}

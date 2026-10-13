@@ -8,13 +8,13 @@ This prototype adapts that sequence to an isometric game. It uses a height field
 
 `scripts/world.gd` seeds separate FastNoiseLite fields for continents, erosion, ridges, local elevation, rivers, temperature, and moisture. Broad continental noise sets the low-frequency height. Ridged noise adds peaks, erosion reduces their strength, and local elevation adds smaller variations. Heights are clamped to 0 through 8 world units and rounded into half-unit terraces.
 
-The climate pass chooses Greenwood, Sunlit Meadows, Amber Wastes, or Frostlands. High wilderness terrain uses the frost palette. Low land, local lake noise, and narrow river channels create water. Roads crossing water become bridges. The surface remains deterministic at chunk boundaries and negative coordinates.
+The climate pass chooses Greenwood, Sunlit Meadows, Amber Wastes, or Frostlands. Generator edition 4 uses broader climate and landform fields; a local height change no longer switches an individual cell to Frostlands. Low land, lake noise, and river channels create water. Canonical road plans span water and low gaps with continuous bridges, including bank approaches, edge rails, periodic supports and visible lower surfaces. The surface remains deterministic at chunk boundaries and negative coordinates. See [LANDSCAPE.md](LANDSCAPE.md) for the current frequencies, shared crossing records and measured climate boundary reduction.
 
 ## Roads and structures
 
 Cities occupy level plateaus. The surrounding terrain blends toward each plateau. The main roads interpolate between neighboring cities' plateau heights. Dungeon spurs interpolate from the highway to a level entrance platform. Entrance heights are limited by the spur length so the grade stays within a walking step. Entrance blending affects adjacent terrain without changing road heights. Trees, rocks, city buildings, facade props, and entrance pillars retain their blocked footprints. Wilderness props require a lower placement roll than all eight neighboring cells, preventing adjacent blocking props.
 
-This ordering keeps settlements usable even when their surrounding terrain is steep. Terrain and vegetation are batched with MultiMesh. Columns have stone sides, a soil cap, and a biome-colored surface. A cutaway shader follows the camera direction and covers foreground terrain and buildings to keep the character visible while orbiting.
+This ordering keeps settlements usable even when their surrounding terrain is steep. Town plateaus and protection share a square radius of 13. Data-selected layouts reserve the plaza and main streets; houses face a reachable approach and receive a paved connection before facade props are placed. Terrain and vegetation are batched with MultiMesh. Columns have stone sides, a soil cap, and a biome-colored surface. A cutaway shader follows the camera direction and covers foreground terrain and buildings to keep the character visible while orbiting.
 
 ## Traversal
 

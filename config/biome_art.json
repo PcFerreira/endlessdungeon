@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "roles": {
+    "dense_canopy": {
+      "width": 0.9, "height": 3.35, "tint": "abc89a",
+      "sources": {
+        "block_voxel": ["quaternius_cube_world/Environment/glTF/Tree_1.gltf", "quaternius_cube_world/Environment/glTF/Tree_2.gltf", "quaternius_cube_world/Environment/glTF/Tree_3.gltf"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/tree_tall_dark.glb", "kenney_nature_kit/Models/GLTF format/tree_oak_dark.glb", "kenney_nature_kit/Models/GLTF format/tree_detailed_dark.glb"]
+      }
+    },
+    "forest_understory": {"width": 0.7, "height": 0.42, "native": true, "colors": ["496f41", "688d50", "88a85b"]},
+    "haunted_tree": {
+      "width": 0.9, "height": 2.6, "tint": "b3a2c0",
+      "sources": {
+        "block_voxel": ["kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/tree_dead_large_decorated.gltf", "quaternius_cube_world/Environment/glTF/DeadTree_2.gltf", "quaternius_cube_world/Environment/glTF/DeadTree_3.gltf"],
+        "flat_lowpoly": ["kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/tree_dead_large_decorated.gltf", "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/tree_dead_medium.gltf", "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/tree_dead_large.gltf"]
+      }
+    },
+    "pumpkin": {
+      "width": 0.58, "height": 0.48, "tint": "ffffff",
+      "sources": {
+        "block_voxel": ["kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange_jackolantern.gltf", "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_yellow.gltf", "kenney_graveyard_kit/Models/GLB format/pumpkin-carved.glb"],
+        "flat_lowpoly": ["kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange_jackolantern.gltf", "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_yellow.gltf", "kenney_graveyard_kit/Models/GLB format/pumpkin-carved.glb"]
+      }
+    },
+    "grave": {
+      "width": 0.65, "height": 0.85, "tint": "b6b0c1",
+      "sources": {
+        "block_voxel": ["kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/gravemarker_A.gltf", "kenney_graveyard_kit/Models/GLB format/gravestone-broken.glb", "kenney_graveyard_kit/Models/GLB format/gravestone-cross.glb"],
+        "flat_lowpoly": ["kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/gravemarker_A.gltf", "kenney_graveyard_kit/Models/GLB format/gravestone-broken.glb", "kenney_graveyard_kit/Models/GLB format/gravestone-cross.glb"]
+      }
+    },
+    "marsh_tree": {
+      "width": 0.9, "height": 2.25, "tint": "a7b79a",
+      "sources": {
+        "block_voxel": ["quaternius_cube_world/Environment/glTF/Tree_2.gltf", "quaternius_cube_world/Environment/glTF/DeadTree_1.gltf"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/tree_fat_darkh.glb", "kenney_nature_kit/Models/GLTF format/tree_oak_dark.glb"]
+      }
+    },
+    "reeds": {"width": 0.66, "height": 0.72, "native": true, "colors": ["698351", "94a36a", "ac8c5e"]},
+    "lily": {
+      "width": 0.62, "height": 0.055, "tint": "c6dcc0",
+      "sources": {
+        "block_voxel": ["kenney_nature_kit/Models/GLTF format/lily_large.glb", "kenney_nature_kit/Models/GLTF format/lily_small.glb"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/lily_large.glb", "kenney_nature_kit/Models/GLTF format/lily_small.glb"]
+      }
+    },
+    "jungle_canopy": {
+      "width": 0.9, "height": 3.25, "tint": "a3c98d",
+      "sources": {
+        "block_voxel": ["quaternius_cube_world/Environment/glTF/Bamboo.gltf", "quaternius_cube_world/Environment/glTF/Bamboo_Mid.gltf", "quaternius_cube_world/Environment/glTF/Tree_3.gltf"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/tree_palmDetailedTall.glb", "kenney_nature_kit/Models/GLTF format/tree_palmBend.glb", "kenney_nature_kit/Models/GLTF format/tree_tall_dark.glb"]
+      }
+    },
+    "jungle_understory": {"width": 0.76, "height": 0.68, "native": true, "colors": ["327348", "4d9859", "79ad60"]},
+    "autumn_tree": {
+      "width": 0.9, "height": 2.8, "tint": "ffffff",
+      "sources": {
+        "block_voxel": ["kenney_survival_kit/Models/GLB format/tree-autumn-tall.glb", "kenney_survival_kit/Models/GLB format/tree-autumn.glb", "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/tree_pine_orange_large.gltf"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/tree_oak_fall.glb", "kenney_survival_kit/Models/GLB format/tree-autumn.glb", "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/tree_pine_orange_large.gltf"]
+      }
+    },
+    "giant_mushroom": {"width": 0.9, "height": 2.15, "native": true, "colors": ["d7c9b7", "78559a", "b98aad"]},
+    "basalt": {"width": 0.86, "height": 1.25, "native": true, "colors": ["3d4148", "555966", "737582"]},
+    "lava_crack": {"width": 0.7, "height": 0.055, "native": true, "colors": ["352f32", "d95728", "f1a33e"]},
+    "highland_rock": {
+      "width": 0.86, "height": 1.05, "tint": "c5ccd0",
+      "sources": {
+        "block_voxel": ["quaternius_cube_world/Environment/glTF/Rock1.gltf", "quaternius_cube_world/Environment/glTF/Rock2.gltf"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/rock_largeA.glb", "kenney_nature_kit/Models/GLTF format/rock_largeD.glb", "kenney_graveyard_kit/Models/GLB format/rocks-tall.glb"]
+      }
+    },
+    "coastal_palm": {
+      "width": 0.9, "height": 2.7, "tint": "e1dfbd",
+      "sources": {
+        "block_voxel": ["kenney_nature_kit/Models/GLTF format/tree_palmDetailedShort.glb", "kenney_nature_kit/Models/GLTF format/tree_palmBend.glb", "kenney_nature_kit/Models/GLTF format/tree_palmTall.glb"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/tree_palmDetailedShort.glb", "kenney_nature_kit/Models/GLTF format/tree_palmBend.glb", "kenney_nature_kit/Models/GLTF format/tree_palmTall.glb"]
+      }
+    },
+    "coastal_grass": {
+      "width": 0.62, "height": 0.42, "tint": "e4d8a5",
+      "sources": {
+        "block_voxel": ["quaternius_cube_world/Environment/glTF/Grass_Small.gltf", "quaternius_cube_world/Environment/glTF/Plant_2.gltf"],
+        "flat_lowpoly": ["kenney_nature_kit/Models/GLTF format/plant_flatTall.glb", "kenney_nature_kit/Models/GLTF format/grass_leafs.glb"]
+      }
+    },
+    "crystal": {
+      "width": 0.66, "height": 1.2, "tint": "b5b6f1",
+      "sources": {
+        "block_voxel": ["quaternius_cube_world/Environment/glTF/Crystal_Big.gltf", "quaternius_cube_world/Environment/glTF/Crystal_Small.gltf"],
+        "flat_lowpoly": ["quaternius_cube_world/Environment/glTF/Crystal_Big.gltf", "quaternius_cube_world/Environment/glTF/Crystal_Small.gltf"]
+      }
+    }
+  }
+}

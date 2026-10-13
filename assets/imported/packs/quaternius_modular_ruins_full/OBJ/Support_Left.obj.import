@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3q148rnc57io"
+path="res://.godot/imported/Support_Left.obj-653fd5297711d6170809c5dedbe9c42f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Support_Left.obj-653fd5297711d6170809c5dedbe9c42f.mesh"]
+
+source_file="res://assets/imported/packs/quaternius_modular_ruins_full/OBJ/Support_Left.obj"
+dest_files=["res://.godot/imported/Support_Left.obj-653fd5297711d6170809c5dedbe9c42f.mesh", "res://.godot/imported/Support_Left.obj-653fd5297711d6170809c5dedbe9c42f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

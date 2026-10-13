@@ -20,9 +20,9 @@ The wrapped bell can appear in dialogue before a prop exists. Nella's personal s
 
 ## Milewarden
 
-Role ID: `milewarden`. Placement: city road exits; future road stops. Proposed affiliation: Milewardens.
+Role ID: `milewarden`. Placement: city road exits; future road stops. Affiliation: Milewardens, the player's traveling guild.
 
-They record places and bring corrections back to town. They want a trustworthy account of a recent journey. Privately, they worry that somebody else's map will be remembered while theirs disappears.
+They map roads, catalogue mysteries, and bring corrections back to town. They recognize the player as a fellow guild member without assuming a rank or a shared personal history. They want a trustworthy account of a recent journey. Privately, they worry that somebody else's map will be remembered while theirs disappears.
 
 Use concrete observations and cautious attribution. Keep routes tied to actual generated sites. A Milewarden may confess uncertainty.
 

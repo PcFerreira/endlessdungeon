@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "source_catalogues": [
+    "res://config/npc_styles.json",
+    "res://config/town_architecture.json",
+    "res://config/creature_styles.json",
+    "res://config/item_styles.json"
+  ],
+  "families": {
+    "block_voxel": {
+      "name": "Block-built voxel scenery",
+      "geometry": "voxel",
+      "queries": [
+        {
+          "pack": "quaternius_cube_world",
+          "patterns": [
+            "*/Environment/glTF/*.gltf"
+          ]
+        },
+        {
+          "pack": "voxel_micro_farm",
+          "patterns": [
+            "*"
+          ]
+        }
+      ]
+    },
+    "flat_lowpoly": {
+      "name": "Faceted flat-color scenery",
+      "geometry": "lowpoly",
+      "queries": [
+        {
+          "pack": "kenney_nature_kit",
+          "patterns": [
+            "*/Models/GLTF format/*.glb"
+          ]
+        },
+        {
+          "pack": "kenney_survival_kit",
+          "patterns": [
+            "*/Models/GLB format/*.glb"
+          ]
+        },
+        {
+          "pack": "kenney_graveyard_kit",
+          "patterns": [
+            "*/Models/GLB format/*.glb"
+          ]
+        },
+        {
+          "pack": "kenney_holiday_kit",
+          "patterns": [
+            "*/Models/GLB format/*.glb"
+          ]
+        },
+        {
+          "pack": "kenney_food_kit",
+          "patterns": [
+            "*/Models/GLB format/*.glb"
+          ]
+        },
+        {
+          "pack": "kenney_fantasy_town_kit",
+          "patterns": [
+            "*/Models/GLB format/*.glb"
+          ]
+        },
+        {
+          "pack": "kaykit_furniture",
+          "patterns": [
+            "*/Assets/gltf/*.gltf"
+          ]
+        },
+        {
+          "pack": "kaykit_dungeon_full",
+          "patterns": [
+            "*"
+          ]
+        },
+        {
+          "pack": "kaykit_halloween",
+          "patterns": [
+            "*/Assets/gltf/*.gltf"
+          ]
+        },
+        {
+          "pack": "quaternius_fantasy_props",
+          "patterns": [
+            "*/Exports/glTF/*.gltf"
+          ]
+        },
+        {
+          "pack": "kaykit_medieval_hexagon",
+          "patterns": [
+            "*/Assets/gltf/decoration/*.gltf"
+          ]
+        }
+      ]
+    }
+  },
+  "biomes": {
+    "0": "block_voxel",
+    "1": "block_voxel",
+    "2": "flat_lowpoly",
+    "3": "flat_lowpoly"
+  },
+  "roles": [
+    "canopy",
+    "pine",
+    "cactus",
+    "stone",
+    "deadwood",
+    "bush",
+    "flowers",
+    "mushroom",
+    "understory"
+  ],
+  "anchors": {
+    "oak": "canopy",
+    "tree_a": "canopy",
+    "tree_b": "canopy",
+    "tree_c": "canopy",
+    "pine": "pine",
+    "cactus": "cactus",
+    "rock": "stone",
+    "rock_b": "stone",
+    "dead_a": "deadwood",
+    "dead_b": "deadwood",
+    "dead_c": "deadwood",
+    "stump": "deadwood",
+    "bush": "bush",
+    "flowers": "flowers",
+    "flowers_b": "flowers",
+    "mushroom": "mushroom",
+    "mushroom_tall": "mushroom",
+    "plant": "understory"
+  },
+  "sizes": {
+    "canopy": [
+      0.95,
+      2.2
+    ],
+    "pine": [
+      0.95,
+      2.2
+    ],
+    "cactus": [
+      0.75,
+      1.45
+    ],
+    "stone": [
+      0.8,
+      0.6
+    ],
+    "deadwood": [
+      0.85,
+      1.9
+    ],
+    "bush": [
+      0.65,
+      0.45
+    ],
+    "flowers": [
+      0.55,
+      0.45
+    ],
+    "mushroom": [
+      0.75,
+      0.8
+    ],
+    "understory": [
+      0.65,
+      0.5
+    ]
+  },
+  "colors": {
+    "wood": "795d42",
+    "leaf": "5b7c54",
+    "stone": "8c958b",
+    "fungus": "bc9575",
+    "flower": "d8a1bc"
+  },
+  "cultural_roles": [
+    "table",
+    "workbench",
+    "bench",
+    "cart",
+    "crate",
+    "crates",
+    "barrel",
+    "anvil",
+    "tools",
+    "pickaxe",
+    "farm_tool",
+    "bookstand",
+    "book",
+    "scroll",
+    "bookcase",
+    "bottle",
+    "plate",
+    "fruit",
+    "bread",
+    "tea",
+    "camp",
+    "bedroll",
+    "campfire",
+    "statue",
+    "grave",
+    "gravestone",
+    "coffin",
+    "altar",
+    "lantern",
+    "wall_lantern",
+    "candle",
+    "banner",
+    "column",
+    "portal",
+    "soil",
+    "crop_carrot",
+    "crop_corn",
+    "crop_tomato",
+    "crop_daikon",
+    "crop_wheat",
+    "harvest",
+    "market_roof",
+    "standing_fire",
+    "banner_wall",
+    "rug_floor",
+    "wood",
+    "stone_block",
+    "chair",
+    "pot",
+    "sack",
+    "chest",
+    "training_dummy",
+    "fence",
+    "signpost",
+    "wall_shelf",
+    "bed",
+    "log",
+    "fountain"
+  ],
+  "derived_catalogues": [
+    {
+      "path": "res://config/town_architecture.json",
+      "prefix": "town_architecture",
+      "families": [
+        "block_voxel",
+        "flat_lowpoly"
+      ]
+    }
+  ],
+  "native_dungeon_roles": [
+    "floor",
+    "wall_high",
+    "wall_low",
+    "stairs",
+    "portal",
+    "chest",
+    "mote"
+  ],
+  "native_creature_fallbacks": [
+    "fallback_0",
+    "fallback_1",
+    "fallback_2",
+    "fallback_3",
+    "fallback_4",
+    "fallback_5",
+    "fallback_6",
+    "fallback_7",
+    "fallback_8",
+    "fallback_9"
+  ],
+  "native_decor_roles": [
+    "house_trim",
+    "civic_core",
+    "roof_charm",
+    "street_rune",
+    "npc_kit",
+    "npc_charm",
+    "episode_rug",
+    "trade_sign"
+  ],
+  "native_reward_roles": [
+    "coin",
+    "health",
+    "mana",
+    "ember"
+  ],
+  "native_town_roles": [
+    "house",
+    "civic_tower",
+    "market_lot",
+    "farm_lot"
+  ]
+}

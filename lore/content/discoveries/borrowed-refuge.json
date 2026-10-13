@@ -1,0 +1,16 @@
+{
+  "id": "discovery_borrowed_refuge",
+  "kind": "discovery",
+  "version": 1,
+  "family": "hospitality",
+  "title": "A Place Left for Someone",
+  "author": "A traveler from {city_name}",
+  "marker_label": "Traveler's cart",
+  "biomes": [0, 1, 2, 3],
+  "requires": ["read_discovery"],
+  "model_query": {"pack": "quaternius_cube_world", "tags": ["scenery", "voxel"], "patterns": ["*/Cart.gltf"]},
+  "marker_width": 0.85,
+  "marker_height": 0.70,
+  "text": "We borrowed this cart for the road from {city_name}. When its wheel broke, we made a shelter of it. When the rain ended, we left the shelter for the next person.\n\nThe keeper called that a poor way to return a cart. The mender called it a useful second career.\n\nOur last destination was {dungeon_name}. We left the name here so nobody would have to guess which ruin we meant.",
+  "tags": ["exploration", "roadside", "hospitality"]
+}

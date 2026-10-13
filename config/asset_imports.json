@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "pack": "quaternius_cube_world",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Environment/glTF/*.gltf"
+      ],
+      "tags": [
+        "scenery",
+        "voxel"
+      ]
+    },
+    {
+      "pack": "quaternius_cube_world",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Characters/glTF/*.gltf"
+      ],
+      "tags": [
+        "npc",
+        "voxel"
+      ]
+    },
+    {
+      "pack": "quaternius_cube_world",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Animals/glTF/*.gltf"
+      ],
+      "tags": [
+        "animal",
+        "peaceful",
+        "voxel"
+      ]
+    },
+    {
+      "pack": "kenney_castle_kit",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "**/*.glb"
+      ],
+      "tags": [
+        "architecture",
+        "castle"
+      ]
+    },
+    {
+      "pack": "kaykit_adventures",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "content/addons/kaykit_character_pack_adventures/Characters/gltf/*.glb"
+      ],
+      "tags": [
+        "player",
+        "fantasy"
+      ]
+    },
+    {
+      "pack": "river_forest_ambience",
+      "kinds": [
+        "audio"
+      ],
+      "include": [
+        "godot_wav/amb_forest.wav",
+        "godot_wav/amb_stream.wav",
+        "godot_wav/amb_river.wav",
+        "godot_wav/amb_mountains.wav"
+      ],
+      "tags": [
+        "ambience"
+      ]
+    },
+    {
+      "pack": "wildlife_ambience",
+      "kinds": [
+        "audio"
+      ],
+      "include": [
+        "godot_wav/amb_bird_1.wav",
+        "godot_wav/amb_frog_1.wav"
+      ],
+      "tags": [
+        "ambience"
+      ]
+    },
+    {
+      "pack": "wind_ambience",
+      "kinds": [
+        "audio"
+      ],
+      "include": [
+        "wind1.wav",
+        "wind3.wav"
+      ],
+      "tags": [
+        "ambience"
+      ]
+    },
+    {
+      "pack": "dungeon_ambience",
+      "kinds": [
+        "audio"
+      ],
+      "include": [
+        "dungeon_ambient_1_0.ogg"
+      ],
+      "tags": [
+        "ambience"
+      ]
+    },
+    {
+      "pack": "kenney_rpg_audio",
+      "kinds": [
+        "audio"
+      ],
+      "include": [
+        "Audio/footstep02.ogg",
+        "Audio/footstep04.ogg",
+        "Audio/bookOpen.ogg",
+        "Audio/bookFlip1.ogg",
+        "Audio/bookClose.ogg",
+        "Audio/doorOpen_1.ogg",
+        "Audio/creak1.ogg"
+      ],
+      "tags": [
+        "ambience"
+      ]
+    },
+    {
+      "pack": "quaternius_cube_world",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "Enemies/glTF/*.gltf"
+      ],
+      "tags": [
+        "enemy",
+        "voxel"
+      ]
+    },
+    {
+      "pack": "quaternius_ultimate_monsters",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "glTF/*.gltf"
+      ],
+      "tags": [
+        "enemy",
+        "fantasy"
+      ]
+    },
+    {
+      "pack": "kaykit_furniture",
+      "kinds": [
+        "model"
+      ],
+      "include": [
+        "content/addons/kaykit_furniture_bits/Assets/gltf/*.gltf"
+      ],
+      "tags": [
+        "furniture",
+        "interior"
+      ]
+    }
+  ],
+  "lore_sources": [
+    {
+      "glob": "lore/**/*.md",
+      "format": "markdown"
+    },
+    {
+      "glob": "lore/content/**/*.json",
+      "format": "entries"
+    }
+  ],
+  "overrides": {
+    "quaternius_cube_world/Environment/glTF/Tree_1.gltf": {
+      "aliases": [
+        "world_tree"
+      ]
+    },
+    "kenney_castle_kit/content/Models/GLB format/wall.glb": {
+      "aliases": [
+        "castle_wall"
+      ]
+    },
+    "river_forest_ambience/godot_wav/amb_forest.wav": {
+      "aliases": [
+        "amb_forest"
+      ]
+    },
+    "river_forest_ambience/godot_wav/amb_stream.wav": {
+      "aliases": [
+        "amb_fountain"
+      ]
+    },
+    "river_forest_ambience/godot_wav/amb_river.wav": {
+      "aliases": [
+        "amb_water"
+      ]
+    },
+    "river_forest_ambience/godot_wav/amb_mountains.wav": {
+      "aliases": [
+        "amb_frost"
+      ]
+    },
+    "wildlife_ambience/godot_wav/amb_bird_1.wav": {
+      "aliases": [
+        "bird"
+      ]
+    },
+    "wildlife_ambience/godot_wav/amb_frog_1.wav": {
+      "aliases": [
+        "frog"
+      ]
+    },
+    "wind_ambience/wind1.wav": {
+      "aliases": [
+        "amb_meadow",
+        "amb_room"
+      ]
+    },
+    "wind_ambience/wind3.wav": {
+      "aliases": [
+        "amb_desert"
+      ]
+    },
+    "dungeon_ambience/dungeon_ambient_1_0.ogg": {
+      "aliases": [
+        "amb_dungeon"
+      ]
+    },
+    "kenney_rpg_audio/Audio/footstep02.ogg": {
+      "aliases": [
+        "step_grass"
+      ]
+    },
+    "kenney_rpg_audio/Audio/footstep04.ogg": {
+      "aliases": [
+        "step_stone"
+      ]
+    },
+    "kenney_rpg_audio/Audio/bookOpen.ogg": {
+      "aliases": [
+        "book_open"
+      ]
+    },
+    "kenney_rpg_audio/Audio/bookFlip1.ogg": {
+      "aliases": [
+        "book_page"
+      ]
+    },
+    "kenney_rpg_audio/Audio/bookClose.ogg": {
+      "aliases": [
+        "book_close"
+      ]
+    },
+    "kenney_rpg_audio/Audio/doorOpen_1.ogg": {
+      "aliases": [
+        "door_open"
+      ]
+    },
+    "kenney_rpg_audio/Audio/creak1.ogg": {
+      "aliases": [
+        "room_creak"
+      ]
+    }
+  },
+  "rule_files": [
+    "config/generated_content_imports.json",
+    "config/generated_world_imports.json",
+    "config/npc_asset_imports.json"
+  ]
+}

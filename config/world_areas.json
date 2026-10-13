@@ -1,0 +1,3346 @@
+{
+  "version": 1,
+  "cities": {
+    "city_crossroads": {
+      "name": "Crossroads Town",
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 2,
+      "role": "milewarden",
+      "book": "book_waiting_cup",
+      "props": [
+        "signpost",
+        "cart"
+      ],
+      "layouts": [
+        {
+          "id": "original",
+          "plots": [
+            [
+              -8,
+              -8
+            ],
+            [
+              -4,
+              -8
+            ],
+            [
+              4,
+              -8
+            ],
+            [
+              6,
+              -4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              -4,
+              6
+            ],
+            [
+              -8,
+              4
+            ],
+            [
+              -8,
+              -4
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              2,
+              -11
+            ],
+            [
+              5,
+              -11
+            ],
+            [
+              -11,
+              -8
+            ],
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              10,
+              -5
+            ],
+            [
+              -11,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              -11,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              -5,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "courtyard",
+          "plots": [
+            [
+              -9,
+              -9
+            ],
+            [
+              -5,
+              -9
+            ],
+            [
+              4,
+              -9
+            ],
+            [
+              8,
+              -5
+            ],
+            [
+              -9,
+              4
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              2,
+              -5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -5,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              -8,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "lanes",
+          "plots": [
+            [
+              -10,
+              -8
+            ],
+            [
+              -6,
+              -8
+            ],
+            [
+              3,
+              -10
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              -5,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              7,
+              -11
+            ],
+            [
+              2,
+              -6
+            ],
+            [
+              -11,
+              -4
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        }
+      ],
+      "architecture": {
+        "height": [
+          1.35,
+          2.1
+        ],
+        "roof_shape": "gable"
+      },
+      "house_count": [
+        6,
+        8
+      ],
+      "required_buildings": [
+        "home",
+        "general_store",
+        "inn",
+        "smithy",
+        "shrine"
+      ],
+      "extra_buildings": [
+        "home",
+        "farmhouse",
+        "bakery"
+      ],
+      "outdoor_lots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "name": "Roadside Market",
+          "position": [
+            9,
+            -11
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "ba8659"
+        },
+        {
+          "id": "farm",
+          "kind": "farm",
+          "name": "Wheat Gardens",
+          "position": [
+            -11,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "c8b76b",
+          "crop_shape": "grain"
+        }
+      ],
+      "magic_profile": "return_lantern",
+      "density": {
+        "additional_buildings": [
+          6,
+          9
+        ],
+        "required_uses": [
+          "charmwright"
+        ],
+        "quarters": {
+          "nw": {
+            "name": "Rooflight Lanes",
+            "uses": [
+              "home",
+              "home",
+              "scribe"
+            ]
+          },
+          "ne": {
+            "name": "Trade Row",
+            "uses": [
+              "home",
+              "general_store",
+              "apothecary",
+              "scribe"
+            ]
+          },
+          "sw": {
+            "name": "Garden End",
+            "uses": [
+              "home",
+              "farmhouse",
+              "apothecary"
+            ]
+          },
+          "se": {
+            "name": "Menders Court",
+            "uses": [
+              "home",
+              "home",
+              "charmwright"
+            ]
+          }
+        }
+      }
+    },
+    "city_market": {
+      "name": "Market Town",
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 2,
+      "role": "relic_mender",
+      "book": "book_handles",
+      "props": [
+        "stall",
+        "workbench"
+      ],
+      "layouts": [
+        {
+          "id": "original",
+          "plots": [
+            [
+              -8,
+              -8
+            ],
+            [
+              -4,
+              -8
+            ],
+            [
+              4,
+              -8
+            ],
+            [
+              8,
+              -8
+            ],
+            [
+              -8,
+              6
+            ],
+            [
+              -4,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              8,
+              4
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              2,
+              -11
+            ],
+            [
+              5,
+              -11
+            ],
+            [
+              -11,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              4,
+              -4
+            ],
+            [
+              7,
+              -4
+            ],
+            [
+              10,
+              -4
+            ],
+            [
+              -11,
+              2
+            ],
+            [
+              -8,
+              2
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              5
+            ],
+            [
+              -8,
+              10
+            ],
+            [
+              -5,
+              10
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "courtyard",
+          "plots": [
+            [
+              -9,
+              -9
+            ],
+            [
+              -5,
+              -9
+            ],
+            [
+              4,
+              -9
+            ],
+            [
+              8,
+              -5
+            ],
+            [
+              -9,
+              4
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              2,
+              -5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -5,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              -8,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "lanes",
+          "plots": [
+            [
+              -10,
+              -8
+            ],
+            [
+              -6,
+              -8
+            ],
+            [
+              3,
+              -10
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              -5,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              7,
+              -11
+            ],
+            [
+              2,
+              -6
+            ],
+            [
+              -11,
+              -4
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        }
+      ],
+      "architecture": {
+        "height": [
+          1.35,
+          2.1
+        ],
+        "roof_shape": "gable"
+      },
+      "house_count": [
+        6,
+        8
+      ],
+      "required_buildings": [
+        "home",
+        "outfitter",
+        "inn",
+        "smithy",
+        "shrine"
+      ],
+      "extra_buildings": [
+        "general_store",
+        "bakery",
+        "home"
+      ],
+      "outdoor_lots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "name": "Merchants Square",
+          "position": [
+            9,
+            -11
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "687f9f"
+        },
+        {
+          "id": "farm",
+          "kind": "farm",
+          "name": "Market Gardens",
+          "position": [
+            -11,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "83a85e",
+          "crop_shape": "leaf"
+        }
+      ],
+      "magic_profile": "quiet_measure",
+      "density": {
+        "additional_buildings": [
+          8,
+          10
+        ],
+        "required_uses": [
+          "charmwright"
+        ],
+        "quarters": {
+          "nw": {
+            "name": "Rooflight Lanes",
+            "uses": [
+              "home",
+              "home",
+              "scribe"
+            ]
+          },
+          "ne": {
+            "name": "Trade Row",
+            "uses": [
+              "home",
+              "general_store",
+              "apothecary",
+              "scribe"
+            ]
+          },
+          "sw": {
+            "name": "Garden End",
+            "uses": [
+              "home",
+              "farmhouse",
+              "apothecary"
+            ]
+          },
+          "se": {
+            "name": "Menders Court",
+            "uses": [
+              "home",
+              "home",
+              "charmwright"
+            ]
+          }
+        }
+      }
+    },
+    "city_woodland": {
+      "name": "Woodland Commons",
+      "biomes": [
+        0
+      ],
+      "weight": 2,
+      "role": "milewarden",
+      "book": "book_waiting_cup",
+      "props": [
+        "tent",
+        "log"
+      ],
+      "layouts": [
+        {
+          "id": "original",
+          "plots": [
+            [
+              -8,
+              -5
+            ],
+            [
+              -4,
+              -8
+            ],
+            [
+              4,
+              -7
+            ],
+            [
+              7,
+              -4
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              3,
+              8
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              2,
+              -11
+            ],
+            [
+              5,
+              -11
+            ],
+            [
+              -11,
+              -8
+            ],
+            [
+              -8,
+              -8
+            ],
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              4,
+              -3
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              10
+            ],
+            [
+              -5,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "courtyard",
+          "plots": [
+            [
+              -9,
+              -9
+            ],
+            [
+              -5,
+              -9
+            ],
+            [
+              4,
+              -9
+            ],
+            [
+              8,
+              -5
+            ],
+            [
+              -9,
+              4
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              2,
+              -5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -5,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              -8,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "lanes",
+          "plots": [
+            [
+              -10,
+              -8
+            ],
+            [
+              -6,
+              -8
+            ],
+            [
+              3,
+              -10
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              -5,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              7,
+              -11
+            ],
+            [
+              2,
+              -6
+            ],
+            [
+              -11,
+              -4
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        }
+      ],
+      "architecture": {
+        "wall_color": "928965",
+        "roof_colors": [
+          "507550",
+          "6a8659"
+        ],
+        "roof_shape": "gable",
+        "height": [
+          1.2,
+          1.8
+        ]
+      },
+      "house_count": [
+        6,
+        8
+      ],
+      "required_buildings": [
+        "home",
+        "general_store",
+        "inn",
+        "smithy",
+        "shrine"
+      ],
+      "extra_buildings": [
+        "farmhouse",
+        "home",
+        "bakery"
+      ],
+      "outdoor_lots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "name": "Gatherers Market",
+          "position": [
+            9,
+            -11
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "718859"
+        },
+        {
+          "id": "farm",
+          "kind": "farm",
+          "name": "Woodland Herb Beds",
+          "position": [
+            -11,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "85a990",
+          "crop_shape": "leaf"
+        }
+      ],
+      "magic_profile": "rootlight_crown",
+      "density": {
+        "additional_buildings": [
+          6,
+          9
+        ],
+        "required_uses": [
+          "charmwright"
+        ],
+        "quarters": {
+          "nw": {
+            "name": "Rooflight Lanes",
+            "uses": [
+              "home",
+              "home",
+              "scribe"
+            ]
+          },
+          "ne": {
+            "name": "Trade Row",
+            "uses": [
+              "home",
+              "general_store",
+              "apothecary",
+              "scribe"
+            ]
+          },
+          "sw": {
+            "name": "Garden End",
+            "uses": [
+              "home",
+              "farmhouse",
+              "apothecary"
+            ]
+          },
+          "se": {
+            "name": "Menders Court",
+            "uses": [
+              "home",
+              "home",
+              "charmwright"
+            ]
+          }
+        }
+      }
+    },
+    "city_caravan": {
+      "name": "Caravan Town",
+      "biomes": [
+        2
+      ],
+      "weight": 2,
+      "role": "relic_mender",
+      "book": "book_water_notes",
+      "props": [
+        "tent",
+        "bedroll",
+        "cart"
+      ],
+      "layouts": [
+        {
+          "id": "original",
+          "plots": [
+            [
+              -8,
+              -8
+            ],
+            [
+              -4,
+              -8
+            ],
+            [
+              4,
+              -8
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              -5,
+              6
+            ],
+            [
+              -8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              2,
+              -11
+            ],
+            [
+              5,
+              -11
+            ],
+            [
+              -11,
+              -8
+            ],
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              4,
+              -4
+            ],
+            [
+              -11,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              -11,
+              5
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ],
+            [
+              -5,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "courtyard",
+          "plots": [
+            [
+              -9,
+              -9
+            ],
+            [
+              -5,
+              -9
+            ],
+            [
+              4,
+              -9
+            ],
+            [
+              8,
+              -5
+            ],
+            [
+              -9,
+              4
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              2,
+              -5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -5,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              -8,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "lanes",
+          "plots": [
+            [
+              -10,
+              -8
+            ],
+            [
+              -6,
+              -8
+            ],
+            [
+              3,
+              -10
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              -5,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              7,
+              -11
+            ],
+            [
+              2,
+              -6
+            ],
+            [
+              -11,
+              -4
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        }
+      ],
+      "architecture": {
+        "wall_color": "b89b79",
+        "roof_colors": [
+          "c99a6e",
+          "c9b184"
+        ],
+        "roof_shape": "flat",
+        "height": [
+          1.2,
+          1.8
+        ]
+      },
+      "house_count": [
+        6,
+        8
+      ],
+      "required_buildings": [
+        "home",
+        "outfitter",
+        "inn",
+        "smithy",
+        "shrine"
+      ],
+      "extra_buildings": [
+        "home",
+        "general_store",
+        "farmhouse"
+      ],
+      "outdoor_lots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "name": "Caravan Bazaar",
+          "position": [
+            9,
+            -11
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "ac895b"
+        },
+        {
+          "id": "farm",
+          "kind": "farm",
+          "name": "Irrigated Seed Beds",
+          "position": [
+            -11,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "82a55c",
+          "crop_shape": "grain"
+        }
+      ],
+      "magic_profile": "traveler_star",
+      "density": {
+        "additional_buildings": [
+          6,
+          9
+        ],
+        "required_uses": [
+          "charmwright"
+        ],
+        "quarters": {
+          "nw": {
+            "name": "Rooflight Lanes",
+            "uses": [
+              "home",
+              "home",
+              "scribe"
+            ]
+          },
+          "ne": {
+            "name": "Trade Row",
+            "uses": [
+              "home",
+              "general_store",
+              "apothecary",
+              "scribe"
+            ]
+          },
+          "sw": {
+            "name": "Garden End",
+            "uses": [
+              "home",
+              "farmhouse",
+              "apothecary"
+            ]
+          },
+          "se": {
+            "name": "Menders Court",
+            "uses": [
+              "home",
+              "home",
+              "charmwright"
+            ]
+          }
+        }
+      }
+    },
+    "city_mushroom_common": {
+      "name": "Mushroom Common",
+      "biomes": [
+        0
+      ],
+      "weight": 1,
+      "role": "milewarden",
+      "book": "book_handles",
+      "props": [
+        "mushroom",
+        "mushroom_tall",
+        "workbench"
+      ],
+      "layouts": [
+        {
+          "id": "original",
+          "plots": [
+            [
+              -8,
+              -5
+            ],
+            [
+              -4,
+              -8
+            ],
+            [
+              3,
+              -8
+            ],
+            [
+              7,
+              -4
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              -4,
+              7
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              2,
+              -11
+            ],
+            [
+              5,
+              -11
+            ],
+            [
+              -11,
+              -8
+            ],
+            [
+              -8,
+              -8
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              10,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              4,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "courtyard",
+          "plots": [
+            [
+              -9,
+              -9
+            ],
+            [
+              -5,
+              -9
+            ],
+            [
+              4,
+              -9
+            ],
+            [
+              8,
+              -5
+            ],
+            [
+              -9,
+              4
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              2,
+              -5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -5,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              -8,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "lanes",
+          "plots": [
+            [
+              -10,
+              -8
+            ],
+            [
+              -6,
+              -8
+            ],
+            [
+              3,
+              -10
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              -5,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              7,
+              -11
+            ],
+            [
+              2,
+              -6
+            ],
+            [
+              -11,
+              -4
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        }
+      ],
+      "architecture": {
+        "wall_color": "cbc5aa",
+        "roof_colors": [
+          "a16b96",
+          "9277b3"
+        ],
+        "roof_shape": "hip",
+        "height": [
+          1.35,
+          2.1
+        ]
+      },
+      "house_count": [
+        6,
+        8
+      ],
+      "required_buildings": [
+        "home",
+        "bakery",
+        "inn",
+        "smithy",
+        "shrine"
+      ],
+      "extra_buildings": [
+        "farmhouse",
+        "home",
+        "general_store"
+      ],
+      "outdoor_lots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "name": "Lantern Market",
+          "position": [
+            9,
+            -11
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "8e6b9d"
+        },
+        {
+          "id": "farm",
+          "kind": "farm",
+          "name": "Spore Gardens",
+          "position": [
+            -11,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "b885b7",
+          "crop_shape": "mushroom"
+        }
+      ],
+      "magic_profile": "spore_chorus",
+      "density": {
+        "additional_buildings": [
+          6,
+          9
+        ],
+        "required_uses": [
+          "charmwright"
+        ],
+        "quarters": {
+          "nw": {
+            "name": "Rooflight Lanes",
+            "uses": [
+              "home",
+              "home",
+              "scribe"
+            ]
+          },
+          "ne": {
+            "name": "Trade Row",
+            "uses": [
+              "home",
+              "general_store",
+              "apothecary",
+              "scribe"
+            ]
+          },
+          "sw": {
+            "name": "Garden End",
+            "uses": [
+              "home",
+              "farmhouse",
+              "apothecary"
+            ]
+          },
+          "se": {
+            "name": "Menders Court",
+            "uses": [
+              "home",
+              "home",
+              "charmwright"
+            ]
+          }
+        }
+      }
+    },
+    "city_winter_hearth": {
+      "name": "Winter Hearth",
+      "biomes": [
+        3
+      ],
+      "weight": 1,
+      "role": "retired_delver",
+      "book": "book_warm_letter",
+      "props": [
+        "lantern",
+        "log",
+        "campfire"
+      ],
+      "layouts": [
+        {
+          "id": "original",
+          "plots": [
+            [
+              -8,
+              -7
+            ],
+            [
+              -4,
+              -7
+            ],
+            [
+              3,
+              -7
+            ],
+            [
+              6,
+              -4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              -4,
+              4
+            ],
+            [
+              -8,
+              3
+            ],
+            [
+              8,
+              4
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              2,
+              -11
+            ],
+            [
+              5,
+              -11
+            ],
+            [
+              -11,
+              -8
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              10,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              10,
+              -5
+            ],
+            [
+              -8,
+              -3
+            ],
+            [
+              -5,
+              -3
+            ],
+            [
+              -11,
+              2
+            ],
+            [
+              -11,
+              5
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "courtyard",
+          "plots": [
+            [
+              -9,
+              -9
+            ],
+            [
+              -5,
+              -9
+            ],
+            [
+              4,
+              -9
+            ],
+            [
+              8,
+              -5
+            ],
+            [
+              -9,
+              4
+            ],
+            [
+              -5,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              8,
+              -8
+            ],
+            [
+              -11,
+              -5
+            ],
+            [
+              -8,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              2,
+              -5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -5,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              -8,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "lanes",
+          "plots": [
+            [
+              -10,
+              -8
+            ],
+            [
+              -6,
+              -8
+            ],
+            [
+              3,
+              -10
+            ],
+            [
+              7,
+              -8
+            ],
+            [
+              -9,
+              3
+            ],
+            [
+              -5,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "infill_plots": [
+            [
+              -11,
+              -11
+            ],
+            [
+              -8,
+              -11
+            ],
+            [
+              -5,
+              -11
+            ],
+            [
+              7,
+              -11
+            ],
+            [
+              2,
+              -6
+            ],
+            [
+              -11,
+              -4
+            ],
+            [
+              -8,
+              -4
+            ],
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              -4
+            ],
+            [
+              8,
+              -4
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              -11,
+              7
+            ],
+            [
+              -8,
+              7
+            ],
+            [
+              -8,
+              10
+            ]
+          ]
+        }
+      ],
+      "architecture": {
+        "roof_colors": [
+          "e1e4df"
+        ],
+        "roof_shape": "hip",
+        "height": [
+          1.2,
+          1.65
+        ]
+      },
+      "house_count": [
+        6,
+        8
+      ],
+      "required_buildings": [
+        "home",
+        "general_store",
+        "inn",
+        "smithy",
+        "shrine"
+      ],
+      "extra_buildings": [
+        "home",
+        "farmhouse",
+        "bakery"
+      ],
+      "outdoor_lots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "name": "Hearth Market",
+          "position": [
+            9,
+            -11
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "9a6c65"
+        },
+        {
+          "id": "farm",
+          "kind": "farm",
+          "name": "Winterroot Beds",
+          "position": [
+            -11,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "color": "c2aa86",
+          "crop_shape": "root"
+        }
+      ],
+      "magic_profile": "borrowed_ember",
+      "density": {
+        "additional_buildings": [
+          6,
+          9
+        ],
+        "required_uses": [
+          "charmwright"
+        ],
+        "quarters": {
+          "nw": {
+            "name": "Rooflight Lanes",
+            "uses": [
+              "home",
+              "home",
+              "scribe"
+            ]
+          },
+          "ne": {
+            "name": "Trade Row",
+            "uses": [
+              "home",
+              "general_store",
+              "apothecary",
+              "scribe"
+            ]
+          },
+          "sw": {
+            "name": "Garden End",
+            "uses": [
+              "home",
+              "farmhouse",
+              "apothecary"
+            ]
+          },
+          "se": {
+            "name": "Menders Court",
+            "uses": [
+              "home",
+              "home",
+              "charmwright"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "dungeons": {
+    "dungeon_ashen_crypt": {
+      "name": "The Ashen Crypt",
+      "palette": 0,
+      "book": "book_bed_ledger",
+      "props": [
+        "bed",
+        "bookcase"
+      ],
+      "roles": [
+        "Vestibule",
+        "Burial chamber",
+        "Attendant store",
+        "Memorial hall"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1
+    },
+    "dungeon_violet_sanctum": {
+      "name": "The Violet Sanctum",
+      "palette": 1,
+      "book": "book_final_atlas",
+      "props": [
+        "bookstand",
+        "workbench"
+      ],
+      "roles": [
+        "Registration",
+        "Practice chamber",
+        "Preparation store",
+        "Examination hall"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1
+    },
+    "dungeon_verdant_tomb": {
+      "name": "The Verdant Tomb",
+      "palette": 2,
+      "book": "book_warm_letter",
+      "props": [
+        "plant",
+        "stump"
+      ],
+      "roles": [
+        "Entry court",
+        "Memorial garden",
+        "Remembrance hall",
+        "Root court"
+      ],
+      "biomes": [
+        0,
+        1
+      ],
+      "weight": 1
+    },
+    "dungeon_quarry_depths": {
+      "name": "Quarry Depths",
+      "palette": 0,
+      "book": "book_bed_ledger",
+      "props": [
+        "rock",
+        "anvil"
+      ],
+      "roles": [
+        "Work forecourt",
+        "Extraction branch",
+        "Supply room",
+        "Older chamber"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1
+    },
+    "dungeon_fungal_cistern": {
+      "name": "Fungal Cistern",
+      "palette": 2,
+      "book": "book_water_notes",
+      "props": [
+        "mushroom",
+        "mushroom_tall"
+      ],
+      "roles": [
+        "Service entry",
+        "Colony chamber",
+        "Specimen store",
+        "Water hall"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1,
+      "required_facet": "surface_mycelium_downs"
+    },
+    "dungeon_unclosed_office": {
+      "name": "The Unclosed Office",
+      "palette": 1,
+      "book": "book_final_atlas",
+      "props": [
+        "bookcase",
+        "table"
+      ],
+      "roles": [
+        "Receiving room",
+        "Filing gallery",
+        "Approval office",
+        "Assembly hall"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 1
+    }
+  },
+  "start_city": "city_crossroads",
+  "start_families": [
+    "dungeon_ashen_crypt",
+    "dungeon_unclosed_office"
+  ],
+  "biomes": {
+    "0": {
+      "color": "70965d",
+      "density": 75,
+      "props": [
+        "oak",
+        "tree_a",
+        "tree_b",
+        "tree_c"
+      ],
+      "details": [
+        "bush"
+      ]
+    },
+    "1": {
+      "color": "a2ad74",
+      "density": 22,
+      "props": [
+        "rock",
+        "rock_b"
+      ],
+      "details": [
+        "flowers",
+        "flowers_b"
+      ]
+    },
+    "2": {
+      "color": "d1b37a",
+      "density": 35,
+      "props": [
+        "cactus"
+      ],
+      "details": [
+
+      ]
+    },
+    "3": {
+      "color": "c5d8d5",
+      "density": 55,
+      "props": [
+        "pine"
+      ],
+      "details": [
+
+      ]
+    }
+  },
+  "facets": {
+    "surface_mycelium_downs": {
+      "name": "Mycelium Downs",
+      "biomes": [
+        0
+      ],
+      "city_types": [
+        "city_mushroom_common"
+      ],
+      "max_temperature": 0.12,
+      "color": "8493aa",
+      "props": [
+        "mushroom",
+        "mushroom_tall"
+      ],
+      "family": "dungeon_fungal_cistern",
+      "transition": "transition_rootline",
+      "radius": 11,
+      "margin": 16
+    },
+    "surface_cinder_verge": {
+      "name": "Cinder Verge",
+      "biomes": [
+        0,
+        2
+      ],
+      "min_temperature": 0.12,
+      "color": "80756a",
+      "props": [
+        "dead_a",
+        "dead_b",
+        "dead_c"
+      ],
+      "family": "dungeon_quarry_depths",
+      "transition": "transition_boundary_common",
+      "radius": 11,
+      "margin": 16
+    }
+  },
+  "transitions": {
+    "transition_survey_road": {
+      "name": "Survey Road"
+    },
+    "transition_rootline": {
+      "name": "Rootline"
+    },
+    "transition_boundary_common": {
+      "name": "Boundary Common"
+    }
+  },
+  "geography": {
+    "town_spacing": 128
+  },
+  "building_uses": {
+    "home": {
+      "name": "Home",
+      "interior_type": "home"
+    },
+    "general_store": {
+      "name": "General Store",
+      "interior_type": "shop",
+      "architecture": {
+        "awning_color": "b98655"
+      }
+    },
+    "outfitter": {
+      "name": "Expedition Outfitters",
+      "interior_type": "shop",
+      "architecture": {
+        "awning_color": "627d9d"
+      }
+    },
+    "bakery": {
+      "name": "Bread and Provisions",
+      "interior_type": "shop",
+      "architecture": {
+        "awning_color": "c6ac68"
+      }
+    },
+    "inn": {
+      "name": "Roadside Inn",
+      "interior_type": "inn",
+      "architecture": {
+        "height": [
+          1.8,
+          2.5
+        ],
+        "awning_color": "9a5965"
+      }
+    },
+    "smithy": {
+      "name": "Menders Workshop",
+      "interior_type": "workshop",
+      "architecture": {
+        "wall_color": "a89783",
+        "roof_shape": "flat"
+      }
+    },
+    "shrine": {
+      "name": "Wayside Shrine",
+      "interior_type": "shrine",
+      "architecture": {
+        "wall_color": "c0c9c7",
+        "roof_shape": "hip"
+      }
+    },
+    "farmhouse": {
+      "name": "Farmhouse",
+      "interior_type": "home",
+      "architecture": {
+        "wall_color": "c4ae83",
+        "roof_colors": [
+          "6f8054",
+          "826f4e"
+        ],
+        "height": [
+          1.2,
+          1.6
+        ]
+      }
+    },
+    "charmwright": {
+      "name": "Charmwrights Workshop",
+      "interior_type": "workshop",
+      "architecture": {
+        "awning_color": "887ab0",
+        "wall_color": "c4bbb0"
+      }
+    },
+    "apothecary": {
+      "name": "Herbs and Remedies",
+      "interior_type": "shop",
+      "architecture": {
+        "awning_color": "728c68"
+      }
+    },
+    "scribe": {
+      "name": "Letters and Spellbooks",
+      "interior_type": "shop",
+      "architecture": {
+        "awning_color": "667f9e"
+      }
+    }
+  },
+  "magic_profiles": {
+    "return_lantern": {
+      "name": "Lantern of Return",
+      "color": "79d3d5",
+      "accent": "e8c485",
+      "account": "A lantern turns above the public well. Its light is repeated in small roof charms and copper-colored marks along the roads. The lantern keepers say it remembers footsteps, especially those made by somebody coming home tired.",
+      "custom": "Before a neighbor leaves, someone names a place at the supper table for their return. The charmwright repairs roof beads; the inn keeps the return stories.",
+      "pieces": [
+        {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.34,
+            0.38,
+            0.34
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0.24,
+            0
+          ],
+          "size": [
+            0.46,
+            0.1,
+            0.46
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0,
+            -0.24,
+            0
+          ],
+          "size": [
+            0.46,
+            0.1,
+            0.46
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            -0.19,
+            0,
+            0
+          ],
+          "size": [
+            0.06,
+            0.42,
+            0.06
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0.19,
+            0,
+            0
+          ],
+          "size": [
+            0.06,
+            0.42,
+            0.06
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0,
+            0.39,
+            0
+          ],
+          "size": [
+            0.08,
+            0.2,
+            0.08
+          ],
+          "color": "accent"
+        }
+      ],
+      "roof_charm_cap": 8,
+      "rune_distances": [
+        5,
+        10
+      ]
+    },
+    "quiet_measure": {
+      "name": "The Quiet Measure",
+      "color": "d6ae67",
+      "accent": "93c5d5",
+      "account": "Two cups hang from a floating beam above the market well. The same pale light marks nearby roofs and roads. Traders call this the Quiet Measure. They argue that a fair exchange includes the work that made an object useful.",
+      "custom": "A mender puts a repaired thing on the counter before naming a price. The market keeps a place for exchanges of labor, and neighbors bring troublesome objects to the charmwright.",
+      "pieces": [
+        {
+          "point": [
+            0,
+            0.28,
+            0
+          ],
+          "size": [
+            1.0,
+            0.08,
+            0.1
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.08,
+            0.6,
+            0.08
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            -0.36,
+            0,
+            0
+          ],
+          "size": [
+            0.045,
+            0.5,
+            0.045
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0.36,
+            0,
+            0
+          ],
+          "size": [
+            0.045,
+            0.5,
+            0.045
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            -0.36,
+            -0.25,
+            0
+          ],
+          "size": [
+            0.29,
+            0.09,
+            0.28
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0.36,
+            -0.25,
+            0
+          ],
+          "size": [
+            0.29,
+            0.09,
+            0.28
+          ],
+          "color": "accent"
+        }
+      ],
+      "roof_charm_cap": 8,
+      "rune_distances": [
+        5,
+        10
+      ]
+    },
+    "rootlight_crown": {
+      "name": "The Rootlight Crown",
+      "color": "79ba87",
+      "accent": "d9dc95",
+      "account": "A small crown of root and leaf floats above the well. Green roof beads repeat its light through the lanes. Gatherers say the crown belongs to the first seed the commons agreed to share, rather than to the person who found it.",
+      "custom": "Households exchange a cutting with a new neighbor. Herb beds and the apothecary face daily needs; the charmwright tends the little lights above their roofs.",
+      "pieces": [
+        {
+          "point": [
+            0,
+            -0.1,
+            0
+          ],
+          "size": [
+            0.09,
+            0.5,
+            0.09
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            -0.17,
+            0.04,
+            0
+          ],
+          "size": [
+            0.38,
+            0.07,
+            0.08
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0.14,
+            0.15,
+            0
+          ],
+          "size": [
+            0.31,
+            0.07,
+            0.08
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            -0.29,
+            0.15,
+            0
+          ],
+          "size": [
+            0.32,
+            0.22,
+            0.31
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0.27,
+            0.28,
+            0
+          ],
+          "size": [
+            0.31,
+            0.24,
+            0.29
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0.38,
+            0
+          ],
+          "size": [
+            0.29,
+            0.24,
+            0.31
+          ],
+          "color": "color"
+        }
+      ],
+      "roof_charm_cap": 8,
+      "rune_distances": [
+        5,
+        10
+      ]
+    },
+    "traveler_star": {
+      "name": "The Travelers Star",
+      "color": "82bde1",
+      "accent": "ecd39a",
+      "account": "A six-point star turns above the well. Its light appears again over roofs and along the town roads. Caravan families say the star was once a lost camp lantern that learned to stay where travelers could find company.",
+      "custom": "A departing caravan leaves road news with the inn. The next arriving traveler receives a cup before being asked for a name. Letter writers and charmwrights work beside the supply shops.",
+      "pieces": [
+        {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.3,
+            0.3,
+            0.3
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1.0,
+            0.08,
+            0.08
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.08,
+            1.0,
+            0.08
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            0.08,
+            0.08,
+            1.0
+          ],
+          "color": "color"
+        }
+      ],
+      "roof_charm_cap": 8,
+      "rune_distances": [
+        5,
+        10
+      ]
+    },
+    "spore_chorus": {
+      "name": "The Spore Chorus",
+      "color": "bc8bd4",
+      "accent": "ead8a0",
+      "account": "A cap-shaped charm hangs above the well, surrounded by pale beads of light. Matching pink lights hover over household roofs. The commons calls this the Spore Chorus, though neighbors disagree about whether it has ever sung aloud.",
+      "custom": "A new household lends a story to the common supper. Spore gardens, the herbal counter and the charmwright share a lane, so a strange neighbor can still find ordinary help.",
+      "pieces": [
+        {
+          "point": [
+            0,
+            -0.16,
+            0
+          ],
+          "size": [
+            0.12,
+            0.48,
+            0.12
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0,
+            0.14,
+            0
+          ],
+          "size": [
+            0.91,
+            0.13,
+            0.82
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0.25,
+            0
+          ],
+          "size": [
+            0.67,
+            0.14,
+            0.62
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0.36,
+            0
+          ],
+          "size": [
+            0.37,
+            0.1,
+            0.36
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            -0.24,
+            0.18,
+            0.39
+          ],
+          "size": [
+            0.12,
+            0.07,
+            0.035
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0.24,
+            0.18,
+            0.39
+          ],
+          "size": [
+            0.12,
+            0.07,
+            0.035
+          ],
+          "color": "accent"
+        }
+      ],
+      "roof_charm_cap": 8,
+      "rune_distances": [
+        5,
+        10
+      ]
+    },
+    "borrowed_ember": {
+      "name": "The Borrowed Ember",
+      "color": "efad69",
+      "accent": "f3dab3",
+      "account": "An ember hangs above the well and turns slowly without a brazier. Warm-colored roof beads and road marks repeat its light. The town calls it borrowed because every household promises to look after somebody beyond its own hearth.",
+      "custom": "Before a long journey, neighbors ask who will receive the traveler at the other end. The tea shop and winterroot beds serve the hearth lanes, and the charmwright keeps the roof lights in repair.",
+      "pieces": [
+        {
+          "point": [
+            0,
+            -0.15,
+            0
+          ],
+          "size": [
+            0.34,
+            0.35,
+            0.34
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0,
+            0.1,
+            0
+          ],
+          "size": [
+            0.25,
+            0.31,
+            0.25
+          ],
+          "color": "color"
+        },
+        {
+          "point": [
+            0.07,
+            0.35,
+            0
+          ],
+          "size": [
+            0.12,
+            0.23,
+            0.13
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            -0.19,
+            -0.12,
+            0
+          ],
+          "size": [
+            0.1,
+            0.22,
+            0.14
+          ],
+          "color": "accent"
+        },
+        {
+          "point": [
+            0.18,
+            -0.1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.25,
+            0.14
+          ],
+          "color": "accent"
+        }
+      ],
+      "roof_charm_cap": 8,
+      "rune_distances": [
+        5,
+        10
+      ]
+    }
+  }
+}

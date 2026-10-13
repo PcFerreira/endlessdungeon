@@ -1,0 +1,265 @@
+{
+  "version": 1,
+  "cycle_seconds": 240,
+  "routines": {
+    "default": {
+      "dwell_seconds": 4,
+      "phase_seconds": 18,
+      "speed": 0.85
+    },
+    "fountain_keeper": {
+      "dwell_seconds": 6,
+      "phase_seconds": 24,
+      "speed": 0.75
+    }
+  },
+  "episodes": [
+    {
+      "id": "supper",
+      "start_seconds": 35,
+      "finish_seconds": 70,
+      "end_seconds": 100,
+      "label": "Fountain supper",
+      "visual": "meal"
+    },
+    {
+      "id": "delivery",
+      "start_seconds": 140,
+      "finish_seconds": 175,
+      "end_seconds": 215,
+      "label": "Local delivery",
+      "visual": "crates"
+    }
+  ],
+  "species": [
+    {
+      "id": "cat",
+      "habitats": [
+        "town"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 4,
+      "height": 0.42,
+      "speed": 0.65,
+      "idle": "Idle_Eating",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Cat.gltf"
+        ]
+      }
+    },
+    {
+      "id": "chicken",
+      "habitats": [
+        "town",
+        "wild"
+      ],
+      "biomes": [
+        1
+      ],
+      "weight": 3,
+      "height": 0.36,
+      "speed": 0.65,
+      "idle": "Idle_Peck",
+      "walk": "Run",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Chicken.gltf"
+        ]
+      }
+    },
+    {
+      "id": "chick",
+      "habitats": [
+        "town"
+      ],
+      "biomes": [
+        0,
+        1
+      ],
+      "weight": 1,
+      "height": 0.25,
+      "speed": 0.55,
+      "idle": "Idle",
+      "walk": "Run",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Chick.gltf"
+        ]
+      }
+    },
+    {
+      "id": "dog",
+      "habitats": [
+        "town"
+      ],
+      "biomes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weight": 2,
+      "height": 0.5,
+      "speed": 0.75,
+      "idle": "Idle",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Dog.gltf"
+        ]
+      }
+    },
+    {
+      "id": "horse",
+      "habitats": [
+        "town"
+      ],
+      "biomes": [
+        1,
+        2
+      ],
+      "weight": 1,
+      "height": 0.9,
+      "speed": 0.75,
+      "idle": "Idle_Eating",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Horse.gltf"
+        ]
+      }
+    },
+    {
+      "id": "pig",
+      "habitats": [
+        "town"
+      ],
+      "biomes": [
+        0,
+        1
+      ],
+      "weight": 1,
+      "height": 0.48,
+      "speed": 0.6,
+      "idle": "Idle_Eating",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Pig.gltf"
+        ]
+      }
+    },
+    {
+      "id": "raccoon",
+      "habitats": [
+        "wild"
+      ],
+      "biomes": [
+        0
+      ],
+      "weight": 4,
+      "height": 0.36,
+      "speed": 0.65,
+      "idle": "Idle_Eating",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Raccoon.gltf"
+        ]
+      }
+    },
+    {
+      "id": "sheep",
+      "habitats": [
+        "town",
+        "wild"
+      ],
+      "biomes": [
+        1,
+        3
+      ],
+      "weight": 4,
+      "height": 0.55,
+      "speed": 0.6,
+      "idle": "Idle_Eating",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Sheep.gltf"
+        ]
+      }
+    },
+    {
+      "id": "wolf",
+      "habitats": [
+        "wild"
+      ],
+      "biomes": [
+        0,
+        3
+      ],
+      "weight": 1,
+      "height": 0.6,
+      "speed": 0.85,
+      "idle": "Idle",
+      "walk": "Walk",
+      "models": {
+        "pack": "quaternius_cube_world",
+        "tags": [
+          "animal",
+          "voxel"
+        ],
+        "patterns": [
+          "*/Wolf.gltf"
+        ]
+      }
+    }
+  ]
+}
