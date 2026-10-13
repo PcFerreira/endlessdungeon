@@ -1,0 +1,76 @@
+{
+  "id": "fantasy_song_pack_volume_1",
+  "title": "Fantasy Song Pack Volume 1",
+  "author": "troubadour",
+  "source": "https://opengameart.org/content/fantasy-song-pack-volume-1",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/back_to_nature.mp3",
+      "filename": "back_to_nature.mp3",
+      "bytes": 4113223,
+      "sha256": "0828819e80e4053e1d5aeb9a4ac0f0a408faa00baee56c1ca95b817bcd53f243",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/bells_of_winter.mp3",
+      "filename": "bells_of_winter.mp3",
+      "bytes": 2829923,
+      "sha256": "4dd6866f5656be615d3350c834afde2a178db9bb39aa2eacb44175a5a1d78891",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/fairy_lights.mp3",
+      "filename": "fairy_lights.mp3",
+      "bytes": 3800642,
+      "sha256": "611b9b954402fc39b3e09056be3aebe29b31d0fca9c8ba56bb9ccbef4e505c3d",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/homestead.mp3",
+      "filename": "homestead.mp3",
+      "bytes": 3293101,
+      "sha256": "b6ce65fceb9373f32697ed27455ed995fa03a77649b04a6f3e86a0243d25d4b3",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/jaunt.mp3",
+      "filename": "jaunt.mp3",
+      "bytes": 3049408,
+      "sha256": "2ae658c0dc91b731b0c27f7a7782f081286fd8ea1b40558f09eaa40d54a77bb5",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/snow_day.mp3",
+      "filename": "snow_day.mp3",
+      "bytes": 3219005,
+      "sha256": "d86de22290751de924068c5203ac82f11bffaa704365622d028211c29498356f",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/springly_sprigs.mp3",
+      "filename": "springly_sprigs.mp3",
+      "bytes": 3340593,
+      "sha256": "5699d453006964fc9b46ff0c5ca3c1c98d7e972e8bbdf91c9f2eab321fa56b1a",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/wandering_woodlands.mp3",
+      "filename": "wandering_woodlands.mp3",
+      "bytes": 3803448,
+      "sha256": "122c6726939e0358b916828fdf66fb275d88f4033562adfbe1c99b63803c6559",
+      "archive_crc_checked": false
+    }
+  ],
+  "style": "Music",
+  "categories": [
+    "Exploration",
+    "settlements",
+    "winter"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Fantasy Song Pack Volume 1 by troubadour. Source: https://opengameart.org/content/fantasy-song-pack-volume-1. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kaykit_furniture",
+  "title": "KayKit Furniture Bits",
+  "author": "Kay Lousberg",
+  "source": "https://github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0",
+  "revision": "96d5930a8dbdb363409bbc2d3341718b00e17c9c",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://codeload.github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0/zip/96d5930a8dbdb363409bbc2d3341718b00e17c9c",
+      "filename": "kaykit_furniture.zip",
+      "bytes": 683587,
+      "sha256": "84be044ad8aa6d7b2e5e6e01ce6f2cc97133c07c04f9de7d98dc2677a0234242",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Interiors",
+    "Furniture"
+  ],
+  "attribution_required": false,
+  "attribution_text": "KayKit Furniture Bits by Kay Lousberg. Source: https://github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

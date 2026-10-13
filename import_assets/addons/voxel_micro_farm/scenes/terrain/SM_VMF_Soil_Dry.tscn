@@ -1,0 +1,36 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_ltfp6"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Dry_Geo.res" id="2_bpu8m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ulfj"]
+size = Vector3(1, 0.32, 1)
+
+[node name="SM_VMF_Soil_Dry" type="Node3D" unique_id=2030963901]
+metadata/vmf_asset = "SM_VMF_Soil_Dry"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="." unique_id=1466077412]
+
+[node name="SM_VMF_Soil_Dry" type="Node3D" parent="Model" unique_id=1816498570]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Dry_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Soil_Dry" unique_id=10507421]
+material_override = ExtResource("1_ltfp6")
+mesh = ExtResource("2_bpu8m")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="Model/SM_VMF_Soil_Dry" unique_id=2003239009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=619324416]
+
+[node name="@CollisionShape3D@22" type="CollisionShape3D" parent="StaticCollision" unique_id=1818970145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_1ulfj")

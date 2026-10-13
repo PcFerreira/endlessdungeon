@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_80m2a"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Tomato_Seedling_Geo.res" id="2_rwcyr"]
+
+[node name="SM_VMF_Crop_Tomato_Seedling" type="Node3D" unique_id=636995144]
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="." unique_id=201519937]
+
+[node name="SM_VMF_Crop_Tomato_Seedling" type="Node3D" parent="Model" unique_id=269047380]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Seedling_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Crop_Tomato_Seedling" unique_id=333909281]
+material_override = ExtResource("1_80m2a")
+mesh = ExtResource("2_rwcyr")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="Model/SM_VMF_Crop_Tomato_Seedling" unique_id=544897999]

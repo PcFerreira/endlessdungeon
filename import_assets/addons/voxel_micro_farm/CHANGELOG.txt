@@ -1,0 +1,21 @@
+1.0.2 — 2026-10-11
+
+Removed the duplicate LICENSE and development .gitignore from the ZIP root.
+The full license remains in addons/voxel_micro_farm/LICENSE, unchanged.
+Models, scenes, scripts, icons, audio and demo settings are unchanged from 1.0.1.
+
+1.0.1 — 2026-10-10
+
+Fixed the full demo archive's renderer settings. It now preserves Compatibility,
+MSAA and display settings while omitting the development editor plugin section.
+Replaced runtime WAV filename scanning with six explicit audio resources.
+Fixed the overview's first hinge toggle, and scoped cached hinge groups to each
+example instance. Other Pivot nodes are not affected by the viewer.
+Cleaned internal export suffixes and removed internal concept revision metadata.
+Kept the 36 public asset scene paths, scale, pivots, geometry and license.
+Grouped the asset overview into four sections with camera-facing labels.
+Added slight orientation variation to selected farm crop placements.
+
+1.0.0 — 2026-10-10
+Initial Godot art asset release, with 36 reusable scenes, 36 icons, six sounds
+and two native demonstration scenes.

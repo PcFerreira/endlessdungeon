@@ -1,0 +1,25 @@
+{
+  "id": "isometric_skeleton_warrior",
+  "title": "Skeleton Warrior",
+  "author": "Clint Bellanger; sword concept by Misha",
+  "license": "CC-BY-3.0",
+  "source": "https://opengameart.org/content/skeleton-warrior-0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/skeleton_0.png",
+      "filename": "skeleton_0.png",
+      "bytes": 1990277,
+      "sha256": "6c1fd9a6a514d3319d89edcd6205d212ace3676b42c575e513b2085b16c52f86",
+      "archive_crc_checked": false
+    }
+  ],
+  "style": "Isometric rendered sprites",
+  "categories": [
+    "Animated enemy"
+  ],
+  "attribution_required": true,
+  "attribution_text": "Skeleton Warrior by Clint Bellanger; sword concept by Misha. Source: https://opengameart.org/content/skeleton-warrior-0. License: CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

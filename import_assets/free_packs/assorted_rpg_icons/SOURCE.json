@@ -1,0 +1,29 @@
+{
+  "id": "assorted_rpg_icons",
+  "title": "16x16 Assorted RPG Icons",
+  "author": "Shade",
+  "source": "https://opengameart.org/content/16x16-assorted-rpg-icons",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/16x16_assorted_rpg_icons_0.zip",
+      "filename": "16x16_assorted_rpg_icons_0.zip",
+      "bytes": 249070,
+      "sha256": "c3a31aee7f40ef8f55c88e29eb4bdd291668d3d4dc9e34382b35db280a2db0b4",
+      "archive_crc_checked": true
+    }
+  ],
+  "scope": "All files linked in the publisher download section, extracted with author subcollections kept separate.",
+  "style": "Pixel art sheets",
+  "categories": [
+    "Equipment",
+    "Consumables",
+    "Books",
+    "Chests"
+  ],
+  "attribution_required": false,
+  "attribution_text": "16x16 Assorted RPG Icons by Shade. Source: https://opengameart.org/content/16x16-assorted-rpg-icons. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None. Original asset bytes and bundled notices are preserved; archives in author collections were extracted into separate subdirectories."
+}

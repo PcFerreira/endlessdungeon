@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_o6k6e"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Daikon_Growing_Geo.res" id="2_5h12t"]
+
+[node name="SM_VMF_Crop_Daikon_Growing" type="Node3D" unique_id=2009932952]
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Growing"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="." unique_id=1107273772]
+
+[node name="SM_VMF_Crop_Daikon_Growing" type="Node3D" parent="Model" unique_id=889107041]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Growing_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Crop_Daikon_Growing" unique_id=899950719]
+material_override = ExtResource("1_o6k6e")
+mesh = ExtResource("2_5h12t")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="Model/SM_VMF_Crop_Daikon_Growing" unique_id=1758691111]

@@ -1,0 +1,25 @@
+{
+  "id": "isometric_pixel_outside",
+  "title": "Isometric 64x64 Outside Tileset",
+  "author": "Yar",
+  "license": "CC-BY-3.0",
+  "source": "https://opengameart.org/content/isometric-64x64-outside-tileset",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/iso-64x64-outside.png",
+      "filename": "iso-64x64-outside.png",
+      "bytes": 62615,
+      "sha256": "23700b65d6fb0c7dca5f1f189ed25031845d3c57da27c520ac001e02930647ea",
+      "archive_crc_checked": false
+    }
+  ],
+  "style": "Isometric pixel art",
+  "categories": [
+    "Outdoor terrain"
+  ],
+  "attribution_required": true,
+  "attribution_text": "Isometric 64x64 Outside Tileset by Yar. Source: https://opengameart.org/content/isometric-64x64-outside-tileset. License: CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_0e073"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Detail_GrassTuft_Geo.res" id="2_7iwlq"]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" unique_id=1630679251]
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="." unique_id=1445673684]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="Model" unique_id=259960388]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Detail_GrassTuft" unique_id=730972228]
+material_override = ExtResource("1_0e073")
+mesh = ExtResource("2_7iwlq")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}

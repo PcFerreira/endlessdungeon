@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_r1oal"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_Crate_Body.res" id="2_r48xe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7acm"]
+size = Vector3(0.59999996, 0.32, 0.48)
+
+[node name="SM_VMF_Prop_Crate" type="Node3D" unique_id=597169327]
+metadata/vmf_asset = "SM_VMF_Prop_Crate"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="." unique_id=1118195042]
+
+[node name="SM_VMF_Prop_Crate" type="Node3D" parent="Model" unique_id=1892508758]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Prop_Crate_Body" type="MeshInstance3D" parent="Model/SM_VMF_Prop_Crate" unique_id=1509303781]
+material_override = ExtResource("1_r1oal")
+mesh = ExtResource("2_r48xe")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=1292988038]
+
+[node name="@CollisionShape3D@19" type="CollisionShape3D" parent="StaticCollision" unique_id=180622248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16, 0)
+shape = SubResource("BoxShape3D_d7acm")

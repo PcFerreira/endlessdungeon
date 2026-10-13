@@ -1,0 +1,3900 @@
+[
+  {
+    "path": "dungeon_ambience/dungeon_ambient_1_0.ogg",
+    "duration_seconds": 94.30975,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/back_to_nature.mp3",
+    "duration_seconds": 167.932245,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/bells_of_winter.mp3",
+    "duration_seconds": 150.52898,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/fairy_lights.mp3",
+    "duration_seconds": 160.085556,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/homestead.mp3",
+    "duration_seconds": 147.286327,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/jaunt.mp3",
+    "duration_seconds": 144.006757,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/snow_day.mp3",
+    "duration_seconds": 146.698458,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/springly_sprigs.mp3",
+    "duration_seconds": 142.211814,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "fantasy_song_pack_volume_1/wandering_woodlands.mp3",
+    "duration_seconds": 167.737279,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_carpet_000.ogg",
+    "duration_seconds": 0.144785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_carpet_001.ogg",
+    "duration_seconds": 0.144785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_carpet_002.ogg",
+    "duration_seconds": 0.144785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_carpet_003.ogg",
+    "duration_seconds": 0.144785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_carpet_004.ogg",
+    "duration_seconds": 0.144785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_concrete_000.ogg",
+    "duration_seconds": 0.105918,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_concrete_001.ogg",
+    "duration_seconds": 0.107642,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_concrete_002.ogg",
+    "duration_seconds": 0.112789,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_concrete_003.ogg",
+    "duration_seconds": 0.110499,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_concrete_004.ogg",
+    "duration_seconds": 0.114354,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_grass_000.ogg",
+    "duration_seconds": 0.777574,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_grass_001.ogg",
+    "duration_seconds": 0.673605,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_grass_002.ogg",
+    "duration_seconds": 0.692449,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_grass_003.ogg",
+    "duration_seconds": 0.66932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_grass_004.ogg",
+    "duration_seconds": 0.590227,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_snow_000.ogg",
+    "duration_seconds": 0.374218,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_snow_001.ogg",
+    "duration_seconds": 0.374218,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_snow_002.ogg",
+    "duration_seconds": 0.374218,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_snow_003.ogg",
+    "duration_seconds": 0.374218,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_snow_004.ogg",
+    "duration_seconds": 0.374218,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_wood_000.ogg",
+    "duration_seconds": 0.249592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_wood_001.ogg",
+    "duration_seconds": 0.251565,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_wood_002.ogg",
+    "duration_seconds": 0.251383,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_wood_003.ogg",
+    "duration_seconds": 0.251519,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/footstep_wood_004.ogg",
+    "duration_seconds": 0.247914,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactBell_heavy_000.ogg",
+    "duration_seconds": 1.480181,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactBell_heavy_001.ogg",
+    "duration_seconds": 1.740862,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactBell_heavy_002.ogg",
+    "duration_seconds": 0.697279,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactBell_heavy_003.ogg",
+    "duration_seconds": 0.653605,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactBell_heavy_004.ogg",
+    "duration_seconds": 0.301451,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGeneric_light_000.ogg",
+    "duration_seconds": 0.138685,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGeneric_light_001.ogg",
+    "duration_seconds": 0.117506,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGeneric_light_002.ogg",
+    "duration_seconds": 0.139592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGeneric_light_003.ogg",
+    "duration_seconds": 0.137982,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGeneric_light_004.ogg",
+    "duration_seconds": 0.14034,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_heavy_000.ogg",
+    "duration_seconds": 0.241224,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_heavy_001.ogg",
+    "duration_seconds": 0.429002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_heavy_002.ogg",
+    "duration_seconds": 0.247166,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_heavy_003.ogg",
+    "duration_seconds": 0.171542,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_heavy_004.ogg",
+    "duration_seconds": 0.399184,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_light_000.ogg",
+    "duration_seconds": 0.209592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_light_001.ogg",
+    "duration_seconds": 0.209592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_light_002.ogg",
+    "duration_seconds": 0.209592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_light_003.ogg",
+    "duration_seconds": 0.209592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_light_004.ogg",
+    "duration_seconds": 0.209592,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_medium_000.ogg",
+    "duration_seconds": 0.543356,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_medium_001.ogg",
+    "duration_seconds": 0.543356,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_medium_002.ogg",
+    "duration_seconds": 0.543356,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_medium_003.ogg",
+    "duration_seconds": 0.543356,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactGlass_medium_004.ogg",
+    "duration_seconds": 0.543356,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_heavy_000.ogg",
+    "duration_seconds": 0.167664,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_heavy_001.ogg",
+    "duration_seconds": 0.359274,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_heavy_002.ogg",
+    "duration_seconds": 0.117302,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_heavy_003.ogg",
+    "duration_seconds": 0.206916,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_heavy_004.ogg",
+    "duration_seconds": 0.13381,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_light_000.ogg",
+    "duration_seconds": 0.351474,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_light_001.ogg",
+    "duration_seconds": 0.251837,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_light_002.ogg",
+    "duration_seconds": 0.235782,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_light_003.ogg",
+    "duration_seconds": 0.482041,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_light_004.ogg",
+    "duration_seconds": 0.213401,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_medium_000.ogg",
+    "duration_seconds": 0.271769,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_medium_001.ogg",
+    "duration_seconds": 0.143447,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_medium_002.ogg",
+    "duration_seconds": 0.119138,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_medium_003.ogg",
+    "duration_seconds": 0.253968,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMetal_medium_004.ogg",
+    "duration_seconds": 0.109433,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMining_000.ogg",
+    "duration_seconds": 0.937438,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMining_001.ogg",
+    "duration_seconds": 0.86941,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMining_002.ogg",
+    "duration_seconds": 0.804671,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMining_003.ogg",
+    "duration_seconds": 0.991723,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactMining_004.ogg",
+    "duration_seconds": 0.830295,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlank_medium_000.ogg",
+    "duration_seconds": 0.779002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlank_medium_001.ogg",
+    "duration_seconds": 0.779002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlank_medium_002.ogg",
+    "duration_seconds": 0.779002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlank_medium_003.ogg",
+    "duration_seconds": 0.779002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlank_medium_004.ogg",
+    "duration_seconds": 0.779002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_heavy_000.ogg",
+    "duration_seconds": 0.488662,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_heavy_001.ogg",
+    "duration_seconds": 0.352336,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_heavy_002.ogg",
+    "duration_seconds": 0.494195,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_heavy_003.ogg",
+    "duration_seconds": 0.346553,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_heavy_004.ogg",
+    "duration_seconds": 0.55907,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_light_000.ogg",
+    "duration_seconds": 0.542426,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_light_001.ogg",
+    "duration_seconds": 0.654671,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_light_002.ogg",
+    "duration_seconds": 0.488821,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_light_003.ogg",
+    "duration_seconds": 0.527596,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_light_004.ogg",
+    "duration_seconds": 0.656599,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_medium_000.ogg",
+    "duration_seconds": 0.609274,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_medium_001.ogg",
+    "duration_seconds": 0.616213,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_medium_002.ogg",
+    "duration_seconds": 0.515238,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_medium_003.ogg",
+    "duration_seconds": 0.653673,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPlate_medium_004.ogg",
+    "duration_seconds": 0.534308,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_heavy_000.ogg",
+    "duration_seconds": 0.649025,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_heavy_001.ogg",
+    "duration_seconds": 0.535941,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_heavy_002.ogg",
+    "duration_seconds": 0.457483,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_heavy_003.ogg",
+    "duration_seconds": 0.47381,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_heavy_004.ogg",
+    "duration_seconds": 0.536349,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_medium_000.ogg",
+    "duration_seconds": 0.430544,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_medium_001.ogg",
+    "duration_seconds": 0.404603,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_medium_002.ogg",
+    "duration_seconds": 0.541406,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_medium_003.ogg",
+    "duration_seconds": 0.455261,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactPunch_medium_004.ogg",
+    "duration_seconds": 0.542925,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_heavy_000.ogg",
+    "duration_seconds": 0.505102,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_heavy_001.ogg",
+    "duration_seconds": 0.572041,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_heavy_002.ogg",
+    "duration_seconds": 0.572313,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_heavy_003.ogg",
+    "duration_seconds": 0.544172,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_heavy_004.ogg",
+    "duration_seconds": 0.500952,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_medium_000.ogg",
+    "duration_seconds": 0.118005,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_medium_001.ogg",
+    "duration_seconds": 0.183288,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_medium_002.ogg",
+    "duration_seconds": 0.135193,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_medium_003.ogg",
+    "duration_seconds": 0.140227,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactSoft_medium_004.ogg",
+    "duration_seconds": 0.147143,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactTin_medium_000.ogg",
+    "duration_seconds": 0.158707,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactTin_medium_001.ogg",
+    "duration_seconds": 0.174308,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactTin_medium_002.ogg",
+    "duration_seconds": 0.133787,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactTin_medium_003.ogg",
+    "duration_seconds": 0.214558,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactTin_medium_004.ogg",
+    "duration_seconds": 0.178549,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_heavy_000.ogg",
+    "duration_seconds": 0.313039,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_heavy_001.ogg",
+    "duration_seconds": 0.313039,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_heavy_002.ogg",
+    "duration_seconds": 0.313039,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_heavy_003.ogg",
+    "duration_seconds": 0.313039,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_heavy_004.ogg",
+    "duration_seconds": 0.313039,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_light_000.ogg",
+    "duration_seconds": 0.265601,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_light_001.ogg",
+    "duration_seconds": 0.265601,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_light_002.ogg",
+    "duration_seconds": 0.265601,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_light_003.ogg",
+    "duration_seconds": 0.265601,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_light_004.ogg",
+    "duration_seconds": 0.265601,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_medium_000.ogg",
+    "duration_seconds": 0.332676,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_medium_001.ogg",
+    "duration_seconds": 0.332676,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_medium_002.ogg",
+    "duration_seconds": 0.332676,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_medium_003.ogg",
+    "duration_seconds": 0.332676,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_impact_sounds/Audio/impactWood_medium_004.ogg",
+    "duration_seconds": 0.332676,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/back_001.ogg",
+    "duration_seconds": 0.063878,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/back_002.ogg",
+    "duration_seconds": 0.069841,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/back_003.ogg",
+    "duration_seconds": 0.09288,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/back_004.ogg",
+    "duration_seconds": 0.072993,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/bong_001.ogg",
+    "duration_seconds": 0.122834,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/click_001.ogg",
+    "duration_seconds": 0.100023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/click_002.ogg",
+    "duration_seconds": 0.010023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/click_003.ogg",
+    "duration_seconds": 0.010023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/click_004.ogg",
+    "duration_seconds": 0.010023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/click_005.ogg",
+    "duration_seconds": 0.010023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/close_001.ogg",
+    "duration_seconds": 0.147778,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/close_002.ogg",
+    "duration_seconds": 0.313787,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/close_003.ogg",
+    "duration_seconds": 0.313787,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/close_004.ogg",
+    "duration_seconds": 0.32288,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/confirmation_001.ogg",
+    "duration_seconds": 0.289841,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/confirmation_002.ogg",
+    "duration_seconds": 0.539002,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/confirmation_003.ogg",
+    "duration_seconds": 0.322018,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/confirmation_004.ogg",
+    "duration_seconds": 0.490408,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/drop_001.ogg",
+    "duration_seconds": 0.109819,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/drop_002.ogg",
+    "duration_seconds": 0.191088,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/drop_003.ogg",
+    "duration_seconds": 0.191088,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/drop_004.ogg",
+    "duration_seconds": 0.286689,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_001.ogg",
+    "duration_seconds": 0.164558,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_002.ogg",
+    "duration_seconds": 0.164558,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_003.ogg",
+    "duration_seconds": 0.533469,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_004.ogg",
+    "duration_seconds": 0.102698,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_005.ogg",
+    "duration_seconds": 0.500045,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_006.ogg",
+    "duration_seconds": 0.500045,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_007.ogg",
+    "duration_seconds": 0.191995,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/error_008.ogg",
+    "duration_seconds": 0.13932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glass_001.ogg",
+    "duration_seconds": 0.278435,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glass_002.ogg",
+    "duration_seconds": 0.125306,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glass_003.ogg",
+    "duration_seconds": 0.123673,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glass_004.ogg",
+    "duration_seconds": 0.692268,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glass_005.ogg",
+    "duration_seconds": 0.110794,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glass_006.ogg",
+    "duration_seconds": 0.110794,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glitch_001.ogg",
+    "duration_seconds": 0.020023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glitch_002.ogg",
+    "duration_seconds": 0.030023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glitch_003.ogg",
+    "duration_seconds": 0.010023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/glitch_004.ogg",
+    "duration_seconds": 0.022902,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_001.ogg",
+    "duration_seconds": 0.25839,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_002.ogg",
+    "duration_seconds": 0.258277,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_003.ogg",
+    "duration_seconds": 0.211859,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_004.ogg",
+    "duration_seconds": 0.417959,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_005.ogg",
+    "duration_seconds": 0.526372,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_006.ogg",
+    "duration_seconds": 0.379955,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_007.ogg",
+    "duration_seconds": 0.18576,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_008.ogg",
+    "duration_seconds": 0.225351,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/maximize_009.ogg",
+    "duration_seconds": 0.224785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_001.ogg",
+    "duration_seconds": 0.25839,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_002.ogg",
+    "duration_seconds": 0.258277,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_003.ogg",
+    "duration_seconds": 0.211859,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_004.ogg",
+    "duration_seconds": 0.417959,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_005.ogg",
+    "duration_seconds": 0.526372,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_006.ogg",
+    "duration_seconds": 0.379955,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_007.ogg",
+    "duration_seconds": 0.18576,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_008.ogg",
+    "duration_seconds": 0.225351,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/minimize_009.ogg",
+    "duration_seconds": 0.224785,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/open_001.ogg",
+    "duration_seconds": 0.147778,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/open_002.ogg",
+    "duration_seconds": 0.313787,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/open_003.ogg",
+    "duration_seconds": 0.313787,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/open_004.ogg",
+    "duration_seconds": 0.32288,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/pluck_001.ogg",
+    "duration_seconds": 0.102426,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/pluck_002.ogg",
+    "duration_seconds": 0.164558,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/question_001.ogg",
+    "duration_seconds": 0.49068,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/question_002.ogg",
+    "duration_seconds": 0.332517,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/question_003.ogg",
+    "duration_seconds": 0.332494,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/question_004.ogg",
+    "duration_seconds": 0.332472,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scratch_001.ogg",
+    "duration_seconds": 0.13932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scratch_002.ogg",
+    "duration_seconds": 0.13932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scratch_003.ogg",
+    "duration_seconds": 0.123424,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scratch_004.ogg",
+    "duration_seconds": 0.325079,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scratch_005.ogg",
+    "duration_seconds": 0.325079,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scroll_001.ogg",
+    "duration_seconds": 1.000023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scroll_002.ogg",
+    "duration_seconds": 1.000023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scroll_003.ogg",
+    "duration_seconds": 1.000023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scroll_004.ogg",
+    "duration_seconds": 1.000023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/scroll_005.ogg",
+    "duration_seconds": 1.000023,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_001.ogg",
+    "duration_seconds": 0.043288,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_002.ogg",
+    "duration_seconds": 0.043288,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_003.ogg",
+    "duration_seconds": 0.382766,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_004.ogg",
+    "duration_seconds": 0.382766,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_005.ogg",
+    "duration_seconds": 0.382766,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_006.ogg",
+    "duration_seconds": 1.943923,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_007.ogg",
+    "duration_seconds": 0.046939,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/select_008.ogg",
+    "duration_seconds": 0.046939,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_001.ogg",
+    "duration_seconds": 0.617664,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_002.ogg",
+    "duration_seconds": 0.610952,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_003.ogg",
+    "duration_seconds": 0.5,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_004.ogg",
+    "duration_seconds": 0.5,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_005.ogg",
+    "duration_seconds": 0.611927,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_006.ogg",
+    "duration_seconds": 0.610544,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/switch_007.ogg",
+    "duration_seconds": 0.614354,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/tick_001.ogg",
+    "duration_seconds": 0.02322,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/tick_002.ogg",
+    "duration_seconds": 0.02322,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/tick_004.ogg",
+    "duration_seconds": 0.054807,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/toggle_001.ogg",
+    "duration_seconds": 0.13932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/toggle_002.ogg",
+    "duration_seconds": 0.13932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/toggle_003.ogg",
+    "duration_seconds": 0.13932,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_interface_sounds/Audio/toggle_004.ogg",
+    "duration_seconds": 0.066168,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/beltHandle1.ogg",
+    "duration_seconds": 0.276708,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/beltHandle2.ogg",
+    "duration_seconds": 0.476563,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookClose.ogg",
+    "duration_seconds": 0.230604,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookFlip1.ogg",
+    "duration_seconds": 0.768646,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookFlip2.ogg",
+    "duration_seconds": 0.430438,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookFlip3.ogg",
+    "duration_seconds": 0.230604,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookOpen.ogg",
+    "duration_seconds": 0.153729,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookPlace1.ogg",
+    "duration_seconds": 0.276708,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookPlace2.ogg",
+    "duration_seconds": 0.353583,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/bookPlace3.ogg",
+    "duration_seconds": 0.261333,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/chop.ogg",
+    "duration_seconds": 0.24025,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/cloth1.ogg",
+    "duration_seconds": 0.661042,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/cloth2.ogg",
+    "duration_seconds": 0.415063,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/cloth3.ogg",
+    "duration_seconds": 0.476563,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/cloth4.ogg",
+    "duration_seconds": 0.384333,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/clothBelt.ogg",
+    "duration_seconds": 0.722521,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/clothBelt2.ogg",
+    "duration_seconds": 0.753292,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/creak1.ogg",
+    "duration_seconds": 0.661042,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/creak2.ogg",
+    "duration_seconds": 0.830146,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/creak3.ogg",
+    "duration_seconds": 0.338208,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/doorClose_1.ogg",
+    "duration_seconds": 0.675042,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/doorClose_2.ogg",
+    "duration_seconds": 0.612479,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/doorClose_3.ogg",
+    "duration_seconds": 0.713938,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/doorClose_4.ogg",
+    "duration_seconds": 0.603375,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/doorOpen_1.ogg",
+    "duration_seconds": 0.918958,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/doorOpen_2.ogg",
+    "duration_seconds": 1.413313,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/drawKnife1.ogg",
+    "duration_seconds": 0.399708,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/drawKnife2.ogg",
+    "duration_seconds": 0.445833,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/drawKnife3.ogg",
+    "duration_seconds": 0.476563,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/dropLeather.ogg",
+    "duration_seconds": 0.415083,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep00.ogg",
+    "duration_seconds": 0.248854,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep01.ogg",
+    "duration_seconds": 0.282479,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep02.ogg",
+    "duration_seconds": 0.242146,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep03.ogg",
+    "duration_seconds": 0.269021,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep04.ogg",
+    "duration_seconds": 0.322833,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep05.ogg",
+    "duration_seconds": 0.275771,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep06.ogg",
+    "duration_seconds": 0.242125,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep07.ogg",
+    "duration_seconds": 0.255583,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep08.ogg",
+    "duration_seconds": 0.255583,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/footstep09.ogg",
+    "duration_seconds": 0.215229,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/handleCoins.ogg",
+    "duration_seconds": 0.845521,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/handleCoins2.ogg",
+    "duration_seconds": 0.338208,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/handleSmallLeather.ogg",
+    "duration_seconds": 0.338208,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/handleSmallLeather2.ogg",
+    "duration_seconds": 0.307479,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/knifeSlice.ogg",
+    "duration_seconds": 0.599542,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/knifeSlice2.ogg",
+    "duration_seconds": 0.568792,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/metalClick.ogg",
+    "duration_seconds": 0.445833,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/metalLatch.ogg",
+    "duration_seconds": 0.261333,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/metalPot1.ogg",
+    "duration_seconds": 1.460458,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/metalPot2.ogg",
+    "duration_seconds": 0.937771,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Audio/metalPot3.ogg",
+    "duration_seconds": 0.907,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "kenney_rpg_audio/Preview.ogg",
+    "duration_seconds": 26.127313,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/1.mp3",
+    "duration_seconds": 27.0,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/2.mp3",
+    "duration_seconds": 26.0,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/3.mp3",
+    "duration_seconds": 45.0,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/4.mp3",
+    "duration_seconds": 37.5,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/1.ogg",
+    "duration_seconds": 27.0,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/2.ogg",
+    "duration_seconds": 26.0,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/3.ogg",
+    "duration_seconds": 45.0,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/4.ogg",
+    "duration_seconds": 37.5,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_forest.flac",
+    "duration_seconds": 9.184943,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_mountains.flac",
+    "duration_seconds": 6.019773,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_river.flac",
+    "duration_seconds": 21.423311,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_stream.flac",
+    "duration_seconds": 2.73415,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_waterfall.flac",
+    "duration_seconds": 7.752562,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_wind_1.flac",
+    "duration_seconds": 3.37644,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_forest.wav",
+    "duration_seconds": 9.184943,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_mountains.wav",
+    "duration_seconds": 6.019773,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_river.wav",
+    "duration_seconds": 21.423311,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_stream.wav",
+    "duration_seconds": 2.73415,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_waterfall.wav",
+    "duration_seconds": 7.752562,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_wind_1.wav",
+    "duration_seconds": 3.37644,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_bird_1.flac",
+    "duration_seconds": 2.265397,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_bird_2.flac",
+    "duration_seconds": 3.02585,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_cricket_1.flac",
+    "duration_seconds": 0.188662,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_frog_1.flac",
+    "duration_seconds": 0.921542,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_bird_1.wav",
+    "duration_seconds": 2.265397,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_bird_2.wav",
+    "duration_seconds": 3.02585,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_cricket_1.wav",
+    "duration_seconds": 0.188662,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_frog_1.wav",
+    "duration_seconds": 0.921542,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind1.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind2.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind3.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind4.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind5.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  }
+]

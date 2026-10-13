@@ -1,0 +1,35 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_6qag1"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Untilled_Geo.res" id="2_6fkgc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_supva"]
+size = Vector3(1, 0.24, 1)
+
+[node name="SM_VMF_Soil_Untilled" type="Node3D" unique_id=924216719]
+metadata/vmf_asset = "SM_VMF_Soil_Untilled"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="." unique_id=43009218]
+
+[node name="SM_VMF_Soil_Untilled" type="Node3D" parent="Model" unique_id=954784373]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Untilled_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Soil_Untilled" unique_id=1971700559]
+material_override = ExtResource("1_6qag1")
+mesh = ExtResource("2_6fkgc")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="Model/SM_VMF_Soil_Untilled" unique_id=577105017]
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=185272075]
+
+[node name="@CollisionShape3D@23" type="CollisionShape3D" parent="StaticCollision" unique_id=523670676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0)
+shape = SubResource("BoxShape3D_supva")

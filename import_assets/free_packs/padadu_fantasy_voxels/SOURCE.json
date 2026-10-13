@@ -1,0 +1,127 @@
+{
+  "id": "padadu_fantasy_voxels",
+  "title": "Voxel Models Fantasy Bundle",
+  "author": "padadu",
+  "source": "https://padadu.itch.io/voxel-models-fantasybundle",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554078?source=game_download",
+      "upload_id": "8554078",
+      "filename": "bow_32 vox.vox",
+      "bytes": 1885,
+      "sha256": "9ff958df6511f13449ee8ba39e9ae744576bd0eea7f31a315cabe1414e17df3d",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554079?source=game_download",
+      "upload_id": "8554079",
+      "filename": "bow_48 vox.vox",
+      "bytes": 2653,
+      "sha256": "0bfe6bf8075ad9b6e681ea00d997143878e245daf6bd3029cbbd18b9bb12f753",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554080?source=game_download",
+      "upload_id": "8554080",
+      "filename": "broadsword_48 vox.vox",
+      "bytes": 2965,
+      "sha256": "9b928df6dbf8735959ba97423868b974f839e6cee3715ec40c8dd2beb53a3771",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554081?source=game_download",
+      "upload_id": "8554081",
+      "filename": "brontosaurus_32 vox.vox",
+      "bytes": 3757,
+      "sha256": "005eabd435392f1f07a20c8020d611e069f4926487c90f42fa8c1dff3b27e5a2",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554082?source=game_download",
+      "upload_id": "8554082",
+      "filename": "brontosaurus_48 vox.vox",
+      "bytes": 6189,
+      "sha256": "b8e2381db9f6491262abb09f088da1804e6e96cf0e446579c1a7ca0e1c93d7a0",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554083?source=game_download",
+      "upload_id": "8554083",
+      "filename": "cannon_mesh_32 vox.vox",
+      "bytes": 7421,
+      "sha256": "71534d15e442603ffead41abed4d48815287898e00461b6aa8893e446b70fc8f",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554084?source=game_download",
+      "upload_id": "8554084",
+      "filename": "cannon_mesh_48 voxs.vox",
+      "bytes": 16065,
+      "sha256": "f1921e0aa17b1a84457b1a3c8202d07e877e0163d2c5658ebfe9bd5861bb67db",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554085?source=game_download",
+      "upload_id": "8554085",
+      "filename": "crossbow_32 vox.vox",
+      "bytes": 3137,
+      "sha256": "b667b8cddbe989e0c276c1dbe499588d8bb28190fe98dbc9438704c7a6d5c68a",
+      "archive_crc_checked": false
+    },
+    {
+      "url": "https://padadu.itch.io/voxel-models-fantasybundle/file/8554086?source=game_download",
+      "upload_id": "8554086",
+      "filename": "crossbow_48 vox.vox",
+      "bytes": 5161,
+      "sha256": "7c9825dc4082a04a88157807d224c8a9b8f62c6e45e7533a7dbd5377ab2051db",
+      "archive_crc_checked": false
+    }
+  ],
+  "scope": "Partial pack: 9 of 17 publisher uploads. Bows, broadsword, crossbows, brontosaurus and cannons are included.",
+  "download_note": "itch.io returned HTTP 429 while downloading the remaining uploads. Kept the successfully downloaded, validated files; missing uploads are listed below.",
+  "missing_uploads": [
+    {
+      "upload_id": "8554087",
+      "filename": "dragon 48 vox.zip"
+    },
+    {
+      "upload_id": "8554088",
+      "filename": "dragon_32 vox.zip"
+    },
+    {
+      "upload_id": "8554089",
+      "filename": "golem_32 vox.vox"
+    },
+    {
+      "upload_id": "8554090",
+      "filename": "golem_48 vox.vox"
+    },
+    {
+      "upload_id": "8554092",
+      "filename": "hammeraxe_32 vox.vox"
+    },
+    {
+      "upload_id": "8554091",
+      "filename": "hammeraxe_48 vox.vox"
+    },
+    {
+      "upload_id": "8554095",
+      "filename": "knight_statue_32  vox.vox"
+    },
+    {
+      "upload_id": "8554097",
+      "filename": "shield_32 vox.vox"
+    }
+  ],
+  "style": "MagicaVoxel source",
+  "categories": [
+    "Weapons",
+    "creatures"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Voxel Models Fantasy Bundle by padadu. Source: https://padadu.itch.io/voxel-models-fantasybundle. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

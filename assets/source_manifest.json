@@ -1,0 +1,292 @@
+[
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/barrel_large.gltf",
+    "runtime": "assets/environment/kaykit/barrel_large.gltf",
+    "sha256": "6a3b211d6ae6bfb028a0bbb836d5aec6d09c805c43dbd03c28543458243273cc"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/barrel_large.bin",
+    "runtime": "assets/environment/kaykit/barrel_large.bin",
+    "sha256": "f6ed14f969f48ba104521223486e3be16e5b4efee6d369b61ff5fceb53bae4c7"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/dungeon_texture.png",
+    "runtime": "assets/environment/kaykit/dungeon_texture.png",
+    "sha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/crates_stacked.gltf",
+    "runtime": "assets/environment/kaykit/crates_stacked.gltf",
+    "sha256": "ffd45fe1637f6ced570b489771958034ae41f077debca69eafd7c825318062ab"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/crates_stacked.bin",
+    "runtime": "assets/environment/kaykit/crates_stacked.bin",
+    "sha256": "7ef3950564c1746f7f6dd0175903e6b76507351168dbb68e9516bb322ca6e48f"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/banner_blue.gltf",
+    "runtime": "assets/environment/kaykit/banner_blue.gltf",
+    "sha256": "98e87ce65c5a99f4135c6e94a8da2ee214d80a29744a4ec631b723d9c1a6c82e"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/banner_blue.bin",
+    "runtime": "assets/environment/kaykit/banner_blue.bin",
+    "sha256": "f81e12872e3672de01e30f867edf8693033582eb0fda91cecaef23ffcb1d5cc1"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/banner_patternA_red.gltf",
+    "runtime": "assets/environment/kaykit/banner_patternA_red.gltf",
+    "sha256": "42c2caad0d644ddccbc901db086ef439788275bef92e24e66e006fe06572b362"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/banner_patternA_red.bin",
+    "runtime": "assets/environment/kaykit/banner_patternA_red.bin",
+    "sha256": "529ee144114cef8046da3226aa0aa1b12437c7654309dc038620b06c42444998"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/torch_mounted.gltf",
+    "runtime": "assets/environment/kaykit/torch_mounted.gltf",
+    "sha256": "29f1cb66f59d63b8076ca412e83de474a01aa38f27ae974846ee993caf97e16d"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/torch_mounted.bin",
+    "runtime": "assets/environment/kaykit/torch_mounted.bin",
+    "sha256": "c627d80fa8b6256a887726d81880dbe88f0542eb740acada4cd6a9cbaa660ac8"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/floor_tile_small.gltf",
+    "runtime": "assets/environment/kaykit/floor_tile_small.gltf",
+    "sha256": "f0010a6d9debe6856e73c2706566a846d87b05135d5ef02b242e5ccbe169905c"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/floor_tile_small.bin",
+    "runtime": "assets/environment/kaykit/floor_tile_small.bin",
+    "sha256": "3ec7d573d3dc154e99688ddd01ac726d35a14955ce8ba2bd3815b87ae845885d"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/floor_tile_small_broken_A.gltf",
+    "runtime": "assets/environment/kaykit/floor_tile_small_broken_A.gltf",
+    "sha256": "836c27b6b1599c8b535521161c3d7e905c3b64fceeab90c8d80a75b6214a5b8b"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/Assets/gltf/floor_tile_small_broken_A.bin",
+    "runtime": "assets/environment/kaykit/floor_tile_small_broken_A.bin",
+    "sha256": "64e6ac3e39f79f16e744f41abc111db1c8290d95b796c7b190ef75fcbde51132"
+  },
+  {
+    "source": "KayKit_Dungeon_Pack_1.1_FREE/License.txt",
+    "runtime": "assets/environment/kaykit/License.txt",
+    "sha256": "3ad9bfddc7e218841ee558f6c462369230021192183a29e5ed1793942c752290"
+  },
+  {
+    "source": "Ultimate Modular Ruins Pack - Aug 2021/FBX/Arch_Gothic.fbx",
+    "runtime": "assets/environment/quaternius/Arch_Gothic.fbx",
+    "sha256": "af85f55a727388fbad67a62ffc7e30365b4a99241ff3b93e41711c15a5d5299f"
+  },
+  {
+    "source": "Ultimate Modular Ruins Pack - Aug 2021/FBX/Statue_Stag.fbx",
+    "runtime": "assets/environment/quaternius/Statue_Stag.fbx",
+    "sha256": "36085eb960202baccc45f4cabf956f6b050e6fc36c3be049d04d6bad59b58f58"
+  },
+  {
+    "source": "Ultimate Modular Ruins Pack - Aug 2021/FBX/Pot1.fbx",
+    "runtime": "assets/environment/quaternius/Pot1.fbx",
+    "sha256": "35fc7a2d293b9635f4ec6711e88ce7cb96fcf7f1a95c268454fb9cf30e999662"
+  },
+  {
+    "source": "Ultimate Modular Ruins Pack - Aug 2021/License.txt",
+    "runtime": "assets/environment/quaternius/License.txt",
+    "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
+  },
+  {
+    "source": "kenney_particle-pack/PNG (Transparent)/fire_01.png",
+    "runtime": "assets/particles/fire_01.png",
+    "sha256": "9727a9743ac6ab8dd4dd79f5fc5b0266290efae45f4d4452279eb5e4bcf3a978"
+  },
+  {
+    "source": "kenney_particle-pack/PNG (Transparent)/magic_01.png",
+    "runtime": "assets/particles/magic_01.png",
+    "sha256": "398479ea280c8161d0b6d509ca97eefb27e989c7832b404abcb65faae3e922ff"
+  },
+  {
+    "source": "kenney_particle-pack/PNG (Transparent)/smoke_01.png",
+    "runtime": "assets/particles/smoke_01.png",
+    "sha256": "e8724c219e8d35859167fc0a7e207e13c72ccf0c29704909b9bb3d3dc71c6cf7"
+  },
+  {
+    "source": "kenney_particle-pack/License.txt",
+    "runtime": "assets/particles/License.txt",
+    "sha256": "f9e70b81d8cc07c4e07c9f2eff1d94fd371a06070b18cb67c651c41158ec2975"
+  },
+  {
+    "source": "City-Beneath-the-Waves_v001.mp3",
+    "runtime": "assets/music/City-Beneath-the-Waves_v001.mp3",
+    "sha256": "18559b0a8ce7b07ee1827361a67836111117823fc83a6a2294b481fb1ecf26dc"
+  },
+  {
+    "source": "Fantascape_Looping.ogg",
+    "runtime": "assets/music/Fantascape_Looping.ogg",
+    "sha256": "1e8e015e73352631172fbff867c249fabee557cdd21f84791330f68a7c1885be"
+  },
+  {
+    "source": "Fantasy_Game_Background_Looping.ogg",
+    "runtime": "assets/music/Fantasy_Game_Background_Looping.ogg",
+    "sha256": "c9f5b86d1cb57ba0db2dde972fbdb529f88770a1c666050d9118c2bb7a9c24e2"
+  },
+  {
+    "source": "Lost-Jungle_Looping.ogg",
+    "runtime": "assets/music/Lost-Jungle_Looping.ogg",
+    "sha256": "2a4516f447d7de2242ed18578c02b64db9254a4561889099085a1f078af89fb1"
+  },
+  {
+    "source": "Misty-Bog_Looping.ogg",
+    "runtime": "assets/music/Misty-Bog_Looping.ogg",
+    "sha256": "649847e4894724414db7b66108deb0434dfb01fd7daae395c851eae51b184ad6"
+  },
+  {
+    "source": "Netherplace_Looping.ogg",
+    "runtime": "assets/music/Netherplace_Looping.ogg",
+    "sha256": "9381862e0abbd8004a8d769473b8dfba34d00f09d59568b5b8acdfcd347711ea"
+  },
+  {
+    "source": "Our-Mountain_v003_Looping.mp3",
+    "runtime": "assets/music/Our-Mountain_v003_Looping.mp3",
+    "sha256": "80a4d5d5f699a4665c9cb3f889476d3b69994b59a8e80bf9d05a0f9d0751d911"
+  },
+  {
+    "source": "Spells-a-Brewin_Looping.ogg",
+    "runtime": "assets/music/Spells-a-Brewin_Looping.ogg",
+    "sha256": "24f80d958e792cd9d99ede8a6f077ed16776b1d5fc66da3f5c2cdb2aa91b2485"
+  },
+  {
+    "source": "Strange-Phenomenon_Looping.ogg",
+    "runtime": "assets/music/Strange-Phenomenon_Looping.ogg",
+    "sha256": "d96627d4ccc8ac2029410ed97670436e902d03c7c3aa9cefee4891e78bcd7f55"
+  },
+  {
+    "source": "sound_attribution.txt",
+    "runtime": "assets/music/source_attribution.txt",
+    "sha256": "d706ee193ce013bd94abf28e17e20c57ba857b8fa2d7ccf802aed86c2d1ffce1"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/panel_blue.png",
+    "runtime": "assets/ui/rpg/panel_blue.png",
+    "sha256": "c8e9ec2a5c62acce58030a1039461ad6c06ebe005ea2adef32b6da7b89d9fcea"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/panelInset_blue.png",
+    "runtime": "assets/ui/rpg/panelInset_blue.png",
+    "sha256": "d85dc109c2fc87e2892e79fe1ce0616ea512e5b226ae33d54506a7002e4e26e1"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/buttonLong_blue.png",
+    "runtime": "assets/ui/rpg/buttonLong_blue.png",
+    "sha256": "968ba53d15d67ea27a4e4160a78d5786b6a3298952edeaaac836e005a6031bef"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/buttonLong_blue_pressed.png",
+    "runtime": "assets/ui/rpg/buttonLong_blue_pressed.png",
+    "sha256": "0c0fa778ae0988885a10bbdca68921ea6b721f8f4bf18a8b9ef02ec57367f5b2"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/buttonSquare_brown.png",
+    "runtime": "assets/ui/rpg/buttonSquare_brown.png",
+    "sha256": "049a7de1e5127343a37b9e4de36d41acb8fc825b38c3174199ed026299a703a6"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/buttonSquare_brown_pressed.png",
+    "runtime": "assets/ui/rpg/buttonSquare_brown_pressed.png",
+    "sha256": "ccbbd7fb46d5440ba3ee5efe6703c098eba8d2543c41b235d46444bbcfec5dac"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/buttonSquare_blue.png",
+    "runtime": "assets/ui/rpg/buttonSquare_blue.png",
+    "sha256": "5165c1677c189ba1ba106867980bc1c1ffb51369ad982d473c2e3108f085c339"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/buttonSquare_blue_pressed.png",
+    "runtime": "assets/ui/rpg/buttonSquare_blue_pressed.png",
+    "sha256": "fc74fe5a78be6b413f21e77aadbad185a4ccee94d04f7fec9a117938d3f20af3"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barBack_horizontalLeft.png",
+    "runtime": "assets/ui/rpg/barBack_horizontalLeft.png",
+    "sha256": "68ebfc8f01d1781b7bae89e88db699f97975a984fb3eba93be7923fefafddb65"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barBack_horizontalMid.png",
+    "runtime": "assets/ui/rpg/barBack_horizontalMid.png",
+    "sha256": "d022e173423348b69bd970d570c382870acad3ec393ebf6cb54f5938492a5823"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barBack_horizontalRight.png",
+    "runtime": "assets/ui/rpg/barBack_horizontalRight.png",
+    "sha256": "70a82e26bc71b8518fb1ec2d8139ee614e9df8d805697817c4d0236368fa1fa8"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barRed_horizontalLeft.png",
+    "runtime": "assets/ui/rpg/barRed_horizontalLeft.png",
+    "sha256": "4d8ace56e956d6de49610c0c48d0a964ef3f7e4a35e5f6d98d87cba5039b28ed"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barRed_horizontalMid.png",
+    "runtime": "assets/ui/rpg/barRed_horizontalMid.png",
+    "sha256": "f2a4444eaa3bf8818b3a4e3c1206f2eedac97c67a45174d74b5c7faa53f19ac0"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barRed_horizontalRight.png",
+    "runtime": "assets/ui/rpg/barRed_horizontalRight.png",
+    "sha256": "3eb633ecb33b932cf2bc9117aea40ad7e87a18a4600ba971a540b698e5c70a61"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barBlue_horizontalLeft.png",
+    "runtime": "assets/ui/rpg/barBlue_horizontalLeft.png",
+    "sha256": "e6d4a89a2f1946aaf2a22829d2e93856c21a8e3cefb45475fc32e8ad6f9d860c"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barBlue_horizontalBlue.png",
+    "runtime": "assets/ui/rpg/barBlue_horizontalMid.png",
+    "sha256": "f3583e1a112be63e1641a9837fa220b49cb1b9e0737b073607071e7b688acff8"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barBlue_horizontalRight.png",
+    "runtime": "assets/ui/rpg/barBlue_horizontalRight.png",
+    "sha256": "1332ae6b19a261e2dfdd54269ee3f173115a3e8bfbdb1ad0f6b87153d3e68c03"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barGreen_horizontalLeft.png",
+    "runtime": "assets/ui/rpg/barGreen_horizontalLeft.png",
+    "sha256": "fae1d308cf2a5df792d11d108564f2f8c53492673947ca6e2b7134a3a9830b80"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barGreen_horizontalMid.png",
+    "runtime": "assets/ui/rpg/barGreen_horizontalMid.png",
+    "sha256": "76b458f9715d3bffc638e2fd0f007eca42913aa8c6ce78961feb31fe01922d5f"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/PNG/barGreen_horizontalRight.png",
+    "runtime": "assets/ui/rpg/barGreen_horizontalRight.png",
+    "sha256": "3632488a092f59604352208da0936bf3e3ca3e3457b699b7318697e6c57d52ac"
+  },
+  {
+    "source": "free_packs/kenney_ui_pack_rpg_expansion/license.txt",
+    "runtime": "assets/ui/rpg/License.txt",
+    "sha256": "c3d0753e9a4a0874a9985993eb4228d57e5b0cbf44159ea6cb1c794008a13544"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_ui_borders/PNG/Double/Transparent center/panel-transparent-center-001.png",
+    "runtime": "assets/ui/fantasy/frame.png",
+    "sha256": "3027acafdcdb17a877f26ce893712a3444191c3dd895659271552276bb516350"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_ui_borders/PNG/Double/Divider/divider-000.png",
+    "runtime": "assets/ui/fantasy/divider.png",
+    "sha256": "f256f18613298b662b9907fd1ec8de720cb004afc0249dc597d9279388e76464"
+  },
+  {
+    "source": "free_packs/kenney_fantasy_ui_borders/License.txt",
+    "runtime": "assets/ui/fantasy/License.txt",
+    "sha256": "f7185bbb59c1a5dec131621e76bddde6855035224119927bba21f3b0bbc3ca83"
+  }
+]

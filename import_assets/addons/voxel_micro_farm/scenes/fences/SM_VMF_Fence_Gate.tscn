@@ -1,0 +1,95 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_db8hw"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Gate_Brace_Geo.res" id="2_r4qrl"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Gate_Geo.res" id="3_fedxd"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Frame.res" id="4_26lui"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Post_End_X.res" id="5_d5o1q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ynl5m"]
+size = Vector3(0.7180749, 0.3724678, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6m6w"]
+size = Vector3(0.78, 0.53999996, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pxiko"]
+size = Vector3(0.22, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrl2j"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[node name="SM_VMF_Fence_Gate" type="Node3D" unique_id=17347876]
+metadata/vmf_asset = "SM_VMF_Fence_Gate"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="." unique_id=288154363]
+
+[node name="SM_VMF_Fence_Gate" type="Node3D" parent="Model" unique_id=194126532]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="Pivot_Gate" type="Node3D" parent="Model/SM_VMF_Fence_Gate" unique_id=1218033234 groups=["vmf_gate_hinges"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14, 0, 0)
+
+[node name="Gate_Brace_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Gate/Pivot_Gate" unique_id=649453305]
+material_override = ExtResource("1_db8hw")
+mesh = ExtResource("2_r4qrl")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Brace_Geo" unique_id=692814098]
+
+[node name="@CollisionShape3D@8" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Brace_Geo/StaticCollision" unique_id=1714350967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38999996, 0.37, 0)
+shape = SubResource("BoxShape3D_ynl5m")
+
+[node name="Gate_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Gate/Pivot_Gate" unique_id=686465014]
+material_override = ExtResource("1_db8hw")
+mesh = ExtResource("3_fedxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Geo" unique_id=1277949129]
+
+[node name="@CollisionShape3D@9" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Geo/StaticCollision" unique_id=193498627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.36999997, 0.02)
+shape = SubResource("BoxShape3D_u6m6w")
+
+[node name="SM_VMF_Fence_Gate_Frame" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Gate" unique_id=362652290]
+material_override = ExtResource("1_db8hw")
+mesh = ExtResource("4_26lui")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Frame" unique_id=1129084558]
+
+[node name="@CollisionShape3D@10" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Frame/StaticCollision" unique_id=1870386342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030000001, 0.37, 0)
+shape = SubResource("BoxShape3D_pxiko")
+
+[node name="SM_VMF_Fence_Gate_Post_End_X" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Gate" unique_id=851623695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("1_db8hw")
+mesh = ExtResource("5_d5o1q")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Post_End_X" unique_id=544838801]
+
+[node name="@CollisionShape3D@11" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Post_End_X/StaticCollision" unique_id=887746200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_vrl2j")
+
+[node name="Socket_End" type="Node3D" parent="Model/SM_VMF_Fence_Gate" unique_id=2139781904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)

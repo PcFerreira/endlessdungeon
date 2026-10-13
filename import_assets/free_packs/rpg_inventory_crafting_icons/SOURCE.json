@@ -1,0 +1,28 @@
+{
+  "id": "rpg_inventory_crafting_icons",
+  "title": "2D RPG Item Icons",
+  "author": "Kit",
+  "source": "https://opengameart.org/content/2d-rpg-item-icons",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/rpg_inventory.zip",
+      "filename": "rpg_inventory.zip",
+      "bytes": 1998841,
+      "sha256": "66690683d2ad3b5ba791466f889734f314af4d87ad2d818c885d9d8baffc1b3c",
+      "archive_crc_checked": true
+    }
+  ],
+  "scope": "All files linked in the publisher download section, extracted with author subcollections kept separate.",
+  "style": "Pixel art icons",
+  "categories": [
+    "Equipment",
+    "Consumables",
+    "Crafting"
+  ],
+  "attribution_required": false,
+  "attribution_text": "2D RPG Item Icons by Kit. Source: https://opengameart.org/content/2d-rpg-item-icons. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None. Original asset bytes and bundled notices are preserved; archives in author collections were extracted into separate subdirectories."
+}

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://addons/voxel_micro_farm/textures/T_VMF_Palette.png" id="1_x3lcu"]
+
+[resource]
+resource_name = "VMF Palette"
+albedo_texture = ExtResource("1_x3lcu")
+roughness = 0.9
+texture_filter = 0

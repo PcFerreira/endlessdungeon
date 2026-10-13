@@ -1,0 +1,80 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_o3w4a"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Frame.res" id="2_nj2ry"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Post_End_X.res" id="3_65peq"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Post_End_Y.res" id="4_ed63y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t1e7w"]
+size = Vector3(0.99999994, 0.74, 0.99999994)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eb18t"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sqm26"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" unique_id=737138656]
+metadata/vmf_asset = "SM_VMF_Fence_Corner"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="." unique_id=1171956862]
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" parent="Model" unique_id=1166098159]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Corner_Frame" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Corner" unique_id=475710601]
+material_override = ExtResource("1_o3w4a")
+mesh = ExtResource("2_nj2ry")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame" unique_id=909644152]
+
+[node name="@CollisionShape3D@4" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame/StaticCollision" unique_id=739361206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, -0.42)
+shape = SubResource("BoxShape3D_t1e7w")
+
+[node name="SM_VMF_Fence_Corner_Post_End_X" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Corner" unique_id=221928162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("1_o3w4a")
+mesh = ExtResource("3_65peq")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X" unique_id=480275134]
+
+[node name="@CollisionShape3D@5" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X/StaticCollision" unique_id=2018491492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_eb18t")
+
+[node name="SM_VMF_Fence_Corner_Post_End_Y" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Corner" unique_id=231409489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+material_override = ExtResource("1_o3w4a")
+mesh = ExtResource("4_ed63y")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_Y",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y" unique_id=98829434]
+
+[node name="@CollisionShape3D@6" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y/StaticCollision" unique_id=11253522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_sqm26")
+
+[node name="Socket_End" type="Node3D" parent="Model/SM_VMF_Fence_Corner" unique_id=1780539932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Socket_End_B" type="Node3D" parent="Model/SM_VMF_Fence_Corner" unique_id=2051745939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)

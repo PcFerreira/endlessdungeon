@@ -1,0 +1,27 @@
+{
+  "id": "kaykit_skeletons",
+  "title": "KayKit Skeletons",
+  "author": "Kay Lousberg",
+  "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Skeletons-1.0",
+  "revision": "15b62b9bad122f72926c10fb14d622c73819fa54",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://codeload.github.com/KayKit-Game-Assets/KayKit-Character-Pack-Skeletons-1.0/zip/15b62b9bad122f72926c10fb14d622c73819fa54",
+      "filename": "kaykit_skeletons.zip",
+      "bytes": 6661120,
+      "sha256": "2e3e1107009fcb1ff4b2bccfe91c7e823264e267f20124438916f21a2d6b8e6f",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Enemies",
+    "weapons"
+  ],
+  "attribution_required": false,
+  "attribution_text": "KayKit Skeletons by Kay Lousberg. Source: https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Skeletons-1.0. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

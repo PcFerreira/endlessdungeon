@@ -1,0 +1,36 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_n5t4d"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_Hoe_Geo.res" id="2_cvhbo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdnu2"]
+size = Vector3(0.35999998, 1.0799999, 0.08)
+
+[node name="SM_VMF_Tool_Hoe" type="Node3D" unique_id=1805714948]
+metadata/vmf_asset = "SM_VMF_Tool_Hoe"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="." unique_id=2042942429]
+
+[node name="SM_VMF_Tool_Hoe" type="Node3D" parent="Model" unique_id=1343373682]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_Hoe_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Tool_Hoe" unique_id=1597480339]
+material_override = ExtResource("1_n5t4d")
+mesh = ExtResource("2_cvhbo")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="Model/SM_VMF_Tool_Hoe" unique_id=121589524]
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=1326703961]
+
+[node name="@CollisionShape3D@25" type="CollisionShape3D" parent="StaticCollision" unique_id=854145037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
+shape = SubResource("BoxShape3D_wdnu2")

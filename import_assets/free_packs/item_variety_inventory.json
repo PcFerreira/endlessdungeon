@@ -1,0 +1,82 @@
+{
+  "checked_on": "2026-10-12",
+  "new_packs": [
+    {
+      "id": "kenney_food_kit",
+      "png_files": 204,
+      "svg_files": 0,
+      "gltf_glb_models": 200,
+      "unique_png_file_hashes": 202,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    },
+    {
+      "id": "kaykit_fantasy_weapons",
+      "png_files": 6,
+      "svg_files": 0,
+      "gltf_glb_models": 31,
+      "unique_png_file_hashes": 2,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    },
+    {
+      "id": "rpg_inventory_crafting_icons",
+      "png_files": 52,
+      "svg_files": 0,
+      "gltf_glb_models": 0,
+      "unique_png_file_hashes": 52,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    },
+    {
+      "id": "assorted_rpg_icons",
+      "png_files": 7,
+      "svg_files": 0,
+      "gltf_glb_models": 0,
+      "unique_png_file_hashes": 7,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    },
+    {
+      "id": "gem_icon_collection",
+      "png_files": 144,
+      "svg_files": 63,
+      "gltf_glb_models": 0,
+      "unique_png_file_hashes": 144,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    },
+    {
+      "id": "potion_icon_collection",
+      "png_files": 173,
+      "svg_files": 9,
+      "gltf_glb_models": 0,
+      "unique_png_file_hashes": 173,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    },
+    {
+      "id": "crafting_material_icons",
+      "png_files": 1,
+      "svg_files": 0,
+      "gltf_glb_models": 0,
+      "unique_png_file_hashes": 1,
+      "exact_png_matches_in_existing_packs": [
+
+      ],
+      "limits": "Byte hashes detect exact duplicate files, not recolors, resized images, atlas contents, or repeated semantic item designs."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "wildlife_ambience",
+  "title": "Ambient Bird, Cricket and Frog",
+  "author": "Blender Foundation; submitted by Lamoot",
+  "source": "https://opengameart.org/content/ambient-bird-cricket-and-frog",
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "acquired_on": "2026-10-13",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/amb_bird_cricket_frog.7z",
+      "filename": "amb_bird_cricket_frog.7z",
+      "bytes": 276132,
+      "sha256": "5e74c2e848a81a9584746376a3f80c4ef1de918cf068c7785b7247070f6c9c74",
+      "archive_crc_checked": false,
+      "archive_extraction_checked": true
+    }
+  ],
+  "derived_files": [
+    {
+      "source": "content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_bird_1.flac",
+      "source_sha256": "0d719ae849667aca8a40a796427cd7342f4f96543c14a1f74fa5757c9db99956",
+      "output": "godot_wav/amb_bird_1.wav",
+      "output_sha256": "a40a10e11e2eaab88382443da554d848236809c458ccb8507114cce8cfd4587b",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "fda74074487505ce239c771ccf4ee15314d7db458b4ff73a53d100d5cb9fb3aa",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_bird_2.flac",
+      "source_sha256": "6ad70c109c9d87fd1b0af605765e0d720bb664a4170375660260619394432ce2",
+      "output": "godot_wav/amb_bird_2.wav",
+      "output_sha256": "432596125b54cf89bc10e72b2c3bcaac57f10aed0b5bdbd2223638a01444906b",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "6b582235aa3a50d023ed8ee7feb1737cf77e86f97dd7fb97011feefed39ba72f",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_cricket_1.flac",
+      "source_sha256": "5a55da04f85bfc02ff979005f951700668b6e6e6d95bdda70923ac2f641cedb9",
+      "output": "godot_wav/amb_cricket_1.wav",
+      "output_sha256": "5cb1316b18d16f4cf59d0be0f3ce83a68afa13ee4cdf8c76d031d45d7054e679",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "99c98e6389ceb3c739a4e9982832dab1a235167888ed7d16bc03bf9ea9ddeaa5",
+      "decoded_pcm_equivalent": true
+    },
+    {
+      "source": "content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_frog_1.flac",
+      "source_sha256": "a6ae9ef73d967dcd5e540c145b0aed87aa557754b4e9fbef68a4cdb8376a8584",
+      "output": "godot_wav/amb_frog_1.wav",
+      "output_sha256": "fc4cfa300f3fff903304962b9e4e1006062c1dd294618623ec0b4248af83d6a9",
+      "conversion": "FLAC decoded to PCM WAV for Godot; no gain, trimming or resampling applied",
+      "sample_rate": "44100",
+      "channels": 1,
+      "source_bits": 16,
+      "decoded_pcm_sha256": "f7ba72d9b8a8ba842eb5e16181bec5345229d75767aa94d4b99908195f065743",
+      "decoded_pcm_equivalent": true
+    }
+  ],
+  "style": "Audio",
+  "categories": [
+    "Birds",
+    "Crickets",
+    "Frogs"
+  ],
+  "attribution_required": true,
+  "attribution_text": "Ambient Bird, Cricket and Frog by Blender Foundation; submitted by Lamoot. Source: https://opengameart.org/content/ambient-bird-cricket-and-frog. License: CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

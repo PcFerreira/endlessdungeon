@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_ao6h4"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Daikon_Geo.res" id="2_lbdum"]
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" unique_id=565436856]
+metadata/vmf_asset = "SM_VMF_Harvest_Daikon"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="." unique_id=762735648]
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" parent="Model" unique_id=1359314917]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Daikon_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Harvest_Daikon" unique_id=539396079]
+material_override = ExtResource("1_ao6h4")
+mesh = ExtResource("2_lbdum")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}

@@ -1,0 +1,36 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_ggfiv"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_Sickle_Geo.res" id="2_3y2sk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e4yk1"]
+size = Vector3(0.44, 0.7, 0.08)
+
+[node name="SM_VMF_Tool_Sickle" type="Node3D" unique_id=1669258201]
+metadata/vmf_asset = "SM_VMF_Tool_Sickle"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="." unique_id=909423533]
+
+[node name="SM_VMF_Tool_Sickle" type="Node3D" parent="Model" unique_id=837413101]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_Sickle_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Tool_Sickle" unique_id=2045838460]
+material_override = ExtResource("1_ggfiv")
+mesh = ExtResource("2_3y2sk")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="Model/SM_VMF_Tool_Sickle" unique_id=1810422975]
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=1139758249]
+
+[node name="@CollisionShape3D@26" type="CollisionShape3D" parent="StaticCollision" unique_id=251791359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019999996, 0.22999999, 0)
+shape = SubResource("BoxShape3D_e4yk1")

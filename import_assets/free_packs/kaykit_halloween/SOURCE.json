@@ -1,0 +1,27 @@
+{
+  "id": "kaykit_halloween",
+  "title": "KayKit Halloween Bits",
+  "author": "Kay Lousberg",
+  "source": "https://github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0",
+  "revision": "6dc69bf6b2fa766a985754f35ec6a0324090e6c6",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://codeload.github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0/zip/6dc69bf6b2fa766a985754f35ec6a0324090e6c6",
+      "filename": "kaykit_halloween.zip",
+      "bytes": 1172887,
+      "sha256": "17b6155ba9aab19cc0c39468c3dd6791aaa99078e44c8e76f68f7af2d1309bba",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Halloween",
+    "cemetery"
+  ],
+  "attribution_required": false,
+  "attribution_text": "KayKit Halloween Bits by Kay Lousberg. Source: https://github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

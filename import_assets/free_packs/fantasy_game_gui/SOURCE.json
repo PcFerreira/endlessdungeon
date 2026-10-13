@@ -1,0 +1,27 @@
+{
+  "id": "fantasy_game_gui",
+  "title": "Free Fantasy Game GUI",
+  "author": "pzUH",
+  "source": "https://opengameart.org/content/free-fantasy-game-gui",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/FreeFantasyGUI.zip",
+      "filename": "FreeFantasyGUI.zip",
+      "bytes": 10349108,
+      "sha256": "ad38ada563dd46b83ba4511659a5134fd3ad4d1df3cfbdc7c46e8620997036bc",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Vector fantasy UI",
+  "categories": [
+    "HUD",
+    "parchment windows",
+    "resource bars"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Free Fantasy Game GUI by pzUH. Source: https://opengameart.org/content/free-fantasy-game-gui. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_c5p7g"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Carrot_Growing_Geo.res" id="2_3jk68"]
+
+[node name="SM_VMF_Crop_Carrot_Growing" type="Node3D" unique_id=1440045749]
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Growing"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="." unique_id=432149175]
+
+[node name="SM_VMF_Crop_Carrot_Growing" type="Node3D" parent="Model" unique_id=663231727]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Growing_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Crop_Carrot_Growing" unique_id=2080673372]
+material_override = ExtResource("1_c5p7g")
+mesh = ExtResource("2_3jk68")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="Model/SM_VMF_Crop_Carrot_Growing" unique_id=236826112]

@@ -1,0 +1,25 @@
+{
+  "id": "isometric_pixel_buildings",
+  "title": "Isometric 64x64 Medieval Building Tileset",
+  "author": "Seth Galbraith",
+  "license": "CC-BY-3.0",
+  "source": "https://opengameart.org/content/isometric-64x64-medieval-building-tileset",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/iso-64x64-building_2.png",
+      "filename": "iso-64x64-building_2.png",
+      "bytes": 26296,
+      "sha256": "ca114c75e6daca2896edeebea2ff8604d9fdf27162578fe1a2df9eababbab558",
+      "archive_crc_checked": false
+    }
+  ],
+  "style": "Isometric pixel art",
+  "categories": [
+    "Medieval buildings"
+  ],
+  "attribution_required": true,
+  "attribution_text": "Isometric 64x64 Medieval Building Tileset by Seth Galbraith. Source: https://opengameart.org/content/isometric-64x64-medieval-building-tileset. License: CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/). Houses inspired by Clint Bellanger's Medieval Building Tiles; designed to accompany Yar's outside tiles.",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

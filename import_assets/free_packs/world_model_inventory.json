@@ -1,0 +1,7159 @@
+[
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/armchair.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/armchair_pillows.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_double_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_double_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_single_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/bed_single_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/book_set.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/book_single.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cabinet_medium.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cabinet_medium_decorated.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cabinet_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cabinet_small_decorated.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cactus_medium_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cactus_medium_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cactus_small_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/cactus_small_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_A_wood.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_B_wood.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_stool.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/chair_stool_wood.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/couch.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/couch_pillows.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/lamp_standing.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/lamp_table.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_large_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_large_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_medium.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_small_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_small_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_small_C.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_standing_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pictureframe_standing_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pillow_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/pillow_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/rug_oval_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/rug_oval_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/rug_rectangle_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/rug_rectangle_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/rug_rectangle_stripes_A.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/rug_rectangle_stripes_B.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/shelf_A_big.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/shelf_A_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/shelf_B_large.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/shelf_B_large_decorated.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/shelf_B_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/shelf_B_small_decorated.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_low.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_medium.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_medium_long.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kaykit_furniture/content/addons/kaykit_furniture_bits/Assets/gltf/table_small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/balcony-wall-fence.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/balcony-wall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/banner-green.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/banner-red.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/blade.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/cart-high.glb",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/cart.glb",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/chimney-base.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/chimney-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/chimney.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fence-broken.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fence-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fence-gate.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fence.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-center.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-corner-inner-square.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-corner-inner.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-corner.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-curved.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-edge.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-round-detail.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-round.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-square-detail.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/fountain-square.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/hedge-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/hedge-gate.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/hedge-large-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/hedge-large-gate.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/hedge-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/hedge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/lantern.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/overhang.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/pillar-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/pillar-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/planks-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/planks-opening.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/planks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/poles-horizontal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/poles.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-bend.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-corner-inner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-curb-end.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-curb.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-edge-slope.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-edge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road-slope.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/road.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/rock-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/rock-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/rock-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-corner-inner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-corner-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-flat.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-gable-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-gable-end.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-gable-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-gable.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-corner-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-cornerinner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-flat.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-gable-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-gable-end.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-gable-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-gable.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-left.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-point.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-right.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high-window.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-high.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-left.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-point.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-right.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof-window.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/roof.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-full-corner-inner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-full-corner-outer.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-full.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-stone-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-stone-handrail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-stone-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-wide-stone-handrail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-wide-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-wide-wood-handrail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-wide-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-wood-handrail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stairs-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stall-bench.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stall-green.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stall-red.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stall-stool.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/stall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/tree-crooked.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/tree-high-crooked.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/tree-high-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/tree-high.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/tree.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-arch-top-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-arch-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-arch.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-block-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-block.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-broken.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-corner-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-corner-diagonal-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-corner-diagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-corner-edge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-detail-cross.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-detail-diagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-detail-horizontal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-diagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-door.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-doorway-base.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-doorway-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-doorway-square-wide-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-doorway-square-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-doorway-square.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-rounded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-side.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-slope.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-window-glass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-window-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-window-shutters.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-window-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-window-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-arch-top-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-arch-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-arch.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-block-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-block.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-broken.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-corner-diagonal-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-corner-diagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-corner-edge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-detail-cross.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-detail-diagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-detail-horizontal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-diagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-door.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-base.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-square-wide-curved.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-square-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-doorway-square.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-rounded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-side.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-slope.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-window-glass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-window-round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-window-shutters.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-window-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood-window-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/watermill-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/watermill.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/wheel.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_fantasy_town_kit/Models/GLB format/windmill.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-end.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-intersection.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-junction.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-transition.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-wide-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-wide-end.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-wide-intersection.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-wide-junction.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/corridor.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/gate-metal-bars.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/gate-overhang.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/gate-rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/gate.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/ladder.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-large-variation.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-small-variation.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-wide-variation.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/room-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/stairs-wide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/stairs.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor-big.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor-detail-a.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor-detail.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor-layer-hole.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor-layer-raised.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor-layer.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-floor.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-wall-corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-wall-detail-a.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-wall-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-wall-stairs.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-wall-top.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_modular_cave_kit/Models/GLB format/template-wall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bed_floor.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_center_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_center_stoneRound.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_center_wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_center_woodRound.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_side_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_side_stoneRound.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_side_wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_side_woodRound.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_stoneNarrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_stoneRound.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_stoneRoundNarrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_woodNarrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_woodRound.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/bridge_woodRoundNarrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cactus_short.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cactus_tall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/campfire_bricks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/campfire_logs.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/campfire_planks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/campfire_stones.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/canoe.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/canoe_paddle.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockCave_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockCave_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockDiagonal_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockDiagonal_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockHalf_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockHalf_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockQuarter_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockQuarter_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockSlopeHalfWalls_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockSlopeHalfWalls_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockSlopeWalls_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockSlopeWalls_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockSlope_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_blockSlope_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_block_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_block_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cave_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cave_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerInnerLarge_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerInnerLarge_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerInnerTop_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerInnerTop_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerInner_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerInner_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerLarge_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerLarge_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerTop_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_cornerTop_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_corner_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_corner_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_diagonal_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_diagonal_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_halfCornerInner_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_halfCornerInner_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_halfCorner_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_halfCorner_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_half_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_half_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_large_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_large_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_stepsCornerInner_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_stepsCornerInner_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_stepsCorner_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_stepsCorner_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_steps_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_steps_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_topDiagonal_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_topDiagonal_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_top_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_top_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_waterfallTop_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_waterfallTop_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_waterfall_rock.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/cliff_waterfall_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crop_carrot.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crop_melon.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crop_pumpkin.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crop_turnip.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_bambooStageA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_bambooStageB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_cornStageA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_cornStageB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_cornStageC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_cornStageD.glb",
+    "meshes": 5,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtDoubleRow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtDoubleRowCorner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtDoubleRowEnd.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtRow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtRowCorner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtRowEnd.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_dirtSingle.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_leafsStageA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_leafsStageB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_wheatStageA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/crops_wheatStageB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_bend.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_bendCenter.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_corner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_gate.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_planks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_planksDouble.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_simple.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_simpleCenter.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_simpleDiagonal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_simpleDiagonalCenter.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_simpleHigh.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/fence_simpleLow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_purpleA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_purpleB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_purpleC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_redA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_redB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_redC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_yellowA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_yellowB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/flower_yellowC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/grass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/grass_large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/grass_leafs.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/grass_leafsLarge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_grass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathBend.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathBendBank.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathCorner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathCornerSmall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathCross.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathEnd.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathEndClosed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathOpen.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathRocks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathSide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathSideOpen.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathSplit.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathStraight.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_pathTile.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverBend.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverBendBank.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverCorner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverCornerSmall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverCross.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverEnd.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverEndClosed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverOpen.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverRocks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverSide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverSideOpen.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverSplit.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverStraight.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/ground_riverTile.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/hanging_moss.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/lily_large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/lily_small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/log.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/log_large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/log_stack.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/log_stackLarge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/mushroom_red.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/mushroom_redGroup.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/mushroom_redTall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/mushroom_tan.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/mushroom_tanGroup.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/mushroom_tanTall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_stoneCircle.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_stoneCorner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_stoneEnd.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_woodCorner.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/path_woodEnd.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_bush.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_bushDetailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_bushLarge.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_bushLargeTriangle.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_bushSmall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_bushTriangle.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_flatShort.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/plant_flatTall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/platform_beach.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/platform_grass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/platform_stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/pot_large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/pot_small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_largeA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_largeB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_largeC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_largeD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_largeE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_largeF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallFlatA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallFlatB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallFlatC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallG.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallH.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallI.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallTopA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_smallTopB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallG.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallH.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallI.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/rock_tallJ.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/sign.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/statue_block.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/statue_column.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/statue_columnDamaged.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/statue_head.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/statue_obelisk.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/statue_ring.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_largeA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_largeB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_largeC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_largeD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_largeE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_largeF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallFlatA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallFlatB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallFlatC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallG.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallH.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallI.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallTopA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_smallTopB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallG.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallH.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallI.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stone_tallJ.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_old.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_oldTall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_round.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_roundDetailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_square.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_squareDetailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/stump_squareDetailedWide.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tent_detailedClosed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tent_detailedOpen.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tent_smallClosed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tent_smallOpen.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_blocks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_blocks_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_blocks_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_cone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_cone_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_cone_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_default.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_default_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_default_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_detailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_detailed_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_detailed_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_fat.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_fat_darkh.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_fat_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_oak.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_oak_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_oak_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_palm.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_palmBend.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_palmDetailedShort.glb",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_palmDetailedTall.glb",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_palmShort.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_palmTall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineDefaultA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineDefaultB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineGroundA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineGroundB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineRoundA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineRoundB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineRoundC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineRoundD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineRoundE.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineRoundF.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineSmallA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineSmallB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineSmallC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineSmallD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallA.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallA_detailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallB.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallB_detailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallC.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallC_detailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallD.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_pineTallD_detailed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_plateau.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_plateau_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_plateau_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_simple.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_simple_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_simple_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_small_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_small_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_tall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_tall_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_tall_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_thin.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_thin_dark.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_nature_kit/Models/GLTF format/tree_thin_fall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/barrel-open.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/barrel.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/bedroll-frame.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/bedroll-packed.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/bedroll.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/bottle-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/bottle.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/box-large-open.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/box-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/box-open.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/box.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/bucket.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/campfire-fishing-stand.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/campfire-pit.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/campfire-stand.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/chest.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+      "open",
+      "close",
+      "open-close"
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/fence-doorway.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/fence-fortified.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/fence.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/fish-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/fish.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/floor-hole.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/floor-old.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/floor.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/grass-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/grass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/metal-panel-narrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/metal-panel-screws-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/metal-panel-screws-narrow.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/metal-panel-screws.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/metal-panel.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/patch-grass-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/patch-grass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/resource-planks.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/resource-stone-large.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/resource-stone.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/resource-wood.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-a.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-b.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-c.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-flat-grass.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-flat.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-sand-a.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-sand-b.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/rock-sand-c.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/signpost-single.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/signpost.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-canvas.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-floor.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-metal-doorway.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-metal-floor.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-metal-roof.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-metal-wall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-metal.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure-roof.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/structure.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tent-canvas-half.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tent-canvas.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tent.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-axe-upgraded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-axe.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-hammer-upgraded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-hammer.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-hoe-upgraded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-hoe.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-pickaxe-upgraded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-pickaxe.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-shovel-upgraded.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tool-shovel.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-autumn-tall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-autumn-trunk.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-autumn.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-log-small.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-log.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-tall.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree-trunk.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/tree.glb",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/workbench-anvil.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/workbench-grind.glb",
+    "meshes": 2,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "kenney_survival_kit/Models/GLB format/workbench.glb",
+    "meshes": 3,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Peasant_Arms.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Peasant_Body.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Jog_Fwd_Loop"
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Peasant_Feet.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Peasant_Legs.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Ranger_Acc_Pauldrons.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Ranger_Arms.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Ranger_Body.gltf",
+    "meshes": 3,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Ranger_Feet.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Ranger_Head_Hood.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Female_Ranger_Legs.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Peasant_Arms.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Peasant_Body.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Peasant_Feet.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Peasant_Legs.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Ranger_Acc_Pauldron.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Ranger_Arms.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Ranger_Body.gltf",
+    "meshes": 3,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Ranger_Feet_Boots.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Ranger_Head_Hood.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Modular Parts/Male_Ranger_Legs.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Outfits/Female_Peasant.gltf",
+    "meshes": 4,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Outfits/Female_Ranger.gltf",
+    "meshes": 9,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Outfits/Male_Peasant.gltf",
+    "meshes": 4,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_outfits/Exports/glTF (Godot-Unreal)/Outfits/Male_Ranger.gltf",
+    "meshes": 9,
+    "skins": 1,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Anvil.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Anvil_Log.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Axe_Bronze.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bag.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Banner_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Banner_1_Cloth.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Banner_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Banner_2_Cloth.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Barrel.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Barrel_Apples.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Barrel_Holder.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bed_Twin1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bed_Twin2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bench.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookGroup_Medium_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookGroup_Medium_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookGroup_Medium_3.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookGroup_Small_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookGroup_Small_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookGroup_Small_3.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/BookStand.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Book_5.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Book_7.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Book_Simplified_Single.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Book_Stack_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Book_Stack_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bookcase_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bottle_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bucket_Metal.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Bucket_Wooden_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Cabinet.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Cage_Small.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/CandleStick.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/CandleStick_Stand.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/CandleStick_Triple.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Candle_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Candle_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Carrot.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Cauldron.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Chain_Coil.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Chair_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Chalice.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Chandelier.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Chest_Wood.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Chest_Close",
+      "Chest_Closed",
+      "Chest_Open",
+      "Chest_Opened"
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Coin.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Coin_Pile.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Coin_Pile_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Crate_Metal.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Crate_Wooden.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Dummy.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/FarmCrate_Apple.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/FarmCrate_Carrot.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/FarmCrate_Empty.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Key_Gold.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Key_Metal.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Lantern_Wall.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Mug.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Nightstand_Shelf.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Peg_Rack.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Pickaxe_Bronze.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Pot_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Pot_1_Lid.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Potion_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Potion_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Potion_4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Pouch_Large.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Rope_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Rope_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Rope_3.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Scroll_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Scroll_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Shelf_Arch.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Shelf_Simple.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Shelf_Small_Bottles.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Shield_Wooden.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/SmallBottle.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/SmallBottles_1.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Stall_Cart_Empty.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Stall_Empty.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Stool.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Sword_Bronze.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Table_Fork.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Table_Knife.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Table_Large.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Table_Plate.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Table_Spoon.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Torch_Metal.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Vase_2.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Vase_4.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Vase_Rubble_Medium.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/WeaponStand.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Whetstone.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Workbench.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_fantasy_props/Exports/glTF/Workbench_Drawers.gltf",
+    "meshes": 1,
+    "skins": 0,
+    "animations": [
+
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Alien.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Alien_Blob.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Alpaking.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Alpaking_Evolved.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Armabee.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Armabee_Evolved.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Birb.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Birb_Blob.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/BlueDemon.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Bunny.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Cactoro.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Cactoro_Blob.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Cat.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Chicken.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Demon.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Demon_Flying.gltf",
+    "meshes": 3,
+    "skins": 1,
+    "animations": [
+      "Flying_Idle"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Dino.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Dog.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Dragon.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Dragon_Evolved.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Fish.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Fish_Blob.gltf",
+    "meshes": 3,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Frog.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Ghost.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Ghost_Skull.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Glub.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Glub_Evolved.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Goleling.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Goleling_Evolved.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/GreenBlob.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/GreenSpikyBlob.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Hywirl.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Monkroose.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Mushnub.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Mushnub_Evolved.gltf",
+    "meshes": 3,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/MushroomKing.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Ninja.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Ninja_Blob.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Orc.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Orc_Blob.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Orc_Skull.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Pigeon.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Pigeon_Flying.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/PinkBlob.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Squidle.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Tribal.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Tribal_Flying.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Fast_Flying",
+      "Flying_Idle",
+      "Headbutt",
+      "HitReact",
+      "No",
+      "Punch",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Wizard.gltf",
+    "meshes": 2,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Yeti.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ]
+  },
+  {
+    "path": "quaternius_ultimate_monsters/glTF/Yeti_Blob.gltf",
+    "meshes": 1,
+    "skins": 1,
+    "animations": [
+      "Bite_Front",
+      "Dance",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "No",
+      "Walk",
+      "Yes"
+    ]
+  }
+]

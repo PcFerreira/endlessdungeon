@@ -1,0 +1,9 @@
+VOXEL MICRO FARM — THIRD-PARTY NOTICES
+
+This asset package contains no bundled third-party model, image, font, audio
+recording, engine binary or external code library. The examples use Godot's
+built-in default font and engine APIs, provided by the user's Godot installation.
+Godot's own licensing applies to the engine and its built-in dependencies.
+
+Development tools including Blender, Godot MCP and its editor bridge are not
+included in this release. They are not required to use this asset package.

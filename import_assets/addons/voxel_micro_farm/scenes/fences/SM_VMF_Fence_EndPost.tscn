@@ -1,0 +1,37 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_bqx00"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_EndPost_Frame.res" id="2_53odr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6522p"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[node name="SM_VMF_Fence_EndPost" type="Node3D" unique_id=114495911]
+metadata/vmf_asset = "SM_VMF_Fence_EndPost"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="." unique_id=1103894030]
+
+[node name="SM_VMF_Fence_EndPost" type="Node3D" parent="Model" unique_id=800592207]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_EndPost_Frame" type="MeshInstance3D" parent="Model/SM_VMF_Fence_EndPost" unique_id=635206844]
+material_override = ExtResource("1_bqx00")
+mesh = ExtResource("2_53odr")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_EndPost/SM_VMF_Fence_EndPost_Frame" unique_id=1701379760]
+
+[node name="@CollisionShape3D@7" type="CollisionShape3D" parent="Model/SM_VMF_Fence_EndPost/SM_VMF_Fence_EndPost_Frame/StaticCollision" unique_id=10424023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_6522p")
+
+[node name="Socket_End" type="Node3D" parent="Model/SM_VMF_Fence_EndPost" unique_id=115420283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)

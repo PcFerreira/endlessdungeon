@@ -1,0 +1,420 @@
+[
+  {
+    "path": "rain_ambience/content/Rain MP3/4.mp3",
+    "duration_seconds": 37.5,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/1.mp3",
+    "duration_seconds": 27.0,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/2.mp3",
+    "duration_seconds": 26.0,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain MP3/3.mp3",
+    "duration_seconds": 45.0,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/2.ogg",
+    "duration_seconds": 26.0,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/3.ogg",
+    "duration_seconds": 45.0,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/1.ogg",
+    "duration_seconds": 27.0,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "rain_ambience/content/Rain OGG/4.ogg",
+    "duration_seconds": 37.5,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind5.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind4.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind1.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind3.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wind_ambience/wind2.wav",
+    "duration_seconds": 59.998912,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "dungeon_ambience/dungeon_ambient_1_0.ogg",
+    "duration_seconds": 94.30975,
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_frog_1.wav",
+    "duration_seconds": 0.921542,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_cricket_1.wav",
+    "duration_seconds": 0.188662,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_bird_1.wav",
+    "duration_seconds": 2.265397,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/godot_wav/amb_bird_2.wav",
+    "duration_seconds": 3.02585,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_bird_1.flac",
+    "duration_seconds": 2.265397,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_cricket_1.flac",
+    "duration_seconds": 0.188662,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_frog_1.flac",
+    "duration_seconds": 0.921542,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "wildlife_ambience/content/amb_bird_cricket_frog/amb_bird_cricket_frog/amb_bird_2.flac",
+    "duration_seconds": 3.02585,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_forest.wav",
+    "duration_seconds": 9.184943,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_stream.wav",
+    "duration_seconds": 2.73415,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_river.wav",
+    "duration_seconds": 21.423311,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_wind_1.wav",
+    "duration_seconds": 3.37644,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_waterfall.wav",
+    "duration_seconds": 7.752562,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/godot_wav/amb_mountains.wav",
+    "duration_seconds": 6.019773,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_wind_1.flac",
+    "duration_seconds": 3.37644,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_waterfall.flac",
+    "duration_seconds": 7.752562,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_stream.flac",
+    "duration_seconds": 2.73415,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_river.flac",
+    "duration_seconds": 21.423311,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_mountains.flac",
+    "duration_seconds": 6.019773,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  },
+  {
+    "path": "river_forest_ambience/content/ambient_mountains_forest_river_waterfall_wind/ambient_mountains_forest_river_waterfall_wind/amb_forest.flac",
+    "duration_seconds": 9.184943,
+    "streams": [
+      {
+        "codec_name": "flac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 1,
+        "bits_per_raw_sample": "16"
+      }
+    ]
+  }
+]

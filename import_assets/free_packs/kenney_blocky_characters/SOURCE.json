@@ -1,0 +1,26 @@
+{
+  "id": "kenney_blocky_characters",
+  "title": "Kenney Blocky Characters",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/blocky-characters",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/blocky-characters/8369c0cf30-1749547469/kenney_blocky-characters_20.zip",
+      "filename": "kenney_blocky-characters_20.zip",
+      "bytes": 2148510,
+      "sha256": "5e123859aa0c1598342b600c6db197024a1d63eb9ec531398b310725f589887e",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Blocky 3D",
+  "categories": [
+    "NPCs",
+    "characters"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney Blocky Characters by Kenney. Source: https://kenney.nl/assets/blocky-characters. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

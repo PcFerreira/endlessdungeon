@@ -1,0 +1,30 @@
+{
+  "id": "isometric_pixel_forest",
+  "title": "Forest Isometric Pixel Art",
+  "author": "Kipperfalcon",
+  "license": "UNRESOLVED",
+  "source": "https://opengameart.org/content/free-forest-isometric-pixel-art",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/forest_isometric_pack_free.zip",
+      "filename": "forest_isometric_pack_free.zip",
+      "bytes": 146273,
+      "sha256": "d0d792de88bf1f2da1b1dc6a0f1b3320222df1a0356ba31074ba4f38b17ddc4c",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Isometric pixel art",
+  "categories": [
+    "Forest",
+    "terrain",
+    "vegetation"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Forest Isometric Pixel Art by Kipperfalcon. Source: https://opengameart.org/content/free-forest-isometric-pixel-art. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content.",
+  "license_status": "conflicting publisher statements; review required",
+  "declared_license": "CC0-1.0",
+  "review_note": "The publisher page declares CC0, but the included README.txt prohibits redistribution, resale and repackaging, including modified standalone content and collections. Do not treat this pack as confirmed CC0 until the author resolves the conflict."
+}

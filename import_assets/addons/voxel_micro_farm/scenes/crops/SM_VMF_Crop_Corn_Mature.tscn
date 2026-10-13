@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_mbea3"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Corn_Mature_Geo.res" id="2_e0emx"]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" unique_id=1405590125]
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="." unique_id=1620089311]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="Model" unique_id=1396370708]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Crop_Corn_Mature" unique_id=1107252670]
+material_override = ExtResource("1_mbea3")
+mesh = ExtResource("2_e0emx")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="Model/SM_VMF_Crop_Corn_Mature" unique_id=472580506]

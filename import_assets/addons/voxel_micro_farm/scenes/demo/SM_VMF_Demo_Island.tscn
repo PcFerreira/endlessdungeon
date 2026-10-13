@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_cr8it"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Demo_Island_Geo.res" id="2_pacqx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtf1r"]
+size = Vector3(4.3199997, 0.39999998, 4.3199997)
+
+[node name="SM_VMF_Demo_Island" type="Node3D" unique_id=1355488199]
+metadata/vmf_asset = "SM_VMF_Demo_Island"
+metadata/vmf_category = "demo"
+
+[node name="Model" type="Node3D" parent="." unique_id=443507600]
+
+[node name="SM_VMF_Demo_Island" type="Node3D" parent="Model" unique_id=1692242039]
+metadata/extras = {
+"category": "Demo",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Demo_Island_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Demo_Island" unique_id=474677026]
+material_override = ExtResource("1_cr8it")
+mesh = ExtResource("2_pacqx")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 4.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=1771198675]
+
+[node name="@CollisionShape3D@2" type="CollisionShape3D" parent="StaticCollision" unique_id=523065803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.19999999, 0)
+shape = SubResource("BoxShape3D_dtf1r")

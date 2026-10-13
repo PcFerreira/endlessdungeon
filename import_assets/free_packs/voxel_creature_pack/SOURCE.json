@@ -1,0 +1,26 @@
+{
+  "id": "voxel_creature_pack",
+  "title": "Voxel Creature Pack 1",
+  "author": "kooow; rudy85; WeaponGuy; Bitiquinho; Micket; umask007; JamesWhite; CDmir; yd",
+  "source": "https://opengameart.org/content/voxel-creature-pack1",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/voxel_creature_pack1.zip",
+      "filename": "voxel_creature_pack1.zip",
+      "bytes": 1271483,
+      "sha256": "96c35d1ff8cce6992b3f52751a2c52e149c88f939327b44bd0f05a34885f87a2",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Voxel 3D",
+  "categories": [
+    "Animals",
+    "fantasy creatures"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Voxel Creature Pack 1 by kooow; rudy85; WeaponGuy; Bitiquinho; Micket; umask007; JamesWhite; CDmir; yd. Source: https://opengameart.org/content/voxel-creature-pack1. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_llvfr"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_ShippingChest_Lid_Geo.res" id="2_8ywf4"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_ShippingChest_Body.res" id="3_gahrg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qifna"]
+size = Vector3(0.79999995, 0.14, 0.59999996)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_km7mi"]
+size = Vector3(0.79999995, 0.48, 0.56)
+
+[node name="SM_VMF_Prop_ShippingChest" type="Node3D" unique_id=1893893720]
+metadata/vmf_asset = "SM_VMF_Prop_ShippingChest"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="." unique_id=1434877055]
+
+[node name="SM_VMF_Prop_ShippingChest" type="Node3D" parent="Model" unique_id=1672028580]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="Pivot_Lid" type="Node3D" parent="Model/SM_VMF_Prop_ShippingChest" unique_id=1346641230 groups=["vmf_lid_hinges"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48, -0.26999998)
+
+[node name="Lid_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Prop_ShippingChest/Pivot_Lid" unique_id=502208675]
+material_override = ExtResource("1_llvfr")
+mesh = ExtResource("2_8ywf4")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Prop_ShippingChest/Pivot_Lid/Lid_Geo" unique_id=1498404054]
+
+[node name="@CollisionShape3D@20" type="CollisionShape3D" parent="Model/SM_VMF_Prop_ShippingChest/Pivot_Lid/Lid_Geo/StaticCollision" unique_id=763015965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.010000002, 0.27999997)
+shape = SubResource("BoxShape3D_qifna")
+
+[node name="SM_VMF_Prop_ShippingChest_Body" type="MeshInstance3D" parent="Model/SM_VMF_Prop_ShippingChest" unique_id=1107914288]
+material_override = ExtResource("1_llvfr")
+mesh = ExtResource("3_gahrg")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Prop_ShippingChest/SM_VMF_Prop_ShippingChest_Body" unique_id=1116069451]
+
+[node name="@CollisionShape3D@21" type="CollisionShape3D" parent="Model/SM_VMF_Prop_ShippingChest/SM_VMF_Prop_ShippingChest_Body/StaticCollision" unique_id=1848956793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_km7mi")
+
+[node name="Socket_Deposit" type="Node3D" parent="Model/SM_VMF_Prop_ShippingChest" unique_id=575379966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45999998, 0)

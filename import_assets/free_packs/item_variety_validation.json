@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-12",
+  "scope": "Seven item-variety additions; original 25-pack checks remain in validation.json",
+  "new_packs": [
+    "kenney_food_kit",
+    "kaykit_fantasy_weapons",
+    "rpg_inventory_crafting_icons",
+    "assorted_rpg_icons",
+    "gem_icon_collection",
+    "potion_icon_collection",
+    "crafting_material_icons"
+  ],
+  "new_gltf_glb_models": 231,
+  "new_source_png_files": 587,
+  "new_source_svg_files": 72,
+  "zip_crc_checked_during_download": true,
+  "godot": {
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "isolated_project": true,
+    "models_instantiated": 231,
+    "textures_loaded": 659,
+    "import_exit_code": 0,
+    "resource_check_exit_code": 0,
+    "warnings": [
+
+    ]
+  },
+  "all_staged_file_hashes_verified": 6125,
+  "local_markdown_links_checked": true,
+  "total_catalog_packs": 32,
+  "license_counts": {
+    "CC0-1.0": 28,
+    "CC-BY-3.0": 3,
+    "CC-BY-4.0": 1
+  },
+  "limits": [
+    "FBX/OBJ and GIF/XCF alternatives not imported in this check",
+    "Runtime integration, model scale, recipes, generated item rules and loot balance not tested",
+    "Byte hash comparisons do not measure unique item designs or detect recolored/resized copies"
+  ]
+}

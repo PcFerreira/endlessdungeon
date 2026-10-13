@@ -1,0 +1,155 @@
+[
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/blue_daemon.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      54,
+      36,
+      60
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/bear.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      58,
+      22,
+      31
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/beisa_oryx.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      16,
+      48,
+      48
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/rooster.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      16,
+      39,
+      44
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/green_dragon.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      84,
+      89,
+      42
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/beagle.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      12,
+      44,
+      32
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/goblin_chicken_shark.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      27,
+      57,
+      27
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/bronto.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      14,
+      69,
+      58
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/simple_cannon.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      22,
+      48,
+      25
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/auroch.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      20,
+      62,
+      36
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/vampire_duck.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      49,
+      22,
+      29
+    ]
+  },
+  {
+    "path": "voxel_creature_pack/qubicle_magicavoxel/footed_piranha.vox",
+    "format": "Legacy dense grid with RGB palette; editor compatibility untested",
+    "dimensions": [
+      19,
+      39,
+      29
+    ]
+  },
+  {
+    "path": "padadu_fantasy_voxels/cannon_mesh_48 voxs.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/bow_48 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/bow_32 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/crossbow_32 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/broadsword_48 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/crossbow_48 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/brontosaurus_48 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/brontosaurus_32 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  },
+  {
+    "path": "padadu_fantasy_voxels/cannon_mesh_32 vox.vox",
+    "format": "MagicaVoxel chunk format",
+    "version": 150
+  }
+]

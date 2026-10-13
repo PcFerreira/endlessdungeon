@@ -1,0 +1,1461 @@
+{
+  "id": "quaternius_fantasy_props",
+  "title": "Quaternius Fantasy Props MegaKit: Standard",
+  "author": "Quaternius",
+  "source": "https://quaternius.com/packs/fantasypropsmegakit.html",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-13",
+  "mirror": "https://github.com/agentkaerf/FreeModels",
+  "revision": "db3df04d1e4714298a09510b26fb6de6645138a2",
+  "download_note": "Downloaded the free Standard glTF subset, textures and publisher license from a pinned public CC0 mirror. Paid PRO/SOURCE content and alternative formats are not included.",
+  "scope": "Downloaded the free Standard glTF subset, textures and publisher license from a pinned public CC0 mirror. Paid PRO/SOURCE content and alternative formats are not included.",
+  "downloads": [
+    {
+      "path": "Exports/glTF/Anvil.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Anvil.bin",
+      "bytes": 24020,
+      "git_blob_sha1": "14a0e96661e910e33997fc8eac38378658311347",
+      "sha256": "d52a9ab436577e8ee8ca00b2929b15595a60b0294c6275a39ecfe1f27408bfcf"
+    },
+    {
+      "path": "Exports/glTF/Anvil.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Anvil.gltf",
+      "bytes": 3189,
+      "git_blob_sha1": "167be1b05f0961f0ce749ffc24b692dd861ac1ac",
+      "sha256": "29e0a6a19f9a579ffe8d463c2a8d445c531a39271ba4eab9754d3f5d9f9d9ce1"
+    },
+    {
+      "path": "Exports/glTF/Anvil_Log.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Anvil_Log.bin",
+      "bytes": 130880,
+      "git_blob_sha1": "a1bf59d178fa49109b81b0f91d29bbd958575a2e",
+      "sha256": "7d3d078f1be72c9c56abc0ee2fc5dfa23826b8a03beaaa756d27054a7443919c"
+    },
+    {
+      "path": "Exports/glTF/Anvil_Log.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Anvil_Log.gltf",
+      "bytes": 5580,
+      "git_blob_sha1": "4a92017eac017de65b87862b5232301d879a556c",
+      "sha256": "878f803a0d8d7a4db5ad31f4839bc87ac03fd409cb69e30aa078c00729a38df2"
+    },
+    {
+      "path": "Exports/glTF/Axe_Bronze.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Axe_Bronze.bin",
+      "bytes": 31156,
+      "git_blob_sha1": "b135791244462a522cbef541ce3375161059c480",
+      "sha256": "d608e8dea796ae8a200cd78bb1836d2705944f628abb6ac2e03c76e6637187b2"
+    },
+    {
+      "path": "Exports/glTF/Axe_Bronze.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Axe_Bronze.gltf",
+      "bytes": 2591,
+      "git_blob_sha1": "9997269eef33edcfe9d68ea6b9fe2552511b6cc4",
+      "sha256": "338ce6e6947b8849774aac2deb9d2bf3a1cb14dc869effb7be0a91053e67b64f"
+    },
+    {
+      "path": "Exports/glTF/Bag.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bag.bin",
+      "bytes": 27188,
+      "git_blob_sha1": "3e483030ce3073d164d90e013ace12e3aa1276a8",
+      "sha256": "6bf8ad99d0048264aa37157a92f394ab32aeeb5270dab2f3f76282b1eda4e012"
+    },
+    {
+      "path": "Exports/glTF/Bag.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bag.gltf",
+      "bytes": 4318,
+      "git_blob_sha1": "80d0e617976758812efdbce07260341ddfd884df",
+      "sha256": "ccbf22a9162a2a2173caa7346e796b8f92a86dbbbe02a196530bf5642293e545"
+    },
+    {
+      "path": "Exports/glTF/Banner_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_1.bin",
+      "bytes": 20976,
+      "git_blob_sha1": "a5c78b1da2ca88ef12e1d77ab71e17eba1879cb8",
+      "sha256": "7d98308055e39b01192ec5fe9a44688f9ba549ec1d2b12c94d6e5fc4f094cf32"
+    },
+    {
+      "path": "Exports/glTF/Banner_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_1.gltf",
+      "bytes": 6789,
+      "git_blob_sha1": "34a6d45dab4854af47775e6b458c43555fd8910d",
+      "sha256": "a00162c8ef35912d0fe9137b0ee53f94752a1b61fcd8033d4f1e50bd2c54eca1"
+    },
+    {
+      "path": "Exports/glTF/Banner_1_Cloth.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_1_Cloth.bin",
+      "bytes": 6636,
+      "git_blob_sha1": "f291b15ecfa1c35a2d2c7bfaa4204d24e63cf7f0",
+      "sha256": "30cc64edb6898f378dbcc573acbff6ab7731f448025b13ff884541348fce5ea5"
+    },
+    {
+      "path": "Exports/glTF/Banner_1_Cloth.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_1_Cloth.gltf",
+      "bytes": 4670,
+      "git_blob_sha1": "634e80035a394cd7919cdae9b19d24d06d972cde",
+      "sha256": "ab59fad1699f4d04993e6bd3b3c2e909de8b5255b023b061cca22c4400196ffc"
+    },
+    {
+      "path": "Exports/glTF/Banner_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_2.bin",
+      "bytes": 19280,
+      "git_blob_sha1": "6e260d3706767e24f22217415672bf9116762d10",
+      "sha256": "bb694e19ced6d0a7da5d6d8c1f6b518f3cecdb751b8dea69a21a47fdd798d4e3"
+    },
+    {
+      "path": "Exports/glTF/Banner_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_2.gltf",
+      "bytes": 6788,
+      "git_blob_sha1": "e3651bc37c99a866eeed82ee501a3868e23170ae",
+      "sha256": "c759b5da84c6b7b9d10ee69f498f4ac9022a6f7003e4deb7f6cd49f4fa6f29df"
+    },
+    {
+      "path": "Exports/glTF/Banner_2_Cloth.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_2_Cloth.bin",
+      "bytes": 4940,
+      "git_blob_sha1": "bb7a772dd27530f9997eb99d103a8e40eca8dfb4",
+      "sha256": "258fa990f109353326ff14f71581fa71f3a2bd5aaa3b62c0cddf05d0b55d3dc0"
+    },
+    {
+      "path": "Exports/glTF/Banner_2_Cloth.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Banner_2_Cloth.gltf",
+      "bytes": 4671,
+      "git_blob_sha1": "c577c01aa7c3ebd3e9fae0b56a0ef2939ceb0fcd",
+      "sha256": "fd5e8d3ededb8404bec7b872a569d12025ed5e3bca617a7432674ffe746ffea7"
+    },
+    {
+      "path": "Exports/glTF/Barrel.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Barrel.bin",
+      "bytes": 57144,
+      "git_blob_sha1": "b7774e9cfb77fb9178d7e0e7408a6ba7760f0539",
+      "sha256": "d8f963e2975b6bbd4b631b5cd7ade2d5dfc76dfb9f8387e2d398935f5405cf20"
+    },
+    {
+      "path": "Exports/glTF/Barrel.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Barrel.gltf",
+      "bytes": 4311,
+      "git_blob_sha1": "48ae36ab39e83817007ecfdb10f5527b313a853c",
+      "sha256": "cececb2da345addb21567e3ce1b30a9da071b689bcec59d85cd7a4446f531e87"
+    },
+    {
+      "path": "Exports/glTF/Barrel_Apples.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Barrel_Apples.bin",
+      "bytes": 104600,
+      "git_blob_sha1": "f9fd961b3408181a3ef72e2a4f3473b0debe86d6",
+      "sha256": "774c97d9b2b2faa04ef40c681540ca3be74a3942ab8bbbd8c8d260b66121f8c8"
+    },
+    {
+      "path": "Exports/glTF/Barrel_Apples.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Barrel_Apples.gltf",
+      "bytes": 6241,
+      "git_blob_sha1": "1f49a6fcb6c1ac2848905c1958f392ba4b6eda33",
+      "sha256": "07520279b51bd1cc75b6db88b572b5ec445fc7decf0b115fba5c9e20f8caa111"
+    },
+    {
+      "path": "Exports/glTF/Barrel_Holder.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Barrel_Holder.bin",
+      "bytes": 161816,
+      "git_blob_sha1": "a677384e48951411e5e6e1e96bad24bdaf574c52",
+      "sha256": "a4aa5eb66d4261565dea3389f73005b6c5cac1f6b226d090cecbc5791d5a418a"
+    },
+    {
+      "path": "Exports/glTF/Barrel_Holder.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Barrel_Holder.gltf",
+      "bytes": 4347,
+      "git_blob_sha1": "c6cc966545e5208371159fb0172ec2bdb91d6895",
+      "sha256": "aa318d71e8d5ebcae5f7aff76ed2046eec3d398d2b71f474a04150fa845859c3"
+    },
+    {
+      "path": "Exports/glTF/Bed_Twin1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bed_Twin1.bin",
+      "bytes": 77360,
+      "git_blob_sha1": "e41e2cc45b3148c155f579cdc42c9b6a6ccc1240",
+      "sha256": "72bdaa973e348dea5429ea2ecf465e25b4a1ae834de068d14ace57ad5def6421"
+    },
+    {
+      "path": "Exports/glTF/Bed_Twin1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bed_Twin1.gltf",
+      "bytes": 6217,
+      "git_blob_sha1": "5eb0149f5db6f440debda73093a6d060d76eb7c5",
+      "sha256": "fcb79a79d71d1b24b74113f83684d4e4f0c69e9dacc8b5c9078ca88d286d253e"
+    },
+    {
+      "path": "Exports/glTF/Bed_Twin2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bed_Twin2.bin",
+      "bytes": 76624,
+      "git_blob_sha1": "960f6cf0274d6c35ad48a97fec59d4c9c1d114b4",
+      "sha256": "57131a881f542545644676b26fc547cc35488f903183898c3a0a6fbae81bfea2"
+    },
+    {
+      "path": "Exports/glTF/Bed_Twin2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bed_Twin2.gltf",
+      "bytes": 6217,
+      "git_blob_sha1": "934bd32aa0d7df62898a6a03a755f9dbbd043476",
+      "sha256": "339511be568ed72a8a1f3af9890675d99ad7bc3a60396cd883c22bba0fd7e4c4"
+    },
+    {
+      "path": "Exports/glTF/Bench.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bench.bin",
+      "bytes": 19304,
+      "git_blob_sha1": "9400218eed6b0e01f789a982707a258a80164cd3",
+      "sha256": "08d6976112645dc1f6a554019e2fc965d0bceba7a01c4f6013615ac46520b418"
+    },
+    {
+      "path": "Exports/glTF/Bench.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bench.gltf",
+      "bytes": 4298,
+      "git_blob_sha1": "792b27ca0a01878ce438782031c7e92466a0b1a0",
+      "sha256": "0184d3b128a8a3bcc828d7bc6aa867038e2a85a339130ed015f2727e739f9ab7"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Medium_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Medium_1.bin",
+      "bytes": 25536,
+      "git_blob_sha1": "180f366aae7a7a53f315a0297e1404f9a5bc4da2",
+      "sha256": "cd8cefe75031456ef5418de5476faab904325a7c950b58b95294b839e31d9553"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Medium_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Medium_1.gltf",
+      "bytes": 2429,
+      "git_blob_sha1": "287afb06a87f34fdd601a6392e19d798637b67f3",
+      "sha256": "4c6977e7e3f3380001a2b855255f35fe8bd11a740cf72316a440d1dd861c73cd"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Medium_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Medium_2.bin",
+      "bytes": 28728,
+      "git_blob_sha1": "a6934c64f3666322003feff111879b9c9d7dd511",
+      "sha256": "ebb1753b10d01163eb0eba391943352a9f2b036783c3984487d4847779ceaf62"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Medium_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Medium_2.gltf",
+      "bytes": 2431,
+      "git_blob_sha1": "f411d9217ef283484dd52c2ae956369d7ac0f485",
+      "sha256": "d59e653417907c5ac964597a4cd9f077da02f8ab2ddb64fa6f810e30133a8a2b"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Medium_3.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Medium_3.bin",
+      "bytes": 28728,
+      "git_blob_sha1": "ff99d889d23aa2ea93ea2a4ecee2177362a93876",
+      "sha256": "0a1b75cf436490ed03e9ba99bd59b15d443344e9706e4d19f07540a6d1580119"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Medium_3.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Medium_3.gltf",
+      "bytes": 2432,
+      "git_blob_sha1": "c75e6a6da7e245fce6dbac323ceca8f6b1c40ea8",
+      "sha256": "9ed38c0df898d9e84e903cf02855a1dd06388b53ffcd7de96c91293aab25b38a"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Small_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Small_1.bin",
+      "bytes": 6384,
+      "git_blob_sha1": "24876d4454cccf7b41a7d9d5b577741e158939ab",
+      "sha256": "0c76ff8480fadbee859acff78fdec4e0c693f2a5055e0b6dd6cdbb4ccfd20cb3"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Small_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Small_1.gltf",
+      "bytes": 2423,
+      "git_blob_sha1": "6d661153c87308c79b3badeca3e16c4ac6acbc32",
+      "sha256": "81228320dc30d9cb447627fae0405f77cabfac011267fb3cc62e106948536a37"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Small_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Small_2.bin",
+      "bytes": 6384,
+      "git_blob_sha1": "f1db2109d008cef0a33850d2a3df21f456686aa9",
+      "sha256": "6bf51789b559ff21f78fff8c4e92570d1d2306cbc3cafc48620a34c6b75861b6"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Small_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Small_2.gltf",
+      "bytes": 2426,
+      "git_blob_sha1": "0cc9925764566e0a9a617e72bc548cedf2c92cdb",
+      "sha256": "1dec2d5166936357d4358ab083a0bda86037b5a688fe0844a8a8a0668ae80cec"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Small_3.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Small_3.bin",
+      "bytes": 7980,
+      "git_blob_sha1": "9afb07bb0b03a8e8bd7d0bd15747d21e66aeccb8",
+      "sha256": "007557c58c3bdde0beb467e2ea4dffd9c0a8c699c51b77e81c9b7f70c4e206a8"
+    },
+    {
+      "path": "Exports/glTF/BookGroup_Small_3.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookGroup_Small_3.gltf",
+      "bytes": 2424,
+      "git_blob_sha1": "4850a3fd9a4b8bc530bc85d68d0a7151c9e49fbf",
+      "sha256": "07e7c65cd831fde0b3d7704e6d04d4048b329215ec38fb31669d193e3a2763d3"
+    },
+    {
+      "path": "Exports/glTF/BookStand.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookStand.bin",
+      "bytes": 62020,
+      "git_blob_sha1": "17d6c62aee659b61d20af5bdc5135843c22bb39a",
+      "sha256": "153aa58a6296d61d39832600c80ceeb2f00011d90c7da477c3f326f4744140dd"
+    },
+    {
+      "path": "Exports/glTF/BookStand.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/BookStand.gltf",
+      "bytes": 2223,
+      "git_blob_sha1": "8e802b64c037243b3e1e8d94e63ad73e53f28be5",
+      "sha256": "c7b717e6388bc151cb026256aee8a0b611bf759d294f5070a1c11157483eb07e"
+    },
+    {
+      "path": "Exports/glTF/Book_5.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_5.bin",
+      "bytes": 5856,
+      "git_blob_sha1": "79696979ed0826f67327aa6345eef34c6ca8383c",
+      "sha256": "32060c5c94d297a4409a02f93c73fc86b221311bfa0bee627626e050023836f5"
+    },
+    {
+      "path": "Exports/glTF/Book_5.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_5.gltf",
+      "bytes": 2403,
+      "git_blob_sha1": "dcdf4f06fd72fca1610c4485726820308c12c55d",
+      "sha256": "10b082a9984c355bb68e288362bb5e39c62d037ae5a24e3fcec2a5ded4a3b1ec"
+    },
+    {
+      "path": "Exports/glTF/Book_7.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_7.bin",
+      "bytes": 32664,
+      "git_blob_sha1": "7e2d40f119d1776ded3e85fcdbbb2affe3148410",
+      "sha256": "0716b65db72ba78e157b0cac3c2d05283e95a9255dec1863539be70d642ec56c"
+    },
+    {
+      "path": "Exports/glTF/Book_7.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_7.gltf",
+      "bytes": 4290,
+      "git_blob_sha1": "ca275d64fe30d1e9fa8383e0a3998ce5fef74cdd",
+      "sha256": "7f12a3d7a0d8d108dbdd467695129cb9ff1da11ddcfa78122e10e5f1db849e24"
+    },
+    {
+      "path": "Exports/glTF/Book_Simplified_Single.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_Simplified_Single.bin",
+      "bytes": 3192,
+      "git_blob_sha1": "24888364d4ada4e6a568972990100213c0496b4f",
+      "sha256": "22aeb14e052eb5ffffa30a2565fa7e075dab1742f3d12c8ebf3646218d62cad1"
+    },
+    {
+      "path": "Exports/glTF/Book_Simplified_Single.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_Simplified_Single.gltf",
+      "bytes": 2428,
+      "git_blob_sha1": "f7c8d18bb685870b721bb4d611f73872ea947cb4",
+      "sha256": "70c50a7dd573f49e17a2767c9eabe249f82d72098d5080c553538eecbba814bf"
+    },
+    {
+      "path": "Exports/glTF/Book_Stack_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_Stack_1.bin",
+      "bytes": 12768,
+      "git_blob_sha1": "e170609ebb8ce4309e4a3215d3bebbcf06f5fb57",
+      "sha256": "cdbe0b7f468ac1713989e0c7f67c93dd83a899825d518b4911d56f4613c85fb7"
+    },
+    {
+      "path": "Exports/glTF/Book_Stack_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_Stack_1.gltf",
+      "bytes": 2418,
+      "git_blob_sha1": "4a98f0664c7a0025960b2626d5eaf2be68bc2057",
+      "sha256": "aac90f5a6859acb1edf12b248e12a914f652e8a0a0af0fa6cee6dda3225a7fd2"
+    },
+    {
+      "path": "Exports/glTF/Book_Stack_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_Stack_2.bin",
+      "bytes": 23956,
+      "git_blob_sha1": "310dab29d0194f959cfd3eb765c4c3efa5ae2085",
+      "sha256": "3f3e48b029bb932c2169fd40d603ddb587e475ea9724275c9bed3f76396c5860"
+    },
+    {
+      "path": "Exports/glTF/Book_Stack_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Book_Stack_2.gltf",
+      "bytes": 4309,
+      "git_blob_sha1": "963820e0780b8571f5b93063e1ae308090095916",
+      "sha256": "5c0fdceea92115521460a568cd3e0841adafb8da004110cb6be8c65204ebbe8c"
+    },
+    {
+      "path": "Exports/glTF/Bookcase_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bookcase_2.bin",
+      "bytes": 92968,
+      "git_blob_sha1": "ac0cd89a124d211cc02d69f699f5ff8560ceb1ac",
+      "sha256": "2d61ba836ecd93e3c0ac9d590b183c600bcb9e1bd32a84960e83b5f77520f2bb"
+    },
+    {
+      "path": "Exports/glTF/Bookcase_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bookcase_2.gltf",
+      "bytes": 4329,
+      "git_blob_sha1": "8b8778b4b741cfab19dd2069ff9d4a2747a5820f",
+      "sha256": "58bb7dcdc7f0a9e49b4edb6b9d6d142999133104965bd5ab1d0237dd3b5c1b55"
+    },
+    {
+      "path": "Exports/glTF/Bottle_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bottle_1.bin",
+      "bytes": 13952,
+      "git_blob_sha1": "da464d09b747b48dc2a8904c35b4446da10d4aa3",
+      "sha256": "9f4147c9184b86c92f7cc290e525815ad5728141b59bb2a02dc4f0547273c68d"
+    },
+    {
+      "path": "Exports/glTF/Bottle_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bottle_1.gltf",
+      "bytes": 2413,
+      "git_blob_sha1": "9a633615a424158a8e68bccc56f8d7b119c4578a",
+      "sha256": "d23c52823303be9d7bbe068b069b8c470294f5c5a40986948ff35bc0d0d48d60"
+    },
+    {
+      "path": "Exports/glTF/Bucket_Metal.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bucket_Metal.bin",
+      "bytes": 18824,
+      "git_blob_sha1": "7c6061fa54f8e34062f84f72baead4bb1e530e25",
+      "sha256": "21ed9b3699a07707180d980c9b9e16a8f19924268e199e7ba17b8b5c06c4f35f"
+    },
+    {
+      "path": "Exports/glTF/Bucket_Metal.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bucket_Metal.gltf",
+      "bytes": 2206,
+      "git_blob_sha1": "19be6d461b096de6ced255b363bc8a872c7986ec",
+      "sha256": "0601c71ce5291f7cc23e33278d3cb70817b3a4410b44588298dbef606c8efb48"
+    },
+    {
+      "path": "Exports/glTF/Bucket_Wooden_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bucket_Wooden_1.bin",
+      "bytes": 32544,
+      "git_blob_sha1": "4fef93f62d75680761a1968f4d74eaea6d0c9041",
+      "sha256": "be608473cd78557d466be9b9e2f6ff15f1edf1e4f5fcdd27be75d494f52578f2"
+    },
+    {
+      "path": "Exports/glTF/Bucket_Wooden_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Bucket_Wooden_1.gltf",
+      "bytes": 3911,
+      "git_blob_sha1": "30ef018af40dda0ee2bb21f44e86915b1f393214",
+      "sha256": "b4f93568d96d38dca162098e75fb3eb4ffaf5ff6e41f8f788476abd3be4984cf"
+    },
+    {
+      "path": "Exports/glTF/Cabinet.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Cabinet.bin",
+      "bytes": 114768,
+      "git_blob_sha1": "a082ec534fc9974ce39852d412390ab96101e0ad",
+      "sha256": "dcfed47cc915564061483171ea8b8a4b4563177a4692e37ea91308b8b6f41450"
+    },
+    {
+      "path": "Exports/glTF/Cabinet.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Cabinet.gltf",
+      "bytes": 4324,
+      "git_blob_sha1": "18e163726eba6dae32ad736f5eae0c998a183599",
+      "sha256": "43df513943cde0590ca1925c3920ace9d08e4694d51282a1f5ab70b42e79fe44"
+    },
+    {
+      "path": "Exports/glTF/Cage_Small.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Cage_Small.bin",
+      "bytes": 171848,
+      "git_blob_sha1": "0cca3b0dfd734d1671dde3176a2ed0cc2651eef8",
+      "sha256": "bdee89659cd0bf76c480c822ad2d5c05bb7d6f943fd0059f4f59cd8d68009523"
+    },
+    {
+      "path": "Exports/glTF/Cage_Small.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Cage_Small.gltf",
+      "bytes": 2207,
+      "git_blob_sha1": "4a6404344f0c24613cf59639d18f516be8323465",
+      "sha256": "17c14a9f1f6d1d332f8c3b71f0a31e829a879fab04476e75c8abfb6b74d41506"
+    },
+    {
+      "path": "Exports/glTF/CandleStick.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/CandleStick.bin",
+      "bytes": 21436,
+      "git_blob_sha1": "8847d34835d9b0d2b8b7a8a3607087384cb03ab0",
+      "sha256": "45ad392961f6389aa7616f5efa03b5f7edf7285866743b1c704670d01f7284cd"
+    },
+    {
+      "path": "Exports/glTF/CandleStick.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/CandleStick.gltf",
+      "bytes": 2199,
+      "git_blob_sha1": "c2fd527086c68f8be55b06cf04383f1d3f9f5e45",
+      "sha256": "f57eaff5b2b61bda1c3b17460295b9fc708e9700e5070aee6e3afd0c297131a3"
+    },
+    {
+      "path": "Exports/glTF/CandleStick_Stand.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/CandleStick_Stand.bin",
+      "bytes": 226228,
+      "git_blob_sha1": "8d93b216bb9fdbaf1c7dab01022186bb5775401d",
+      "sha256": "8d3300e0ab2563b72f4f7ae7f1c7032f9f7c8a0f13f37177b43689a61e5568b2"
+    },
+    {
+      "path": "Exports/glTF/CandleStick_Stand.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/CandleStick_Stand.gltf",
+      "bytes": 4347,
+      "git_blob_sha1": "6a9ad5d7c7f0d847617f33b6b9321c8c3cd271c2",
+      "sha256": "4255072b144deb6abadaa604cdb52d09a64dfee2df690cd0f1c71c829454380b"
+    },
+    {
+      "path": "Exports/glTF/CandleStick_Triple.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/CandleStick_Triple.bin",
+      "bytes": 74368,
+      "git_blob_sha1": "91fbf1405fb409a4e0d3e93757cb7fd11a633f7d",
+      "sha256": "35bf25557f28b7c6b4824d6f876698485b3131f09d619c994787573166a4309c"
+    },
+    {
+      "path": "Exports/glTF/CandleStick_Triple.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/CandleStick_Triple.gltf",
+      "bytes": 3900,
+      "git_blob_sha1": "ddad63f86abdabdfdb65e7d60755e1385249c0f6",
+      "sha256": "a65eea34c6af2372ce4490341481d48a17a2611e9815229bac060b6d5e13fa08"
+    },
+    {
+      "path": "Exports/glTF/Candle_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Candle_1.bin",
+      "bytes": 6200,
+      "git_blob_sha1": "10eb0a8b2d6be1dd32e0323d288d5edd85cddf1f",
+      "sha256": "18ce193bb732642969a897b709dd2aa5b59c7fdb87ddc330152794e48b9d981b"
+    },
+    {
+      "path": "Exports/glTF/Candle_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Candle_1.gltf",
+      "bytes": 2191,
+      "git_blob_sha1": "d2b365842a9b721ac68b0daf0a670f578fd2bbe3",
+      "sha256": "9539cc17bdc7b774ae7adbfe9c148e89f81e3eba09079d7310f0b789113b6cad"
+    },
+    {
+      "path": "Exports/glTF/Candle_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Candle_2.bin",
+      "bytes": 6124,
+      "git_blob_sha1": "23a5e618a1bddd3578764484d79e8f0fdd39d7fc",
+      "sha256": "0d7edbc4ddb7bff3939fb6285b3a2311e4839c823196b44a83786d023a755fe5"
+    },
+    {
+      "path": "Exports/glTF/Candle_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Candle_2.gltf",
+      "bytes": 2191,
+      "git_blob_sha1": "c8b952abbfe5456c986a8fba199e6d28951f5a88",
+      "sha256": "4856167e1e1c6c039d9f6d162e7cf6e98586640a04d57ccb759c631d91deab39"
+    },
+    {
+      "path": "Exports/glTF/Carrot.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Carrot.bin",
+      "bytes": 22244,
+      "git_blob_sha1": "d2623b77b8fd38501b9f8af009cff5dde8b9fa9c",
+      "sha256": "a551591fc5f300e4fc9df6b872492860ade722d1c585ae899f9441b77ec865ab"
+    },
+    {
+      "path": "Exports/glTF/Carrot.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Carrot.gltf",
+      "bytes": 2411,
+      "git_blob_sha1": "1f23f041bcaa6c9692660d66b79f0f8c1c1c40d4",
+      "sha256": "7554921323c16180f3fdc35891042a031e1a671eb34e005213370f8330d6b20b"
+    },
+    {
+      "path": "Exports/glTF/Cauldron.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Cauldron.bin",
+      "bytes": 62712,
+      "git_blob_sha1": "f8f39477eec0beefe842a8f1b694f5c6af0701ef",
+      "sha256": "63fd1b9d8d44a12fcb421f74a4f3d806f023b4aa1be9391a7c313a996a8f7f4b"
+    },
+    {
+      "path": "Exports/glTF/Cauldron.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Cauldron.gltf",
+      "bytes": 2195,
+      "git_blob_sha1": "3672c88c61eecacb23aed5e5580af4c61ff1b500",
+      "sha256": "3937dcadb9b920ae88d7674009b73e2da6c6d9f73d0f4fe6e79408a04dbffec1"
+    },
+    {
+      "path": "Exports/glTF/Chain_Coil.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chain_Coil.bin",
+      "bytes": 193664,
+      "git_blob_sha1": "2d7895fb4348815932c32fca4e6559c49f41414c",
+      "sha256": "ee403f5a0068cbadcf002231985668993c8231007ef59e06087e4c2cb902ace9"
+    },
+    {
+      "path": "Exports/glTF/Chain_Coil.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chain_Coil.gltf",
+      "bytes": 2424,
+      "git_blob_sha1": "8e17dbe7097f7ed9d3fe0b3090957c8b16e8a9d3",
+      "sha256": "a1ddf045b66e6433459a68b871ea9a31162c55fa1d5fc5f6ea1685bac3225c97"
+    },
+    {
+      "path": "Exports/glTF/Chair_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chair_1.bin",
+      "bytes": 28096,
+      "git_blob_sha1": "e4658136c5c2172b8e478ed3180a53668e562ac9",
+      "sha256": "dc16da2a14704460a4050ef08782bb46b56b911eb161965b3f2676a1b24c201d"
+    },
+    {
+      "path": "Exports/glTF/Chair_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chair_1.gltf",
+      "bytes": 4312,
+      "git_blob_sha1": "4e40f15db1017f19b04fd2eb63708d3aa7f6ce22",
+      "sha256": "9c3e659f25c850990cbf8a4d850b6222110248cd5c1419a2c0f548a312dd8457"
+    },
+    {
+      "path": "Exports/glTF/Chalice.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chalice.bin",
+      "bytes": 15644,
+      "git_blob_sha1": "1b280b90bb53960570342f177a440b73d20bc7b9",
+      "sha256": "5e71580a7eb8e26254edcdcb95ca5d5f4412354e7fb2124a0d1e9331bcf7e7f9"
+    },
+    {
+      "path": "Exports/glTF/Chalice.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chalice.gltf",
+      "bytes": 2197,
+      "git_blob_sha1": "184223ceea6a353a88dc907fa93ac6db8b6890d6",
+      "sha256": "435d3f90c2be5f1d76cfd8a5d2f478ee9d384370f0a583e7c2d1e14fa870d271"
+    },
+    {
+      "path": "Exports/glTF/Chandelier.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chandelier.bin",
+      "bytes": 266680,
+      "git_blob_sha1": "7675923ee51659bd4f383377528f69aaa187ab0b",
+      "sha256": "6ee3fc5a8dcd4b5ff5e7fa9a5d057f1744c8f0721d9b878e245fa9136f8c4bbd"
+    },
+    {
+      "path": "Exports/glTF/Chandelier.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chandelier.gltf",
+      "bytes": 6259,
+      "git_blob_sha1": "5313af1adf254b56e224b2ff5e486cc998455226",
+      "sha256": "2fa74c8bb413a86430aa0be69ef2d82cc6cdc6d9505567410dc0abf34b37e272"
+    },
+    {
+      "path": "Exports/glTF/Chest_Wood.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chest_Wood.bin",
+      "bytes": 184356,
+      "git_blob_sha1": "77347b62f85c1de8fabf37e6d5276fe009205e4a",
+      "sha256": "e4aea6f99587b8ad9ac08fac82013c55111a748c2e3febedbc4de3e301253901"
+    },
+    {
+      "path": "Exports/glTF/Chest_Wood.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Chest_Wood.gltf",
+      "bytes": 21402,
+      "git_blob_sha1": "393df7882aa09cfcd44463f3488b09da83dbb1bf",
+      "sha256": "b2022f69b76526fcbbc7f7a8855848beeefa6e8a6f55337d923bce38ed03b2b6"
+    },
+    {
+      "path": "Exports/glTF/Coin.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Coin.bin",
+      "bytes": 14464,
+      "git_blob_sha1": "616fa844cbdc156cab531f5188a25986905d2392",
+      "sha256": "090091faeeb77273e3ca18daaddfd7f8d12ed690508c8ec0e1ce6684ad4ba54a"
+    },
+    {
+      "path": "Exports/glTF/Coin.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Coin.gltf",
+      "bytes": 2408,
+      "git_blob_sha1": "a5791a52edbf4ebb4569ae434eb3776316ebf045",
+      "sha256": "79c3f75e5d8d56c8f7bcc2d095ebdbb6d4f649701880414ab463fc0f98ef7124"
+    },
+    {
+      "path": "Exports/glTF/Coin_Pile.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Coin_Pile.bin",
+      "bytes": 47520,
+      "git_blob_sha1": "e4a0f87b1ab10cfecf6efa23f73c7f5eafad437a",
+      "sha256": "e18ad9b7cfe2304f2476662b43079f2f2d273fc845aa5ca0b41a6f84bd0f3a20"
+    },
+    {
+      "path": "Exports/glTF/Coin_Pile.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Coin_Pile.gltf",
+      "bytes": 2424,
+      "git_blob_sha1": "02cefa238b0fab95f73c76e61966c7af8964756d",
+      "sha256": "aec9db3acc8a8011e0287e9a4b29b6d7ff25234f12387ba8899a6622d52487bd"
+    },
+    {
+      "path": "Exports/glTF/Coin_Pile_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Coin_Pile_2.bin",
+      "bytes": 52612,
+      "git_blob_sha1": "6e172a0574a35bd2a3a486934722a40d67f31faf",
+      "sha256": "24f55251a466526ded6ec0d3445bbfba066f75adb90dd9a9a01fbacb5a96aff3"
+    },
+    {
+      "path": "Exports/glTF/Coin_Pile_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Coin_Pile_2.gltf",
+      "bytes": 2429,
+      "git_blob_sha1": "9048f29f22d86dd84236bf5fcb12f1ed4da83d68",
+      "sha256": "13e3fcf52255db66e22b09ea8279fe88162ab0b06e5797cb0daf89f0856089e4"
+    },
+    {
+      "path": "Exports/glTF/Crate_Metal.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Crate_Metal.bin",
+      "bytes": 126828,
+      "git_blob_sha1": "225c4669932ed04752e6506c5fafa0764f2716d6",
+      "sha256": "cb52d28715b6a9089447ca9ed828a5ab2d5e8f1453502d52df6698269e083f92"
+    },
+    {
+      "path": "Exports/glTF/Crate_Metal.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Crate_Metal.gltf",
+      "bytes": 4335,
+      "git_blob_sha1": "3db074a17ad180a17ac94433e4628a7812fc4daa",
+      "sha256": "55fd4a7f499cededac939eade7a842353ed4764a49cd8e586d8bf733668d4456"
+    },
+    {
+      "path": "Exports/glTF/Crate_Wooden.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Crate_Wooden.bin",
+      "bytes": 66496,
+      "git_blob_sha1": "7c7a04d2c1c008b4bb4ee3bb8298a921218385d1",
+      "sha256": "7ae016386790e5998fbdf1656a5dc53a3f1374c3525b22798d84397a36ae937b"
+    },
+    {
+      "path": "Exports/glTF/Crate_Wooden.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Crate_Wooden.gltf",
+      "bytes": 4412,
+      "git_blob_sha1": "d558d1489cd1ecb0d9a1e920bf0e2fecfb961896",
+      "sha256": "fb06d4b7b9bbfbb9dc51fa56ecff3fe7ba8e9142d643cabedd17a55d7ea46ee5"
+    },
+    {
+      "path": "Exports/glTF/Dummy.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Dummy.bin",
+      "bytes": 80988,
+      "git_blob_sha1": "9b367f9718c8bc88545913b223a885a20cec1098",
+      "sha256": "a8c0897c085b0cee9ef3f7f2f88bc37fd29d9cde1cc281f45d936f620adb98c1"
+    },
+    {
+      "path": "Exports/glTF/Dummy.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Dummy.gltf",
+      "bytes": 5570,
+      "git_blob_sha1": "aa0d1414eb59622456874520a5077762e1121f7d",
+      "sha256": "e7acf49819a78d0ff8ebf8982ee6e9fa1f56e61adb98355743ead4d180d4ba30"
+    },
+    {
+      "path": "Exports/glTF/FarmCrate_Apple.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/FarmCrate_Apple.bin",
+      "bytes": 134488,
+      "git_blob_sha1": "dd5e27740a721edf3fd98f7c1a56394d382c8be5",
+      "sha256": "9f764bf2f2e960ec32ff31198f6b54787391e71bec166da59372f596299d24e6"
+    },
+    {
+      "path": "Exports/glTF/FarmCrate_Apple.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/FarmCrate_Apple.gltf",
+      "bytes": 6263,
+      "git_blob_sha1": "0af25e304db7c44274b89878984506bc4bad8255",
+      "sha256": "56de7097ddbf22801537f38b77335b2d85a4e2d24bdcbe9ceb1b3bc666a24997"
+    },
+    {
+      "path": "Exports/glTF/FarmCrate_Carrot.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/FarmCrate_Carrot.bin",
+      "bytes": 204292,
+      "git_blob_sha1": "700fc93c00beb3fc11f09681eda2546703da8481",
+      "sha256": "18858970c67b1e6fb2d174a4b4a946787cdde12b42d88cce9d846fc4ede50e19"
+    },
+    {
+      "path": "Exports/glTF/FarmCrate_Carrot.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/FarmCrate_Carrot.gltf",
+      "bytes": 6273,
+      "git_blob_sha1": "97f36446a4c2042ea32c5546cb37431c51861a23",
+      "sha256": "6aaa750a27ee652c8090fe7415f1bdd1d66b17d6cfecafc0767559afaef3248c"
+    },
+    {
+      "path": "Exports/glTF/FarmCrate_Empty.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/FarmCrate_Empty.bin",
+      "bytes": 54704,
+      "git_blob_sha1": "27ff31a0ee9bb877ba10c24017474f82ae6eacdd",
+      "sha256": "9c380c8ff9314aa5ca94deaf816527be4aae60802c8bba42d30978f1685b520d"
+    },
+    {
+      "path": "Exports/glTF/FarmCrate_Empty.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/FarmCrate_Empty.gltf",
+      "bytes": 3915,
+      "git_blob_sha1": "b1d0836e8fdef605015d57511e2c4b95eebb39ee",
+      "sha256": "7dccd0a93f29a31ffc05b8b5d39704b2d6c65eb477c895325ecf19c6dc17c644"
+    },
+    {
+      "path": "Exports/glTF/Key_Gold.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Key_Gold.bin",
+      "bytes": 58636,
+      "git_blob_sha1": "f8f5723ca94b77b8da19853ae7914699dab84271",
+      "sha256": "d610e8bafb8a2e4a7836f649deec0b4f044bc29391b9d8606b2c4c20681885e4"
+    },
+    {
+      "path": "Exports/glTF/Key_Gold.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Key_Gold.gltf",
+      "bytes": 2424,
+      "git_blob_sha1": "b1159568e31e468ba09461464f7d367977d5bec5",
+      "sha256": "12decc702c2933e5d7519ac82e397a076867278f61bd44a4196a7abdca60755c"
+    },
+    {
+      "path": "Exports/glTF/Key_Metal.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Key_Metal.bin",
+      "bytes": 19340,
+      "git_blob_sha1": "03921c88d802601a0901a72d68575a3e00e745eb",
+      "sha256": "18ba4046bfb0c97a99b36be0ac28ce5fd104b66c96d20c796532c104b4261c99"
+    },
+    {
+      "path": "Exports/glTF/Key_Metal.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Key_Metal.gltf",
+      "bytes": 2197,
+      "git_blob_sha1": "d8da3dd31eadcbd2d5ace3cd8f61cd6a8837bedc",
+      "sha256": "e77faacb776d80829be581e6238724dc57b210d2185f1198769b6858dfbd7767"
+    },
+    {
+      "path": "Exports/glTF/Lantern_Wall.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Lantern_Wall.bin",
+      "bytes": 120036,
+      "git_blob_sha1": "de52607bc6c3bae84f20f53642978a388999eb7b",
+      "sha256": "fe9f3816130587308b73bb8b4b28031b71fe9405a111f115463022709fa04b2e"
+    },
+    {
+      "path": "Exports/glTF/Lantern_Wall.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Lantern_Wall.gltf",
+      "bytes": 2203,
+      "git_blob_sha1": "b4b65fea8fde3d3f5bf13bcaa04bde0b68425470",
+      "sha256": "9e7623e1d3a16f9212ff7cb41c939746435187f0071bd94849ee7bc6a59785a2"
+    },
+    {
+      "path": "Exports/glTF/Mug.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Mug.bin",
+      "bytes": 12488,
+      "git_blob_sha1": "32e8879ab0d7372870a7c849a7dfb2786b9e544a",
+      "sha256": "bbf61011611387a248b9107b13f40a9cddb31e605f677b2102b236147bf31691"
+    },
+    {
+      "path": "Exports/glTF/Mug.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Mug.gltf",
+      "bytes": 3881,
+      "git_blob_sha1": "efc672e564d0cb4d0800b09e6cb93d0f4a64cec3",
+      "sha256": "73c4cb7e575685d0220a5d1dd40f1a68de9e64bfd34a54bcba6085b62a119a9d"
+    },
+    {
+      "path": "Exports/glTF/Nightstand_Shelf.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Nightstand_Shelf.bin",
+      "bytes": 21412,
+      "git_blob_sha1": "8f8e89abd2cc90287207b278b2b8a099673d2330",
+      "sha256": "8b3be7b1a3ae6e30ef2c263df48677304c4f4d224f866fbb1fb919b4e496e4a9"
+    },
+    {
+      "path": "Exports/glTF/Nightstand_Shelf.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Nightstand_Shelf.gltf",
+      "bytes": 2447,
+      "git_blob_sha1": "b8147a0090413f21fd18fa9d0f6c4527a5db7804",
+      "sha256": "31d1a892ebfc4221c945c703cb5ad4f9d29968003fc6c5526a84a09a5b58e092"
+    },
+    {
+      "path": "Exports/glTF/Peg_Rack.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Peg_Rack.bin",
+      "bytes": 26672,
+      "git_blob_sha1": "a1547c9f216c2f4899020caa0c1fca2ae071305f",
+      "sha256": "47cc2c0d449f96c7db4ea5b1f32df7d8a0ea2a1cb6848fc80bd647236d070ae0"
+    },
+    {
+      "path": "Exports/glTF/Peg_Rack.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Peg_Rack.gltf",
+      "bytes": 3879,
+      "git_blob_sha1": "0b4344feba540f65934d9a6999f2a91d674cac23",
+      "sha256": "7fa0747b6225a259c5cd0b38d1c3d73cc7561bbfb02d9f07b130505714662709"
+    },
+    {
+      "path": "Exports/glTF/Pickaxe_Bronze.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pickaxe_Bronze.bin",
+      "bytes": 30736,
+      "git_blob_sha1": "36e3e1f59f5bb1bbe6bf06b3f7716d1c44b476e0",
+      "sha256": "df51d6075a9d1a8c44ed1b1596796c1b301546c8c2607ddbc88c82d691121bef"
+    },
+    {
+      "path": "Exports/glTF/Pickaxe_Bronze.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pickaxe_Bronze.gltf",
+      "bytes": 2425,
+      "git_blob_sha1": "cc6760864fef097cc6294e644cc669baf51ec2a8",
+      "sha256": "2a934389f82610fc7702e45dcac859b75181633befad409de238932f5f8f2c7f"
+    },
+    {
+      "path": "Exports/glTF/Pot_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pot_1.bin",
+      "bytes": 37160,
+      "git_blob_sha1": "411e2fec869c76fe15cad25661919d2dc2be7663",
+      "sha256": "eebe6918dbdc743501bdcb2d9f576a52028eb3451bdcf95d92674b97918cafc9"
+    },
+    {
+      "path": "Exports/glTF/Pot_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pot_1.gltf",
+      "bytes": 2185,
+      "git_blob_sha1": "57f389c1b187374be3631aba9a51ddb29e1475ae",
+      "sha256": "d925a5e5541d83d2d1885b9d3928fbf553cf4a37ff902cf22d33280805efcf6f"
+    },
+    {
+      "path": "Exports/glTF/Pot_1_Lid.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pot_1_Lid.bin",
+      "bytes": 46120,
+      "git_blob_sha1": "0c4ae1e4752bd586e3b2af6eae5e5a967b4bc084",
+      "sha256": "5c125852b29cf3afa17ec2f0a28585651cb9fbc6b1dd84339288a3a0d504ec8a"
+    },
+    {
+      "path": "Exports/glTF/Pot_1_Lid.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pot_1_Lid.gltf",
+      "bytes": 2196,
+      "git_blob_sha1": "003c02c1d414a73a9cfd5730bb553f3a6e885fb7",
+      "sha256": "b8455f37f1eee179893d08a396aff3b6e715878d1a2bedcdaa4ea6b596d9b5b2"
+    },
+    {
+      "path": "Exports/glTF/Potion_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Potion_1.bin",
+      "bytes": 18200,
+      "git_blob_sha1": "e7390790c6b3061cde9a7d4955ae37251ac0c3b0",
+      "sha256": "6838b7e7a740a91f3bbdce0c79482638f095a79f90e2e1a59158c9750171665c"
+    },
+    {
+      "path": "Exports/glTF/Potion_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Potion_1.gltf",
+      "bytes": 2418,
+      "git_blob_sha1": "8a541dd4ffd4a12498ce68e94190368012fb3c4c",
+      "sha256": "fc53caca616741a21790b54a742a4fe3b4b3dfc88f4d50716fa8f65eece5c2ef"
+    },
+    {
+      "path": "Exports/glTF/Potion_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Potion_2.bin",
+      "bytes": 19672,
+      "git_blob_sha1": "ee4bc18c1db6046ac26f352c9d143dea9cab2a4a",
+      "sha256": "f1eb3a0b72839076d0836f6fd0ae28c79a2b7759ba5aec09260aae1dccfc5d33"
+    },
+    {
+      "path": "Exports/glTF/Potion_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Potion_2.gltf",
+      "bytes": 2418,
+      "git_blob_sha1": "f7d65410fb81db4ef8417f81eb7aa5c3577428bb",
+      "sha256": "42d889170fdad73d6f3f38070ecb0ae1b928de96ce71d78856dcebdbec7d3a15"
+    },
+    {
+      "path": "Exports/glTF/Potion_4.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Potion_4.bin",
+      "bytes": 22536,
+      "git_blob_sha1": "00f230c7678894f97d89810604d8a14de4e1cd86",
+      "sha256": "e656d1279c6e010cf6330f1b690f8de083c90255d945aa69cfd7506881ab3050"
+    },
+    {
+      "path": "Exports/glTF/Potion_4.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Potion_4.gltf",
+      "bytes": 2418,
+      "git_blob_sha1": "dfcd6c53f3fe6a03b20d47af01750a0c0c01e722",
+      "sha256": "1040842ccc81da5f3204ed14bbae38e84e73c63abc899ab0e43a29e969bfdd2d"
+    },
+    {
+      "path": "Exports/glTF/Pouch_Large.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pouch_Large.bin",
+      "bytes": 31580,
+      "git_blob_sha1": "683aca22d59c85d783347b9b195950d64b25a4c6",
+      "sha256": "e83904bdef5ea9b4038f0005a76d5e47367900b4af2bdd44e9869af6e042967b"
+    },
+    {
+      "path": "Exports/glTF/Pouch_Large.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Pouch_Large.gltf",
+      "bytes": 4306,
+      "git_blob_sha1": "a1dc4e1e06520cf314beafd9e00e4f6ff1fdc919",
+      "sha256": "9af4639dfbf39f07142e3491e62e80161164ec0729dc92e9cb0d00abc50d3358"
+    },
+    {
+      "path": "Exports/glTF/Rope_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Rope_1.bin",
+      "bytes": 41624,
+      "git_blob_sha1": "c3cf874f20bdaff448c930aaef739dd1045fdd4a",
+      "sha256": "950d7977e2dcd8fa40c6103f7cd6d4bc9eb93dbc2da37bd3a3b092868efd61c4"
+    },
+    {
+      "path": "Exports/glTF/Rope_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Rope_1.gltf",
+      "bytes": 2223,
+      "git_blob_sha1": "13272f63740f6f68d1a4a5abea73ecf06cdc8869",
+      "sha256": "b4722ec5baf1313b654d2500ba36e2a2b512bbd9b037f304b94b6665d2286313"
+    },
+    {
+      "path": "Exports/glTF/Rope_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Rope_2.bin",
+      "bytes": 34904,
+      "git_blob_sha1": "f2fa4d3a19f7b9e883cc44c53a599dc23837a47c",
+      "sha256": "412afce0c7a43f3b8d87ade3298ef4d76b2124937ec8bc1809fe471a6b7b56cb"
+    },
+    {
+      "path": "Exports/glTF/Rope_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Rope_2.gltf",
+      "bytes": 2223,
+      "git_blob_sha1": "46dc65b8ff33b9a719864fa037e2ff0231f8891c",
+      "sha256": "2df33e9eef473315c9c65abf63152c2ee264c53391e244e1a5cebe77cb0826bf"
+    },
+    {
+      "path": "Exports/glTF/Rope_3.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Rope_3.bin",
+      "bytes": 41624,
+      "git_blob_sha1": "5a47505ee92c27e337c4710334612241c2eb27ff",
+      "sha256": "8c647df0b8dce95ed0a3310ff5f42c7c38dc9b20298f74bed9833abf077dd7ec"
+    },
+    {
+      "path": "Exports/glTF/Rope_3.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Rope_3.gltf",
+      "bytes": 2225,
+      "git_blob_sha1": "927781779fb63eaedeca12d9a9d66b839096d8d1",
+      "sha256": "b87badbc1eeff6905b5f89d7d4096e57eb80378239e74f4b4b925701dca6a874"
+    },
+    {
+      "path": "Exports/glTF/Scroll_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Scroll_1.bin",
+      "bytes": 20112,
+      "git_blob_sha1": "cc4909a4b8b5abd1b63a4d16cc46c7693e65e4d5",
+      "sha256": "884fe80cb3075c274acbac22d44e1cb6dba63ac3e62d7df167ccbf52f8f35308"
+    },
+    {
+      "path": "Exports/glTF/Scroll_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Scroll_1.gltf",
+      "bytes": 3954,
+      "git_blob_sha1": "3917e0b20f5f2e4f88485efc5db49456905ca460",
+      "sha256": "f8b03860718121bfe6975b31996a0bb36e978e208a7df5a52fe4b0f3efbb14aa"
+    },
+    {
+      "path": "Exports/glTF/Scroll_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Scroll_2.bin",
+      "bytes": 28392,
+      "git_blob_sha1": "4a6212bbc647076e2912d844eb7458aa01dfffc0",
+      "sha256": "5e1dfa4c4eaa03b3841f6f2cc1948e4a54b17b3a1e165890981e4186b4e30427"
+    },
+    {
+      "path": "Exports/glTF/Scroll_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Scroll_2.gltf",
+      "bytes": 3968,
+      "git_blob_sha1": "ddeafdf92fc07bc0aaf6d89c3db7c0a1980ef519",
+      "sha256": "4dfb8f44b30afdbe1f65f922484484c6a41ecc3ae2a9ccc6a4f5f6a7314bba1d"
+    },
+    {
+      "path": "Exports/glTF/Shelf_Arch.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shelf_Arch.bin",
+      "bytes": 64836,
+      "git_blob_sha1": "0d893c540a3d886f5bdbc4ddc32188cd5c5644a8",
+      "sha256": "4e1d171e1a4c1ad593e0aea94f89ba29cff757a4f385043a1ef01a0f7633004c"
+    },
+    {
+      "path": "Exports/glTF/Shelf_Arch.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shelf_Arch.gltf",
+      "bytes": 4332,
+      "git_blob_sha1": "301b474e54b93d005e5b571a946f5f851963d613",
+      "sha256": "f8fb72e169162f99e47abbf530307f4a70e967b8b5eaf3844295cc9a212a574f"
+    },
+    {
+      "path": "Exports/glTF/Shelf_Simple.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shelf_Simple.bin",
+      "bytes": 22016,
+      "git_blob_sha1": "562f5bea2400865d52d28a9d5a0f38f2f5632d9e",
+      "sha256": "0064b2a3fc0f3252c55587ec582a49e085b2aa05dca2aa33e9e6a313f88139c6"
+    },
+    {
+      "path": "Exports/glTF/Shelf_Simple.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shelf_Simple.gltf",
+      "bytes": 2224,
+      "git_blob_sha1": "e0b80aaae307526dc411755b8740e0c4614fa2c9",
+      "sha256": "aaddd9bf393cf4ed685a810f1d03cfe2a27dba98c060f889e09a968f91d91106"
+    },
+    {
+      "path": "Exports/glTF/Shelf_Small_Bottles.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shelf_Small_Bottles.bin",
+      "bytes": 229484,
+      "git_blob_sha1": "b7419e80580c9b00e5f6ba58ff27d83fcb2798c9",
+      "sha256": "af17c1712a12f1ca7b1fa15462605848a379cec403ebf76eedc42fdf43d63221"
+    },
+    {
+      "path": "Exports/glTF/Shelf_Small_Bottles.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shelf_Small_Bottles.gltf",
+      "bytes": 6266,
+      "git_blob_sha1": "647a53a84f2d26c2c7f6ee5d91c1e5160761f46c",
+      "sha256": "acc121bf8385e8cf4a928a7ce0ac73dc2639ef89fc5f71e3b52a83c6eec51f93"
+    },
+    {
+      "path": "Exports/glTF/Shield_Wooden.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shield_Wooden.bin",
+      "bytes": 64184,
+      "git_blob_sha1": "deef37b450ecfcd90a0982aaf8c64f805557ef10",
+      "sha256": "98b663ab52b6e72bb796363feef172eebbf6316594d1737d8546078664680452"
+    },
+    {
+      "path": "Exports/glTF/Shield_Wooden.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Shield_Wooden.gltf",
+      "bytes": 6243,
+      "git_blob_sha1": "9bae4ff57b537fc5e8b5566f5ff77c19c4d33e3c",
+      "sha256": "57d46c4a5f34cad7b8a391805d6d4def373778a7b84ef3e4184f83f791082209"
+    },
+    {
+      "path": "Exports/glTF/SmallBottle.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/SmallBottle.bin",
+      "bytes": 5700,
+      "git_blob_sha1": "26786c11836196338c1d99e843cbe1e913893be2",
+      "sha256": "b94056fc489201a821cb474a54e1ee455e990c1ac52a5617f6d26520d2ce1c09"
+    },
+    {
+      "path": "Exports/glTF/SmallBottle.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/SmallBottle.gltf",
+      "bytes": 2392,
+      "git_blob_sha1": "35caf873d324dd2d19385dbd3f1a47fd14d0b751",
+      "sha256": "70447d0fe55cbbf87ba61caafca816cf26133a57326a462dc575c1d45b72f10c"
+    },
+    {
+      "path": "Exports/glTF/SmallBottles_1.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/SmallBottles_1.bin",
+      "bytes": 20556,
+      "git_blob_sha1": "806e22281e68b594fc3e498e284e2684eb8e5b1b",
+      "sha256": "723e7877365cec968535bc92d5c1c905ae52d8c09b60e7799ba097c2c1173010"
+    },
+    {
+      "path": "Exports/glTF/SmallBottles_1.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/SmallBottles_1.gltf",
+      "bytes": 2423,
+      "git_blob_sha1": "5c4ac9fd6ce51d5f4ec6f52ad4308f0706e658f2",
+      "sha256": "dd4b7672bd0faccd8ca6da0d7a70b7689127ece17c255e49a448dafe3fc6d4fd"
+    },
+    {
+      "path": "Exports/glTF/Stall_Cart_Empty.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Stall_Cart_Empty.bin",
+      "bytes": 237264,
+      "git_blob_sha1": "1a7364763387d5ca80a62037b2a6b7565e6bb69c",
+      "sha256": "d70b989c539d9883e9e83f0428390857bf846bb109715a60cb5d526753c33deb"
+    },
+    {
+      "path": "Exports/glTF/Stall_Cart_Empty.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Stall_Cart_Empty.gltf",
+      "bytes": 6857,
+      "git_blob_sha1": "57446b3dcbc40181479b7f2f8518c942d827fc5d",
+      "sha256": "aaeda0ad9ffe8c317909d7450c994b28b1e608fdf04690fa07726b810fb64c88"
+    },
+    {
+      "path": "Exports/glTF/Stall_Empty.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Stall_Empty.bin",
+      "bytes": 88176,
+      "git_blob_sha1": "6397d1c59c965507b5a15db61cde3daa45a069a8",
+      "sha256": "9ddececa6f5e0922ee32b064c400abea4dd068be2bfc78891017fca334158826"
+    },
+    {
+      "path": "Exports/glTF/Stall_Empty.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Stall_Empty.gltf",
+      "bytes": 6804,
+      "git_blob_sha1": "a27702d70ccc00acc88d572c86e8804f6862c511",
+      "sha256": "b0e6b4f6cb6b9dc0b35d92eceb89ebc27addac167fe56fe38cfc77e3afd62af9"
+    },
+    {
+      "path": "Exports/glTF/Stool.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Stool.bin",
+      "bytes": 11472,
+      "git_blob_sha1": "9abbe3477fe4f52b9f631c3aedca3085a3e649a8",
+      "sha256": "6ca3a6bc9b415409d842a338a74c174d0efe4d4972bf8a924fda87c8bda40191"
+    },
+    {
+      "path": "Exports/glTF/Stool.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Stool.gltf",
+      "bytes": 2423,
+      "git_blob_sha1": "9a99b44bd9a8a7b3d60f2b50125fe39809e1db73",
+      "sha256": "55a111d97463adb71a59eddb8bbee777c5743e66a58403b06e869cc35e4da670"
+    },
+    {
+      "path": "Exports/glTF/Sword_Bronze.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Sword_Bronze.bin",
+      "bytes": 69920,
+      "git_blob_sha1": "1671839005596cc402b34413478716372e9be523",
+      "sha256": "01a7a7136344687330f4f2c6109b13a229092e105a4245114f2b68733381645c"
+    },
+    {
+      "path": "Exports/glTF/Sword_Bronze.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Sword_Bronze.gltf",
+      "bytes": 2436,
+      "git_blob_sha1": "145a36906ab4085b27318af6c43b11d95c4be115",
+      "sha256": "fcfbcee736bc6b0408e49922a2eefc11d9131f60777e6053e92d262c1ea37a98"
+    },
+    {
+      "path": "Exports/glTF/T_Page_Noise.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Page_Noise.png",
+      "bytes": 7486734,
+      "git_blob_sha1": "2662a877bcb1ab7726616980e40e68305ad58f6d",
+      "sha256": "4d4069a8d588dab3dcd36f9ea309fc617815b766ce225b78bcd487751585e312"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Cloth_BaseColor.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Cloth_BaseColor.png",
+      "bytes": 1936754,
+      "git_blob_sha1": "d26f6a26ef5315f1edb9cff6c00bdbaa76710abd",
+      "sha256": "c4d0e14506e05cc56e7ca62ebeeb2d45de055296a55e5a8e9c1330ff8ff1833a"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Cloth_Normal.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Cloth_Normal.png",
+      "bytes": 3920858,
+      "git_blob_sha1": "fdde08fe9c725521d7fa97c5f5c2bda243394bb1",
+      "sha256": "e91a490f94bc00707fb5be08045e316b4a18962f07a3b6e3d9d7c2058cfc51c0"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Cloth_ORM.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Cloth_ORM.png",
+      "bytes": 623426,
+      "git_blob_sha1": "a5d124d4b0eede4b8f9fc0e7be0fe192c1580f6e",
+      "sha256": "9bdaa0d1be8c393b07d6185165d73c7cddc058d5c123ad49449945f45a7e0c0d"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Furniture_BaseColor.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Furniture_BaseColor.png",
+      "bytes": 2232961,
+      "git_blob_sha1": "901aadc26d9d64021273a2821298213c4f8b58ca",
+      "sha256": "075fbc9ec2fabc15732bd4025b6f63a0b25762df38440d06bf30437565d39bab"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Furniture_Normal.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Furniture_Normal.png",
+      "bytes": 3485710,
+      "git_blob_sha1": "761d783ce7d3879e513ab675ce92fe2ac3024c24",
+      "sha256": "3340c4cc47ff06d5e94a2dbe2a2a12d914d0ef055fcf66f63d876666bd160e42"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Furniture_ORM.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Furniture_ORM.png",
+      "bytes": 2064585,
+      "git_blob_sha1": "3ec55f6070b6a913ed73bc6b92f8c9531eb1eb27",
+      "sha256": "7bf417e82baf313793c5791bf48cdc8e573f1f7136197785bf0eb235cb0f8153"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Metal_BaseColor.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Metal_BaseColor.png",
+      "bytes": 1361221,
+      "git_blob_sha1": "dd100392b4c8293a963d4aff7487c7392e0e9380",
+      "sha256": "50422bbda9661effc259caf8b386224cac4b5ca811d2c5b3b8b25ae8efc714db"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Metal_Normal.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Metal_Normal.png",
+      "bytes": 3625541,
+      "git_blob_sha1": "71dfe66c2d97b820f1dc5758c71d03cfd6708ce2",
+      "sha256": "ab7315c864c9a9e6d716c940a599928506e1569d3b0c9085f8f1a64ec520d790"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Metal_ORM.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Metal_ORM.png",
+      "bytes": 1871475,
+      "git_blob_sha1": "d70307103def153509359badd0cb231a11e7fc45",
+      "sha256": "7407bccfc39ca74ecd68a61217395959bf56ac2063e6c93b384b11f07f5687c5"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Props_BaseColor.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Props_BaseColor.png",
+      "bytes": 2263132,
+      "git_blob_sha1": "6af88aec85a9173cf3590fa82eceb210a9af0ded",
+      "sha256": "75225a4ccfd8cc358c871de7a7a3cab7118ef197419a88464e807b81716215c8"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Props_Normal.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Props_Normal.png",
+      "bytes": 4441458,
+      "git_blob_sha1": "07f9ccef4b20bc9f6797c7b6e10211306a22cfe0",
+      "sha256": "c4b28a8ba8efe3108cd11356ecab67e8bf75a10cebf29c78ee7724552c305a3e"
+    },
+    {
+      "path": "Exports/glTF/T_Trim_Props_ORM.png",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/T_Trim_Props_ORM.png",
+      "bytes": 3017151,
+      "git_blob_sha1": "ec5f3a5a973117fc214763797099857464a3f496",
+      "sha256": "2d83d8df79aca2c8f630d389b43f09113afee98e746dfd42ddc3ce3302a136a2"
+    },
+    {
+      "path": "Exports/glTF/Table_Fork.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Fork.bin",
+      "bytes": 4936,
+      "git_blob_sha1": "6f1473d8b966c4c4b41f8ab50f50ffe9cba5a91f",
+      "sha256": "ea1fab5b06e061cca6e5d50c5900d701f29b165cd3a66cca1a9455b82261c72f"
+    },
+    {
+      "path": "Exports/glTF/Table_Fork.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Fork.gltf",
+      "bytes": 2189,
+      "git_blob_sha1": "bbac80d22989250a4f940a1c1ed3cf40a55ae20b",
+      "sha256": "f64b0048d2f2facfc96508ee94296ddd4b27c1403d9f89076785b3804970fd02"
+    },
+    {
+      "path": "Exports/glTF/Table_Knife.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Knife.bin",
+      "bytes": 2180,
+      "git_blob_sha1": "4b65f4a694afad27b73380039c11040d18957b7e",
+      "sha256": "88c0560af9520d919c3d673487dd888e8319d0e6f4a49980b97a37a077df18a8"
+    },
+    {
+      "path": "Exports/glTF/Table_Knife.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Knife.gltf",
+      "bytes": 2186,
+      "git_blob_sha1": "aa68fdfcaef63eaae59c423e65eb5eb2731b5bf0",
+      "sha256": "df21830a582ba5c1d39573ef6c3014280a315f312ee112f2652f473196e191f1"
+    },
+    {
+      "path": "Exports/glTF/Table_Large.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Large.bin",
+      "bytes": 56396,
+      "git_blob_sha1": "6bfb1ab3be8004f369081f2df0dd42bc015c9893",
+      "sha256": "af7bfe0cbf0532e01543e4fd5d6d710df70106a7d938c4d74a50c8911ee9bf35"
+    },
+    {
+      "path": "Exports/glTF/Table_Large.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Large.gltf",
+      "bytes": 4316,
+      "git_blob_sha1": "f35c738f5ab9662531a7b47b1949f477a60a2a1b",
+      "sha256": "ffd4e5b803f38f02922c2b0303ae3b5a602f7c239e717b725c0553019be8fcf2"
+    },
+    {
+      "path": "Exports/glTF/Table_Plate.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Plate.bin",
+      "bytes": 6792,
+      "git_blob_sha1": "a73cd3bcfe70a13019d133e273ec485e8ab86ed1",
+      "sha256": "23c73317b3936f395002c7be5089c4e70ee1cbdcf9f1abdb49af314faf7fe7dc"
+    },
+    {
+      "path": "Exports/glTF/Table_Plate.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Plate.gltf",
+      "bytes": 2199,
+      "git_blob_sha1": "ae4eda6a83fc224b788cf16c0519a6b979a8d59d",
+      "sha256": "306bf85a1b02df6dda78a13b47ad2c1cf0646aac47818ec937e0be0c5f2997a3"
+    },
+    {
+      "path": "Exports/glTF/Table_Spoon.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Spoon.bin",
+      "bytes": 4856,
+      "git_blob_sha1": "c98fe8ba904e8b71337818c565ce7579dd339a52",
+      "sha256": "e48524e0b974fb0c251c804ce82fb00ec58c6f372041e10ff1f4254af95902c0"
+    },
+    {
+      "path": "Exports/glTF/Table_Spoon.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Table_Spoon.gltf",
+      "bytes": 2191,
+      "git_blob_sha1": "c949f0407940b054eb308512be7fab65aace7eeb",
+      "sha256": "f6bde9a1928e169af7a3b9e773f5c815577da837904e3f16d6edc5e4394e55f5"
+    },
+    {
+      "path": "Exports/glTF/Torch_Metal.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Torch_Metal.bin",
+      "bytes": 39100,
+      "git_blob_sha1": "03f3939efa6cc50430145476bad6d6585dbb07cc",
+      "sha256": "522de8798b4c2e0db9ba640d69a5c6e506b558f22b98e95c0cfc95ba2d7b79e7"
+    },
+    {
+      "path": "Exports/glTF/Torch_Metal.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Torch_Metal.gltf",
+      "bytes": 2203,
+      "git_blob_sha1": "5beaca1bac29fe3c9d579d5beeee9e669cadb76a",
+      "sha256": "f28978f4f351030766996ccb5585f258882b6892f3944bbf06609a761ffb01a5"
+    },
+    {
+      "path": "Exports/glTF/Vase_2.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Vase_2.bin",
+      "bytes": 21188,
+      "git_blob_sha1": "a665fad78ff3a854518fc640307010250911a56d",
+      "sha256": "1dce19b5d65d83c271b4ca1340446a482aefbd4a03dac61bb2a94ca3c71f99ea"
+    },
+    {
+      "path": "Exports/glTF/Vase_2.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Vase_2.gltf",
+      "bytes": 2407,
+      "git_blob_sha1": "533aa07b72a614e37c5f0f52053c09706923a33b",
+      "sha256": "92218a88b02bac2bf4b3855dff452f209068cbfd58724585b7bf20556ac17ab5"
+    },
+    {
+      "path": "Exports/glTF/Vase_4.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Vase_4.bin",
+      "bytes": 22028,
+      "git_blob_sha1": "e06ef58cc572762ba0086252a8c68d0f1d7a4d55",
+      "sha256": "3348683b971156e44965efbcec6008970adc73d9efe97a5131965e216cac892f"
+    },
+    {
+      "path": "Exports/glTF/Vase_4.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Vase_4.gltf",
+      "bytes": 2412,
+      "git_blob_sha1": "71f6d7224f08771dd140ff214dfb281e6fa724b7",
+      "sha256": "bfc60358ab3bab21ff6fed8141ea9bc910877f752ef2bb5a22f6215086aa17e3"
+    },
+    {
+      "path": "Exports/glTF/Vase_Rubble_Medium.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Vase_Rubble_Medium.bin",
+      "bytes": 85960,
+      "git_blob_sha1": "39aad380f4455554f0d732d26fc23b8733120df4",
+      "sha256": "0667be3cbda69ec6659d680344994ea16bc7d912843627a8f888df9f31389313"
+    },
+    {
+      "path": "Exports/glTF/Vase_Rubble_Medium.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Vase_Rubble_Medium.gltf",
+      "bytes": 2453,
+      "git_blob_sha1": "fa864c6957e0c459ad98db673a206f57d0ea6de7",
+      "sha256": "e6177cb94c8eca55e3eead68d485fc66081b17fe4107fd027357ca4e1945f60e"
+    },
+    {
+      "path": "Exports/glTF/WeaponStand.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/WeaponStand.bin",
+      "bytes": 76312,
+      "git_blob_sha1": "4a643819db5bd7baff25bf07f9eb72c2b95bcb19",
+      "sha256": "ac76bb8f6a511179842ecf0610ceabd96486e9cc5ca8dfa7639118f9796e4441"
+    },
+    {
+      "path": "Exports/glTF/WeaponStand.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/WeaponStand.gltf",
+      "bytes": 3903,
+      "git_blob_sha1": "0e3ca7dd8d856a3b4da9255a073f51b84b2d4070",
+      "sha256": "039675f0ea79a8615a27e544eb9ec7799a2a1a94e070858dc400cb50be9a76f9"
+    },
+    {
+      "path": "Exports/glTF/Whetstone.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Whetstone.bin",
+      "bytes": 59280,
+      "git_blob_sha1": "929423e4187c15c76fe20a369b3cdadf7ec080b6",
+      "sha256": "c3aae752f1a92cc58d8ca0ca033c8d5d9f90b00238c0e369f835198c0f9cbb6a"
+    },
+    {
+      "path": "Exports/glTF/Whetstone.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Whetstone.gltf",
+      "bytes": 6212,
+      "git_blob_sha1": "3c0fd9d300359a8b65b2463802c205eddcf18a17",
+      "sha256": "ec0f5173ac53dba3bf112b384b7c88efb6e8814f22b4092cafd1c38345f3001c"
+    },
+    {
+      "path": "Exports/glTF/Workbench.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Workbench.bin",
+      "bytes": 63408,
+      "git_blob_sha1": "78efeb92b5a67d6c2fd386ea26e02ca7b56b9697",
+      "sha256": "d26f2a0ba01b4a8db8d6820d1bd0d281297fea30e48c9952484167d18a637b39"
+    },
+    {
+      "path": "Exports/glTF/Workbench.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Workbench.gltf",
+      "bytes": 4318,
+      "git_blob_sha1": "b33d3bb1320322e9e2f53325daea69f3af7d69ae",
+      "sha256": "518fc5c955def18cfcb781b3b955da0e8edcf4f37830a21561ef32c03ad0397e"
+    },
+    {
+      "path": "Exports/glTF/Workbench_Drawers.bin",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Workbench_Drawers.bin",
+      "bytes": 16824,
+      "git_blob_sha1": "71ba4764b8a475b0065af073661966079477b592",
+      "sha256": "1c59f665e4c12ee9de34ba9d22f48c3c6ba7086c3ee483883ff5881fab3dd87f"
+    },
+    {
+      "path": "Exports/glTF/Workbench_Drawers.gltf",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Exports/glTF/Workbench_Drawers.gltf",
+      "bytes": 4313,
+      "git_blob_sha1": "b736fdef9350ab6df81896befac0b2b9c2e56282",
+      "sha256": "f7f5a88b34e29dbc58402dce54b80d0404f4b6eb1042f4002479b712e36fa10f"
+    },
+    {
+      "path": "License_Standard.txt",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/License_Standard.txt",
+      "bytes": 837,
+      "git_blob_sha1": "5c1112075a8122ad5a1e4e51e0a6725657c23ee6",
+      "sha256": "edad12240087a33e08fc031e4e66c2b2b4b2a6d4f086339bde04f741b385fbda"
+    },
+    {
+      "path": "Preview_1.jpg",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Preview_1.jpg",
+      "bytes": 502435,
+      "git_blob_sha1": "c05c00b13db01d53b4a1df35aac87889c21d65f1",
+      "sha256": "4086549966a54ca6caba54dc7263f51e41676d25b38fd17a34c9f79d6e11fad1"
+    },
+    {
+      "path": "Preview_2.jpg",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Preview_2.jpg",
+      "bytes": 661996,
+      "git_blob_sha1": "31f268b4cdbed07dda82dd37c11e4838b05400d7",
+      "sha256": "ce2eb3ed6398de101ba725f4ece6fec0fc9af5bef8bde4bc2e90ee1333e32ccc"
+    },
+    {
+      "path": "Preview_3.jpg",
+      "url": "https://raw.githubusercontent.com/agentkaerf/FreeModels/db3df04d1e4714298a09510b26fb6de6645138a2/Fantasy%20Props%20MegaKit%5BStandard%5D/Preview_3.jpg",
+      "bytes": 525641,
+      "git_blob_sha1": "99a8da16de692b5eeaaa904bc6e74156dc74c83f",
+      "sha256": "ce7f189ba15e6f4570d5951ee9ed8a44a72ba1c6d743761f396a3bf74ecada26"
+    }
+  ],
+  "style": "Low poly 3D",
+  "categories": [
+    "Workshops",
+    "Markets",
+    "Alchemy",
+    "Libraries",
+    "Banners"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Quaternius Fantasy Props MegaKit: Standard by Quaternius. Source: https://quaternius.com/packs/fantasypropsmegakit.html. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "Original asset bytes and publisher notices are preserved. Only separately recorded derived_files were created; the KayKit archive wrapper directory was renamed to content."
+}

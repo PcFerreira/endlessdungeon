@@ -1,0 +1,2570 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://addons/voxel_micro_farm/examples/vmf_viewer.gd" id="1_r56df"]
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="2_hy1wx"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Demo_Island_Geo.res" id="3_x68i8"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Wet_Geo.res" id="4_kbsnc"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Carrot_Mature_Geo.res" id="5_wxyxd"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Daikon_Mature_Geo.res" id="6_3poox"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Tomato_Mature_Geo.res" id="7_uyf87"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Corn_Mature_Geo.res" id="8_x6jhs"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Carrot_Seedling_Geo.res" id="9_ylvrj"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Dry_Geo.res" id="10_vqprp"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Straight_Frame.res" id="11_q3d4k"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Straight_Post_End_X.res" id="12_n42tk"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Gate_Brace_Geo.res" id="13_3rae6"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Gate_Geo.res" id="14_yrfxe"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Frame.res" id="15_o286e"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Post_End_X.res" id="16_1nxn2"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_EndPost_Frame.res" id="17_m677g"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Frame.res" id="18_o1sl7"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Post_End_X.res" id="19_j72m0"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Post_End_Y.res" id="20_hg8eh"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Nature_Tree_Geo.res" id="21_c23c4"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Nature_Bush_Geo.res" id="22_givrv"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Nature_Rock_Geo.res" id="23_ydftn"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_ShippingChest_Lid_Geo.res" id="24_dbfha"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_ShippingChest_Body.res" id="25_gsfd3"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_Crate_Body.res" id="26_sgbxo"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_Basket_Body.res" id="27_3aq7t"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Carrot_Geo.res" id="28_avklq"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Corn_Geo.res" id="29_o3l3q"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Tomato_Geo.res" id="30_xrx64"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Daikon_Geo.res" id="31_u8mh1"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_Hoe_Geo.res" id="32_wud65"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_WateringCan_Geo.res" id="33_8cdq1"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_WateringCan_Nozzle.res" id="34_w6f7q"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_Sickle_Geo.res" id="35_k6xnb"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Detail_GrassTuft_Geo.res" id="36_6240f"]
+
+[sub_resource type="Environment" id="Environment_iyoud"]
+background_mode = 1
+background_color = Color(0.90588236, 0.8745098, 0.8117647, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.35
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mwh7p"]
+albedo_color = Color(0.6666667, 0.6392157, 0.5803922, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_23rry"]
+size = Vector2(100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtf1r"]
+size = Vector3(4.3199997, 0.39999998, 4.3199997)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mp4a6"]
+size = Vector3(1, 0.32, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ulfj"]
+size = Vector3(1, 0.32, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pjn22"]
+size = Vector3(0.99999994, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pkumu"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ynl5m"]
+size = Vector3(0.7180749, 0.3724678, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6m6w"]
+size = Vector3(0.78, 0.53999996, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pxiko"]
+size = Vector3(0.22, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrl2j"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6522p"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t1e7w"]
+size = Vector3(0.99999994, 0.74, 0.99999994)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eb18t"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sqm26"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_akj33"]
+size = Vector3(0.26, 0.9, 0.26)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oijy8"]
+size = Vector3(0.76, 0.64, 0.55999994)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aih32"]
+size = Vector3(0.56, 0.48, 0.48)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qifna"]
+size = Vector3(0.79999995, 0.14, 0.59999996)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_km7mi"]
+size = Vector3(0.79999995, 0.48, 0.56)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7acm"]
+size = Vector3(0.59999996, 0.32, 0.48)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lx2ga"]
+size = Vector3(0.48, 0.44, 0.39999998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdnu2"]
+size = Vector3(0.35999998, 1.0799999, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b2exu"]
+size = Vector3(0.76485276, 0.56, 0.28)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e4yk1"]
+size = Vector3(0.44, 0.7, 0.08)
+
+[node name="Farm_Showcase" type="Node3D" unique_id=1358796974]
+script = ExtResource("1_r56df")
+start_hinges_open = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1622018180]
+environment = SubResource("Environment_iyoud")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1776031481]
+transform = Transform3D(0.8480481, 0.41758206, -0.32625088, 0, 0.6156615, 0.7880107, 0.52991927, -0.668271, 0.5221106, 0, 0, 0)
+light_color = Color(1, 0.98039216, 0.9529412, 1)
+light_energy = 0.55
+shadow_enabled = true
+shadow_bias = 0.03
+directional_shadow_mode = 0
+directional_shadow_max_distance = 40.0
+
+[node name="Backdrop" type="MeshInstance3D" parent="." unique_id=582684482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0)
+material_override = SubResource("StandardMaterial3D_mwh7p")
+mesh = SubResource("PlaneMesh_23rry")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=927583165]
+transform = Transform3D(0.76928896, -0.3767615, 0.51598966, 0, 0.8076207, 0.5897024, -0.63890105, -0.45365158, 0.62129366, 9.8, 11.55, 11.8)
+projection = 1
+size = 6.0
+far = 150.0
+
+[node name="ViewerHelp" type="CanvasLayer" parent="." unique_id=1865902967]
+
+[node name="@Label@28" type="Label" parent="ViewerHelp" unique_id=1971638009]
+offset_left = 22.0
+offset_top = 18.0
+offset_right = 22.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.23137255, 0.27450982, 0.2, 1)
+theme_override_font_sizes/font_size = 17
+text = "VOXEL MICRO FARM   /   Farm Showcase
+1 Farm   2 Asset overview   H Hinges   Space Sounds   Wheel Zoom   Right-drag Pan   R Reset"
+
+[node name="SM_VMF_Demo_Island" type="Node3D" parent="." unique_id=1355488199]
+metadata/vmf_asset = "SM_VMF_Demo_Island"
+metadata/vmf_category = "demo"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Demo_Island" unique_id=443507600]
+
+[node name="SM_VMF_Demo_Island" type="Node3D" parent="SM_VMF_Demo_Island/Model" unique_id=1692242039]
+metadata/extras = {
+"category": "Demo",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Demo_Island_Geo" type="MeshInstance3D" parent="SM_VMF_Demo_Island/Model/SM_VMF_Demo_Island" unique_id=474677026]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("3_x68i8")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 4.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Demo_Island" unique_id=1771198675]
+
+[node name="@CollisionShape3D@2" type="CollisionShape3D" parent="SM_VMF_Demo_Island/StaticCollision" unique_id=523065803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.19999999, 0)
+shape = SubResource("BoxShape3D_dtf1r")
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="." unique_id=327701094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28, 0, -1.28)
+metadata/vmf_asset = "SM_VMF_Soil_Wet"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Soil_Wet" unique_id=166549279]
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="SM_VMF_Soil_Wet/Model" unique_id=519763044]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Wet_Geo" type="MeshInstance3D" parent="SM_VMF_Soil_Wet/Model/SM_VMF_Soil_Wet" unique_id=1894693395]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("4_kbsnc")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="SM_VMF_Soil_Wet/Model/SM_VMF_Soil_Wet" unique_id=1215387531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Soil_Wet" unique_id=1522636998]
+
+[node name="@CollisionShape3D@24" type="CollisionShape3D" parent="SM_VMF_Soil_Wet/StaticCollision" unique_id=304373227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_mp4a6")
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="." unique_id=884831727]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.56, 0.08, -1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Carrot_Mature" unique_id=1497053803]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="SM_VMF_Crop_Carrot_Mature/Model" unique_id=1136276837]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Carrot_Mature/Model/SM_VMF_Crop_Carrot_Mature" unique_id=925480780]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("5_wxyxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Carrot_Mature/Model/SM_VMF_Crop_Carrot_Mature" unique_id=1461054107]
+
+[node name="@Node3D@29" type="Node3D" parent="." unique_id=839025671]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, -1.56, 0.08, -1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@29" unique_id=335678205]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="@Node3D@29/Model" unique_id=226014652]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="@Node3D@29/Model/SM_VMF_Crop_Carrot_Mature" unique_id=990384985]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("5_wxyxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@29/Model/SM_VMF_Crop_Carrot_Mature" unique_id=1631075528]
+
+[node name="@Node3D@30" type="Node3D" parent="." unique_id=1482229468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28, 0.08, -1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@30" unique_id=2028190463]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="@Node3D@30/Model" unique_id=1764864976]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="@Node3D@30/Model/SM_VMF_Crop_Carrot_Mature" unique_id=761847786]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("5_wxyxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@30/Model/SM_VMF_Crop_Carrot_Mature" unique_id=91352036]
+
+[node name="@Node3D@31" type="Node3D" parent="." unique_id=1090193386]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.28, 0.08, -1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@31" unique_id=482667274]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="@Node3D@31/Model" unique_id=457850638]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="@Node3D@31/Model/SM_VMF_Crop_Carrot_Mature" unique_id=97506923]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("5_wxyxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@31/Model/SM_VMF_Crop_Carrot_Mature" unique_id=1066188088]
+
+[node name="@Node3D@32" type="Node3D" parent="." unique_id=308035902]
+transform = Transform3D(-0.12186939, 0, 0.99254614, 0, 1, 0, -0.99254614, 0, -0.12186939, -1, 0.08, -1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@32" unique_id=2065921968]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="@Node3D@32/Model" unique_id=1565183054]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="@Node3D@32/Model/SM_VMF_Crop_Carrot_Mature" unique_id=445004697]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("5_wxyxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@32/Model/SM_VMF_Crop_Carrot_Mature" unique_id=1503947006]
+
+[node name="@Node3D@33" type="Node3D" parent="." unique_id=1001796194]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1, 0.08, -1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@33" unique_id=2143132449]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="@Node3D@33/Model" unique_id=1669003091]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="@Node3D@33/Model/SM_VMF_Crop_Carrot_Mature" unique_id=1603320939]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("5_wxyxd")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@33/Model/SM_VMF_Crop_Carrot_Mature" unique_id=695969976]
+
+[node name="@Node3D@34" type="Node3D" parent="." unique_id=874935731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.28)
+metadata/vmf_asset = "SM_VMF_Soil_Wet"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="@Node3D@34" unique_id=1385680462]
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="@Node3D@34/Model" unique_id=1620003422]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Wet_Geo" type="MeshInstance3D" parent="@Node3D@34/Model/SM_VMF_Soil_Wet" unique_id=1687059879]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("4_kbsnc")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="@Node3D@34/Model/SM_VMF_Soil_Wet" unique_id=2133942660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@34" unique_id=1711518125]
+
+[node name="@CollisionShape3D@24" type="CollisionShape3D" parent="@Node3D@34/StaticCollision" unique_id=366162048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_mp4a6")
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="." unique_id=972937362]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.28, 0.08, -1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Daikon_Mature" unique_id=786999458]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="SM_VMF_Crop_Daikon_Mature/Model" unique_id=1934723544]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Daikon_Mature/Model/SM_VMF_Crop_Daikon_Mature" unique_id=445733524]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("6_3poox")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Daikon_Mature/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1681058289]
+
+[node name="@Node3D@35" type="Node3D" parent="." unique_id=366642774]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, -0.28, 0.08, -1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@35" unique_id=1263765471]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="@Node3D@35/Model" unique_id=484542390]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="@Node3D@35/Model/SM_VMF_Crop_Daikon_Mature" unique_id=988641049]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("6_3poox")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@35/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1372797949]
+
+[node name="@Node3D@36" type="Node3D" parent="." unique_id=1633904852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, -1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@36" unique_id=1657042662]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="@Node3D@36/Model" unique_id=843309290]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="@Node3D@36/Model/SM_VMF_Crop_Daikon_Mature" unique_id=453933350]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("6_3poox")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@36/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1285738383]
+
+[node name="@Node3D@37" type="Node3D" parent="." unique_id=991655427]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.08, -1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@37" unique_id=690450383]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="@Node3D@37/Model" unique_id=546769843]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="@Node3D@37/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1361483416]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("6_3poox")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@37/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1103278497]
+
+[node name="@Node3D@38" type="Node3D" parent="." unique_id=139662256]
+transform = Transform3D(-0.12186939, 0, 0.99254614, 0, 1, 0, -0.99254614, 0, -0.12186939, 0.28, 0.08, -1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@38" unique_id=1321815]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="@Node3D@38/Model" unique_id=481178627]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="@Node3D@38/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1476412283]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("6_3poox")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@38/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1081227136]
+
+[node name="@Node3D@39" type="Node3D" parent="." unique_id=1852497897]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.28, 0.08, -1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@39" unique_id=1306990638]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="@Node3D@39/Model" unique_id=1397912793]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="@Node3D@39/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1655675132]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("6_3poox")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@39/Model/SM_VMF_Crop_Daikon_Mature" unique_id=711475935]
+
+[node name="@Node3D@40" type="Node3D" parent="." unique_id=1300206753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28, 0, 0)
+metadata/vmf_asset = "SM_VMF_Soil_Wet"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="@Node3D@40" unique_id=955585320]
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="@Node3D@40/Model" unique_id=1459008921]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Wet_Geo" type="MeshInstance3D" parent="@Node3D@40/Model/SM_VMF_Soil_Wet" unique_id=27178280]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("4_kbsnc")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="@Node3D@40/Model/SM_VMF_Soil_Wet" unique_id=534340220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@40" unique_id=1396942028]
+
+[node name="@CollisionShape3D@24" type="CollisionShape3D" parent="@Node3D@40/StaticCollision" unique_id=1900394865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_mp4a6")
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="." unique_id=92096670]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.56, 0.08, 0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Tomato_Mature" unique_id=1596193892]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="SM_VMF_Crop_Tomato_Mature/Model" unique_id=65137036]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Tomato_Mature/Model/SM_VMF_Crop_Tomato_Mature" unique_id=287265601]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("7_uyf87")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Tomato_Mature/Model/SM_VMF_Crop_Tomato_Mature" unique_id=345790312]
+
+[node name="@Node3D@41" type="Node3D" parent="." unique_id=1791732622]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, -1.56, 0.08, -0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@41" unique_id=1971309878]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="@Node3D@41/Model" unique_id=1746940009]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="@Node3D@41/Model/SM_VMF_Crop_Tomato_Mature" unique_id=1334230744]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("7_uyf87")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@41/Model/SM_VMF_Crop_Tomato_Mature" unique_id=120165030]
+
+[node name="@Node3D@42" type="Node3D" parent="." unique_id=1946855649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28, 0.08, 0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@42" unique_id=1094622542]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="@Node3D@42/Model" unique_id=924454208]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="@Node3D@42/Model/SM_VMF_Crop_Tomato_Mature" unique_id=858128814]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("7_uyf87")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@42/Model/SM_VMF_Crop_Tomato_Mature" unique_id=797826002]
+
+[node name="@Node3D@43" type="Node3D" parent="." unique_id=839247051]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.28, 0.08, -0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@43" unique_id=1870660503]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="@Node3D@43/Model" unique_id=1357944503]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="@Node3D@43/Model/SM_VMF_Crop_Tomato_Mature" unique_id=1182925435]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("7_uyf87")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@43/Model/SM_VMF_Crop_Tomato_Mature" unique_id=791610059]
+
+[node name="@Node3D@44" type="Node3D" parent="." unique_id=1149705609]
+transform = Transform3D(-0.12186939, 0, 0.99254614, 0, 1, 0, -0.99254614, 0, -0.12186939, -1, 0.08, 0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@44" unique_id=1487017157]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="@Node3D@44/Model" unique_id=240770907]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="@Node3D@44/Model/SM_VMF_Crop_Tomato_Mature" unique_id=1583278945]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("7_uyf87")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@44/Model/SM_VMF_Crop_Tomato_Mature" unique_id=1903497534]
+
+[node name="@Node3D@45" type="Node3D" parent="." unique_id=81126547]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1, 0.08, -0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@45" unique_id=1613029798]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="@Node3D@45/Model" unique_id=32834962]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="@Node3D@45/Model/SM_VMF_Crop_Tomato_Mature" unique_id=585370398]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("7_uyf87")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@45/Model/SM_VMF_Crop_Tomato_Mature" unique_id=478903479]
+
+[node name="@Node3D@46" type="Node3D" parent="." unique_id=1417946285]
+metadata/vmf_asset = "SM_VMF_Soil_Wet"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="@Node3D@46" unique_id=609344364]
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="@Node3D@46/Model" unique_id=244255131]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Wet_Geo" type="MeshInstance3D" parent="@Node3D@46/Model/SM_VMF_Soil_Wet" unique_id=947574111]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("4_kbsnc")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="@Node3D@46/Model/SM_VMF_Soil_Wet" unique_id=1531556203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@46" unique_id=1196756282]
+
+[node name="@CollisionShape3D@24" type="CollisionShape3D" parent="@Node3D@46/StaticCollision" unique_id=898127716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_mp4a6")
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="." unique_id=1405590125]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.28, 0.08, 0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Corn_Mature" unique_id=1620089311]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="SM_VMF_Crop_Corn_Mature/Model" unique_id=1396370708]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Corn_Mature/Model/SM_VMF_Crop_Corn_Mature" unique_id=1107252670]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("8_x6jhs")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Corn_Mature/Model/SM_VMF_Crop_Corn_Mature" unique_id=472580506]
+
+[node name="@Node3D@47" type="Node3D" parent="." unique_id=1038463554]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, -0.28, 0.08, -0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@47" unique_id=1037574403]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="@Node3D@47/Model" unique_id=1793161330]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="@Node3D@47/Model/SM_VMF_Crop_Corn_Mature" unique_id=869987618]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("8_x6jhs")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@47/Model/SM_VMF_Crop_Corn_Mature" unique_id=1253273036]
+
+[node name="@Node3D@48" type="Node3D" parent="." unique_id=1345678847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@48" unique_id=199883319]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="@Node3D@48/Model" unique_id=1819477541]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="@Node3D@48/Model/SM_VMF_Crop_Corn_Mature" unique_id=885832852]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("8_x6jhs")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@48/Model/SM_VMF_Crop_Corn_Mature" unique_id=1468220828]
+
+[node name="@Node3D@49" type="Node3D" parent="." unique_id=565084452]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.08, -0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@49" unique_id=817166432]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="@Node3D@49/Model" unique_id=320665534]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="@Node3D@49/Model/SM_VMF_Crop_Corn_Mature" unique_id=1472896680]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("8_x6jhs")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@49/Model/SM_VMF_Crop_Corn_Mature" unique_id=616927219]
+
+[node name="@Node3D@50" type="Node3D" parent="." unique_id=259535600]
+transform = Transform3D(-0.12186939, 0, 0.99254614, 0, 1, 0, -0.99254614, 0, -0.12186939, 0.28, 0.08, 0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@50" unique_id=1648775918]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="@Node3D@50/Model" unique_id=137739987]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="@Node3D@50/Model/SM_VMF_Crop_Corn_Mature" unique_id=1473695180]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("8_x6jhs")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@50/Model/SM_VMF_Crop_Corn_Mature" unique_id=508486395]
+
+[node name="@Node3D@51" type="Node3D" parent="." unique_id=826264644]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.28, 0.08, -0.26)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@51" unique_id=1032820294]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="@Node3D@51/Model" unique_id=1408671679]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="@Node3D@51/Model/SM_VMF_Crop_Corn_Mature" unique_id=1267995176]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("8_x6jhs")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@51/Model/SM_VMF_Crop_Corn_Mature" unique_id=1064323511]
+
+[node name="@Node3D@52" type="Node3D" parent="." unique_id=1055008506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28, 0, 1.28)
+metadata/vmf_asset = "SM_VMF_Soil_Wet"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="@Node3D@52" unique_id=1545557577]
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="@Node3D@52/Model" unique_id=1757989861]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Wet_Geo" type="MeshInstance3D" parent="@Node3D@52/Model/SM_VMF_Soil_Wet" unique_id=1535539761]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("4_kbsnc")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="@Node3D@52/Model/SM_VMF_Soil_Wet" unique_id=424778129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@52" unique_id=948643964]
+
+[node name="@CollisionShape3D@24" type="CollisionShape3D" parent="@Node3D@52/StaticCollision" unique_id=565068885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_mp4a6")
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="." unique_id=7510503]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.56, 0.08, 1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Carrot_Seedling" unique_id=1615311683]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="SM_VMF_Crop_Carrot_Seedling/Model" unique_id=551695858]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Carrot_Seedling/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1550094054]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("9_ylvrj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Carrot_Seedling/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=2841071]
+
+[node name="@Node3D@53" type="Node3D" parent="." unique_id=1663823070]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, -1.56, 0.08, 1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@53" unique_id=710752580]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="@Node3D@53/Model" unique_id=2104064349]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="@Node3D@53/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1652153984]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("9_ylvrj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@53/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1856841289]
+
+[node name="@Node3D@54" type="Node3D" parent="." unique_id=77109138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28, 0.08, 1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@54" unique_id=816554882]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="@Node3D@54/Model" unique_id=495682413]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="@Node3D@54/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=989859339]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("9_ylvrj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@54/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1329794632]
+
+[node name="@Node3D@55" type="Node3D" parent="." unique_id=1980719036]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.28, 0.08, 1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@55" unique_id=962705950]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="@Node3D@55/Model" unique_id=798912747]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="@Node3D@55/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1604288984]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("9_ylvrj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@55/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1553264855]
+
+[node name="@Node3D@56" type="Node3D" parent="." unique_id=1865977255]
+transform = Transform3D(-0.12186939, 0, 0.99254614, 0, 1, 0, -0.99254614, 0, -0.12186939, -1, 0.08, 1.54)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@56" unique_id=639773933]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="@Node3D@56/Model" unique_id=452601077]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="@Node3D@56/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=2101927822]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("9_ylvrj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@56/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1808167891]
+
+[node name="@Node3D@57" type="Node3D" parent="." unique_id=1814805737]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1, 0.08, 1.02)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="@Node3D@57" unique_id=1082717862]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="@Node3D@57/Model" unique_id=618274132]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="@Node3D@57/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=2026424539]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("9_ylvrj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="@Node3D@57/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=695494062]
+
+[node name="SM_VMF_Soil_Dry" type="Node3D" parent="." unique_id=2030963901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.28)
+metadata/vmf_asset = "SM_VMF_Soil_Dry"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Soil_Dry" unique_id=1466077412]
+
+[node name="SM_VMF_Soil_Dry" type="Node3D" parent="SM_VMF_Soil_Dry/Model" unique_id=1816498570]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Dry_Geo" type="MeshInstance3D" parent="SM_VMF_Soil_Dry/Model/SM_VMF_Soil_Dry" unique_id=10507421]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("10_vqprp")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="SM_VMF_Soil_Dry/Model/SM_VMF_Soil_Dry" unique_id=2003239009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Soil_Dry" unique_id=619324416]
+
+[node name="@CollisionShape3D@22" type="CollisionShape3D" parent="SM_VMF_Soil_Dry/StaticCollision" unique_id=1818970145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_1ulfj")
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="." unique_id=1344341581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_Straight" unique_id=1636867007]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="SM_VMF_Fence_Straight/Model" unique_id=1753126684]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight" unique_id=1741157168]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=66683176]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=1570320411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight" unique_id=713493982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=2127442420]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=747690414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight" unique_id=1860627169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Node3D@58" type="Node3D" parent="." unique_id=868151492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@58" unique_id=1870823362]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="@Node3D@58/Model" unique_id=57550054]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight" unique_id=1182474098]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=1857238325]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=883853391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight" unique_id=799727810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=1123655888]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=1989656306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@58/Model/SM_VMF_Fence_Straight" unique_id=1235712266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Node3D@59" type="Node3D" parent="." unique_id=854757392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@59" unique_id=912540637]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="@Node3D@59/Model" unique_id=1926343920]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight" unique_id=35063611]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=621926025]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=1086162280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight" unique_id=1425921240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=796188150]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=118919575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@59/Model/SM_VMF_Fence_Straight" unique_id=541036221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="SM_VMF_Fence_Gate" type="Node3D" parent="." unique_id=17347876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+metadata/vmf_asset = "SM_VMF_Fence_Gate"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_Gate" unique_id=288154363]
+
+[node name="SM_VMF_Fence_Gate" type="Node3D" parent="SM_VMF_Fence_Gate/Model" unique_id=194126532]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="Pivot_Gate" type="Node3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=1218033234 groups=["vmf_gate_hinges"]]
+transform = Transform3D(0.9659258, 0, -0.25881904, 0, 1, 0, 0.25881904, 0, 0.9659258, 0.14, 0, 0)
+
+[node name="Gate_Brace_Geo" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate" unique_id=649453305]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("13_3rae6")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Brace_Geo" unique_id=692814098]
+
+[node name="@CollisionShape3D@8" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Brace_Geo/StaticCollision" unique_id=1714350967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38999996, 0.37, 0)
+shape = SubResource("BoxShape3D_ynl5m")
+
+[node name="Gate_Geo" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate" unique_id=686465014]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("14_yrfxe")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Geo" unique_id=1277949129]
+
+[node name="@CollisionShape3D@9" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Geo/StaticCollision" unique_id=193498627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.36999997, 0.02)
+shape = SubResource("BoxShape3D_u6m6w")
+
+[node name="SM_VMF_Fence_Gate_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=362652290]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("15_o286e")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Frame" unique_id=1129084558]
+
+[node name="@CollisionShape3D@10" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Frame/StaticCollision" unique_id=1870386342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030000001, 0.37, 0)
+shape = SubResource("BoxShape3D_pxiko")
+
+[node name="SM_VMF_Fence_Gate_Post_End_X" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=851623695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("16_1nxn2")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Post_End_X" unique_id=544838801]
+
+[node name="@CollisionShape3D@11" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Post_End_X/StaticCollision" unique_id=887746200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_vrl2j")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=2139781904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Node3D@60" type="Node3D" parent="." unique_id=1741110082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@60" unique_id=1063369869]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="@Node3D@60/Model" unique_id=1938354234]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight" unique_id=1213626593]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=1143064441]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=1943945175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight" unique_id=1003501711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=986108772]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=795175178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@60/Model/SM_VMF_Fence_Straight" unique_id=497722177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="SM_VMF_Fence_EndPost" type="Node3D" parent="." unique_id=114495911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+metadata/vmf_asset = "SM_VMF_Fence_EndPost"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_EndPost" unique_id=1103894030]
+
+[node name="SM_VMF_Fence_EndPost" type="Node3D" parent="SM_VMF_Fence_EndPost/Model" unique_id=800592207]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_EndPost_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost" unique_id=635206844]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("17_m677g")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost/SM_VMF_Fence_EndPost_Frame" unique_id=1701379760]
+
+[node name="@CollisionShape3D@7" type="CollisionShape3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost/SM_VMF_Fence_EndPost_Frame/StaticCollision" unique_id=10424023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_6522p")
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost" unique_id=115420283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Node3D@61" type="Node3D" parent="." unique_id=1588722756]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 0, 1)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@61" unique_id=1214454034]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="@Node3D@61/Model" unique_id=1395578741]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight" unique_id=1666343957]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=717044965]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=1677963406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight" unique_id=29959478]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=1066964644]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=1480465740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@61/Model/SM_VMF_Fence_Straight" unique_id=122970975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Node3D@62" type="Node3D" parent="." unique_id=637177573]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 0, 0)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@62" unique_id=1375548634]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="@Node3D@62/Model" unique_id=147989665]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight" unique_id=1103646024]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=1327678688]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=357889822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight" unique_id=2002151876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=1858007473]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=237448814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@62/Model/SM_VMF_Fence_Straight" unique_id=1977698596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Node3D@63" type="Node3D" parent="." unique_id=1330914628]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 0, -1)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@63" unique_id=1182533043]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="@Node3D@63/Model" unique_id=380256935]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight" unique_id=326358405]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("11_q3d4k")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=2142995077]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=363569422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight" unique_id=1922819078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("12_n42tk")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=1271705025]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=153786536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@63/Model/SM_VMF_Fence_Straight" unique_id=1570461292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" parent="." unique_id=737138656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+metadata/vmf_asset = "SM_VMF_Fence_Corner"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_Corner" unique_id=1171956862]
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" parent="SM_VMF_Fence_Corner/Model" unique_id=1166098159]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Corner_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=475710601]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("18_o1sl7")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame" unique_id=909644152]
+
+[node name="@CollisionShape3D@4" type="CollisionShape3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame/StaticCollision" unique_id=739361206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, -0.42)
+shape = SubResource("BoxShape3D_t1e7w")
+
+[node name="SM_VMF_Fence_Corner_Post_End_X" type="MeshInstance3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=221928162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("19_j72m0")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X" unique_id=480275134]
+
+[node name="@CollisionShape3D@5" type="CollisionShape3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X/StaticCollision" unique_id=2018491492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_eb18t")
+disabled = true
+
+[node name="SM_VMF_Fence_Corner_Post_End_Y" type="MeshInstance3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=231409489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("20_hg8eh")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_Y",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y" unique_id=98829434]
+
+[node name="@CollisionShape3D@6" type="CollisionShape3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y/StaticCollision" unique_id=11253522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_sqm26")
+disabled = true
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=1780539932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Socket_End_B" type="Node3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=2051745939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="@Node3D@64" type="Node3D" parent="." unique_id=1389814477]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2, 0, -2)
+metadata/vmf_asset = "SM_VMF_Fence_Corner"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="@Node3D@64" unique_id=74952009]
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" parent="@Node3D@64/Model" unique_id=928781307]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Corner_Frame" type="MeshInstance3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner" unique_id=802474233]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("18_o1sl7")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame" unique_id=2089450288]
+
+[node name="@CollisionShape3D@4" type="CollisionShape3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame/StaticCollision" unique_id=678442249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, -0.42)
+shape = SubResource("BoxShape3D_t1e7w")
+
+[node name="SM_VMF_Fence_Corner_Post_End_X" type="MeshInstance3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner" unique_id=339672405]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+visible = false
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("19_j72m0")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X" unique_id=1960884037]
+
+[node name="@CollisionShape3D@5" type="CollisionShape3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X/StaticCollision" unique_id=864612055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_eb18t")
+disabled = true
+
+[node name="SM_VMF_Fence_Corner_Post_End_Y" type="MeshInstance3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner" unique_id=972618570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("20_hg8eh")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_Y",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y" unique_id=714555935]
+
+[node name="@CollisionShape3D@6" type="CollisionShape3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y/StaticCollision" unique_id=511703591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_sqm26")
+
+[node name="Socket_End" type="Node3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner" unique_id=7940884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Socket_End_B" type="Node3D" parent="@Node3D@64/Model/SM_VMF_Fence_Corner" unique_id=1788877882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="SM_VMF_Nature_Tree" type="Node3D" parent="." unique_id=749112802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 0, -1.42)
+metadata/vmf_asset = "SM_VMF_Nature_Tree"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Nature_Tree" unique_id=1665559667]
+
+[node name="SM_VMF_Nature_Tree" type="Node3D" parent="SM_VMF_Nature_Tree/Model" unique_id=736286326]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Tree_Geo" type="MeshInstance3D" parent="SM_VMF_Nature_Tree/Model/SM_VMF_Nature_Tree" unique_id=1377100891]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("21_c23c4")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Nature_Tree" unique_id=1049904558]
+
+[node name="@CollisionShape3D@17" type="CollisionShape3D" parent="SM_VMF_Nature_Tree/StaticCollision" unique_id=576719011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
+shape = SubResource("BoxShape3D_akj33")
+
+[node name="SM_VMF_Nature_Bush" type="Node3D" parent="." unique_id=275017102]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.66, 0, -1.16)
+metadata/vmf_asset = "SM_VMF_Nature_Bush"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Nature_Bush" unique_id=19389612]
+
+[node name="SM_VMF_Nature_Bush" type="Node3D" parent="SM_VMF_Nature_Bush/Model" unique_id=166234992]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Bush_Geo" type="MeshInstance3D" parent="SM_VMF_Nature_Bush/Model/SM_VMF_Nature_Bush" unique_id=379960042]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("22_givrv")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Nature_Bush" unique_id=1801994704]
+
+[node name="@CollisionShape3D@15" type="CollisionShape3D" parent="SM_VMF_Nature_Bush/StaticCollision" unique_id=912878590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32, 0.07999998)
+shape = SubResource("BoxShape3D_oijy8")
+
+[node name="@Node3D@65" type="Node3D" parent="." unique_id=770910517]
+transform = Transform3D(-3.059797e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.059797e-08, 0.9, 0, -1.5999999)
+metadata/vmf_asset = "SM_VMF_Nature_Bush"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="@Node3D@65" unique_id=1510289508]
+
+[node name="SM_VMF_Nature_Bush" type="Node3D" parent="@Node3D@65/Model" unique_id=1896798077]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Bush_Geo" type="MeshInstance3D" parent="@Node3D@65/Model/SM_VMF_Nature_Bush" unique_id=1446495545]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("22_givrv")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@65" unique_id=1516115920]
+
+[node name="@CollisionShape3D@15" type="CollisionShape3D" parent="@Node3D@65/StaticCollision" unique_id=1307942223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32, 0.07999998)
+shape = SubResource("BoxShape3D_oijy8")
+
+[node name="SM_VMF_Nature_Rock" type="Node3D" parent="." unique_id=1873146767]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.64, 0, 1.8199999)
+metadata/vmf_asset = "SM_VMF_Nature_Rock"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Nature_Rock" unique_id=1628896649]
+
+[node name="SM_VMF_Nature_Rock" type="Node3D" parent="SM_VMF_Nature_Rock/Model" unique_id=303651965]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Rock_Geo" type="MeshInstance3D" parent="SM_VMF_Nature_Rock/Model/SM_VMF_Nature_Rock" unique_id=1139685309]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("23_ydftn")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Nature_Rock" unique_id=1870528829]
+
+[node name="@CollisionShape3D@16" type="CollisionShape3D" parent="SM_VMF_Nature_Rock/StaticCollision" unique_id=1022595514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_aih32")
+
+[node name="@Node3D@66" type="Node3D" parent="." unique_id=2084548489]
+transform = Transform3D(-2.4041263e-08, 0, -0.55, 0, 0.55, 0, 0.55, 0, -2.4041263e-08, -1.9, 0, -1.56)
+metadata/vmf_asset = "SM_VMF_Nature_Rock"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="@Node3D@66" unique_id=289888868]
+
+[node name="SM_VMF_Nature_Rock" type="Node3D" parent="@Node3D@66/Model" unique_id=1089027095]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Rock_Geo" type="MeshInstance3D" parent="@Node3D@66/Model/SM_VMF_Nature_Rock" unique_id=1588396597]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("23_ydftn")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="@Node3D@66" unique_id=2068472407]
+
+[node name="@CollisionShape3D@16" type="CollisionShape3D" parent="@Node3D@66/StaticCollision" unique_id=1152561754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_aih32")
+
+[node name="SM_VMF_Prop_ShippingChest" type="Node3D" parent="." unique_id=1893893720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, -0.26)
+metadata/vmf_asset = "SM_VMF_Prop_ShippingChest"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Prop_ShippingChest" unique_id=1434877055]
+
+[node name="SM_VMF_Prop_ShippingChest" type="Node3D" parent="SM_VMF_Prop_ShippingChest/Model" unique_id=1672028580]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="Pivot_Lid" type="Node3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest" unique_id=1346641230 groups=["vmf_lid_hinges"]]
+transform = Transform3D(1, 0, 0, 0, 0.37460664, 0.92718387, 0, -0.92718387, 0.37460664, 0, 0.48, -0.26999998)
+
+[node name="Lid_Geo" type="MeshInstance3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/Pivot_Lid" unique_id=502208675]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("24_dbfha")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/Pivot_Lid/Lid_Geo" unique_id=1498404054]
+
+[node name="@CollisionShape3D@20" type="CollisionShape3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/Pivot_Lid/Lid_Geo/StaticCollision" unique_id=763015965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.010000002, 0.27999997)
+shape = SubResource("BoxShape3D_qifna")
+
+[node name="SM_VMF_Prop_ShippingChest_Body" type="MeshInstance3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest" unique_id=1107914288]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("25_gsfd3")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/SM_VMF_Prop_ShippingChest_Body" unique_id=1116069451]
+
+[node name="@CollisionShape3D@21" type="CollisionShape3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/SM_VMF_Prop_ShippingChest_Body/StaticCollision" unique_id=1848956793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_km7mi")
+
+[node name="Socket_Deposit" type="Node3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest" unique_id=575379966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45999998, 0)
+
+[node name="SM_VMF_Prop_Crate" type="Node3D" parent="." unique_id=597169327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.38, 0, 0.83)
+metadata/vmf_asset = "SM_VMF_Prop_Crate"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Prop_Crate" unique_id=1118195042]
+
+[node name="SM_VMF_Prop_Crate" type="Node3D" parent="SM_VMF_Prop_Crate/Model" unique_id=1892508758]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Prop_Crate_Body" type="MeshInstance3D" parent="SM_VMF_Prop_Crate/Model/SM_VMF_Prop_Crate" unique_id=1509303781]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("26_sgbxo")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_Crate" unique_id=1292988038]
+
+[node name="@CollisionShape3D@19" type="CollisionShape3D" parent="SM_VMF_Prop_Crate/StaticCollision" unique_id=180622248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16, 0)
+shape = SubResource("BoxShape3D_d7acm")
+
+[node name="SM_VMF_Prop_Basket" type="Node3D" parent="." unique_id=1880391396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.26, 0, 1.5)
+metadata/vmf_asset = "SM_VMF_Prop_Basket"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Prop_Basket" unique_id=810750982]
+
+[node name="SM_VMF_Prop_Basket" type="Node3D" parent="SM_VMF_Prop_Basket/Model" unique_id=962515339]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Prop_Basket_Body" type="MeshInstance3D" parent="SM_VMF_Prop_Basket/Model/SM_VMF_Prop_Basket" unique_id=1876222906]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("27_3aq7t")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_Basket" unique_id=2117719262]
+
+[node name="@CollisionShape3D@18" type="CollisionShape3D" parent="SM_VMF_Prop_Basket/StaticCollision" unique_id=959280249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22, 0)
+shape = SubResource("BoxShape3D_lx2ga")
+
+[node name="SM_VMF_Harvest_Carrot" type="Node3D" parent="." unique_id=1040693789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.23, 0.099999994, 0.87)
+metadata/vmf_asset = "SM_VMF_Harvest_Carrot"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Carrot" unique_id=1487472007]
+
+[node name="SM_VMF_Harvest_Carrot" type="Node3D" parent="SM_VMF_Harvest_Carrot/Model" unique_id=672627309]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Carrot_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Carrot/Model/SM_VMF_Harvest_Carrot" unique_id=958155127]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("28_avklq")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" parent="." unique_id=1509653140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 0.12, 0.75)
+metadata/vmf_asset = "SM_VMF_Harvest_Corn"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Corn" unique_id=599146224]
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" parent="SM_VMF_Harvest_Corn/Model" unique_id=1768677412]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Corn_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Corn/Model/SM_VMF_Harvest_Corn" unique_id=362502404]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("29_o3l3q")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Harvest_Tomato" type="Node3D" parent="." unique_id=1413270789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52, 0.24, 0.93)
+metadata/vmf_asset = "SM_VMF_Harvest_Tomato"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Tomato" unique_id=25868897]
+
+[node name="SM_VMF_Harvest_Tomato" type="Node3D" parent="SM_VMF_Harvest_Tomato/Model" unique_id=94660848]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Tomato_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Tomato/Model/SM_VMF_Harvest_Tomato" unique_id=852353616]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("30_xrx64")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" parent="." unique_id=565436856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.26, 0.099999994, 0.71999997)
+metadata/vmf_asset = "SM_VMF_Harvest_Daikon"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Daikon" unique_id=762735648]
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" parent="SM_VMF_Harvest_Daikon/Model" unique_id=1359314917]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Daikon_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Daikon/Model/SM_VMF_Harvest_Daikon" unique_id=539396079]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("31_u8mh1")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@67" type="Node3D" parent="." unique_id=2098704136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14, 0.099999994, 1.5799999)
+metadata/vmf_asset = "SM_VMF_Harvest_Tomato"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="@Node3D@67" unique_id=709036620]
+
+[node name="SM_VMF_Harvest_Tomato" type="Node3D" parent="@Node3D@67/Model" unique_id=1614695114]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Tomato_Geo" type="MeshInstance3D" parent="@Node3D@67/Model/SM_VMF_Harvest_Tomato" unique_id=1510158892]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("30_xrx64")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@68" type="Node3D" parent="." unique_id=322584884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.38, 0.06, 1.49)
+metadata/vmf_asset = "SM_VMF_Harvest_Corn"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="@Node3D@68" unique_id=136251954]
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" parent="@Node3D@68/Model" unique_id=1965963358]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Corn_Geo" type="MeshInstance3D" parent="@Node3D@68/Model/SM_VMF_Harvest_Corn" unique_id=1493979609]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("29_o3l3q")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@69" type="Node3D" parent="." unique_id=286277039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1999999, 0.04, 1.43)
+metadata/vmf_asset = "SM_VMF_Harvest_Daikon"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="@Node3D@69" unique_id=28049434]
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" parent="@Node3D@69/Model" unique_id=706711417]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Daikon_Geo" type="MeshInstance3D" parent="@Node3D@69/Model/SM_VMF_Harvest_Daikon" unique_id=908729703]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("31_u8mh1")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Tool_Hoe" type="Node3D" parent="." unique_id=1805714948]
+transform = Transform3D(0.96085286, -0.23956755, -0.1391731, 0.24192192, 0.9702957, 0, 0.13503908, -0.033669025, 0.99026805, 1.74, 0.82, 0.32)
+metadata/vmf_asset = "SM_VMF_Tool_Hoe"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Tool_Hoe" unique_id=2042942429]
+
+[node name="SM_VMF_Tool_Hoe" type="Node3D" parent="SM_VMF_Tool_Hoe/Model" unique_id=1343373682]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_Hoe_Geo" type="MeshInstance3D" parent="SM_VMF_Tool_Hoe/Model/SM_VMF_Tool_Hoe" unique_id=1597480339]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("32_wud65")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="SM_VMF_Tool_Hoe/Model/SM_VMF_Tool_Hoe" unique_id=121589524]
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Tool_Hoe" unique_id=1326703961]
+
+[node name="@CollisionShape3D@25" type="CollisionShape3D" parent="SM_VMF_Tool_Hoe/StaticCollision" unique_id=854145037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
+shape = SubResource("BoxShape3D_wdnu2")
+
+[node name="SM_VMF_Tool_WateringCan" type="Node3D" parent="." unique_id=1217086070]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 1.78, 0.52, 1.0799999)
+metadata/vmf_asset = "SM_VMF_Tool_WateringCan"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Tool_WateringCan" unique_id=2035054437]
+
+[node name="SM_VMF_Tool_WateringCan" type="Node3D" parent="SM_VMF_Tool_WateringCan/Model" unique_id=511824721]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_WateringCan_Geo" type="MeshInstance3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=1428161042]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("33_8cdq1")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Tool_WateringCan_Nozzle" type="MeshInstance3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=1152121335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38, -0.14, 0)
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("34_w6f7q")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=66317860]
+
+[node name="Socket_Water" type="Node3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=335383690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39999998, -0.12, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Tool_WateringCan" unique_id=120567025]
+
+[node name="@CollisionShape3D@27" type="CollisionShape3D" parent="SM_VMF_Tool_WateringCan/StaticCollision" unique_id=1153007841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08242643, -0.23999998, 0)
+shape = SubResource("BoxShape3D_b2exu")
+
+[node name="SM_VMF_Tool_Sickle" type="Node3D" parent="." unique_id=1669258201]
+transform = Transform3D(0.42261824, 0.9063078, -3.9615973e-08, 0, -4.371139e-08, -1, -0.9063078, 0.42261824, -1.847323e-08, 1.74, 0.049999997, 1.54)
+metadata/vmf_asset = "SM_VMF_Tool_Sickle"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Tool_Sickle" unique_id=909423533]
+
+[node name="SM_VMF_Tool_Sickle" type="Node3D" parent="SM_VMF_Tool_Sickle/Model" unique_id=837413101]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_Sickle_Geo" type="MeshInstance3D" parent="SM_VMF_Tool_Sickle/Model/SM_VMF_Tool_Sickle" unique_id=2045838460]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("35_k6xnb")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="SM_VMF_Tool_Sickle/Model/SM_VMF_Tool_Sickle" unique_id=1810422975]
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Tool_Sickle" unique_id=1139758249]
+
+[node name="@CollisionShape3D@26" type="CollisionShape3D" parent="SM_VMF_Tool_Sickle/StaticCollision" unique_id=251791359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019999996, 0.22999999, 0)
+shape = SubResource("BoxShape3D_e4yk1")
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="." unique_id=1630679251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1.6999999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Detail_GrassTuft" unique_id=1445673684]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="SM_VMF_Detail_GrassTuft/Model" unique_id=259960388]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="SM_VMF_Detail_GrassTuft/Model/SM_VMF_Detail_GrassTuft" unique_id=730972228]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@70" type="Node3D" parent="." unique_id=1603409404]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.02, 0, 0.84)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@70" unique_id=516238377]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@70/Model" unique_id=218306697]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@70/Model/SM_VMF_Detail_GrassTuft" unique_id=166347582]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@71" type="Node3D" parent="." unique_id=1367809101]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.88, 0, -0.5)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@71" unique_id=521919122]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@71/Model" unique_id=2004077568]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@71/Model/SM_VMF_Detail_GrassTuft" unique_id=1264291904]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@72" type="Node3D" parent="." unique_id=362634400]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.8, 0, -1.8399999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@72" unique_id=333501018]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@72/Model" unique_id=1896890137]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@72/Model/SM_VMF_Detail_GrassTuft" unique_id=1592866365]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@73" type="Node3D" parent="." unique_id=763255135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65999997, 0, -1.8399999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@73" unique_id=1032697770]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@73/Model" unique_id=1311879012]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@73/Model/SM_VMF_Detail_GrassTuft" unique_id=2094581144]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@74" type="Node3D" parent="." unique_id=1860818768]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.53999996, 0, -1.8199999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@74" unique_id=1769752154]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@74/Model" unique_id=1619915754]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@74/Model/SM_VMF_Detail_GrassTuft" unique_id=2140299500]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@75" type="Node3D" parent="." unique_id=1513086585]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9599999, 0, -1.7199999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@75" unique_id=1803333949]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@75/Model" unique_id=729700371]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@75/Model/SM_VMF_Detail_GrassTuft" unique_id=322368707]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@76" type="Node3D" parent="." unique_id=1859596159]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 1.92, 0, -0.85999995)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@76" unique_id=358079422]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@76/Model" unique_id=1454298924]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@76/Model/SM_VMF_Detail_GrassTuft" unique_id=1992041029]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@77" type="Node3D" parent="." unique_id=358088623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0.42)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@77" unique_id=798275738]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@77/Model" unique_id=557392570]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@77/Model/SM_VMF_Detail_GrassTuft" unique_id=434425083]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@78" type="Node3D" parent="." unique_id=1440720579]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9799999, 0, 1.8)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@78" unique_id=1316655871]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@78/Model" unique_id=1142752910]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@78/Model/SM_VMF_Detail_GrassTuft" unique_id=1982018883]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@79" type="Node3D" parent="." unique_id=354847700]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.54, 0, 1.9799999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@79" unique_id=53791550]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@79/Model" unique_id=376125249]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@79/Model/SM_VMF_Detail_GrassTuft" unique_id=970141357]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@80" type="Node3D" parent="." unique_id=218019432]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0.099999994, 0, 1.9399999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@80" unique_id=2125471489]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@80/Model" unique_id=879896902]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@80/Model/SM_VMF_Detail_GrassTuft" unique_id=1190442128]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@81" type="Node3D" parent="." unique_id=123790224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0, 2)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@81" unique_id=970522626]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@81/Model" unique_id=1535305149]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@81/Model/SM_VMF_Detail_GrassTuft" unique_id=1352002723]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@82" type="Node3D" parent="." unique_id=2009332202]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.06, 0, 0)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@82" unique_id=682561262]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@82/Model" unique_id=886275461]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@82/Model/SM_VMF_Detail_GrassTuft" unique_id=500888585]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@83" type="Node3D" parent="." unique_id=1531130975]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.88, 0, -2.08)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@83" unique_id=1234097995]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@83/Model" unique_id=215462903]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@83/Model/SM_VMF_Detail_GrassTuft" unique_id=987278383]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@84" type="Node3D" parent="." unique_id=1130970007]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 2.12, 0, -1.28)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@84" unique_id=1455712018]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@84/Model" unique_id=2062909229]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@84/Model/SM_VMF_Detail_GrassTuft" unique_id=219739697]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@85" type="Node3D" parent="." unique_id=1831598745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08, 0, 2.04)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@85" unique_id=490609311]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@85/Model" unique_id=1315194688]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@85/Model/SM_VMF_Detail_GrassTuft" unique_id=799956042]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Node3D@86" type="Node3D" parent="." unique_id=1031847360]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.94, 0, 1.8399999)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="@Node3D@86" unique_id=192453153]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="@Node3D@86/Model" unique_id=529006702]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="@Node3D@86/Model/SM_VMF_Detail_GrassTuft" unique_id=1576402331]
+material_override = ExtResource("2_hy1wx")
+mesh = ExtResource("36_6240f")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}

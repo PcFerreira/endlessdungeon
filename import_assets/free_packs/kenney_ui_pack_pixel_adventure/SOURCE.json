@@ -1,0 +1,27 @@
+{
+  "id": "kenney_ui_pack_pixel_adventure",
+  "title": "Kenney UI Pack: Pixel Adventure",
+  "author": "Kenney",
+  "source": "https://kenney.nl/assets/ui-pack-pixel-adventure",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://kenney.nl/media/pages/assets/ui-pack-pixel-adventure/405ba5278a-1729196257/kenney_ui-pack-pixel-adventure.zip",
+      "filename": "kenney_ui-pack-pixel-adventure.zip",
+      "bytes": 317032,
+      "sha256": "0b0ed4802ebcfff5e44e370f394baa1d751862a5a4a7612ac4ce84e85faa0627",
+      "archive_crc_checked": true
+    }
+  ],
+  "style": "Pixel art UI",
+  "categories": [
+    "HUD",
+    "pixel panels",
+    "controls"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Kenney UI Pack: Pixel Adventure by Kenney. Source: https://kenney.nl/assets/ui-pack-pixel-adventure. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

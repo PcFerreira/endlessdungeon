@@ -1,0 +1,26 @@
+{
+  "id": "isometric_human_animation",
+  "title": "Basic Isometric Human Animation",
+  "author": "ToxSickProductions.com",
+  "license": "CC0-1.0",
+  "source": "https://opengameart.org/content/basic-isometric-human-animation",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/basic_human_0.png",
+      "filename": "basic_human_0.png",
+      "bytes": 51259,
+      "sha256": "8107ce0f83a8efef8357fe1e4d104b950da983a6b6ed4bb30e232d0b248f7679",
+      "archive_crc_checked": false
+    }
+  ],
+  "style": "Isometric 2D sprites",
+  "categories": [
+    "Human animation",
+    "NPC base"
+  ],
+  "attribution_required": false,
+  "attribution_text": "Basic Isometric Human Animation by ToxSickProductions.com. Source: https://opengameart.org/content/basic-isometric-human-animation. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None; downloaded asset bytes are preserved. Archive wrapper directories for KayKit packs were renamed to content."
+}

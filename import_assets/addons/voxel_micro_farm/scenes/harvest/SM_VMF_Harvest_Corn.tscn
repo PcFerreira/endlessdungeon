@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_258rc"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Corn_Geo.res" id="2_pjlwv"]
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" unique_id=1509653140]
+metadata/vmf_asset = "SM_VMF_Harvest_Corn"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="." unique_id=599146224]
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" parent="Model" unique_id=1768677412]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Corn_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Harvest_Corn" unique_id=362502404]
+material_override = ExtResource("1_258rc")
+mesh = ExtResource("2_pjlwv")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}

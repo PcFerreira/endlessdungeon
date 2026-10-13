@@ -1,0 +1,1715 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://addons/voxel_micro_farm/examples/vmf_viewer.gd" id="1_dd67r"]
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="2_qk661"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Carrot_Seedling_Geo.res" id="3_m7als"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Carrot_Growing_Geo.res" id="4_uhnyn"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Carrot_Mature_Geo.res" id="5_uxm1j"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Carrot_Geo.res" id="6_oym7c"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Daikon_Seedling_Geo.res" id="7_u6yjf"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Daikon_Growing_Geo.res" id="8_m554v"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Daikon_Mature_Geo.res" id="9_we5g8"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Daikon_Geo.res" id="10_1hu32"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Corn_Seedling_Geo.res" id="11_dkjyw"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Corn_Growing_Geo.res" id="12_ftttc"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Corn_Mature_Geo.res" id="13_d4atu"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Corn_Geo.res" id="14_n0jwr"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Tomato_Seedling_Geo.res" id="15_ild6s"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Tomato_Growing_Geo.res" id="16_n6vpu"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Crop_Tomato_Mature_Geo.res" id="17_mj4a5"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Harvest_Tomato_Geo.res" id="18_evs6x"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Frame.res" id="19_kuhuj"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Post_End_X.res" id="20_60tdv"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Corner_Post_End_Y.res" id="21_xin0w"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_EndPost_Frame.res" id="22_o74cr"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Gate_Brace_Geo.res" id="23_iowny"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Gate_Geo.res" id="24_k1jq0"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Frame.res" id="25_l1bhv"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Gate_Post_End_X.res" id="26_sn32l"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Straight_Frame.res" id="27_4jh7u"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Straight_Post_End_X.res" id="28_uoki3"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Ground_Grass_Geo.res" id="29_340t7"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Dry_Geo.res" id="30_lsc3i"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Untilled_Geo.res" id="31_1yqod"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Soil_Wet_Geo.res" id="32_xobtn"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_Basket_Body.res" id="33_xtlxh"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_Crate_Body.res" id="34_6xibw"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_ShippingChest_Lid_Geo.res" id="35_6c70g"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Prop_ShippingChest_Body.res" id="36_33w30"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_Hoe_Geo.res" id="37_vcfsj"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_Sickle_Geo.res" id="38_0xsn7"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_WateringCan_Geo.res" id="39_ne6pg"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_WateringCan_Nozzle.res" id="40_6bdf2"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Demo_Island_Geo.res" id="41_pnlre"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Detail_GrassTuft_Geo.res" id="42_mefiq"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Detail_Path_Geo.res" id="43_0dco5"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Nature_Bush_Geo.res" id="44_ty415"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Nature_Rock_Geo.res" id="45_caoyo"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Nature_Tree_Geo.res" id="46_t64cc"]
+
+[sub_resource type="Environment" id="Environment_tb2mn"]
+background_mode = 1
+background_color = Color(0.90588236, 0.8745098, 0.8117647, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.35
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jgima"]
+albedo_color = Color(0.6666667, 0.6392157, 0.5803922, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hr88s"]
+size = Vector2(100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t1e7w"]
+size = Vector3(0.99999994, 0.74, 0.99999994)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eb18t"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sqm26"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6522p"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ynl5m"]
+size = Vector3(0.7180749, 0.3724678, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6m6w"]
+size = Vector3(0.78, 0.53999996, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pxiko"]
+size = Vector3(0.22, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrl2j"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pjn22"]
+size = Vector3(0.99999994, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pkumu"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2s6nc"]
+size = Vector3(1, 0.24, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ulfj"]
+size = Vector3(1, 0.32, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_supva"]
+size = Vector3(1, 0.24, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mp4a6"]
+size = Vector3(1, 0.32, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lx2ga"]
+size = Vector3(0.48, 0.44, 0.39999998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7acm"]
+size = Vector3(0.59999996, 0.32, 0.48)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qifna"]
+size = Vector3(0.79999995, 0.14, 0.59999996)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_km7mi"]
+size = Vector3(0.79999995, 0.48, 0.56)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdnu2"]
+size = Vector3(0.35999998, 1.0799999, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e4yk1"]
+size = Vector3(0.44, 0.7, 0.08)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b2exu"]
+size = Vector3(0.76485276, 0.56, 0.28)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtf1r"]
+size = Vector3(4.3199997, 0.39999998, 4.3199997)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_28icn"]
+size = Vector3(0.32, 0.04, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oijy8"]
+size = Vector3(0.76, 0.64, 0.55999994)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aih32"]
+size = Vector3(0.56, 0.48, 0.48)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_akj33"]
+size = Vector3(0.26, 0.9, 0.26)
+
+[node name="Asset_Overview" type="Node3D" unique_id=643116104]
+script = ExtResource("1_dd67r")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1725487524]
+environment = SubResource("Environment_tb2mn")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1344731288]
+transform = Transform3D(0.8480481, 0.41758206, -0.32625088, 0, 0.6156615, 0.7880107, 0.52991927, -0.668271, 0.5221106, 0, 0, 0)
+light_color = Color(1, 0.98039216, 0.9529412, 1)
+light_energy = 0.55
+shadow_enabled = true
+shadow_bias = 0.03
+directional_shadow_mode = 0
+directional_shadow_max_distance = 40.0
+
+[node name="Backdrop" type="MeshInstance3D" parent="." unique_id=1413962966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+material_override = SubResource("StandardMaterial3D_jgima")
+mesh = SubResource("PlaneMesh_hr88s")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2100121829]
+transform = Transform3D(1, 0, 0, 0, 0.5547002, 0.83205026, 0, -0.83205026, 0.5547002, 0.8, 18.3, 12.5)
+projection = 1
+size = 17.0
+far = 150.0
+
+[node name="ViewerHelp" type="CanvasLayer" parent="." unique_id=1861565862]
+
+[node name="@Label@87" type="Label" parent="ViewerHelp" unique_id=857045710]
+offset_left = 22.0
+offset_top = 18.0
+offset_right = 22.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.23137255, 0.27450982, 0.2, 1)
+theme_override_font_sizes/font_size = 17
+text = "VOXEL MICRO FARM   /   Asset Overview
+1 Farm   2 Asset overview   H Hinges   Space Sounds   Wheel Zoom   Right-drag Pan   R Reset"
+
+[node name="SectionTitle" type="Label3D" parent="." unique_id=1248143679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -6.5)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "CROPS & HARVEST"
+font_size = 64
+outline_size = 4
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="." unique_id=7510503]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0, -5.2)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Carrot_Seedling" unique_id=1615311683]
+
+[node name="SM_VMF_Crop_Carrot_Seedling" type="Node3D" parent="SM_VMF_Crop_Carrot_Seedling/Model" unique_id=551695858]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Seedling_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Carrot_Seedling/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=1550094054]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("3_m7als")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Carrot_Seedling/Model/SM_VMF_Crop_Carrot_Seedling" unique_id=2841071]
+
+[node name="AssetLabel" type="Label3D" parent="." unique_id=396367802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.1, -4.3999996)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Carrot
+Seedling"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Carrot_Growing" type="Node3D" parent="." unique_id=1440045749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.06, -5.2)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Growing"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Carrot_Growing" unique_id=432149175]
+
+[node name="SM_VMF_Crop_Carrot_Growing" type="Node3D" parent="SM_VMF_Crop_Carrot_Growing/Model" unique_id=663231727]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Growing_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Carrot_Growing/Model/SM_VMF_Crop_Carrot_Growing" unique_id=2080673372]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("4_uhnyn")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Carrot_Growing/Model/SM_VMF_Crop_Carrot_Growing" unique_id=236826112]
+
+[node name="@Label3D@88" type="Label3D" parent="." unique_id=391005098]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.1, -4.3999996)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Carrot
+Growing"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="." unique_id=884831727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.06, -5.2)
+metadata/vmf_asset = "SM_VMF_Crop_Carrot_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Carrot_Mature" unique_id=1497053803]
+
+[node name="SM_VMF_Crop_Carrot_Mature" type="Node3D" parent="SM_VMF_Crop_Carrot_Mature/Model" unique_id=1136276837]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Carrot_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Carrot_Mature/Model/SM_VMF_Crop_Carrot_Mature" unique_id=925480780]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("5_uxm1j")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Carrot_Mature/Model/SM_VMF_Crop_Carrot_Mature" unique_id=1461054107]
+
+[node name="@Label3D@89" type="Label3D" parent="." unique_id=543319714]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.1, -4.3999996)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Carrot
+Mature"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Harvest_Carrot" type="Node3D" parent="." unique_id=1040693789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0, -5.2)
+metadata/vmf_asset = "SM_VMF_Harvest_Carrot"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Carrot" unique_id=1487472007]
+
+[node name="SM_VMF_Harvest_Carrot" type="Node3D" parent="SM_VMF_Harvest_Carrot/Model" unique_id=672627309]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Carrot_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Carrot/Model/SM_VMF_Harvest_Carrot" unique_id=958155127]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("6_oym7c")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Label3D@90" type="Label3D" parent="." unique_id=1616919931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0.1, -4.3999996)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Carrot
+Harvest"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Daikon_Seedling" type="Node3D" parent="." unique_id=1874396928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0, -3.6)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Daikon_Seedling" unique_id=388621998]
+
+[node name="SM_VMF_Crop_Daikon_Seedling" type="Node3D" parent="SM_VMF_Crop_Daikon_Seedling/Model" unique_id=800818473]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Seedling_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Daikon_Seedling/Model/SM_VMF_Crop_Daikon_Seedling" unique_id=132894817]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("7_u6yjf")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Daikon_Seedling/Model/SM_VMF_Crop_Daikon_Seedling" unique_id=497419205]
+
+[node name="@Label3D@91" type="Label3D" parent="." unique_id=2108062071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.1, -2.7999997)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Daikon
+Seedling"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Daikon_Growing" type="Node3D" parent="." unique_id=2009932952]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.06, -3.6)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Growing"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Daikon_Growing" unique_id=1107273772]
+
+[node name="SM_VMF_Crop_Daikon_Growing" type="Node3D" parent="SM_VMF_Crop_Daikon_Growing/Model" unique_id=889107041]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Growing_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Daikon_Growing/Model/SM_VMF_Crop_Daikon_Growing" unique_id=899950719]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("8_m554v")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Daikon_Growing/Model/SM_VMF_Crop_Daikon_Growing" unique_id=1758691111]
+
+[node name="@Label3D@92" type="Label3D" parent="." unique_id=1396722254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.1, -2.7999997)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Daikon
+Growing"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="." unique_id=972937362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.06, -3.6)
+metadata/vmf_asset = "SM_VMF_Crop_Daikon_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Daikon_Mature" unique_id=786999458]
+
+[node name="SM_VMF_Crop_Daikon_Mature" type="Node3D" parent="SM_VMF_Crop_Daikon_Mature/Model" unique_id=1934723544]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Daikon_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Daikon_Mature/Model/SM_VMF_Crop_Daikon_Mature" unique_id=445733524]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("9_we5g8")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Daikon_Mature/Model/SM_VMF_Crop_Daikon_Mature" unique_id=1681058289]
+
+[node name="@Label3D@93" type="Label3D" parent="." unique_id=1590772996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.1, -2.7999997)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Daikon
+Mature"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" parent="." unique_id=565436856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0, -3.6)
+metadata/vmf_asset = "SM_VMF_Harvest_Daikon"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Daikon" unique_id=762735648]
+
+[node name="SM_VMF_Harvest_Daikon" type="Node3D" parent="SM_VMF_Harvest_Daikon/Model" unique_id=1359314917]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Daikon_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Daikon/Model/SM_VMF_Harvest_Daikon" unique_id=539396079]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("10_1hu32")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Label3D@94" type="Label3D" parent="." unique_id=2115411979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0.1, -2.7999997)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Daikon
+Harvest"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Corn_Seedling" type="Node3D" parent="." unique_id=1670635279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0, -1.9999998)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Corn_Seedling" unique_id=1590878485]
+
+[node name="SM_VMF_Crop_Corn_Seedling" type="Node3D" parent="SM_VMF_Crop_Corn_Seedling/Model" unique_id=1546756382]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Seedling_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Corn_Seedling/Model/SM_VMF_Crop_Corn_Seedling" unique_id=1411462332]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("11_dkjyw")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Corn_Seedling/Model/SM_VMF_Crop_Corn_Seedling" unique_id=79381084]
+
+[node name="@Label3D@95" type="Label3D" parent="." unique_id=678704826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.1, -1.1999998)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Corn
+Seedling"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Corn_Growing" type="Node3D" parent="." unique_id=1222202831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0, -1.9999998)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Growing"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Corn_Growing" unique_id=1427469028]
+
+[node name="SM_VMF_Crop_Corn_Growing" type="Node3D" parent="SM_VMF_Crop_Corn_Growing/Model" unique_id=423819811]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Growing_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Corn_Growing/Model/SM_VMF_Crop_Corn_Growing" unique_id=28230474]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("12_ftttc")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Corn_Growing/Model/SM_VMF_Crop_Corn_Growing" unique_id=1789020951]
+
+[node name="@Label3D@96" type="Label3D" parent="." unique_id=947966770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.1, -1.1999998)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Corn
+Growing"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="." unique_id=1405590125]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0, -1.9999998)
+metadata/vmf_asset = "SM_VMF_Crop_Corn_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Corn_Mature" unique_id=1620089311]
+
+[node name="SM_VMF_Crop_Corn_Mature" type="Node3D" parent="SM_VMF_Crop_Corn_Mature/Model" unique_id=1396370708]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Corn_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Corn_Mature/Model/SM_VMF_Crop_Corn_Mature" unique_id=1107252670]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("13_d4atu")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Corn_Mature/Model/SM_VMF_Crop_Corn_Mature" unique_id=472580506]
+
+[node name="@Label3D@97" type="Label3D" parent="." unique_id=2136569317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.1, -1.1999998)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Corn
+Mature"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" parent="." unique_id=1509653140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0, -1.9999998)
+metadata/vmf_asset = "SM_VMF_Harvest_Corn"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Corn" unique_id=599146224]
+
+[node name="SM_VMF_Harvest_Corn" type="Node3D" parent="SM_VMF_Harvest_Corn/Model" unique_id=1768677412]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Corn_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Corn/Model/SM_VMF_Harvest_Corn" unique_id=362502404]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("14_n0jwr")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Label3D@98" type="Label3D" parent="." unique_id=720690390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0.1, -1.1999998)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Corn
+Harvest"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Tomato_Seedling" type="Node3D" parent="." unique_id=636995144]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0, -0.39999974)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Seedling"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Tomato_Seedling" unique_id=201519937]
+
+[node name="SM_VMF_Crop_Tomato_Seedling" type="Node3D" parent="SM_VMF_Crop_Tomato_Seedling/Model" unique_id=269047380]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Seedling_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Tomato_Seedling/Model/SM_VMF_Crop_Tomato_Seedling" unique_id=333909281]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("15_ild6s")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Tomato_Seedling/Model/SM_VMF_Crop_Tomato_Seedling" unique_id=544897999]
+
+[node name="@Label3D@99" type="Label3D" parent="." unique_id=693521214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.1, 0.40000027)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Tomato
+Seedling"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Tomato_Growing" type="Node3D" parent="." unique_id=1862401828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0, -0.39999974)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Growing"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Tomato_Growing" unique_id=2048632766]
+
+[node name="SM_VMF_Crop_Tomato_Growing" type="Node3D" parent="SM_VMF_Crop_Tomato_Growing/Model" unique_id=1199656442]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Growing_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Tomato_Growing/Model/SM_VMF_Crop_Tomato_Growing" unique_id=1013649336]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("16_n6vpu")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Tomato_Growing/Model/SM_VMF_Crop_Tomato_Growing" unique_id=258247410]
+
+[node name="@Label3D@100" type="Label3D" parent="." unique_id=858814858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.1, 0.40000027)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Tomato
+Growing"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="." unique_id=92096670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0, -0.39999974)
+metadata/vmf_asset = "SM_VMF_Crop_Tomato_Mature"
+metadata/vmf_category = "crops"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Crop_Tomato_Mature" unique_id=1596193892]
+
+[node name="SM_VMF_Crop_Tomato_Mature" type="Node3D" parent="SM_VMF_Crop_Tomato_Mature/Model" unique_id=65137036]
+metadata/extras = {
+"category": "Crops",
+"pivot": "soil_surface_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Crop_Tomato_Mature_Geo" type="MeshInstance3D" parent="SM_VMF_Crop_Tomato_Mature/Model/SM_VMF_Crop_Tomato_Mature" unique_id=287265601]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("17_mj4a5")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Soil" type="Node3D" parent="SM_VMF_Crop_Tomato_Mature/Model/SM_VMF_Crop_Tomato_Mature" unique_id=345790312]
+
+[node name="@Label3D@101" type="Label3D" parent="." unique_id=766034577]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.1, 0.40000027)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Tomato
+Mature"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Harvest_Tomato" type="Node3D" parent="." unique_id=1413270789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0, -0.39999974)
+metadata/vmf_asset = "SM_VMF_Harvest_Tomato"
+metadata/vmf_category = "harvest"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Harvest_Tomato" unique_id=25868897]
+
+[node name="SM_VMF_Harvest_Tomato" type="Node3D" parent="SM_VMF_Harvest_Tomato/Model" unique_id=94660848]
+metadata/extras = {
+"category": "Harvest",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Harvest_Tomato_Geo" type="MeshInstance3D" parent="SM_VMF_Harvest_Tomato/Model/SM_VMF_Harvest_Tomato" unique_id=852353616]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("18_evs6x")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Label3D@102" type="Label3D" parent="." unique_id=1429936542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999995, 0.1, 0.40000027)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Tomato
+Harvest"
+font_size = 48
+outline_size = 4
+
+[node name="@Label3D@103" type="Label3D" parent="." unique_id=500099866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.95, 0.5, -6.1000004)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "GROUND & FENCES"
+font_size = 64
+outline_size = 4
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" parent="." unique_id=737138656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0, -4.8)
+metadata/vmf_asset = "SM_VMF_Fence_Corner"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_Corner" unique_id=1171956862]
+
+[node name="SM_VMF_Fence_Corner" type="Node3D" parent="SM_VMF_Fence_Corner/Model" unique_id=1166098159]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Corner_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=475710601]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("19_kuhuj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame" unique_id=909644152]
+
+[node name="@CollisionShape3D@4" type="CollisionShape3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Frame/StaticCollision" unique_id=739361206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, -0.42)
+shape = SubResource("BoxShape3D_t1e7w")
+
+[node name="SM_VMF_Fence_Corner_Post_End_X" type="MeshInstance3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=221928162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("20_60tdv")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X" unique_id=480275134]
+
+[node name="@CollisionShape3D@5" type="CollisionShape3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_X/StaticCollision" unique_id=2018491492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_eb18t")
+
+[node name="SM_VMF_Fence_Corner_Post_End_Y" type="MeshInstance3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=231409489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("21_xin0w")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_Y",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y" unique_id=98829434]
+
+[node name="@CollisionShape3D@6" type="CollisionShape3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner/SM_VMF_Fence_Corner_Post_End_Y/StaticCollision" unique_id=11253522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_sqm26")
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=1780539932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Socket_End_B" type="Node3D" parent="SM_VMF_Fence_Corner/Model/SM_VMF_Fence_Corner" unique_id=2051745939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="@Label3D@104" type="Label3D" parent="." unique_id=1174356720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0.1, -4)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Corner"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Fence_EndPost" type="Node3D" parent="." unique_id=114495911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4.8)
+metadata/vmf_asset = "SM_VMF_Fence_EndPost"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_EndPost" unique_id=1103894030]
+
+[node name="SM_VMF_Fence_EndPost" type="Node3D" parent="SM_VMF_Fence_EndPost/Model" unique_id=800592207]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_EndPost_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost" unique_id=635206844]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("22_o74cr")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost/SM_VMF_Fence_EndPost_Frame" unique_id=1701379760]
+
+[node name="@CollisionShape3D@7" type="CollisionShape3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost/SM_VMF_Fence_EndPost_Frame/StaticCollision" unique_id=10424023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_6522p")
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_EndPost/Model/SM_VMF_Fence_EndPost" unique_id=115420283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Label3D@105" type="Label3D" parent="." unique_id=758258404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.1, -4)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "EndPost"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Fence_Gate" type="Node3D" parent="." unique_id=17347876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0, -4.8)
+metadata/vmf_asset = "SM_VMF_Fence_Gate"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_Gate" unique_id=288154363]
+
+[node name="SM_VMF_Fence_Gate" type="Node3D" parent="SM_VMF_Fence_Gate/Model" unique_id=194126532]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="Pivot_Gate" type="Node3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=1218033234 groups=["vmf_gate_hinges"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14, 0, 0)
+
+[node name="Gate_Brace_Geo" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate" unique_id=649453305]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("23_iowny")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Brace_Geo" unique_id=692814098]
+
+[node name="@CollisionShape3D@8" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Brace_Geo/StaticCollision" unique_id=1714350967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38999996, 0.37, 0)
+shape = SubResource("BoxShape3D_ynl5m")
+
+[node name="Gate_Geo" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate" unique_id=686465014]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("24_k1jq0")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Geo" unique_id=1277949129]
+
+[node name="@CollisionShape3D@9" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/Pivot_Gate/Gate_Geo/StaticCollision" unique_id=193498627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39, 0.36999997, 0.02)
+shape = SubResource("BoxShape3D_u6m6w")
+
+[node name="SM_VMF_Fence_Gate_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=362652290]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("25_l1bhv")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Frame" unique_id=1129084558]
+
+[node name="@CollisionShape3D@10" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Frame/StaticCollision" unique_id=1870386342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030000001, 0.37, 0)
+shape = SubResource("BoxShape3D_pxiko")
+
+[node name="SM_VMF_Fence_Gate_Post_End_X" type="MeshInstance3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=851623695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("26_sn32l")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Post_End_X" unique_id=544838801]
+
+[node name="@CollisionShape3D@11" type="CollisionShape3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate/SM_VMF_Fence_Gate_Post_End_X/StaticCollision" unique_id=887746200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_vrl2j")
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_Gate/Model/SM_VMF_Fence_Gate" unique_id=2139781904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Label3D@106" type="Label3D" parent="." unique_id=598004791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0.1, -4)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Gate"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="." unique_id=1344341581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7999997, 0, -4.8)
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Fence_Straight" unique_id=1636867007]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="SM_VMF_Fence_Straight/Model" unique_id=1753126684]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight" unique_id=1741157168]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("27_4jh7u")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=66683176]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=1570320411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight" unique_id=713493982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("28_uoki3")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=2127442420]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=747690414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+
+[node name="Socket_End" type="Node3D" parent="SM_VMF_Fence_Straight/Model/SM_VMF_Fence_Straight" unique_id=1860627169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="@Label3D@107" type="Label3D" parent="." unique_id=662018502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7999997, 0.1, -4)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Straight"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Ground_Grass" type="Node3D" parent="." unique_id=1603939936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0.24, -2.1000001)
+metadata/vmf_asset = "SM_VMF_Ground_Grass"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Ground_Grass" unique_id=1010335256]
+
+[node name="SM_VMF_Ground_Grass" type="Node3D" parent="SM_VMF_Ground_Grass/Model" unique_id=376657140]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Ground_Grass_Geo" type="MeshInstance3D" parent="SM_VMF_Ground_Grass/Model/SM_VMF_Ground_Grass" unique_id=766739783]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("29_340t7")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Ground_Grass" unique_id=1803523117]
+
+[node name="@CollisionShape3D@14" type="CollisionShape3D" parent="SM_VMF_Ground_Grass/StaticCollision" unique_id=1636359726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0)
+shape = SubResource("BoxShape3D_2s6nc")
+
+[node name="@Label3D@108" type="Label3D" parent="." unique_id=970042106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0.1, -1.3000002)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Grass"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Soil_Dry" type="Node3D" parent="." unique_id=2030963901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.24, -2.1000001)
+metadata/vmf_asset = "SM_VMF_Soil_Dry"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Soil_Dry" unique_id=1466077412]
+
+[node name="SM_VMF_Soil_Dry" type="Node3D" parent="SM_VMF_Soil_Dry/Model" unique_id=1816498570]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Dry_Geo" type="MeshInstance3D" parent="SM_VMF_Soil_Dry/Model/SM_VMF_Soil_Dry" unique_id=10507421]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("30_lsc3i")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="SM_VMF_Soil_Dry/Model/SM_VMF_Soil_Dry" unique_id=2003239009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Soil_Dry" unique_id=619324416]
+
+[node name="@CollisionShape3D@22" type="CollisionShape3D" parent="SM_VMF_Soil_Dry/StaticCollision" unique_id=1818970145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_1ulfj")
+
+[node name="@Label3D@109" type="Label3D" parent="." unique_id=1670206875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.1, -1.3000002)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Dry"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Soil_Untilled" type="Node3D" parent="." unique_id=924216719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0.24, -2.1000001)
+metadata/vmf_asset = "SM_VMF_Soil_Untilled"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Soil_Untilled" unique_id=43009218]
+
+[node name="SM_VMF_Soil_Untilled" type="Node3D" parent="SM_VMF_Soil_Untilled/Model" unique_id=954784373]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Untilled_Geo" type="MeshInstance3D" parent="SM_VMF_Soil_Untilled/Model/SM_VMF_Soil_Untilled" unique_id=1971700559]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("31_1yqod")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="SM_VMF_Soil_Untilled/Model/SM_VMF_Soil_Untilled" unique_id=577105017]
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Soil_Untilled" unique_id=185272075]
+
+[node name="@CollisionShape3D@23" type="CollisionShape3D" parent="SM_VMF_Soil_Untilled/StaticCollision" unique_id=523670676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0)
+shape = SubResource("BoxShape3D_supva")
+
+[node name="@Label3D@110" type="Label3D" parent="." unique_id=937514584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0.1, -1.3000002)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Untilled"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="." unique_id=327701094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7999997, 0.24, -2.1000001)
+metadata/vmf_asset = "SM_VMF_Soil_Wet"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Soil_Wet" unique_id=166549279]
+
+[node name="SM_VMF_Soil_Wet" type="Node3D" parent="SM_VMF_Soil_Wet/Model" unique_id=519763044]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Soil_Wet_Geo" type="MeshInstance3D" parent="SM_VMF_Soil_Wet/Model/SM_VMF_Soil_Wet" unique_id=1894693395]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("32_xobtn")
+metadata/extras = {
+"authoring_unit": "cm"
+}
+
+[node name="Socket_Plant_Surface" type="Node3D" parent="SM_VMF_Soil_Wet/Model/SM_VMF_Soil_Wet" unique_id=1215387531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Soil_Wet" unique_id=1522636998]
+
+[node name="@CollisionShape3D@24" type="CollisionShape3D" parent="SM_VMF_Soil_Wet/StaticCollision" unique_id=304373227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_mp4a6")
+
+[node name="@Label3D@111" type="Label3D" parent="." unique_id=829601660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7999997, 0.1, -1.3000002)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Wet"
+font_size = 48
+outline_size = 4
+
+[node name="@Label3D@112" type="Label3D" parent="." unique_id=1526695502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.5, 2.1000001)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "TOOLS & CONTAINERS"
+font_size = 64
+outline_size = 4
+
+[node name="SM_VMF_Prop_Basket" type="Node3D" parent="." unique_id=1880391396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0, 3.4)
+metadata/vmf_asset = "SM_VMF_Prop_Basket"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Prop_Basket" unique_id=810750982]
+
+[node name="SM_VMF_Prop_Basket" type="Node3D" parent="SM_VMF_Prop_Basket/Model" unique_id=962515339]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Prop_Basket_Body" type="MeshInstance3D" parent="SM_VMF_Prop_Basket/Model/SM_VMF_Prop_Basket" unique_id=1876222906]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("33_xtlxh")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_Basket" unique_id=2117719262]
+
+[node name="@CollisionShape3D@18" type="CollisionShape3D" parent="SM_VMF_Prop_Basket/StaticCollision" unique_id=959280249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22, 0)
+shape = SubResource("BoxShape3D_lx2ga")
+
+[node name="@Label3D@113" type="Label3D" parent="." unique_id=443655927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.1, 4.2000003)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Basket"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Prop_Crate" type="Node3D" parent="." unique_id=597169327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0, 3.4)
+metadata/vmf_asset = "SM_VMF_Prop_Crate"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Prop_Crate" unique_id=1118195042]
+
+[node name="SM_VMF_Prop_Crate" type="Node3D" parent="SM_VMF_Prop_Crate/Model" unique_id=1892508758]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Prop_Crate_Body" type="MeshInstance3D" parent="SM_VMF_Prop_Crate/Model/SM_VMF_Prop_Crate" unique_id=1509303781]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("34_6xibw")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_Crate" unique_id=1292988038]
+
+[node name="@CollisionShape3D@19" type="CollisionShape3D" parent="SM_VMF_Prop_Crate/StaticCollision" unique_id=180622248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16, 0)
+shape = SubResource("BoxShape3D_d7acm")
+
+[node name="@Label3D@114" type="Label3D" parent="." unique_id=724206143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.1, 4.2000003)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Crate"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Prop_ShippingChest" type="Node3D" parent="." unique_id=1893893720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0, 3.4)
+metadata/vmf_asset = "SM_VMF_Prop_ShippingChest"
+metadata/vmf_category = "props"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Prop_ShippingChest" unique_id=1434877055]
+
+[node name="SM_VMF_Prop_ShippingChest" type="Node3D" parent="SM_VMF_Prop_ShippingChest/Model" unique_id=1672028580]
+metadata/extras = {
+"category": "Props",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="Pivot_Lid" type="Node3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest" unique_id=1346641230 groups=["vmf_lid_hinges"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48, -0.26999998)
+
+[node name="Lid_Geo" type="MeshInstance3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/Pivot_Lid" unique_id=502208675]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("35_6c70g")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/Pivot_Lid/Lid_Geo" unique_id=1498404054]
+
+[node name="@CollisionShape3D@20" type="CollisionShape3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/Pivot_Lid/Lid_Geo/StaticCollision" unique_id=763015965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.010000002, 0.27999997)
+shape = SubResource("BoxShape3D_qifna")
+
+[node name="SM_VMF_Prop_ShippingChest_Body" type="MeshInstance3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest" unique_id=1107914288]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("36_33w30")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/SM_VMF_Prop_ShippingChest_Body" unique_id=1116069451]
+
+[node name="@CollisionShape3D@21" type="CollisionShape3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest/SM_VMF_Prop_ShippingChest_Body/StaticCollision" unique_id=1848956793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_km7mi")
+
+[node name="Socket_Deposit" type="Node3D" parent="SM_VMF_Prop_ShippingChest/Model/SM_VMF_Prop_ShippingChest" unique_id=575379966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45999998, 0)
+
+[node name="@Label3D@115" type="Label3D" parent="." unique_id=227829108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.1, 4.2000003)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "ShippingChest"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Tool_Hoe" type="Node3D" parent="." unique_id=1805714948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.84, 6)
+metadata/vmf_asset = "SM_VMF_Tool_Hoe"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Tool_Hoe" unique_id=2042942429]
+
+[node name="SM_VMF_Tool_Hoe" type="Node3D" parent="SM_VMF_Tool_Hoe/Model" unique_id=1343373682]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_Hoe_Geo" type="MeshInstance3D" parent="SM_VMF_Tool_Hoe/Model/SM_VMF_Tool_Hoe" unique_id=1597480339]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("37_vcfsj")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="SM_VMF_Tool_Hoe/Model/SM_VMF_Tool_Hoe" unique_id=121589524]
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Tool_Hoe" unique_id=1326703961]
+
+[node name="@CollisionShape3D@25" type="CollisionShape3D" parent="SM_VMF_Tool_Hoe/StaticCollision" unique_id=854145037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
+shape = SubResource("BoxShape3D_wdnu2")
+
+[node name="@Label3D@116" type="Label3D" parent="." unique_id=1235761468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 0.1, 6.8)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Hoe"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Tool_Sickle" type="Node3D" parent="." unique_id=1669258201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.12, 6)
+metadata/vmf_asset = "SM_VMF_Tool_Sickle"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Tool_Sickle" unique_id=909423533]
+
+[node name="SM_VMF_Tool_Sickle" type="Node3D" parent="SM_VMF_Tool_Sickle/Model" unique_id=837413101]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_Sickle_Geo" type="MeshInstance3D" parent="SM_VMF_Tool_Sickle/Model/SM_VMF_Tool_Sickle" unique_id=2045838460]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("38_0xsn7")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="SM_VMF_Tool_Sickle/Model/SM_VMF_Tool_Sickle" unique_id=1810422975]
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Tool_Sickle" unique_id=1139758249]
+
+[node name="@CollisionShape3D@26" type="CollisionShape3D" parent="SM_VMF_Tool_Sickle/StaticCollision" unique_id=251791359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019999996, 0.22999999, 0)
+shape = SubResource("BoxShape3D_e4yk1")
+
+[node name="@Label3D@117" type="Label3D" parent="." unique_id=795283043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8999999, 0.1, 6.8)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Sickle"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Tool_WateringCan" type="Node3D" parent="." unique_id=1217086070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.52, 6)
+metadata/vmf_asset = "SM_VMF_Tool_WateringCan"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Tool_WateringCan" unique_id=2035054437]
+
+[node name="SM_VMF_Tool_WateringCan" type="Node3D" parent="SM_VMF_Tool_WateringCan/Model" unique_id=511824721]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_WateringCan_Geo" type="MeshInstance3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=1428161042]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("39_ne6pg")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Tool_WateringCan_Nozzle" type="MeshInstance3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=1152121335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38, -0.14, 0)
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("40_6bdf2")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=66317860]
+
+[node name="Socket_Water" type="Node3D" parent="SM_VMF_Tool_WateringCan/Model/SM_VMF_Tool_WateringCan" unique_id=335383690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39999998, -0.12, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Tool_WateringCan" unique_id=120567025]
+
+[node name="@CollisionShape3D@27" type="CollisionShape3D" parent="SM_VMF_Tool_WateringCan/StaticCollision" unique_id=1153007841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08242643, -0.23999998, 0)
+shape = SubResource("BoxShape3D_b2exu")
+
+[node name="@Label3D@118" type="Label3D" parent="." unique_id=448976994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 0.1, 6.8)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "WateringCan"
+font_size = 48
+outline_size = 4
+
+[node name="@Label3D@119" type="Label3D" parent="." unique_id=1690522657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, 2.1000001)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "NATURE & DETAILS"
+font_size = 64
+outline_size = 4
+
+[node name="SM_VMF_Demo_Island" type="Node3D" parent="." unique_id=1355488199]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 2.1, 0.11999999, 3.4)
+metadata/vmf_asset = "SM_VMF_Demo_Island"
+metadata/vmf_category = "demo"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Demo_Island" unique_id=443507600]
+
+[node name="SM_VMF_Demo_Island" type="Node3D" parent="SM_VMF_Demo_Island/Model" unique_id=1692242039]
+metadata/extras = {
+"category": "Demo",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Demo_Island_Geo" type="MeshInstance3D" parent="SM_VMF_Demo_Island/Model/SM_VMF_Demo_Island" unique_id=474677026]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("41_pnlre")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 4.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Demo_Island" unique_id=1771198675]
+
+[node name="@CollisionShape3D@2" type="CollisionShape3D" parent="SM_VMF_Demo_Island/StaticCollision" unique_id=523065803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.19999999, 0)
+shape = SubResource("BoxShape3D_dtf1r")
+
+[node name="@Label3D@120" type="Label3D" parent="." unique_id=275086742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0.1, 4.2000003)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Island (30%)"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="." unique_id=1630679251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3.4)
+metadata/vmf_asset = "SM_VMF_Detail_GrassTuft"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Detail_GrassTuft" unique_id=1445673684]
+
+[node name="SM_VMF_Detail_GrassTuft" type="Node3D" parent="SM_VMF_Detail_GrassTuft/Model" unique_id=259960388]
+metadata/extras = {
+"category": "Details",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_GrassTuft_Geo" type="MeshInstance3D" parent="SM_VMF_Detail_GrassTuft/Model/SM_VMF_Detail_GrassTuft" unique_id=730972228]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("42_mefiq")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="@Label3D@121" type="Label3D" parent="." unique_id=1512562050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.1, 4.2000003)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "GrassTuft"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Detail_Path" type="Node3D" parent="." unique_id=754739957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0.04, 3.4)
+metadata/vmf_asset = "SM_VMF_Detail_Path"
+metadata/vmf_category = "details"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Detail_Path" unique_id=2135726432]
+
+[node name="SM_VMF_Detail_Path" type="Node3D" parent="SM_VMF_Detail_Path/Model" unique_id=2043252149]
+metadata/extras = {
+"category": "Details",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Detail_Path_Geo" type="MeshInstance3D" parent="SM_VMF_Detail_Path/Model/SM_VMF_Detail_Path" unique_id=2080195613]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("43_0dco5")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Detail_Path" unique_id=241796531]
+
+[node name="@CollisionShape3D@3" type="CollisionShape3D" parent="SM_VMF_Detail_Path/StaticCollision" unique_id=1169902931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02, 0)
+shape = SubResource("BoxShape3D_28icn")
+
+[node name="@Label3D@122" type="Label3D" parent="." unique_id=1408995987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0.1, 4.2000003)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Path"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Nature_Bush" type="Node3D" parent="." unique_id=275017102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0, 6)
+metadata/vmf_asset = "SM_VMF_Nature_Bush"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Nature_Bush" unique_id=19389612]
+
+[node name="SM_VMF_Nature_Bush" type="Node3D" parent="SM_VMF_Nature_Bush/Model" unique_id=166234992]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Bush_Geo" type="MeshInstance3D" parent="SM_VMF_Nature_Bush/Model/SM_VMF_Nature_Bush" unique_id=379960042]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("44_ty415")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Nature_Bush" unique_id=1801994704]
+
+[node name="@CollisionShape3D@15" type="CollisionShape3D" parent="SM_VMF_Nature_Bush/StaticCollision" unique_id=912878590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32, 0.07999998)
+shape = SubResource("BoxShape3D_oijy8")
+
+[node name="@Label3D@123" type="Label3D" parent="." unique_id=1333622875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0.1, 6.8)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Bush"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Nature_Rock" type="Node3D" parent="." unique_id=1873146767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+metadata/vmf_asset = "SM_VMF_Nature_Rock"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Nature_Rock" unique_id=1628896649]
+
+[node name="SM_VMF_Nature_Rock" type="Node3D" parent="SM_VMF_Nature_Rock/Model" unique_id=303651965]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Rock_Geo" type="MeshInstance3D" parent="SM_VMF_Nature_Rock/Model/SM_VMF_Nature_Rock" unique_id=1139685309]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("45_caoyo")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Nature_Rock" unique_id=1870528829]
+
+[node name="@CollisionShape3D@16" type="CollisionShape3D" parent="SM_VMF_Nature_Rock/StaticCollision" unique_id=1022595514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_aih32")
+
+[node name="@Label3D@124" type="Label3D" parent="." unique_id=1432588545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.1, 6.8)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Rock"
+font_size = 48
+outline_size = 4
+
+[node name="SM_VMF_Nature_Tree" type="Node3D" parent="." unique_id=749112802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0, 6)
+metadata/vmf_asset = "SM_VMF_Nature_Tree"
+metadata/vmf_category = "nature"
+
+[node name="Model" type="Node3D" parent="SM_VMF_Nature_Tree" unique_id=1665559667]
+
+[node name="SM_VMF_Nature_Tree" type="Node3D" parent="SM_VMF_Nature_Tree/Model" unique_id=736286326]
+metadata/extras = {
+"category": "Nature",
+"pivot": "bottom_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Nature_Tree_Geo" type="MeshInstance3D" parent="SM_VMF_Nature_Tree/Model/SM_VMF_Nature_Tree" unique_id=1377100891]
+material_override = ExtResource("2_qk661")
+mesh = ExtResource("46_t64cc")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="SM_VMF_Nature_Tree" unique_id=1049904558]
+
+[node name="@CollisionShape3D@17" type="CollisionShape3D" parent="SM_VMF_Nature_Tree/StaticCollision" unique_id=576719011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
+shape = SubResource("BoxShape3D_akj33")
+
+[node name="@Label3D@125" type="Label3D" parent="." unique_id=333541006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8999996, 0.1, 6.8)
+pixel_size = 0.0045
+billboard = 1
+no_depth_test = true
+modulate = Color(0.21960784, 0.2627451, 0.19215687, 1)
+outline_modulate = Color(0.9529412, 0.9254902, 0.8745098, 1)
+text = "Tree"
+font_size = 48
+outline_size = 4

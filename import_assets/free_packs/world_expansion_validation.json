@@ -1,0 +1,61 @@
+{
+  "checked_on": "2026-10-13",
+  "scope": "Fourteen world expansion packs; earlier checks remain in validation.json and item_variety_validation.json",
+  "new_packs": [
+    "kenney_nature_kit",
+    "kenney_modular_cave_kit",
+    "kenney_survival_kit",
+    "kenney_fantasy_town_kit",
+    "kaykit_furniture",
+    "quaternius_fantasy_props",
+    "quaternius_fantasy_outfits",
+    "quaternius_ultimate_monsters",
+    "rain_ambience",
+    "wind_ambience",
+    "dungeon_ambience",
+    "wildlife_ambience",
+    "river_forest_ambience",
+    "arcane_magic_effect"
+  ],
+  "new_gltf_glb_models": 837,
+  "new_source_png_files": 2032,
+  "original_audio_files": 24,
+  "derived_wav_files": 10,
+  "audio_files_probed": 34,
+  "flac_wav_pairs_pcm_equivalent": 10,
+  "checks": [
+    "ZIP CRC or 7z extraction checked during download",
+    "All mirrored files matched pinned Git blob hashes and recorded SHA-256",
+    "GLB headers and glTF JSON, buffers and dependencies validated for all 837 new models",
+    "ffprobe recognized streams and positive durations for all 34 original/derived audio files",
+    "Decoded PCM hashes matched for all 10 converted FLAC/WAV pairs"
+  ],
+  "godot": {
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "isolated_project": true,
+    "import_exit_code": 0,
+    "resource_check_exit_code": 0,
+    "models_instantiated": 837,
+    "textures_loaded": 2086,
+    "audio_streams_loaded": 24,
+    "warnings": [
+
+    ],
+    "texture_count_note": "Includes model-embedded images extracted by Godot and publisher previews."
+  },
+  "all_staged_file_hashes_verified": 11894,
+  "total_catalog_packs": 46,
+  "license_counts": {
+    "CC0-1.0": 40,
+    "CC-BY-3.0": 5,
+    "CC-BY-4.0": 1
+  },
+  "limits": [
+    "Runtime adoption, world generation and gameplay integration not performed",
+    "Original FLAC and alternative model formats were not imported by Godot",
+    "Loop seams and spatial audio mixing not auditioned",
+    "Character head compatibility, animation retargeting and collision setup remain adoption work",
+    "Free Standard subsets do not include paid PRO/SOURCE assets"
+  ],
+  "local_markdown_links_checked": 54
+}

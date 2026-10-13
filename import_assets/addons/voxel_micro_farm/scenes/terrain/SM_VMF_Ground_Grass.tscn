@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_6swpl"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Ground_Grass_Geo.res" id="2_su1au"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2s6nc"]
+size = Vector3(1, 0.24, 1)
+
+[node name="SM_VMF_Ground_Grass" type="Node3D" unique_id=1603939936]
+metadata/vmf_asset = "SM_VMF_Ground_Grass"
+metadata/vmf_category = "terrain"
+
+[node name="Model" type="Node3D" parent="." unique_id=1010335256]
+
+[node name="SM_VMF_Ground_Grass" type="Node3D" parent="Model" unique_id=376657140]
+metadata/extras = {
+"category": "Terrain",
+"pivot": "top_center",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Ground_Grass_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Ground_Grass" unique_id=766739783]
+material_override = ExtResource("1_6swpl")
+mesh = ExtResource("2_su1au")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=1803523117]
+
+[node name="@CollisionShape3D@14" type="CollisionShape3D" parent="StaticCollision" unique_id=1636359726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0)
+shape = SubResource("BoxShape3D_2s6nc")

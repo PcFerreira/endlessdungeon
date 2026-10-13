@@ -1,0 +1,49 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_yrisr"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_WateringCan_Geo.res" id="2_untdc"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Tool_WateringCan_Nozzle.res" id="3_owkog"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b2exu"]
+size = Vector3(0.76485276, 0.56, 0.28)
+
+[node name="SM_VMF_Tool_WateringCan" type="Node3D" unique_id=1217086070]
+metadata/vmf_asset = "SM_VMF_Tool_WateringCan"
+metadata/vmf_category = "tools"
+
+[node name="Model" type="Node3D" parent="." unique_id=2035054437]
+
+[node name="SM_VMF_Tool_WateringCan" type="Node3D" parent="Model" unique_id=511824721]
+metadata/extras = {
+"category": "Tools",
+"pivot": "grip_socket",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Tool_WateringCan_Geo" type="MeshInstance3D" parent="Model/SM_VMF_Tool_WateringCan" unique_id=1428161042]
+material_override = ExtResource("1_yrisr")
+mesh = ExtResource("2_untdc")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="SM_VMF_Tool_WateringCan_Nozzle" type="MeshInstance3D" parent="Model/SM_VMF_Tool_WateringCan" unique_id=1152121335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38, -0.14, 0)
+material_override = ExtResource("1_yrisr")
+mesh = ExtResource("3_owkog")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="Socket_Grip" type="Node3D" parent="Model/SM_VMF_Tool_WateringCan" unique_id=66317860]
+
+[node name="Socket_Water" type="Node3D" parent="Model/SM_VMF_Tool_WateringCan" unique_id=335383690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39999998, -0.12, 0)
+
+[node name="StaticCollision" type="StaticBody3D" parent="." unique_id=120567025]
+
+[node name="@CollisionShape3D@27" type="CollisionShape3D" parent="StaticCollision" unique_id=1153007841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08242643, -0.23999998, 0)
+shape = SubResource("BoxShape3D_b2exu")

@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://addons/voxel_micro_farm/materials/vmf_palette.tres" id="1_keg2a"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Straight_Frame.res" id="2_c376i"]
+[ext_resource type="ArrayMesh" path="res://addons/voxel_micro_farm/meshes/SM_VMF_Fence_Straight_Post_End_X.res" id="3_5styu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pjn22"]
+size = Vector3(0.99999994, 0.74, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pkumu"]
+size = Vector3(0.16, 0.74, 0.16)
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" unique_id=1344341581]
+metadata/vmf_asset = "SM_VMF_Fence_Straight"
+metadata/vmf_category = "fences"
+
+[node name="Model" type="Node3D" parent="." unique_id=1636867007]
+
+[node name="SM_VMF_Fence_Straight" type="Node3D" parent="Model" unique_id=1753126684]
+metadata/extras = {
+"category": "Fences",
+"pivot": "grid_start",
+"vmf_asset": true
+}
+
+[node name="SM_VMF_Fence_Straight_Frame" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Straight" unique_id=1741157168]
+material_override = ExtResource("1_keg2a")
+mesh = ExtResource("2_c376i")
+metadata/extras = {
+"authoring_unit": "cm",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame" unique_id=66683176]
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Frame/StaticCollision" unique_id=1570320411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41999996, 0.37, 0)
+shape = SubResource("BoxShape3D_pjn22")
+
+[node name="SM_VMF_Fence_Straight_Post_End_X" type="MeshInstance3D" parent="Model/SM_VMF_Fence_Straight" unique_id=713493982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("1_keg2a")
+mesh = ExtResource("3_5styu")
+metadata/extras = {
+"authoring_unit": "cm",
+"vmf_part": "Post_End_X",
+"voxel_grid_cm": 2.0
+}
+
+[node name="StaticCollision" type="StaticBody3D" parent="Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X" unique_id=2127442420]
+
+[node name="@CollisionShape3D@13" type="CollisionShape3D" parent="Model/SM_VMF_Fence_Straight/SM_VMF_Fence_Straight_Post_End_X/StaticCollision" unique_id=747690414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+shape = SubResource("BoxShape3D_pkumu")
+
+[node name="Socket_End" type="Node3D" parent="Model/SM_VMF_Fence_Straight" unique_id=1860627169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)

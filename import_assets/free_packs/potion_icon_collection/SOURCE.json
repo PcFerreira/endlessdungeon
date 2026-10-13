@@ -1,0 +1,98 @@
+{
+  "id": "potion_icon_collection",
+  "title": "CC0 Potion Icons",
+  "author": "AntumDeluge, compiling works by the authors credited in the bundled source records",
+  "source": "https://opengameart.org/content/cc0-potion-icons",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "acquired_on": "2026-10-12",
+  "downloads": [
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-ocal.zip",
+      "filename": "potion-ocal.zip",
+      "bytes": 13773,
+      "sha256": "056b8af3aab126d02bda4fee25e1d59996ab4b6f033fc5c230d60807ead100a4",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-ocal-scalable.zip",
+      "filename": "potion-ocal-scalable.zip",
+      "bytes": 34924,
+      "sha256": "b435b02e55237a932d03c115fe55e7d30a6a510d306d0a8a133a54df49a6a976",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-7soul1_20201212.zip",
+      "filename": "potion-7soul1_20201212.zip",
+      "bytes": 44003,
+      "sha256": "1390c6b19f2b8b6183d903cbd097b1917c3827f6dcc7b52121127b344ef0d8a9",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-arlantr_20201229.zip",
+      "filename": "potion-arlantr_20201229.zip",
+      "bytes": 3239,
+      "sha256": "d1551ce68ca658c9f03f72dc2b31e2c9ad9ab0f8135e20e349fc1e06e777a613",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-bizmasterstudios_0.zip",
+      "filename": "potion-bizmasterstudios_0.zip",
+      "bytes": 2606,
+      "sha256": "9453bbaded3d85b503aa77d2000279b8fb461deef22005b4be61f1802fae2d89",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-buch.zip",
+      "filename": "potion-buch.zip",
+      "bytes": 4878,
+      "sha256": "23d47dc9896cfb411b654c3706ecc5d54368024119aa5c404fb37b9ccf6c518b",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-dcss.zip",
+      "filename": "potion-dcss.zip",
+      "bytes": 75706,
+      "sha256": "886cebd27b92683ffe280757ed649fd3b6d05873d29947f89f6c0f90bf55e41f",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-kotnaszynce_20201214.zip",
+      "filename": "potion-kotnaszynce_20201214.zip",
+      "bytes": 27292,
+      "sha256": "6964cf1b5e245c81d223d18a6ded0ecf95f96b9412125f6e85bc63ea0e920269",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-melle_0.zip",
+      "filename": "potion-melle_0.zip",
+      "bytes": 465208,
+      "sha256": "9d447cff784e65a18dfe7cd8288662e83a5d04a6aafe75975c9a9a1e4b6f3f04",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-rcorre.zip",
+      "filename": "potion-rcorre.zip",
+      "bytes": 2565,
+      "sha256": "01779498ff9b923da1bd65fec3f03f5c4e16a799887e247b4f09ab31dfd88864",
+      "archive_crc_checked": true
+    },
+    {
+      "url": "https://opengameart.org/sites/default/files/potion-thekingphoenix.zip",
+      "filename": "potion-thekingphoenix.zip",
+      "bytes": 3816,
+      "sha256": "cfaad4a162d150e080fd5825fad1210d98d1f80a5580da84b752ae193c092c10",
+      "archive_crc_checked": true
+    }
+  ],
+  "scope": "All files linked in the publisher download section, extracted with author subcollections kept separate.",
+  "style": "Pixel art and SVG icons",
+  "categories": [
+    "Potions",
+    "Alchemy",
+    "Bottles"
+  ],
+  "attribution_required": false,
+  "attribution_text": "CC0 Potion Icons by AntumDeluge, compiling works by the authors credited in the bundled source records. Source: https://opengameart.org/content/cc0-potion-icons. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "source_asset_changes": "None. Original asset bytes and bundled notices are preserved; archives in author collections were extracted into separate subdirectories."
+}

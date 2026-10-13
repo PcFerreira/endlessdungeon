@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-10-12",
+  "packs": 25,
+  "gltf_glb_models": 427,
+  "animated_models": 58,
+  "animation_clips": 1615,
+  "voxel_sources": 21,
+  "modern_magicavoxel_sources": 9,
+  "legacy_dense_voxel_sources": 12,
+  "blender_sources": 1,
+  "audio_files": 290,
+  "checks": [
+    "ZIP CRC checked during download",
+    "Git blob SHA-1 checked for each Cube World mirror file",
+    "GLB header and chunk lengths",
+    "glTF 2.0 JSON, buffers and external dependencies",
+    "Modern VOX and Blender signatures; legacy voxel grid/palette lengths",
+    "Audio codec and positive duration via ffprobe"
+  ],
+  "godot": {
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "isolated_project": true,
+    "import_exit_code": 0,
+    "resource_check_exit_code": 0,
+    "models_instantiated": 427,
+    "textures_loaded": 2750,
+    "audio_streams_loaded": 290,
+    "texture_count_note": "Includes textures extracted from embedded model images by Godot.",
+    "warnings": [
+      "kenney_rpg_audio/Preview.ogg has a malformed Sony vendor metadata comment; the file loads."
+    ]
+  },
+  "staged_file_hashes_verified": 4411,
+  "local_markdown_links_checked": true,
+  "license_counts": {
+    "CC0-1.0": 22,
+    "CC-BY-3.0": 3
+  },
+  "source_png_files": 2630,
+  "source_svg_files": 4,
+  "limits": [
+    "Runtime adoption and rendered visual review not performed.",
+    "Audio loudness/looping not tested.",
+    "Legacy voxel editor compatibility not tested.",
+    "One padadu pack has 9 of 17 uploads due HTTP 429.",
+    "An additional forest pack is excluded under license_review due conflicting publisher statements."
+  ],
+  "scope": "Original 25-pack audit; see item_variety_validation.json for seven later additions",
+  "additional_checks": [
+    "item_variety_validation.json",
+    "world_expansion_validation.json"
+  ]
+}
