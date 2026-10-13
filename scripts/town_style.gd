@@ -89,6 +89,8 @@ func build(city: Dictionary, opaque_material: Material = null, house_models: Dic
 	luminous.emission = Color(profile.color)
 	luminous.emission_energy_multiplier = .3
 	for house in city.houses:
+		if house_models.has(house.id) and house_models[house.id].has_meta("town_voxel_id"):
+			continue
 		var actual := Decor.bounds(house_models[house.id]) if house_models.has(house.id) else AABB()
 		var geometry := plan(house,profile,actual)
 		var center := Vector2(house.footprint.position) + (Vector2(house.footprint.size) - Vector2.ONE) * .5

@@ -9,6 +9,7 @@ var theme := ""
 var floor_kinds: Dictionary = {}
 var houses: Array[Dictionary] = []
 var markets: Array[Dictionary] = []
+var gates: Array[Dictionary] = []
 var reserved: Rect2i
 
 func _init(season: String = "") -> void:
@@ -16,6 +17,10 @@ func _init(season: String = "") -> void:
 	center = Vector2i(data.center[0], data.center[1])
 	spawn = absolute(data.spawn)
 	portal = absolute(data.portal)
+	for source in data.gates:
+		var record: Dictionary = source.duplicate(true)
+		record.point = absolute(source.position)
+		gates.append(record)
 	theme = data.default_theme if season.is_empty() else season
 	assert(data.themes.has(theme), "Unknown floating city season")
 	reserved = Rect2i(center - Vector2i.ONE * 96, Vector2i.ONE * 192)
@@ -53,6 +58,8 @@ func _init(season: String = "") -> void:
 		obstacles.append(Rect2(absolute(point) - Vector2.ONE * .35, Vector2.ONE * .7))
 	for side in [-1, 1]:
 		obstacles.append(Rect2(portal + Vector2(side * 1.5, 0) - Vector2.ONE * .2, Vector2.ONE * .4))
+		for gate in gates:
+			obstacles.append(Rect2(gate.point + Vector2(side * 1.5, 0) - Vector2.ONE * .2, Vector2.ONE * .4))
 
 static func valid(document) -> bool:
 	if not document is Dictionary or document.get("version") != 1 or not document.get("id") is String or not document.id.begins_with("city:") or not document.get("name") is String or not document.get("themes") is Dictionary or not document.themes.has(document.get("default_theme")):
@@ -62,9 +69,16 @@ static func valid(document) -> bool:
 			return false
 	if not number(document.get("elevation")) or document.elevation < 9 or document.elevation > 30:
 		return false
-	for key in ["islands", "bridges", "halls", "markets", "benches", "lamps", "ornaments"]:
+	for key in ["islands", "bridges", "halls", "markets", "benches", "lamps", "ornaments", "gates"]:
 		if not document.get(key) is Array or document[key].size() > 64:
 			return false
+	var gate_ids := {}
+	for gate in document.gates:
+		if not gate is Dictionary or not gate.get("id") is String or gate.id.is_empty() or gate_ids.has(gate.id) or not gate.get("name") is String or not pair(gate.get("position")) or gate.get("kind") not in ["sanctum", "dimension"]:
+			return false
+		if gate.kind == "dimension" and (not gate.get("destination_id") is String or gate.destination_id.is_empty()):
+			return false
+		gate_ids[gate.id] = true
 	for island in document.islands:
 		if not island is Dictionary or not pair(island.get("center")) or not pair(island.get("radius")) or not island.radius.all(func(value): return value >= 3 and value <= 30):
 			return false
@@ -99,6 +113,8 @@ func set_theme(season: String) -> bool:
 
 func service_points() -> Array[Vector2]:
 	var result: Array[Vector2] = [spawn, portal, absolute([0, 0])]
+	for gate in gates:
+		result.append(gate.point)
 	for house in houses:
 		result.append(house.approach)
 	for market in markets:
@@ -110,7 +126,7 @@ func city_record() -> Dictionary:
 	for index in range(4):
 		var point := absolute([[2, 1], [-21, 2], [-5, -3], [21, 5]][index])
 		residents.append({"id": data.id + ":npc:%s" % index, "kind": "npc", "role": "fountain_keeper" if index == 0 else "merchant", "point": point, "approach": point, "city_id": data.id, "city_name": data.name, "biome": 2, "appearance": index})
-	return {"id": data.id, "name": data.name, "type": "city", "cell": center, "height": float(data.elevation), "biome": 2, "archetype_id": "arcane", "style": 0, "houses": houses.duplicate(true), "outdoor_lots": markets.duplicate(true), "residents": residents, "books": [], "decorations": [], "streets": tiles.duplicate(), "floating_city": true, "theme": theme, "hub_tiles": floor_kinds.duplicate(), "hub_spawn": spawn, "hub_portal": portal, "hub_obstacles": obstacles.duplicate()}
+	return {"id": data.id, "name": data.name, "type": "city", "cell": center, "height": float(data.elevation), "biome": 2, "archetype_id": "arcane", "style": 0, "houses": houses.duplicate(true), "outdoor_lots": markets.duplicate(true), "residents": residents, "books": [], "decorations": [], "streets": tiles.duplicate(), "floating_city": true, "theme": theme, "hub_tiles": floor_kinds.duplicate(), "hub_spawn": spawn, "hub_portal": portal, "hub_gates": gates.duplicate(true), "hub_obstacles": obstacles.duplicate()}
 
 func cell_info(cell: Vector2i) -> Dictionary:
 	var supported := tiles.has(cell)

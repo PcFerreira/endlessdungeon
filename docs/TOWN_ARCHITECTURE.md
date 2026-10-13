@@ -1,6 +1,8 @@
 # Town architecture
 
-Towns now use 30 construction templates: twelve complete imported building forms and eighteen assemblies of imported walls, roofs, doors, frames and platforms. Homes, inns, smithies and shrines keep their real building use. Keeps, watchtowers, markets, mills and colonnades occupy the existing reserved civic plot. Fourteen architectural profiles serve the current town identities, including the cultural, festival, mage, fairy and arcane circuit themes.
+Japanese, Chinese, Korean, Halloween, Christmas, cyberpunk, mage and fairy towns now prefer the [native voxel pack](TOWN_VOXEL_ASSETS.md). It supplies authored houses/workshops, civic monuments, gateways and goods-free market shelters, with original block geometry and pre-baked faceted companions. Native door sockets are fitted to the existing generated approach axis while preserving usable openings.
+
+The legacy catalogue remains the generic and unavailable-resource fallback. Its 30 construction templates include twelve complete imported building forms and eighteen assemblies of imported walls, roofs, doors, frames and platforms. Homes, inns, smithies and shrines keep their real building use. Keeps, watchtowers, markets, mills and colonnades occupy the existing reserved civic plot. Fourteen fallback architectural profiles cover the current town identities.
 
 The profiles choose buildings by purpose and theme. Every profile covers all eleven existing home and business uses within its own curated list. A town keeps its selected source palette across households; roof colors do not count as new building silhouettes. The acceptance check finds thirty distinct geometry signatures before color or representation changes.
 
@@ -8,9 +10,9 @@ The profiles choose buildings by purpose and theme. Every profile covers all ele
 
 The catalogue uses the already imported CC0 KayKit Medieval Hexagon, Kenney Fantasy Town, Kenney Castle, Kenney Holiday, Kenney Survival, Kenney Graveyard and Quaternius Medieval Village packs. Source model bytes and notices are unchanged. See [project credits](../CREDITS.md) for the creators and source records.
 
-The supplied complete buildings are medieval forms. The supplied modular pieces support additional timber houses, courtyard halls, stacked lodges, stone towers and metal workshops. Cultural profiles are fantasy assemblies with the separately authored town details. The assets do not establish historical Japanese, Chinese or Korean buildings. Fairy and arcane circuit profiles also use their town trim and magic rather than claiming source assets for mushroom houses or electronic machinery.
+The imported fallback buildings are medieval forms. Their modular pieces support additional timber houses, courtyard halls, stacked lodges, stone towers and metal workshops. Cultural profiles are fantasy assemblies with separately authored town details; they do not establish historical Japanese, Chinese or Korean buildings. Native fairy and cyberpunk models now provide actual mushroom/flower houses and circuit architecture; the fallback profiles retain their imported assemblies and town trim.
 
-Faceted biomes display source meshes and materials. Block biomes display an actual voxel conversion of that geometry. The converter samples triangle surfaces and source material, vertex and texture colors into a bounded cube lattice, with internal faces removed. Source identity remains separate from the rendered derivative. It preserves sampled openings; detail smaller than a cell can disappear. This is a visual surface shell, not a new physics mesh or an interior generator.
+For imported fallback buildings, faceted biomes display source meshes and materials; block biomes display an actual voxel conversion. The converter samples triangle surfaces and source material, vertex and texture colors into a bounded cube lattice, with internal faces removed. Source identity remains separate from the rendered derivative. It preserves sampled openings; detail smaller than a cell can disappear. Native pack buildings already contain block geometry and bypass this conversion. Both paths provide visual shells while existing plots and controllers govern physics and interiors.
 
 ## Placement and gameplay
 

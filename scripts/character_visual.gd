@@ -1,10 +1,9 @@
 extends Node3D
 
-const Voxels = preload("res://scripts/voxel_kit.gd")
-const Registry = preload("res://scripts/asset_registry.gd")
-static var registry := Registry.new()
+const Player = preload("res://scripts/player_voxels.gd")
 var body: Node3D
 var imported := false
+var rigged := true
 var motion := ""
 var animations: Array[AnimationPlayer] = []
 
@@ -14,29 +13,12 @@ func configure(class_id: String, profile) -> void:
 		child.queue_free()
 	animations.clear()
 	motion = ""
-	imported = profile.model != "custom"
-	if not imported:
-		body = Voxels.instance(Voxels.character(class_id, profile))
-		add_child(body)
-		return
-	body = Node3D.new()
+	body = Player.create(class_id, profile)
 	add_child(body)
-	var source: Node3D = registry.instantiate(profile.model)
-	body.add_child(source)
-	for animation in source.find_children("*", "AnimationPlayer", true, false):
-		animations.append(animation)
-		for key in ["Idle", "Walk", "Jump_Idle"]:
-			var clip := animation_key(animation, key)
-			if not clip.is_empty():
-				animation.get_animation(clip).loop_mode = Animation.LOOP_LINEAR
-		if animation.has_animation("Idle"):
-			animation.play("Idle")
-			animation.advance(0)
-	var bounds := _bounds(body, Transform3D.IDENTITY)
-	var scale_factor := 1.1 / bounds.size.y
-	body.scale = Vector3.ONE * scale_factor
-	body.position = -Vector3(bounds.get_center().x, bounds.position.y, bounds.get_center().z) * scale_factor
+	animations.append(body.get_node("AnimationPlayer"))
 	animate(false, true)
+	if is_inside_tree():
+		animations[0].advance(0)
 
 func animate(moving: bool, grounded: bool) -> void:
 	var desired := "Jump_Idle" if not grounded else ("Walk" if moving else "Idle")
@@ -44,15 +26,15 @@ func animate(moving: bool, grounded: bool) -> void:
 		return
 	motion = desired
 	for animation in animations:
-		var key := animation_key(animation, desired)
-		if not key.is_empty():
-			animation.play(key, .12)
+		animation.play(desired, .12)
+
+func attack() -> void:
+	for animation in animations:
+		animation.play("Attack", .06)
+	motion = ""
 
 static func animation_key(player: AnimationPlayer, desired: String) -> String:
-	for candidate in (["Walk", "Walking_A", "Walking_B"] if desired == "Walk" else [desired]):
-		if player.has_animation(candidate):
-			return candidate
-	return ""
+	return desired if player.has_animation(desired) else ""
 
 func visual_bounds() -> AABB:
 	return _bounds(body, Transform3D.IDENTITY)

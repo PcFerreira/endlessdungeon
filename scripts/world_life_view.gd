@@ -7,6 +7,8 @@ const Voxels = preload("res://scripts/voxel_kit.gd")
 const AnimalHabitat = preload("res://scripts/animal_habitat.gd")
 const CreatureModels = preload("res://scripts/creature_models.gd")
 const Decor = preload("res://scripts/decor_geometry.gd")
+const Wonder = preload("res://scripts/wonder_catalog.gd")
+const WonderModels = preload("res://scripts/wonder_models.gd")
 var creatures := CreatureModels.new()
 var registry := Registry.new()
 var scenery := Scenery.new()
@@ -55,10 +57,10 @@ func sync(game) -> void:
 			animations[actor.id] = players
 			if actor.kind == "npc":
 				npc_models[actor.id] = model
-				if actor.get("traveling", false):
+				if actor.get("traveling", false) or actor.get("roaming",false):
 					var label := Label3D.new()
 					label.name = "WatchLabel"
-					label.text = game.life.activity.role(actor.role).name
+					label.text = actor.roaming_name if actor.get("roaming",false) else game.life.activity.role(actor.role).name
 					label.font_size = 24
 					label.pixel_size = .008
 					label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
@@ -78,7 +80,18 @@ func sync(game) -> void:
 
 func _create(actor: Dictionary) -> Node3D:
 	if actor.kind == "npc":
-		return Actors.create(actor.appearance, actor)
+		var context := actor.duplicate()
+		context.visual_family = creatures.styles.family_for(actor.biome)
+		return Actors.create(actor.appearance, context)
+	if Wonder.source(actor.asset_id):
+		var family := creatures.styles.family_for(actor.biome)
+		var model := WonderModels.create(actor.species, family, int(actor.wonder_seed))
+		var bounds := Actors._bounds(model, Transform3D.IDENTITY)
+		model.scale = Vector3.ONE * minf(actor.height / bounds.size.y, 1.3 / maxf(bounds.size.x, bounds.size.z))
+		model.set_meta("source_asset", actor.asset_id)
+		model.set_meta("asset_id", actor.asset_id)
+		model.set_meta("render_asset", actor.asset_id)
+		return model
 	var source := creatures.instantiate(actor.asset_id, int(actor.get("biome", 0)))
 	var model := Node3D.new()
 	if source == null:

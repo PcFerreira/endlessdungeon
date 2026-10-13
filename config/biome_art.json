@@ -90,6 +90,8 @@
         "block_voxel": ["quaternius_cube_world/Environment/glTF/Crystal_Big.gltf", "quaternius_cube_world/Environment/glTF/Crystal_Small.gltf"],
         "flat_lowpoly": ["quaternius_cube_world/Environment/glTF/Crystal_Big.gltf", "quaternius_cube_world/Environment/glTF/Crystal_Small.gltf"]
       }
-    }
+    },
+    "dense_crown": {"width": 3.0, "height": 4.2, "native": true, "clearance": 2.6, "trunk_width": 0.45, "colors": ["5a4932", "38563b", "65824c"]},
+    "jungle_crown": {"width": 3.2, "height": 4.5, "native": true, "clearance": 2.6, "trunk_width": 0.45, "colors": ["655039", "285d43", "528451"]}
   }
 }

@@ -1,0 +1,30 @@
+{
+  "id": "jaggedstone_magic",
+  "title": "Magic Spell SFX",
+  "author": "JaggedStone",
+  "source": "https://opengameart.org/content/magic-spell-sfx",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "attribution_required": false,
+  "attribution_text": "Magic Spell SFX by JaggedStone, OpenGameArt.org. CC0-1.0.",
+  "acquired_on": "2026-10-13",
+  "original_sha256": {
+    "magical_1.ogg": "119f9061a566c72c1c58444b03f8685b833079ef268dda02fe742eb34d3bc68f",
+    "magical_2.ogg": "84a70f63f3f21e5ba4a48285b760a663d422ad3feddba2f3cbadd94b76cdc52e",
+    "magical_3.ogg": "9fac648a1de869cf9ca2f4b3f1cd47f1766a3ee9d2fdec45831234401d7b2392",
+    "magical_4.ogg": "b7862d109b4013dfb2a389a10f8917203beb0efc458444bc5a1b8ada605cc118",
+    "magical_5.ogg": "69aaaaed729cacb518005a5d24074196db3c5fffc0ed2cd01ad864fbed4a62be",
+    "magical_6.ogg": "0a18ee3460cf3fd79c3771bbf94c20c26d34b65ab60d0b0e15694ffcad815955",
+    "magical_7.ogg": "2817da4f5df69ff993baffd6594a2f2a069f85ee2a02019f97db2246e350a76b"
+  },
+  "source_asset_changes": "Original downloads unchanged. Runtime PCM derivatives have trim/normalization recipes in assets/combat_audio/SOURCE.json.",
+  "downloads": [
+    "https://opengameart.org/sites/default/files/magical_1_0.ogg",
+    "https://opengameart.org/sites/default/files/magical_2.ogg",
+    "https://opengameart.org/sites/default/files/magical_3.ogg",
+    "https://opengameart.org/sites/default/files/magical_4.ogg",
+    "https://opengameart.org/sites/default/files/magical_5.ogg",
+    "https://opengameart.org/sites/default/files/magical_6_0.ogg",
+    "https://opengameart.org/sites/default/files/magical_7_0.ogg"
+  ]
+}

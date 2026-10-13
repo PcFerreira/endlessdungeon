@@ -3,6 +3,9 @@ extends Node3D
 const Registry = preload("res://scripts/asset_registry.gd")
 const Voxels = preload("res://scripts/voxel_kit.gd")
 const Catalog = preload("res://scripts/ambience_catalog.gd")
+const Atmosphere = preload("res://scripts/biome_atmosphere.gd")
+const World = preload("res://scripts/world.gd")
+const RemoteWorld = preload("res://scripts/remote_world.gd")
 const WISP_CAP := Catalog.WISP_CAP
 const CUE_CAP := 4
 static var catalog: Dictionary = Catalog.load_data()
@@ -41,19 +44,33 @@ var visual_key := ""
 var glow := 0.0
 var cues_played := 0
 var steps_played := 0
+var lighting_base: Dictionary = {}
+var lighting_last: Dictionary = {}
+var lighting_world
+var lighting_environment: Environment
+var lighting_sun: DirectionalLight3D
 
-static func profile_for(layer: String, biome: int, city: bool, water: bool) -> Dictionary:
+static func profile_for(layer: String, biome: int, city: bool, water: bool, mixture: Array = []) -> Dictionary:
 	var result: Dictionary = catalog.locations.get(layer, catalog.surface[posmod(biome, catalog.surface.size())]).duplicate(true)
 	if layer == "overworld":
+		if not mixture.is_empty():
+			var named := Atmosphere.sample(mixture)
+			result.merge({"atmosphere": named, "bed": "named:" + named.bed_pool, "bed_pool": named.bed_pool, "cue": named.cue, "cue_mix": named.cue_mix, "color": named.color, "wisps": named.wisps, "mote": named.mote, "mote_height": named.mote_height, "drift": named.drift, "bed_gain": named.bed_gain, "cue_interval": named.cue_interval}, true)
 		if water:
 			var cue: String = result.get("water_cue", catalog.water.cue)
 			result.merge(catalog.water, true)
 			result.cue = cue
+			result.erase("bed_pool")
+			result.erase("cue_mix")
 		if city:
+			result = profile_for(layer, biome, false, false)
 			result.merge(catalog.town, true)
 	result.color = Color(result.color)
 	result.wisps = clampi(int(result.wisps), 0, WISP_CAP)
 	return result
+
+static func named_surface(world, cell = null) -> bool:
+	return world.get_script() == World or world.get_script() == RemoteWorld or (world.get_script().resource_path == "res://scripts/hub_world.gd" and cell is Vector2i and not world.hub.reserved.has_point(cell))
 
 static func weather_for(seed_value: int, region_id: String, biome: int) -> String:
 	var allowed: bool = catalog.weather.biomes.any(func(value): return int(value) == biome)
@@ -105,11 +122,15 @@ func update(game, delta: float) -> void:
 		var biome := 0
 		var city := false
 		var water := false
+		var mixture: Array = []
 		var identity: String = str(game.run_seed) + ":" + game.layer
 		weather = "clear"
 		if game.layer == "overworld":
 			var cell := Vector2i(game.player_point.round())
-			biome = game.world.cell_info(cell).biome
+			var info: Dictionary = game.world.cell_info(cell)
+			biome = info.biome
+			if named_surface(game.world, cell):
+				mixture = info.get("biome_mix", [])
 			var region: Dictionary = game.world.region_at(cell)
 			var settlement: Dictionary = game.world.city_at(game.player_point)
 			identity = region.city.get("id", "region:%s:%s:%s" % [game.world.generator_version, region.coordinate.x, region.coordinate.y])
@@ -118,13 +139,18 @@ func update(game, delta: float) -> void:
 			city = not settlement.is_empty()
 			for direction in game.world.DIRECTIONS:
 				water = water or game.world.cell_info(cell + direction * 2).terrain == "water"
-		profile = profile_for(game.layer, biome, city, water)
+		profile = profile_for(game.layer, biome, city, water, mixture)
 		profile.hard_ground = game.layer != "overworld" or city
-		if catalog.bed_pools.has(profile.bed):
+		if profile.has("bed_pool"):
+			profile.bed = _source_choice(profile.bed_pool, hash(identity))
+		elif catalog.bed_pools.has(profile.bed):
 			profile.bed = _source_choice(catalog.bed_pools[profile.bed], hash(identity))
 		if weather == "rain":
 			profile.bed = _source_choice(catalog.weather.rain_pool, hash(identity))
 			profile.cue = "wonder"
+			profile.erase("cue_mix")
+	if active:
+		_update_lighting(game, delta)
 	if rain != null:
 		rain.visible = active and weather == "rain"
 		rain.emitting = rain.visible
@@ -138,7 +164,7 @@ func update(game, delta: float) -> void:
 		_change_bed(pending_bed, game.sound)
 	var busy: bool = game.enemies.any(func(enemy): return enemy.active and enemy.point.distance_to(game.player_point) < 8)
 	for index in range(beds.size()):
-		var target := (.20 if busy else .50) if active and index == active_bed else 0.0
+		var target: float = (.20 if busy else .50) * profile.get("bed_gain", 1.0) if active and index == active_bed else 0.0
 		beds[index].volume_linear = move_toward(beds[index].volume_linear, target, delta * .35)
 		if index != active_bed and beds[index].volume_linear <= .001:
 			beds[index].stop()
@@ -172,7 +198,8 @@ func update(game, delta: float) -> void:
 	previous_grounded = game.grounded
 	cue_timer -= delta
 	if cue_timer <= 0:
-		cue_timer = rng.randf_range(9, 19)
+		var interval: float = profile.get("cue_interval", 14.0)
+		cue_timer = rng.randf_range(interval * .7, interval * 1.3) if profile.has("cue_interval") else rng.randf_range(9, 19)
 		if not busy:
 			var source_found := false
 			if game.layer == "overworld":
@@ -183,17 +210,63 @@ func update(game, delta: float) -> void:
 						break
 			if not source_found:
 				var offset := Vector3(rng.randf_range(-7,7), 1.4, rng.randf_range(-7,7))
-				play_cue(profile.cue, listener.position + offset, game.sound)
-	var key: String = "%s:%s:%s" % [game.layer, profile.bed, profile.color.to_html()]
+				play_cue(_profile_cue(), listener.position + offset, game.sound)
+	var key: String = "%s:%s:%s" % [game.layer, profile.get("mote", "wisp"), profile.wisps]
+	if not profile.has("mote"):
+		key = "%s:%s:%s" % [game.layer, profile.bed, profile.color.to_html()]
 	if visual_key != key or game.player_point.distance_to(anchor_point) > 9:
 		visual_key = key
 		_place_wisps(game)
 	glow = maxf(0, glow - delta)
 	for index in range(wisps.size()):
 		var phase := clock * .6 + index * 2.4
-		wisps[index].position = anchors[index] + Vector3(sin(phase) * .3, sin(phase * 1.6) * .16, cos(phase) * .3)
+		var drift: float = profile.get("drift", .3)
+		wisps[index].position = anchors[index] + Vector3(sin(phase) * drift, sin(phase * 1.6) * .16, cos(phase) * drift)
 		wisps[index].rotation.y = phase
 		wisps[index].scale = Vector3.ONE * (1 + sin(phase * 2) * .10 + glow * .12)
+		wisps[index].get_meta("material").albedo_color = profile.color
+
+func _profile_cue() -> String:
+	if not profile.has("cue_mix"):
+		return profile.cue
+	var choice := rng.randf()
+	for id in profile.cue_mix:
+		choice -= profile.cue_mix[id]
+		if choice <= 0:
+			return id
+	return profile.cue
+
+func _restore_lighting() -> void:
+	if lighting_base.is_empty():
+		return
+	for field in ["ambient_light_color", "ambient_light_energy"]:
+		if lighting_environment.get(field) == lighting_last[field]:
+			lighting_environment.set(field, lighting_base[field])
+	for field in ["light_color", "light_energy"]:
+		if is_instance_valid(lighting_sun) and lighting_sun.get(field) == lighting_last[field]:
+			lighting_sun.set(field, lighting_base[field])
+	lighting_base.clear()
+	lighting_last.clear()
+	lighting_world = null
+
+func _update_lighting(game, delta: float) -> void:
+	if game.layer != "overworld" or not profile.has("atmosphere") or not named_surface(game.world, Vector2i(game.player_point.round())):
+		_restore_lighting()
+		return
+	if lighting_world != game.world or lighting_environment != game.sky_environment:
+		_restore_lighting()
+	if lighting_base.is_empty():
+		lighting_world = game.world
+		lighting_environment = game.sky_environment
+		lighting_sun = game.sunlight
+		lighting_base = {"ambient_light_color": lighting_environment.ambient_light_color, "ambient_light_energy": lighting_environment.ambient_light_energy, "light_color": lighting_sun.light_color, "light_energy": lighting_sun.light_energy}
+	var target: Dictionary = profile.atmosphere
+	var blend := 1.0 - exp(-minf(delta, .5) / 2.5)
+	lighting_environment.ambient_light_color = lighting_environment.ambient_light_color.lerp(lighting_base.ambient_light_color.lerp(target.ambient, .55), blend)
+	lighting_environment.ambient_light_energy = lerpf(lighting_environment.ambient_light_energy, lighting_base.ambient_light_energy * target.ambient_energy, blend)
+	lighting_sun.light_color = lighting_sun.light_color.lerp(lighting_base.light_color.lerp(target.sun, .55), blend)
+	lighting_sun.light_energy = lerpf(lighting_sun.light_energy, lighting_base.light_energy * target.sun_energy, blend)
+	lighting_last = {"ambient_light_color": lighting_environment.ambient_light_color, "ambient_light_energy": lighting_environment.ambient_light_energy, "light_color": lighting_sun.light_color, "light_energy": lighting_sun.light_energy}
 
 func _change_bed(id: String, sound) -> void:
 	current_bed = id
@@ -227,7 +300,9 @@ func play_cue(id: String, point: Vector3, sound) -> void:
 	if cues.is_empty() or not active or sound.muted or sound.ambience_level == 0:
 		return
 	var source := id
-	if catalog.cue_pools.has(id):
+	if id.begins_with("pool:"):
+		source = _source_choice(id.trim_prefix("pool:"), rng.randi())
+	elif catalog.cue_pools.has(id):
 		var roles: Array = catalog.cue_pools[id]
 		source = _source_choice(roles[rng.randi_range(0, roles.size() - 1)], rng.randi())
 	var stream := _stream(source, sound)
@@ -312,11 +387,18 @@ func _place_wisps(game) -> void:
 		var material := StandardMaterial3D.new()
 		material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 		material.albedo_color = profile.color
-		var body := Voxels.cube(Vector3(.14,.14,.14), profile.color)
+		var mote: String = profile.get("mote", "wisp")
+		var size := Vector3(.14,.14,.14) if mote == "wisp" else Vector3(.045,.045,.045)
+		if mote == "leaf":
+			size = Vector3(.08,.018,.045)
+		elif mote == "snow":
+			size = Vector3(.05,.015,.05)
+		var body := Voxels.cube(size, profile.color)
 		body.material_override = material
+		wisp.set_meta("material", material)
 		body.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		wisp.add_child(body)
-		for side in [-1,1]:
+		for side in ([-1,1] if mote == "wisp" else []):
 			var eye := Voxels.cube(Vector3(.025,.03,.025), Color("334660"))
 			eye.position = Vector3(side * .035, .014, .076)
 			wisp.add_child(eye)
@@ -324,11 +406,12 @@ func _place_wisps(game) -> void:
 			wing.position = Vector3(side * .125, .02, 0)
 			wisp.add_child(wing)
 		var height: float = game.world.ground_height(point) if game.layer == "overworld" else game.dungeon.ground_height(point)
-		anchors.append(Vector3(point.x, height + 1.25, point.y))
+		anchors.append(Vector3(point.x, height + profile.get("mote_height", 1.25), point.y))
 		wisp_root.add_child(wisp)
 		wisps.append(wisp)
 
 func _exit_tree() -> void:
+	_restore_lighting()
 	for voice in beds + steps:
 		voice.stop()
 		voice.stream = null

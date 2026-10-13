@@ -4,12 +4,22 @@ const Voxels = preload("res://scripts/voxel_kit.gd")
 const Enemies = preload("res://scripts/enemy_catalog.gd")
 const CreatureModels = preload("res://scripts/creature_models.gd")
 const MonsterGenerator = preload("res://scripts/voxel_monster_generator.gd")
+const WonderModels = preload("res://scripts/wonder_models.gd")
 static var creatures := CreatureModels.new()
 static var meshes: Dictionary = {}
 
+static func prepared(kind: int, seed_value: int, saved_id: String, biome: int) -> bool:
+	var definition: Dictionary = Enemies.TYPES[kind]
+	if definition.get("visual_mode", "automatic") == "generated":
+		return true
+	var ids: Array = [definition.source_asset] if definition.has("source_asset") else Enemies.content.models(definition.visual).map(func(asset): return asset.id)
+	return creatures.prepared(creatures.choose(ids, seed_value, saved_id, biome), biome)
+
 static func create(kind: int, seed_value: int, saved_id: String = "", biome: int = 0, dungeon_monster: bool = false) -> Node3D:
 	var definition: Dictionary = Enemies.TYPES[kind]
-	if dungeon_monster:
+	if definition.has("wonder_id") and definition.get("visual_mode", "") == "generated":
+		return _wonder(definition, seed_value, saved_id, biome)
+	if definition.get("visual_mode", "automatic") == "generated" or (dungeon_monster and definition.get("visual_mode", "automatic") != "imported"):
 		return _generated(definition,seed_value,saved_id,biome)
 	var ids: Array = [definition.source_asset] if definition.has("source_asset") else Enemies.content.models(definition.visual).map(func(asset): return asset.id)
 	var id := creatures.choose(ids, seed_value, saved_id, biome)
@@ -19,11 +29,13 @@ static func create(kind: int, seed_value: int, saved_id: String = "", biome: int
 		body = Voxels.instance(mesh(int(definition.get("voxel_shape", 0))))
 		var family := creatures.styles.family_for(biome)
 		if family == "flat_lowpoly":
-			assert(creatures.renderer.convert(body, family, 18))
+			var converted: bool = creatures.renderer.convert(body, family, 18)
+			assert(converted)
 		body.set_meta("visual_family", family)
 		body.set_meta("render_asset", "native_creature:%s:fallback_%s" % [family, int(definition.get("voxel_shape", 0))])
 		body.set_meta("representation", "native_fallback")
 	root.add_child(body)
+	body.rotation_degrees.y += float(definition.get("facing_degrees", 0))
 	var box := bounds(body)
 	var scale_factor: float = minf(definition.height / maxf(.01, box.size.y), 1.3 / maxf(.01, maxf(box.size.x, box.size.z)))
 	body.position -= Vector3(box.get_center().x, box.position.y, box.get_center().z)
@@ -33,6 +45,33 @@ static func create(kind: int, seed_value: int, saved_id: String = "", biome: int
 		root.set_meta(key, body.get_meta(key))
 	root.set_meta("biome", biome)
 	root.set_meta("animation", "")
+	root.set_meta("animation_overrides", definition.get("animations", {}))
+	animate(root, "idle")
+	return root
+
+static func _wonder(definition: Dictionary, seed_value: int, saved_id: String, biome: int) -> Node3D:
+	var family: String = creatures.styles.family_for(biome)
+	var fields := saved_id.split(":")
+	if fields.size() == 4 and fields[0] == "wonder" and fields[1] == definition.wonder_id and fields[2].length() <= 18 and fields[2].is_valid_int() and fields[3] in ["block_voxel", "flat_lowpoly"]:
+		seed_value = fields[2].to_int()
+		family = fields[3]
+	var root := Node3D.new()
+	var body := WonderModels.create(definition.wonder_id, family, seed_value)
+	root.add_child(body)
+	body.rotation_degrees.y += float(definition.get("facing_degrees", 0))
+	var box := bounds(body)
+	body.position = -Vector3(box.get_center().x, box.position.y, box.get_center().z)
+	root.scale = Vector3.ONE * minf(definition.height / box.size.y, 1.3 / maxf(box.size.x, box.size.z))
+	var descriptor := "wonder:%s:%s:%s" % [definition.wonder_id, seed_value, family]
+	root.set_meta("asset_id", descriptor)
+	root.set_meta("render_asset", descriptor)
+	root.set_meta("wonder_id", definition.wonder_id)
+	root.set_meta("representation", "original_wonder_voxel")
+	root.set_meta("visual_family", family)
+	root.set_meta("appearance_variant", body.get_meta("appearance_variant"))
+	root.set_meta("biome", biome)
+	root.set_meta("animation", "")
+	root.set_meta("animation_overrides", definition.get("animations", {}))
 	animate(root, "idle")
 	return root
 
@@ -41,6 +80,7 @@ static func _generated(definition: Dictionary, seed_value: int, saved_id: String
 	var root := Node3D.new()
 	var body := MonsterGenerator.create(style)
 	root.add_child(body)
+	body.rotation_degrees.y += float(definition.get("facing_degrees", 0))
 	var box := bounds(body)
 	body.position = -Vector3(box.get_center().x,box.position.y,box.get_center().z)
 	root.scale = Vector3.ONE * minf(definition.height / box.size.y,1.3 / maxf(box.size.x,box.size.z))
@@ -51,6 +91,7 @@ static func _generated(definition: Dictionary, seed_value: int, saved_id: String
 	root.set_meta("monster_style",style)
 	root.set_meta("biome",biome)
 	root.set_meta("animation","")
+	root.set_meta("animation_overrides", definition.get("animations", {}))
 	animate(root,"idle")
 	return root
 
@@ -97,8 +138,12 @@ static func animate(model: Node3D, mode: String) -> void:
 			sprite.play(mode)
 	for player in model.find_children("*", "AnimationPlayer", true, false):
 		var preferred := mode
-		var animation := ""
+		var animation: String = model.get_meta("animation_overrides", {}).get(mode, "")
+		if not animation.is_empty() and not player.has_animation(animation):
+			animation = ""
 		for candidate in player.get_animation_list():
+			if not animation.is_empty():
+				break
 			if candidate.to_lower().contains(preferred) or (mode == "walk" and candidate.to_lower().contains("run")):
 				animation = candidate
 				break

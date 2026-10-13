@@ -1,0 +1,7071 @@
+{
+  "version": 1,
+  "id": "morrowmere",
+  "name": "Morrowmere",
+  "subtitle": "The Bright Remnant",
+  "default": true,
+  "map_version": 2,
+  "bounds": [
+    0,
+    0,
+    2048,
+    2048
+  ],
+  "spawn": [
+    960,
+    1040
+  ],
+  "return_portal": [
+    960,
+    1056
+  ],
+  "sanctum_portal": [
+    5,
+    7
+  ],
+  "areas": [
+    {
+      "id": "bellfrost",
+      "name": "Bellfrost Heights",
+      "bounds": [
+        256,
+        128,
+        1024,
+        448
+      ],
+      "label_cell": [
+        704,
+        320
+      ],
+      "biome": 3,
+      "biome_id": "crystal_tundra",
+      "map_color": "a2bac6",
+      "terrain_center": [
+        704,
+        320
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "ember_scar",
+      "name": "Ember Scar",
+      "bounds": [
+        1280,
+        128,
+        512,
+        448
+      ],
+      "label_cell": [
+        1600,
+        320
+      ],
+      "biome": 2,
+      "biome_id": "volcanic_wastes",
+      "map_color": "73564e",
+      "terrain_center": [
+        1600,
+        320
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "whisperwood",
+      "name": "Whisperwood",
+      "bounds": [
+        128,
+        576,
+        640,
+        448
+      ],
+      "label_cell": [
+        384,
+        768
+      ],
+      "biome": 0,
+      "biome_id": "dense_forest",
+      "map_color": "557652",
+      "terrain_center": [
+        384,
+        768
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hearthwild",
+      "name": "Hearthwild",
+      "bounds": [
+        768,
+        576,
+        640,
+        704
+      ],
+      "label_cell": [
+        960,
+        832
+      ],
+      "biome": 1,
+      "biome_id": "meadows",
+      "map_color": "a2ad74",
+      "terrain_center": [
+        960,
+        1040
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "prism_coast",
+      "name": "Prism Coast",
+      "bounds": [
+        1408,
+        576,
+        512,
+        704
+      ],
+      "label_cell": [
+        1664,
+        864
+      ],
+      "biome": 1,
+      "biome_id": "coast",
+      "map_color": "8dc4c7",
+      "terrain_center": [
+        1664,
+        864
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "glasswake",
+      "name": "Glasswake Dunes",
+      "bounds": [
+        128,
+        1024,
+        640,
+        768
+      ],
+      "label_cell": [
+        384,
+        1344
+      ],
+      "biome": 2,
+      "biome_id": "desert",
+      "map_color": "d1b37a",
+      "terrain_center": [
+        384,
+        1344
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hollow_orchard",
+      "name": "Hollow Orchard",
+      "bounds": [
+        768,
+        1280,
+        640,
+        640
+      ],
+      "label_cell": [
+        1088,
+        1664
+      ],
+      "biome": 1,
+      "biome_id": "autumn_woodland",
+      "map_color": "b18c55",
+      "terrain_center": [
+        1088,
+        1664
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "murmur_mire",
+      "name": "Murmur Mire",
+      "bounds": [
+        1408,
+        1280,
+        512,
+        640
+      ],
+      "label_cell": [
+        1664,
+        1600
+      ],
+      "biome": 0,
+      "biome_id": "marsh",
+      "map_color": "74886b",
+      "terrain_center": [
+        1664,
+        1600
+      ],
+      "terrain_scale": [
+        1,
+        1
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "id": "bellfrost_main",
+      "name": "The Bellward Temple",
+      "type": "temple",
+      "area_id": "bellfrost",
+      "cell": [
+        704,
+        320
+      ],
+      "construction_id": "bell_court",
+      "theme_id": "christmas"
+    },
+    {
+      "id": "bellfrost_side_0",
+      "name": "Rimewatch",
+      "type": "castle",
+      "area_id": "bellfrost",
+      "cell": [
+        448,
+        448
+      ],
+      "construction_id": "north_watch",
+      "theme_id": "christmas"
+    },
+    {
+      "id": "bellfrost_side_1",
+      "name": "Last Bell Chapel",
+      "type": "church",
+      "area_id": "bellfrost",
+      "cell": [
+        960,
+        448
+      ]
+    },
+    {
+      "id": "ember_scar_main",
+      "name": "The Cinder Archive",
+      "type": "ruin",
+      "area_id": "ember_scar",
+      "cell": [
+        1600,
+        320
+      ],
+      "construction_id": "cinder_arcade",
+      "theme_id": "cyberpunk"
+    },
+    {
+      "id": "ember_scar_side_0",
+      "name": "Ashen Stair",
+      "type": "temple",
+      "area_id": "ember_scar",
+      "cell": [
+        1472,
+        448
+      ],
+      "construction_id": "wild_court",
+      "theme_id": "cyberpunk"
+    },
+    {
+      "id": "ember_scar_side_1",
+      "name": "Cooling Court",
+      "type": "ruin",
+      "area_id": "ember_scar",
+      "cell": [
+        1728,
+        448
+      ],
+      "construction_id": "cinder_arcade",
+      "theme_id": "cyberpunk"
+    },
+    {
+      "id": "whisperwood_main",
+      "name": "The Listening Grove",
+      "type": "temple",
+      "area_id": "whisperwood",
+      "cell": [
+        384,
+        768
+      ],
+      "construction_id": "bell_court",
+      "theme_id": "fairy"
+    },
+    {
+      "id": "whisperwood_side_0",
+      "name": "Rootlight Chapel",
+      "type": "church",
+      "area_id": "whisperwood",
+      "cell": [
+        256,
+        896
+      ]
+    },
+    {
+      "id": "whisperwood_side_1",
+      "name": "Old Moss Court",
+      "type": "ruin",
+      "area_id": "whisperwood",
+      "cell": [
+        640,
+        896
+      ],
+      "construction_id": "cinder_arcade",
+      "theme_id": "fairy"
+    },
+    {
+      "id": "hearthwild_main",
+      "name": "Lanternmeet",
+      "type": "city",
+      "area_id": "hearthwild",
+      "cell": [
+        960,
+        832
+      ],
+      "archetype_id": "city_crossroads",
+      "residents": [
+        {
+          "id": "hearthwild_main_0",
+          "name": "Ollie Perrin",
+          "role": "bridge_carpenter",
+          "offset": [
+            -3,
+            3
+          ],
+          "route": [
+            [
+              -3.0,
+              3.0
+            ],
+            [
+              -3.0,
+              5.0
+            ],
+            [
+              -1.0,
+              5.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Lanternmeet. I’m Ollie Perrin, the bridge carpenter.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        },
+        {
+          "id": "hearthwild_main_1",
+          "name": "Bess Alba",
+          "role": "cloth_mender",
+          "offset": [
+            3,
+            3
+          ],
+          "route": [
+            [
+              3.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Lanternmeet. I’m Bess Alba, the cloth mender.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        },
+        {
+          "id": "hearthwild_main_2",
+          "name": "Pip Bram",
+          "role": "hall_planner",
+          "offset": [
+            -3,
+            -3
+          ],
+          "route": [
+            [
+              -3.0,
+              -3.0
+            ],
+            [
+              -3.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -3.0
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Lanternmeet. I’m Pip Bram, the hall planner.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        },
+        {
+          "id": "hearthwild_main_3",
+          "name": "Jory Mina",
+          "role": "soup_keeper",
+          "offset": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              8.0
+            ],
+            [
+              -2.0,
+              8.0
+            ],
+            [
+              -2.0,
+              6.0
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Lanternmeet. I’m Jory Mina, the soup keeper.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hearthwild_side_0",
+      "name": "The Returning Star",
+      "type": "temple",
+      "area_id": "hearthwild",
+      "cell": [
+        1216,
+        960
+      ],
+      "construction_id": "wild_court",
+      "theme_id": "korean"
+    },
+    {
+      "id": "hearthwild_side_1",
+      "name": "The Unfinished Hall",
+      "type": "ruin",
+      "area_id": "hearthwild",
+      "cell": [
+        1216,
+        1152
+      ],
+      "construction_id": "cinder_arcade",
+      "theme_id": "korean"
+    },
+    {
+      "id": "prism_coast_main",
+      "name": "Prismhaven",
+      "type": "city",
+      "area_id": "prism_coast",
+      "cell": [
+        1664,
+        864
+      ],
+      "archetype_id": "city_market",
+      "residents": [
+        {
+          "id": "prism_coast_main_0",
+          "name": "Ollie Iri",
+          "role": "glassworker",
+          "offset": [
+            -3,
+            3
+          ],
+          "route": [
+            [
+              -3.0,
+              3.0
+            ],
+            [
+              -3.0,
+              5.0
+            ],
+            [
+              -1.0,
+              5.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Prismhaven. I’m Ollie Iri, the glassworker.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        },
+        {
+          "id": "prism_coast_main_1",
+          "name": "Bess Nacre",
+          "role": "net_mender",
+          "offset": [
+            3,
+            3
+          ],
+          "route": [
+            [
+              3.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Prismhaven. I’m Bess Nacre, the net mender.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        },
+        {
+          "id": "prism_coast_main_2",
+          "name": "Pip Tern",
+          "role": "tide_recorder",
+          "offset": [
+            -3,
+            -3
+          ],
+          "route": [
+            [
+              -3.0,
+              -3.0
+            ],
+            [
+              -3.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -3.0
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Prismhaven. I’m Pip Tern, the tide recorder.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        },
+        {
+          "id": "prism_coast_main_3",
+          "name": "Jory Sola",
+          "role": "lamp_keeper",
+          "offset": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              8.0
+            ],
+            [
+              -2.0,
+              8.0
+            ],
+            [
+              -2.0,
+              6.0
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Prismhaven. I’m Jory Sola, the lamp keeper.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prism_coast_side_0",
+      "name": "Saltglass Watch",
+      "type": "castle",
+      "area_id": "prism_coast",
+      "cell": [
+        1536,
+        1024
+      ],
+      "construction_id": "north_watch",
+      "theme_id": "chinese"
+    },
+    {
+      "id": "prism_coast_side_1",
+      "name": "Tide Lamp Chapel",
+      "type": "church",
+      "area_id": "prism_coast",
+      "cell": [
+        1792,
+        1152
+      ]
+    },
+    {
+      "id": "glasswake_main",
+      "name": "Sundial Market",
+      "type": "city",
+      "area_id": "glasswake",
+      "cell": [
+        384,
+        1344
+      ],
+      "archetype_id": "city_caravan",
+      "residents": [
+        {
+          "id": "glasswake_main_0",
+          "name": "Ollie Safi",
+          "role": "water_steward",
+          "offset": [
+            -3,
+            3
+          ],
+          "route": [
+            [
+              -3.0,
+              3.0
+            ],
+            [
+              -3.0,
+              5.0
+            ],
+            [
+              -1.0,
+              5.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Sundial Market. I’m Ollie Safi, the water steward.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        },
+        {
+          "id": "glasswake_main_1",
+          "name": "Bess Venn",
+          "role": "sail_stitcher",
+          "offset": [
+            3,
+            3
+          ],
+          "route": [
+            [
+              3.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Sundial Market. I’m Bess Venn, the sail stitcher.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        },
+        {
+          "id": "glasswake_main_2",
+          "name": "Pip Tulla",
+          "role": "caravan_reader",
+          "offset": [
+            -3,
+            -3
+          ],
+          "route": [
+            [
+              -3.0,
+              -3.0
+            ],
+            [
+              -3.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -3.0
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Sundial Market. I’m Pip Tulla, the caravan reader.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        },
+        {
+          "id": "glasswake_main_3",
+          "name": "Jory Kesh",
+          "role": "shade_keeper",
+          "offset": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              8.0
+            ],
+            [
+              -2.0,
+              8.0
+            ],
+            [
+              -2.0,
+              6.0
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Sundial Market. I’m Jory Kesh, the shade keeper.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glasswake_side_0",
+      "name": "Buried Observatory",
+      "type": "temple",
+      "area_id": "glasswake",
+      "cell": [
+        256,
+        1472
+      ],
+      "construction_id": "wild_court",
+      "theme_id": "mage"
+    },
+    {
+      "id": "glasswake_side_1",
+      "name": "The Broken Aqueduct",
+      "type": "ruin",
+      "area_id": "glasswake",
+      "cell": [
+        640,
+        1600
+      ],
+      "construction_id": "cinder_arcade",
+      "theme_id": "mage"
+    },
+    {
+      "id": "hollow_orchard_main",
+      "name": "Applecross",
+      "type": "city",
+      "area_id": "hollow_orchard",
+      "cell": [
+        1088,
+        1664
+      ],
+      "archetype_id": "city_crossroads",
+      "residents": [
+        {
+          "id": "hollow_orchard_main_0",
+          "name": "Ollie Pipp",
+          "role": "orchard_grafter",
+          "offset": [
+            -3,
+            3
+          ],
+          "route": [
+            [
+              -3.0,
+              3.0
+            ],
+            [
+              -3.0,
+              5.0
+            ],
+            [
+              -1.0,
+              5.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Applecross. I’m Ollie Pipp, the orchard grafter.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        },
+        {
+          "id": "hollow_orchard_main_1",
+          "name": "Bess Runa",
+          "role": "barrel_cooper",
+          "offset": [
+            3,
+            3
+          ],
+          "route": [
+            [
+              3.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              1.0,
+              3.0
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Applecross. I’m Bess Runa, the barrel cooper.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        },
+        {
+          "id": "hollow_orchard_main_2",
+          "name": "Pip Cider",
+          "role": "family_archivist",
+          "offset": [
+            -3,
+            -3
+          ],
+          "route": [
+            [
+              -3.0,
+              -3.0
+            ],
+            [
+              -3.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -1.0
+            ],
+            [
+              -5.0,
+              -3.0
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Applecross. I’m Pip Cider, the family archivist.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        },
+        {
+          "id": "hollow_orchard_main_3",
+          "name": "Jory Graft",
+          "role": "preserve_maker",
+          "offset": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              8.0
+            ],
+            [
+              -2.0,
+              8.0
+            ],
+            [
+              -2.0,
+              6.0
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Applecross. I’m Jory Graft, the preserve maker.",
+            "People bring their repairs and stories here. The smaller communities keep us supplied when the roads are quiet.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hollow_orchard_side_0",
+      "name": "Harvest Lamp",
+      "type": "church",
+      "area_id": "hollow_orchard",
+      "cell": [
+        960,
+        1792
+      ]
+    },
+    {
+      "id": "hollow_orchard_side_1",
+      "name": "The Winterless Court",
+      "type": "castle",
+      "area_id": "hollow_orchard",
+      "cell": [
+        1216,
+        1792
+      ],
+      "construction_id": "prism_bastion",
+      "theme_id": "japanese"
+    },
+    {
+      "id": "murmur_mire_main",
+      "name": "The Sunken Record",
+      "type": "ruin",
+      "area_id": "murmur_mire",
+      "cell": [
+        1664,
+        1600
+      ],
+      "construction_id": "cinder_arcade",
+      "theme_id": "halloween"
+    },
+    {
+      "id": "murmur_mire_side_0",
+      "name": "The Reed Sanctuary",
+      "type": "temple",
+      "area_id": "murmur_mire",
+      "cell": [
+        1536,
+        1728
+      ],
+      "construction_id": "wild_court",
+      "theme_id": "halloween"
+    },
+    {
+      "id": "murmur_mire_side_1",
+      "name": "Siltward Chapel",
+      "type": "church",
+      "area_id": "murmur_mire",
+      "cell": [
+        1792,
+        1856
+      ]
+    },
+    {
+      "area_id": "bellfrost",
+      "cell": [
+        572,
+        204
+      ],
+      "id": "bellfrost_village",
+      "name": "Chimewick",
+      "type": "village",
+      "construction_id": "lantern_court",
+      "theme_id": "christmas",
+      "residents": [
+        {
+          "id": "bellfrost_village_0",
+          "name": "Tavi",
+          "role": "bell_courier",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Chimewick. I’m Tavi, the bell courier.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "The bells answer each other across the snow. One still answers from a village nobody can find.",
+            "Frostletter Keep keeps a lamp above the pass. Follow its light when the chimes disappear."
+          ]
+        },
+        {
+          "id": "bellfrost_village_1",
+          "name": "Nell",
+          "role": "quiltmaker",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Chimewick. I’m Nell, the quiltmaker.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "The bells answer each other across the snow. One still answers from a village nobody can find.",
+            "Frostletter Keep keeps a lamp above the pass. Follow its light when the chimes disappear."
+          ]
+        },
+        {
+          "id": "bellfrost_village_2",
+          "name": "Orin",
+          "role": "snow_sweeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Chimewick. I’m Orin, the snow sweeper.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "The bells answer each other across the snow. One still answers from a village nobody can find.",
+            "Frostletter Keep keeps a lamp above the pass. Follow its light when the chimes disappear."
+          ]
+        },
+        {
+          "id": "bellfrost_village_3",
+          "name": "Pella",
+          "role": "soup_host",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Chimewick. I’m Pella, the soup host.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "The bells answer each other across the snow. One still answers from a village nobody can find.",
+            "Frostletter Keep keeps a lamp above the pass. Follow its light when the chimes disappear."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "bellfrost",
+      "cell": [
+        860,
+        220
+      ],
+      "id": "bellfrost_graveyard",
+      "name": "Quiet Chimes",
+      "type": "graveyard",
+      "construction_id": "moss_cemetery",
+      "theme_id": "christmas",
+      "residents": [
+        {
+          "id": "bellfrost_graveyard_0",
+          "name": "Hush",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Quiet Chimes. I’m Hush, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "The bells answer each other across the snow. One still answers from a village nobody can find.",
+            "Frostletter Keep keeps a lamp above the pass. Follow its light when the chimes disappear."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "bellfrost",
+      "cell": [
+        780,
+        524
+      ],
+      "id": "bellfrost_woodland_house",
+      "name": "Snowmender Lodge",
+      "type": "woodland_house",
+      "construction_id": "hollow_home",
+      "theme_id": "christmas",
+      "residents": [
+        {
+          "id": "bellfrost_woodland_house_0",
+          "name": "Marda",
+          "role": "quiltmaker",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Snowmender Lodge. I’m Marda, the quiltmaker.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "The bells answer each other across the snow. One still answers from a village nobody can find.",
+            "Frostletter Keep keeps a lamp above the pass. Follow its light when the chimes disappear."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "bellfrost",
+      "cell": [
+        524,
+        356
+      ],
+      "id": "bellfrost_castle",
+      "name": "Frostletter Keep",
+      "type": "castle",
+      "construction_id": "north_watch",
+      "theme_id": "christmas"
+    },
+    {
+      "area_id": "ember_scar",
+      "cell": [
+        1468,
+        204
+      ],
+      "id": "ember_scar_village",
+      "name": "Kilnrest",
+      "type": "village",
+      "construction_id": "orchard_row",
+      "theme_id": "cyberpunk",
+      "residents": [
+        {
+          "id": "ember_scar_village_0",
+          "name": "Cotto",
+          "role": "kiln_baker",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Kilnrest. I’m Cotto, the kiln baker.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "The furnaces cooled long ago. We turned the smallest kilns into ovens and shared the first loaf.",
+            "The Quiet Kilns hold old measuring marks. Cinder wisps still gather where the fires once stood."
+          ]
+        },
+        {
+          "id": "ember_scar_village_1",
+          "name": "Rella",
+          "role": "clay_mender",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Kilnrest. I’m Rella, the clay mender.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "The furnaces cooled long ago. We turned the smallest kilns into ovens and shared the first loaf.",
+            "The Quiet Kilns hold old measuring marks. Cinder wisps still gather where the fires once stood."
+          ]
+        },
+        {
+          "id": "ember_scar_village_2",
+          "name": "Flintle",
+          "role": "oven_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Kilnrest. I’m Flintle, the oven keeper.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "The furnaces cooled long ago. We turned the smallest kilns into ovens and shared the first loaf.",
+            "The Quiet Kilns hold old measuring marks. Cinder wisps still gather where the fires once stood."
+          ]
+        },
+        {
+          "id": "ember_scar_village_3",
+          "name": "Dova",
+          "role": "ash_gardener",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Kilnrest. I’m Dova, the ash gardener.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "The furnaces cooled long ago. We turned the smallest kilns into ovens and shared the first loaf.",
+            "The Quiet Kilns hold old measuring marks. Cinder wisps still gather where the fires once stood."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "ember_scar",
+      "cell": [
+        1756,
+        220
+      ],
+      "id": "ember_scar_graveyard",
+      "name": "Ashname Garden",
+      "type": "graveyard",
+      "construction_id": "bellgarden",
+      "theme_id": "cyberpunk",
+      "residents": [
+        {
+          "id": "ember_scar_graveyard_0",
+          "name": "Edda",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Ashname Garden. I’m Edda, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "The furnaces cooled long ago. We turned the smallest kilns into ovens and shared the first loaf.",
+            "The Quiet Kilns hold old measuring marks. Cinder wisps still gather where the fires once stood."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "ember_scar",
+      "cell": [
+        1676,
+        548
+      ],
+      "id": "ember_scar_woodland_house",
+      "name": "Last Ember Cabin",
+      "type": "woodland_house",
+      "construction_id": "starling_hut",
+      "theme_id": "cyberpunk",
+      "residents": [
+        {
+          "id": "ember_scar_woodland_house_0",
+          "name": "Soot",
+          "role": "clay_mender",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Last Ember Cabin. I’m Soot, the clay mender.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "The furnaces cooled long ago. We turned the smallest kilns into ovens and shared the first loaf.",
+            "The Quiet Kilns hold old measuring marks. Cinder wisps still gather where the fires once stood."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "ember_scar",
+      "cell": [
+        1388,
+        352
+      ],
+      "id": "ember_scar_ruin",
+      "name": "The Quiet Kilns",
+      "type": "ruin",
+      "construction_id": "cinder_arcade",
+      "theme_id": "cyberpunk"
+    },
+    {
+      "area_id": "whisperwood",
+      "cell": [
+        252,
+        652
+      ],
+      "id": "whisperwood_village",
+      "name": "Leafwhistle",
+      "type": "village",
+      "construction_id": "lantern_court",
+      "theme_id": "fairy",
+      "residents": [
+        {
+          "id": "whisperwood_village_0",
+          "name": "Wispin",
+          "role": "trail_singer",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Leafwhistle. I’m Wispin, the trail singer.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "A path lasts longer when someone remembers its song. I hum this one every morning.",
+            "The Leafbound Choir has no roof. Listen for leaves knocking against the old columns."
+          ]
+        },
+        {
+          "id": "whisperwood_village_1",
+          "name": "Mossie",
+          "role": "seed_librarian",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Leafwhistle. I’m Mossie, the seed librarian.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "A path lasts longer when someone remembers its song. I hum this one every morning.",
+            "The Leafbound Choir has no roof. Listen for leaves knocking against the old columns."
+          ]
+        },
+        {
+          "id": "whisperwood_village_2",
+          "name": "Ludo",
+          "role": "herbalist",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Leafwhistle. I’m Ludo, the herbalist.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "A path lasts longer when someone remembers its song. I hum this one every morning.",
+            "The Leafbound Choir has no roof. Listen for leaves knocking against the old columns."
+          ]
+        },
+        {
+          "id": "whisperwood_village_3",
+          "name": "Fern",
+          "role": "wood_carver",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Leafwhistle. I’m Fern, the wood carver.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "A path lasts longer when someone remembers its song. I hum this one every morning.",
+            "The Leafbound Choir has no roof. Listen for leaves knocking against the old columns."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "whisperwood",
+      "cell": [
+        540,
+        668
+      ],
+      "id": "whisperwood_graveyard",
+      "name": "Sleeping Roots",
+      "type": "graveyard",
+      "construction_id": "moss_cemetery",
+      "theme_id": "fairy",
+      "residents": [
+        {
+          "id": "whisperwood_graveyard_0",
+          "name": "Yarrow",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Sleeping Roots. I’m Yarrow, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "A path lasts longer when someone remembers its song. I hum this one every morning.",
+            "The Leafbound Choir has no roof. Listen for leaves knocking against the old columns."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "whisperwood",
+      "cell": [
+        452,
+        980
+      ],
+      "id": "whisperwood_woodland_house",
+      "name": "Mosslamp Cottage",
+      "type": "woodland_house",
+      "construction_id": "hollow_home",
+      "theme_id": "fairy",
+      "residents": [
+        {
+          "id": "whisperwood_woodland_house_0",
+          "name": "Linnet",
+          "role": "seed_librarian",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Mosslamp Cottage. I’m Linnet, the seed librarian.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "A path lasts longer when someone remembers its song. I hum this one every morning.",
+            "The Leafbound Choir has no roof. Listen for leaves knocking against the old columns."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "whisperwood",
+      "cell": [
+        172,
+        796
+      ],
+      "id": "whisperwood_temple",
+      "name": "The Leafbound Choir",
+      "type": "temple",
+      "construction_id": "wild_court",
+      "theme_id": "fairy"
+    },
+    {
+      "area_id": "hearthwild",
+      "cell": [
+        828,
+        716
+      ],
+      "id": "hearthwild_village",
+      "name": "Mending Green",
+      "type": "village",
+      "construction_id": "orchard_row",
+      "theme_id": "korean",
+      "residents": [
+        {
+          "id": "hearthwild_village_0",
+          "name": "Perrin",
+          "role": "bridge_carpenter",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Mending Green. I’m Perrin, the bridge carpenter.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        },
+        {
+          "id": "hearthwild_village_1",
+          "name": "Alba",
+          "role": "cloth_mender",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Mending Green. I’m Alba, the cloth mender.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        },
+        {
+          "id": "hearthwild_village_2",
+          "name": "Bram",
+          "role": "hall_planner",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Mending Green. I’m Bram, the hall planner.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        },
+        {
+          "id": "hearthwild_village_3",
+          "name": "Mina",
+          "role": "soup_keeper",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Mending Green. I’m Mina, the soup keeper.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "hearthwild",
+      "cell": [
+        1116,
+        732
+      ],
+      "id": "hearthwild_graveyard",
+      "name": "Lantern Rest",
+      "type": "graveyard",
+      "construction_id": "bellgarden",
+      "theme_id": "korean",
+      "residents": [
+        {
+          "id": "hearthwild_graveyard_0",
+          "name": "Fen",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Lantern Rest. I’m Fen, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "hearthwild",
+      "cell": [
+        1360,
+        1184
+      ],
+      "id": "hearthwild_woodland_house",
+      "name": "Willowcup House",
+      "type": "woodland_house",
+      "construction_id": "starling_hut",
+      "theme_id": "korean",
+      "residents": [
+        {
+          "id": "hearthwild_woodland_house_0",
+          "name": "Willow",
+          "role": "cloth_mender",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Willowcup House. I’m Willow, the cloth mender.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "The public hall is unfinished. Everyone has a different plan, but everybody brings a tool.",
+            "Mender’s Watch once guarded a border. These days its shutters shelter travellers from rain."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "hearthwild",
+      "cell": [
+        796,
+        876
+      ],
+      "id": "hearthwild_castle",
+      "name": "Mender's Watch",
+      "type": "castle",
+      "construction_id": "prism_bastion",
+      "theme_id": "korean"
+    },
+    {
+      "area_id": "prism_coast",
+      "cell": [
+        1532,
+        748
+      ],
+      "id": "prism_coast_village",
+      "name": "Brinebright",
+      "type": "village",
+      "construction_id": "lantern_court",
+      "theme_id": "chinese",
+      "residents": [
+        {
+          "id": "prism_coast_village_0",
+          "name": "Iri",
+          "role": "glassworker",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Brinebright. I’m Iri, the glassworker.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        },
+        {
+          "id": "prism_coast_village_1",
+          "name": "Nacre",
+          "role": "net_mender",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Brinebright. I’m Nacre, the net mender.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        },
+        {
+          "id": "prism_coast_village_2",
+          "name": "Tern",
+          "role": "tide_recorder",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Brinebright. I’m Tern, the tide recorder.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        },
+        {
+          "id": "prism_coast_village_3",
+          "name": "Sola",
+          "role": "lamp_keeper",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Brinebright. I’m Sola, the lamp keeper.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "prism_coast",
+      "cell": [
+        1820,
+        764
+      ],
+      "id": "prism_coast_graveyard",
+      "name": "Saltname Steps",
+      "type": "graveyard",
+      "construction_id": "moss_cemetery",
+      "theme_id": "chinese",
+      "residents": [
+        {
+          "id": "prism_coast_graveyard_0",
+          "name": "Nemi",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Saltname Steps. I’m Nemi, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "prism_coast",
+      "cell": [
+        1740,
+        1052
+      ],
+      "id": "prism_coast_woodland_house",
+      "name": "Driftglass Hut",
+      "type": "woodland_house",
+      "construction_id": "hollow_home",
+      "theme_id": "chinese",
+      "residents": [
+        {
+          "id": "prism_coast_woodland_house_0",
+          "name": "Drift",
+          "role": "net_mender",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Driftglass Hut. I’m Drift, the net mender.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "We make little lamps from the lighthouse glass. Its great lens is still missing.",
+            "The Manylight Steps catch eight colours at dawn. Even the broken stones shine after rain."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "prism_coast",
+      "cell": [
+        1460,
+        908
+      ],
+      "id": "prism_coast_temple",
+      "name": "The Manylight Steps",
+      "type": "temple",
+      "construction_id": "wild_court",
+      "theme_id": "chinese"
+    },
+    {
+      "area_id": "glasswake",
+      "cell": [
+        252,
+        1228
+      ],
+      "id": "glasswake_village",
+      "name": "Shadecup",
+      "type": "village",
+      "construction_id": "orchard_row",
+      "theme_id": "mage",
+      "residents": [
+        {
+          "id": "glasswake_village_0",
+          "name": "Safi",
+          "role": "water_steward",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Shadecup. I’m Safi, the water steward.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        },
+        {
+          "id": "glasswake_village_1",
+          "name": "Venn",
+          "role": "sail_stitcher",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Shadecup. I’m Venn, the sail stitcher.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        },
+        {
+          "id": "glasswake_village_2",
+          "name": "Tulla",
+          "role": "caravan_reader",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Shadecup. I’m Tulla, the caravan reader.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        },
+        {
+          "id": "glasswake_village_3",
+          "name": "Kesh",
+          "role": "shade_keeper",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Shadecup. I’m Kesh, the shade keeper.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "glasswake",
+      "cell": [
+        540,
+        1244
+      ],
+      "id": "glasswake_graveyard",
+      "name": "Last Sundial",
+      "type": "graveyard",
+      "construction_id": "bellgarden",
+      "theme_id": "mage",
+      "residents": [
+        {
+          "id": "glasswake_graveyard_0",
+          "name": "Ossa",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Last Sundial. I’m Ossa, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "glasswake",
+      "cell": [
+        460,
+        1548
+      ],
+      "id": "glasswake_woodland_house",
+      "name": "Windstitch Cabin",
+      "type": "woodland_house",
+      "construction_id": "starling_hut",
+      "theme_id": "mage",
+      "residents": [
+        {
+          "id": "glasswake_woodland_house_0",
+          "name": "Windle",
+          "role": "sail_stitcher",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Windstitch Cabin. I’m Windle, the sail stitcher.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "Our water gauges measure a river that moved away. We keep them because the caravans know this stop.",
+            "The Empty Gauge points to an older channel. Scarabs nest beneath its warm stones."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "glasswake",
+      "cell": [
+        172,
+        1372
+      ],
+      "id": "glasswake_ruin",
+      "name": "The Empty Gauge",
+      "type": "ruin",
+      "construction_id": "cinder_arcade",
+      "theme_id": "mage"
+    },
+    {
+      "area_id": "hollow_orchard",
+      "cell": [
+        968,
+        1548
+      ],
+      "id": "hollow_orchard_village",
+      "name": "Ciderbend",
+      "type": "village",
+      "construction_id": "lantern_court",
+      "theme_id": "japanese",
+      "residents": [
+        {
+          "id": "hollow_orchard_village_0",
+          "name": "Pipp",
+          "role": "orchard_grafter",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Ciderbend. I’m Pipp, the orchard grafter.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        },
+        {
+          "id": "hollow_orchard_village_1",
+          "name": "Runa",
+          "role": "barrel_cooper",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Ciderbend. I’m Runa, the barrel cooper.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        },
+        {
+          "id": "hollow_orchard_village_2",
+          "name": "Cider",
+          "role": "family_archivist",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Ciderbend. I’m Cider, the family archivist.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        },
+        {
+          "id": "hollow_orchard_village_3",
+          "name": "Graft",
+          "role": "preserve_maker",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Ciderbend. I’m Graft, the preserve maker.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "hollow_orchard",
+      "cell": [
+        1244,
+        1564
+      ],
+      "id": "hollow_orchard_graveyard",
+      "name": "Old Graft Garden",
+      "type": "graveyard",
+      "construction_id": "moss_cemetery",
+      "theme_id": "japanese",
+      "residents": [
+        {
+          "id": "hollow_orchard_graveyard_0",
+          "name": "Auntie Wren",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Old Graft Garden. I’m Auntie Wren, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "hollow_orchard",
+      "cell": [
+        1164,
+        1892
+      ],
+      "id": "hollow_orchard_woodland_house",
+      "name": "Pippinwood House",
+      "type": "woodland_house",
+      "construction_id": "hollow_home",
+      "theme_id": "japanese",
+      "residents": [
+        {
+          "id": "hollow_orchard_woodland_house_0",
+          "name": "Pom",
+          "role": "barrel_cooper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Pippinwood House. I’m Pom, the barrel cooper.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "We keep a cutting from every orchard that vanished. The oldest tree has never borne a fruit.",
+            "Seedcrown Keep stores the grafting records. Its watchmen once counted seeds instead of soldiers."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "hollow_orchard",
+      "cell": [
+        876,
+        1692
+      ],
+      "id": "hollow_orchard_castle",
+      "name": "Seedcrown Keep",
+      "type": "castle",
+      "construction_id": "north_watch",
+      "theme_id": "japanese"
+    },
+    {
+      "area_id": "murmur_mire",
+      "cell": [
+        1532,
+        1484
+      ],
+      "id": "murmur_mire_village",
+      "name": "Reedstitch",
+      "type": "village",
+      "construction_id": "orchard_row",
+      "theme_id": "halloween",
+      "residents": [
+        {
+          "id": "murmur_mire_village_0",
+          "name": "Reeve",
+          "role": "reedboatwright",
+          "offset": [
+            -3,
+            6
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 0,
+          "dialogue": [
+            "Welcome to Reedstitch. I’m Reeve, the reedboatwright.",
+            "I make my rounds through the little courtyard. There is always one more neighbour to check on.",
+            "The flood marks are older than our books. We copy them onto reed boats so the record travels.",
+            "The Highwater Choir stands above the last great flood. Frogs gather beneath the raised court."
+          ]
+        },
+        {
+          "id": "murmur_mire_village_1",
+          "name": "Wick",
+          "role": "lantern_keeper",
+          "offset": [
+            4,
+            7
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "speed": 0.6,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Reedstitch. I’m Wick, the lantern keeper.",
+            "Most of my work begins with something somebody nearly threw away.",
+            "The flood marks are older than our books. We copy them onto reed boats so the record travels.",
+            "The Highwater Choir stands above the last great flood. Frogs gather beneath the raised court."
+          ]
+        },
+        {
+          "id": "murmur_mire_village_2",
+          "name": "Nessa",
+          "role": "flood_recorder",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "speed": 0.7,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Reedstitch. I’m Nessa, the flood recorder.",
+            "I keep a record of what we finish. Small repairs add up over the years.",
+            "The flood marks are older than our books. We copy them onto reed boats so the record travels.",
+            "The Highwater Choir stands above the last great flood. Frogs gather beneath the raised court."
+          ]
+        },
+        {
+          "id": "murmur_mire_village_3",
+          "name": "Buddle",
+          "role": "basket_weaver",
+          "offset": [
+            0,
+            9
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              -2,
+              12
+            ],
+            [
+              -2,
+              9
+            ]
+          ],
+          "speed": 0.8,
+          "appearance": 3,
+          "dialogue": [
+            "Welcome to Reedstitch. I’m Buddle, the basket weaver.",
+            "We save a warm place for whoever arrives before nightfall.",
+            "The flood marks are older than our books. We copy them onto reed boats so the record travels.",
+            "The Highwater Choir stands above the last great flood. Frogs gather beneath the raised court."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "murmur_mire",
+      "cell": [
+        1824,
+        1496
+      ],
+      "id": "murmur_mire_graveyard",
+      "name": "Highwater Names",
+      "type": "graveyard",
+      "construction_id": "bellgarden",
+      "theme_id": "halloween",
+      "residents": [
+        {
+          "id": "murmur_mire_graveyard_0",
+          "name": "Morrow",
+          "role": "memorial_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 1,
+          "dialogue": [
+            "Welcome to Highwater Names. I’m Morrow, the memorial keeper.",
+            "I copy the names before the weather wears them away. Please leave the grave stones where they are.",
+            "The flood marks are older than our books. We copy them onto reed boats so the record travels.",
+            "The Highwater Choir stands above the last great flood. Frogs gather beneath the raised court."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "murmur_mire",
+      "cell": [
+        1716,
+        1772
+      ],
+      "id": "murmur_mire_woodland_house",
+      "name": "Wickreed Cabin",
+      "type": "woodland_house",
+      "construction_id": "starling_hut",
+      "theme_id": "halloween",
+      "residents": [
+        {
+          "id": "murmur_mire_woodland_house_0",
+          "name": "Reed",
+          "role": "lantern_keeper",
+          "offset": [
+            0,
+            5
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "speed": 0.5,
+          "appearance": 2,
+          "dialogue": [
+            "Welcome to Wickreed Cabin. I’m Reed, the lantern keeper.",
+            "The latch is open for visitors. I chose this quiet corner to mend things and listen to the weather.",
+            "The flood marks are older than our books. We copy them onto reed boats so the record travels.",
+            "The Highwater Choir stands above the last great flood. Frogs gather beneath the raised court."
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "murmur_mire",
+      "cell": [
+        1452,
+        1632
+      ],
+      "id": "murmur_mire_temple",
+      "name": "The Highwater Choir",
+      "type": "temple",
+      "construction_id": "bell_court",
+      "theme_id": "halloween"
+    }
+  ],
+  "routes": [
+    {
+      "id": "road_bellfrost",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          949,
+          1100
+        ],
+        [
+          948,
+          1100
+        ],
+        [
+          947,
+          1100
+        ],
+        [
+          946,
+          1099
+        ],
+        [
+          945,
+          1099
+        ],
+        [
+          945,
+          1098
+        ],
+        [
+          944,
+          1097
+        ],
+        [
+          944,
+          1096
+        ],
+        [
+          944,
+          1095
+        ],
+        [
+          944,
+          361
+        ],
+        [
+          944,
+          354
+        ],
+        [
+          942,
+          349
+        ],
+        [
+          940,
+          344
+        ],
+        [
+          937,
+          340
+        ],
+        [
+          933,
+          337
+        ],
+        [
+          928,
+          335
+        ],
+        [
+          923,
+          333
+        ],
+        [
+          916,
+          333
+        ],
+        [
+          704,
+          333
+        ]
+      ]
+    },
+    {
+      "id": "path_bellfrost_0",
+      "width": 3,
+      "path": [
+        [
+          704,
+          333
+        ],
+        [
+          704,
+          437
+        ],
+        [
+          704,
+          444
+        ],
+        [
+          702,
+          449
+        ],
+        [
+          700,
+          454
+        ],
+        [
+          697,
+          458
+        ],
+        [
+          693,
+          461
+        ],
+        [
+          688,
+          463
+        ],
+        [
+          683,
+          465
+        ],
+        [
+          676,
+          465
+        ],
+        [
+          448,
+          465
+        ]
+      ]
+    },
+    {
+      "id": "path_bellfrost_1",
+      "width": 3,
+      "path": [
+        [
+          704,
+          333
+        ],
+        [
+          704,
+          432
+        ],
+        [
+          704,
+          439
+        ],
+        [
+          706,
+          444
+        ],
+        [
+          708,
+          449
+        ],
+        [
+          711,
+          453
+        ],
+        [
+          715,
+          456
+        ],
+        [
+          720,
+          458
+        ],
+        [
+          725,
+          460
+        ],
+        [
+          732,
+          460
+        ],
+        [
+          960,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "road_ember_scar",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          1272,
+          1100
+        ],
+        [
+          1279,
+          1100
+        ],
+        [
+          1284,
+          1098
+        ],
+        [
+          1289,
+          1096
+        ],
+        [
+          1293,
+          1093
+        ],
+        [
+          1296,
+          1089
+        ],
+        [
+          1298,
+          1084
+        ],
+        [
+          1300,
+          1079
+        ],
+        [
+          1300,
+          1072
+        ],
+        [
+          1300,
+          361
+        ],
+        [
+          1300,
+          354
+        ],
+        [
+          1302,
+          349
+        ],
+        [
+          1304,
+          344
+        ],
+        [
+          1307,
+          340
+        ],
+        [
+          1311,
+          337
+        ],
+        [
+          1316,
+          335
+        ],
+        [
+          1321,
+          333
+        ],
+        [
+          1328,
+          333
+        ],
+        [
+          1600,
+          333
+        ]
+      ]
+    },
+    {
+      "id": "path_ember_scar_0",
+      "width": 3,
+      "path": [
+        [
+          1600,
+          333
+        ],
+        [
+          1600,
+          433
+        ],
+        [
+          1600,
+          440
+        ],
+        [
+          1598,
+          445
+        ],
+        [
+          1596,
+          450
+        ],
+        [
+          1593,
+          454
+        ],
+        [
+          1589,
+          457
+        ],
+        [
+          1584,
+          459
+        ],
+        [
+          1579,
+          461
+        ],
+        [
+          1572,
+          461
+        ],
+        [
+          1472,
+          461
+        ]
+      ]
+    },
+    {
+      "id": "path_ember_scar_1",
+      "width": 3,
+      "path": [
+        [
+          1600,
+          333
+        ],
+        [
+          1600,
+          433
+        ],
+        [
+          1600,
+          440
+        ],
+        [
+          1602,
+          445
+        ],
+        [
+          1604,
+          450
+        ],
+        [
+          1607,
+          454
+        ],
+        [
+          1611,
+          457
+        ],
+        [
+          1616,
+          459
+        ],
+        [
+          1621,
+          461
+        ],
+        [
+          1628,
+          461
+        ],
+        [
+          1728,
+          461
+        ]
+      ]
+    },
+    {
+      "id": "road_whisperwood",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          949,
+          1100
+        ],
+        [
+          948,
+          1100
+        ],
+        [
+          947,
+          1100
+        ],
+        [
+          946,
+          1099
+        ],
+        [
+          945,
+          1099
+        ],
+        [
+          945,
+          1098
+        ],
+        [
+          944,
+          1097
+        ],
+        [
+          944,
+          1096
+        ],
+        [
+          944,
+          1095
+        ],
+        [
+          944,
+          809
+        ],
+        [
+          944,
+          802
+        ],
+        [
+          942,
+          797
+        ],
+        [
+          940,
+          792
+        ],
+        [
+          937,
+          788
+        ],
+        [
+          933,
+          785
+        ],
+        [
+          928,
+          783
+        ],
+        [
+          923,
+          781
+        ],
+        [
+          916,
+          781
+        ],
+        [
+          384,
+          781
+        ]
+      ]
+    },
+    {
+      "id": "path_whisperwood_0",
+      "width": 3,
+      "path": [
+        [
+          384,
+          781
+        ],
+        [
+          384,
+          880
+        ],
+        [
+          384,
+          887
+        ],
+        [
+          382,
+          892
+        ],
+        [
+          380,
+          897
+        ],
+        [
+          377,
+          901
+        ],
+        [
+          373,
+          904
+        ],
+        [
+          368,
+          906
+        ],
+        [
+          363,
+          908
+        ],
+        [
+          356,
+          908
+        ],
+        [
+          256,
+          908
+        ]
+      ]
+    },
+    {
+      "id": "path_whisperwood_1",
+      "width": 3,
+      "path": [
+        [
+          384,
+          781
+        ],
+        [
+          384,
+          881
+        ],
+        [
+          384,
+          888
+        ],
+        [
+          386,
+          893
+        ],
+        [
+          388,
+          898
+        ],
+        [
+          391,
+          902
+        ],
+        [
+          395,
+          905
+        ],
+        [
+          400,
+          907
+        ],
+        [
+          405,
+          909
+        ],
+        [
+          412,
+          909
+        ],
+        [
+          640,
+          909
+        ]
+      ]
+    },
+    {
+      "id": "road_hearthwild",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          949,
+          1100
+        ],
+        [
+          948,
+          1100
+        ],
+        [
+          947,
+          1100
+        ],
+        [
+          946,
+          1099
+        ],
+        [
+          945,
+          1099
+        ],
+        [
+          945,
+          1098
+        ],
+        [
+          944,
+          1097
+        ],
+        [
+          944,
+          1096
+        ],
+        [
+          944,
+          1095
+        ],
+        [
+          944,
+          840
+        ],
+        [
+          944,
+          839
+        ],
+        [
+          944,
+          838
+        ],
+        [
+          945,
+          837
+        ],
+        [
+          945,
+          836
+        ],
+        [
+          946,
+          836
+        ],
+        [
+          947,
+          835
+        ],
+        [
+          948,
+          835
+        ],
+        [
+          949,
+          835
+        ],
+        [
+          960,
+          835
+        ]
+      ]
+    },
+    {
+      "id": "path_hearthwild_0",
+      "width": 3,
+      "path": [
+        [
+          960,
+          835
+        ],
+        [
+          960,
+          945
+        ],
+        [
+          960,
+          952
+        ],
+        [
+          962,
+          957
+        ],
+        [
+          964,
+          962
+        ],
+        [
+          967,
+          966
+        ],
+        [
+          971,
+          969
+        ],
+        [
+          976,
+          971
+        ],
+        [
+          981,
+          973
+        ],
+        [
+          988,
+          973
+        ],
+        [
+          1216,
+          973
+        ]
+      ]
+    },
+    {
+      "id": "path_hearthwild_1",
+      "width": 3,
+      "path": [
+        [
+          960,
+          835
+        ],
+        [
+          960,
+          1137
+        ],
+        [
+          960,
+          1144
+        ],
+        [
+          962,
+          1149
+        ],
+        [
+          964,
+          1154
+        ],
+        [
+          967,
+          1158
+        ],
+        [
+          971,
+          1161
+        ],
+        [
+          976,
+          1163
+        ],
+        [
+          981,
+          1165
+        ],
+        [
+          988,
+          1165
+        ],
+        [
+          1216,
+          1165
+        ]
+      ]
+    },
+    {
+      "id": "road_prism_coast",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          1272,
+          1100
+        ],
+        [
+          1279,
+          1100
+        ],
+        [
+          1284,
+          1098
+        ],
+        [
+          1289,
+          1096
+        ],
+        [
+          1293,
+          1093
+        ],
+        [
+          1296,
+          1089
+        ],
+        [
+          1298,
+          1084
+        ],
+        [
+          1300,
+          1079
+        ],
+        [
+          1300,
+          1072
+        ],
+        [
+          1300,
+          895
+        ],
+        [
+          1300,
+          888
+        ],
+        [
+          1302,
+          883
+        ],
+        [
+          1304,
+          878
+        ],
+        [
+          1307,
+          874
+        ],
+        [
+          1311,
+          871
+        ],
+        [
+          1316,
+          869
+        ],
+        [
+          1321,
+          867
+        ],
+        [
+          1328,
+          867
+        ],
+        [
+          1664,
+          867
+        ]
+      ]
+    },
+    {
+      "id": "path_prism_coast_0",
+      "width": 3,
+      "path": [
+        [
+          1664,
+          867
+        ],
+        [
+          1664,
+          1013
+        ],
+        [
+          1664,
+          1020
+        ],
+        [
+          1662,
+          1025
+        ],
+        [
+          1660,
+          1030
+        ],
+        [
+          1657,
+          1034
+        ],
+        [
+          1653,
+          1037
+        ],
+        [
+          1648,
+          1039
+        ],
+        [
+          1643,
+          1041
+        ],
+        [
+          1636,
+          1041
+        ],
+        [
+          1536,
+          1041
+        ]
+      ]
+    },
+    {
+      "id": "path_prism_coast_1",
+      "width": 3,
+      "path": [
+        [
+          1664,
+          867
+        ],
+        [
+          1664,
+          1136
+        ],
+        [
+          1664,
+          1143
+        ],
+        [
+          1666,
+          1148
+        ],
+        [
+          1668,
+          1153
+        ],
+        [
+          1671,
+          1157
+        ],
+        [
+          1675,
+          1160
+        ],
+        [
+          1680,
+          1162
+        ],
+        [
+          1685,
+          1164
+        ],
+        [
+          1692,
+          1164
+        ],
+        [
+          1792,
+          1164
+        ]
+      ]
+    },
+    {
+      "id": "road_glasswake",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          949,
+          1100
+        ],
+        [
+          948,
+          1100
+        ],
+        [
+          947,
+          1100
+        ],
+        [
+          946,
+          1101
+        ],
+        [
+          945,
+          1101
+        ],
+        [
+          945,
+          1102
+        ],
+        [
+          944,
+          1103
+        ],
+        [
+          944,
+          1104
+        ],
+        [
+          944,
+          1105
+        ],
+        [
+          944,
+          1319
+        ],
+        [
+          944,
+          1326
+        ],
+        [
+          942,
+          1331
+        ],
+        [
+          940,
+          1336
+        ],
+        [
+          937,
+          1340
+        ],
+        [
+          933,
+          1343
+        ],
+        [
+          928,
+          1345
+        ],
+        [
+          923,
+          1347
+        ],
+        [
+          916,
+          1347
+        ],
+        [
+          384,
+          1347
+        ]
+      ]
+    },
+    {
+      "id": "path_glasswake_0",
+      "width": 3,
+      "path": [
+        [
+          384,
+          1347
+        ],
+        [
+          384,
+          1457
+        ],
+        [
+          384,
+          1464
+        ],
+        [
+          382,
+          1469
+        ],
+        [
+          380,
+          1474
+        ],
+        [
+          377,
+          1478
+        ],
+        [
+          373,
+          1481
+        ],
+        [
+          368,
+          1483
+        ],
+        [
+          363,
+          1485
+        ],
+        [
+          356,
+          1485
+        ],
+        [
+          256,
+          1485
+        ]
+      ]
+    },
+    {
+      "id": "path_glasswake_1",
+      "width": 3,
+      "path": [
+        [
+          384,
+          1347
+        ],
+        [
+          384,
+          1585
+        ],
+        [
+          384,
+          1592
+        ],
+        [
+          386,
+          1597
+        ],
+        [
+          388,
+          1602
+        ],
+        [
+          391,
+          1606
+        ],
+        [
+          395,
+          1609
+        ],
+        [
+          400,
+          1611
+        ],
+        [
+          405,
+          1613
+        ],
+        [
+          412,
+          1613
+        ],
+        [
+          640,
+          1613
+        ]
+      ]
+    },
+    {
+      "id": "road_hollow_orchard",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          949,
+          1100
+        ],
+        [
+          948,
+          1100
+        ],
+        [
+          947,
+          1100
+        ],
+        [
+          946,
+          1101
+        ],
+        [
+          945,
+          1101
+        ],
+        [
+          945,
+          1102
+        ],
+        [
+          944,
+          1103
+        ],
+        [
+          944,
+          1104
+        ],
+        [
+          944,
+          1105
+        ],
+        [
+          944,
+          1639
+        ],
+        [
+          944,
+          1646
+        ],
+        [
+          946,
+          1651
+        ],
+        [
+          948,
+          1656
+        ],
+        [
+          951,
+          1660
+        ],
+        [
+          955,
+          1663
+        ],
+        [
+          960,
+          1665
+        ],
+        [
+          965,
+          1667
+        ],
+        [
+          972,
+          1667
+        ],
+        [
+          1088,
+          1667
+        ]
+      ]
+    },
+    {
+      "id": "path_hollow_orchard_0",
+      "width": 3,
+      "path": [
+        [
+          1088,
+          1667
+        ],
+        [
+          1088,
+          1776
+        ],
+        [
+          1088,
+          1783
+        ],
+        [
+          1086,
+          1788
+        ],
+        [
+          1084,
+          1793
+        ],
+        [
+          1081,
+          1797
+        ],
+        [
+          1077,
+          1800
+        ],
+        [
+          1072,
+          1802
+        ],
+        [
+          1067,
+          1804
+        ],
+        [
+          1060,
+          1804
+        ],
+        [
+          960,
+          1804
+        ]
+      ]
+    },
+    {
+      "id": "path_hollow_orchard_1",
+      "width": 3,
+      "path": [
+        [
+          1088,
+          1667
+        ],
+        [
+          1088,
+          1781
+        ],
+        [
+          1088,
+          1788
+        ],
+        [
+          1090,
+          1793
+        ],
+        [
+          1092,
+          1798
+        ],
+        [
+          1095,
+          1802
+        ],
+        [
+          1099,
+          1805
+        ],
+        [
+          1104,
+          1807
+        ],
+        [
+          1109,
+          1809
+        ],
+        [
+          1116,
+          1809
+        ],
+        [
+          1216,
+          1809
+        ]
+      ]
+    },
+    {
+      "id": "road_murmur_mire",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1100
+        ],
+        [
+          1272,
+          1100
+        ],
+        [
+          1279,
+          1100
+        ],
+        [
+          1284,
+          1102
+        ],
+        [
+          1289,
+          1104
+        ],
+        [
+          1293,
+          1107
+        ],
+        [
+          1296,
+          1111
+        ],
+        [
+          1298,
+          1116
+        ],
+        [
+          1300,
+          1121
+        ],
+        [
+          1300,
+          1128
+        ],
+        [
+          1300,
+          1585
+        ],
+        [
+          1300,
+          1592
+        ],
+        [
+          1302,
+          1597
+        ],
+        [
+          1304,
+          1602
+        ],
+        [
+          1307,
+          1606
+        ],
+        [
+          1311,
+          1609
+        ],
+        [
+          1316,
+          1611
+        ],
+        [
+          1321,
+          1613
+        ],
+        [
+          1328,
+          1613
+        ],
+        [
+          1664,
+          1613
+        ]
+      ]
+    },
+    {
+      "id": "path_murmur_mire_0",
+      "width": 3,
+      "path": [
+        [
+          1664,
+          1613
+        ],
+        [
+          1664,
+          1713
+        ],
+        [
+          1664,
+          1720
+        ],
+        [
+          1662,
+          1725
+        ],
+        [
+          1660,
+          1730
+        ],
+        [
+          1657,
+          1734
+        ],
+        [
+          1653,
+          1737
+        ],
+        [
+          1648,
+          1739
+        ],
+        [
+          1643,
+          1741
+        ],
+        [
+          1636,
+          1741
+        ],
+        [
+          1536,
+          1741
+        ]
+      ]
+    },
+    {
+      "id": "path_murmur_mire_1",
+      "width": 3,
+      "path": [
+        [
+          1664,
+          1613
+        ],
+        [
+          1664,
+          1840
+        ],
+        [
+          1664,
+          1847
+        ],
+        [
+          1666,
+          1852
+        ],
+        [
+          1668,
+          1857
+        ],
+        [
+          1671,
+          1861
+        ],
+        [
+          1675,
+          1864
+        ],
+        [
+          1680,
+          1866
+        ],
+        [
+          1685,
+          1868
+        ],
+        [
+          1692,
+          1868
+        ],
+        [
+          1792,
+          1868
+        ]
+      ]
+    },
+    {
+      "id": "gate_path",
+      "width": 5,
+      "path": [
+        [
+          960,
+          1040
+        ],
+        [
+          960,
+          1051
+        ],
+        [
+          960,
+          1052
+        ],
+        [
+          960,
+          1054
+        ],
+        [
+          960,
+          1055
+        ],
+        [
+          960,
+          1056
+        ],
+        [
+          960,
+          1057
+        ],
+        [
+          960,
+          1058
+        ],
+        [
+          960,
+          1060
+        ],
+        [
+          960,
+          1061
+        ],
+        [
+          960,
+          1100
+        ]
+      ]
+    },
+    {
+      "id": "northwest_loop",
+      "width": 5,
+      "path": [
+        [
+          384,
+          781
+        ],
+        [
+          362,
+          781
+        ],
+        [
+          359,
+          781
+        ],
+        [
+          357,
+          780
+        ],
+        [
+          356,
+          780
+        ],
+        [
+          354,
+          779
+        ],
+        [
+          353,
+          777
+        ],
+        [
+          353,
+          776
+        ],
+        [
+          352,
+          774
+        ],
+        [
+          352,
+          771
+        ],
+        [
+          352,
+          361
+        ],
+        [
+          352,
+          354
+        ],
+        [
+          354,
+          349
+        ],
+        [
+          356,
+          344
+        ],
+        [
+          359,
+          340
+        ],
+        [
+          363,
+          337
+        ],
+        [
+          368,
+          335
+        ],
+        [
+          373,
+          333
+        ],
+        [
+          380,
+          333
+        ],
+        [
+          704,
+          333
+        ]
+      ]
+    },
+    {
+      "id": "north_link",
+      "width": 5,
+      "path": [
+        [
+          704,
+          333
+        ],
+        [
+          1600,
+          333
+        ]
+      ]
+    },
+    {
+      "id": "western_link",
+      "width": 5,
+      "path": [
+        [
+          384,
+          781
+        ],
+        [
+          362,
+          781
+        ],
+        [
+          359,
+          781
+        ],
+        [
+          357,
+          782
+        ],
+        [
+          356,
+          782
+        ],
+        [
+          354,
+          783
+        ],
+        [
+          353,
+          785
+        ],
+        [
+          353,
+          786
+        ],
+        [
+          352,
+          788
+        ],
+        [
+          352,
+          791
+        ],
+        [
+          352,
+          1337
+        ],
+        [
+          352,
+          1340
+        ],
+        [
+          353,
+          1342
+        ],
+        [
+          353,
+          1343
+        ],
+        [
+          354,
+          1345
+        ],
+        [
+          356,
+          1346
+        ],
+        [
+          357,
+          1346
+        ],
+        [
+          359,
+          1347
+        ],
+        [
+          362,
+          1347
+        ],
+        [
+          384,
+          1347
+        ]
+      ]
+    },
+    {
+      "id": "eastern_link",
+      "width": 5,
+      "path": [
+        [
+          1664,
+          867
+        ],
+        [
+          1860,
+          867
+        ],
+        [
+          1867,
+          867
+        ],
+        [
+          1872,
+          869
+        ],
+        [
+          1877,
+          871
+        ],
+        [
+          1881,
+          874
+        ],
+        [
+          1884,
+          878
+        ],
+        [
+          1886,
+          883
+        ],
+        [
+          1888,
+          888
+        ],
+        [
+          1888,
+          895
+        ],
+        [
+          1888,
+          1585
+        ],
+        [
+          1888,
+          1592
+        ],
+        [
+          1886,
+          1597
+        ],
+        [
+          1884,
+          1602
+        ],
+        [
+          1881,
+          1606
+        ],
+        [
+          1877,
+          1609
+        ],
+        [
+          1872,
+          1611
+        ],
+        [
+          1867,
+          1613
+        ],
+        [
+          1860,
+          1613
+        ],
+        [
+          1664,
+          1613
+        ]
+      ]
+    },
+    {
+      "id": "southern_link",
+      "width": 5,
+      "path": [
+        [
+          1088,
+          1667
+        ],
+        [
+          1360,
+          1667
+        ],
+        [
+          1364,
+          1667
+        ],
+        [
+          1367,
+          1666
+        ],
+        [
+          1370,
+          1665
+        ],
+        [
+          1372,
+          1663
+        ],
+        [
+          1374,
+          1661
+        ],
+        [
+          1375,
+          1658
+        ],
+        [
+          1376,
+          1655
+        ],
+        [
+          1376,
+          1651
+        ],
+        [
+          1376,
+          1629
+        ],
+        [
+          1376,
+          1625
+        ],
+        [
+          1377,
+          1622
+        ],
+        [
+          1378,
+          1619
+        ],
+        [
+          1380,
+          1617
+        ],
+        [
+          1382,
+          1615
+        ],
+        [
+          1385,
+          1614
+        ],
+        [
+          1388,
+          1613
+        ],
+        [
+          1392,
+          1613
+        ],
+        [
+          1664,
+          1613
+        ]
+      ]
+    },
+    {
+      "id": "branch_bellfrost_village",
+      "path": [
+        [
+          572,
+          222
+        ],
+        [
+          572,
+          332
+        ],
+        [
+          572,
+          333
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_bellfrost_graveyard",
+      "path": [
+        [
+          860,
+          234
+        ],
+        [
+          860,
+          332
+        ],
+        [
+          860,
+          333
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_bellfrost_woodland_house",
+      "path": [
+        [
+          780,
+          535
+        ],
+        [
+          780,
+          536
+        ],
+        [
+          792,
+          536
+        ],
+        [
+          792,
+          472
+        ],
+        [
+          780,
+          460
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_bellfrost_castle",
+      "path": [
+        [
+          524,
+          373
+        ],
+        [
+          524,
+          372
+        ],
+        [
+          524,
+          376
+        ],
+        [
+          504,
+          376
+        ],
+        [
+          504,
+          336
+        ],
+        [
+          520,
+          336
+        ],
+        [
+          524,
+          332
+        ],
+        [
+          524,
+          333
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_ember_scar_village",
+      "path": [
+        [
+          1468,
+          222
+        ],
+        [
+          1468,
+          332
+        ],
+        [
+          1468,
+          333
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_ember_scar_graveyard",
+      "path": [
+        [
+          1756,
+          234
+        ],
+        [
+          1756,
+          236
+        ],
+        [
+          1716,
+          236
+        ],
+        [
+          1704,
+          248
+        ],
+        [
+          1692,
+          260
+        ],
+        [
+          1680,
+          272
+        ],
+        [
+          1668,
+          284
+        ],
+        [
+          1656,
+          296
+        ],
+        [
+          1644,
+          308
+        ],
+        [
+          1632,
+          320
+        ],
+        [
+          1620,
+          332
+        ],
+        [
+          1616,
+          336
+        ],
+        [
+          1600,
+          336
+        ],
+        [
+          1600,
+          332
+        ],
+        [
+          1600,
+          333
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_ember_scar_woodland_house",
+      "path": [
+        [
+          1676,
+          559
+        ],
+        [
+          1676,
+          560
+        ],
+        [
+          1688,
+          560
+        ],
+        [
+          1688,
+          516
+        ],
+        [
+          1676,
+          504
+        ],
+        [
+          1676,
+          460
+        ],
+        [
+          1676,
+          461
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_ember_scar_ruin",
+      "path": [
+        [
+          1388,
+          365
+        ],
+        [
+          1388,
+          364
+        ],
+        [
+          1388,
+          368
+        ],
+        [
+          1404,
+          368
+        ],
+        [
+          1404,
+          336
+        ],
+        [
+          1400,
+          332
+        ],
+        [
+          1388,
+          332
+        ],
+        [
+          1388,
+          333
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_whisperwood_village",
+      "path": [
+        [
+          252,
+          670
+        ],
+        [
+          252,
+          672
+        ],
+        [
+          352,
+          672
+        ],
+        [
+          352,
+          671
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_whisperwood_graveyard",
+      "path": [
+        [
+          540,
+          682
+        ],
+        [
+          540,
+          780
+        ],
+        [
+          540,
+          781
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_whisperwood_woodland_house",
+      "path": [
+        [
+          452,
+          991
+        ],
+        [
+          452,
+          992
+        ],
+        [
+          440,
+          992
+        ],
+        [
+          440,
+          920
+        ],
+        [
+          452,
+          908
+        ],
+        [
+          452,
+          909
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_whisperwood_temple",
+      "path": [
+        [
+          172,
+          809
+        ],
+        [
+          172,
+          808
+        ],
+        [
+          172,
+          812
+        ],
+        [
+          184,
+          824
+        ],
+        [
+          196,
+          836
+        ],
+        [
+          208,
+          848
+        ],
+        [
+          220,
+          860
+        ],
+        [
+          232,
+          872
+        ],
+        [
+          244,
+          884
+        ],
+        [
+          244,
+          908
+        ],
+        [
+          256,
+          908
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hearthwild_village",
+      "path": [
+        [
+          828,
+          734
+        ],
+        [
+          828,
+          780
+        ],
+        [
+          828,
+          781
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hearthwild_graveyard",
+      "path": [
+        [
+          1116,
+          746
+        ],
+        [
+          1116,
+          748
+        ],
+        [
+          944,
+          748
+        ],
+        [
+          944,
+          747
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hearthwild_woodland_house",
+      "path": [
+        [
+          1360,
+          1195
+        ],
+        [
+          1360,
+          1196
+        ],
+        [
+          1300,
+          1196
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hearthwild_castle",
+      "path": [
+        [
+          796,
+          893
+        ],
+        [
+          796,
+          892
+        ],
+        [
+          796,
+          896
+        ],
+        [
+          776,
+          896
+        ],
+        [
+          776,
+          800
+        ],
+        [
+          788,
+          788
+        ],
+        [
+          796,
+          780
+        ],
+        [
+          796,
+          781
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_prism_coast_village",
+      "path": [
+        [
+          1532,
+          766
+        ],
+        [
+          1532,
+          868
+        ],
+        [
+          1532,
+          867
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_prism_coast_graveyard",
+      "path": [
+        [
+          1820,
+          778
+        ],
+        [
+          1820,
+          868
+        ],
+        [
+          1820,
+          867
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_prism_coast_woodland_house",
+      "path": [
+        [
+          1740,
+          1063
+        ],
+        [
+          1740,
+          1064
+        ],
+        [
+          1664,
+          1064
+        ],
+        [
+          1664,
+          1063
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_prism_coast_temple",
+      "path": [
+        [
+          1460,
+          921
+        ],
+        [
+          1460,
+          920
+        ],
+        [
+          1460,
+          924
+        ],
+        [
+          1444,
+          924
+        ],
+        [
+          1444,
+          884
+        ],
+        [
+          1456,
+          872
+        ],
+        [
+          1460,
+          868
+        ],
+        [
+          1460,
+          867
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_glasswake_village",
+      "path": [
+        [
+          252,
+          1246
+        ],
+        [
+          252,
+          1248
+        ],
+        [
+          352,
+          1248
+        ],
+        [
+          352,
+          1247
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_glasswake_graveyard",
+      "path": [
+        [
+          540,
+          1258
+        ],
+        [
+          540,
+          1348
+        ],
+        [
+          540,
+          1347
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_glasswake_woodland_house",
+      "path": [
+        [
+          460,
+          1559
+        ],
+        [
+          460,
+          1612
+        ],
+        [
+          460,
+          1613
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_glasswake_ruin",
+      "path": [
+        [
+          172,
+          1385
+        ],
+        [
+          172,
+          1384
+        ],
+        [
+          172,
+          1420
+        ],
+        [
+          184,
+          1432
+        ],
+        [
+          196,
+          1444
+        ],
+        [
+          208,
+          1456
+        ],
+        [
+          220,
+          1468
+        ],
+        [
+          232,
+          1480
+        ],
+        [
+          240,
+          1488
+        ],
+        [
+          256,
+          1488
+        ],
+        [
+          256,
+          1484
+        ],
+        [
+          256,
+          1485
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hollow_orchard_village",
+      "path": [
+        [
+          968,
+          1566
+        ],
+        [
+          968,
+          1568
+        ],
+        [
+          948,
+          1568
+        ],
+        [
+          944,
+          1564
+        ],
+        [
+          944,
+          1565
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hollow_orchard_graveyard",
+      "path": [
+        [
+          1244,
+          1578
+        ],
+        [
+          1244,
+          1580
+        ],
+        [
+          1296,
+          1580
+        ],
+        [
+          1300,
+          1576
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hollow_orchard_woodland_house",
+      "path": [
+        [
+          1164,
+          1903
+        ],
+        [
+          1164,
+          1904
+        ],
+        [
+          1152,
+          1904
+        ],
+        [
+          1152,
+          1820
+        ],
+        [
+          1164,
+          1808
+        ],
+        [
+          1164,
+          1809
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_hollow_orchard_castle",
+      "path": [
+        [
+          876,
+          1709
+        ],
+        [
+          876,
+          1708
+        ],
+        [
+          876,
+          1712
+        ],
+        [
+          896,
+          1712
+        ],
+        [
+          908,
+          1700
+        ],
+        [
+          920,
+          1688
+        ],
+        [
+          932,
+          1676
+        ],
+        [
+          944,
+          1664
+        ],
+        [
+          948,
+          1660
+        ],
+        [
+          948,
+          1656
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_murmur_mire_village",
+      "path": [
+        [
+          1532,
+          1502
+        ],
+        [
+          1532,
+          1504
+        ],
+        [
+          1528,
+          1508
+        ],
+        [
+          1528,
+          1608
+        ],
+        [
+          1532,
+          1612
+        ],
+        [
+          1532,
+          1613
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_murmur_mire_graveyard",
+      "path": [
+        [
+          1824,
+          1510
+        ],
+        [
+          1824,
+          1512
+        ],
+        [
+          1888,
+          1512
+        ],
+        [
+          1888,
+          1511
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_murmur_mire_woodland_house",
+      "path": [
+        [
+          1716,
+          1783
+        ],
+        [
+          1716,
+          1784
+        ],
+        [
+          1704,
+          1784
+        ],
+        [
+          1700,
+          1780
+        ],
+        [
+          1664,
+          1780
+        ],
+        [
+          1664,
+          1781
+        ]
+      ],
+      "width": 3
+    },
+    {
+      "id": "branch_murmur_mire_temple",
+      "path": [
+        [
+          1452,
+          1645
+        ],
+        [
+          1452,
+          1644
+        ],
+        [
+          1452,
+          1648
+        ],
+        [
+          1468,
+          1648
+        ],
+        [
+          1468,
+          1616
+        ],
+        [
+          1464,
+          1612
+        ],
+        [
+          1452,
+          1612
+        ],
+        [
+          1452,
+          1613
+        ]
+      ],
+      "width": 3
+    }
+  ],
+  "return_portal_name": "Lanternwake Gate",
+  "compatible_revisions": [
+    1
+  ],
+  "terrain": {
+    "version": 1,
+    "coast": {
+      "polygon": [
+        [
+          224,
+          96
+        ],
+        [
+          440,
+          64
+        ],
+        [
+          672,
+          96
+        ],
+        [
+          920,
+          64
+        ],
+        [
+          1240,
+          96
+        ],
+        [
+          1480,
+          80
+        ],
+        [
+          1664,
+          100
+        ],
+        [
+          1840,
+          160
+        ],
+        [
+          1856,
+          440
+        ],
+        [
+          1792,
+          584
+        ],
+        [
+          1936,
+          640
+        ],
+        [
+          1960,
+          896
+        ],
+        [
+          1888,
+          1088
+        ],
+        [
+          1952,
+          1312
+        ],
+        [
+          1968,
+          1632
+        ],
+        [
+          1904,
+          1880
+        ],
+        [
+          1744,
+          1952
+        ],
+        [
+          1460,
+          1984
+        ],
+        [
+          1190,
+          1944
+        ],
+        [
+          928,
+          1984
+        ],
+        [
+          680,
+          1872
+        ],
+        [
+          488,
+          1840
+        ],
+        [
+          264,
+          1856
+        ],
+        [
+          96,
+          1712
+        ],
+        [
+          80,
+          1472
+        ],
+        [
+          104,
+          1216
+        ],
+        [
+          80,
+          1040
+        ],
+        [
+          96,
+          768
+        ],
+        [
+          168,
+          576
+        ],
+        [
+          224,
+          416
+        ],
+        [
+          200,
+          224
+        ]
+      ],
+      "warp_amplitude": 54,
+      "frequency": 0.003
+    },
+    "areas": {
+      "warp_amplitude": 96,
+      "frequency": 0.0024
+    },
+    "elevation": {
+      "base": 2.0,
+      "amplitude": 2.5,
+      "frequency": 0.002,
+      "octaves": 3,
+      "gain": 0.45,
+      "lacunarity": 2.0,
+      "step": 0.5
+    },
+    "rivers": [
+      {
+        "id": "bellwater",
+        "path": [
+          [
+            832,
+            384
+          ],
+          [
+            816,
+            520
+          ],
+          [
+            912,
+            624
+          ],
+          [
+            944,
+            800
+          ],
+          [
+            1080,
+            944
+          ],
+          [
+            1104,
+            1152
+          ],
+          [
+            1200,
+            1312
+          ],
+          [
+            1312,
+            1440
+          ],
+          [
+            1488,
+            1536
+          ],
+          [
+            1728,
+            1488
+          ],
+          [
+            1936,
+            1568
+          ]
+        ],
+        "width": 7,
+        "bank_width": 24
+      },
+      {
+        "id": "whisper_run",
+        "path": [
+          [
+            560,
+            672
+          ],
+          [
+            536,
+            824
+          ],
+          [
+            464,
+            960
+          ],
+          [
+            520,
+            1120
+          ],
+          [
+            584,
+            1232
+          ],
+          [
+            688,
+            1296
+          ],
+          [
+            816,
+            1296
+          ],
+          [
+            1040,
+            1408
+          ],
+          [
+            1312,
+            1440
+          ]
+        ],
+        "width": 5,
+        "bank_width": 20
+      },
+      {
+        "id": "reedwater",
+        "path": [
+          [
+            1776,
+            1264
+          ],
+          [
+            1712,
+            1360
+          ],
+          [
+            1808,
+            1520
+          ],
+          [
+            1760,
+            1648
+          ],
+          [
+            1840,
+            1776
+          ],
+          [
+            1808,
+            1944
+          ]
+        ],
+        "width": 8,
+        "bank_width": 28
+      }
+    ],
+    "lakes": [
+      {
+        "id": "mirror_lake",
+        "center": [
+          1104,
+          1152
+        ],
+        "radii": [
+          94,
+          62
+        ],
+        "rotation": 0.25,
+        "shore_warp": 0.08
+      },
+      {
+        "id": "cinder_lake",
+        "center": [
+          1568,
+          256
+        ],
+        "radii": [
+          52,
+          34
+        ],
+        "rotation": -0.3,
+        "shore_warp": 0.1
+      },
+      {
+        "id": "orchard_pool",
+        "center": [
+          848,
+          1536
+        ],
+        "radii": [
+          58,
+          82
+        ],
+        "rotation": 0.45,
+        "shore_warp": 0.1
+      }
+    ],
+    "ridges": [
+      {
+        "id": "bellward_spine",
+        "path": [
+          [
+            368,
+            208
+          ],
+          [
+            640,
+            176
+          ],
+          [
+            896,
+            224
+          ],
+          [
+            1136,
+            288
+          ],
+          [
+            1248,
+            416
+          ]
+        ],
+        "width": 180,
+        "height": 7
+      },
+      {
+        "id": "ember_rim",
+        "path": [
+          [
+            1408,
+            208
+          ],
+          [
+            1568,
+            144
+          ],
+          [
+            1728,
+            224
+          ],
+          [
+            1776,
+            400
+          ]
+        ],
+        "width": 124,
+        "height": 6
+      },
+      {
+        "id": "western_bluffs",
+        "path": [
+          [
+            240,
+            1056
+          ],
+          [
+            288,
+            1216
+          ],
+          [
+            208,
+            1376
+          ],
+          [
+            240,
+            1584
+          ]
+        ],
+        "width": 140,
+        "height": 3
+      }
+    ],
+    "hills": [
+      {
+        "id": "hearth_hills",
+        "center": [
+          1056,
+          688
+        ],
+        "radius": 260,
+        "height": 2
+      },
+      {
+        "id": "orchard_hills",
+        "center": [
+          1216,
+          1568
+        ],
+        "radius": 230,
+        "height": 2.5
+      },
+      {
+        "id": "prism_headland",
+        "center": [
+          1792,
+          800
+        ],
+        "radius": 210,
+        "height": 3
+      }
+    ]
+  },
+  "content_version": 2,
+  "encounters": [
+    {
+      "area_id": "bellfrost",
+      "cell": [
+        576,
+        424
+      ],
+      "id": "bellfrost_grounds_0",
+      "label": "Frostbound Sentinels",
+      "members": [
+        {
+          "enemy_id": "rime_golem",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "rime_golem",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "rime_golem",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "bellfrost",
+      "cell": [
+        840,
+        488
+      ],
+      "id": "bellfrost_grounds_1",
+      "label": "Lost Bell Watch",
+      "members": [
+        {
+          "enemy_id": "crypt_skeleton",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "crypt_skeleton",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "crypt_skeleton",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "ember_scar",
+      "cell": [
+        1472,
+        392
+      ],
+      "id": "ember_scar_grounds_0",
+      "label": "Emberwake Drifters",
+      "members": [
+        {
+          "enemy_id": "cinder_wisp",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "cinder_wisp",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "cinder_wisp",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "ember_scar",
+      "cell": [
+        1744,
+        504
+      ],
+      "id": "ember_scar_grounds_1",
+      "label": "Ashroad Camp",
+      "members": [
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "whisperwood",
+      "cell": [
+        256,
+        840
+      ],
+      "id": "whisperwood_grounds_0",
+      "label": "Briarpack",
+      "members": [
+        {
+          "enemy_id": "briar_wolf",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "briar_wolf",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "briar_wolf",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "whisperwood",
+      "cell": [
+        520,
+        936
+      ],
+      "id": "whisperwood_grounds_1",
+      "label": "Spore Hollows",
+      "members": [
+        {
+          "enemy_id": "spore_crawler",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "spore_crawler",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "spore_crawler",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "hearthwild",
+      "cell": [
+        832,
+        936
+      ],
+      "id": "hearthwild_grounds_0",
+      "label": "Broken Bridge Camp",
+      "members": [
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "hearthwild",
+      "cell": [
+        1104,
+        1000
+      ],
+      "id": "hearthwild_grounds_1",
+      "label": "Meadow Foragers",
+      "members": [
+        {
+          "enemy_id": "wild_boar",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "wild_boar",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "wild_boar",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "prism_coast",
+      "cell": [
+        1536,
+        968
+      ],
+      "id": "prism_coast_grounds_0",
+      "label": "Shoreline Lookout",
+      "members": [
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "roadside_brigand",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "prism_coast",
+      "cell": [
+        1800,
+        1032
+      ],
+      "id": "prism_coast_grounds_1",
+      "label": "Tideless Graves",
+      "members": [
+        {
+          "enemy_id": "tomb_shade",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "tomb_shade",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "tomb_shade",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "glasswake",
+      "cell": [
+        256,
+        1416
+      ],
+      "id": "glasswake_grounds_0",
+      "label": "Warm Sand Burrows",
+      "members": [
+        {
+          "enemy_id": "dune_scarab",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "dune_scarab",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "dune_scarab",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "glasswake",
+      "cell": [
+        528,
+        1512
+      ],
+      "id": "glasswake_grounds_1",
+      "label": "Cinder Mirage",
+      "members": [
+        {
+          "enemy_id": "cinder_wisp",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "cinder_wisp",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "cinder_wisp",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "hollow_orchard",
+      "cell": [
+        960,
+        1736
+      ],
+      "id": "hollow_orchard_grounds_0",
+      "label": "Fallen Fruit Foragers",
+      "members": [
+        {
+          "enemy_id": "wild_boar",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "wild_boar",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "wild_boar",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "hollow_orchard",
+      "cell": [
+        1232,
+        1848
+      ],
+      "id": "hollow_orchard_grounds_1",
+      "label": "Rootbound Pack",
+      "members": [
+        {
+          "enemy_id": "briar_wolf",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "briar_wolf",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "briar_wolf",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "murmur_mire",
+      "cell": [
+        1536,
+        1672
+      ],
+      "id": "murmur_mire_grounds_0",
+      "label": "Reed Choir",
+      "members": [
+        {
+          "enemy_id": "enemy:quaternius_ultimate_monsters/gltf-frog-80138c6a2c",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "enemy:quaternius_ultimate_monsters/gltf-frog-80138c6a2c",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "enemy:quaternius_ultimate_monsters/gltf-frog-80138c6a2c",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    },
+    {
+      "area_id": "murmur_mire",
+      "cell": [
+        1808,
+        1768
+      ],
+      "id": "murmur_mire_grounds_1",
+      "label": "Piranha Ford",
+      "members": [
+        {
+          "enemy_id": "enemy:bundle_voxel_creature_pack/footed_piranha-60da9c97fa",
+          "id": "watcher_0",
+          "offset": [
+            -9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "enemy:bundle_voxel_creature_pack/footed_piranha-60da9c97fa",
+          "id": "watcher_1",
+          "offset": [
+            9,
+            -5
+          ]
+        },
+        {
+          "enemy_id": "enemy:bundle_voxel_creature_pack/footed_piranha-60da9c97fa",
+          "id": "watcher_2",
+          "offset": [
+            0,
+            9
+          ]
+        }
+      ],
+      "radius": 12
+    }
+  ]
+}

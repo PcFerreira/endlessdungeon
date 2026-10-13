@@ -35,6 +35,8 @@ func _ready() -> void:
 	overlay.hide()
 
 func scope() -> String:
+	if game.layer == "overworld" and game.dimension.active:
+		return "dimension:" + game.dimension.id
 	if game.layer == "dungeon":
 		return "dungeon:" + game.view_key
 	if game.layer == "interior":
@@ -442,6 +444,8 @@ func anchors() -> Array[Vector2]:
 				if city.get("floating_city", false):
 					result.append(city.hub_spawn)
 					result.append(city.hub_portal)
+					for gate in city.get("hub_gates", []):
+						result.append(gate.point)
 				for house in city.houses:
 					result.append(Vector2(house.approach))
 				for book in city.books:
@@ -459,6 +463,7 @@ func anchors() -> Array[Vector2]:
 		result.assign([Vector2(game.dungeon.start), Vector2(game.dungeon.exit)])
 		if game.layer == "sanctum":
 			result.append(game.dungeon.hearth)
+			result.append(game.floating_hub.sanctum_portal_point())
 		if game.layer == "interior" and game.dungeon.rest_point != Vector2.ZERO:
 			result.append(game.dungeon.rest_point)
 		if game.layer in ["dungeon", "interior"]:
@@ -618,12 +623,12 @@ func open_placement(item: String = "") -> bool:
 	if game.layer == "dungeon":
 		if state.bases.has(game.active_dungeon.id):
 			game.interface._label(list, "Your dungeon base", 16, game.interface.GOLD)
-			var floors := OptionButton.new()
+			var floors: GridContainer = game.interface.IconGrid.grid(list,4)
 			for floor_number in range(1, game.active_dungeon.floors + 1):
-				floors.add_item("Visit base floor %s" % floor_number)
-			floors.selected = game.depth - 1
-			floors.item_selected.connect(func(index): visit_base_floor(index + 1))
-			list.add_child(floors)
+				var choice: Button = game.interface.IconGrid.tile(game.interface,floors,"Floor %s" % floor_number,game.interface.IconGrid.symbol("travel"),visit_base_floor.bind(floor_number),Vector2(60,82))
+				choice.focus_mode = Control.FOCUS_NONE
+				choice.toggle_mode = true
+				choice.button_pressed = floor_number == game.depth
 			button(list, "Set rest point here", set_rest_point)
 			if not rest_hint().is_empty():
 				button(list, "Rest at your base", rest)
@@ -632,13 +637,17 @@ func open_placement(item: String = "") -> bool:
 			claim.disabled = not game.claimed_chests.has(game.active_dungeon.id)
 	game.interface._separator(list)
 	game.interface._label(list, "Within reach [T takes nearest]", 16, game.interface.GOLD)
+	var nearby_grid: GridContainer = game.interface.IconGrid.grid(list,3)
 	for record in nearby():
-		button(list, "Take " + Catalog.definitions[record.item].name + (" / Stolen" if not record.get("owner", "").is_empty() else ""), pickup.bind(record.uid))
+		var choice: Button = game.interface.IconGrid.item(game.interface,nearby_grid,record.item,pickup.bind(record.uid))
+		choice.tooltip_text += "\nTake this object" + (" / Stolen" if not record.get("owner", "").is_empty() else "")
+		choice.focus_mode = Control.FOCUS_NONE
 	game.interface._separator(list)
 	game.interface._label(list, "Place from backpack", 16, game.interface.GOLD)
+	var backpack_grid: GridContainer = game.interface.IconGrid.grid(list,3)
 	for id in game.inventory.items:
 		if Catalog.definitions[id].kind != "bound":
-			button(list, "%s x%s" % [Catalog.definitions[id].name, game.inventory.count(id)], open_placement.bind(id))
+			game.interface.IconGrid.item(game.interface,backpack_grid,id,open_placement.bind(id),game.inventory.count(id),id == selected).focus_mode = Control.FOCUS_NONE
 	overlay.show()
 	return true
 

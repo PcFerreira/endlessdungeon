@@ -92,4 +92,4 @@ The focused gameplay check also verifies that active combat defers a new episode
 
 ## Road activity expansion
 
-The road/trade/patrol extension is described in [World activity](WORLD_ACTIVITY.md). It adds eight bounded road actors alongside the original twelve local residents/animals, named monster grounds, guards, barter and varied town episodes. The total live actor cap is now twenty; the original local route-search budget and fauna medium rules remain in use.
+The road/trade/patrol extension is described in [World activity](WORLD_ACTIVITY.md). It adds eight bounded road actors alongside the original twelve local residents/animals, named monster grounds, guards, barter and varied town episodes. Four [peaceful wilderness walkers](WILDERNESS_NPCS.md) now add local off-road movement and conversation. The total live actor cap is 24; the original local route-search budget and fauna medium rules remain in use.

@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "edition": 7,
+  "feature_chance_denominator": 3,
+  "profiles": {
+    "greenwood": [
+      {
+        "id": "fairy_ring",
+        "name": "Dewlight Ring",
+        "flavor": "Mushrooms circle a quiet patch beneath the trees.",
+        "recipe": "fairy_ring",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_bramble_berries",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "bramble_nook",
+        "name": "Bramble Nook",
+        "flavor": "Berry thickets shelter a small woodland clearing.",
+        "recipe": "ancient_grove",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_ironbark",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "meadows": [
+      {
+        "id": "starfall_meadow",
+        "name": "Starfall Meadow",
+        "flavor": "Pale flowers trace a ribbon across open grass.",
+        "recipe": "wildflowers",
+        "radius": 11,
+        "water_required": false,
+        "reward_item": "forage_wayside_sage",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "sage_hollow",
+        "name": "Sage Hollow",
+        "flavor": "Wayside sage grows around a shallow grassy hollow.",
+        "recipe": "wildflowers",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_starlight_petals",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "desert": [
+      {
+        "id": "cactus_shade",
+        "name": "Cactus Shade",
+        "flavor": "Tall cactus groups leave a quiet pocket of bare sand.",
+        "recipe": "cactus_shade",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_cactus_fiber",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "oasis_bank",
+        "name": "Hidden Oasis Bank",
+        "flavor": "A natural waterbank shelters a few desert plants.",
+        "recipe": "oasis_bank",
+        "radius": 10,
+        "water_required": true,
+        "reward_item": "forage_sunstone",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "frostlands": [
+      {
+        "id": "frozen_pond",
+        "name": "Frostwater Hollow",
+        "flavor": "Snow and pines surround an exposed natural pond.",
+        "recipe": "frozen_pond",
+        "radius": 10,
+        "water_required": true,
+        "reward_item": "forage_winter_mint",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "ice_resin_copse",
+        "name": "Resin Copse",
+        "flavor": "A tight pine stand shelters resin from the cold wind.",
+        "recipe": "ancient_grove",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_ice_resin",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "dense_forest": [
+      {
+        "id": "ancient_grove",
+        "name": "Ancient Grove",
+        "flavor": "Broad crowns enclose a clearing rich with fern curls.",
+        "recipe": "ancient_grove",
+        "radius": 12,
+        "water_required": false,
+        "reward_item": "forage_fern_curl",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "moth_moss_ring",
+        "name": "Moth Moss Ring",
+        "flavor": "Dark moss and fungi mark a sheltered woodland ring.",
+        "recipe": "fairy_ring",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_moth_moss",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "haunted_hollows": [
+      {
+        "id": "forgotten_memorial",
+        "name": "Forgotten Memorial",
+        "flavor": "Weathered graves face a worn and open approach.",
+        "recipe": "haunted_memorial",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_ghost_petals",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "lantern_wake",
+        "name": "Lantern Wake",
+        "flavor": "Pumpkins gather beside a quiet memorial clearing.",
+        "recipe": "haunted_memorial",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_wisp_glass",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "marsh": [
+      {
+        "id": "firefly_fen",
+        "name": "Firefly Fen",
+        "flavor": "Low lights drift over reeds beside natural marsh water.",
+        "recipe": "firefly_fen",
+        "radius": 10,
+        "water_required": true,
+        "reward_item": "forage_silver_reed",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "silver_reed_bank",
+        "name": "Silver Reed Bank",
+        "flavor": "Silver reeds gather along a sheltered wet bank.",
+        "recipe": "firefly_fen",
+        "radius": 10,
+        "water_required": true,
+        "reward_item": "forage_bog_pearl",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "jungle": [
+      {
+        "id": "bamboo_hollow",
+        "name": "Bamboo Hollow",
+        "flavor": "Layered leaves surround a small, readable jungle opening.",
+        "recipe": "bamboo_hollow",
+        "radius": 11,
+        "water_required": false,
+        "reward_item": "forage_lantern_fruit",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "ginger_shelter",
+        "name": "Ginger Shelter",
+        "flavor": "Ginger grows in a protected pocket beneath tall leaves.",
+        "recipe": "bamboo_hollow",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_red_ginger",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "autumn_woodland": [
+      {
+        "id": "harvest_glade",
+        "name": "Harvest Glade",
+        "flavor": "Pumpkins and fallen leaves mark a warm woodland opening.",
+        "recipe": "harvest_glade",
+        "radius": 11,
+        "water_required": false,
+        "reward_item": "forage_russet_nuts",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "amber_copse",
+        "name": "Amber Copse",
+        "flavor": "Warm crowns shelter resin among the fallen leaves.",
+        "recipe": "ancient_grove",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_amber_drips",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "fungal_grove": [
+      {
+        "id": "mooncap_colony",
+        "name": "Mooncap Colony",
+        "flavor": "Small caps cluster around a few taller parent mushrooms.",
+        "recipe": "mycelial_nursery",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_mooncap",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "mycelial_nursery",
+        "name": "Mycelial Nursery",
+        "flavor": "Young fungi gather in an open patch beneath drifting spores.",
+        "recipe": "mycelial_nursery",
+        "radius": 11,
+        "water_required": false,
+        "reward_item": "forage_dreaming_spores",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "volcanic_wastes": [
+      {
+        "id": "basalt_vent",
+        "name": "Basalt Vent",
+        "flavor": "Basalt ribs frame a narrow fissure in the ash.",
+        "recipe": "basalt_vent",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_obsidian_flakes",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "cinder_shelf",
+        "name": "Cinder Shelf",
+        "flavor": "A quiet ash shelf holds a few exposed mineral fragments.",
+        "recipe": "basalt_vent",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_cinder_crystal",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "highlands": [
+      {
+        "id": "windward_outcrop",
+        "name": "Windward Outcrop",
+        "flavor": "A broken rock crest leaves open views across the highlands.",
+        "recipe": "windward_outcrop",
+        "radius": 11,
+        "water_required": false,
+        "reward_item": "forage_wind_thyme",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "thyme_shelter",
+        "name": "Thyme Shelter",
+        "flavor": "Low thyme grows on the sheltered side of an outcrop.",
+        "recipe": "windward_outcrop",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_sky_flint",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "coast": [
+      {
+        "id": "tide_garden",
+        "name": "Tide Garden",
+        "flavor": "Shore grass and kelp gather beside natural coastal water.",
+        "recipe": "tide_garden",
+        "radius": 12,
+        "water_required": true,
+        "reward_item": "forage_tide_kelp",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "shell_cove",
+        "name": "Whisper Shell Cove",
+        "flavor": "A quiet waterbank holds shells among low shore plants.",
+        "recipe": "tide_garden",
+        "radius": 10,
+        "water_required": true,
+        "reward_item": "forage_whisper_shell",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ],
+    "crystal_tundra": [
+      {
+        "id": "crystal_pocket",
+        "name": "Crystal Pocket",
+        "flavor": "A small crystal cluster rises from an open snowfield.",
+        "recipe": "crystal_pocket",
+        "radius": 10,
+        "water_required": false,
+        "reward_item": "forage_glass_lichen",
+        "quantity": 4,
+        "coins": 10,
+        "weight": 1
+      },
+      {
+        "id": "lichen_shelf",
+        "name": "Glass Lichen Shelf",
+        "flavor": "Pale lichen shelters below a few cold crystal outcrops.",
+        "recipe": "crystal_pocket",
+        "radius": 9,
+        "water_required": false,
+        "reward_item": "forage_prism_heart",
+        "quantity": 3,
+        "coins": 16,
+        "weight": 1
+      }
+    ]
+  }
+}

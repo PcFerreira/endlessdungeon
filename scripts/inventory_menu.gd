@@ -31,36 +31,24 @@ static func build(ui, box: VBoxContainer) -> void:
 		while remaining > 0:
 			var amount: int = mini(remaining, bag.ITEMS[id].stack)
 			remaining -= amount
-			var button: Button = ui._button(grid, "", func(): ui.inventory_selected = id; ui.previous_state = "", Vector2(80, 80))
-			button.icon = bag.Catalog.icon(bag.ITEMS[id])
-			button.expand_icon = true
-			button.add_theme_constant_override("icon_max_width", 44)
-			button.tooltip_text = "%s x%s\n%s" % [bag.ITEMS[id].name, amount, bag.ITEMS[id].description]
-			if bag.ITEMS[id].has("asset_id"):
-				button.icon = null
-				var thumbnail := Visual.preview(bag.ITEMS[id])
-				thumbnail.position = Vector2(14, 8)
-				button.add_child(thumbnail)
-			var count_label: Label = ui._label(button, str(amount), 12, ui.INK)
-			count_label.position = Vector2(60, 57)
-			if id == ui.inventory_selected:
-				ui.UISkin.ornament(button, ui.GOLD)
+			ui.IconGrid.item(ui,grid,id,func(): ui.inventory_selected = id; ui.previous_state = "",amount,id == ui.inventory_selected)
 			slots += 1
 	for index in range(slots, bag.CAPACITY):
-		ui._button(grid, "", Callable(), Vector2(80, 80)).disabled = true
+		ui._button(grid, "", Callable(), Vector2(80, 88)).disabled = true
 	var right: PanelContainer = ui._panel(row, Vector2(350, 0))
 	var details: VBoxContainer = ui._vbox(right, 10)
 	ui._label(details, "Equipment", 20, ui.GOLD, true)
+	var equipment_grid: GridContainer = ui.IconGrid.grid(details,3)
 	for slot in bag.equipment:
 		var equipped: String = bag.equipment[slot]
-		var equipment_row := HBoxContainer.new()
-		details.add_child(equipment_row)
-		var caption: Label = ui._label(equipment_row, "%s: %s" % [slot.capitalize(), bag.ITEMS[equipped].name if not equipped.is_empty() else "None"], 13, ui.INK)
-		caption.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		caption.custom_minimum_size.x = 225
-		if not equipped.is_empty():
-			var unequip: Button = ui._button(equipment_row, "-", game.unequip_item.bind(slot), Vector2(30, 26))
-			unequip.tooltip_text = "Unequip " + slot
+		var tile: Button
+		if equipped.is_empty():
+			tile = ui.IconGrid.tile(ui,equipment_grid,slot.capitalize(),ui.IconGrid.symbol("slot"),Callable(),Vector2(90,88))
+			tile.disabled = true
+		else:
+			tile = ui.IconGrid.item(ui,equipment_grid,equipped,func(): ui.inventory_selected = equipped; ui.previous_state = "")
+			tile.tooltip_text = "%s: %s" % [slot.capitalize(),bag.ITEMS[equipped].name]
+		tile.set_meta("equipment_slot",slot)
 	ui._separator(details)
 	var id: String = ui.inventory_selected
 	if bag.count(id) > 0:
@@ -81,6 +69,10 @@ static func build(ui, box: VBoxContainer) -> void:
 		elif item.kind == "equipment":
 			var equip: Button = ui._button(details, "Equip", game.equip_item.bind(id), Vector2(0, 34))
 			equip.disabled = not item.classes.has(game.build.class_id) or bag.equipment.values().has(id)
+			if bag.equipment.values().has(id):
+				var slot: String = bag.equipment.find_key(id)
+				var unequip: Button = ui._button(details,"Unequip",game.unequip_item.bind(slot),Vector2(0,34))
+				unequip.set_meta("unequip_slot",slot)
 		elif item.kind == "furnishing":
 			var place: Button = ui._button(details, "Place in Sanctum [B]", game.furnishing_editor.open.bind(id), Vector2(0, 34))
 			place.disabled = game.layer != "sanctum" or bag.count(id) <= stolen

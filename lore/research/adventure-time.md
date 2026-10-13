@@ -71,3 +71,5 @@ These applications are our proposals. The sources do not make claims about the E
 | [The Lich, official Adventure Time channel](https://www.youtube.com/watch?v=bbICl-f6bR0) | Threat presentation and the shift toward dread |
 
 A later lore pass can investigate the crown, wizard psychology, cosmic beings, afterlives, and reincarnation against episode-level evidence. Their detailed mechanics remain outside this first source-checked pass.
+
+The [2026-10-13 character-pool research](adventure-time-character-pools.md) checks 24 character and creature references and proposes twelve NPC roles, twelve creature families and four rare character briefs. It maps these proposals onto current biomes and actor interfaces. The roster remains an author-facing proposal pending original art and runtime implementation.

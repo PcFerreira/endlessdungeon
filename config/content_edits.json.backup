@@ -1,0 +1,32 @@
+{
+	"add_enemies": [],
+	"add_items": [
+		{
+			"asset_id": "kenney_food_kit/content/Models/GLB format/bowl-broth.glb",
+			"description": "",
+			"enabled": true,
+			"icon": "res://assets/items/oak_chair.svg",
+			"id": "editor:kenney_food_kit/content/Models/GLB format/bowl-broth.glb",
+			"kind": "material",
+			"loot_sources": [
+				"enemy",
+				"chest"
+			],
+			"name": "bowl-broth",
+			"source_asset": "kenney_food_kit/content/Models/GLB format/bowl-broth.glb",
+			"source_pack": "editor",
+			"stack": 10
+		}
+	],
+	"enemies": {
+		"enemy:quaternius_ultimate_monsters/gltf-bluedemon-b6c06c4fb1": {
+			"name": "Red Demon"
+		}
+	},
+	"items": {
+		"editor:kenney_food_kit/content/Models/GLB format/bowl-broth.glb": {
+			"name": "Soup Bowl"
+		}
+	},
+	"version": 1.0
+}

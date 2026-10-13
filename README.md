@@ -2,7 +2,7 @@
 
 A playable Godot prototype of an isometric fantasy world with magic and sword combat. Travel through generated biomes, follow roads into cities, and explore dungeons beneath old ruins. The overworld generates new chunks as you move. Each dungeon has a seeded length of 1 through 20 floors. Its final chest awards one skill point.
 
-New offline characters use fourteen [biome profiles](docs/BIOMES.md), including dense forest, haunted Halloween woodland, marsh, jungle, autumn woods, fungal groves, volcanic wastes and crystal tundra. Climate regions are five times wider, with gradual transitions. Existing journeys retain their saved world edition.
+New offline characters use fourteen [biome profiles](docs/BIOMES.md), including dense forest, haunted Halloween woodland, marsh, jungle, autumn woods, fungal groves, volcanic wastes and crystal tundra. Climate regions are five times wider, with gradual transitions. Existing journeys retain their saved world edition. New journeys also contain 28 [micro-biome pockets](docs/MICRO_BIOMES.md), with journal discoveries, one-time material and coin caches, and skill points for exploring different types. Eight kinds of [wild construction](docs/BIOME_LANDMARKS.md) add monoliths, wells, watchtowers, mage towers, tombs, ruined cottages, shrines and arches with clear entrances, stories, supplies and safe recovery.
 
 The art uses voxel terrain and buildings with an orthographic camera. Voxel models remain the first choice; standard 3D scenery adds stalls, tents, books, furniture, and cave surfaces. Forgotten Realms, tabletop adventures, and Adventure Time inform the original Endless Realm setting. Adopted models and music are listed in [CREDITS.md](CREDITS.md).
 
@@ -21,7 +21,13 @@ Double-click `Play.command` on this Mac. Double-click `Edit.command` to open the
 
 The launcher finds the local engine in `.tools/Godot.app`, an installation in `/Applications`, or `godot` / `godot4` on your PATH. The local engine came from the [official Godot website](https://godotengine.org/download/macos/). This prototype was tested with Godot 4.7.2 on an Apple M2 using the Compatibility renderer.
 
+The standalone [Content Workbench](docs/CONTENT_EDITOR.md) edits item and monster stats, levels, aggression, drops, models and facing. Launch `./content-editor.sh`, double-click `content-editor.command` on macOS, or use `content-editor.bat` with Godot 4 on Windows. Its browser reports imported/source asset usage and can adopt selected resources. Edits survive catalogue rebuilds in `config/content_edits.json` and load when local games restart.
+
+The main game automatically uses [background chunk preparation, incremental navigation, baked creature/vegetation models and shared batch meshes](docs/STREAMING_PERFORMANCE.md). Double-clicking `Play.command` runs these optimizations with the current game features. To try the engine's experimental separate rendering thread from Terminal, run `./Play.command --render-thread separate`.
+
 The [browser multiplayer prototype](docs/BROWSER_MULTIPLAYER.md) uses a persistent Node/SQLite server and streams nearby terrain chunks to the browser. This first online slice supports accounts, shared surface exploration and synchronized players; combat, trading and other progression still need server handlers. Follow [server setup](server/README.md) and [Web export](docs/WEB_BUILD.md) to run it locally. Public hosting is not configured yet.
+
+A [Windows 64-bit release](docs/WINDOWS_RELEASE.md) is available under `builds/windows/EndlessWorld.exe`, with a shareable ZIP and verified embedded game data. The guide records rebuild commands and the Windows execution boundary.
 
 | Control | Action |
 | --- | --- |
@@ -42,6 +48,7 @@ The [browser multiplayer prototype](docs/BROWSER_MULTIPLAYER.md) uses a persiste
 | E near a city fountain | Rest and set your sanctuary |
 | E near a ruin | Enter its dungeon |
 | E near a resident or book | Talk or read while safely away from combat |
+| E near a wild herb, berry, mushroom, crystal or shell patch | Gather biome materials |
 | E at the dungeon stairs | Return to the world |
 | E at an unlocked underground gate | Descend to the next floor |
 | E at the final chest | Claim one skill point after defeating the wardens |
@@ -67,6 +74,10 @@ The watch demands stolen city property back before using force. Refusal triggers
 
 T takes nearby movable objects; V opens world placement and base controls. After clearing a dungeon and claiming its chest, claim it as your base, decorate its cleared floors and set a saved rest/respawn point. City-owned copies remain stolen when stored elsewhere. See [docs/WORLD_ITEMS_BASES.md](docs/WORLD_ITEMS_BASES.md).
 
+Offline exploration includes 28 [foraged materials](docs/FORAGING.md) across fourteen biomes. Gather with E, carry the finds in the backpack and sell them at markets, provisions shops or smithies. Patches stay depleted through saves and home visits.
+
+Eight original [Wonder folk and creatures](docs/WONDER_FOLK.md) expand the wilderness with clay herbalists, woodland listeners, birdfolk traders, repaired constructs, peaceful magical wildlife, neutral mossbacks and hostile bell-chested husks. Approach residents with E to talk; supported traders offer a Trade button that buys gathered materials.
+
 Approach house doors and press E to enter furnished homes, inns, shops, workshops and shrines. Read their books, rest at designated spots and return through the entrance or with F. Indoor locations, furniture choices and exact outside returns save with the journey. Enemy profiles, biome/family pools, model variants, room layouts and furniture queries are defined in [config/world_content.json](config/world_content.json). The initial data selects 28 enemy models for ten combat profiles and offers ten layouts across five room types. Add content through JSON and the asset registry; see [docs/ENEMIES_INTERIORS.md](docs/ENEMIES_INTERIORS.md).
 
 Town architecture uses thirty distinct imported or assembled constructions across fourteen theme profiles: varied homes, inns, smithies, shrine halls, towers, keeps, markets, workshops and civic forms. Source models display directly in faceted biomes and as actual converted block geometry in voxel biomes. Themes select suitable structures for the existing building uses, while generated footprints, doors, routes and saved interior/store identities remain authoritative. See [docs/TOWN_ARCHITECTURE.md](docs/TOWN_ARCHITECTURE.md) for the sources, theme mappings, representation limits and authoring rules.
@@ -87,11 +98,11 @@ Every character starts with a bound Sanctum Sigil, shown beside the action bar. 
 
 You can save, load, change your action bar, and learn skills at home. Home saves retain the return destination across launches. Press B to furnish any clear floor on the island, with wall support, rotation, collision checks and clear walking paths. Pick up furniture to return it to your backpack; completed arrangements save with the journey. See [docs/SANCTUM.md](docs/SANCTUM.md) for the mechanic and expansion points.
 
-The HUD uses a compact MMORPG-style bottom dock with vitality/resource meters, character identity, ten stable ability slots, cooldown countdowns, and the sigil. A quiet utility row opens character, backpack, grimoire, journal, atlas, and menu screens. Ability details and shortcuts appear in tooltips; nearby interactions show one contextual prompt. Notifications have their own panel. The target frame appears only with a selected enemy. Sword uses green stamina; Mage and Spellsword use blue aether. See [docs/HUD_DESIGN.md](docs/HUD_DESIGN.md) for the research, layout, and native review helper.
+The HUD uses a compact MMORPG-style bottom dock with vitality/resource meters, character identity, ten stable ability slots, cooldown countdowns, and the sigil. A quiet utility row opens character, backpack, grimoire, journal, atlas, and menu screens. Ability details and shortcuts appear in tooltips; nearby interactions show one contextual prompt. Notifications have their own panel. The target frame appears only with a selected enemy. Sword uses green stamina; Mage and Spellsword use blue aether. See [docs/HUD_DESIGN.md](docs/HUD_DESIGN.md) for the research, layout, and native review helper. Shops, equipment, grimoire, journal, appearance choices and placement pickers share inventory-style icon grids with item previews and focused detail panes. See [docs/ICON_GRID_UI.md](docs/ICON_GRID_UI.md).
 
 ## Classes and grimoire
 
-The new-journey screen also offers character customization, with a live voxel preview, name, Human/Elf/Dwarf ancestry, skin, hair, head style, and clothing colors. Each class has three distinct clothing styles: robes and mantles for Mage, coats and plate for Sword, and rune coats, armor, and cloaks for Spellsword. The Character selector also offers nine animated premades from the supplied KayKit Adventurers and Cube World packs. Premades keep their authored appearance; name and combat class still apply. These choices are cosmetic and save with the journey. Press C to change appearance later.
+The character creator uses animated voxel bodies throughout. Twelve editable presets, five ancestries, four builds, eleven haircuts, separate beards and headwear, fifteen outfits per class, and layered cloaks, gloves, boots, belts, and accessories let you shape your wanderer. Skin, hair, clothing layers, trim, trousers, and eyes have separate colors. The live preview can turn, walk, and jump. These choices are cosmetic and save with the journey; older imported player appearances convert to voxel bodies when loaded. Press C to change appearance later. See [the character guide](docs/CHARACTER_INVENTORY.md).
 
 Press I for the 24-slot backpack. Collect materials, potions, equipment, and furnishings during the journey. Select items to inspect, use, equip, or discard them. The bound Sanctum Sigil cannot be discarded. Items and equipment persist through saves and sanctum returns. See [docs/CHARACTER_INVENTORY.md](docs/CHARACTER_INVENTORY.md) for item limits, equipment bonuses, and reward rules. Press B in the Sanctum to place owned furnishings, or choose Place in Sanctum from the backpack.
 
@@ -103,7 +114,9 @@ Choose a class before beginning a journey:
 | Sword | Sword Strike, Cleave, Iron Guard, Battle Step | Stamina |
 | Spellsword | Sword Strike, Arcane Bolt, Ember Orb, Blink | Aether |
 
-Press G to open the grimoire. Its skill tree has damage, resource, and vitality branches, with prerequisites for three further abilities per class. Each rank costs one point. Claim points from final dungeon chests; an opened chest cannot award another point after leaving, returning, or respawning. Select the Abilities and action bar tab to assign learned abilities to any of the ten slots. Moving an ability removes it from its old slot.
+Press G to open the grimoire. Its skill tree has damage, resource, and vitality branches, with prerequisites for six further abilities per class. Each rank costs one point. Claim points from final dungeon chests; an opened chest cannot award another point after leaving, returning, or respawning. Select the Abilities and action bar tab to assign learned abilities to any of the ten slots. Moving an ability removes it from its old slot.
+
+New spells freeze, stun, burn, chain lightning, drain life and form a finite protective barrier. Each class can also summon a companion: Lantern Familiar, Ancestral Warden or Runic Blade. Companions follow supported routes, fight nearby enemies and can draw hostile attacks. See [the expanded spell guide](docs/EXPANDED_SPELLS.md).
 
 ## Combat
 
@@ -119,7 +132,7 @@ Projectiles follow the cast-time target. Cleave hits an arc ahead of the charact
 - One city and two independently seeded dungeon entrances per 64 by 64 region.
 - Finite dungeons with 1-20 floors, discovery fog, one-time reward chests, and surface return.
 - A scrolling minimap and a regional atlas with route selection.
-- Mage, Sword, and Spellsword classes; targeted magic and melee combat; fifteen abilities; a grimoire and ten-slot action bar.
+- Mage, Sword, and Spellsword classes; targeted magic and melee combat; twenty-four abilities and three temporary companions; a grimoire and ten-slot action bar.
 - Chunk loading with 25 active chunks of 16 by 16 cells each.
 - Deterministic regeneration and disk saves for character builds, defeated enemies, dungeon progress, and live actors.
 - An orbiting orthographic camera, view-relative movement, outdoor cutaways, and dungeon walls that adjust with the view.
@@ -158,6 +171,9 @@ The world has no fixed map boundary. Terrain has half-unit terraces, hills, peak
 | `docs/MVP.md` | Current design and next development steps |
 | `docs/TERRAIN.md` | Minecraft research, generation passes, terrain and jump rules |
 | `docs/LANDSCAPE.md` | Broad biomes, connected bridges, town spacing, mixed buildings and farm/market lots |
+| `docs/BIOMES.md` | Fourteen wider regions, gradual transitions, groves and named atmosphere |
+| `docs/MICRO_BIOMES.md` | Twenty-eight small habitats, persistent caches and exploration milestones |
+| `docs/BIOME_LANDMARKS.md` | Eight wilderness constructions, supported plots, stories, supplies and wells |
 | `docs/TOWNS_MAGIC.md` | Denser lane neighborhoods, civic charms, roof lights and local customs |
 | `docs/SAVES.md` | Menus, save slots, autosaving, stored state, and recovery |
 | `docs/SANCTUM.md` | Sigil, home travel, saved furniture and placement controls |
@@ -190,7 +206,7 @@ Rendered captures cover the new HUD, sanctum/hearth/return, main and pause menus
 
 ## Assets
 
-Voxel models, the icon, spell icons, sanctum sigil, shader, and synthesized combat sounds were created for this project. Cinzel is distributed under the SIL Open Font License included in `assets/fonts/OFL.txt`. KayKit, Quaternius, and Kenney runtime assets include their CC0 licenses. UI graphics from Kenney's RPG UI Pack and Fantasy UI Borders live under `assets/ui/`. Music by Eric Matyas uses the Soundimage International Public License, with attribution in the main-menu Credits screen and [CREDITS.md](CREDITS.md).
+Voxel models, the icon, spell icons, sanctum sigil, shader, accessory chimes and harmonic hum were created for this project. [Spell and combat sounds](docs/COMBAT_AUDIO.md) use CC0 recordings from rubberduck, JaggedStone and Kenney, with source hashes and conversion records. Cinzel is distributed under the SIL Open Font License included in `assets/fonts/OFL.txt`. KayKit, Quaternius, and Kenney runtime assets include their CC0 licenses. UI graphics from Kenney's RPG UI Pack and Fantasy UI Borders live under `assets/ui/`. Music by Eric Matyas uses the Soundimage International Public License, with attribution in the main-menu Credits screen and [CREDITS.md](CREDITS.md).
 
 `import_assets/` is a staging directory for supplied source packs. Its `.gdignore` keeps raw collections out of Godot's import scan. A selected subset and all nine music recordings are copied to `assets/`, with source paths and hashes in `assets/source_manifest.json`. Run `ruby tools/adopt_assets.rb` to repeat the selection. The original staging files are preserved.
 

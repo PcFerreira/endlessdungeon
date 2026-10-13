@@ -4,29 +4,41 @@ const Bundles = preload("res://scripts/bundle_catalog.gd")
 const Portable = preload("res://scripts/portable_catalog.gd")
 const EnemyLoot = preload("res://scripts/enemy_loot.gd")
 const Text = preload("res://scripts/player_text.gd")
+const Forage = preload("res://scripts/forage_catalog.gd")
+const Edits = preload("res://scripts/content_edits.gd")
 static var definitions: Dictionary = _definitions()
 static var bundles: Dictionary = _bundles()
 static var contexts: Dictionary = _contexts()
 static var policy: Dictionary = _policy()
 static var icon_cache: Dictionary = {}
 
-static func _definitions() -> Dictionary:
+static func _definitions(apply_edits: bool = true) -> Dictionary:
 	var base = JSON.parse_string(FileAccess.get_file_as_string("res://config/items.json"))
 	var result: Dictionary = base.items.duplicate(true)
 	for entry in Bundles.entries("items"):
 		EnemyLoot.apply_rarity(entry)
 		result[entry.id] = entry
+	Portable.asset_items.clear()
 	Portable.extend(result)
+	result.merge(Forage.DATA.items.duplicate(true))
 	for id in result:
 		Text.apply_item(id, result[id])
-	return result
+	return Edits.items(result) if apply_edits else result
+
+static func source_definitions() -> Dictionary:
+	return _definitions(false)
 
 static func for_asset(model_id: String) -> String:
 	return Portable.for_asset(model_id)
 
+static func available(item: Dictionary) -> bool:
+	return not item.is_empty() and item.get("enabled", true) and not item.get("removed", false)
+
 static func _bundles() -> Dictionary:
 	var result := {}
 	for entry in Bundles.entries("items"):
+		if not available(definitions.get(entry.id, entry)):
+			continue
 		if not result.has(entry.source_pack):
 			result[entry.source_pack] = []
 		result[entry.source_pack].append(entry.id)
@@ -34,7 +46,10 @@ static func _bundles() -> Dictionary:
 
 static func _contexts() -> Dictionary:
 	var result := {"enemy": {}, "chest": {}}
-	for entry in Bundles.entries("items"):
+	for entry in Bundles.entries("items") + Edits.data.add_items:
+		entry = definitions.get(entry.id, entry)
+		if not available(entry):
+			continue
 		for source in entry.get("loot_sources", ["enemy", "chest"]):
 			if not result[source].has(entry.source_pack):
 				result[source][entry.source_pack] = []
@@ -61,12 +76,27 @@ static func should_drop_shard(seed_value: int, ordinal: int) -> bool:
 	return _chance(seed_value, ordinal, "shard-chance", float(policy.enemy_shard_chance))
 
 static func _chance(seed_value: int, ordinal: int, seed_namespace: String, probability: float) -> bool:
+	if probability <= 0:
+		return false
+	if probability >= 1:
+		return true
 	var random := RandomNumberGenerator.new()
 	random.seed = hash("%s:%s:%s" % [seed_namespace, seed_value, ordinal])
 	return random.randf() < probability
 
 static func enemy_reward(seed_value: int, ordinal: int, enemy: Dictionary, context: Dictionary) -> String:
-	return EnemyLoot.reward(seed_value, ordinal, enemy, context, definitions) if should_drop(seed_value, ordinal) else ""
+	var chance: float = enemy.get("drops", {}).get("item_chance", policy.enemy_item_chance)
+	return EnemyLoot.reward(seed_value, ordinal, enemy, context, definitions) if _chance(seed_value, ordinal, "item-chance", chance) else ""
+
+static func enemy_shard(seed_value: int, ordinal: int, enemy: Dictionary) -> bool:
+	return _chance(seed_value, ordinal, "shard-chance", float(enemy.get("drops", {}).get("shard_chance", policy.enemy_shard_chance)))
+
+static func enemy_orb(seed_value: int, ordinal: int, enemy: Dictionary) -> String:
+	var rules: Dictionary = enemy.get("drops", {})
+	var mode: String = rules.get("orb_mode", "legacy")
+	if mode == "none" or not _chance(seed_value, ordinal, "orb-chance", float(rules.get("orb_chance", 1))):
+		return ""
+	return ("health" if ordinal % 3 == 0 else "mana") if mode == "legacy" else mode
 
 static func loot(seed_value: int, ordinal: int, source: String = "any") -> String:
 	# Visit every source bundle, then every member, without consuming combat RNG.
@@ -74,7 +104,7 @@ static func loot(seed_value: int, ordinal: int, source: String = "any") -> Strin
 	var packs: Array = eligible.keys()
 	packs.sort()
 	if packs.is_empty():
-		return "ember_shard"
+		return "ember_shard" if available(definitions.get("ember_shard", {})) else ""
 	var step := maxi(0, ordinal - 1)
 	var pack: String = packs[posmod(step + seed_value, packs.size())]
 	var pool: Array = eligible[pack]
@@ -85,9 +115,12 @@ static func icon(item: Dictionary) -> Texture2D:
 	var key: String = item.icon + str(item.get("icon_region", []))
 	if not icon_cache.has(key):
 		var texture: Texture2D
-		if item.icon == "res://assets/items/gold_coin.svg":
+		if item.icon.get_extension().to_lower() == "svg":
 			var image := Image.new()
-			assert(image.load_svg_from_string(FileAccess.get_file_as_string(item.icon)) == OK)
+			var load_error := image.load_svg_from_string(FileAccess.get_file_as_string(item.icon))
+			if load_error != OK:
+				push_error("Cannot load item icon %s: %s" % [item.icon, load_error])
+				return null
 			texture = ImageTexture.create_from_image(image)
 		else:
 			texture = load(item.icon)

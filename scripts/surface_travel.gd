@@ -1,6 +1,7 @@
 extends RefCounted
 
 const Planner = preload("res://scripts/site_planner.gd")
+const IntegerText = preload("res://scripts/integer_text.gd")
 
 static func identity(from_id: String, to_id: String, slot: int) -> String:
 	return "road5:%s:%s:%s:%s:%s" % [from_id.split(":")[1], from_id.split(":")[2], to_id.split(":")[1], to_id.split(":")[2], slot]
@@ -9,8 +10,11 @@ static func fields(id: String) -> Dictionary:
 	var values := id.split(":")
 	if values.size() != 6 or values[0] != "road5":
 		return {}
+	for value in values.slice(1, 5):
+		if not IntegerText.bounded(value, 9600000.0 / Planner.DATA.region_size):
+			return {}
 	for value in values.slice(1):
-		if not value.is_valid_int() or str(value.to_int()) != value:
+		if not IntegerText.valid(value) or str(value.to_int()) != value:
 			return {}
 	var first := Vector2i(values[1].to_int(), values[2].to_int())
 	var last := Vector2i(values[3].to_int(), values[4].to_int())
@@ -57,6 +61,21 @@ static func length(points: Array) -> float:
 	for index in range(1, points.size()):
 		result += points[index - 1].distance_to(points[index])
 	return result
+
+static func projected_distance(points: Array, point: Vector2) -> float:
+	var closest := INF
+	var distance := 0.0
+	var traveled := 0.0
+	for index in range(1,points.size()):
+		var from: Vector2 = points[index - 1]
+		var to: Vector2 = points[index]
+		var projected := Geometry2D.get_closest_point_to_segment(point,from,to)
+		var delta := point.distance_squared_to(projected)
+		if delta < closest:
+			closest = delta
+			distance = traveled + from.distance_to(projected)
+		traveled += from.distance_to(to)
+	return distance
 
 static func at_distance(points: Array, distance: float, reverse: bool) -> Dictionary:
 	var total := length(points)

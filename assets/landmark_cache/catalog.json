@@ -1,0 +1,39 @@
+{
+	"build_inputs": {
+		"res://assets/imported/catalog.json": "067570b3052453f3709d58975cd464277667b0d1e3561f64651a2d1f19e61670",
+		"res://config/environment_styles.json": "fba6d73c114f722d81359625507dcec12169c7defb406155586c2a5d53ba263c",
+		"res://config/surface_locations.json": "c6637185803be0c59c7f886d15d7b9075f15055ec5ee130dcd3d4017ab5f9c43",
+		"res://config/town_architecture.json": "5992a7575775082e3daa335ad7cf1a0d11824e9c8101435ad46291de65973bdc",
+		"res://scripts/asset_registry.gd": "8df8d2863e069a0b76197ff03485dd5f1bd93ed0e60c50d52145930e0de5b540",
+		"res://scripts/environment_styles.gd": "8e79fd5ab98c7d4c77e3e9c84d935ab4b7a904f1380561aab1391e40317f0b75",
+		"res://scripts/landmark_cache.gd": "0a834309eb8ba6d575adaf73aeb2c28f554630cecc164e9985a7bc45627409d1",
+		"res://scripts/scenery.gd": "e55153931030c439a25ab32d01657dc50e1d7f23ea96c6f5937f0a40286f7872",
+		"res://scripts/surface_location_view.gd": "85920ce4a989f560d0c6c26c8d6fed2bd2d28082d9ef9af367c4f3102b69b955",
+		"res://scripts/town_architecture.gd": "e92091a1886b65c161d6ec0639c172dcd75dc822e7a4786384b787c7e342163d",
+		"res://scripts/town_model_voxelizer.gd": "7758266e4957ff54a397824d1b62720bdba659d9020fd4610deb990b1f7a2d54",
+		"res://scripts/voxel_kit.gd": "825d80c1d7cbab4447136d973c846b4203b797073002376abebfb867a6636d0a",
+		"res://tools/build_landmark_cache.gd": "942a4f9223ceadda4e1d8749abc29e825a4c9b19d888d67f4cb6a24306f22454"
+	},
+	"runtime_inputs": {
+		"res://assets/imported/catalog.json": "067570b3052453f3709d58975cd464277667b0d1e3561f64651a2d1f19e61670",
+		"res://config/environment_styles.json": "fba6d73c114f722d81359625507dcec12169c7defb406155586c2a5d53ba263c",
+		"res://config/town_architecture.json": "5992a7575775082e3daa335ad7cf1a0d11824e9c8101435ad46291de65973bdc"
+	},
+	"scene_hashes": {
+		"res://assets/landmark_cache/388dd4bfe99c63cc7066c48fb60d1aba12e9070eb1db78877e12908cea8f753c.scn": "27547f636a98c9dd9cda0e2149130cfa4e1b6b898d3faa855ec7e6bba824658c",
+		"res://assets/landmark_cache/4656560cda1feb0e72981d96a24ec083bb17d1620640ec397cc5a9c698fa82da.scn": "9570f1e0ba195494cc0515b8c69f724ab062f48de9a64378cfe4ce7e77297df7",
+		"res://assets/landmark_cache/5d2225ab46732d213b41b2b05cb30f16424302242f0abb51cba5d408e60b89bc.scn": "05236af22681648440831600faeed3e30fe75bbe6de4ed09cf732d27fb0c153a",
+		"res://assets/landmark_cache/6f6217e1845cc4a9d76ad0f2f93e4813aff682c5fdd8e62d0845aa88c3aa58e3.scn": "71e13ac72434aa9f00bd0cf5e5b4d8454c8ee66eb35d4edd082fceceda554045",
+		"res://assets/landmark_cache/79815d8de81d8e49b39ed10984290047d15a4ab0a9fb8fb4eebc50d0baa80d15.scn": "e618b78aa0515170fcaf0e1d133e386ebf45b024afd0c289d286f2c6ad59c349",
+		"res://assets/landmark_cache/a70fe46f72aba8fc6cfac49f132ada2f6abb9bb3f1284d557eb98e35ec9731d3.scn": "99a03e3ab915ce72fd3bfea6296e6badfa9774f2e83fcb044a381f443333f540"
+	},
+	"scenes": {
+		"388dd4bfe99c63cc7066c48fb60d1aba12e9070eb1db78877e12908cea8f753c": "res://assets/landmark_cache/388dd4bfe99c63cc7066c48fb60d1aba12e9070eb1db78877e12908cea8f753c.scn",
+		"4656560cda1feb0e72981d96a24ec083bb17d1620640ec397cc5a9c698fa82da": "res://assets/landmark_cache/4656560cda1feb0e72981d96a24ec083bb17d1620640ec397cc5a9c698fa82da.scn",
+		"5d2225ab46732d213b41b2b05cb30f16424302242f0abb51cba5d408e60b89bc": "res://assets/landmark_cache/5d2225ab46732d213b41b2b05cb30f16424302242f0abb51cba5d408e60b89bc.scn",
+		"6f6217e1845cc4a9d76ad0f2f93e4813aff682c5fdd8e62d0845aa88c3aa58e3": "res://assets/landmark_cache/6f6217e1845cc4a9d76ad0f2f93e4813aff682c5fdd8e62d0845aa88c3aa58e3.scn",
+		"79815d8de81d8e49b39ed10984290047d15a4ab0a9fb8fb4eebc50d0baa80d15": "res://assets/landmark_cache/79815d8de81d8e49b39ed10984290047d15a4ab0a9fb8fb4eebc50d0baa80d15.scn",
+		"a70fe46f72aba8fc6cfac49f132ada2f6abb9bb3f1284d557eb98e35ec9731d3": "res://assets/landmark_cache/a70fe46f72aba8fc6cfac49f132ada2f6abb9bb3f1284d557eb98e35ec9731d3.scn"
+	},
+	"version": 1
+}

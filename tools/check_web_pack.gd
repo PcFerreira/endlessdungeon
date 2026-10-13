@@ -33,6 +33,11 @@ func _initialize() -> void:
 	for path in ["res://assets/items/gold_coin.svg", "res://assets/fonts/OFL.txt"]:
 		if not FileAccess.file_exists(path):
 			failures.append("Missing raw icon or font license: " + path)
+	if FileAccess.file_exists("res://assets/render_cache/catalog.json"):
+		var cache = JSON.parse_string(FileAccess.get_file_as_string("res://assets/render_cache/catalog.json"))
+		for path in cache.get("scenes", {}).values():
+			if not ResourceLoader.exists(path):
+				failures.append("Missing baked render body: " + path)
 	for directory in ["res://import_assets", "res://server", "res://tests", "res://tools", "res://.tools", "res://artifacts", "res://addons/web_raw_files"]:
 		if DirAccess.dir_exists_absolute(directory):
 			failures.append("Development directory exported: " + directory)

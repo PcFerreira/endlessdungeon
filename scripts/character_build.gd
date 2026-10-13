@@ -20,7 +20,22 @@ const ABILITIES := {
 	"whirlwind": {"name": "Whirlwind", "short": "Whirl", "description": "Spin your blade through every nearby enemy.", "kind": "area", "cost": 30.0, "recharge": 5.0, "range": 0.0, "damage": 46.0, "radius": 3.0, "color": Color("ead5ad")},
 	"second_wind": {"name": "Second Wind", "short": "Wind", "description": "Catch your breath and restore 48 vitality.", "kind": "heal", "cost": 25.0, "recharge": 10.0, "range": 0.0, "damage": 48.0, "radius": 0.0, "color": Color("99d3ae")},
 	"execute": {"name": "Execution", "short": "Finish", "description": "A heavy sword blow. Double damage below half vitality.", "kind": "melee", "cost": 25.0, "recharge": 3.0, "range": 1.8, "damage": 48.0, "radius": 0.0, "color": Color("f3a1a1")},
-	"runeblade": {"name": "Runeblade", "short": "Rune", "description": "An enchanted sword blow that slows your target.", "kind": "melee", "cost": 22.0, "recharge": 2.5, "range": 1.8, "damage": 52.0, "radius": 0.0, "color": Color("b49ded")}
+	"runeblade": {"name": "Runeblade", "short": "Rune", "description": "An enchanted sword blow that slows your target.", "kind": "melee", "cost": 22.0, "recharge": 2.5, "range": 1.8, "damage": 52.0, "radius": 0.0, "color": Color("b49ded")},
+	"ice_lance": {"name": "Ice Lance", "short": "Ice", "description": "Pierce your selected enemy with ice and freeze it for 2.2 seconds.", "kind": "expanded", "cost": 18.0, "recharge": 3.0, "range": 7.5, "damage": 34.0, "radius": 0.0, "color": Color("83ddff"), "freeze": 2.2},
+	"chain_lightning": {"name": "Chain Lightning", "short": "Chain", "description": "Lightning jumps from your selected enemy to up to two nearby foes.", "kind": "expanded", "cost": 32.0, "recharge": 5.0, "range": 7.5, "damage": 34.0, "radius": 3.0, "color": Color("ced5ff"), "chains": 3},
+	"lantern_familiar": {"name": "Lantern Familiar", "short": "Lantern", "description": "Summon a flying lantern that follows you and fires at enemies for 24 seconds.", "kind": "summon", "cost": 35.0, "recharge": 26.0, "range": 0.0, "damage": 12.0, "radius": 0.0, "color": Color("ffc979"), "duration": 24.0},
+	"quake_strike": {"name": "Quake Strike", "short": "Quake", "description": "Strike the earth, damaging nearby enemies and stunning them for one second.", "kind": "expanded", "cost": 26.0, "recharge": 6.0, "range": 0.0, "damage": 38.0, "radius": 2.6, "color": Color("dfac78"), "stun": 1.0},
+	"aegis": {"name": "Aegis", "short": "Aegis", "description": "Raise a barrier that absorbs 45 damage and lasts up to eight seconds.", "kind": "expanded", "cost": 28.0, "recharge": 12.0, "range": 0.0, "damage": 0.0, "radius": 0.0, "color": Color("9bd5ef"), "barrier": 45.0, "duration": 8.0},
+	"ancestral_warden": {"name": "Ancestral Warden", "short": "Warden", "description": "Summon an ancestral shield bearer to fight beside you for 22 seconds.", "kind": "summon", "cost": 40.0, "recharge": 28.0, "range": 0.0, "damage": 16.0, "radius": 0.0, "color": Color("b2e6dd"), "duration": 22.0},
+	"cinder_brand": {"name": "Cinder Brand", "short": "Cinder", "description": "Brand your selected enemy with fire, then burn it for six damage per second for five seconds.", "kind": "expanded", "cost": 24.0, "recharge": 4.0, "range": 7.5, "damage": 24.0, "radius": 0.0, "color": Color("ff9861"), "burn": 6.0, "duration": 5.0},
+	"siphon_touch": {"name": "Siphon Touch", "short": "Siphon", "description": "Drain a nearby enemy and restore vitality equal to 45% of the damage dealt.", "kind": "expanded", "cost": 24.0, "recharge": 5.0, "range": 3.0, "damage": 28.0, "radius": 0.0, "color": Color("e3a2eb"), "heal_ratio": .45},
+	"runic_blade": {"name": "Runic Blade", "short": "Blade", "description": "Summon an enchanted blade that follows you and attacks enemies for 22 seconds.", "kind": "summon", "cost": 32.0, "recharge": 24.0, "range": 0.0, "damage": 10.0, "radius": 0.0, "color": Color("bea1ff"), "duration": 22.0}
+}
+const NEW_ABILITIES := ["ice_lance", "chain_lightning", "lantern_familiar", "quake_strike", "aegis", "ancestral_warden", "cinder_brand", "siphon_touch", "runic_blade"]
+const CLASS_ADDITIONS := {
+	"mage": ["ice_lance", "chain_lightning", "lantern_familiar"],
+	"sword": ["quake_strike", "aegis", "ancestral_warden"],
+	"spellsword": ["cinder_brand", "siphon_touch", "runic_blade"]
 }
 var class_id := "mage"
 var skill_points := 0
@@ -40,7 +55,7 @@ func reset(id: String) -> void:
 
 func tree() -> Array[Dictionary]:
 	var data: Dictionary = CLASSES[class_id]
-	return [
+	var nodes: Array[Dictionary] = [
 		{"id": "power", "name": "Battle Mastery" if class_id == "sword" else "Runic Power", "description": "+15% ability damage per rank", "max": 3, "parent": "", "ability": ""},
 		{"id": "reserve", "name": "Deep Reserves", "description": "+20 resource and +2 regeneration per rank", "max": 2, "parent": "", "ability": ""},
 		{"id": "vitality", "name": "Enduring Soul", "description": "+20 maximum vitality per rank", "max": 2, "parent": "", "ability": ""},
@@ -48,6 +63,10 @@ func tree() -> Array[Dictionary]:
 		{"id": "utility", "name": ABILITIES[data.utility].name, "description": ABILITIES[data.utility].description, "max": 1, "parent": "reserve", "ability": data.utility},
 		{"id": "advanced", "name": ABILITIES[data.advanced].name, "description": ABILITIES[data.advanced].description, "max": 1, "parent": "specialty", "ability": data.advanced}
 	]
+	for index in range(3):
+		var spell: String = CLASS_ADDITIONS[class_id][index]
+		nodes.append({"id": spell, "name": ABILITIES[spell].name, "description": ABILITIES[spell].description, "max": 1, "parent": ["power", "reserve", "specialty"][index], "ability": spell})
+	return nodes
 
 func can_learn(id: String) -> bool:
 	for node in tree():

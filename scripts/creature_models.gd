@@ -3,6 +3,7 @@ extends RefCounted
 const Styles = preload("res://scripts/environment_styles.gd")
 const Registry = preload("res://scripts/asset_registry.gd")
 const AnimatedStyle = preload("res://scripts/animated_model_style.gd")
+const Cache = preload("res://scripts/render_cache.gd")
 var registry := Registry.new()
 var styles := Styles.new(registry)
 var renderer := AnimatedStyle.new()
@@ -23,6 +24,10 @@ func instantiate(source_id: String, biome: int) -> Node3D:
 	if family.is_empty() or not styles.creature_sources.has(actual_id):
 		error = "Unclassified creature source: " + actual_id
 		return null
+	var cached := Cache.scene("creature", actual_id, family)
+	if cached != null:
+		cached.set_meta("source_asset", source_id)
+		return cached
 	var source := registry.instantiate(actual_id)
 	if source == null:
 		error = registry.error
@@ -37,4 +42,10 @@ func instantiate(source_id: String, biome: int) -> Node3D:
 	source.set_meta("visual_family", family)
 	source.set_meta("representation", "direct" if direct else source.get_meta("representation"))
 	source.set_meta("render_asset", actual_id if direct else "native_creature:%s:%s" % [family, actual_id])
+	Cache.remember("creature", actual_id, family, source)
 	return source
+
+func prepared(source_id: String, biome: int) -> bool:
+	var family := styles.family_for(biome)
+	var actual_id: String = data.sprite_presentations.get(source_id, {}).get(family, source_id)
+	return Cache.ready("creature", actual_id, family)

@@ -57,6 +57,17 @@ func show_form() -> void:
 		classes.set_item_metadata(classes.item_count - 1, id)
 	classes.tooltip_text = "Starting class for a new account"
 	box.add_child(classes)
+	classes.hide()
+	var choices: GridContainer = client.game.interface.IconGrid.grid(box,3)
+	var group := ButtonGroup.new()
+	var index := 0
+	for id in client.game.CharacterBuild.CLASSES:
+		var data: Dictionary = client.game.CharacterBuild.CLASSES[id]
+		var choice: Button = client.game.interface.IconGrid.tile(client.game.interface,choices,data.name,load("res://assets/spells/%s.svg" % data.starter[0]),classes.select.bind(index),Vector2(170,100))
+		choice.toggle_mode = true
+		choice.button_group = group
+		choice.button_pressed = index == classes.selected
+		index += 1
 	var actions := HBoxContainer.new()
 	box.add_child(actions)
 	button(actions, "Sign in", submit.bind("login"))

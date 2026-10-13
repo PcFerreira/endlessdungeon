@@ -53,7 +53,7 @@ func _command(command: Dictionary) -> void:
 		"init":
 			seed_value = int(command.seed)
 			edition = int(command.generator_version)
-			if not edition in [4, 5, 6]:
+			if not edition in [4, 5, 6, 7]:
 				_reply(command, {"error": "Unsupported generation edition"})
 				return
 			initialized = true

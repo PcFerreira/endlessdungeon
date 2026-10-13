@@ -82,6 +82,8 @@ func target() -> Dictionary:
 	if game.layer == "overworld":
 		var city: Dictionary = game.world.region_at(Vector2i(game.player_point.round())).city
 		candidates.append_array(game.life.residents())
+		if game.dimension.active:
+			candidates.append_array(game.population.actors.values())
 		candidates.append_array(city.get("books", []))
 		for site in game.world.region_at(Vector2i(game.player_point.round())).get("locations", []):
 			candidates.append_array(site.books)
@@ -138,6 +140,20 @@ func _safe() -> bool:
 func open_dialogue(resident: Dictionary) -> bool:
 	if not game.offline_actions_allowed():
 		return false
+	if resident.has("dimension_id"):
+		if not game.population.enabled() or not game.population.actors.has(resident.id) or not _safe():
+			return false
+		speaker = resident
+		farewell = false
+		return_state = game.state
+		_choose_line("greeting")
+		met_speakers[speaker.id] = true
+		game._auto_save()
+		game.state = "dialogue"
+		game.rotating_camera = false
+		game.population.greet(speaker.id)
+		_show_dialogue()
+		return true
 	if resident.get("role") == "guard" and not game.city_law.wanted(resident.city_id).is_empty():
 		return game.city_law.demand(resident)
 	if not _safe() or (not Lore.ROLE_NAMES.has(resident.get("role", "")) and game.life.activity.role(resident.get("role", "")).is_empty()):
@@ -158,6 +174,12 @@ func open_dialogue(resident: Dictionary) -> bool:
 	return true
 
 func _choose_line(event: String) -> void:
+	if speaker.has("dimension_id"):
+		dialogue_text = game.population.dialogue(speaker, event)
+		return
+	if speaker.get("roaming",false):
+		dialogue_text = game.life.roamers.dialogue(speaker,event,hash("%s:%s:%s" % [speaker.id,event,game.life.tick / 480]))
+		return
 	if speaker.get("traveling", false):
 		dialogue_text = game.life.activity.dialogue(speaker, event, hash("%s:%s:%s" % [speaker.id, event, game.life.tick / 480]))
 		return
@@ -284,23 +306,41 @@ func _text(box: VBoxContainer, text: String, height: float) -> void:
 	scroll.add_child(label)
 
 func _show_dialogue() -> void:
+	if speaker.has("dimension_id"):
+		var realm_box := _panel(speaker.name, speaker.role_label + " / " + speaker.city_name)
+		_text(realm_box, dialogue_text, 125)
+		if not farewell:
+			game.interface._button(realm_box, "Ask about this place", talk.bind("topic_authored"), Vector2(0,36))
+			game.interface._button(realm_box, "Farewell", talk.bind("farewell"), Vector2(0,36))
+		game.interface._button(realm_box, "Return  [Esc]", close_lore, Vector2(0,36))
+		return
 	var box := _panel(_role_name(speaker), speaker.city_name + " / Endless World")
 	_text(box, dialogue_text, 125)
+	if speaker.get("roaming",false):
+		if not farewell:
+			game.interface._button(box,"Nearby area",talk.bind("topic_route"),Vector2(0,36))
+			game.interface._button(box,"Your work",talk.bind("topic_work"),Vector2(0,36))
+			if not speaker.get("wonder_trade_profile","").is_empty():
+				game.interface._button(box,"Trade",_trade_wonder,Vector2(0,36))
+			game.interface._button(box,"Farewell",talk.bind("farewell"),Vector2(0,36))
+		game.interface._button(box,"Return  [Esc]",close_lore,Vector2(0,36))
+		return
 	if speaker.role == "merchant":
 		game.interface._label(box, "Coins: %s / Ember shards: %s" % [game.inventory.count("gold_coin") - game.inventory.stolen_count("gold_coin"), game.inventory.count("ember_shard") - game.inventory.stolen_count("ember_shard")], 14, Color("c3a576"))
 	if not farewell:
 		if speaker.get("traveling", false):
 			game.interface._button(box, "Travel route" if speaker.role != "guard" else "The watch", talk.bind("topic_route"), Vector2(0,36))
+			var offers: GridContainer = game.interface.IconGrid.grid(box,3)
 			for offer in game.life.activity.role(speaker.role).get("offers", []):
 				if game.inventory.ITEMS.has(offer.item):
-					var row := HBoxContainer.new()
-					row.add_theme_constant_override("separation",8)
-					box.add_child(row)
-					var shards: Button = game.interface._button(row, "%s / %s shards" % [game.inventory.ITEMS[offer.item].name, int(offer.cost)], _trade.bind(offer.item,"ember_shard"), Vector2(0,36))
-					shards.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+					var column: VBoxContainer = game.interface._vbox(offers,4)
+					game.interface.IconGrid.item(game.interface,column,offer.item,Callable())
+					var shards: Button = game.interface._button(column, "%s shards" % int(offer.cost), _trade.bind(offer.item,"ember_shard"), Vector2(132,30))
+					shards.disabled = game.inventory.count("ember_shard") - game.inventory.stolen_count("ember_shard") < int(offer.cost)
 					if offer.has("coin_cost") and game.inventory.ITEMS.has("gold_coin"):
-						var coins: Button = game.interface._button(row, "%s / %s coins" % [game.inventory.ITEMS[offer.item].name, int(offer.coin_cost)], _trade.bind(offer.item,"gold_coin"), Vector2(0,36))
-						coins.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+						var coins: Button = game.interface._button(column, "%s coins" % int(offer.coin_cost), _trade.bind(offer.item,"gold_coin"), Vector2(132,30))
+						coins.disabled = game.inventory.count("gold_coin") - game.inventory.stolen_count("gold_coin") < int(offer.coin_cost)
+		game.interface.collections(box,3,176)
 		if game.exploration.has_local_history(speaker):
 			game.interface._button(box, "Local history", game.exploration.read_witness.bind(speaker), Vector2(0,36))
 		if not game.exploration.quests.for_resident(speaker).is_empty():
@@ -314,6 +354,8 @@ func _show_dialogue() -> void:
 				continue
 			game.interface._button(box, event.trim_prefix("topic_").replace("_", " ").capitalize(), talk.bind(event), Vector2(0,36))
 		game.interface._button(box, "Farewell", talk.bind("farewell"), Vector2(0,36))
+	if box.has_meta("collection_columns"):
+		box.remove_meta("collection_columns")
 	game.interface._button(box, "Return  [Esc]", close_lore, Vector2(0,36))
 
 func town_charm() -> void:
@@ -331,7 +373,15 @@ func town_charm() -> void:
 	game.interface._button(box,"Return  [Esc]",close_lore,Vector2(0,36))
 
 func _role_name(resident: Dictionary) -> String:
+	if resident.get("roaming",false):
+		return resident.roaming_name
 	return Lore.ROLE_NAMES.get(resident.role, game.life.activity.role(resident.role).get("name", "Traveler"))
+
+func _trade_wonder() -> void:
+	if game.state != "dialogue" or farewell or not speaker.get("roaming",false) or speaker.get("wonder_trade_profile","").is_empty():
+		return
+	if game.stores.open_wonder(speaker):
+		_clear_overlay()
 
 func _trade(item: String, currency: String = "ember_shard") -> void:
 	if not game.offline_actions_allowed():
@@ -357,6 +407,7 @@ func _show_journal() -> void:
 	var entries := VBoxContainer.new()
 	entries.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.add_child(entries)
+	game.interface.collections(entries,4,136)
 	if read_books.is_empty():
 		game.interface._label(entries, "Read a book in a town or ruin to keep it here.", 16)
 	for id in read_books:

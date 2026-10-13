@@ -73,7 +73,7 @@ static func _mixture(weights: Dictionary) -> Array[Dictionary]:
 			result.append({"id": id, "weight": float(units[id]) / 16})
 	return result
 
-static func _weights(closest: Array, seed_value: int, heat: float, rain: float, coast: bool) -> Array[Dictionary]:
+static func _weights(closest: Array, seed_value: int, heat: float, rain: float, coast: float) -> Array[Dictionary]:
 	var width: float = DATA.climate_transition
 	var cold := 1 - smoothstep(-.22 - width, -.22 + width, heat)
 	var hot := smoothstep(.23 - width, .23 + width, heat)
@@ -95,11 +95,12 @@ static func _weights(closest: Array, seed_value: int, heat: float, rain: float, 
 		for weight in weights.values():
 			total += weight
 		for id in weights:
-			weights[id] *= .25 / total
-		weights["coast"] = .75
+			weights[id] *= (1 - .75 * coast) / total
+		weights["coast"] = .75 * coast
 	return _mixture(weights)
 
-static func sample(cell: Vector2i, climate: int, seed_value: int, heat: float, rain: float, coast: bool = false) -> Dictionary:
+static func sample(cell: Vector2i, climate: int, seed_value: int, heat: float, rain: float, coast = 0.0) -> Dictionary:
+	var coast_strength := clampf(float(coast), 0, 1)
 	var size: int = DATA.zone_size
 	var coordinate := Vector2i(floori(float(cell.x) / size), floori(float(cell.y) / size))
 	var closest := []
@@ -130,11 +131,15 @@ static func sample(cell: Vector2i, climate: int, seed_value: int, heat: float, r
 		if transition > blend:
 			secondary = _profile(closest[0].coordinate, alternative, seed_value)
 			blend = transition
-	if coast:
+	var coastal := .75 * coast_strength
+	if coastal >= .5:
 		secondary = id
 		id = "coast"
-		blend = .25
-	return {"biome": climate, "biome_id": id, "biome_secondary": secondary, "biome_blend": snappedf(blend, 1.0 / 16), "biome_mix": _weights(closest, seed_value, heat, rain, coast)}
+		blend = 1 - coastal
+	elif coastal > blend:
+		secondary = "coast"
+		blend = coastal
+	return {"biome": climate, "biome_id": id, "biome_secondary": secondary, "biome_blend": snappedf(blend, 1.0 / 16), "biome_mix": _weights(closest, seed_value, heat, rain, coast_strength)}
 
 static func valid_mix(value) -> bool:
 	if not value is Array or value.is_empty() or value.size() > 8:

@@ -26,9 +26,11 @@ func _initialize() -> void:
 	var collision: Array = city.obstacles.duplicate()
 	var floor: Dictionary = city.tiles.duplicate()
 	var identity: Dictionary = city.city_record()
+	assert(identity.hub_gates.size() == 2 and identity.hub_gates[0].kind == "sanctum" and identity.hub_gates[1].destination_id == "morrowmere")
 	assert(city.set_theme("arcane") and city.tiles == floor and city.obstacles == collision)
 	assert(city.city_record().id == identity.id and city.city_record().houses == identity.houses and city.city_record().outdoor_lots == identity.outdoor_lots, "Season changes must preserve permanent building/store identities")
 	assert(not city.set_theme("unknown") and city.theme == "arcane")
+	assert(city.city_record().hub_gates == identity.hub_gates, "Seasonal changes must preserve the central portal destinations and positions")
 	for edition in [4, 6]:
 		var provider = load("res://scripts/hub_world.gd").new()
 		provider.generate(12345, edition)
@@ -51,6 +53,7 @@ func _initialize() -> void:
 				regions.append(Codec.encode(region))
 		assert(remote.ingest(JSON.parse_string(JSON.stringify({"type": "chunks", "revision": "hub-fixture", "chunks": chunks, "regions": regions}))))
 		assert(remote.walkable(city.spawn) and remote.ground_height(city.spawn) == provider.ground_height(city.spawn))
+		assert(remote.region_at(city.center).city.hub_gates == provider.hub_city().hub_gates, "Online gate inscriptions must use received authoritative portal records")
 		for cell in provider.cells:
 			assert(remote.cell_info(cell) == provider.cell_info(cell), "The online lobby must render server-authored island and sky cells")
 	print("PASS: floating arrival, connected guild/market/dock approaches, sky collision, stable seasonal identity, unchanged natural terrain and exact remote hub chunks")

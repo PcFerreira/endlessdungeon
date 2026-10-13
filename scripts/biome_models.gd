@@ -8,7 +8,8 @@ var templates := {}
 var tinted_materials := {}
 var error := ""
 const CACHE_LIMIT := 96
-const NATIVE_ROLES := ["forest_understory", "jungle_understory", "reeds", "basalt", "lava_crack", "giant_mushroom"]
+const CROWN_ROLES := ["dense_crown", "jungle_crown"]
+const NATIVE_ROLES := ["forest_understory", "jungle_understory", "reeds", "basalt", "lava_crack", "giant_mushroom", "dense_crown", "jungle_crown"]
 
 func _init(path: String = "res://config/biome_art.json") -> void:
 	var document = JSON.parse_string(FileAccess.get_file_as_string(path))
@@ -33,7 +34,16 @@ static func valid(document) -> bool:
 		for dimension in ["width", "height"]:
 			if not (profile.get(dimension) is int or profile.get(dimension) is float) or not is_finite(profile[dimension]) or profile[dimension] <= 0:
 				return false
-		if profile.width > .95 or profile.height > 3.5:
+		if role in CROWN_ROLES:
+			var minimum_height := 4.5 if role == "jungle_crown" else 4.2
+			if not profile.get("native", false) or profile.width < 2.5 or profile.width > 3.4 or profile.height < minimum_height or profile.height > 4.8:
+				return false
+			for dimension in ["clearance", "trunk_width"]:
+				if not (profile.get(dimension) is int or profile.get(dimension) is float) or not is_finite(profile[dimension]):
+					return false
+			if profile.clearance != 2.6 or profile.trunk_width <= 0 or profile.trunk_width > .95:
+				return false
+		elif profile.width > .95 or profile.height > 3.5:
 			return false
 		if profile.get("native", false):
 			if role not in NATIVE_ROLES or not profile.get("colors") is Array or profile.colors.size() != 3 or not profile.colors.all(func(value): return value is String and Color.html_is_valid(value)):
@@ -84,6 +94,9 @@ func create(role: String, biome: int, seed_value: int) -> Node3D:
 			error = items.error
 			return null
 		fitted.set_meta("biome_role", role)
+		if role in CROWN_ROLES:
+			fitted.set_meta("overhang_clearance", profile.clearance)
+			fitted.set_meta("occupied_width", profile.trunk_width)
 		if templates.size() >= CACHE_LIMIT:
 			var oldest: String = templates.keys()[0]
 			templates[oldest].free()
@@ -95,6 +108,8 @@ func _native(role: String, family: String, palette: Array, variant: int) -> Node
 	var root := Node3D.new()
 	var colors := palette.map(func(value): return Color(value))
 	match role:
+		"dense_crown", "jungle_crown":
+			_crown(root, family, colors, variant, role == "jungle_crown")
 		"forest_understory":
 			_piece(root, family, Vector3(.08, .38, .08), Vector3(0, .19, 0), colors[0])
 			for tier in range(3):
@@ -152,6 +167,30 @@ func _native(role: String, family: String, palette: Array, variant: int) -> Node
 				material.emission_energy_multiplier = .7
 				crack.material_override = material
 	return root
+
+func _crown(root: Node3D, family: String, colors: Array, variant: int, jungle: bool) -> void:
+	var trunk_height := 3.35 if jungle else 3.25
+	_piece(root, family, Vector3(.34, trunk_height, .34), Vector3(0, trunk_height * .5, 0), colors[0], true).set_meta("biome_part", "trunk")
+	if jungle:
+		for tier in range(2):
+			for index in range(6):
+				var angle := index * TAU / 6 + tier * .45 + variant * .12
+				var reach := .62 if tier == 0 else .38
+				var point := Vector3(sin(angle) * reach, 3.08 + tier * .67 + index % 2 * .045, cos(angle) * reach)
+				var leaf := _piece(root, family, Vector3(.70 + variant * .025, .32, 1.52 - tier * .20), point, colors[1 + index % 2], true)
+				leaf.rotation.y = angle
+				leaf.set_meta("biome_part", "crown")
+		_piece(root, family, Vector3(.78, .50, .78), Vector3(0, 4.25, 0), colors[2], true).set_meta("biome_part", "crown")
+	else:
+		for tier in range(3):
+			var width: float = [3.0, 2.4, 1.65][tier]
+			var height := .50 if tier == 2 else .55
+			var elevation: float = [2.95, 3.45, 3.95][tier]
+			var offset := (variant - 1) * .10 if tier > 0 else 0.0
+			_piece(root, family, Vector3(width, height, width * .70), Vector3(offset, elevation, 0), colors[1 + (tier + variant) % 2], true).set_meta("biome_part", "crown")
+			for side in [-1, 1]:
+				var lobe := _piece(root, family, Vector3(width * .60, height * .86, width * .60), Vector3(offset + side * .06 * variant, elevation - .025, side * width * .20), colors[1 + (tier + side + variant + 4) % 2], true)
+				lobe.set_meta("biome_part", "crown")
 
 func _piece(parent: Node3D, family: String, size: Vector3, point: Vector3, color: Color, round_form: bool = false) -> MeshInstance3D:
 	var part := Voxels.cube(size, color)

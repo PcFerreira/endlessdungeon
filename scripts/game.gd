@@ -5,6 +5,8 @@ const DungeonView = preload("res://scripts/dungeon_view.gd")
 const World = preload("res://scripts/world.gd")
 const SurfaceLocations = preload("res://scripts/surface_locations.gd")
 const WorldView = preload("res://scripts/world_view.gd")
+const StreamingData = preload("res://scripts/streaming_data.gd")
+const RenderWarmup = preload("res://scripts/render_warmup.gd")
 const Voxels = preload("res://scripts/voxel_kit.gd")
 const Interface = preload("res://scripts/interface.gd")
 const Soundscape = preload("res://scripts/soundscape.gd")
@@ -28,16 +30,27 @@ var exploration := Exploration.new()
 const Areas = preload("res://scripts/area_catalog.gd")
 const EnemyCatalog = preload("res://scripts/enemy_catalog.gd")
 const EnemyModels = preload("res://scripts/enemy_models.gd")
+const MonsterMotion = preload("res://scripts/monster_motion.gd")
+const SpellEffects = preload("res://scripts/spell_effects.gd")
+const CombatSummons = preload("res://scripts/combat_summons.gd")
+var spell_effects := SpellEffects.new()
+var summons := CombatSummons.new()
 const Interiors = preload("res://scripts/interiors.gd")
 const InteriorArea = preload("res://scripts/interior_area.gd")
 var interiors := Interiors.new()
 const Stores = preload("res://scripts/stores.gd")
 var stores := Stores.new()
+const Foraging = preload("res://scripts/foraging.gd")
+var foraging := Foraging.new()
 const WorldLife = preload("res://scripts/world_life.gd")
 const WorldLifeView = preload("res://scripts/world_life_view.gd")
 const OnlineClient = preload("res://scripts/online_client.gd")
 const FloatingHub = preload("res://scripts/floating_hub.gd")
 var floating_hub := FloatingHub.new()
+const DimensionTravel = preload("res://scripts/dimension_travel.gd")
+var dimension := DimensionTravel.new()
+const DimensionPopulation = preload("res://scripts/dimension_population.gd")
+var population := DimensionPopulation.new()
 var online := OnlineClient.new()
 var offline_generation_calls := 0
 var life := WorldLife.new()
@@ -88,6 +101,16 @@ var actors := Node3D.new()
 var particles := Node3D.new()
 var astar := AStar2D.new()
 var navigation_ids: Dictionary = {}
+var navigation_next_id := 0
+var navigation_obstacles: Array[Rect2] = []
+var navigation_chunks: Dictionary = {}
+var streaming_data := StreamingData.new()
+var prefetched_chunks := {}
+var prepared_enemy_models: Dictionary = {}
+var prefetch_world := 0
+var prefetch_context := []
+var render_warmup := RenderWarmup.new()
+var warmup_overlay: CanvasLayer
 var enemies: Array[Dictionary] = []
 var projectiles: Array[Dictionary] = []
 var effects: Array[Dictionary] = []
@@ -172,6 +195,10 @@ func _ready() -> void:
 	interiors.view.visible = false
 	add_child(actors)
 	add_child(particles)
+	spell_effects.game = self
+	add_child(spell_effects)
+	summons.game = self
+	add_child(summons)
 	player_mesh = CharacterVisual.new()
 	player.add_child(player_mesh)
 	_update_character_mesh()
@@ -184,7 +211,7 @@ func _ready() -> void:
 	add_child(sound)
 	add_child(ambience)
 	sound.spell_played.connect(func(spell):
-		if spell in ["bolt", "fire", "nova", "blink", "gate"]:
+		if spell == "gate" or ABILITIES.has(spell) and spell not in ["strike", "cleave", "execute", "runeblade"]:
 			ambience.react(sound))
 	_load_settings()
 	interface.game = self
@@ -193,6 +220,8 @@ func _ready() -> void:
 	add_child(expansion)
 	stores.game = self
 	add_child(stores)
+	foraging.game = self
+	add_child(foraging)
 	exploration.game = self
 	add_child(exploration)
 	furnishing_editor.game = self
@@ -203,6 +232,10 @@ func _ready() -> void:
 	add_child(online)
 	floating_hub.game = self
 	add_child(floating_hub)
+	dimension.game = self
+	add_child(dimension)
+	population.game = self
+	add_child(population)
 	var record := ConfigFile.new()
 	if records_enabled and record.load("user://records.cfg") == OK:
 		best_depth = record.get_value("run", "best_depth", 1)
@@ -224,14 +257,47 @@ func _ready() -> void:
 		online.open_lobby()
 		print("ONLINE_WEB_READY offline_generation_calls=%s chunks=%s" % [offline_generation_calls, world.chunks.size()])
 	_update_music(0)
+	add_child(render_warmup)
+	render_warmup.configure([world_view, life_view, actors, player, particles, world_ground, target_marker], sky_environment, camera, sunlight)
+	if render_warmup.busy:
+		_show_render_loading()
+
+func _show_render_loading() -> void:
+	warmup_overlay = CanvasLayer.new()
+	warmup_overlay.layer = 20
+	var shade := ColorRect.new()
+	shade.color = Color("101a24")
+	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	warmup_overlay.add_child(shade)
+	var label := Label.new()
+	label.text = "Charting the way…"
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	shade.add_child(label)
+	add_child(warmup_overlay)
 
 func _process(delta: float) -> void:
+	if render_warmup.busy and warmup_overlay == null:
+		_show_render_loading()
+	if warmup_overlay != null:
+		warmup_overlay.visible = render_warmup.busy
+		if not render_warmup.busy:
+			warmup_overlay.queue_free()
+			warmup_overlay = null
+	if state == "playing" and layer == "overworld" and not online.session:
+		_preload_surface(screen_movement(Input.get_vector("move_left", "move_right", "move_up", "move_down")))
 	ambience.update(self, delta)
 	life_view.process_mode = Node.PROCESS_MODE_INHERIT if state == "playing" and layer == "overworld" and not online.session else Node.PROCESS_MODE_DISABLED
 	music_timer += delta
 	if music_timer >= .25:
 		_update_music(music_timer)
 		music_timer = 0
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_PREDELETE:
+		streaming_data.stop()
+		_clear_prepared_enemies()
 
 func _update_music(delta: float) -> void:
 	var menu_state := credits_return_state if state == "credits" else state
@@ -469,6 +535,9 @@ func finish_exit() -> void:
 func return_to_sanctuary() -> void:
 	if not offline_actions_allowed():
 		return
+	if dimension.active:
+		dimension.return_to_hub()
+		return
 	sanctum_return.clear()
 	_generate_surface(sanctuary)
 	state = "playing"
@@ -476,15 +545,17 @@ func return_to_sanctuary() -> void:
 	notify("Returned to your sanctuary.")
 	_auto_save()
 
-func sanctum_problem() -> String:
+func sanctum_problem(allow_dialogue: bool = false) -> String:
 	if not offline_actions_allowed():
 		return "Sanctums are forthcoming in the public world."
-	if state != "playing":
+	if state != "playing" and not (allow_dialogue and state == "dialogue"):
 		return "Resume your journey to use the sigil."
 	if layer == "sanctum":
 		return "" if not sanctum_return.is_empty() else "The return thread is missing. Use the sanctuary return in the menu."
 	if not grounded:
 		return "Stand on solid ground to open the sanctum."
+	if dimension.active and not DimensionPopulation.hostile_point_allowed(world, player_point):
+		return ""
 	if city_law.danger():
 		return "The town watch is too close to open the sanctum."
 	for shot in projectiles:
@@ -502,12 +573,17 @@ func use_sanctum_sigil() -> bool:
 	if not problem.is_empty():
 		notify(problem)
 		return false
+	if dimension.active:
+		return dimension.return_to_hub()
 	if layer == "sanctum":
 		return leave_sanctum()
-	sanctum_return = make_save_data()
+	var live_cooldowns: Dictionary = cooldowns.duplicate()
+	if not floating_hub.active():
+		dimension.outside_return.clear()
+	sanctum_return = dimension.outside_return.duplicate(true) if floating_hub.active() and not dimension.outside_return.is_empty() else make_save_data()
 	_generate_sanctum()
 	for spell in cooldowns:
-		cooldowns[spell] = sanctum_return.stats.cooldowns[spell]
+		cooldowns[spell] = live_cooldowns[spell]
 	notify("Your Sanctum. B arranges furnishings; E rests at the hearth; H returns.")
 	sound.play_spell("gate")
 	_auto_save()
@@ -562,8 +638,18 @@ func leave_sanctum() -> bool:
 	resume.progress.furnishings = furnishings.snapshot()
 	resume.progress.world_items = world_items.snapshot()
 	resume.progress.stores = stores.snapshot()
+	resume.progress.foraging = foraging.snapshot()
+	resume.progress.population = population.snapshot()
+	var live_progress: Dictionary = make_save_data().progress
+	resume.progress.encounters = live_progress.encounters
+	for key in ["floors", "claimed", "cities", "discovery"]:
+		resume.progress[key] = live_progress[key]
+	if not dimension.snapshot().is_empty():
+		resume.progress.dimension = dimension.snapshot()
 	resume.stats.hp = hp
 	resume.stats.mana = mana
+	resume.stats.kills = kills
+	resume.stats.best_depth = best_depth
 	resume.stats.elapsed = elapsed
 	resume.stats.cooldowns = cooldowns.duplicate()
 	if not Journey.restore(self, resume):
@@ -649,6 +735,9 @@ func start_run(seed_value: int = -1, edition: int = World.GENERATOR_VERSION) -> 
 		return
 	offline_generation_calls += 1
 	stores.reset()
+	foraging.reset()
+	population.reset()
+	dimension.reset()
 	floating_hub.close()
 	world_items.reset()
 	city_law.reset()
@@ -734,6 +823,8 @@ func customize_character(changes: Dictionary) -> bool:
 	if not offline_actions_allowed():
 		return false
 	var data := profile.snapshot()
+	if changes.has("model") and CharacterProfile.Wardrobe.data.presets.has(changes.model):
+		data = CharacterProfile.preset_snapshot(changes.model, build.class_id, profile.display_name)
 	data.merge(changes, true)
 	var candidate := CharacterProfile.new()
 	if not candidate.restore(data, build.class_id):
@@ -870,7 +961,11 @@ func _update_vertical(delta: float) -> void:
 		grounded = true
 
 func _clear_actors() -> void:
+	spell_effects.clear()
+	summons.clear()
+	population.clear_location()
 	world_items.clear_location()
+	foraging.clear_location()
 	life_view.visible = false
 	guard_time = 0
 	clear_target()
@@ -914,12 +1009,21 @@ func _lighting(surface: bool) -> void:
 func _rebuild_navigation() -> void:
 	astar.clear()
 	navigation_ids.clear()
+	navigation_next_id = 0
+	navigation_obstacles = dungeon.obstacles.duplicate()
+	navigation_chunks.clear()
+	if dungeon == world:
+		for coordinate in world.chunks:
+			navigation_chunks[coordinate] = []
 	for cell in dungeon.tiles:
 		if not dungeon.walkable(Vector2(cell)):
 			continue
 		var id := navigation_ids.size()
 		navigation_ids[cell] = id
+		if dungeon == world:
+			navigation_chunks[World.chunk_at(Vector2(cell))].append(cell)
 		astar.add_point(id, Vector2(cell))
+		navigation_next_id = id + 1
 	for cell in dungeon.tiles:
 		if not navigation_ids.has(cell):
 			continue
@@ -927,6 +1031,108 @@ func _rebuild_navigation() -> void:
 			var next: Vector2i = cell + direction
 			if navigation_ids.has(next) and dungeon.can_step(Vector2(cell), Vector2(next)):
 				astar.connect_points(navigation_ids[cell], navigation_ids[next])
+
+func _stream_navigation() -> void:
+	if navigation_obstacles != dungeon.obstacles:
+		_rebuild_navigation()
+		return
+	var added := []
+	for coordinate in navigation_chunks.keys():
+		if not world.chunks.has(coordinate):
+			for cell in navigation_chunks[coordinate]:
+				astar.remove_point(navigation_ids[cell])
+				navigation_ids.erase(cell)
+			navigation_chunks.erase(coordinate)
+	for coordinate in world.chunks:
+		if navigation_chunks.has(coordinate):
+			continue
+		navigation_chunks[coordinate] = []
+		for cell in world.chunks[coordinate].cells:
+			if dungeon.tiles.has(cell) and (dungeon.obstacles.is_empty() or dungeon.walkable(Vector2(cell))):
+				navigation_ids[cell] = navigation_next_id
+				astar.add_point(navigation_next_id, Vector2(cell))
+				navigation_next_id += 1
+				navigation_chunks[coordinate].append(cell)
+				added.append(cell)
+	for cell in added:
+		for direction in dungeon.DIRECTIONS:
+			var next: Vector2i = cell + direction
+			if navigation_ids.has(next) and absf(world.cells[cell].height - world.cells[next].height) <= .51:
+				astar.connect_points(navigation_ids[cell], navigation_ids[next])
+
+func _preload_surface(direction: Vector2) -> void:
+	if not StreamingData.supports(world, player_point) or OS.has_feature("web"):
+		return
+	var token: int = world.get_instance_id()
+	var context := [token, world.run_seed, world.generator_version]
+	if prefetch_context != context:
+		prefetched_chunks.clear()
+		_clear_prepared_enemies()
+		prefetch_world = token
+		prefetch_context = context
+	prefetched_chunks.merge(streaming_data.take(token, world.regions, world.run_seed, world.generator_version, world))
+	var center := World.chunk_at(player_point)
+	for coordinate in prefetched_chunks.keys():
+		if absi(coordinate.x - center.x) > 3 or absi(coordinate.y - center.y) > 3:
+			prefetched_chunks.erase(coordinate)
+	var visual_coordinates: Array = prefetched_chunks.keys().filter(func(coordinate): return not world.chunks.has(coordinate))
+	var target := World.chunk_at(player_point + direction * 10)
+	visual_coordinates.sort_custom(func(a, b):
+		var a_needed: bool = absi(a.x - center.x) <= World.CHUNK_RADIUS and absi(a.y - center.y) <= World.CHUNK_RADIUS
+		var b_needed: bool = absi(b.x - center.x) <= World.CHUNK_RADIUS and absi(b.y - center.y) <= World.CHUNK_RADIUS
+		return a_needed if a_needed != b_needed else Vector2(a - target).length_squared() < Vector2(b - target).length_squared())
+	world_view.prepare(world, prefetched_chunks, visual_coordinates)
+	_prepare_surface_enemies(visual_coordinates.slice(0, 9))
+	if target == center:
+		return
+	var missing := []
+	for x in range(target.x - World.CHUNK_RADIUS, target.x + World.CHUNK_RADIUS + 1):
+		for y in range(target.y - World.CHUNK_RADIUS, target.y + World.CHUNK_RADIUS + 1):
+			var coordinate := Vector2i(x, y)
+			if not world.chunks.has(coordinate) and not prefetched_chunks.has(coordinate):
+				missing.append(coordinate)
+	streaming_data.request(token, world.run_seed, world.generator_version, missing, true, world.hub.theme if world is FloatingHub.HubWorld else "")
+
+func _clear_prepared_enemies() -> void:
+	for record in prepared_enemy_models.values():
+		record.model.free()
+	prepared_enemy_models.clear()
+
+func _prepare_surface_enemies(coordinates: Array) -> void:
+	var wanted := {}
+	for coordinate in coordinates:
+		for spawn in prefetched_chunks[coordinate].spawns:
+			var saved: Dictionary = encounter_states.get(spawn.id, {})
+			if (not saved.is_empty() and saved.hp <= 0) or enemies.any(func(enemy): return enemy.id == spawn.id):
+				continue
+			wanted[spawn.id] = spawn
+	for id in prepared_enemy_models.keys():
+		if not wanted.has(id):
+			prepared_enemy_models[id].model.free()
+			prepared_enemy_models.erase(id)
+	for id in wanted:
+		if prepared_enemy_models.has(id):
+			continue
+		var spawn: Dictionary = wanted[id]
+		var saved: Dictionary = encounter_states.get(id, {})
+		var kind: int = EnemyCatalog.index_of(saved.get("species", ""), spawn.kind)
+		var biome: int = prefetched_chunks[World.chunk_at(Vector2(spawn.cell))].cells[spawn.cell].biome
+		if not EnemyModels.prepared(kind, hash("%s:%s" % [run_seed, id]), saved.get("variant", ""), biome):
+			continue
+		var model := EnemyModels.create(kind, hash("%s:%s" % [run_seed, id]), saved.get("variant", ""), biome)
+		prepared_enemy_models[id] = {"model":model, "bounds":EnemyModels.bounds(model), "context":[kind, biome, saved.get("variant", "")]}
+		break
+
+func _take_preloaded_surface() -> void:
+	if not StreamingData.supports(world, player_point) or prefetch_context != [world.get_instance_id(), world.run_seed, world.generator_version]:
+		return
+	prefetched_chunks.merge(streaming_data.take(prefetch_world, world.regions, world.run_seed, world.generator_version, world))
+	var center := World.chunk_at(player_point)
+	for coordinate in prefetched_chunks.keys():
+		if absi(coordinate.x - center.x) <= World.CHUNK_RADIUS and absi(coordinate.y - center.y) <= World.CHUNK_RADIUS:
+			if not world.chunks.has(coordinate):
+				world.chunks[coordinate] = prefetched_chunks[coordinate]
+			prefetched_chunks.erase(coordinate)
 
 func _snap_camera() -> void:
 	player_y = dungeon.ground_height(player_point)
@@ -951,12 +1157,13 @@ func _generate_surface(point: Vector2, save_encounters: bool = true) -> void:
 		world.load_around(sanctuary)
 		point = world.safe_position(sanctuary)
 		world.load_around(point)
+	world_view.living_residents = not dimension.active
 	world_view.sync(world)
 	world_items.register_location()
 	var in_hub: bool = world.cell_info(Vector2i(point.round())).get("hub_id", "") == FloatingHub.City.data.id
-	if not online.session and not in_hub:
+	if not online.session and not in_hub and not dimension.active:
 		life.sync(world, point)
-	elif in_hub:
+	elif in_hub or dimension.active:
 		life_view.reset()
 		life.actors.clear()
 	world_view.visible = true
@@ -964,12 +1171,15 @@ func _generate_surface(point: Vector2, save_encounters: bool = true) -> void:
 	_lighting(true)
 	_rebuild_navigation()
 	player_point = point
-	if not online.session and not in_hub:
+	if not online.session and not in_hub and not dimension.active:
 		life_view.sync(self)
 	_snap_camera()
 	floating_hub.apply_lighting()
 	world_view.update_visibility(player_point, player_y, camera_yaw)
 	_sync_surface_enemies()
+	foraging.sync()
+	population.sync()
+	render_warmup.warm_scene()
 
 func _sync_surface_enemies() -> void:
 	if not offline_actions_allowed():
@@ -1004,13 +1214,38 @@ func _sync_surface_enemies() -> void:
 		_spawn_enemy(point, spawn.kind, id, saved)
 		enemies[-1].grounds = spawn
 
+func _surface_stream_ready() -> bool:
+	if not StreamingData.supports(world, player_point) or OS.has_feature("web"):
+		return true
+	var center := World.chunk_at(player_point)
+	if center == world.current_chunk:
+		return true
+	var missing := []
+	var visuals_ready := true
+	for x in range(center.x - World.CHUNK_RADIUS, center.x + World.CHUNK_RADIUS + 1):
+		for y in range(center.y - World.CHUNK_RADIUS, center.y + World.CHUNK_RADIUS + 1):
+			var coordinate := Vector2i(x, y)
+			if world.chunks.has(coordinate):
+				continue
+			if not prefetched_chunks.has(coordinate):
+				missing.append(coordinate)
+			if not world_view.prepared_nodes.has(coordinate):
+				visuals_ready = false
+	if not missing.is_empty():
+		streaming_data.request(world.get_instance_id(), world.run_seed, world.generator_version, missing, true, world.hub.theme if world is FloatingHub.HubWorld else "")
+		return false
+	return visuals_ready
+
 func _refresh_surface() -> void:
+	if not _surface_stream_ready():
+		return
+	_take_preloaded_surface()
 	if world.load_around(player_point):
 		world_view.sync(world)
 		world_items.register_location()
-		if not floating_hub.active():
+		if not floating_hub.active() and not dimension.active:
 			life.sync(world, player_point)
-		_rebuild_navigation()
+		_stream_navigation()
 		_sync_surface_enemies()
 
 func enter_dungeon(site: Dictionary) -> void:
@@ -1082,6 +1317,9 @@ func interaction_hint() -> String:
 		return hub_hint
 	if online.session:
 		return "Shared exploration / Esc: world menu"
+	var dimension_hint: String = dimension.hint()
+	if not dimension_hint.is_empty():
+		return dimension_hint
 	var base_hint := world_items.rest_hint()
 	if not base_hint.is_empty():
 		return base_hint
@@ -1109,7 +1347,10 @@ func interaction_hint() -> String:
 		if not hint.is_empty():
 			return hint
 		var store_hint: String = stores.hint()
-		return store_hint if not store_hint.is_empty() else exploration.hint()
+		if not store_hint.is_empty():
+			return store_hint
+		var exploration_hint: String = exploration.hint()
+		return exploration_hint if not exploration_hint.is_empty() else foraging.hint()
 	if player_point.distance_to(dungeon.start) < 1.7:
 		return "E: Return to the world"
 	if player_point.distance_to(dungeon.exit) < 1.6:
@@ -1130,6 +1371,8 @@ func location_name() -> String:
 	if layer == "dungeon":
 		var family_name: String = Areas.DUNGEONS[dungeon.family].name
 		return active_dungeon.name if active_dungeon.name == family_name else "%s / %s" % [active_dungeon.name, family_name]
+	if dimension.active:
+		return dimension.location_name()
 	var city: Dictionary = world.city_at(player_point)
 	if not city.is_empty():
 		return city.name
@@ -1220,7 +1463,13 @@ func _spawn_enemy(point: Vector2, kind: int, id: String = "", saved: Dictionary 
 	root.position = to_world(point)
 	root.visible = enemy_render_visible(point)
 	var biome: int = dungeon.biome if layer == "dungeon" else world.cell_info(Vector2i(point.round())).biome
-	var model := EnemyModels.create(kind, hash("%s:%s" % [run_seed, id if not id.is_empty() else point]), saved.get("variant", ""), biome, layer == "dungeon")
+	var prepared: Dictionary = prepared_enemy_models.get(id, {}) if layer == "overworld" and prefetch_context == [world.get_instance_id(), world.run_seed, world.generator_version] else {}
+	var model: Node3D
+	if not prepared.is_empty() and prepared.context == [kind, biome, saved.get("variant", "")]:
+		model = prepared.model
+		prepared_enemy_models.erase(id)
+	else:
+		model = EnemyModels.create(kind, hash("%s:%s" % [run_seed, id if not id.is_empty() else point]), saved.get("variant", ""), biome, layer == "dungeon")
 	var base_scale := model.scale
 	root.add_child(model)
 	var health := Voxels.cube(Vector3(.65, .055, .055), Color("c17a7a"), true)
@@ -1228,10 +1477,15 @@ func _spawn_enemy(point: Vector2, kind: int, id: String = "", saved: Dictionary 
 	health.visible = false
 	root.add_child(health)
 	actors.add_child(root)
-	var maximum: float = definition.hp * (1.0 + minf(depth - 1, 1000) * .13)
+	var maximum: float = EnemyCatalog.combat_stats(definition, depth).hp
 	enemies.append({"id": id, "point": point, "kind": kind, "species": definition.id, "variant": model.get_meta("asset_id"), "base_scale": base_scale, "hp": minf(saved.get("hp", maximum), maximum), "max_hp": maximum, "node": root, "model": model, "bar": health, "slow": saved.get("slow", 0.0), "attack": saved.get("attack", rng.randf_range(.3, 1.5)), "windup": saved.get("windup", 0.0), "path_time": 0.0, "path": [], "active": saved.get("active", false), "flash": 0.0})
+	if layer == "overworld":
+		var box: AABB = prepared.bounds if not prepared.is_empty() and model == prepared.model else EnemyModels.bounds(model)
+		enemies[-1].spacing_radius = clampf(maxf(box.size.x, box.size.z) * .5 + .12, .4, .8)
 
 func _physics_process(delta: float) -> void:
+	if render_warmup.busy:
+		return
 	if online.session:
 		online.step(delta)
 		return
@@ -1245,16 +1499,17 @@ func _physics_process(delta: float) -> void:
 		aim = logical
 	simulate(delta)
 	player_mesh.animate(direction.length() > 0, grounded)
-	player_mesh.position.y = 0 if player_mesh.imported else (sin(time * 11) * .035 if direction.length() > 0 else sin(time * 2) * .015)
+	player_mesh.position.y = 0 if player_mesh.rigged else (sin(time * 11) * .035 if direction.length() > 0 else sin(time * 2) * .015)
 
 func simulate(delta: float) -> void:
 	if not offline_actions_allowed():
 		return
-	if layer in ["overworld", "dungeon"]:
+	if layer in ["overworld", "dungeon"] and not dimension.active:
 		life.advance(delta)
 	if layer == "overworld":
 		_refresh_surface()
-		if not floating_hub.active():
+		population.step(delta)
+		if not floating_hub.active() and not dimension.active:
 			city_law.step(delta)
 			if state == "guard_demand":
 				return
@@ -1284,6 +1539,8 @@ func simulate(delta: float) -> void:
 		sanctum_view.animate(delta)
 	elif layer == "interior":
 		interiors.view.update_camera(camera_yaw)
+	spell_effects.step(delta)
+	summons.step(delta)
 	_update_enemies(delta)
 	_update_target()
 	_update_projectiles(delta)
@@ -1307,7 +1564,14 @@ func cast(spell: String) -> void:
 	if mana < ability.cost:
 		notify("Gather more %s." % CharacterBuild.CLASSES[build.class_id].resource.to_lower())
 		return
-	if ability.kind == "move":
+	if ability.kind == "expanded":
+		if not spell_effects.cast(spell):
+			return
+	elif ability.kind == "summon":
+		if not grounded or not summons.summon(spell):
+			notify("Stand on clear, solid ground to call a companion.")
+			return
+	elif ability.kind == "move":
 		var landing := player_point
 		for step in range(1, 17):
 			var candidate := player_point + move_heading * step * .18
@@ -1329,7 +1593,7 @@ func cast(spell: String) -> void:
 			if enemy.point.distance_to(player_point) <= ability.radius and dungeon.line_clear(player_point, enemy.point) and (ability.kind != "cleave" or direction.dot(aim) >= -.1):
 				if spell == "nova":
 					enemy.slow = 3.5
-				_hit_enemy(enemy, ability.damage * damage_multiplier)
+				_hit_enemy(enemy, ability.damage * damage_multiplier, spell)
 	elif ability.kind in ["melee", "target"]:
 		var point: Vector2 = selected_target.point
 		var damage: float = ability.damage * damage_multiplier
@@ -1343,9 +1607,9 @@ func cast(spell: String) -> void:
 		if ability.radius > 0:
 			for enemy in enemies.duplicate():
 				if enemy.point.distance_to(point) <= ability.radius and dungeon.line_clear(point, enemy.point):
-					_hit_enemy(enemy, damage)
+					_hit_enemy(enemy, damage, spell)
 		else:
-			_hit_enemy(selected_target, damage)
+			_hit_enemy(selected_target, damage, spell)
 	elif ability.kind == "guard":
 		guard_time = 3.0
 		_ring(player_point, ability.color, .8)
@@ -1360,7 +1624,7 @@ func cast(spell: String) -> void:
 		_shoot(player_point, aim, spell, false, selected_target)
 	mana -= ability.cost
 	cooldowns[spell] = ability.recharge
-	sound.play_spell(spell if spell in sound.NOTES else ("impact" if ability.kind in ["melee", "cleave"] else "nova"))
+	sound.play_spell(spell)
 
 func cast_slot(index: int) -> void:
 	if not offline_actions_allowed():
@@ -1425,6 +1689,8 @@ func _input(event: InputEvent) -> void:
 		rotating_camera = false
 
 func _unhandled_input(event: InputEvent) -> void:
+	if render_warmup.busy:
+		return
 	if state == "world_items":
 		world_items.handle_mouse(event)
 		return
@@ -1448,7 +1714,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if state == "playing" and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		select_target(enemy_at_screen(event.position))
 
-func _shoot(point: Vector2, direction: Vector2, spell: String, hostile: bool, target: Dictionary = {}, damage: float = 10.0) -> void:
+func _shoot(point: Vector2, direction: Vector2, spell: String, hostile: bool, target: Dictionary = {}, damage: float = 10.0, ally: Dictionary = {}) -> void:
 	if not offline_actions_allowed():
 		return
 	var size := .23 if spell == "fire" else .13
@@ -1456,8 +1722,10 @@ func _shoot(point: Vector2, direction: Vector2, spell: String, hostile: bool, ta
 	node.position = to_world(point, .55)
 	if not hostile:
 		node.position.y = player_y + .55
+	else:
+		sound.play_effect("hostile_cast")
 	particles.add_child(node)
-	projectiles.append({"point": point, "height": node.position.y, "direction": direction, "spell": spell, "hostile": hostile, "target": target, "node": node, "life": 1.8, "trail": 0.0, "damage": damage})
+	projectiles.append({"point": point, "height": node.position.y, "direction": direction, "spell": spell, "hostile": hostile, "target": target, "ally": ally, "node": node, "life": 1.8, "trail": 0.0, "damage": damage})
 
 func _update_projectiles(delta: float) -> void:
 	for shot in projectiles.duplicate():
@@ -1471,21 +1739,28 @@ func _update_projectiles(delta: float) -> void:
 		shot.trail -= delta
 		var speed := 6.0 if shot.hostile else 11.0
 		var target_y: float = player_y + .55 if shot.hostile else dungeon.ground_height(shot.target.point) + .55
+		var ally: Dictionary = shot.get("ally", {})
+		if shot.hostile and not ally.is_empty() and summons.allies.has(ally):
+			target_y = dungeon.ground_height(ally.point) + ally.height
 		shot.height = move_toward(shot.height, target_y, speed * delta)
 		var steps := maxi(1, ceili(speed * delta / .15))
 		var impacted := false
+		var hit_terrain := false
 		for index in range(steps):
 			shot.point += shot.direction * speed * delta / steps
 			if not dungeon.walkable(shot.point, .04) or dungeon.ground_height(shot.point) > shot.height:
 				impacted = true
+				hit_terrain = true
 			elif shot.hostile:
-				if shot.point.distance_to(player_point) < .38 and absf(shot.height - player_y - .55) < .5:
+				if summons.projectile_hit(shot.point, shot.height, shot.get("damage", 10.0) * (1.0 + minf(depth - 1, 80) * .07)):
+					impacted = true
+				elif shot.point.distance_to(player_point) < .38 and absf(shot.height - player_y - .55) < .5:
 					_hurt_player(shot.get("damage", 10.0) * (1.0 + minf(depth - 1, 80) * .07))
 					impacted = true
 			else:
 				if shot.point.distance_to(shot.target.point) < .42:
 					if shot.spell != "fire":
-						_hit_enemy(shot.target, 20.0 * damage_multiplier)
+						_hit_enemy(shot.target, 20.0 * damage_multiplier, shot.spell)
 					impacted = true
 			if impacted:
 				break
@@ -1499,6 +1774,8 @@ func _update_projectiles(delta: float) -> void:
 				_explode(shot.point)
 			else:
 				_burst(shot.point, COLORS[shot.spell], 5, .3)
+				if hit_terrain:
+					sound.play_effect("terrain_hit")
 			shot.node.queue_free()
 			projectiles.erase(shot)
 
@@ -1510,8 +1787,8 @@ func _explode(point: Vector2) -> void:
 	shake = .5
 	for enemy in enemies.duplicate():
 		if enemy.point.distance_to(point) <= 2.0 and dungeon.line_clear(point, enemy.point):
-			_hit_enemy(enemy, 58.0 * damage_multiplier)
-	sound.play_spell("impact")
+			_hit_enemy(enemy, 58.0 * damage_multiplier, "fire")
+	sound.play_effect("fire_burst")
 
 func enemy_render_visible(point: Vector2) -> bool:
 	return layer != "dungeon" or dungeon_view.explored.has(Vector2i(point.round()))
@@ -1522,18 +1799,22 @@ func _update_enemies(delta: float) -> void:
 	var safe := false
 	if layer == "overworld":
 		safe = not world.city_at(player_point).is_empty()
+		if dimension.active and not DimensionPopulation.hostile_point_allowed(world, player_point):
+			safe = true
+	var crowd := MonsterMotion.snapshot(enemies) if layer == "overworld" else {}
 	for enemy in enemies.duplicate():
 		var definition: Dictionary = EnemyCatalog.TYPES[enemy.kind]
 		var distance: float = enemy.point.distance_to(player_point)
 		enemy.node.visible = enemy_render_visible(enemy.point)
-		if layer == "overworld" and enemy.has("grounds") and _return_to_grounds(enemy, delta):
+		if layer == "overworld" and enemy.has("grounds") and _return_to_grounds(enemy, delta, crowd):
 			continue
 		if safe:
 			enemy.active = false
 			enemy.windup = 0.0
-		if not safe and distance < 7.5 and dungeon.line_clear(player_point, enemy.point):
-			enemy.active = true
+		enemy.active = EnemyCatalog.should_engage(definition, enemy.active, not safe and distance < 7.5 and dungeon.line_clear(player_point, enemy.point))
 		if not enemy.active:
+			if layer == "overworld":
+				_move_surface_enemy(enemy, Vector2.ZERO, delta, crowd)
 			continue
 		enemy.slow = maxf(0, enemy.slow - delta)
 		enemy.attack = maxf(0, enemy.attack - delta)
@@ -1542,17 +1823,31 @@ func _update_enemies(delta: float) -> void:
 		enemy.model.scale = enemy.base_scale * (1.08 if enemy.flash > 0 else 1.0)
 		enemy.bar.visible = enemy.hp < enemy.max_hp or enemy == selected_target
 		enemy.bar.scale.x = maxf(.01, enemy.hp / enemy.max_hp)
+		if spell_effects.immobilized(enemy):
+			enemy.windup = 0
+			enemy.node.position = to_world(enemy.point)
+			EnemyModels.animate(enemy.model, "idle")
+			continue
+		var ally: Dictionary = summons.enemy_target(enemy)
+		var goal: Vector2 = player_point if ally.is_empty() else ally.point
+		distance = enemy.point.distance_to(goal)
 		var ranged: bool = definition.ranged
 		var attack_range: float = definition.reach
-		var can_attack: bool = distance < attack_range and dungeon.line_clear(enemy.point, player_point)
+		var can_attack: bool = distance < attack_range and dungeon.line_clear(enemy.point, goal)
+		var velocity := Vector2.ZERO
 		if enemy.windup > 0:
 			enemy.windup -= delta
 			enemy.model.position.y = .04 + sin(time * 28) * .03
 			if enemy.windup <= 0:
 				if ranged:
-					_shoot(enemy.point, (player_point - enemy.point).normalized(), "hostile", true, {}, definition.damage)
-				elif distance < attack_range + .25 and absf(player_y - dungeon.ground_height(enemy.point)) < 1.0:
-					_hurt_player(definition.damage * (1.0 + minf(depth - 1, 80) * .07))
+					var damage: float = EnemyCatalog.combat_stats(definition, depth).damage / (1.0 + minf(depth - 1, 80) * .07)
+					_shoot(enemy.point, (goal - enemy.point).normalized(), "hostile", true, {}, damage, ally)
+				elif distance < attack_range + .25 and dungeon.line_clear(enemy.point, goal):
+					var damage: float = EnemyCatalog.combat_stats(definition, depth).damage
+					if not ally.is_empty():
+						summons.hurt(ally, damage)
+					elif absf(player_y - dungeon.ground_height(enemy.point)) < 1.0:
+						_hurt_player(damage)
 				enemy.attack = definition.period
 		elif can_attack and enemy.attack <= 0:
 			enemy.windup = definition.windup
@@ -1561,39 +1856,63 @@ func _update_enemies(delta: float) -> void:
 			if enemy.path_time <= 0:
 				enemy.path_time = .45
 				var from_cell := Vector2i(enemy.point.round())
-				var to_cell := Vector2i(player_point.round())
+				var to_cell := Vector2i(goal.round())
 				enemy.path = astar.get_point_path(navigation_ids[from_cell], navigation_ids[to_cell]) if navigation_ids.has(from_cell) and navigation_ids.has(to_cell) else []
 			if enemy.path.size() > 1:
 				var target := Vector2(enemy.path[1])
 				var direction: Vector2 = (target - enemy.point).normalized()
 				var speed: float = definition.speed * (.38 if enemy.slow > 0 else 1.0)
-				var movement := direction * speed * delta
-				for other in enemies:
-					if other == enemy:
-						continue
-					var separation: Vector2 = enemy.point - other.point
-					if separation.length() > .01 and separation.length() < .45:
-						movement += separation.normalized() * delta * .7
-				var next: Vector2 = dungeon.move_actor(enemy.point, movement)
-				if layer != "overworld" or not enemy.has("grounds") or next.distance_to(enemy.grounds.home) <= enemy.grounds.radius + 3:
-					enemy.point = next
+				if layer == "overworld":
+					velocity = direction * speed
+				else:
+					var movement := direction * speed * delta
+					for other in enemies:
+						if other == enemy:
+							continue
+						var separation: Vector2 = enemy.point - other.point
+						if separation.length() > .01 and separation.length() < .45:
+							movement += separation.normalized() * delta * .7
+					enemy.point = dungeon.move_actor(enemy.point, movement)
 				enemy.model.position.y = sin(time * 8.0) * .025
+		if layer == "overworld":
+			_move_surface_enemy(enemy, velocity, delta, crowd)
 		enemy.node.position = to_world(enemy.point)
-		var facing: Vector2 = player_point - enemy.point
+		var facing: Vector2 = goal - enemy.point
 		enemy.node.rotation.y = atan2(facing.x, facing.y)
 		EnemyModels.animate(enemy.model, "attack" if enemy.windup > 0 else ("walk" if not can_attack else "idle"))
 
-func _return_to_grounds(enemy: Dictionary, delta: float) -> bool:
+func _move_surface_enemy(enemy: Dictionary, velocity: Vector2, delta: float, crowd: Dictionary) -> void:
+	var previous: Vector2 = enemy.point
+	var speed: float = EnemyCatalog.TYPES[enemy.kind].speed * (.38 if enemy.slow > 0 else 1.0)
+	var next := MonsterMotion.move(world, enemy, velocity, speed, delta, crowd)
+	var within_grounds: bool = not enemy.has("grounds") or next.distance_to(enemy.grounds.home) <= enemy.grounds.radius + 3
+	if dimension.active and not DimensionPopulation.hostile_point_allowed(world, next):
+		return
+	if within_grounds and world.city_at(next).is_empty():
+		enemy.point = next
+	enemy.node.position = to_world(enemy.point)
+	if not enemy.active:
+		var direction: Vector2 = enemy.point - previous
+		if not direction.is_zero_approx():
+			enemy.node.rotation.y = atan2(direction.x, direction.y)
+		EnemyModels.animate(enemy.model, "idle" if direction.is_zero_approx() else "walk")
+
+func _return_to_grounds(enemy: Dictionary, delta: float, crowd: Dictionary = {}) -> bool:
 	var home: Vector2 = enemy.grounds.home
 	var guard_near: bool = life.residents().any(func(actor): return actor.role == "guard" and actor.point.distance_to(enemy.point) < 3.5)
 	if player_point.distance_to(home) <= enemy.grounds.radius + 5 and not guard_near and not enemy.get("returning", false):
 		return false
 	enemy.active = false
 	enemy.windup = 0.0
+	if not enemy.get("returning", false):
+		enemy.path_time = 0
 	enemy.returning = true
-	var goal: Vector2 = world.safe_position(home, enemy.grounds.radius)
-	if enemy.point.distance_to(goal) < 1:
+	if crowd.is_empty():
+		crowd = MonsterMotion.snapshot(enemies)
+	var goal: Vector2 = world.safe_position(Vector2(enemy.grounds.get("cell", home)), enemy.grounds.radius)
+	if enemy.point.distance_to(goal) < .4:
 		enemy.returning = false
+		_move_surface_enemy(enemy, Vector2.ZERO, delta, crowd)
 		return true
 	enemy.path_time -= delta
 	if enemy.path_time <= 0:
@@ -1601,20 +1920,22 @@ func _return_to_grounds(enemy: Dictionary, delta: float) -> bool:
 		var from := Vector2i(enemy.point.round())
 		var to := Vector2i(goal.round())
 		enemy.path = astar.get_point_path(navigation_ids[from], navigation_ids[to]) if navigation_ids.has(from) and navigation_ids.has(to) else []
+	var direction := Vector2.ZERO
 	if enemy.path.size() > 1:
-		var direction: Vector2 = (Vector2(enemy.path[1]) - enemy.point).normalized()
-		enemy.point = world.move_actor(enemy.point, direction * EnemyCatalog.TYPES[enemy.kind].speed * delta)
-		enemy.node.position = to_world(enemy.point)
-		enemy.node.rotation.y = atan2(direction.x, direction.y)
-		EnemyModels.animate(enemy.model, "walk")
+		direction = (Vector2(enemy.path[1]) - enemy.point).normalized()
+	elif world.line_clear(enemy.point, goal):
+		direction = (goal - enemy.point).normalized()
+	_move_surface_enemy(enemy, direction * EnemyCatalog.TYPES[enemy.kind].speed, delta, crowd)
 	return true
 
-func _hit_enemy(enemy: Dictionary, damage: float) -> void:
+func _hit_enemy(enemy: Dictionary, damage: float, spell: String = "") -> void:
 	if not offline_actions_allowed():
 		return
 	enemy.hp -= damage
+	if damage > 0:
+		sound.play_hit(spell)
 	enemy.flash = .15
-	enemy.active = true
+	enemy.active = EnemyCatalog.after_hit(EnemyCatalog.TYPES[enemy.kind], enemy.active)
 	_burst(enemy.point, Color("e8d1ab"), 4, .3)
 	if enemy.hp > 0:
 		return
@@ -1622,8 +1943,10 @@ func _hit_enemy(enemy: Dictionary, damage: float) -> void:
 	kills += 1
 	if not enemy.id.is_empty():
 		encounter_states[enemy.id] = {"hp": 0.0, "point": enemy.point, "species": enemy.species, "variant": enemy.variant}
-	_drop(enemy.point, "health" if kills % 3 == 0 else "mana")
-	var context := {"class": build.class_id, "biome": -1, "family": "", "facet": ""}
+	var orb := Inventory.Catalog.enemy_orb(run_seed, kills, EnemyCatalog.TYPES[enemy.kind])
+	if not orb.is_empty():
+		_drop(enemy.point, orb)
+	var context := {"class": build.class_id, "biome": -1, "family": "", "facet": "", "level": EnemyCatalog.combat_stats(EnemyCatalog.TYPES[enemy.kind], depth).level}
 	if layer == "overworld":
 		var habitat := world.cell_info(Vector2i(enemy.point.round()))
 		context.biome = habitat.biome
@@ -1635,9 +1958,10 @@ func _hit_enemy(enemy: Dictionary, damage: float) -> void:
 	var item_id := Inventory.Catalog.enemy_reward(run_seed, kills, EnemyCatalog.TYPES[enemy.kind], context)
 	if not item_id.is_empty():
 		_drop(enemy.point + Vector2(.4, .2), item_id)
-	if Inventory.Catalog.should_drop_shard(run_seed, kills):
+	if Inventory.Catalog.enemy_shard(run_seed, kills, EnemyCatalog.TYPES[enemy.kind]):
 		_drop(enemy.point + Vector2(-.3, .2), "ember_shard")
-	_drop(enemy.point + Vector2(.2, -.3), "gold_coin")
+	for coin in range(int(EnemyCatalog.TYPES[enemy.kind].get("drops", {}).get("coins", 1))):
+		_drop(enemy.point + Vector2(.2 + coin * .08, -.3), "gold_coin")
 	enemy.node.queue_free()
 	enemies.erase(enemy)
 	if selected_target == enemy:
@@ -1649,24 +1973,35 @@ func _hit_enemy(enemy: Dictionary, damage: float) -> void:
 func _hurt_player(damage: float, town_guard: bool = false) -> void:
 	if not offline_actions_allowed():
 		return
+	if dimension.active and not DimensionPopulation.hostile_point_allowed(world, player_point):
+		return
 	if invulnerable > 0 or state != "playing" or layer == "sanctum":
 		return
 	if layer == "overworld" and not town_guard and not world.city_at(player_point).is_empty():
 		return
-	hp = maxf(0, hp - damage * (.35 if guard_time > 0 else 1.0))
+	var protected: bool = guard_time > 0 or spell_effects.barrier > 0
+	var applied: float = spell_effects.absorb(damage * (.35 if guard_time > 0 else 1.0))
+	hp = maxf(0, hp - applied)
 	invulnerable = .8
 	shake = .9
 	if town_guard:
 		_ring(player_point, Color("df8888"), .25)
 	else:
 		_burst(player_point, Color("df8888"), 8, .5)
-	sound.play_spell("hurt")
+	if damage > 0:
+		sound.play_effect("guard_hit" if protected else "hurt")
 	if hp <= 0:
 		state = "dead"
+		summons.clear()
+		spell_effects.clear()
 		clear_target()
 		notify("Your light fades in the hollow.")
 
 func _drop(point: Vector2, kind: String) -> void:
+	if Inventory.ITEMS.has(kind) and not Inventory.Catalog.available(Inventory.ITEMS[kind]):
+		return
+	if kind.is_empty():
+		return
 	if not offline_actions_allowed():
 		return
 	point = _loot_point(point)
@@ -1758,6 +2093,8 @@ func interact() -> void:
 		return
 	if state != "playing":
 		return
+	if dimension.interact():
+		return
 	var watch := city_law.target()
 	if not watch.is_empty():
 		city_law.demand(watch)
@@ -1798,7 +2135,7 @@ func interact() -> void:
 			return
 		var site: Dictionary = world.nearest_site(player_point)
 		if player_point.distance_to(site.cell) > 2.5 or site.type not in ["city", "dungeon"]:
-			if not expansion.interact() and not stores.interact() and not exploration.interact():
+			if not expansion.interact() and not stores.interact() and not exploration.interact() and not foraging.interact():
 				notify("Follow a road to a city or ruin. Tab opens the atlas.")
 		elif site.type == "dungeon":
 			enter_dungeon(site)
@@ -1863,6 +2200,8 @@ func toggle_pause() -> void:
 		state = "playing"
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if render_warmup.busy:
+		return
 	if not event is InputEventKey or not event.pressed or event.echo:
 		return
 	if state == "hub_board":
@@ -1982,6 +2321,8 @@ func offline_actions_allowed() -> bool:
 	return not OS.has_feature("web") and not online.session and state != "online_lobby"
 
 func begin_online(message: Dictionary, server_build, server_inventory, server_world) -> void:
+	population.reset()
+	dimension.reset()
 	_clear_actors()
 	life_view.reset()
 	city_law.reset()

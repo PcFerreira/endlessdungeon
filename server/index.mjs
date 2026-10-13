@@ -13,7 +13,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const hashPassword = promisify(scrypt);
 const manifestPath = process.env.NETWORK_MANIFEST_PATH || path.join(root, 'config/network_manifest.json');
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
-if (manifest.protocol !== 1 || ![4, 5, 6].includes(manifest.generator_version) || typeof manifest.content_revision !== 'string' || !manifest.content_revision.length) throw Error('Invalid network manifest');
+if (manifest.protocol !== 1 || ![4, 5, 6, 7].includes(manifest.generator_version) || typeof manifest.content_revision !== 'string' || !manifest.content_revision.length) throw Error('Invalid network manifest');
 for (const [filename, expected] of Object.entries(manifest.inputs || {})) {
   if (path.isAbsolute(filename) || filename.split('/').includes('..')) throw Error('Invalid manifest input');
   const actual = createHash('sha256').update(readFileSync(path.join(root, filename))).digest('hex');

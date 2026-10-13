@@ -1,0 +1,1856 @@
+{
+  "version": 1,
+  "skins": [
+    {
+      "label": "Warm sand",
+      "color": "d3b697"
+    },
+    {
+      "label": "Ivory",
+      "color": "f0d1b4"
+    },
+    {
+      "label": "Copper",
+      "color": "bb8b65"
+    },
+    {
+      "label": "Umber",
+      "color": "8c5b43"
+    },
+    {
+      "label": "Deep brown",
+      "color": "593d35"
+    },
+    {
+      "label": "Ash",
+      "color": "aeabbc"
+    },
+    {
+      "label": "Honey",
+      "color": "d9a86e"
+    },
+    {
+      "label": "Mahogany",
+      "color": "6c4536"
+    },
+    {
+      "label": "Stone",
+      "color": "c6bfb4"
+    },
+    {
+      "label": "Moss",
+      "color": "788b64"
+    },
+    {
+      "label": "Rose",
+      "color": "d8aaa0"
+    },
+    {
+      "label": "Moon",
+      "color": "d6d7e5"
+    }
+  ],
+  "hair_colors": [
+    {
+      "label": "Chestnut",
+      "color": "3b2b27"
+    },
+    {
+      "label": "Gold",
+      "color": "b78244"
+    },
+    {
+      "label": "Silver",
+      "color": "d6c9b2"
+    },
+    {
+      "label": "Auburn",
+      "color": "672e36"
+    },
+    {
+      "label": "Black",
+      "color": "292633"
+    },
+    {
+      "label": "Slate",
+      "color": "888195"
+    },
+    {
+      "label": "White",
+      "color": "eee5d2"
+    },
+    {
+      "label": "Copper",
+      "color": "a86b42"
+    },
+    {
+      "label": "Pine",
+      "color": "405e50"
+    },
+    {
+      "label": "Teal",
+      "color": "4b8790"
+    },
+    {
+      "label": "Indigo",
+      "color": "5c628e"
+    },
+    {
+      "label": "Plum",
+      "color": "7b557a"
+    }
+  ],
+  "cloth_colors": [
+    {
+      "label": "Azure",
+      "color": "427aac"
+    },
+    {
+      "label": "Crimson",
+      "color": "9c4654"
+    },
+    {
+      "label": "Emerald",
+      "color": "4f856f"
+    },
+    {
+      "label": "Violet",
+      "color": "756198"
+    },
+    {
+      "label": "Amber",
+      "color": "b18a46"
+    },
+    {
+      "label": "Slate",
+      "color": "59616f"
+    },
+    {
+      "label": "Linen",
+      "color": "e2d5b4"
+    },
+    {
+      "label": "Ink",
+      "color": "303b51"
+    },
+    {
+      "label": "Copper",
+      "color": "ad7052"
+    },
+    {
+      "label": "Rose",
+      "color": "bf8892"
+    },
+    {
+      "label": "Teal",
+      "color": "459899"
+    },
+    {
+      "label": "Night",
+      "color": "292735"
+    }
+  ],
+  "eye_colors": [
+    {
+      "label": "Dark",
+      "color": "292c35"
+    },
+    {
+      "label": "Amber",
+      "color": "a87435"
+    },
+    {
+      "label": "Green",
+      "color": "456e54"
+    },
+    {
+      "label": "Blue",
+      "color": "4e84af"
+    },
+    {
+      "label": "Violet",
+      "color": "80669b"
+    },
+    {
+      "label": "Silver",
+      "color": "a5b8bc"
+    }
+  ],
+  "body_types": {
+    "slender": {
+      "label": "Slender",
+      "width": 7,
+      "head": 7
+    },
+    "regular": {
+      "label": "Balanced",
+      "width": 8,
+      "head": 8
+    },
+    "broad": {
+      "label": "Broad",
+      "width": 10,
+      "head": 8
+    },
+    "stocky": {
+      "label": "Stocky",
+      "width": 10,
+      "head": 9
+    }
+  },
+  "collections": {
+    "head": {
+      "bald": {
+        "label": "Shaved",
+        "parts": [
+
+        ],
+        "base": "bald"
+      },
+      "short": {
+        "label": "Short",
+        "parts": [
+
+        ],
+        "base": "short"
+      },
+      "swept": {
+        "label": "Swept",
+        "parts": [
+
+        ],
+        "base": "swept"
+      },
+      "bob": {
+        "label": "Bob",
+        "parts": [
+
+        ],
+        "base": "bob"
+      },
+      "braid": {
+        "label": "Braided",
+        "parts": [
+
+        ],
+        "base": "braid"
+      },
+      "crest": {
+        "label": "Crest",
+        "parts": [
+
+        ],
+        "base": "crest"
+      },
+      "long": {
+        "label": "Long",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              0,
+              -3.75
+            ],
+            "size": [
+              8,
+              7,
+              1.5
+            ],
+            "color": "hair"
+          }
+        ],
+        "base": "bob"
+      },
+      "ponytail": {
+        "label": "Ponytail",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              3,
+              -5
+            ],
+            "size": [
+              3,
+              8,
+              2
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              6.5,
+              -5
+            ],
+            "size": [
+              3.5,
+              1,
+              2.5
+            ],
+            "color": "trim"
+          }
+        ],
+        "base": "short"
+      },
+      "topknot": {
+        "label": "Topknot",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              10,
+              -1
+            ],
+            "size": [
+              4,
+              2,
+              4
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              8.5,
+              -1
+            ],
+            "size": [
+              4.5,
+              1,
+              4.5
+            ],
+            "color": "trim"
+          }
+        ],
+        "base": "short"
+      },
+      "curly": {
+        "label": "Curls",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              -3,
+              8.5,
+              2
+            ],
+            "size": [
+              3,
+              2,
+              3
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              3,
+              8.5,
+              -2
+            ],
+            "size": [
+              3,
+              2,
+              3
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              9,
+              -1
+            ],
+            "size": [
+              4,
+              2,
+              4
+            ],
+            "color": "hair"
+          }
+        ],
+        "base": "short"
+      },
+      "undercut": {
+        "label": "Undercut",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              8,
+              -0.5
+            ],
+            "size": [
+              5,
+              2,
+              7
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              6.5,
+              -3.5
+            ],
+            "size": [
+              5,
+              2,
+              1
+            ],
+            "color": "hair"
+          }
+        ]
+      }
+    },
+    "beard": {
+      "none": {
+        "label": "Clean-shaven",
+        "parts": [
+
+        ],
+        "base": "none"
+      },
+      "stubble": {
+        "label": "Stubble",
+        "parts": [
+
+        ],
+        "base": "stubble"
+      },
+      "full": {
+        "label": "Full beard",
+        "parts": [
+
+        ],
+        "base": "full"
+      },
+      "moustache": {
+        "label": "Moustache",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              -1.5,
+              2.5,
+              4
+            ],
+            "size": [
+              2,
+              0.5,
+              0.5
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              1.5,
+              2.5,
+              4
+            ],
+            "size": [
+              2,
+              0.5,
+              0.5
+            ],
+            "color": "hair"
+          }
+        ]
+      },
+      "goatee": {
+        "label": "Goatee",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              0.75,
+              3.75
+            ],
+            "size": [
+              2,
+              2.5,
+              1
+            ],
+            "color": "hair"
+          }
+        ]
+      },
+      "braided": {
+        "label": "Braided beard",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              -2.5,
+              3.75
+            ],
+            "size": [
+              2,
+              3,
+              1.5
+            ],
+            "color": "hair"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              -3.5,
+              3.75
+            ],
+            "size": [
+              2.5,
+              0.5,
+              2
+            ],
+            "color": "trim"
+          }
+        ],
+        "base": "full"
+      }
+    },
+    "headwear": {
+      "none": {
+        "label": "Uncovered",
+        "parts": [
+
+        ],
+        "base": "none"
+      },
+      "hood": {
+        "label": "Hood",
+        "parts": [
+
+        ],
+        "base": "hood"
+      },
+      "cap": {
+        "label": "Cap",
+        "parts": [
+
+        ],
+        "base": "cap"
+      },
+      "brim": {
+        "label": "Broad-brim hat",
+        "parts": [
+
+        ],
+        "base": "brim"
+      },
+      "wizard": {
+        "label": "Wizard hat",
+        "parts": [
+
+        ],
+        "base": "wizard"
+      },
+      "helm": {
+        "label": "Open helm",
+        "parts": [
+
+        ],
+        "base": "helm"
+      },
+      "circlet": {
+        "label": "Circlet",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              7.25,
+              3.75
+            ],
+            "size": [
+              9,
+              0.75,
+              0.5
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              7.25,
+              -3.75
+            ],
+            "size": [
+              9,
+              0.75,
+              0.5
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              -4.25,
+              7.25,
+              0
+            ],
+            "size": [
+              0.5,
+              0.75,
+              7
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              4.25,
+              7.25,
+              0
+            ],
+            "size": [
+              0.5,
+              0.75,
+              7
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              7.25,
+              4.25
+            ],
+            "size": [
+              1,
+              1.25,
+              0.5
+            ],
+            "color": "trim"
+          }
+        ]
+      },
+      "turban": {
+        "label": "Wrapped headcloth",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              8.75,
+              0
+            ],
+            "size": [
+              10,
+              2.5,
+              9
+            ],
+            "color": "hat"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              8.5,
+              4.75
+            ],
+            "size": [
+              8,
+              0.75,
+              0.5
+            ],
+            "color": "trim"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              6.75,
+              -4.25
+            ],
+            "size": [
+              7,
+              2,
+              1
+            ],
+            "color": "hat"
+          }
+        ]
+      },
+      "fur_cap": {
+        "label": "Winter cap",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              8,
+              4.5
+            ],
+            "size": [
+              10,
+              2,
+              1
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              -4.5,
+              6.5,
+              0
+            ],
+            "size": [
+              2,
+              3,
+              7
+            ],
+            "color": "hat"
+          },
+          {
+            "bone": "Head",
+            "point": [
+              4.5,
+              6.5,
+              0
+            ],
+            "size": [
+              2,
+              3,
+              7
+            ],
+            "color": "hat"
+          }
+        ],
+        "base": "cap"
+      },
+      "plumed_helm": {
+        "label": "Plumed helm",
+        "parts": [
+          {
+            "bone": "Head",
+            "point": [
+              0,
+              10.25,
+              0
+            ],
+            "size": [
+              2,
+              3.5,
+              7
+            ],
+            "color": "outer"
+          }
+        ],
+        "base": "helm"
+      }
+    },
+    "costume": {
+      "journey_tunic": {
+        "label": "Journey tunic",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              7.5,
+              3.25
+            ],
+            "size": [
+              4,
+              0.75,
+              0.5
+            ],
+            "color": "trim"
+          }
+        ],
+        "base": "tunic"
+      },
+      "explorer_coat": {
+        "label": "Explorer coat",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              -1.5,
+              -3
+            ],
+            "size": [
+              9,
+              4,
+              1
+            ],
+            "color": "cloth"
+          }
+        ],
+        "base": "coat"
+      },
+      "guild_coat": {
+        "label": "Milewarden coat",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              -2,
+              6,
+              3.25
+            ],
+            "size": [
+              2,
+              2,
+              0.5
+            ],
+            "color": "trim"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              -2,
+              6,
+              3.75
+            ],
+            "size": [
+              1,
+              1,
+              0.5
+            ],
+            "color": "paper"
+          }
+        ],
+        "base": "coat"
+      },
+      "linen_shirt": {
+        "label": "Linen shirt",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              8,
+              3
+            ],
+            "size": [
+              5,
+              1,
+              0.5
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "LeftArm",
+            "point": [
+              0,
+              -5,
+              0
+            ],
+            "size": [
+              3.5,
+              2,
+              4.5
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "RightArm",
+            "point": [
+              0,
+              -5,
+              0
+            ],
+            "size": [
+              3.5,
+              2,
+              4.5
+            ],
+            "color": "paper"
+          }
+        ]
+      },
+      "leather_vest": {
+        "label": "Leather vest",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              4.5,
+              3.25
+            ],
+            "size": [
+              7,
+              8,
+              1
+            ],
+            "color": "bag"
+          }
+        ],
+        "base": "tunic"
+      },
+      "padded_coat": {
+        "label": "Padded winter coat",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              7.5,
+              3.25
+            ],
+            "size": [
+              8,
+              1,
+              1
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "LeftArm",
+            "point": [
+              0,
+              -2,
+              0
+            ],
+            "size": [
+              4,
+              5,
+              5
+            ],
+            "color": "cloth"
+          },
+          {
+            "bone": "RightArm",
+            "point": [
+              0,
+              -2,
+              0
+            ],
+            "size": [
+              4,
+              5,
+              5
+            ],
+            "color": "cloth"
+          }
+        ],
+        "base": "coat"
+      },
+      "long_robe": {
+        "label": "Long robe",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              -4,
+              3.25
+            ],
+            "size": [
+              7,
+              1,
+              0.5
+            ],
+            "color": "trim"
+          }
+        ],
+        "base": "robe"
+      },
+      "scholar_robe": {
+        "label": "Scholar vestments",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              -2,
+              6,
+              3.5
+            ],
+            "size": [
+              1,
+              5,
+              0.5
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              2,
+              6,
+              3.5
+            ],
+            "size": [
+              1,
+              5,
+              0.5
+            ],
+            "color": "paper"
+          }
+        ],
+        "base": "robe"
+      },
+      "scale_vest": {
+        "label": "Scale vest",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              2.5,
+              4.25
+            ],
+            "size": [
+              7,
+              0.75,
+              0.5
+            ],
+            "color": "trim"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              6.5,
+              4.25
+            ],
+            "size": [
+              7,
+              0.75,
+              0.5
+            ],
+            "color": "trim"
+          }
+        ],
+        "base": "mail"
+      },
+      "plated_armor": {
+        "label": "Plate harness",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              4.5,
+              4.25
+            ],
+            "size": [
+              6,
+              6,
+              1
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "LeftArm",
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              5,
+              3,
+              6
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "RightArm",
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              5,
+              3,
+              6
+            ],
+            "color": "metal"
+          }
+        ],
+        "base": "mail"
+      },
+      "craft_apron": {
+        "label": "Workshop apron",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              -2,
+              -0.5,
+              4
+            ],
+            "size": [
+              1.5,
+              2,
+              0.5
+            ],
+            "color": "metal"
+          }
+        ],
+        "base": "apron"
+      },
+      "court_coat": {
+        "label": "Court coat",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              7.5,
+              3.25
+            ],
+            "size": [
+              5,
+              2,
+              1
+            ],
+            "color": "trim"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              4,
+              3.5
+            ],
+            "size": [
+              0.5,
+              4,
+              0.5
+            ],
+            "color": "metal"
+          }
+        ],
+        "base": "coat"
+      }
+    },
+    "outerwear": {
+      "none": {
+        "label": "No outer layer",
+        "parts": [
+
+        ]
+      },
+      "short_cloak": {
+        "label": "Short cloak",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              5,
+              -3.5
+            ],
+            "size": [
+              10,
+              8,
+              1
+            ],
+            "color": "outer"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              8.5,
+              -2.5
+            ],
+            "size": [
+              11,
+              1,
+              4
+            ],
+            "color": "trim"
+          }
+        ]
+      },
+      "long_cloak": {
+        "label": "Long cloak",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              2,
+              -3.5
+            ],
+            "size": [
+              10,
+              14,
+              1
+            ],
+            "color": "outer"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              8.5,
+              -2.5
+            ],
+            "size": [
+              11,
+              1,
+              4
+            ],
+            "color": "trim"
+          }
+        ]
+      },
+      "mantle": {
+        "label": "Shoulder mantle",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              8,
+              -0.5
+            ],
+            "size": [
+              12,
+              3,
+              7
+            ],
+            "color": "outer"
+          }
+        ]
+      },
+      "scarf": {
+        "label": "Travel scarf",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              9,
+              0
+            ],
+            "size": [
+              5,
+              1.5,
+              5
+            ],
+            "color": "outer"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              -2,
+              6,
+              3.75
+            ],
+            "size": [
+              2,
+              5,
+              0.75
+            ],
+            "color": "outer"
+          }
+        ]
+      },
+      "poncho": {
+        "label": "Weather poncho",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              7,
+              0
+            ],
+            "size": [
+              12,
+              3,
+              8
+            ],
+            "color": "outer"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              3,
+              3.5
+            ],
+            "size": [
+              10,
+              5,
+              1
+            ],
+            "color": "outer"
+          }
+        ]
+      }
+    },
+    "gloves": {
+      "none": {
+        "label": "Bare hands",
+        "parts": [
+
+        ]
+      },
+      "fingerless": {
+        "label": "Fingerless gloves",
+        "parts": [
+          {
+            "bone": "LeftArm",
+            "point": [
+              0,
+              -7.5,
+              0.5
+            ],
+            "size": [
+              3.5,
+              1.5,
+              3.5
+            ],
+            "color": "gloves"
+          },
+          {
+            "bone": "RightArm",
+            "point": [
+              0,
+              -7.5,
+              0.5
+            ],
+            "size": [
+              3.5,
+              1.5,
+              3.5
+            ],
+            "color": "gloves"
+          }
+        ]
+      },
+      "leather": {
+        "label": "Leather gloves",
+        "parts": [
+          {
+            "bone": "LeftArm",
+            "point": [
+              0,
+              -8.5,
+              0.5
+            ],
+            "size": [
+              3.5,
+              2.5,
+              3.5
+            ],
+            "color": "gloves"
+          },
+          {
+            "bone": "RightArm",
+            "point": [
+              0,
+              -8.5,
+              0.5
+            ],
+            "size": [
+              3.5,
+              2.5,
+              3.5
+            ],
+            "color": "gloves"
+          }
+        ]
+      },
+      "gauntlets": {
+        "label": "Gauntlets",
+        "parts": [
+          {
+            "bone": "LeftArm",
+            "point": [
+              0,
+              -7.75,
+              0
+            ],
+            "size": [
+              4,
+              4,
+              4.5
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "RightArm",
+            "point": [
+              0,
+              -7.75,
+              0
+            ],
+            "size": [
+              4,
+              4,
+              4.5
+            ],
+            "color": "metal"
+          }
+        ]
+      }
+    },
+    "boots": {
+      "travel": {
+        "label": "Travel boots",
+        "parts": [
+
+        ]
+      },
+      "riding": {
+        "label": "High boots",
+        "parts": [
+          {
+            "bone": "LeftLeg",
+            "point": [
+              0,
+              -5.5,
+              0.25
+            ],
+            "size": [
+              3.5,
+              5,
+              4.5
+            ],
+            "color": "boots"
+          },
+          {
+            "bone": "RightLeg",
+            "point": [
+              0,
+              -5.5,
+              0.25
+            ],
+            "size": [
+              3.5,
+              5,
+              4.5
+            ],
+            "color": "boots"
+          }
+        ]
+      },
+      "fur": {
+        "label": "Winter boots",
+        "parts": [
+          {
+            "bone": "LeftLeg",
+            "point": [
+              0,
+              -6,
+              0
+            ],
+            "size": [
+              4,
+              2,
+              5
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "RightLeg",
+            "point": [
+              0,
+              -6,
+              0
+            ],
+            "size": [
+              4,
+              2,
+              5
+            ],
+            "color": "paper"
+          }
+        ]
+      },
+      "plated": {
+        "label": "Plated boots",
+        "parts": [
+          {
+            "bone": "LeftLeg",
+            "point": [
+              0,
+              -7,
+              2.75
+            ],
+            "size": [
+              3.5,
+              6,
+              0.5
+            ],
+            "color": "metal"
+          },
+          {
+            "bone": "RightLeg",
+            "point": [
+              0,
+              -7,
+              2.75
+            ],
+            "size": [
+              3.5,
+              6,
+              0.5
+            ],
+            "color": "metal"
+          }
+        ]
+      },
+      "bare": {
+        "label": "Bare feet",
+        "parts": [
+
+        ]
+      }
+    },
+    "belt": {
+      "plain": {
+        "label": "Plain belt",
+        "parts": [
+
+        ]
+      },
+      "pouches": {
+        "label": "Belt pouches",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              -3,
+              -0.5,
+              3.25
+            ],
+            "size": [
+              2,
+              3,
+              1.5
+            ],
+            "color": "bag"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              3,
+              -0.5,
+              3.25
+            ],
+            "size": [
+              2,
+              3,
+              1.5
+            ],
+            "color": "bag"
+          }
+        ]
+      },
+      "sash": {
+        "label": "Cloth sash",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              0.5,
+              0
+            ],
+            "size": [
+              9,
+              1.5,
+              6
+            ],
+            "color": "outer"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              3,
+              -2,
+              3.25
+            ],
+            "size": [
+              2,
+              4,
+              0.5
+            ],
+            "color": "outer"
+          }
+        ]
+      },
+      "keys": {
+        "label": "Key ring",
+        "parts": [
+
+        ],
+        "base": "keys"
+      }
+    },
+    "accessory": {
+      "none": {
+        "label": "No accessory",
+        "parts": [
+
+        ],
+        "base": "none"
+      },
+      "satchel": {
+        "label": "Satchel",
+        "parts": [
+
+        ],
+        "base": "satchel"
+      },
+      "pack": {
+        "label": "Backpack",
+        "parts": [
+
+        ],
+        "base": "pack"
+      },
+      "book": {
+        "label": "Field journal",
+        "parts": [
+
+        ],
+        "base": "book"
+      },
+      "map_case": {
+        "label": "Map case",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              -5,
+              2,
+              -0.5
+            ],
+            "size": [
+              2,
+              7,
+              3
+            ],
+            "color": "bag"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              -5,
+              5.75,
+              -0.5
+            ],
+            "size": [
+              2.5,
+              0.5,
+              3.5
+            ],
+            "color": "metal"
+          }
+        ]
+      },
+      "scrolls": {
+        "label": "Scroll carrier",
+        "parts": [
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              3,
+              -4.5
+            ],
+            "size": [
+              6,
+              6,
+              2
+            ],
+            "color": "bag"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              -2,
+              7,
+              -4.5
+            ],
+            "size": [
+              1,
+              4,
+              1
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              0,
+              7.5,
+              -4.5
+            ],
+            "size": [
+              1,
+              5,
+              1
+            ],
+            "color": "paper"
+          },
+          {
+            "bone": "Torso",
+            "point": [
+              2,
+              7,
+              -4.5
+            ],
+            "size": [
+              1,
+              4,
+              1
+            ],
+            "color": "paper"
+          }
+        ]
+      }
+    }
+  },
+  "presets": {
+    "voxel:wanderer": {
+      "label": "Road wanderer",
+      "fields": {
+        "costume": "journey_tunic"
+      }
+    },
+    "voxel:surveyor": {
+      "label": "Milewarden surveyor",
+      "fields": {
+        "costume": "guild_coat",
+        "headwear": "brim",
+        "accessory": "map_case",
+        "outfit": 10,
+        "trim": 6
+      }
+    },
+    "voxel:archivist": {
+      "label": "Traveling archivist",
+      "fields": {
+        "costume": "scholar_robe",
+        "head": "braid",
+        "hair": 2,
+        "accessory": "book",
+        "outfit": 3
+      }
+    },
+    "voxel:ironwarden": {
+      "label": "Iron warden",
+      "fields": {
+        "costume": "plated_armor",
+        "body_type": "broad",
+        "beard": "full",
+        "headwear": "helm",
+        "gloves": "gauntlets",
+        "boots": "plated",
+        "outfit": 5
+      }
+    },
+    "voxel:dune_rover": {
+      "label": "Dune rover",
+      "fields": {
+        "costume": "long_robe",
+        "headwear": "turban",
+        "outerwear": "scarf",
+        "skin": 3,
+        "outfit": 4,
+        "outer_color": 6
+      }
+    },
+    "voxel:winter_delver": {
+      "label": "Winter delver",
+      "fields": {
+        "ancestry": "dwarf",
+        "body_type": "stocky",
+        "costume": "padded_coat",
+        "beard": "braided",
+        "headwear": "fur_cap",
+        "gloves": "leather",
+        "boots": "fur",
+        "outfit": 7
+      }
+    },
+    "voxel:woodland_scout": {
+      "label": "Woodland scout",
+      "fields": {
+        "ancestry": "elf",
+        "body_type": "slender",
+        "costume": "leather_vest",
+        "head": "ponytail",
+        "outerwear": "short_cloak",
+        "accessory": "satchel",
+        "outfit": 2
+      }
+    },
+    "voxel:runebinder": {
+      "label": "Runebinder",
+      "fields": {
+        "ancestry": "elf",
+        "costume": "long_robe",
+        "head": "topknot",
+        "headwear": "circlet",
+        "eye_color": 4,
+        "outerwear": "mantle",
+        "outfit": 3
+      }
+    },
+    "voxel:workshop_keeper": {
+      "label": "Workshop keeper",
+      "fields": {
+        "ancestry": "dwarf",
+        "body_type": "broad",
+        "costume": "craft_apron",
+        "beard": "full",
+        "head": "bald",
+        "belt": "pouches",
+        "outfit": 8
+      }
+    },
+    "voxel:pilgrim": {
+      "label": "Road pilgrim",
+      "fields": {
+        "costume": "long_robe",
+        "headwear": "hood",
+        "outerwear": "poncho",
+        "outfit": 6
+      }
+    },
+    "voxel:courier": {
+      "label": "Little courier",
+      "fields": {
+        "ancestry": "halfling",
+        "costume": "explorer_coat",
+        "headwear": "cap",
+        "head": "swept",
+        "accessory": "pack",
+        "outfit": 1
+      }
+    },
+    "voxel:ember_guard": {
+      "label": "Ember guard",
+      "fields": {
+        "ancestry": "orc",
+        "body_type": "broad",
+        "skin": 9,
+        "costume": "scale_vest",
+        "head": "crest",
+        "outerwear": "short_cloak",
+        "outfit": 8
+      }
+    }
+  }
+}

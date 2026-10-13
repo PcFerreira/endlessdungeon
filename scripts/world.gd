@@ -7,10 +7,15 @@ const Enemies = preload("res://scripts/enemy_catalog.gd")
 const MonsterAreas = preload("res://scripts/monster_areas.gd")
 const TownMagic = preload("res://scripts/town_magic.gd")
 const TownTypes = preload("res://scripts/town_types.gd")
+const TownVoxelLayout = preload("res://scripts/town_voxel_layout.gd")
 const SitePlanner = preload("res://scripts/site_planner.gd")
+const RoadRoutes = preload("res://scripts/road_routes.gd")
 const SurfaceLocations = preload("res://scripts/surface_locations.gd")
 const Biomes = preload("res://scripts/biome_catalog.gd")
-const NEW_JOURNEY_EDITION := 6
+const Composition = preload("res://scripts/biome_composition.gd")
+const MicroBiomes = preload("res://scripts/micro_biome_catalog.gd")
+const LandmarkCatalog = preload("res://scripts/biome_landmark_catalog.gd")
+const NEW_JOURNEY_EDITION := 7
 static var REGION_SIZE: int = int(Areas.DATA.geography.town_spacing)
 const CHUNK_RADIUS := 2
 const BIOMES := ["Greenwood", "Sunlit Meadows", "Amber Wastes", "Frostlands"]
@@ -20,9 +25,12 @@ var generator_version := GENERATOR_VERSION
 var site_planner
 var start := Vector2i(REGION_SIZE / 2, REGION_SIZE / 2 + 3)
 var chunks: Dictionary = {}
+var installed_chunks: Dictionary = {}
 var cells: Dictionary = {}
 var regions: Dictionary = {}
 var route_plans: Dictionary = {}
+var micro_patches: Dictionary = {}
+var landmark_plans: Dictionary = {}
 var temperature := FastNoiseLite.new()
 var moisture := FastNoiseLite.new()
 var elevation := FastNoiseLite.new()
@@ -33,16 +41,19 @@ var rivers := FastNoiseLite.new()
 var current_chunk := Vector2i(999999, 999999)
 
 func generate(seed_value: int, edition: int = GENERATOR_VERSION) -> void:
-	assert(edition in [4, 5, 6], "Unsupported world generation edition")
+	assert(edition in [4, 5, 6, 7], "Unsupported world generation edition")
 	assert(edition < 5 or int(SitePlanner.DATA.region_size) == REGION_SIZE, "World and independent planning must use the same region size")
 	generator_version = edition
 	run_seed = seed_value
 	site_planner = SitePlanner.new(seed_value) if edition >= 5 else null
 	chunks.clear()
+	installed_chunks.clear()
 	cells.clear()
 	tiles.clear()
 	regions.clear()
 	route_plans.clear()
+	micro_patches.clear()
+	landmark_plans.clear()
 	current_chunk = Vector2i(999999, 999999)
 	for noise in [temperature, moisture, elevation, continents, erosion, ridges, rivers]:
 		noise.noise_type = FastNoiseLite.TYPE_SIMPLEX_SMOOTH
@@ -67,13 +78,18 @@ func generate(seed_value: int, edition: int = GENERATOR_VERSION) -> void:
 	rivers.seed = _hash("rivers") % 2147483647
 	rivers.frequency = .0038
 	rivers.fractal_octaves = 2
+	if edition >= 6:
+		site_planner.routing = RoadRoutes.new(self)
 
 func _raw_height(cell: Vector2i) -> float:
+	return floorf(_height_field(cell) * 2) * .5
+
+func _height_field(cell: Vector2i) -> float:
 	var broad := continents.get_noise_2d(cell.x, cell.y)
 	var worn := (erosion.get_noise_2d(cell.x, cell.y) + 1) * .5
 	var ridge := pow(clampf(1.0 - absf(ridges.get_noise_2d(cell.x, cell.y) * 2), 0, 1), 3)
 	var detail := elevation.get_noise_2d(cell.x, cell.y)
-	return floorf(clampf(1.5 + broad * 5.5 + ridge * (1 - worn) * 7 + detail * 1.8, 0, 8) * 2) * .5
+	return clampf(1.5 + broad * 5.5 + ridge * (1 - worn) * 7 + detail * 1.8, 0, 8)
 
 func ground_height(point: Vector2) -> float:
 	return cell_info(Vector2i(point.round())).height
@@ -283,11 +299,19 @@ func biome_at(cell: Vector2i, climate: int = -1) -> Dictionary:
 	var biome := _biome_at(cell) if climate < 0 else climate
 	if generator_version < 6:
 		return {"biome": biome, "biome_id": Biomes.LEGACY_IDS[biome], "biome_secondary": Biomes.LEGACY_IDS[biome], "biome_blend": 0.0}
-	var shore := 0
+	var shore := 0.0
 	if _raw_height(cell) > 0:
+		var lowest := INF
+		var second := INF
 		for direction in DIRECTIONS:
-			shore += int(_raw_height(cell + direction * 8) <= 0)
-	return Biomes.sample(cell, biome, run_seed, temperature.get_noise_2d(cell.x, cell.y), moisture.get_noise_2d(cell.x, cell.y), shore >= 2)
+			var height := _height_field(cell + direction * 8)
+			if height < lowest:
+				second = lowest
+				lowest = height
+			elif height < second:
+				second = height
+		shore = 1 - smoothstep(0, .5, second)
+	return Biomes.sample(cell, biome, run_seed, temperature.get_noise_2d(cell.x, cell.y), moisture.get_noise_2d(cell.x, cell.y), shore)
 
 func _ecology_facet(context: Dictionary) -> String:
 	var id: String = Biomes.DATA.profiles[context.biome_id].get("facet", "")
@@ -417,6 +441,7 @@ func region_at(cell: Vector2i) -> Dictionary:
 			bridges[bridge.id] = bridge
 	definition = TownTypes.apply(city,definition,_hash("town-type:" + city.id),coordinate == Vector2i.ZERO)
 	_densify(city,definition,layout)
+	city.gateway = TownVoxelLayout.gateway(city,roads)
 	if definition.has("magic_profile"):
 		var charm := TownTypes.profile_for(city,definition)
 		city.magic = TownMagic.plan(city,charm.id,charm.profile,_hash("town-magic:" + city.id))
@@ -495,6 +520,25 @@ func _independent_region(coordinate: Vector2i) -> Dictionary:
 	var limits := Rect2i(coordinate * REGION_SIZE, Vector2i.ONE * REGION_SIZE)
 	for route in site_planner.roads_for(coordinate):
 		result.routes.append({"id": route.id, "from_id": route.from.id, "to_id": route.to.id, "from": route.from.approach, "to": route.to.approach, "path": route.path})
+		if generator_version >= 6:
+			var plan: Dictionary = site_planner.routing.materialize(route)
+			for point in plan.cells:
+				if not limits.has_point(point):
+					continue
+				var incoming: Dictionary = plan.cells[point]
+				if result.roads.has(point):
+					var previous: Dictionary = result.roads[point]
+					var centerline: bool = previous.centerline or incoming.centerline
+					if incoming.bridge and not previous.bridge:
+						previous.merge(incoming,true)
+					previous.centerline = centerline
+				else:
+					result.roads[point] = incoming.duplicate()
+					result.roads[point].height = _travel_height(point)
+			for span in plan.bridges:
+				if span.path.any(func(point): return limits.grow(1).has_point(point)):
+					result.bridges[span.id] = span
+			continue
 		var path := SitePlanner.raster(route.path)
 		for index in range(path.size()):
 			var cell: Vector2i = path[index]
@@ -525,11 +569,60 @@ func _independent_region(coordinate: Vector2i) -> Dictionary:
 	for site in locations:
 		for cell in site.walks:
 			if not result.roads.has(cell):
-				result.roads[cell] = {"height": _travel_height(cell), "bridge": _natural_water(cell), "axis": site.facing, "edge": 0, "pier": posmod(cell.x + cell.y, 4) == 0, "route_id": site.id + ":approach", "centerline": cell in [site.cell + site.facing * int(site.approach_distance), site.cell]}
+				result.roads[cell] = {"height": _travel_height(cell), "bridge": site_planner.routing.protected_water(cell) if generator_version >= 6 else _natural_water(cell), "axis": site.facing, "edge": 0, "pier": posmod(cell.x + cell.y, 4) == 0, "route_id": site.id + ":approach", "centerline": cell in [site.cell + site.facing * int(site.approach_distance), site.cell]}
+	if not city.is_empty():
+		city.gateway = TownVoxelLayout.gateway(city,result.roads)
 	if regions.size() >= 32:
 		regions.erase(regions.keys()[0])
 	regions[coordinate] = result
 	return result
+
+func _protected_nature(cell: Vector2i) -> bool:
+	var region := region_at(cell)
+	if _road_at(cell, region) or (not region.city.is_empty() and city_distance(Vector2(cell), region.city.cell) <= 13):
+		return true
+	for site in sites_in(region):
+		if site.type == "dungeon":
+			if Vector2(cell).distance_to(site.cell) < 3.2:
+				return true
+		elif site.footprint.has_point(cell):
+			return true
+	return false
+
+func _micro_patch(feature: Dictionary) -> Dictionary:
+	if micro_patches.has(feature.id):
+		return micro_patches[feature.id]
+	if micro_patches.size() >= 32:
+		micro_patches.erase(micro_patches.keys()[0])
+	micro_patches[feature.id] = {}
+	if not MicroBiomes.nature_world(self, feature.center) or _natural_water(feature.center) or _protected_nature(feature.center):
+		return {}
+	var ecology := biome_at(feature.center)
+	var profile := MicroBiomes.profile_for(run_seed, feature.id, ecology.biome_id)
+	if profile.is_empty():
+		return {}
+	if profile.water_required:
+		var water := false
+		var radius: int = int(profile.radius)
+		for x in range(-radius, radius + 1):
+			if water:
+				break
+			for y in range(-radius, radius + 1):
+				var point: Vector2i = feature.center + Vector2i(x, y)
+				if x * x + y * y <= radius * radius and _natural_water(point) and MicroBiomes.nature_world(self, point) and not _protected_nature(point):
+					water = true
+					break
+		if not water:
+			return {}
+	micro_patches[feature.id] = profile
+	return profile
+
+func _landmark_plan(feature: Dictionary) -> Dictionary:
+	if not landmark_plans.has(feature.id):
+		if landmark_plans.size() >= 32:
+			landmark_plans.erase(landmark_plans.keys()[0])
+		landmark_plans[feature.id] = LandmarkCatalog.plan(self, feature)
+	return landmark_plans[feature.id]
 
 func cell_info(cell: Vector2i) -> Dictionary:
 	if cells.has(cell):
@@ -559,6 +652,7 @@ func cell_info(cell: Vector2i) -> Dictionary:
 				if site.has("biome_mix"):
 					ecology.biome_mix = site.biome_mix
 	var biome_profile: Dictionary = Biomes.DATA.profiles[ecology.biome_id] if generator_version >= 6 else Areas.DATA.biomes[str(biome)]
+	var vegetation_id: String = ecology.get("biome_id", "")
 	var density: float = biome_profile.density
 	var detail_chance: float = biome_profile.get("detail_chance", 0.0)
 	if generator_version >= 6:
@@ -572,6 +666,7 @@ func cell_info(cell: Vector2i) -> Dictionary:
 			detail_chance += profile.detail_chance * component.weight
 			if threshold >= cumulative and threshold < cumulative + component.weight:
 				biome_profile = profile
+				vegetation_id = component.id
 			cumulative += component.weight
 	var water := _natural_water(cell) and not in_city
 	var cleared := false
@@ -583,6 +678,27 @@ func cell_info(cell: Vector2i) -> Dictionary:
 		if site.footprint.has_point(cell):
 			cleared = true
 			water = false
+	var composition := {}
+	var feature := {}
+	if generator_version >= 7 and not water and not in_city and not road and not cleared:
+		feature = Composition.feature(run_seed, cell)
+		var micro_profile := _micro_patch(feature)
+		var wet_edge := false
+		var slope := 0.0
+		var wet_profile: bool = ecology.biome_mix.any(func(part): return part.id in ["marsh", "coast"]) or micro_profile.get("water_required", false)
+		var hill_profile: bool = ecology.biome_mix.any(func(part): return part.id == "highlands")
+		if wet_profile or hill_profile:
+			for direction in DIRECTIONS:
+				if wet_profile:
+					wet_edge = wet_edge or _natural_water(cell + direction)
+				if hill_profile:
+					slope = maxf(slope, absf(_raw_height(cell + direction) - altitude))
+		composition = Composition.sample(run_seed, cell, ecology, wet_edge, slope, micro_profile, feature)
+		density = composition.density
+		detail_chance = composition.detail_chance
+		biome_profile = biome_profile.duplicate()
+		biome_profile.props = composition.props
+		biome_profile.details = composition.details
 	var record: Dictionary = region.roads.get(cell,{"bridge": false,"axis": Vector2i.RIGHT,"edge": 0,"pier": false})
 	var bridge: bool = road and not in_city and not cleared and record.bridge
 	var terrain := "water" if water else "land"
@@ -610,10 +726,17 @@ func cell_info(cell: Vector2i) -> Dictionary:
 						spaced = false
 		if not water and not cleared and spaced and roll < density:
 			var props: Array = Areas.DATA.facets[facet].props if not facet.is_empty() and generator_version < 6 else biome_profile.props
-			if generator_version >= 6 and ecology.biome_id == "coast" and biome == 3:
+			if generator_version >= 6 and vegetation_id == "coast" and biome == 3:
 				props = ["pine", "rock"]
 			prop = props[roll % props.size()]
 			walkable = false
+		if not composition.is_empty():
+			if composition.clear:
+				prop = ""
+				walkable = true
+			if not composition.prop_override.is_empty():
+				prop = composition.prop_override
+				walkable = false
 	if in_city:
 		for lot in city.outdoor_lots:
 			if lot.footprint.has_point(cell):
@@ -627,6 +750,9 @@ func cell_info(cell: Vector2i) -> Dictionary:
 			if decoration.cell == cell:
 				walkable = false
 				terrain = "paving"
+		if cell in city.get("gateway",{}).get("solid_cells",[]):
+			walkable = false
+			terrain = "paving"
 	for site in region.dungeons:
 		var facing: Vector2i = site.get("facing", Vector2i.DOWN)
 		var side := Vector2i(-facing.y, facing.x)
@@ -648,6 +774,8 @@ func cell_info(cell: Vector2i) -> Dictionary:
 			detail = "biome:reeds"
 	if generator_version >= 6 and terrain == "water" and ecology.biome_id == "marsh" and detail_roll % 17 == 0:
 		detail = "biome:lily"
+	if not composition.is_empty() and walkable and terrain == "land" and not composition.detail_override.is_empty():
+		detail = composition.detail_override
 	var base_height := 0.0 if water else minf(_raw_height(cell),altitude - .5)
 	var bridge_edge: int = record.edge
 	var bridge_side := Vector2i.DOWN if record.axis.x != 0 else Vector2i.RIGHT
@@ -655,6 +783,29 @@ func cell_info(cell: Vector2i) -> Dictionary:
 		bridge_edge = 0
 	var result := {"biome": biome, "terrain": terrain, "prop": prop, "detail": detail, "facet": facet, "walkable": walkable, "height": altitude, "base_height": base_height, "base_terrain": "water" if water else "land", "bridge_axis": record.axis, "bridge_edge": bridge_edge, "bridge_pier": record.pier, "tone": _hash("tone:%s:%s" % [cell.x, cell.y]) % 3}
 	result.merge(ecology, true)
+	if generator_version >= 7:
+		result.composition_zone = composition.get("zone", "protected")
+		result.composition_motif = composition.get("motif", "")
+		result.composition_feature = composition.get("feature_id", "")
+		result.micro_biome_id = composition.get("micro_biome_id", "")
+		result.micro_biome_name = composition.get("micro_biome_name", "")
+		if not result.micro_biome_id.is_empty():
+			result.tone = MicroBiomes.Biomes.salt(run_seed, result.micro_biome_id) % 3
+		result.landmark_id = ""
+		result.landmark_kind = ""
+		if not feature.is_empty() and MicroBiomes.nature_world(self, cell):
+			var landmark := _landmark_plan(feature)
+			if not landmark.is_empty() and (landmark.footprint.has_point(cell) or cell in [landmark.door, landmark.approach, landmark.approach_far]):
+				result.prop = ""
+				result.detail = ""
+				result.walkable = cell not in landmark.solid_cells
+				if landmark.footprint.has_point(cell):
+					result.terrain = "paving"
+					result.height = landmark.height
+					result.base_height = minf(_raw_height(cell), landmark.height - .5)
+					result.composition_zone = "landmark"
+				result.landmark_id = landmark.id
+				result.landmark_kind = landmark.kind
 	return result
 
 func load_around(point: Vector2) -> bool:
@@ -669,16 +820,20 @@ func load_around(point: Vector2) -> bool:
 			wanted[coordinate] = true
 			if not chunks.has(coordinate):
 				chunks[coordinate] = _build_chunk(coordinate)
+			if not installed_chunks.has(coordinate):
+				cells.merge(chunks[coordinate].cells)
+				for cell in chunks[coordinate].cells:
+					if chunks[coordinate].cells[cell].walkable:
+						tiles[cell] = true
+				installed_chunks[coordinate] = true
 	for coordinate in chunks.keys():
 		if not wanted.has(coordinate):
+			if installed_chunks.has(coordinate):
+				for cell in chunks[coordinate].cells:
+					cells.erase(cell)
+					tiles.erase(cell)
+				installed_chunks.erase(coordinate)
 			chunks.erase(coordinate)
-	cells.clear()
-	tiles.clear()
-	for chunk in chunks.values():
-		cells.merge(chunk.cells)
-		for cell in chunk.cells:
-			if chunk.cells[cell].walkable:
-				tiles[cell] = true
 	bounds = Rect2i((center - Vector2i.ONE * CHUNK_RADIUS) * CHUNK_SIZE, Vector2i.ONE * CHUNK_SIZE * (CHUNK_RADIUS * 2 + 1))
 	return true
 

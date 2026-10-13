@@ -46,13 +46,27 @@ func snapshot() -> Dictionary:
 static func valid(data) -> bool:
 	return data is Dictionary and (data.is_empty() or data.get("version") == 1 and data.get("id") == City.data.id and City.data.themes.has(data.get("theme", "")))
 
+static func sanctum_portal_point() -> Vector2:
+	return Vector2(5, 7)
+
+static func portal_point(kind: String) -> Vector2:
+	for gate in City.data.gates:
+		if gate.kind == kind:
+			return Vector2(City.data.center[0] + gate.position[0], City.data.center[1] + gate.position[1])
+	return Vector2.INF
+
 func target() -> Dictionary:
+	if game.layer == "sanctum":
+		return {"kind": "hub", "name": "Lanternwake", "point": sanctum_portal_point()} if game.player_point.distance_to(sanctum_portal_point()) < 1.8 else {}
 	if game.layer != "overworld":
 		return {}
 	var local := city()
 	if not local.is_empty():
 		if game.player_point.distance_to(local.hub_portal) < 1.8:
 			return {"kind": "depart", "name": "Worldgate", "point": local.hub_portal}
+		for gate in local.get("hub_gates", []):
+			if game.player_point.distance_to(gate.point) < 1.8:
+				return gate.duplicate(true)
 		for hall in local.houses:
 			if game.player_point.distance_to(hall.approach) < 1.6:
 				var record: Dictionary = hall.duplicate()
@@ -79,6 +93,10 @@ func hint() -> String:
 		return "E: Depart through the Worldgate"
 	if source.kind == "return":
 		return "E: Return to Lanternwake"
+	if source.kind == "hub":
+		return "E: Travel to Lanternwake"
+	if source.kind in ["sanctum", "dimension"]:
+		return "E: Travel to " + source.name if not game.online.session else "E: Read the " + source.name + " gate inscription"
 	if source.kind == "market":
 		return "E: Visit " + source.name if game.online.session else "E: Trade at " + source.name
 	return "E: Read the " + source.name + (" charter" if source.kind == "guild" else " arrival board")
@@ -89,6 +107,17 @@ func interact() -> bool:
 	var source := target()
 	if source.is_empty():
 		return false
+	if source.kind in ["hub", "sanctum", "dimension"] and not game.online.session:
+		if not can_cross(source.point):
+			game.notify("Stand on clear, solid ground beside the portal.")
+			return true
+		if source.kind == "hub":
+			from_sanctum()
+		elif source.kind == "sanctum":
+			game.use_sanctum_sigil()
+		else:
+			game.dimension.enter()
+		return true
 	if source.kind in ["depart", "return"]:
 		if game.online.session:
 			game.online.send({"type": "hub_travel", "destination": "world" if source.kind == "depart" else "hub"})
@@ -103,6 +132,41 @@ func interact() -> bool:
 	game.state = "hub_board"
 	game.rotating_camera = false
 	_show()
+	return true
+
+func can_cross(point: Vector2) -> bool:
+	return game.offline_actions_allowed() and game.grounded and game.dungeon.walkable(game.player_point) and game.dungeon.line_clear(game.player_point, point)
+
+func from_sanctum() -> bool:
+	if game.state != "playing" or game.layer != "sanctum" or game.sanctum_return.is_empty() or game.player_point.distance_to(sanctum_portal_point()) >= 1.8 or not can_cross(sanctum_portal_point()):
+		return false
+	var dimension = game.dimension
+	var outside: Dictionary = game.sanctum_return.duplicate(true)
+	var home_point: Vector2 = game.player_point
+	outside.progress.erase("dimension")
+	if not game.leave_sanctum():
+		return false
+	if dimension.active:
+		if not dimension.return_to_hub():
+			return false
+	if not game.world is HubWorld:
+		var world := HubWorld.new()
+		world.generate(game.run_seed, game.world.generator_version)
+		game.world = world
+		game.world_view.reset()
+	game.active_dungeon.clear()
+	game.interiors.current.clear()
+	game.interiors.return_journey.clear()
+	game.waypoint.clear()
+	game.sanctuary = game.world.hub.spawn
+	game._generate_surface(game.world.hub.spawn, false)
+	dimension.remember_origin(outside, home_point)
+	game.visited_cities[City.data.id] = true
+	game.exploration.knowledge.remember(game.world.hub.city_record(), "visited", str(game.run_seed))
+	apply_lighting()
+	game.notify("Arrived in Lanternwake. The Portal Court connects the worlds.")
+	game.sound.play_spell("gate")
+	game._auto_save()
 	return true
 
 func recall() -> bool:
@@ -162,7 +226,9 @@ func _show() -> void:
 	var panel = game.interface._panel(center, Vector2(680, 0), Color("9774b2"))
 	var box = game.interface._vbox(panel, 16)
 	game.interface._label(box, current.name, 28, Color("e7c997"), true)
-	var text: String = current.get("charter", "Lanternwake floats above the wandering lands. The Commons welcome new arrivals and companions. Guild halls stand along the Moonlit Walk; traders keep the Ember Market. Take the Worldgate at the southern dock when you are ready to explore.")
+	var text: String = current.get("charter", "Lanternwake floats above the wandering lands. The Commons welcome new arrivals and companions. Guild halls stand along the Moonlit Walk; traders keep the Ember Market. The southern Worldgate leads to the wandering lands. Beyond it, the Portal Court connects your Sanctum and Morrowmere.")
+	if current.kind in ["sanctum", "dimension"]:
+		text = "This gate opens during a solo journey. Personal Sanctums and Morrowmere await beyond Lanternwake's Portal Court."
 	if current.kind == "market":
 		text = "The Ember Market brings provisions, curios and travelers together beneath the lantern awnings. Meet fellow travelers here before setting out from the Worldgate."
 	var body = game.interface._label(box, text, 17, Color("d8d0e5"))

@@ -38,20 +38,24 @@ static func numeric(value) -> bool:
 static func integer(value, minimum: int, maximum: int) -> bool:
 	return numeric(value) and value == floorf(value) and value >= minimum and value <= maximum
 
-func accepts(profile: String, id: String) -> bool:
+func accepts(profile: String, id: String, saved_stock: bool = false) -> bool:
 	var item: Dictionary = Items.definitions.get(id, {})
 	if item.is_empty() or item.get("retired", false) or item.get("world_prop", false) or id == data.currency or item.get("currency", "") != "":
+		return false
+	if not saved_stock and not Items.available(item):
 		return false
 	var definition: Dictionary = data.profiles.get(profile, {})
 	return not definition.is_empty() and item.kind in definition.kinds and (item.kind != "equipment" or definition.slots.is_empty() or item.slot in definition.slots)
 
 func price(id: String) -> int:
 	var item: Dictionary = Items.definitions[id]
+	if item.has("trade_value"):
+		return clampi(int(item.trade_value),1,999)
 	return clampi(int(data.item_prices.get(id, data.prices.get(item.kind, 1))) * int(data.rarity_multipliers.get(item.get("rarity", "common"), 1)), 1, 999)
 
 func initial(source: Dictionary, seed_value: int) -> Dictionary:
 	var profile: Dictionary = data.profiles[source.profile]
-	var candidates: Array = Items.definitions.keys().filter(func(id): return accepts(source.profile, id))
+	var candidates: Array = Items.definitions.keys().filter(func(id): return accepts(source.profile, id) and not Items.definitions[id].has("forage_shape"))
 	candidates.sort()
 	var random := RandomNumberGenerator.new()
 	random.seed = hash("store:%s:%s" % [seed_value, source.id])

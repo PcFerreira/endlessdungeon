@@ -7,12 +7,16 @@ const History = preload("res://scripts/regional_history.gd")
 const QuestUI = preload("res://scripts/local_quest_ui.gd")
 const QuestState = preload("res://scripts/local_quests.gd")
 const Knowledge = preload("res://scripts/site_knowledge.gd")
+const Micro = preload("res://scripts/micro_biome_exploration.gd")
+const Landmarks = preload("res://scripts/biome_landmark_exploration.gd")
 var game
 var catalog := Catalog.new()
 var history := History.new()
 var view := View.new()
 var quests := QuestUI.new()
 var knowledge := Knowledge.new()
+var micro := Micro.new()
+var landmarks := Landmarks.new()
 var observation_timer := 0.0
 var legacy_knowledge := false
 var entries: Dictionary = {}
@@ -31,6 +35,10 @@ func _ready() -> void:
 	add_child(overlay)
 	overlay.hide()
 	add_child(view)
+	micro.game = game
+	add_child(micro)
+	landmarks.game = game
+	add_child(landmarks)
 	quests.game = game
 	add_child(quests)
 
@@ -86,6 +94,10 @@ func reconcile_knowledge() -> void:
 	observe_sites()
 
 func sync() -> void:
+	if game.dimension.active:
+		nearby.clear()
+		view.hide()
+		return
 	if game.layer != "overworld" or not game.has_journey:
 		view.visible = false
 		return
@@ -116,6 +128,8 @@ func _remembered_region(key: String) -> Dictionary:
 	return {}
 
 func reset() -> void:
+	micro.reset()
+	landmarks.reset()
 	entries.clear()
 	history.records.clear()
 	quests.reset()
@@ -131,7 +145,7 @@ func reset() -> void:
 	_clear_overlay()
 
 func snapshot() -> Dictionary:
-	return {"version": 1, "entries": entries.duplicate(true), "regions": history.snapshot(), "quests": quests.state.snapshot(), "knowledge": knowledge.snapshot()}
+	return {"version": 1, "entries": entries.duplicate(true), "regions": history.snapshot(), "quests": quests.state.snapshot(), "knowledge": knowledge.snapshot(), "micro_biomes": micro.snapshot(), "landmarks": landmarks.snapshot()}
 
 static func _number(value) -> bool:
 	return (value is int or value is float) and is_finite(float(value))
@@ -149,6 +163,10 @@ static func valid_snapshot(data, seed_value: String = "") -> bool:
 	if not QuestState.valid_snapshot(data.get("quests", {}), seed_value):
 		return false
 	if not Knowledge.valid_snapshot(data.get("knowledge", {}), seed_value):
+		return false
+	if not Micro.valid(data.get("micro_biomes", {}), seed_value):
+		return false
+	if not Landmarks.valid(data.get("landmarks", {}), seed_value):
 		return false
 	for id in data.entries:
 		var entry = data.entries[id]
@@ -197,6 +215,8 @@ func restore(data: Dictionary, seed_value: String = "") -> bool:
 	history.restore(data.get("regions", {}), seed_value)
 	quests.state.restore(data.get("quests", {}), seed_value)
 	knowledge.restore(data.get("knowledge", {}), seed_value)
+	micro.restore(data.get("micro_biomes", {}), seed_value)
+	landmarks.restore(data.get("landmarks", {}), seed_value)
 	legacy_knowledge = not data.has("knowledge")
 	return true
 
@@ -225,14 +245,17 @@ func target() -> Dictionary:
 
 func hint() -> String:
 	var entry := target()
-	return "" if entry.is_empty() else "E: Read " + entry.title
+	if not entry.is_empty():
+		return "E: Read " + entry.title
+	var pocket := micro.hint()
+	return landmarks.hint() if pocket.is_empty() else pocket
 
 func interact() -> bool:
 	if game != null and not game.offline_actions_allowed():
 		return false
 	var entry := target()
 	if entry.is_empty():
-		return false
+		return micro.interact() or landmarks.interact()
 	if not game.sanctum_problem().is_empty():
 		game.notify("Find safe ground before reading the landmark.")
 		return true
@@ -283,6 +306,29 @@ func _open(entry: Dictionary, previous: String) -> void:
 	game.interface._button(box, "Back to journal" if previous == "journal" else "Close", close, Vector2(0,36))
 	overlay.show()
 
+func open_landmark(record: Dictionary, previous: String = "playing") -> void:
+	_clear_overlay()
+	return_state = previous
+	game.state = "discovery_reader"
+	game.rotating_camera = false
+	var shade := ColorRect.new()
+	shade.color = Color(.025, .035, .04, .72)
+	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.add_child(shade)
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.add_child(center)
+	var panel = game.interface._panel(center, Vector2(650, 0), Color("766950"))
+	var box = game.interface._vbox(panel, 12)
+	game.interface._label(box, record.name, 27, Color("e5e0d5"), true)
+	game.expansion._text(box, record.flavor, 220)
+	var status := "Visited" if landmarks.claimed.has(record.id) else "Discovered"
+	if record.interaction == "cache" and landmarks.claimed.has(record.id):
+		status = "Supply cache searched. Its reward stays claimed."
+	game.interface._label(box, status + " / Recorded in your field journal.", 14)
+	game.interface._button(box, "Back to journal" if previous == "journal" else "Close", close, Vector2(0, 36))
+	overlay.show()
+
 func mark_site(id: String) -> void:
 	if not entries.has(id):
 		return
@@ -303,6 +349,8 @@ func _input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 func journal_rows(parent: VBoxContainer) -> void:
+	micro.journal_rows(parent)
+	landmarks.journal_rows(parent)
 	quests.journal_rows(parent)
 	game.interface._label(parent, "Regional histories / %s" % history.records.size(), 17, Color("c3a576"))
 	if history.records.is_empty():
@@ -325,6 +373,8 @@ func journal_rows(parent: VBoxContainer) -> void:
 		game.interface._button(parent, "%s / %s" % [entry.title, entry.city_name], read_saved.bind(id), Vector2(0,40))
 
 func regional_record(region: Dictionary) -> Dictionary:
+	if game.dimension.active:
+		return {}
 	if region.get("city", {}).is_empty():
 		return {}
 	var key := Sites.region_key(game.world, region)
@@ -346,6 +396,8 @@ func _learn_history(region: Dictionary, source: String) -> Dictionary:
 
 func record_book(id: String) -> void:
 	book_region = ""
+	if game.dimension.active:
+		return
 	if game.layer != "overworld":
 		return
 	var region: Dictionary = game.world.region_at(Vector2i(game.player_point.round()))
@@ -447,6 +499,10 @@ func _mark_target(record: Dictionary) -> void:
 	game._auto_save()
 
 func _notification(what: int) -> void:
+	if what == NOTIFICATION_PREDELETE:
+		for controller in [micro, landmarks]:
+			if is_instance_valid(controller) and controller.get_parent() == null:
+				controller.free()
 	if what == NOTIFICATION_PREDELETE and not quests.is_inside_tree():
 		quests.free()
 	if what == NOTIFICATION_PREDELETE and not view.is_inside_tree():

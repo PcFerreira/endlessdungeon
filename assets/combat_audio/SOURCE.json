@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "rubberduck_rpg",
+      "title": "80 CC0 RPG SFX",
+      "author": "rubberduck",
+      "source": "https://opengameart.org/content/80-cc0-rpg-sfx",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "80 CC0 RPG SFX by rubberduck, OpenGameArt.org. CC0-1.0."
+    },
+    {
+      "id": "jaggedstone_magic",
+      "title": "Magic Spell SFX",
+      "author": "JaggedStone",
+      "source": "https://opengameart.org/content/magic-spell-sfx",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Magic Spell SFX by JaggedStone, OpenGameArt.org. CC0-1.0."
+    }
+  ],
+  "assets": [
+    {
+      "id": "arcane",
+      "path": "res://assets/combat_audio/arcane.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/spell_01.ogg",
+      "source_sha256": "09821a53c418c5eeeac4fa25bada9d245e822fed302eeeae9ae4151522a45ae5",
+      "sha256": "625fa6069c3977d26bd441268a7d75219687f9f189e4b8869858878555a924fd",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.7,asetpts=PTS-STARTPTS,afade=t=out:st=0.6299999999999999:d=0.07,volume=-3.0dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "lightning",
+      "path": "res://assets/combat_audio/lightning.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/spell_02.ogg",
+      "source_sha256": "bf9c48b76921e56aa266172d969a2c08215d6ce0ffae7c3584f23fa05d3f8bd4",
+      "sha256": "62087e0ec1c467be48d7afa8aebb480bc4697a277e81fa28369c95e57d76836f",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.6,asetpts=PTS-STARTPTS,afade=t=out:st=0.53:d=0.07,volume=-2.5dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "ember",
+      "path": "res://assets/combat_audio/ember.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/spell_fire_01.ogg",
+      "source_sha256": "02fa3a2c6e79e868e546802f45127c5cdda69aba6d5a24ac997ea66f81a816cb",
+      "sha256": "fecedb065ff428c653c84807c76641696654bd519cb59aa2482117f26d726525",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.8,asetpts=PTS-STARTPTS,afade=t=out:st=0.73:d=0.07,volume=14.5dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "explosion",
+      "path": "res://assets/combat_audio/explosion.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/spell_fire_04.ogg",
+      "source_sha256": "64d653cd0cc6eb71bb45a1dfbba29eaa769ed5b663cce275082d6971e4f2ca8e",
+      "sha256": "5a121ed7ad46335dc7009bf6791987554b176612c421e5c6751acdfcc6ae094a",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.9,asetpts=PTS-STARTPTS,afade=t=out:st=0.8300000000000001:d=0.07,volume=12.1dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "meteor",
+      "path": "res://assets/combat_audio/meteor.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/spell_fire_03.ogg",
+      "source_sha256": "2e4edee4ff8d7898198f1ab5213e086965e14a665cb947d53759505e28ddd3e4",
+      "sha256": "6e64f9b351e72b931cf7aae4aaa91ea39874de5e7070f2948e882f0430f8bd66",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=1.0,asetpts=PTS-STARTPTS,afade=t=out:st=0.9299999999999999:d=0.07,volume=11.6dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "blade_01",
+      "path": "res://assets/combat_audio/blade_01.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/blade_01.ogg",
+      "source_sha256": "caf7a7cb9b25cda4bd487c1d12d18b74a34bb18c816fd67277cf3c8d7ef32a3a",
+      "sha256": "bea7be3dece898b3ca8fdd6cb5f8e38762b4de0ab67d4665fa0ab2c00528a60f",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.4,asetpts=PTS-STARTPTS,afade=t=out:st=0.33:d=0.07,volume=-1.8dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "blade_02",
+      "path": "res://assets/combat_audio/blade_02.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/blade_02.ogg",
+      "source_sha256": "c770afec8f62f14d3d082d5437c5cec28e2751d393df645ddd938eabc2588abd",
+      "sha256": "9c5f23a4239798152defe226fb63345a77d6c7c7e75dacc533ef78cc53516dab",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.4,asetpts=PTS-STARTPTS,afade=t=out:st=0.33:d=0.07,volume=-2.2dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "blade_03",
+      "path": "res://assets/combat_audio/blade_03.wav",
+      "source": "import_assets/combat_audio/rubberduck_rpg/original/blade_03.ogg",
+      "source_sha256": "2cd9e6926f4602a4350e703eeae4df520053e290f358ab692632d651ad368a7c",
+      "sha256": "f0c3dda82993c899cee807a8dd483c537b3d09876f4a04e031de3395b2c5c734",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.45,asetpts=PTS-STARTPTS,afade=t=out:st=0.38:d=0.07,volume=-2.6dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "frost",
+      "path": "res://assets/combat_audio/frost.wav",
+      "source": "import_assets/combat_audio/jaggedstone_magic/original/magical_6.ogg",
+      "source_sha256": "0a18ee3460cf3fd79c3771bbf94c20c26d34b65ab60d0b0e15694ffcad815955",
+      "sha256": "704a23d76b81c56b4e3622286748d3d0039c18dff25b85bc29e3e14d79bf64b9",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.85,asetpts=PTS-STARTPTS,afade=t=out:st=0.78:d=0.07,volume=22.2dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "blink",
+      "path": "res://assets/combat_audio/blink.wav",
+      "source": "import_assets/combat_audio/jaggedstone_magic/original/magical_3.ogg",
+      "source_sha256": "9fac648a1de869cf9ca2f4b3f1cd47f1766a3ee9d2fdec45831234401d7b2392",
+      "sha256": "aa15bacc2dac22e8d8c93d8f5b1c5f0462450a46c2154467b2b0bd3921a02d0c",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.6,asetpts=PTS-STARTPTS,afade=t=out:st=0.53:d=0.07,volume=1.9000000000000004dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "mend",
+      "path": "res://assets/combat_audio/mend.wav",
+      "source": "import_assets/combat_audio/jaggedstone_magic/original/magical_1.ogg",
+      "source_sha256": "119f9061a566c72c1c58444b03f8685b833079ef268dda02fe742eb34d3bc68f",
+      "sha256": "c684271daf1a59663699f643169b1ffe99d6d004f8d9df5ab7bd4d3f9c8f4367",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.9,asetpts=PTS-STARTPTS,afade=t=out:st=0.8300000000000001:d=0.07,volume=7.300000000000001dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "rune",
+      "path": "res://assets/combat_audio/rune.wav",
+      "source": "import_assets/combat_audio/jaggedstone_magic/original/magical_2.ogg",
+      "source_sha256": "84a70f63f3f21e5ba4a48285b760a663d422ad3feddba2f3cbadd94b76cdc52e",
+      "sha256": "4209d80ec2646e9add186bac11040a420c2de781d3c62bea63541a16600ec665",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.75,asetpts=PTS-STARTPTS,afade=t=out:st=0.6799999999999999:d=0.07,volume=11.4dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "second_wind",
+      "path": "res://assets/combat_audio/second_wind.wav",
+      "source": "import_assets/combat_audio/jaggedstone_magic/original/magical_5.ogg",
+      "source_sha256": "69aaaaed729cacb518005a5d24074196db3c5fffc0ed2cd01ad864fbed4a62be",
+      "sha256": "0c434403b582c1321d6bd09ab6bd1e45f9d18a9685ac68278c7f7254f14b489c",
+      "filter": "silenceremove=start_periods=1:start_threshold=-48dB:start_duration=0.005,atrim=duration=0.7,asetpts=PTS-STARTPTS,afade=t=out:st=0.6299999999999999:d=0.07,volume=14.3dB",
+      "format": "PCM s16le / 44100 Hz / mono",
+      "license": "CC0-1.0"
+    }
+  ]
+}

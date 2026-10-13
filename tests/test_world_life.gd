@@ -15,7 +15,7 @@ func run_checks() -> void:
 	var life := Life.new()
 	life.reset(12345)
 	life.sync(world, Vector2(world.start))
-	assert(life.residents().filter(func(actor): return not actor.get("traveling", false)).size() == 2 and life.actors.size() >= 4 and life.actors.size() <= Life.MAX_ACTORS)
+	assert(life.residents().filter(func(actor): return not actor.get("traveling", false) and not actor.get("roaming",false)).size() == 2 and life.actors.size() >= 4 and life.actors.size() <= Life.MAX_ACTORS)
 	var city: Dictionary = world.region_at(world.start).city
 	var id: String = city.residents[1].id
 	var initial: Vector2 = life.actors[id].point

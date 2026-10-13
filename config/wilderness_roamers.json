@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "profiles": [
+    {"id": "herbalist", "role": "pilgrim", "name": "Wandering herbalist", "speed": 0.75, "activity": "gathering herbs", "greetings": ["I look for useful plants along these quiet paths.", "A careful walk often reveals more than a hurried journey."], "work": "I study the local plants and look for patches that can be gathered without stripping the whole clearing."},
+    {"id": "cartographer", "role": "scholar", "name": "Field cartographer", "speed": 0.8, "activity": "surveying paths", "greetings": ["I am checking the bends and landmarks of these paths.", "A good map begins with muddy boots and patient observation."], "work": "I compare the paths with my notes. I leave the towns and creature grounds to their own inhabitants."},
+    {"id": "prospector", "role": "hunter", "name": "Wilderness prospector", "speed": 0.7, "activity": "examining stones", "greetings": ["I am looking over the stones around this stretch of wilderness.", "There is plenty to notice without venturing into a creature den."], "work": "I examine exposed stones and keep notes for a later expedition. Today is a scouting walk."},
+    {"id": "storyteller", "role": "scholar", "name": "Rambling storyteller", "speed": 0.8, "activity": "collecting stories", "greetings": ["Every traveler notices a different detail. What caught your eye?", "I walk until I find something worth remembering."], "work": "I collect ordinary stories from travelers. Small kindnesses deserve a place beside the grand adventures."},
+    {"id": "wanderer", "role": "pilgrim", "name": "Quiet wanderer", "speed": 0.85, "activity": "exploring the trails", "greetings": ["I am taking the quiet paths today.", "There is no hurry. I stop when the view gives me a reason."], "work": "I walk the nearby trails and rest between turns. I keep away from the known hunting grounds."},
+    {"id": "trail_courier", "role": "courier", "name": "Trail courier", "speed": 1.0, "activity": "checking footpaths", "greetings": ["I am checking the short footpaths before my next delivery.", "The main road is useful, but it helps to know the nearby paths too."], "work": "I scout this local stretch on foot. The long-distance couriers follow the roads between towns."}
+  ]
+}

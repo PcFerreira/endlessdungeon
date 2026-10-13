@@ -1,6 +1,8 @@
 extends Node
 signal spell_played(spell: String)
+signal effect_played(effect: String)
 const Registry = preload("res://scripts/asset_registry.gd")
+const CombatAudio = preload("res://scripts/combat_audio.gd")
 
 const SAMPLE_RATE := 22050
 const NOTES := {"bolt": [540.0, .12], "fire": [170.0, .30], "nova": [820.0, .42], "blink": [380.0, .23], "impact": [90.0, .28], "hurt": [130.0, .18], "pickup": [1040.0, .14], "gate": [660.0, .65]}
@@ -33,8 +35,13 @@ var ambience_level := .65
 var sounds: Dictionary = {}
 var cursor := 0
 var muted := false
+var effect_streams: Dictionary = {}
+var effect_variants: Dictionary = {}
+var effect_times: Dictionary = {}
+var last_effect: Dictionary = {}
 
 func _ready() -> void:
+	assert(CombatAudio.valid(CombatAudio.data), "Invalid combat sound profiles")
 	if DisplayServer.get_name() == "headless":
 		return
 	for bus in ["Music", "Effects", "Ambience"]:
@@ -60,6 +67,14 @@ func _ready() -> void:
 		sounds[key] = _tone(NOTES[key][0], NOTES[key][1])
 	sounds.wonder = _wonder()
 	sounds.aether = _aether()
+	for path in CombatAudio.data.clips.values():
+		var stream: AudioStream = load(path)
+		if stream is AudioStreamWAV:
+			stream.loop_mode = AudioStreamWAV.LOOP_DISABLED
+		elif stream is AudioStreamOggVorbis:
+			stream = stream.duplicate()
+			stream.loop = false
+		effect_streams[path] = stream
 
 func music_stream(file: String) -> AudioStream:
 	if not music_cache.has(file):
@@ -183,12 +198,52 @@ func _tone(frequency: float, duration: float) -> AudioStreamWAV:
 
 func play_spell(spell: String) -> void:
 	spell_played.emit(spell)
+	if CombatAudio.data.effects.has(spell):
+		play_effect(spell)
+		return
 	if muted or players.is_empty():
 		return
 	var player := players[cursor]
 	cursor = (cursor + 1) % players.size()
+	if not sounds.has(spell):
+		return
+	player.pitch_scale = 1
+	player.volume_db = -14
 	player.stream = sounds[spell]
 	player.play()
+
+func play_hit(spell: String = "") -> bool:
+	return play_effect(CombatAudio.hit_for(spell))
+
+func play_effect(effect: String) -> bool:
+	if muted or sfx_level == 0 or not CombatAudio.data.effects.has(effect):
+		return false
+	var profile: Dictionary = CombatAudio.data.effects[effect]
+	var now := Time.get_ticks_usec()
+	if now < effect_times.get(effect, 0):
+		return false
+	effect_times[effect] = now + int(profile.cooldown_ms * 1000)
+	var index: int = effect_variants.get(effect, 0)
+	effect_variants[effect] = index + 1
+	var path: String = CombatAudio.data.clips[profile.files[index % profile.files.size()]]
+	last_effect = {"id": effect, "path": path, "pitch": profile.pitch * (1 + (index % 3 - 1) * .012), "volume_db": profile.volume_db}
+	effect_played.emit(effect)
+	if players.is_empty():
+		return true
+	var voice := cursor
+	for offset in range(players.size()):
+		var candidate := (cursor + offset) % players.size()
+		if not players[candidate].playing:
+			voice = candidate
+			break
+	cursor = (voice + 1) % players.size()
+	var player := players[voice]
+	player.stop()
+	player.stream = effect_streams[path]
+	player.pitch_scale = last_effect.pitch
+	player.volume_db = last_effect.volume_db
+	player.play()
+	return true
 
 func toggle_mute() -> void:
 	muted = not muted
@@ -202,3 +257,4 @@ func _exit_tree() -> void:
 			child.stop()
 			child.stream = null
 	sounds.clear()
+	effect_streams.clear()

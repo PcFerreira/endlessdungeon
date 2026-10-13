@@ -86,9 +86,9 @@ static func pool(name: String, class_id: String, definitions: Dictionary) -> Arr
 			var item: Dictionary = definitions[id]
 			if item.kind not in query.kinds or (item.kind == "equipment" and class_id not in item.classes):
 				continue
-			if item.get("retired", false) or item.has("currency") or str(id).begins_with("world_"):
+			if item.get("retired", false) or not item.get("enabled", true) or item.get("removed", false) or item.has("currency") or str(id).begins_with("world_"):
 				continue
-			if id in query.get("base_items", []) or ("enemy" in item.get("loot_sources", []) and matches(item.get("source_pack", ""), query.packs) and matches(item.get("classification_name", item.name), query.names)):
+			if id in query.get("base_items", []) or ("enemy" in item.get("loot_sources", []) and (item.get("source_pack", "") == "editor" or (matches(item.get("source_pack", ""), query.packs) and matches(item.get("classification_name", item.name), query.names)))):
 				result.append(id)
 		result.sort()
 		choices[key] = result
@@ -124,17 +124,27 @@ static func weighted(weights: Dictionary, random: RandomNumberGenerator) -> Stri
 	return ""
 
 static func reward(seed_value: int, ordinal: int, enemy: Dictionary, context: Dictionary, definitions: Dictionary) -> String:
+	var custom: Array = enemy.get("drops", {}).get("entries", [])
+	if not custom.is_empty():
+		var options := {}
+		for entry in custom:
+			var item: Dictionary = definitions.get(entry.item, {})
+			if not item.is_empty() and item.get("enabled", true) and not item.get("removed", false) and item.kind != "bound" and int(item.get("level", 1)) <= int(context.get("level", 1)) and (item.kind != "equipment" or context.get("class", "mage") in item.classes):
+				options[entry.item] = int(options.get(entry.item, 0)) + int(entry.weight)
+		var custom_random := RandomNumberGenerator.new()
+		custom_random.seed = hash("editor-drop:%s:%s:%s" % [seed_value, ordinal, enemy.id])
+		return weighted(options, custom_random)
 	var weights := table(enemy, context)
 	var class_id: String = context.get("class", "mage")
 	for name in weights.keys():
-		if pool(name, class_id, definitions).is_empty():
+		if pool(name, class_id, definitions).filter(func(id): return int(definitions[id].get("level", 1)) <= int(context.get("level", 1))).is_empty():
 			weights.erase(name)
 	if weights.is_empty():
 		return ""
 	var random := RandomNumberGenerator.new()
 	random.seed = hash("enemy-item:%s:%s:%s:%s" % [seed_value, ordinal, enemy.id, context.get("family", "")])
 	var pool_name := weighted(weights, random)
-	var available := pool(pool_name, class_id, definitions)
+	var available := pool(pool_name, class_id, definitions).filter(func(id): return int(definitions[id].get("level", 1)) <= int(context.get("level", 1)))
 	var rarities := {}
 	for id in available:
 		rarities[rarity(definitions[id])] = data.rarity_weights[rarity(definitions[id])]

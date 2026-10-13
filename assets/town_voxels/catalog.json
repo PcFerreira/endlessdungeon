@@ -1,0 +1,1745 @@
+{
+  "assets": [
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.25,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          4.5,
+          3.25,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 6996,
+      "glb": "res://assets/town_voxels/japanese/house.glb",
+      "glb_sha256": "3275a29b4ba9bbf9633b61d7db39d0efef77f00d26e859e655298211f440d497",
+      "id": "japanese/house",
+      "kind": "house",
+      "name": "Rainwood Lattice House",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/japanese/house.scn",
+      "scene_sha256": "d5549980fa75ee0874ceff14c1d85d8ad2e9ddd8f359ad51bfd121dad4e49375",
+      "source_assets": [],
+      "theme": "japanese",
+      "triangles": 13992,
+      "visual_family": "block_voxel",
+      "voxel_count": 10072
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.75,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          5.5,
+          3.5,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 8524,
+      "glb": "res://assets/town_voxels/japanese/workshop.glb",
+      "glb_sha256": "0f83369d6943dab213501e47563f73a02fa3808a78e642c48a0ad713f5a596bb",
+      "id": "japanese/workshop",
+      "kind": "workshop",
+      "name": "Reedpaper Workshop",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/japanese/workshop.scn",
+      "scene_sha256": "42f93387f87c7fd7dead19a0068b0bb121772aefddf4dee87bcfe5efab040dbe",
+      "source_assets": [],
+      "theme": "japanese",
+      "triangles": 17048,
+      "visual_family": "block_voxel",
+      "voxel_count": 13256
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.75,
+          0.0,
+          -0.75
+        ],
+        "size": [
+          3.5,
+          3.875,
+          1.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1920,
+      "glb": "res://assets/town_voxels/japanese/gate.glb",
+      "glb_sha256": "b3066281e06b68118b061f248962d541092f119078a8d35a0107b7421a3e6969",
+      "id": "japanese/gate",
+      "kind": "gate",
+      "name": "Timber Lane Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/japanese/gate.scn",
+      "scene_sha256": "4c9768144d730729bdac292e945e5ffef7e53122c2727edc372161ed9658b100",
+      "source_assets": [],
+      "theme": "japanese",
+      "triangles": 3840,
+      "visual_family": "block_voxel",
+      "voxel_count": 2488
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          3.0,
+          2.75
+        ]
+      },
+      "exposed_faces": 3058,
+      "glb": "res://assets/town_voxels/japanese/market.glb",
+      "glb_sha256": "d1998cdbb9ae8bf46d8503cfc1f39c6fd52a2ef6266ca7b110be31bf6ce06828",
+      "id": "japanese/market",
+      "kind": "market",
+      "name": "Cloth Market Shelter",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/japanese/market.scn",
+      "scene_sha256": "3da5359ae431c14bc8eabac3f43b8e110d37598b4085aecf084187bea98c2503",
+      "source_assets": [],
+      "theme": "japanese",
+      "triangles": 6116,
+      "visual_family": "block_voxel",
+      "voxel_count": 3798
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        "size": [
+          2.0,
+          4.0,
+          2.0
+        ]
+      },
+      "exposed_faces": 1952,
+      "glb": "res://assets/town_voxels/japanese/landmark.glb",
+      "glb_sha256": "4325aecbce2b89b7db21c3097dded830b4ed24d169124a57db3ed39bc895cd06",
+      "id": "japanese/landmark",
+      "kind": "landmark",
+      "name": "Paper Lantern Monument",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/japanese/landmark.scn",
+      "scene_sha256": "606eeda9b21533b48c8e7cfeb9634341a83cb84f623bd91b8e0aef7b110746eb",
+      "source_assets": [],
+      "theme": "japanese",
+      "triangles": 3904,
+      "visual_family": "block_voxel",
+      "voxel_count": 2072
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.375,
+          0.0,
+          -1.875
+        ],
+        "size": [
+          4.75,
+          3.125,
+          3.75
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 7330,
+      "glb": "res://assets/town_voxels/chinese/house.glb",
+      "glb_sha256": "aebae8eb862a116f922e9ecc34ed19b03c78326403467bf8e477ec1771b23525",
+      "id": "chinese/house",
+      "kind": "house",
+      "name": "Jadebeam Courtyard Hall",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/chinese/house.scn",
+      "scene_sha256": "2b2f288b6764bd1510effd699507c4ffa5d70d07672eef41468e6e36bd491f18",
+      "source_assets": [],
+      "theme": "chinese",
+      "triangles": 14660,
+      "visual_family": "block_voxel",
+      "voxel_count": 10983
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.875,
+          0.0,
+          -1.875
+        ],
+        "size": [
+          5.75,
+          3.125,
+          3.75
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 8738,
+      "glb": "res://assets/town_voxels/chinese/workshop.glb",
+      "glb_sha256": "d1b59194063b5fc2d15b4b021783762cc61aad41f0e2927d0ddc22d313e4f619",
+      "id": "chinese/workshop",
+      "kind": "workshop",
+      "name": "Porcelain Tea Workshop",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/chinese/workshop.scn",
+      "scene_sha256": "655e11f5444cce81d66d567d10e9e1d5ae42896070f070b1493f53db8e7639d1",
+      "source_assets": [],
+      "theme": "chinese",
+      "triangles": 17476,
+      "visual_family": "block_voxel",
+      "voxel_count": 13287
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.75,
+          0.0,
+          -0.75
+        ],
+        "size": [
+          3.5,
+          3.5,
+          1.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1834,
+      "glb": "res://assets/town_voxels/chinese/gate.glb",
+      "glb_sha256": "2ad1ad6fb0783f190dbb01b0da31ae0e9ea2a4e7bd6ba82020df37de20ba7163",
+      "id": "chinese/gate",
+      "kind": "gate",
+      "name": "Bracketed Court Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/chinese/gate.scn",
+      "scene_sha256": "0c201d5cadcee71d129d85aa88ceaf9f4bdc5fd223999bfeb85db69f554de837",
+      "source_assets": [],
+      "theme": "chinese",
+      "triangles": 3668,
+      "visual_family": "block_voxel",
+      "voxel_count": 2035
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          2.75,
+          2.75
+        ]
+      },
+      "exposed_faces": 2968,
+      "glb": "res://assets/town_voxels/chinese/market.glb",
+      "glb_sha256": "f2091851e5997e9d341896393a529fb46b724bea343b2e9f116e30908d330737",
+      "id": "chinese/market",
+      "kind": "market",
+      "name": "Tea Exchange Pavilion",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/chinese/market.scn",
+      "scene_sha256": "7787964dab4cd96a0516ca19746d8cb100bf1ebbaeaca3d371d98c6b9b14a610",
+      "source_assets": [],
+      "theme": "chinese",
+      "triangles": 5936,
+      "visual_family": "block_voxel",
+      "voxel_count": 3349
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.375,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          2.75,
+          3.375,
+          2.75
+        ]
+      },
+      "exposed_faces": 2986,
+      "glb": "res://assets/town_voxels/chinese/landmark.glb",
+      "glb_sha256": "be06792daa59ee30fc14fe4ee3ba6a3644e3e5686eead4c992b6cdc26f381240",
+      "id": "chinese/landmark",
+      "kind": "landmark",
+      "name": "Jadebeam Bell Pavilion",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/chinese/landmark.scn",
+      "scene_sha256": "e26881358a36b07aaa4fa395a337d1e05017549e87c6144d3a07c62c7cd9a719",
+      "source_assets": [],
+      "theme": "chinese",
+      "triangles": 5972,
+      "visual_family": "block_voxel",
+      "voxel_count": 3043
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.25,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          4.5,
+          2.75,
+          3.75
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 6994,
+      "glb": "res://assets/town_voxels/korean/house.glb",
+      "glb_sha256": "e05515135e400d363794d716f1bec5d2720ccaa67ff69e8006c9e38310af96cd",
+      "id": "korean/house",
+      "kind": "house",
+      "name": "Warmstone Timber House",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/korean/house.scn",
+      "scene_sha256": "060341b4265d9b503eb03fdd347d86c5367f50ffbf4c9a95cee03f45ee02375a",
+      "source_assets": [],
+      "theme": "korean",
+      "triangles": 13988,
+      "visual_family": "block_voxel",
+      "voxel_count": 9099
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.75,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          5.5,
+          2.75,
+          3.75
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 8386,
+      "glb": "res://assets/town_voxels/korean/workshop.glb",
+      "glb_sha256": "79e353f7c73e35ef11a090b996cdd574acc4e8f321e5a30a647b46213e1ddaee",
+      "id": "korean/workshop",
+      "kind": "workshop",
+      "name": "Moonjar Pottery Workshop",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/korean/workshop.scn",
+      "scene_sha256": "0af35fa50b1cc002547f0babc70b1671de4ed0ae4c74926dfae954d8110966ab",
+      "source_assets": [],
+      "theme": "korean",
+      "triangles": 16772,
+      "visual_family": "block_voxel",
+      "voxel_count": 10955
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.75,
+          0.0,
+          -0.75
+        ],
+        "size": [
+          3.5,
+          3.5,
+          1.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1780,
+      "glb": "res://assets/town_voxels/korean/gate.glb",
+      "glb_sha256": "e5695bbe6ce00fe99e73f350f4561310f964a517a454309d2f76ea946ae8e567",
+      "id": "korean/gate",
+      "kind": "gate",
+      "name": "Quiet Tile Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/korean/gate.scn",
+      "scene_sha256": "702062d9df7467a8476ea7dcf8b704bac6958be9e4d76a611530c6ba748a66ac",
+      "source_assets": [],
+      "theme": "korean",
+      "triangles": 3560,
+      "visual_family": "block_voxel",
+      "voxel_count": 2008
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          2.75,
+          2.75
+        ]
+      },
+      "exposed_faces": 2914,
+      "glb": "res://assets/town_voxels/korean/market.glb",
+      "glb_sha256": "a51a222bd1bbf1b707897de74a9761eedcafea1cb3a15652201a8887ce0e3069",
+      "id": "korean/market",
+      "kind": "market",
+      "name": "Potters Market Shelter",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/korean/market.scn",
+      "scene_sha256": "c400cb15e8f07328368738c5ad10f76fd02dba7e91913c496e702eedb413137e",
+      "source_assets": [],
+      "theme": "korean",
+      "triangles": 5828,
+      "visual_family": "block_voxel",
+      "voxel_count": 3322
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        "size": [
+          2.0,
+          2.75,
+          2.0
+        ]
+      },
+      "exposed_faces": 1912,
+      "glb": "res://assets/town_voxels/korean/landmark.glb",
+      "glb_sha256": "c62963558f3b210be787dcd67303ecb21a8df8f21f7e055de9538abe2229a35b",
+      "id": "korean/landmark",
+      "kind": "landmark",
+      "name": "White Moonjar Monument",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/korean/landmark.scn",
+      "scene_sha256": "1b48f7f1031d826e15aee00c08b0b314105040386863ff384fc68bd2858cae12",
+      "source_assets": [],
+      "theme": "korean",
+      "triangles": 3824,
+      "visual_family": "block_voxel",
+      "voxel_count": 2764
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.25,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          4.5,
+          4.0,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 7252,
+      "glb": "res://assets/town_voxels/halloween/house.glb",
+      "glb_sha256": "38a59ba1e582bce3bd20717bb4fc09e9b390b00ff1b5a7b563a4d254220c73e1",
+      "id": "halloween/house",
+      "kind": "house",
+      "name": "Harvestmask Crooked House",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/halloween/house.scn",
+      "scene_sha256": "0bf375058edb60257731c2869f5b6b07966af44d4192e26286294d11d16ad19b",
+      "source_assets": [],
+      "theme": "halloween",
+      "triangles": 14504,
+      "visual_family": "block_voxel",
+      "voxel_count": 10231
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.75,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          3.5,
+          4.75,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 7132,
+      "glb": "res://assets/town_voxels/halloween/workshop.glb",
+      "glb_sha256": "1df1747f5e73aa5c32c4d510a6837df2c35626e1d5c36c5d0bb6b8b32da57ea4",
+      "id": "halloween/workshop",
+      "kind": "workshop",
+      "name": "Candlewake Tall Workshop",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/halloween/workshop.scn",
+      "scene_sha256": "b1b239c6f4b41bfb60ac3c2b9317eb17c926fc23bf8343c23b0614f24b9113ff",
+      "source_assets": [],
+      "theme": "halloween",
+      "triangles": 14264,
+      "visual_family": "block_voxel",
+      "voxel_count": 9223
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.5,
+          0.0,
+          -0.625
+        ],
+        "size": [
+          3.0,
+          4.375,
+          1.25
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1536,
+      "glb": "res://assets/town_voxels/halloween/gate.glb",
+      "glb_sha256": "060d354410d4e78a7217bc970b54f036f690985decebfed03ecf14dec8859dfd",
+      "id": "halloween/gate",
+      "kind": "gate",
+      "name": "Harvest Face Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/halloween/gate.scn",
+      "scene_sha256": "bff1c741d649900ec83f71fefab4bc2c5f80355149d60569daf4631dcf798eb0",
+      "source_assets": [],
+      "theme": "halloween",
+      "triangles": 3072,
+      "visual_family": "block_voxel",
+      "voxel_count": 1623
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          3.0,
+          2.75
+        ]
+      },
+      "exposed_faces": 3162,
+      "glb": "res://assets/town_voxels/halloween/market.glb",
+      "glb_sha256": "47f534019f7eadbf0f0b215725dcf60f7a9be1f0246b9f1daf27b178a4e5bc89",
+      "id": "halloween/market",
+      "kind": "market",
+      "name": "Maskmakers Night Stall",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/halloween/market.scn",
+      "scene_sha256": "462a4ca66fa0de21dfb67fe154b2b74791f004ac53c4704dfea1cb41c5ec1976",
+      "source_assets": [],
+      "theme": "halloween",
+      "triangles": 6324,
+      "visual_family": "block_voxel",
+      "voxel_count": 3728
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        "size": [
+          2.0,
+          2.5,
+          2.0
+        ]
+      },
+      "exposed_faces": 1762,
+      "glb": "res://assets/town_voxels/halloween/landmark.glb",
+      "glb_sha256": "6050e54e0f9e9d3b103ffcb94ec746b1dd87315e3d861a784f7561bdc976a605",
+      "id": "halloween/landmark",
+      "kind": "landmark",
+      "name": "Great Pumpkin Lantern",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/halloween/landmark.scn",
+      "scene_sha256": "f5e02bd1105f1968e43b1d4bd79acb2a8d8e409d882dab1fb0ec5906f3c89a58",
+      "source_assets": [],
+      "theme": "halloween",
+      "triangles": 3524,
+      "visual_family": "block_voxel",
+      "voxel_count": 2586
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.25,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          4.5,
+          3.25,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 6990,
+      "glb": "res://assets/town_voxels/christmas/house.glb",
+      "glb_sha256": "4e84633127711921f7d0b97cc743d1cfc385b0c610a1f0b3312c0b31a956290a",
+      "id": "christmas/house",
+      "kind": "house",
+      "name": "Evergreen Snow Lodge",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/christmas/house.scn",
+      "scene_sha256": "c05f31186111c4c1501cbf734b58cc224c18a11c65f35dab79689915f6578612",
+      "source_assets": [],
+      "theme": "christmas",
+      "triangles": 13980,
+      "visual_family": "block_voxel",
+      "voxel_count": 9968
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.75,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          5.5,
+          3.5,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 8518,
+      "glb": "res://assets/town_voxels/christmas/workshop.glb",
+      "glb_sha256": "8a8e18872a88dbfdc1f9062158779a3144d48b70a19c84e88449beee519a4371",
+      "id": "christmas/workshop",
+      "kind": "workshop",
+      "name": "Giftmakers Toy Workshop",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/christmas/workshop.scn",
+      "scene_sha256": "fa16e2f8f3b7cebe8588439f1b76f1a953f5fc5b9678e6663d152447ae3650f0",
+      "source_assets": [],
+      "theme": "christmas",
+      "triangles": 17036,
+      "visual_family": "block_voxel",
+      "voxel_count": 13152
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.5,
+          0.0,
+          -0.375
+        ],
+        "size": [
+          3.0,
+          3.125,
+          1.0
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1200,
+      "glb": "res://assets/town_voxels/christmas/gate.glb",
+      "glb_sha256": "e1bdad86b1baa2a7a85be4af713ce15bf25090382f4e4e42ab54292d611f1c86",
+      "id": "christmas/gate",
+      "kind": "gate",
+      "name": "Ribbon Feast Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/christmas/gate.scn",
+      "scene_sha256": "50141de86d96915ca0fab2559c9fefd102d57426814b586df33cdd91642b81a8",
+      "source_assets": [],
+      "theme": "christmas",
+      "triangles": 2400,
+      "visual_family": "block_voxel",
+      "voxel_count": 1144
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          3.0,
+          2.75
+        ]
+      },
+      "exposed_faces": 3092,
+      "glb": "res://assets/town_voxels/christmas/market.glb",
+      "glb_sha256": "c206c830629ca47b55175e297e7385cbc825fc4a9276d26ae9e3333eb1293f50",
+      "id": "christmas/market",
+      "kind": "market",
+      "name": "Gift Market Stall",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/christmas/market.scn",
+      "scene_sha256": "6dfa2df1371573fbc628591ab45da8dd0d3332df12892d485eadcefd85762d6b",
+      "source_assets": [],
+      "theme": "christmas",
+      "triangles": 6184,
+      "visual_family": "block_voxel",
+      "voxel_count": 3782
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.5,
+          0.0,
+          -1.5
+        ],
+        "size": [
+          3.0,
+          3.75,
+          3.0
+        ]
+      },
+      "exposed_faces": 2820,
+      "glb": "res://assets/town_voxels/christmas/landmark.glb",
+      "glb_sha256": "7f9cc2ef7ebb3c24abcb45cd2c424a07f4db7f108fade74d2890d98484b4ca15",
+      "id": "christmas/landmark",
+      "kind": "landmark",
+      "name": "Evergreen Village Tree",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/christmas/landmark.scn",
+      "scene_sha256": "590e387d79ff7655a76800dde97335c19f63fb73dc15bb02f81eec8577365eda",
+      "source_assets": [],
+      "theme": "christmas",
+      "triangles": 5640,
+      "visual_family": "block_voxel",
+      "voxel_count": 4705
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.625,
+          0.0,
+          -1.625
+        ],
+        "size": [
+          3.25,
+          5.25,
+          3.25
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 7192,
+      "glb": "res://assets/town_voxels/cyberpunk/house.glb",
+      "glb_sha256": "7ced272e057b1435dbca8fbd284e6d14db3663b4c6bc139ca96bfe642ee8f2f3",
+      "id": "cyberpunk/house",
+      "kind": "house",
+      "name": "Neon Relay Tower",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/cyberpunk/house.scn",
+      "scene_sha256": "e6fa018b41bf2cf92d523ef3d04bd90e365f8994813c3046fda613d55710314f",
+      "source_assets": [],
+      "theme": "cyberpunk",
+      "triangles": 14384,
+      "visual_family": "block_voxel",
+      "voxel_count": 8288
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.625,
+          0.0,
+          -1.625
+        ],
+        "size": [
+          5.25,
+          3.75,
+          3.25
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 7432,
+      "glb": "res://assets/town_voxels/cyberpunk/workshop.glb",
+      "glb_sha256": "8a266cd3ff838e257ba8d35caba280eda5057d178f33ff4748dc16a2ad3dd87e",
+      "id": "cyberpunk/workshop",
+      "kind": "workshop",
+      "name": "Chrome Component Workshop",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/cyberpunk/workshop.scn",
+      "scene_sha256": "6cc47d7788c213482fe1889cc24468e9b610ded15902c6e7c0dea37fb4bc8f8d",
+      "source_assets": [],
+      "theme": "cyberpunk",
+      "triangles": 14864,
+      "visual_family": "block_voxel",
+      "voxel_count": 8032
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.5,
+          0.0,
+          -0.375
+        ],
+        "size": [
+          3.0,
+          2.875,
+          0.875
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1214,
+      "glb": "res://assets/town_voxels/cyberpunk/gate.glb",
+      "glb_sha256": "4dbe149ef8dd033ba95ce96690d64e8cd8b6871201b358787afb1586b3aa8218",
+      "id": "cyberpunk/gate",
+      "kind": "gate",
+      "name": "Circuit Relay Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/cyberpunk/gate.scn",
+      "scene_sha256": "cc37482fb7d42350c82dbbd7ba1db600a1bd0a3570078bea3b7390b8b2b11a7a",
+      "source_assets": [],
+      "theme": "cyberpunk",
+      "triangles": 2428,
+      "visual_family": "block_voxel",
+      "voxel_count": 1152
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          2.375,
+          2.75
+        ]
+      },
+      "exposed_faces": 2742,
+      "glb": "res://assets/town_voxels/cyberpunk/market.glb",
+      "glb_sha256": "4cd532882e0e66ec837cdabbef576473ff63bf7cd622b0822527e615a1ccbf5a",
+      "id": "cyberpunk/market",
+      "kind": "market",
+      "name": "Component Exchange Kiosk",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/cyberpunk/market.scn",
+      "scene_sha256": "418eb0e06513c0020ab35023f3ff6fb28732df29925826c9022e925d3be8b599",
+      "source_assets": [],
+      "theme": "cyberpunk",
+      "triangles": 5484,
+      "visual_family": "block_voxel",
+      "voxel_count": 2258
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        "size": [
+          2.0,
+          5.0,
+          2.0
+        ]
+      },
+      "exposed_faces": 2584,
+      "glb": "res://assets/town_voxels/cyberpunk/landmark.glb",
+      "glb_sha256": "842968067c0d5fbb31aaf4fc1c05d49db337cf873f6ac422ded716ec897184b1",
+      "id": "cyberpunk/landmark",
+      "kind": "landmark",
+      "name": "Signal Relay Spire",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/cyberpunk/landmark.scn",
+      "scene_sha256": "4f6d007fc4bfe43670d3cfd2f8449b1d9da28863c5c21a22335a7b0b0a300b1a",
+      "source_assets": [],
+      "theme": "cyberpunk",
+      "triangles": 5168,
+      "visual_family": "block_voxel",
+      "voxel_count": 2780
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.5,
+          0.0,
+          -2.5
+        ],
+        "size": [
+          5.0,
+          6.375,
+          5.0
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 9840,
+      "glb": "res://assets/town_voxels/mage/house.glb",
+      "glb_sha256": "3c56299a6859ffee9d7cbede1b5aa044c84dbec35d8389328e9558d0505ae96d",
+      "id": "mage/house",
+      "kind": "house",
+      "name": "Spellbinders Tower",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/mage/house.scn",
+      "scene_sha256": "51c6c5067b7bf83125caa85d10cd633b24c9cf695b14b7197af4709c997984c2",
+      "source_assets": [],
+      "theme": "mage",
+      "triangles": 19680,
+      "visual_family": "block_voxel",
+      "voxel_count": 13508
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.75,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          5.5,
+          3.5,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 8572,
+      "glb": "res://assets/town_voxels/mage/workshop.glb",
+      "glb_sha256": "ebcd89b2b799ad97b75cb01d10fa5231913b4d792c5e9a846d318a74905e4e4d",
+      "id": "mage/workshop",
+      "kind": "workshop",
+      "name": "Observatory Chart House",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/mage/workshop.scn",
+      "scene_sha256": "b8212bb6f5f8cf00df93df79ff5e63848dc3c5c469e92cd19ee6f4ae8c61ff32",
+      "source_assets": [],
+      "theme": "mage",
+      "triangles": 17144,
+      "visual_family": "block_voxel",
+      "voxel_count": 13192
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.25,
+          0.0,
+          -0.25
+        ],
+        "size": [
+          2.5,
+          4.0,
+          0.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1056,
+      "glb": "res://assets/town_voxels/mage/gate.glb",
+      "glb_sha256": "fd955340c08e8a23f50ca0bbbf89bdb478e8d0e6d0c9f585738114a66b532990",
+      "id": "mage/gate",
+      "kind": "gate",
+      "name": "Working Circle Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/mage/gate.scn",
+      "scene_sha256": "c7bae6d9e4e2f90b4ba122db8527fb0b8e37ec8619b7949ee62f6fe386cf5ef7",
+      "source_assets": [],
+      "theme": "mage",
+      "triangles": 2112,
+      "visual_family": "block_voxel",
+      "voxel_count": 840
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.875,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          3.75,
+          3.125,
+          2.75
+        ]
+      },
+      "exposed_faces": 3090,
+      "glb": "res://assets/town_voxels/mage/market.glb",
+      "glb_sha256": "4fa134e5c0dec6e187c4afb4f0ae7834814a029e52805e76dcf3deccfc5bc8cb",
+      "id": "mage/market",
+      "kind": "market",
+      "name": "Ink and Charm Stall",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/mage/market.scn",
+      "scene_sha256": "48cd0d71a6750dcd58f8671c1dada93deed48c11ddfba12f872255d4cf8a8e4d",
+      "source_assets": [],
+      "theme": "mage",
+      "triangles": 6180,
+      "visual_family": "block_voxel",
+      "voxel_count": 3730
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.25,
+          0.0,
+          -1.25
+        ],
+        "size": [
+          2.5,
+          4.25,
+          2.5
+        ]
+      },
+      "exposed_faces": 1744,
+      "glb": "res://assets/town_voxels/mage/landmark.glb",
+      "glb_sha256": "692699b204e9c3569c1edcda3f9763fc80325099e16b8144f6997aded7f6bf91",
+      "id": "mage/landmark",
+      "kind": "landmark",
+      "name": "Armillary Light Monument",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/mage/landmark.scn",
+      "scene_sha256": "a5e0f89c9827bd5d27220b31d4dd29a3f563935a29fb491e49c7e6a58ac13bc3",
+      "source_assets": [],
+      "theme": "mage",
+      "triangles": 3488,
+      "visual_family": "block_voxel",
+      "voxel_count": 1088
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.0,
+          0.0,
+          -2.0
+        ],
+        "size": [
+          4.0,
+          3.5,
+          4.0
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.25
+        ]
+      },
+      "exposed_faces": 5504,
+      "glb": "res://assets/town_voxels/fairy/house.glb",
+      "glb_sha256": "4b6970c685dccfe099d9851992678818daa886147edae945b8fe4ade86629903",
+      "id": "fairy/house",
+      "kind": "house",
+      "name": "Dewbell Mushroom House",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/fairy/house.scn",
+      "scene_sha256": "a6d4fbc0549a9a7cf889b919634664ac53240251c486ab17467d6f2049373e59",
+      "source_assets": [],
+      "theme": "fairy",
+      "triangles": 11008,
+      "visual_family": "block_voxel",
+      "voxel_count": 8480
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.75,
+          0.0,
+          -1.75
+        ],
+        "size": [
+          5.5,
+          3.0,
+          3.5
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.25,
+          1.5
+        ]
+      },
+      "exposed_faces": 8188,
+      "glb": "res://assets/town_voxels/fairy/workshop.glb",
+      "glb_sha256": "f01e1b84cb65f9e897a60d94d417adfd102a88a5cd30750d001bc7891ce9e8d5",
+      "id": "fairy/workshop",
+      "kind": "workshop",
+      "name": "Petalweave Flower Cottage",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/fairy/workshop.scn",
+      "scene_sha256": "3fc63b3da592accd0734255a1edbf7261d8d3471ee8260f5c22c507e57b67a7e",
+      "source_assets": [],
+      "theme": "fairy",
+      "triangles": 16376,
+      "visual_family": "block_voxel",
+      "voxel_count": 11716
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.5,
+          0.0,
+          -0.375
+        ],
+        "size": [
+          3.0,
+          3.875,
+          0.875
+        ]
+      },
+      "door": {
+        "clearance": [
+          0.75,
+          1.5
+        ],
+        "front": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "exposed_faces": 1568,
+      "glb": "res://assets/town_voxels/fairy/gate.glb",
+      "glb_sha256": "ea4eaf77398467fe2cd25b32aa37ee685df8a3eb60b7d8cd1b1af950578bcf9a",
+      "id": "fairy/gate",
+      "kind": "gate",
+      "name": "Bramble Bloom Gate",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/fairy/gate.scn",
+      "scene_sha256": "21fdaf1650100098aeb11641c8427032ad3943273c6783e627063f4e6eb6f65b",
+      "source_assets": [],
+      "theme": "fairy",
+      "triangles": 3136,
+      "visual_family": "block_voxel",
+      "voxel_count": 1368
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -2.0,
+          0.0,
+          -1.375
+        ],
+        "size": [
+          4.0,
+          3.125,
+          2.75
+        ]
+      },
+      "exposed_faces": 3300,
+      "glb": "res://assets/town_voxels/fairy/market.glb",
+      "glb_sha256": "848d81c3816baf1d70fde0c28d3887289193848fd8f5dd8b2e0faa9a36810186",
+      "id": "fairy/market",
+      "kind": "market",
+      "name": "Leaf Weavers Market",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/fairy/market.scn",
+      "scene_sha256": "e7d6e19fe7e144bf283b335e6c4a60ec9195e7cd0c46e0d8fc1a1d805f61d0a1",
+      "source_assets": [],
+      "theme": "fairy",
+      "triangles": 6600,
+      "visual_family": "block_voxel",
+      "voxel_count": 3605
+    },
+    {
+      "author": "Endless World project",
+      "bounds": {
+        "position": [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        "size": [
+          2.0,
+          3.5,
+          2.0
+        ]
+      },
+      "exposed_faces": 1072,
+      "glb": "res://assets/town_voxels/fairy/landmark.glb",
+      "glb_sha256": "8d99bb14caac76835f2b2725b0df310a65a3a36426e700830dd6cde382d0ccfe",
+      "id": "fairy/landmark",
+      "kind": "landmark",
+      "name": "Dewdrop Flower Monument",
+      "origin": "project-original",
+      "pitch": 0.125,
+      "scene": "res://assets/town_voxels/fairy/landmark.scn",
+      "scene_sha256": "6afeba28adcec6efc3885ef6f2f65716c98e6247d146ea176805324552a56ae4",
+      "source_assets": [],
+      "theme": "fairy",
+      "triangles": 2144,
+      "visual_family": "block_voxel",
+      "voxel_count": 748
+    },
+    {
+      "attribution": "KayKit Halloween Bits by Kay Lousberg. Source: https://github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+      "author": "Kay Lousberg",
+      "bounds": {
+        "position": [
+          -0.449999988079071,
+          0.0,
+          -0.450000047683716
+        ],
+        "size": [
+          0.899999976158142,
+          0.850000023841858,
+          0.899999976158142
+        ]
+      },
+      "glb": "res://assets/town_voxels/halloween/kaykit_pumpkin.glb",
+      "glb_sha256": "eb15ab0fe28fe31eade09ac55b3eea7701a321e987a0a7744beb588e21f13105",
+      "id": "halloween/kaykit_pumpkin",
+      "kind": "prop",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "KayKit Voxel Pumpkin",
+      "origin": "voxel-derivative",
+      "pitch": 0.0374999990065893,
+      "scene": "res://assets/town_voxels/halloween/kaykit_pumpkin.scn",
+      "scene_sha256": "4a6648dd28ee3aac59f9d376e1b329606e93ad2583acc36cdfcff79580dd7115",
+      "source_assets": [
+        "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange.gltf"
+      ],
+      "source_file": "import_assets/free_packs/kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange.gltf",
+      "source_sha256": "24dfa16da34b7a1b742a016f2005f480cae04aea2f9ede421b7f700282b19934",
+      "source_url": "https://github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0",
+      "theme": "halloween",
+      "triangles": 11148,
+      "visual_family": "block_voxel",
+      "voxel_count": 1909
+    },
+    {
+      "attribution": "KayKit Halloween Bits by Kay Lousberg. Source: https://github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+      "author": "Kay Lousberg",
+      "bounds": {
+        "position": [
+          -0.450000047683716,
+          0.0,
+          -0.449999988079071
+        ],
+        "size": [
+          0.900000035762787,
+          0.850000023841858,
+          0.899999976158142
+        ]
+      },
+      "glb": "res://assets/town_voxels/halloween/kaykit_jackolantern.glb",
+      "glb_sha256": "c95ad8afd9538ef958572e346703be1de3b76129e38f1190cfbe2a8d81bc6a85",
+      "id": "halloween/kaykit_jackolantern",
+      "kind": "prop",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "KayKit Voxel Jack-o-lantern",
+      "origin": "voxel-derivative",
+      "pitch": 0.0375000014901161,
+      "scene": "res://assets/town_voxels/halloween/kaykit_jackolantern.scn",
+      "scene_sha256": "2ace58c7efe551eea665f69de0afea962185c049106a83c3f3d05dfe2660c524",
+      "source_assets": [
+        "kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange_jackolantern.gltf"
+      ],
+      "source_file": "import_assets/free_packs/kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange_jackolantern.gltf",
+      "source_sha256": "c4e5b93034bef551664517da7ac0c86b2d315e833ef54444e3ad50f21f6501ec",
+      "source_url": "https://github.com/KayKit-Game-Assets/KayKit-Halloween-Bits-1.0",
+      "theme": "halloween",
+      "triangles": 10216,
+      "visual_family": "block_voxel",
+      "voxel_count": 1823
+    },
+    {
+      "attribution": "Kenney Holiday Kit by Kenney. Source: https://kenney.nl/assets/holiday-kit. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+      "author": "Kenney",
+      "bounds": {
+        "position": [
+          -0.699999988079071,
+          0.0,
+          -0.699999988079071
+        ],
+        "size": [
+          1.39999997615814,
+          2.39999985694885,
+          1.39999997615814
+        ]
+      },
+      "glb": "res://assets/town_voxels/christmas/kenney_tree.glb",
+      "glb_sha256": "6972c0ae735fc383fc3c7f90028c4d8867617098d7ad00c3dde536e337bd677c",
+      "id": "christmas/kenney_tree",
+      "kind": "prop",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Kenney Voxel Decorated Tree",
+      "origin": "voxel-derivative",
+      "pitch": 0.100000003973643,
+      "scene": "res://assets/town_voxels/christmas/kenney_tree.scn",
+      "scene_sha256": "3b701feb3a109b4b1a4827152f29ba266ee3a5b60a4b6be716ddb60090cc04e6",
+      "source_assets": [
+        "kenney_holiday_kit/Models/GLB format/tree-decorated.glb"
+      ],
+      "source_file": "import_assets/free_packs/kenney_holiday_kit/Models/GLB format/tree-decorated.glb",
+      "source_sha256": "152dc0bac97afaa34fbe1c2178d42e15fb725516b67ab690f4e6a219b761c1af",
+      "source_url": "https://kenney.nl/assets/holiday-kit",
+      "theme": "christmas",
+      "triangles": 3836,
+      "visual_family": "block_voxel",
+      "voxel_count": 948
+    },
+    {
+      "attribution": "Kenney Holiday Kit by Kenney. Source: https://kenney.nl/assets/holiday-kit. License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+      "author": "Kenney",
+      "bounds": {
+        "position": [
+          -0.300000011920929,
+          0.0,
+          -0.300000011920929
+        ],
+        "size": [
+          0.600000023841858,
+          0.600000023841858,
+          0.600000023841858
+        ]
+      },
+      "glb": "res://assets/town_voxels/christmas/kenney_present.glb",
+      "glb_sha256": "b16e2932a733a09095c6a86e829ec02777763b9d58e9b0c87fc043831743df73",
+      "id": "christmas/kenney_present",
+      "kind": "prop",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Kenney Voxel Wrapped Present",
+      "origin": "voxel-derivative",
+      "pitch": 0.0250000034769376,
+      "scene": "res://assets/town_voxels/christmas/kenney_present.scn",
+      "scene_sha256": "906f372ecb801acab10db84c965717a86258176d7e5a9f0be6cd7bb0dac9f7c4",
+      "source_assets": [
+        "kenney_holiday_kit/Models/GLB format/present-b-cube.glb"
+      ],
+      "source_file": "import_assets/free_packs/kenney_holiday_kit/Models/GLB format/present-b-cube.glb",
+      "source_sha256": "a9b9d555b8895981761779f3e8fd8716b9e58a12fcfe9af7507c9ebe3fb82d15",
+      "source_url": "https://kenney.nl/assets/holiday-kit",
+      "theme": "christmas",
+      "triangles": 15028,
+      "visual_family": "block_voxel",
+      "voxel_count": 3655
+    }
+  ],
+  "axes": {
+    "front": "+Z",
+    "origin": "bottom-centered",
+    "up": "+Y"
+  },
+  "definition_sha256": "ae7dee70002df0b31951c0bd1ec43197e5cfdf17f519618689ca771c70dafd6f",
+  "generator": "tools/build_town_voxels.gd",
+  "geometry_sha256": "d1096ca3721fd69e2253b6ddabf1990304fe7b431f5d7a3449ac5d8bfd62c7b8",
+  "version": 1
+}

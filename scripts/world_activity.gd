@@ -50,7 +50,7 @@ static func valid(value) -> bool:
 			if not choice is Dictionary or not choice.get("id") is String or not choice.get("label") is String or not choice.get("aftermath") is String or choice.get("visual") not in ["meal", "crates", "banner", "market", "books"]:
 				return false
 	var areas = value.get("monster_areas")
-	if not areas is Dictionary or not areas.get("labels") is Array or areas.labels.size() != 3:
+	if not areas is Dictionary or not areas.get("labels") is Array or areas.labels.size() != 9:
 		return false
 	for label in areas.labels:
 		if not label is String or label.is_empty():
@@ -59,7 +59,7 @@ static func valid(value) -> bool:
 		return false
 	for biome in areas.get("biome_labels", {}):
 		var labels = areas.biome_labels[biome]
-		if biome not in ["0","1","2","3"] or not labels is Array or labels.size() != 3 or not labels.all(func(label): return label is String and not label.is_empty()):
+		if biome not in ["0","1","2","3"] or not labels is Array or labels.size() != areas.labels.size() or not labels.all(func(label): return label is String and not label.is_empty()):
 			return false
 	for key in ["radius", "members", "clearance"]:
 		if not _number(areas.get(key)) or areas[key] != floorf(areas[key]):

@@ -5,6 +5,7 @@ const Build = preload("res://scripts/character_build.gd")
 const Profile = preload("res://scripts/character_profile.gd")
 const Inventory = preload("res://scripts/inventory.gd")
 const HubWorld = preload("res://scripts/hub_world.gd")
+const FiniteWorld = preload("res://scripts/finite_world.gd")
 
 static func pack(point: Vector2) -> Array:
 	return [point.x, point.y]
@@ -44,18 +45,32 @@ static func capture(game) -> Dictionary:
 		"view": {"yaw": game.camera_yaw, "target_yaw": game.target_yaw, "surface_zoom": game.surface_zoom, "dungeon_zoom": game.dungeon_zoom}, "pickups": drops, "projectiles": shots
 	}
 	data.progress.floating_city = game.floating_hub.snapshot()
+	data.progress.foraging = game.foraging.snapshot()
+	data.progress.population = game.population.snapshot()
+	var dimension: Dictionary = game.dimension.snapshot()
+	if not dimension.is_empty():
+		data.progress.dimension = dimension
 	return data
+
+static func world_provider(data: Dictionary):
+	var dimension: Dictionary = data.progress.get("dimension", {})
+	var hub: Dictionary = data.progress.get("floating_city", {})
+	var world
+	if dimension.get("active", false):
+		world = FiniteWorld.new(dimension.id)
+	else:
+		world = World.new() if hub.is_empty() else HubWorld.new()
+		if not hub.is_empty():
+			world.hub.set_theme(hub.theme)
+	world.generate(data.seed.to_int(), int(data.generator_version))
+	return world
 
 static func restore(game, data: Dictionary) -> bool:
 	if not game.offline_actions_allowed():
 		return false
 	if not game.saves.validate(data):
 		return false
-	var hub: Dictionary = data.progress.get("floating_city", {})
-	var world = World.new() if hub.is_empty() else HubWorld.new()
-	if not hub.is_empty():
-		world.hub.set_theme(hub.theme)
-	world.generate(data.seed.to_int(), int(data.generator_version))
+	var world = world_provider(data)
 	var place: Dictionary = data.location
 	var destination: Dictionary = data.home.return_journey.location if place.layer == "sanctum" else place
 	var site := {}
@@ -95,6 +110,7 @@ static func restore(game, data: Dictionary) -> bool:
 	game.furnishing_editor.stop()
 	game.view_key = ""
 	game.world = world
+	game.dimension.restore(data.progress.get("dimension", {}))
 	game.run_seed = world.run_seed
 	game.world_view.reset()
 	game.build = build
@@ -103,6 +119,8 @@ static func restore(game, data: Dictionary) -> bool:
 	game.furnishings.restore(data.progress.get("furnishings", {}))
 	game.world_items.restore(data.progress.get("world_items", {}))
 	game.stores.restore(data.progress.get("stores", {}))
+	game.foraging.restore(data.progress.get("foraging", {}))
+	game.population.restore(data.progress.get("population", {}))
 	game.expansion.restore(data.progress.lore)
 	game.exploration.restore(data.progress.get("exploration", {}), data.seed)
 	game.ACTION_BAR = build.action_bar
@@ -168,7 +186,7 @@ static func restore(game, data: Dictionary) -> bool:
 	game.guard_time = data.stats.guard
 	game.invulnerable = data.stats.invulnerable
 	for spell in game.cooldowns:
-		game.cooldowns[spell] = data.stats.cooldowns[spell]
+		game.cooldowns[spell] = data.stats.cooldowns.get(spell, 0.0)
 	game.aim = unpack(place.aim)
 	game.move_heading = unpack(place.heading)
 	game.waypoint = {}

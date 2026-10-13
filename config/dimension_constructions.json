@@ -1,0 +1,3021 @@
+{
+  "version": 1,
+  "authorship": "Original Morrowmere construction layouts; no Adventure Time assets.",
+  "profiles": {
+    "village": {
+      "radius": 16,
+      "flatten": 24,
+      "approach": 18
+    },
+    "graveyard": {
+      "radius": 12,
+      "flatten": 20,
+      "approach": 14
+    },
+    "woodland_house": {
+      "radius": 9,
+      "flatten": 17,
+      "approach": 11
+    },
+    "castle": {
+      "radius": 15,
+      "flatten": 23,
+      "approach": 17
+    },
+    "temple": {
+      "radius": 11,
+      "flatten": 19,
+      "approach": 13
+    },
+    "ruin": {
+      "radius": 11,
+      "flatten": 19,
+      "approach": 13
+    }
+  },
+  "area_themes": {
+    "bellfrost": "christmas",
+    "ember_scar": "cyberpunk",
+    "whisperwood": "fairy",
+    "hearthwild": "korean",
+    "prism_coast": "chinese",
+    "glasswake": "mage",
+    "hollow_orchard": "japanese",
+    "murmur_mire": "halloween"
+  },
+  "defaults": {
+    "village": [
+      "lantern_court",
+      "orchard_row"
+    ],
+    "graveyard": [
+      "bellgarden",
+      "moss_cemetery"
+    ],
+    "woodland_house": [
+      "hollow_home",
+      "starling_hut"
+    ],
+    "castle": [
+      "prism_bastion",
+      "north_watch"
+    ],
+    "temple": [
+      "bell_court",
+      "wild_court"
+    ],
+    "ruin": [
+      "cinder_arcade",
+      "fallen_spire"
+    ]
+  },
+  "constructions": {
+    "lantern_court": {
+      "kind": "village",
+      "name": "Lantern Court",
+      "book": "book_warm_letter",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "west_home",
+          "town_voxel": "$theme_house",
+          "cell": [
+            -8,
+            -5
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.4,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "north_home",
+          "town_voxel": "$theme_house",
+          "cell": [
+            0,
+            -8
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.8,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "east_workshop",
+          "town_voxel": "$theme_workshop",
+          "cell": [
+            8,
+            -5
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.5,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "well",
+          "role": "fountain",
+          "cell": [
+            0,
+            1
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.1
+        },
+        {
+          "id": "west_fence",
+          "role": "fence",
+          "cell": [
+            -12,
+            -2
+          ],
+          "size": [
+            1,
+            9
+          ],
+          "height": 1.0
+        },
+        {
+          "id": "east_fence",
+          "role": "fence",
+          "cell": [
+            12,
+            -2
+          ],
+          "size": [
+            1,
+            9
+          ],
+          "height": 1.0
+        },
+        {
+          "id": "bell",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            6,
+            10
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 2.8,
+          "collision": "solid",
+          "fixed": true
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "produce_table",
+          "role": "table",
+          "cell": [
+            -8,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.9
+        },
+        {
+          "id": "produce",
+          "role": "fruit",
+          "support": "produce_table",
+          "size": [
+            0.65,
+            0.55
+          ],
+          "height": 0.3
+        },
+        {
+          "id": "handcart",
+          "role": "cart",
+          "cell": [
+            9,
+            3
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 0.8
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "west",
+          "point": [
+            -3,
+            6
+          ],
+          "approach": [
+            -3,
+            7
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -3,
+              7
+            ],
+            [
+              -2,
+              7
+            ]
+          ]
+        },
+        {
+          "id": "east",
+          "point": [
+            4,
+            7
+          ],
+          "approach": [
+            4,
+            8
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              3,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "id": "lane",
+          "point": [
+            0,
+            9
+          ],
+          "approach": [
+            0,
+            10
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              10
+            ]
+          ]
+        }
+      ]
+    },
+    "orchard_row": {
+      "kind": "village",
+      "name": "The Orchard Row",
+      "book": "book_warm_letter",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "west_home",
+          "town_voxel": "$theme_house",
+          "cell": [
+            -7,
+            -7
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.5,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "east_home",
+          "town_voxel": "$theme_house",
+          "cell": [
+            7,
+            -7
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.2,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "storehouse",
+          "town_voxel": "$theme_workshop",
+          "cell": [
+            9,
+            0
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.1,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "garden_back",
+          "role": "fence",
+          "cell": [
+            0,
+            -13
+          ],
+          "size": [
+            11,
+            1
+          ],
+          "height": 0.9
+        },
+        {
+          "id": "garden_left",
+          "role": "fence",
+          "cell": [
+            -13,
+            -7
+          ],
+          "size": [
+            1,
+            9
+          ],
+          "height": 0.9
+        },
+        {
+          "id": "garden_right",
+          "role": "fence",
+          "cell": [
+            13,
+            -7
+          ],
+          "size": [
+            1,
+            9
+          ],
+          "height": 0.9
+        },
+        {
+          "id": "garden_soil",
+          "role": "soil",
+          "cell": [
+            0,
+            -8
+          ],
+          "size": [
+            3,
+            5
+          ],
+          "height": 0.07,
+          "solid": false
+        },
+        {
+          "id": "garden_crop",
+          "role": "crop_carrot",
+          "cell": [
+            0,
+            -8
+          ],
+          "size": [
+            3,
+            5
+          ],
+          "height": 0.55,
+          "solid": false
+        },
+        {
+          "id": "notice",
+          "role": "signpost",
+          "cell": [
+            -8,
+            2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.2
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "grain_sack",
+          "role": "sack",
+          "cell": [
+            -8,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.8
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "west",
+          "point": [
+            -3,
+            6
+          ],
+          "approach": [
+            -3,
+            7
+          ],
+          "route": [
+            [
+              -3,
+              6
+            ],
+            [
+              -3,
+              7
+            ],
+            [
+              -2,
+              7
+            ]
+          ]
+        },
+        {
+          "id": "east",
+          "point": [
+            4,
+            7
+          ],
+          "approach": [
+            4,
+            8
+          ],
+          "route": [
+            [
+              4,
+              7
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              3,
+              8
+            ]
+          ]
+        },
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "id": "lane",
+          "point": [
+            0,
+            9
+          ],
+          "approach": [
+            0,
+            10
+          ],
+          "route": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              10
+            ]
+          ]
+        }
+      ]
+    },
+    "bellgarden": {
+      "kind": "graveyard",
+      "name": "The Bell Garden",
+      "book": "book_warm_letter",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "north_wall",
+          "role": "stone_block",
+          "cell": [
+            0,
+            -10
+          ],
+          "size": [
+            19,
+            1
+          ],
+          "height": 1.2
+        },
+        {
+          "id": "west_wall",
+          "role": "stone_block",
+          "cell": [
+            -10,
+            -1
+          ],
+          "size": [
+            1,
+            17
+          ],
+          "height": 1.2
+        },
+        {
+          "id": "east_wall",
+          "role": "stone_block",
+          "cell": [
+            10,
+            -1
+          ],
+          "size": [
+            1,
+            17
+          ],
+          "height": 1.2
+        },
+        {
+          "id": "memory_bell",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            0,
+            -7
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 3.6,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "grave_-6_-4",
+          "role": "gravestone",
+          "cell": [
+            -6,
+            -4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.15
+        },
+        {
+          "id": "grave_-6_0",
+          "role": "gravestone",
+          "cell": [
+            -6,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.15
+        },
+        {
+          "id": "grave_-6_4",
+          "role": "gravestone",
+          "cell": [
+            -6,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.15
+        },
+        {
+          "id": "grave_6_-4",
+          "role": "gravestone",
+          "cell": [
+            6,
+            -4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.15
+        },
+        {
+          "id": "grave_6_0",
+          "role": "gravestone",
+          "cell": [
+            6,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.15
+        },
+        {
+          "id": "grave_6_4",
+          "role": "gravestone",
+          "cell": [
+            6,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.15
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "memorial_seat",
+          "role": "bench",
+          "cell": [
+            -6,
+            8
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 0.8
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "moss_cemetery": {
+      "kind": "graveyard",
+      "name": "Moss Lantern Cemetery",
+      "book": "book_waiting_cup",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "north_crypt",
+          "role": "stone_block",
+          "cell": [
+            -5,
+            -7
+          ],
+          "size": [
+            5,
+            3
+          ],
+          "height": 2.6
+        },
+        {
+          "id": "east_crypt",
+          "role": "stone_block",
+          "cell": [
+            6,
+            -5
+          ],
+          "size": [
+            3,
+            5
+          ],
+          "height": 2.1
+        },
+        {
+          "id": "north_memorial",
+          "role": "statue",
+          "cell": [
+            0,
+            -9
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 2.5
+        },
+        {
+          "id": "grave_0",
+          "role": "grave",
+          "cell": [
+            -7,
+            -2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.6
+        },
+        {
+          "id": "grave_1",
+          "role": "gravestone",
+          "cell": [
+            -7,
+            2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.72
+        },
+        {
+          "id": "grave_2",
+          "role": "grave",
+          "cell": [
+            -5,
+            5
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.84
+        },
+        {
+          "id": "grave_3",
+          "role": "gravestone",
+          "cell": [
+            5,
+            -1
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.96
+        },
+        {
+          "id": "grave_4",
+          "role": "grave",
+          "cell": [
+            7,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.08
+        },
+        {
+          "id": "grave_5",
+          "role": "gravestone",
+          "cell": [
+            6,
+            7
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.2
+        },
+        {
+          "id": "broken_west_wall",
+          "role": "stone_block",
+          "cell": [
+            -10,
+            -5
+          ],
+          "size": [
+            1,
+            5
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "broken_south_wall",
+          "role": "stone_block",
+          "cell": [
+            8,
+            10
+          ],
+          "size": [
+            5,
+            1
+          ],
+          "height": 0.6
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "hollow_home": {
+      "kind": "woodland_house",
+      "name": "The Hollow Home",
+      "book": "book_warm_letter",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "home",
+          "town_voxel": "$theme_house",
+          "cell": [
+            0,
+            -2
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.7,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "tree_marker",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            -6,
+            -4
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 3.4,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "wood_stack",
+          "role": "log",
+          "cell": [
+            6,
+            -3
+          ],
+          "size": [
+            1,
+            3
+          ],
+          "height": 0.8
+        },
+        {
+          "id": "garden_soil",
+          "role": "soil",
+          "cell": [
+            5,
+            7
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 0.06,
+          "solid": false
+        },
+        {
+          "id": "garden_crop",
+          "role": "crop_carrot",
+          "cell": [
+            5,
+            7
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 0.5,
+          "solid": false
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "front_seat",
+          "role": "bench",
+          "cell": [
+            -5,
+            1
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "starling_hut": {
+      "kind": "woodland_house",
+      "name": "Starling Workshop",
+      "book": "book_warm_letter",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "workshop",
+          "town_voxel": "$theme_workshop",
+          "cell": [
+            -2,
+            -3
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 3.2,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "small_bell",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            5,
+            -5
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 2.4,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "porch_column",
+          "role": "column",
+          "cell": [
+            5,
+            -1
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 2.2
+        },
+        {
+          "id": "porch_roof",
+          "role": "market_roof",
+          "cell": [
+            4,
+            -1
+          ],
+          "size": [
+            5,
+            3
+          ],
+          "height": 0.25,
+          "elevation": 2.2,
+          "solid": false
+        },
+        {
+          "id": "porch_workbench",
+          "role": "workbench",
+          "cell": [
+            5,
+            1
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "wood_stack",
+          "role": "log",
+          "cell": [
+            -6,
+            0
+          ],
+          "size": [
+            1,
+            3
+          ],
+          "height": 0.7
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "tool_crate",
+          "role": "crate",
+          "cell": [
+            -5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "prism_bastion": {
+      "kind": "castle",
+      "name": "Prism Bastion",
+      "book": "book_handles",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "north_wall",
+          "role": "stone_block",
+          "cell": [
+            0,
+            -12
+          ],
+          "size": [
+            25,
+            1
+          ],
+          "height": 2.4
+        },
+        {
+          "id": "west_wall",
+          "role": "stone_block",
+          "cell": [
+            -12,
+            -2
+          ],
+          "size": [
+            1,
+            19
+          ],
+          "height": 2.4
+        },
+        {
+          "id": "east_wall",
+          "role": "stone_block",
+          "cell": [
+            12,
+            -2
+          ],
+          "size": [
+            1,
+            19
+          ],
+          "height": 2.4
+        },
+        {
+          "id": "keep",
+          "town_voxel": "$theme_house",
+          "cell": [
+            0,
+            -7
+          ],
+          "size": [
+            7,
+            7
+          ],
+          "height": 5.8,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "west_tower",
+          "template": "castle_hexagonal_watch",
+          "cell": [
+            -10,
+            -10
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 4.8,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "east_tower",
+          "template": "castle_square_library",
+          "cell": [
+            10,
+            -10
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 4.6,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "open_gate",
+          "town_voxel": "$theme_gate",
+          "cell": [
+            0,
+            11
+          ],
+          "size": [
+            7,
+            1
+          ],
+          "height": 3.3,
+          "collision": "posts",
+          "fixed": true
+        },
+        {
+          "id": "west_gate_wall",
+          "role": "stone_block",
+          "cell": [
+            -9,
+            11
+          ],
+          "size": [
+            11,
+            1
+          ],
+          "height": 2.2
+        },
+        {
+          "id": "east_gate_wall",
+          "role": "stone_block",
+          "cell": [
+            9,
+            11
+          ],
+          "size": [
+            11,
+            1
+          ],
+          "height": 2.2
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "banner",
+          "role": "banner",
+          "cell": [
+            7,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.7
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "north_watch": {
+      "kind": "castle",
+      "name": "North Watch Court",
+      "book": "book_handles",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "left_keep",
+          "town_voxel": "$theme_house",
+          "cell": [
+            -7,
+            -7
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 5.0,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "right_keep",
+          "town_voxel": "$theme_workshop",
+          "cell": [
+            7,
+            -7
+          ],
+          "size": [
+            5,
+            5
+          ],
+          "height": 4.4,
+          "collision": "shell",
+          "fixed": true
+        },
+        {
+          "id": "rear_curtain",
+          "role": "stone_block",
+          "cell": [
+            0,
+            -12
+          ],
+          "size": [
+            25,
+            1
+          ],
+          "height": 2.7
+        },
+        {
+          "id": "west_curtain",
+          "role": "stone_block",
+          "cell": [
+            -12,
+            -2
+          ],
+          "size": [
+            1,
+            17
+          ],
+          "height": 1.7
+        },
+        {
+          "id": "east_curtain",
+          "role": "stone_block",
+          "cell": [
+            12,
+            -2
+          ],
+          "size": [
+            1,
+            17
+          ],
+          "height": 1.7
+        },
+        {
+          "id": "watch_bell",
+          "template": "castle_hexagonal_watch",
+          "cell": [
+            0,
+            -7
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 4.0,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "outer_gate",
+          "town_voxel": "$theme_gate",
+          "cell": [
+            0,
+            11
+          ],
+          "size": [
+            7,
+            1
+          ],
+          "height": 3.5,
+          "collision": "posts",
+          "fixed": true
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        },
+        {
+          "id": "training_post",
+          "role": "training_dummy",
+          "cell": [
+            8,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.4
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "bell_court": {
+      "kind": "temple",
+      "name": "The Bell Court",
+      "book": "book_waiting_cup",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "bell_spire",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            0,
+            -7
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 4.9,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "open_gate",
+          "town_voxel": "$theme_gate",
+          "cell": [
+            0,
+            8
+          ],
+          "size": [
+            7,
+            1
+          ],
+          "height": 3.0,
+          "collision": "posts",
+          "fixed": true
+        },
+        {
+          "id": "column_0",
+          "role": "column",
+          "cell": [
+            -5,
+            -4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.3
+        },
+        {
+          "id": "column_1",
+          "role": "column",
+          "cell": [
+            5,
+            -4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.3
+        },
+        {
+          "id": "column_2",
+          "role": "column",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.3
+        },
+        {
+          "id": "column_3",
+          "role": "column",
+          "cell": [
+            5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.3
+        },
+        {
+          "id": "north_canopy",
+          "role": "stone_block",
+          "cell": [
+            0,
+            -4
+          ],
+          "size": [
+            11,
+            1
+          ],
+          "height": 0.35,
+          "elevation": 3.3,
+          "solid": false
+        },
+        {
+          "id": "west_canopy",
+          "role": "stone_block",
+          "cell": [
+            -5,
+            0
+          ],
+          "size": [
+            1,
+            9
+          ],
+          "height": 0.35,
+          "elevation": 3.3,
+          "solid": false
+        },
+        {
+          "id": "east_canopy",
+          "role": "stone_block",
+          "cell": [
+            5,
+            0
+          ],
+          "size": [
+            1,
+            9
+          ],
+          "height": 0.35,
+          "elevation": 3.3,
+          "solid": false
+        },
+        {
+          "id": "altar",
+          "role": "altar",
+          "cell": [
+            0,
+            -2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.0
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "wild_court": {
+      "kind": "temple",
+      "name": "The Wild Court",
+      "book": "book_waiting_cup",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "old_altar",
+          "role": "altar",
+          "cell": [
+            0,
+            -6
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 1.2
+        },
+        {
+          "id": "rear_memorial",
+          "role": "statue",
+          "cell": [
+            0,
+            -9
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.4
+        },
+        {
+          "id": "column_0",
+          "role": "column",
+          "cell": [
+            -7,
+            -4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 2.8
+        },
+        {
+          "id": "column_1",
+          "role": "column",
+          "cell": [
+            -6,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.7
+        },
+        {
+          "id": "column_2",
+          "role": "column",
+          "cell": [
+            -7,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 2.8
+        },
+        {
+          "id": "column_3",
+          "role": "column",
+          "cell": [
+            7,
+            -4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.7
+        },
+        {
+          "id": "column_4",
+          "role": "column",
+          "cell": [
+            6,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 2.8
+        },
+        {
+          "id": "column_5",
+          "role": "column",
+          "cell": [
+            7,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.7
+        },
+        {
+          "id": "west_broken_lintel",
+          "role": "stone_block",
+          "cell": [
+            -7,
+            -1
+          ],
+          "size": [
+            1,
+            7
+          ],
+          "height": 0.3,
+          "elevation": 2.8,
+          "solid": false
+        },
+        {
+          "id": "wayside_marker",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            6,
+            9
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 2.2,
+          "collision": "solid",
+          "fixed": true
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "cinder_arcade": {
+      "kind": "ruin",
+      "name": "The Cinder Arcade",
+      "book": "book_final_atlas",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "west_arcade",
+          "role": "stone_block",
+          "cell": [
+            -8,
+            0
+          ],
+          "size": [
+            1,
+            13
+          ],
+          "height": 2.1
+        },
+        {
+          "id": "east_fragment",
+          "role": "stone_block",
+          "cell": [
+            8,
+            3
+          ],
+          "size": [
+            1,
+            7
+          ],
+          "height": 1.4
+        },
+        {
+          "id": "north_fragment",
+          "role": "stone_block",
+          "cell": [
+            2,
+            -9
+          ],
+          "size": [
+            9,
+            1
+          ],
+          "height": 1.1
+        },
+        {
+          "id": "column_left",
+          "role": "column",
+          "cell": [
+            -5,
+            -5
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.1
+        },
+        {
+          "id": "column_right",
+          "role": "column",
+          "cell": [
+            1,
+            -5
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 3.1
+        },
+        {
+          "id": "hanging_lintel",
+          "role": "stone_block",
+          "cell": [
+            -2,
+            -5
+          ],
+          "size": [
+            7,
+            1
+          ],
+          "height": 0.4,
+          "elevation": 3.1,
+          "solid": false
+        },
+        {
+          "id": "old_relay",
+          "town_voxel": "$theme_landmark",
+          "cell": [
+            5,
+            -5
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 2.6,
+          "collision": "solid",
+          "fixed": true
+        },
+        {
+          "id": "fallen_block",
+          "role": "stone_block",
+          "cell": [
+            5,
+            1
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 0.45
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "fallen_spire": {
+      "kind": "ruin",
+      "name": "The Fallen Spire",
+      "book": "book_final_atlas",
+      "reader": [
+        -2,
+        2
+      ],
+      "reading_approach": [
+        -2,
+        3
+      ],
+      "rest": [
+        4,
+        5
+      ],
+      "structures": [
+        {
+          "id": "west_foundation",
+          "role": "stone_block",
+          "cell": [
+            -7,
+            -5
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 1.5
+        },
+        {
+          "id": "east_foundation",
+          "role": "stone_block",
+          "cell": [
+            7,
+            -5
+          ],
+          "size": [
+            3,
+            3
+          ],
+          "height": 1.9
+        },
+        {
+          "id": "fallen_beam",
+          "role": "stone_block",
+          "cell": [
+            0,
+            -7
+          ],
+          "size": [
+            7,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "split_monument",
+          "role": "statue",
+          "cell": [
+            0,
+            -3
+          ],
+          "size": [
+            3,
+            1
+          ],
+          "height": 2.6
+        },
+        {
+          "id": "north_column",
+          "role": "column",
+          "cell": [
+            3,
+            -9
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 2.9
+        },
+        {
+          "id": "broken_curb",
+          "role": "stone_block",
+          "cell": [
+            -7,
+            3
+          ],
+          "size": [
+            1,
+            5
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "sunken_cabinet",
+          "role": "bookcase",
+          "cell": [
+            7,
+            1
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 1.1
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "rest_bed",
+          "role": "bedroll",
+          "cell": [
+            4,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.22,
+          "fixed": true
+        },
+        {
+          "id": "rest_lantern",
+          "role": "lantern",
+          "cell": [
+            5,
+            4
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.7
+        },
+        {
+          "id": "water_barrel",
+          "role": "barrel",
+          "cell": [
+            6,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_table",
+          "role": "table",
+          "cell": [
+            -5,
+            3
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "height": 0.85
+        },
+        {
+          "id": "tea_cup",
+          "role": "tea",
+          "support": "tea_table",
+          "size": [
+            0.4,
+            0.35
+          ],
+          "height": 0.25
+        }
+      ],
+      "resident_spots": [
+        {
+          "id": "host",
+          "point": [
+            0,
+            5
+          ],
+          "approach": [
+            0,
+            6
+          ],
+          "route": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

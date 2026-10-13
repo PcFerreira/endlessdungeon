@@ -71,6 +71,9 @@ func build(record: Dictionary, season: String = "") -> void:
 		candle.position = Vector3(point[0] + .65, 0, point[1])
 		add_child(candle)
 	_portal(Vector2(record.hub_portal - Vector2(record.cell)))
+	for gate in record.get("hub_gates", []):
+		_portal(Vector2(gate.point - Vector2(record.cell)), gate.name)
+	_label("Portal Court", Vector3(0, .65, 38), Color("e9d9c1"), 26)
 	_label("Lanternwake Commons", Vector3(0, .65, 8.8), Color("e9d9c1"), 26)
 	_label("Ember Market", Vector3(21, 3.7, -5), Color(palette.accent), 28)
 	_label("Moonlit Guild Walk", Vector3(-21, 3.7, 6), Color(palette.magic), 26)
@@ -149,14 +152,14 @@ func _lamp(point: Vector2) -> void:
 	_box(self, Vector3(point.x, 2.34, point.y), Vector3(.27, .46, .27), Color(palette.accent), true)
 	_box(self, Vector3(point.x, 2.62, point.y), Vector3(.45, .1, .45), Color(palette.edge))
 
-func _portal(point: Vector2) -> void:
+func _portal(point: Vector2, destination: String = "Worldgate") -> void:
 	for side in [-1, 1]:
 		_box(self, Vector3(point.x + side * 1.5, 1.5, point.y), Vector3(.4, 3, .4), Color("898395"))
 	_box(self, Vector3(point.x, 3.1, point.y), Vector3(3.6, .4, .6), Color(palette.accent))
 	_box(self, Vector3(point.x, 1.5, point.y), Vector3(2.5, 2.8, .08), Color(palette.magic).darkened(.3), true)
 	for index in range(8):
 		_box(self, Vector3(point.x - 1.1 + index * .3, .12, point.y - .4), Vector3(.13, .035, .14), Color(palette.accent), true)
-	_label("Worldgate  [E]", Vector3(point.x, 3.9, point.y), Color("d5c2ef"), 28)
+	_label(destination + "  [E]", Vector3(point.x, 3.9, point.y), Color("d5c2ef"), 28)
 
 func _ring(point: Vector2, radius: float, color: Color) -> void:
 	for index in range(40):

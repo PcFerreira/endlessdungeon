@@ -235,7 +235,7 @@ func receive(message: Dictionary) -> void:
 				return
 			var world: Dictionary = message.world
 			var edition = world.get("generator_version")
-			if message.get("protocol") != 1 or world.get("content_revision") != content_revision or not world.get("seed") is String or not world.seed.is_valid_int() or not (edition is int or edition is float) or not is_finite(float(edition)) or edition != floorf(edition) or int(edition) not in [4, 5, 6]:
+			if message.get("protocol") != 1 or world.get("content_revision") != content_revision or not world.get("seed") is String or not world.seed.is_valid_int() or not (edition is int or edition is float) or not is_finite(float(edition)) or edition != floorf(edition) or int(edition) not in [4, 5, 6, 7]:
 				fail_connection("This world needs another game build. Update and reconnect.")
 				return
 			var build := Build.new()

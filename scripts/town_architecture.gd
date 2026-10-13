@@ -5,14 +5,19 @@ const Scenery = preload("res://scripts/scenery.gd")
 const Styles = preload("res://scripts/environment_styles.gd")
 const Voxelizer = preload("res://scripts/town_model_voxelizer.gd")
 const Voxels = preload("res://scripts/voxel_kit.gd")
+const NativeTown = preload("res://scripts/town_voxel_models.gd")
 var catalog := Catalog.new()
 var scenery := Scenery.new()
 var styles := Styles.new(catalog.registry)
 var templates: Dictionary = {}
 var error := ""
+var native_town := NativeTown.new()
 const CACHE_LIMIT := 48
 
 func build(house: Dictionary, city: Dictionary) -> Node3D:
+	var native: Node3D = native_town.build(house,city,styles.family_for(city.biome))
+	if native != null:
+		return native
 	var recipe := catalog.choose(house,city)
 	if recipe.is_empty():
 		return null
@@ -25,6 +30,9 @@ func build(house: Dictionary, city: Dictionary) -> Node3D:
 	return model
 
 func civic(city: Dictionary) -> Node3D:
+	var native: Node3D = native_town.civic(city,styles.family_for(city.biome))
+	if native != null:
+		return native
 	var recipe := catalog.choose({"id":city.id + ":civic", "kind":"civic"},city)
 	if recipe.is_empty():
 		return null

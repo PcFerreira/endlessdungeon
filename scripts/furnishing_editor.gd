@@ -145,12 +145,14 @@ func refresh_panel() -> void:
 	box.add_child(bag_scroll)
 	var bag_list: VBoxContainer = ui._vbox(bag_scroll, 4)
 	bag_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var bag_grid: GridContainer = ui.IconGrid.grid(bag_list,3)
 	for id in game.inventory.items:
 		var item: Dictionary = game.inventory.ITEMS[id]
 		if item.kind != "furnishing":
 			continue
 		available += 1
-		var choice := button(bag_list, "%s x%s" % [item.name, game.inventory.count(id)], select_item.bind(id))
+		var choice: Button = ui.IconGrid.item(ui,bag_grid,id,select_item.bind(id),game.inventory.count(id),id == selected)
+		choice.focus_mode = Control.FOCUS_NONE
 		choice.disabled = Furnishings.Catalog.definition(id).is_empty()
 		choice.tooltip_text = "This find needs a supported furniture recipe." if choice.disabled else item.description
 	if available == 0:
@@ -163,8 +165,11 @@ func refresh_panel() -> void:
 	box.add_child(placed_scroll)
 	var placed_list: VBoxContainer = ui._vbox(placed_scroll, 4)
 	placed_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var placed_grid: GridContainer = ui.IconGrid.grid(placed_list,3)
 	for record in game.furnishings.records:
-		button(placed_list, Furnishings.Catalog.definition(record.item).name + "  /  Move or pick up", select_placed.bind(record.uid))
+		var choice: Button = ui.IconGrid.item(ui,placed_grid,record.item,select_placed.bind(record.uid),-1,record.uid == moving)
+		choice.focus_mode = Control.FOCUS_NONE
+		choice.tooltip_text += "\nMove or pick up"
 	if game.furnishings.records.is_empty():
 		ui._label(placed_list, "Furnish any clear island floor.", 13, ui.MUTED)
 	ui._separator(box)

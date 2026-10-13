@@ -2,12 +2,15 @@ extends RefCounted
 
 const Registry = preload("res://scripts/asset_registry.gd")
 const Generator = preload("res://scripts/voxel_character_generator.gd")
+const Wonder = preload("res://scripts/wonder_models.gd")
 static var registry := Registry.new()
 
 static func style_for(index: int, context: Dictionary = {}) -> Dictionary:
 	return Generator.appearance(index, context)
 
 static func create(index: int, context: Dictionary = {}) -> Node3D:
+	if not context.get("wonder_id","").is_empty():
+		return Wonder.create(context.wonder_id,context.get("visual_family","block_voxel"),index)
 	var style := style_for(index, context)
 	var result := Node3D.new()
 	result.add_child(Generator.create(style))

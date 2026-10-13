@@ -1,0 +1,614 @@
+{
+  "version": 1,
+  "spacing": 5,
+  "patch_chance": 0.65,
+  "reach": 1.5,
+  "max_nodes": 96,
+  "ledger_limit": 16384,
+  "items": {
+    "forage_bramble_berries": {
+      "name": "Bramble Berries",
+      "kind": "material",
+      "stack": 99,
+      "description": "Clusters of purple berries grow where the greenwood paths give way to tangled stems.",
+      "icon": "res://assets/foraging/forage_bramble_berries.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "a94b83",
+      "forage_shape": "berry",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_ironbark": {
+      "name": "Ironbark Curl",
+      "kind": "material",
+      "stack": 99,
+      "description": "A curled strip of tough bark carries the dark grain of an old greenwood tree.",
+      "icon": "res://assets/foraging/forage_ironbark.svg",
+      "rarity": "uncommon",
+      "trade_value": 14,
+      "forage_color": "927258",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_wayside_sage": {
+      "name": "Wayside Sage",
+      "kind": "material",
+      "stack": 99,
+      "description": "Soft green leaves hold their silver edges above the meadow grass.",
+      "icon": "res://assets/foraging/forage_wayside_sage.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "92b28b",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_starlight_petals": {
+      "name": "Starlight Petals",
+      "kind": "material",
+      "stack": 99,
+      "description": "Five pale petals cup a speck of light even after the meadow flowers close.",
+      "icon": "res://assets/foraging/forage_starlight_petals.svg",
+      "rarity": "uncommon",
+      "trade_value": 12,
+      "forage_color": "ead498",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_cactus_fiber": {
+      "name": "Cactus Fiber",
+      "kind": "material",
+      "stack": 99,
+      "description": "Fine green fibers peel from the dry outer ribs of a desert cactus.",
+      "icon": "res://assets/foraging/forage_cactus_fiber.svg",
+      "rarity": "common",
+      "trade_value": 6,
+      "forage_color": "a6b46d",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_sunstone": {
+      "name": "Sunstone Chip",
+      "kind": "material",
+      "stack": 99,
+      "description": "An amber stone holds a narrow band of brightness beneath its dusty surface.",
+      "icon": "res://assets/foraging/forage_sunstone.svg",
+      "rarity": "rare",
+      "trade_value": 24,
+      "forage_color": "edb85d",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        1
+      ]
+    },
+    "forage_winter_mint": {
+      "name": "Winter Mint",
+      "kind": "material",
+      "stack": 99,
+      "description": "Small mint leaves gather in the sheltered spaces between patches of frost.",
+      "icon": "res://assets/foraging/forage_winter_mint.svg",
+      "rarity": "common",
+      "trade_value": 6,
+      "forage_color": "9cd2c9",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_ice_resin": {
+      "name": "Ice Resin",
+      "kind": "material",
+      "stack": 99,
+      "description": "A blue drop of hardened resin preserves tiny branches of frost inside it.",
+      "icon": "res://assets/foraging/forage_ice_resin.svg",
+      "rarity": "uncommon",
+      "trade_value": 16,
+      "forage_color": "a8d5ee",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_fern_curl": {
+      "name": "Fern Curl",
+      "kind": "material",
+      "stack": 99,
+      "description": "A young fern keeps its tightly folded tip beneath the deepwood canopy.",
+      "icon": "res://assets/foraging/forage_fern_curl.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "739f72",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_moth_moss": {
+      "name": "Moth Moss",
+      "kind": "material",
+      "stack": 99,
+      "description": "Pale flecks of moss cling to old roots in the shapes of resting moth wings.",
+      "icon": "res://assets/foraging/forage_moth_moss.svg",
+      "rarity": "uncommon",
+      "trade_value": 13,
+      "forage_color": "a8bd82",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_ghost_petals": {
+      "name": "Ghost Petals",
+      "kind": "material",
+      "stack": 99,
+      "description": "White petals keep their outlines after the surrounding hallowwood leaves have faded.",
+      "icon": "res://assets/foraging/forage_ghost_petals.svg",
+      "rarity": "common",
+      "trade_value": 7,
+      "forage_color": "cfb8df",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_wisp_glass": {
+      "name": "Wisp Glass",
+      "kind": "material",
+      "stack": 99,
+      "description": "A faint blue spark shifts inside this smooth hollow pebble.",
+      "icon": "res://assets/foraging/forage_wisp_glass.svg",
+      "rarity": "rare",
+      "trade_value": 25,
+      "forage_color": "94cae8",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        1
+      ]
+    },
+    "forage_silver_reed": {
+      "name": "Silver Reed",
+      "kind": "material",
+      "stack": 99,
+      "description": "The narrow leaves of a marsh reed shine silver along their wet edges.",
+      "icon": "res://assets/foraging/forage_silver_reed.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "a4bb98",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_bog_pearl": {
+      "name": "Bog Pearl",
+      "kind": "material",
+      "stack": 99,
+      "description": "A dull gold pearl rests within a shell stained by the dark marsh water.",
+      "icon": "res://assets/foraging/forage_bog_pearl.svg",
+      "rarity": "rare",
+      "trade_value": 22,
+      "forage_color": "ddd4ba",
+      "forage_shape": "shell",
+      "yield": [
+        1,
+        1
+      ]
+    },
+    "forage_lantern_fruit": {
+      "name": "Lantern Fruit",
+      "kind": "material",
+      "stack": 99,
+      "description": "A ribbed yellow fruit glimmers beneath the broad leaves of the jungle floor.",
+      "icon": "res://assets/foraging/forage_lantern_fruit.svg",
+      "rarity": "common",
+      "trade_value": 6,
+      "forage_color": "d5a34f",
+      "forage_shape": "berry",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_red_ginger": {
+      "name": "Red Ginger",
+      "kind": "material",
+      "stack": 99,
+      "description": "A knotted red root lies beneath a fan of glossy jungle leaves.",
+      "icon": "res://assets/foraging/forage_red_ginger.svg",
+      "rarity": "uncommon",
+      "trade_value": 12,
+      "forage_color": "c28061",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_russet_nuts": {
+      "name": "Russet Nuts",
+      "kind": "material",
+      "stack": 99,
+      "description": "Small brown nuts collect beneath the copper leaves of the amberleaf woods.",
+      "icon": "res://assets/foraging/forage_russet_nuts.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "b78655",
+      "forage_shape": "berry",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_amber_drips": {
+      "name": "Amber Drips",
+      "kind": "material",
+      "stack": 99,
+      "description": "Golden beads of hardened sap hold fragments of the last falling leaves.",
+      "icon": "res://assets/foraging/forage_amber_drips.svg",
+      "rarity": "uncommon",
+      "trade_value": 15,
+      "forage_color": "dca651",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_mooncap": {
+      "name": "Mooncap",
+      "kind": "material",
+      "stack": 99,
+      "description": "A violet mushroom lifts its spotted cap from the soft floor of the mooncap grove.",
+      "icon": "res://assets/foraging/forage_mooncap.svg",
+      "rarity": "common",
+      "trade_value": 6,
+      "forage_color": "b6a9d8",
+      "forage_shape": "fungus",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_dreaming_spores": {
+      "name": "Dreaming Spores",
+      "kind": "material",
+      "stack": 99,
+      "description": "A dusty pink cloud settles around the smallest mushrooms in the grove.",
+      "icon": "res://assets/foraging/forage_dreaming_spores.svg",
+      "rarity": "uncommon",
+      "trade_value": 14,
+      "forage_color": "d1afd8",
+      "forage_shape": "fungus",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_obsidian_flakes": {
+      "name": "Obsidian Flakes",
+      "kind": "material",
+      "stack": 99,
+      "description": "Thin black flakes break from the smooth faces of cooled volcanic stone.",
+      "icon": "res://assets/foraging/forage_obsidian_flakes.svg",
+      "rarity": "common",
+      "trade_value": 8,
+      "forage_color": "7c7182",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_cinder_crystal": {
+      "name": "Cinder Crystal",
+      "kind": "material",
+      "stack": 99,
+      "description": "An orange crystal carries dark bands like smoke caught between layers of glass.",
+      "icon": "res://assets/foraging/forage_cinder_crystal.svg",
+      "rarity": "rare",
+      "trade_value": 26,
+      "forage_color": "ec8a5e",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        1
+      ]
+    },
+    "forage_wind_thyme": {
+      "name": "Wind Thyme",
+      "kind": "material",
+      "stack": 99,
+      "description": "Tiny thyme leaves cluster close to the stone where the highland wind bends their stems.",
+      "icon": "res://assets/foraging/forage_wind_thyme.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "9ab38b",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_sky_flint": {
+      "name": "Sky Flint",
+      "kind": "material",
+      "stack": 99,
+      "description": "A blue-grey flint shows pale streaks beneath its freshly chipped edges.",
+      "icon": "res://assets/foraging/forage_sky_flint.svg",
+      "rarity": "uncommon",
+      "trade_value": 16,
+      "forage_color": "96adc7",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_tide_kelp": {
+      "name": "Tide Kelp",
+      "kind": "material",
+      "stack": 99,
+      "description": "Long green blades lie twisted together above the receding coastal tide line.",
+      "icon": "res://assets/foraging/forage_tide_kelp.svg",
+      "rarity": "common",
+      "trade_value": 5,
+      "forage_color": "77a89a",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_whisper_shell": {
+      "name": "Whisper Shell",
+      "kind": "material",
+      "stack": 99,
+      "description": "A spiral shell carries a fine rose-colored seam around its pale outer whorl.",
+      "icon": "res://assets/foraging/forage_whisper_shell.svg",
+      "rarity": "uncommon",
+      "trade_value": 14,
+      "forage_color": "e1bea0",
+      "forage_shape": "shell",
+      "yield": [
+        1,
+        2
+      ]
+    },
+    "forage_glass_lichen": {
+      "name": "Glass Lichen",
+      "kind": "material",
+      "stack": 99,
+      "description": "Clear branching lichen catches blue light along the edges of tundra stones.",
+      "icon": "res://assets/foraging/forage_glass_lichen.svg",
+      "rarity": "common",
+      "trade_value": 7,
+      "forage_color": "b1d2d6",
+      "forage_shape": "herb",
+      "yield": [
+        1,
+        3
+      ]
+    },
+    "forage_prism_heart": {
+      "name": "Prism Heart",
+      "kind": "material",
+      "stack": 99,
+      "description": "A clear many-sided shard gathers the colors of the cold sky along its center.",
+      "icon": "res://assets/foraging/forage_prism_heart.svg",
+      "rarity": "rare",
+      "trade_value": 28,
+      "forage_color": "a9c9ef",
+      "forage_shape": "mineral",
+      "yield": [
+        1,
+        1
+      ]
+    }
+  },
+  "biomes": {
+    "greenwood": {
+      "entries": [
+        {
+          "item": "forage_bramble_berries",
+          "weight": 8
+        },
+        {
+          "item": "forage_ironbark",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "meadows": {
+      "entries": [
+        {
+          "item": "forage_wayside_sage",
+          "weight": 8
+        },
+        {
+          "item": "forage_starlight_petals",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "desert": {
+      "entries": [
+        {
+          "item": "forage_cactus_fiber",
+          "weight": 8
+        },
+        {
+          "item": "forage_sunstone",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "frostlands": {
+      "entries": [
+        {
+          "item": "forage_winter_mint",
+          "weight": 8
+        },
+        {
+          "item": "forage_ice_resin",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "dense_forest": {
+      "entries": [
+        {
+          "item": "forage_fern_curl",
+          "weight": 8
+        },
+        {
+          "item": "forage_moth_moss",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "haunted_hollows": {
+      "entries": [
+        {
+          "item": "forage_ghost_petals",
+          "weight": 8
+        },
+        {
+          "item": "forage_wisp_glass",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "marsh": {
+      "entries": [
+        {
+          "item": "forage_silver_reed",
+          "weight": 8
+        },
+        {
+          "item": "forage_bog_pearl",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "jungle": {
+      "entries": [
+        {
+          "item": "forage_lantern_fruit",
+          "weight": 8
+        },
+        {
+          "item": "forage_red_ginger",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "autumn_woodland": {
+      "entries": [
+        {
+          "item": "forage_russet_nuts",
+          "weight": 8
+        },
+        {
+          "item": "forage_amber_drips",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "fungal_grove": {
+      "entries": [
+        {
+          "item": "forage_mooncap",
+          "weight": 8
+        },
+        {
+          "item": "forage_dreaming_spores",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "volcanic_wastes": {
+      "entries": [
+        {
+          "item": "forage_obsidian_flakes",
+          "weight": 8
+        },
+        {
+          "item": "forage_cinder_crystal",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "highlands": {
+      "entries": [
+        {
+          "item": "forage_wind_thyme",
+          "weight": 8
+        },
+        {
+          "item": "forage_sky_flint",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "coast": {
+      "entries": [
+        {
+          "item": "forage_tide_kelp",
+          "weight": 8
+        },
+        {
+          "item": "forage_whisper_shell",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    },
+    "crystal_tundra": {
+      "entries": [
+        {
+          "item": "forage_glass_lichen",
+          "weight": 8
+        },
+        {
+          "item": "forage_prism_heart",
+          "weight": 2
+        }
+      ],
+      "habitat": "land"
+    }
+  }
+}

@@ -1,0 +1,1051 @@
+{
+  "version": 1,
+  "edition": 7,
+  "feature_chance_denominator": 4,
+  "profiles": {
+    "monolith": {
+      "kind": "monolith",
+      "name": "Weathered Monolith",
+      "flavor": "Old marks remain on the stone. A worn step invites a closer look.",
+      "size": [
+        5,
+        5
+      ],
+      "body_size": [
+        3,
+        3
+      ],
+      "body_center": [
+        0,
+        -1
+      ],
+      "body_height": 4.5,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        1
+      ],
+      "solid_local": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "interaction": "story",
+      "quantity": 0,
+      "coins": 0
+    },
+    "well": {
+      "kind": "well",
+      "name": "Wayside Well",
+      "flavor": "A low stone basin offers a quiet place to recover before moving on.",
+      "size": [
+        5,
+        5
+      ],
+      "body_size": [
+        3,
+        3
+      ],
+      "body_center": [
+        0,
+        -1
+      ],
+      "body_height": 1.7,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        1
+      ],
+      "solid_local": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "interaction": "well",
+      "quantity": 0,
+      "coins": 0
+    },
+    "watchtower": {
+      "kind": "watchtower",
+      "name": "Abandoned Watchtower",
+      "flavor": "An open doorway leads beneath a raised lookout and an old supply cache.",
+      "size": [
+        7,
+        7
+      ],
+      "body_size": [
+        5,
+        5
+      ],
+      "body_center": [
+        0,
+        0
+      ],
+      "body_height": 6.8,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        2
+      ],
+      "solid_local": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "interaction": "cache",
+      "quantity": 3,
+      "coins": 18
+    },
+    "mage_tower": {
+      "kind": "mage_tower",
+      "name": "Secluded Mage Tower",
+      "flavor": "Colored stone and a narrow doorway mark a former place of study.",
+      "size": [
+        7,
+        7
+      ],
+      "body_size": [
+        5,
+        5
+      ],
+      "body_center": [
+        0,
+        0
+      ],
+      "body_height": 7.75,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        2
+      ],
+      "solid_local": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "interaction": "cache",
+      "quantity": 3,
+      "coins": 24
+    },
+    "tomb": {
+      "kind": "tomb",
+      "name": "Wayside Tomb",
+      "flavor": "A clear alcove opens between heavy stones around an old offering cache.",
+      "size": [
+        7,
+        7
+      ],
+      "body_size": [
+        5,
+        5
+      ],
+      "body_center": [
+        0,
+        0
+      ],
+      "body_height": 3.2,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        2
+      ],
+      "solid_local": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "interaction": "cache",
+      "quantity": 2,
+      "coins": 20
+    },
+    "ruined_cottage": {
+      "kind": "ruined_cottage",
+      "name": "Ruined Cottage",
+      "flavor": "Broken walls shelter the remains of a small household supply cache.",
+      "size": [
+        7,
+        7
+      ],
+      "body_size": [
+        5,
+        5
+      ],
+      "body_center": [
+        0,
+        0
+      ],
+      "body_height": 3.6,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        2
+      ],
+      "solid_local": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "interaction": "cache",
+      "quantity": 4,
+      "coins": 12
+    },
+    "shrine": {
+      "kind": "shrine",
+      "name": "Forgotten Shrine",
+      "flavor": "A sheltered altar preserves a small trace of the people who passed here.",
+      "size": [
+        5,
+        5
+      ],
+      "body_size": [
+        3,
+        3
+      ],
+      "body_center": [
+        0,
+        -1
+      ],
+      "body_height": 3.0,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        1
+      ],
+      "solid_local": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "interaction": "story",
+      "quantity": 0,
+      "coins": 0
+    },
+    "ruined_arch": {
+      "kind": "ruined_arch",
+      "name": "Ruined Arch",
+      "flavor": "Two old pillars frame the remains of a forgotten passage.",
+      "size": [
+        5,
+        5
+      ],
+      "body_size": [
+        3,
+        1
+      ],
+      "body_center": [
+        0,
+        -1
+      ],
+      "body_height": 3.3,
+      "foundation_depth": 0.25,
+      "door_local": [
+        0,
+        1
+      ],
+      "solid_local": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "interaction": "story",
+      "quantity": 0,
+      "coins": 0
+    }
+  },
+  "biomes": {
+    "greenwood": {
+      "flavor": "Moss and brambles have softened the old woodland stone.",
+      "reward_items": [
+        "forage_bramble_berries",
+        "forage_ironbark"
+      ],
+      "entries": [
+        {
+          "kind": "ruined_cottage",
+          "weight": 3
+        },
+        {
+          "kind": "shrine",
+          "weight": 2
+        },
+        {
+          "kind": "well",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 2
+        },
+        {
+          "kind": "monolith",
+          "weight": 1
+        },
+        {
+          "kind": "watchtower",
+          "weight": 1
+        },
+        {
+          "kind": "tomb",
+          "weight": 1
+        }
+      ]
+    },
+    "meadows": {
+      "flavor": "The structure stands in an open patch of grass and wayside flowers.",
+      "reward_items": [
+        "forage_wayside_sage",
+        "forage_starlight_petals"
+      ],
+      "entries": [
+        {
+          "kind": "well",
+          "weight": 3
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 3
+        },
+        {
+          "kind": "watchtower",
+          "weight": 2
+        },
+        {
+          "kind": "shrine",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 1
+        },
+        {
+          "kind": "monolith",
+          "weight": 1
+        }
+      ]
+    },
+    "desert": {
+      "flavor": "Windblown sand gathers against the sheltered stone edges.",
+      "reward_items": [
+        "forage_cactus_fiber",
+        "forage_sunstone"
+      ],
+      "entries": [
+        {
+          "kind": "monolith",
+          "weight": 3
+        },
+        {
+          "kind": "well",
+          "weight": 3
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 3
+        },
+        {
+          "kind": "tomb",
+          "weight": 2
+        },
+        {
+          "kind": "watchtower",
+          "weight": 1
+        },
+        {
+          "kind": "mage_tower",
+          "weight": 1
+        }
+      ]
+    },
+    "frostlands": {
+      "flavor": "Snow gathers around the stone and the nearby pines.",
+      "reward_items": [
+        "forage_winter_mint",
+        "forage_ice_resin"
+      ],
+      "entries": [
+        {
+          "kind": "watchtower",
+          "weight": 3
+        },
+        {
+          "kind": "monolith",
+          "weight": 2
+        },
+        {
+          "kind": "tomb",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 2
+        },
+        {
+          "kind": "shrine",
+          "weight": 1
+        },
+        {
+          "kind": "mage_tower",
+          "weight": 1
+        }
+      ]
+    },
+    "dense_forest": {
+      "flavor": "Broad crowns enclose the site in a quiet woodland clearing.",
+      "reward_items": [
+        "forage_fern_curl",
+        "forage_moth_moss"
+      ],
+      "entries": [
+        {
+          "kind": "shrine",
+          "weight": 3
+        },
+        {
+          "kind": "monolith",
+          "weight": 2
+        },
+        {
+          "kind": "tomb",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 2
+        },
+        {
+          "kind": "mage_tower",
+          "weight": 1
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 1
+        }
+      ]
+    },
+    "haunted_hollows": {
+      "flavor": "Dead trees and old memorial stones surround the clearing.",
+      "reward_items": [
+        "forage_ghost_petals",
+        "forage_wisp_glass"
+      ],
+      "entries": [
+        {
+          "kind": "tomb",
+          "weight": 4
+        },
+        {
+          "kind": "monolith",
+          "weight": 2
+        },
+        {
+          "kind": "mage_tower",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 2
+        },
+        {
+          "kind": "shrine",
+          "weight": 1
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 1
+        }
+      ]
+    },
+    "marsh": {
+      "flavor": "The structure occupies a dry rise above the surrounding wet ground.",
+      "reward_items": [
+        "forage_silver_reed",
+        "forage_bog_pearl"
+      ],
+      "entries": [
+        {
+          "kind": "shrine",
+          "weight": 3
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 2
+        },
+        {
+          "kind": "well",
+          "weight": 2
+        },
+        {
+          "kind": "monolith",
+          "weight": 1
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 1
+        },
+        {
+          "kind": "mage_tower",
+          "weight": 1
+        }
+      ]
+    },
+    "jungle": {
+      "flavor": "Tall leaves surround a small opening around the old stone.",
+      "reward_items": [
+        "forage_lantern_fruit",
+        "forage_red_ginger"
+      ],
+      "entries": [
+        {
+          "kind": "ruined_arch",
+          "weight": 3
+        },
+        {
+          "kind": "monolith",
+          "weight": 3
+        },
+        {
+          "kind": "shrine",
+          "weight": 2
+        },
+        {
+          "kind": "tomb",
+          "weight": 2
+        },
+        {
+          "kind": "watchtower",
+          "weight": 1
+        },
+        {
+          "kind": "well",
+          "weight": 1
+        }
+      ]
+    },
+    "autumn_woodland": {
+      "flavor": "Warm leaves gather along the sheltered sides of the structure.",
+      "reward_items": [
+        "forage_russet_nuts",
+        "forage_amber_drips"
+      ],
+      "entries": [
+        {
+          "kind": "ruined_cottage",
+          "weight": 3
+        },
+        {
+          "kind": "well",
+          "weight": 2
+        },
+        {
+          "kind": "shrine",
+          "weight": 2
+        },
+        {
+          "kind": "watchtower",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 1
+        },
+        {
+          "kind": "monolith",
+          "weight": 1
+        }
+      ]
+    },
+    "fungal_grove": {
+      "flavor": "Fungal growth marks the edges of this sheltered clearing.",
+      "reward_items": [
+        "forage_mooncap",
+        "forage_dreaming_spores"
+      ],
+      "entries": [
+        {
+          "kind": "mage_tower",
+          "weight": 3
+        },
+        {
+          "kind": "shrine",
+          "weight": 2
+        },
+        {
+          "kind": "monolith",
+          "weight": 2
+        },
+        {
+          "kind": "tomb",
+          "weight": 1
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 1
+        }
+      ]
+    },
+    "volcanic_wastes": {
+      "flavor": "Dark stone rises from an open patch of windblown ash.",
+      "reward_items": [
+        "forage_obsidian_flakes",
+        "forage_cinder_crystal"
+      ],
+      "entries": [
+        {
+          "kind": "monolith",
+          "weight": 3
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 3
+        },
+        {
+          "kind": "mage_tower",
+          "weight": 2
+        },
+        {
+          "kind": "tomb",
+          "weight": 2
+        },
+        {
+          "kind": "watchtower",
+          "weight": 1
+        },
+        {
+          "kind": "shrine",
+          "weight": 1
+        }
+      ]
+    },
+    "highlands": {
+      "flavor": "The site stands on a supported shelf with open views beyond it.",
+      "reward_items": [
+        "forage_wind_thyme",
+        "forage_sky_flint"
+      ],
+      "entries": [
+        {
+          "kind": "watchtower",
+          "weight": 4
+        },
+        {
+          "kind": "monolith",
+          "weight": 3
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 2
+        },
+        {
+          "kind": "shrine",
+          "weight": 1
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 1
+        },
+        {
+          "kind": "well",
+          "weight": 1
+        }
+      ]
+    },
+    "coast": {
+      "flavor": "Shore plants frame the structure on dry ground above the water.",
+      "reward_items": [
+        "forage_tide_kelp",
+        "forage_whisper_shell"
+      ],
+      "entries": [
+        {
+          "kind": "watchtower",
+          "weight": 3
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 2
+        },
+        {
+          "kind": "ruined_cottage",
+          "weight": 2
+        },
+        {
+          "kind": "well",
+          "weight": 2
+        },
+        {
+          "kind": "shrine",
+          "weight": 1
+        },
+        {
+          "kind": "monolith",
+          "weight": 1
+        }
+      ]
+    },
+    "crystal_tundra": {
+      "flavor": "Pale crystals and lichen mark the cold stone around the site.",
+      "reward_items": [
+        "forage_glass_lichen",
+        "forage_prism_heart"
+      ],
+      "entries": [
+        {
+          "kind": "mage_tower",
+          "weight": 3
+        },
+        {
+          "kind": "monolith",
+          "weight": 3
+        },
+        {
+          "kind": "shrine",
+          "weight": 2
+        },
+        {
+          "kind": "tomb",
+          "weight": 1
+        },
+        {
+          "kind": "watchtower",
+          "weight": 1
+        },
+        {
+          "kind": "ruined_arch",
+          "weight": 1
+        }
+      ]
+    }
+  }
+}

@@ -7,13 +7,18 @@
   "default_theme": "halloween",
   "spawn": [0, 6],
   "portal": [0, 23],
+  "gates": [
+    {"id": "sanctum", "kind": "sanctum", "name": "Your Sanctum", "position": [-5, 34]},
+    {"id": "morrowmere", "kind": "dimension", "name": "Morrowmere", "destination_id": "morrowmere", "position": [5, 34]}
+  ],
   "islands": [
     {"id": "commons", "name": "Lanternwake Commons", "center": [0, 0], "radius": [14, 12]},
     {"id": "guild_walk", "name": "Moonlit Guild Walk", "center": [-21, -1], "radius": [7, 8]},
     {"id": "market", "name": "Ember Market", "center": [21, 0], "radius": [8, 8]},
-    {"id": "dock", "name": "Worldgate Dock", "center": [0, 21], "radius": [6, 5]}
+    {"id": "dock", "name": "Worldgate Dock", "center": [0, 21], "radius": [6, 5]},
+    {"id": "portal_court", "name": "Portal Court", "center": [0, 34], "radius": [10, 6]}
   ],
-  "bridges": [[-17, -1, 6, 3], [12, -1, 7, 3], [-1, 10, 3, 9]],
+  "bridges": [[-17, -1, 6, 3], [12, -1, 7, 3], [-1, 10, 3, 9], [-1, 25, 3, 5]],
   "halls": [
     {"id": "lantern_wardens", "name": "Lantern Wardens", "position": [-24, -5], "size": [6, 5], "height": 3.6, "interior": "inn", "use": "inn", "color": "b47b4d", "charter": "The Wardens guide travelers between worlds and keep lights burning for those who arrive after dark. Their hall is a meeting place for scouts and expedition companions."},
     {"id": "moonlit_archive", "name": "Moonlit Archive", "position": [-7, -9], "size": [5, 4], "height": 4.3, "interior": "shrine", "use": "scribe", "color": "8267bb", "charter": "The Archive studies the magic carried here from fallen worlds. Readers, spellcasters and curious newcomers meet beneath its violet roofs to compare their accounts."},

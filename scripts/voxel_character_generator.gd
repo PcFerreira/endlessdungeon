@@ -64,18 +64,19 @@ static func create(style: Dictionary) -> Node3D:
 	player.play("Idle")
 	return body
 
-static func _geometry(style: Dictionary) -> Dictionary:
+static func _geometry(style: Dictionary, overrides: Dictionary = {}) -> Dictionary:
 	var colors := {"skin": Color(catalog.data.skins[style.skin]), "hair": Color(catalog.data.hair_colors[style.hair_color]), "paper": Color("f2e3c1"), "eye": Color("292c35")}
 	for name in catalog.data.palettes[style.palette_id]:
 		colors[name] = Color(catalog.data.palettes[style.palette_id][name])
-	var build: Dictionary = catalog.data.builds[style.build]
+	colors.merge(overrides.get("colors", {}), true)
+	var build: Dictionary = overrides.get("build", catalog.data.builds[style.build])
 	var shoulder: float = build.width / 2.0 + 1.5
 	var pivots := {"Torso":Vector3(0,11,0), "Head":Vector3(0,20,0), "LeftArm":Vector3(-shoulder,19,0), "RightArm":Vector3(shoulder,19,0), "LeftLeg":Vector3(-2.5,11,0), "RightLeg":Vector3(2.5,11,0)}
 	var boxes := {}
 	for bone in Catalog.BONES:
 		boxes[bone] = []
 	_add(boxes, "Torso", Vector3(0,4.5,0), Vector3(build.width,9,5), colors.cloth)
-	_add(boxes, "Torso", Vector3(0,.5,0), Vector3(build.width + .5,1,5.5), colors.leather)
+	_add(boxes, "Torso", Vector3(0,.5,0), Vector3(build.width + .5,1,5.5), colors.get("belt", colors.leather))
 	_add(boxes, "Torso", Vector3(0,.5,3), Vector3(2,1.5,.5), colors.trim)
 	_add(boxes, "Torso", Vector3(0,8.5,2.75), Vector3(5,1,.5), colors.trim)
 	var head_size: float = build.head
@@ -98,8 +99,11 @@ static func _geometry(style: Dictionary) -> Dictionary:
 		_add(boxes, bone, Vector3(0,-10.5,1), Vector3(3.5,1,6), colors.leather.darkened(.25))
 	for kind in ["hair", "beards", "outfits", "hats", "accessories"]:
 		var choice: String = style[{"beards":"beard", "outfits":"outfit", "hats":"hat", "accessories":"accessory"}.get(kind, kind)]
-		for piece in catalog.data[kind][choice]:
+		var pieces: Array = overrides.get(kind, catalog.data[kind].get(choice, []))
+		for piece in pieces:
 			_add(boxes, piece.bone, Vector3(piece.point[0],piece.point[1],piece.point[2]), Vector3(piece.size[0],piece.size[1],piece.size[2]), colors[piece.color])
+	for piece in overrides.get("extra", []):
+		_add(boxes, piece.bone, Vector3(piece.point[0],piece.point[1],piece.point[2]), Vector3(piece.size[0],piece.size[1],piece.size[2]), colors[piece.color])
 	var height := 0.0
 	var meshes := {}
 	for bone in boxes:

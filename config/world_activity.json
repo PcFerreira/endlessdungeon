@@ -150,28 +150,58 @@
     "labels": [
       "Creature grove",
       "Wild hunting ground",
-      "Ruins outskirts"
+      "Ruins outskirts",
+      "Wild clearing",
+      "Creature haunt",
+      "Wilderness range",
+      "Wild hollow",
+      "Roaming grounds",
+      "Creature refuge"
     ],
     "biome_labels": {
       "0": [
         "Forest den",
         "Woodland hunting ground",
-        "Ruins outskirts"
+        "Ruins outskirts",
+        "Woodland clearing",
+        "Thicket haunt",
+        "Deepwood range",
+        "Forest hollow",
+        "Timber roaming grounds",
+        "Woodland refuge"
       ],
       "1": [
         "Creature grove",
         "Meadow hunting ground",
-        "Ruins outskirts"
+        "Ruins outskirts",
+        "Meadow clearing",
+        "Grassland haunt",
+        "Prairie range",
+        "Meadow hollow",
+        "Grassland roaming grounds",
+        "Wildflower refuge"
       ],
       "2": [
         "Dune burrows",
         "Desert hunting ground",
-        "Ruins outskirts"
+        "Ruins outskirts",
+        "Desert clearing",
+        "Dune haunt",
+        "Sand roaming range",
+        "Desert hollow",
+        "Wastes roaming grounds",
+        "Dune refuge"
       ],
       "3": [
         "Ice hollow",
         "Frost hunting ground",
-        "Ruins outskirts"
+        "Ruins outskirts",
+        "Snow clearing",
+        "Frost haunt",
+        "Tundra range",
+        "Frozen hollow",
+        "Snow roaming grounds",
+        "Frost refuge"
       ]
     }
   }

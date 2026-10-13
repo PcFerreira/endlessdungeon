@@ -2,6 +2,8 @@
 
 Press E at a counter in a generated shop or workshop, or beside an actual outdoor market stall. The Trade label and interaction hint identify the approach. Indoor exits, rest points and books keep their existing interaction priority. Nearby watch demands and outdoor building entrances also keep priority. Esc closes trading.
 
+Goods appear as inventory-style icon tiles. Trader stock and Your goods switch the displayed collection; Previous and Next page through up to 24 goods at a time. Select a tile to inspect stock, ownership and prices in the detail pane, then use Buy or Sell. Traveling merchants show offer cards with their coin/shard payment actions. See [ICON_GRID_UI.md](ICON_GRID_UI.md) for the shared collection layout.
+
 Buy with Gold Coins, or sell eligible goods from your backpack. The trader rejects stolen quantities and preserves an equipped copy. A full backpack or overflowing coin stack cancels the whole transaction, including payment and stock. Traveling merchants retain their existing separate coin/shard barter.
 
 Each real building or market lot has its own finite stock and coin purse. Buying reduces stock and funds the purse. Selling adds stock and pays from that purse. Stock does not refresh by closing a window, leaving town, visiting the Sanctum or loading a save. There is no timed restocking or merchant schedule in this slice. Sell prices are below buy prices. Initial prices are tuning values.

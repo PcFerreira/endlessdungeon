@@ -5,6 +5,7 @@ const DIRECTIONS := [Vector2i.RIGHT, Vector2i.DOWN, Vector2i.LEFT, Vector2i.UP]
 var seed := 0
 var plans: Dictionary = {}
 var routes: Dictionary = {}
+var routing
 
 func _init(seed_value: int = 0) -> void:
 	assert(valid(DATA), "Invalid independent-site planning policy")
@@ -183,7 +184,7 @@ func roads_for(region: Vector2i) -> Array[Dictionary]:
 				for region_y in range(int(DATA.macro_size)):
 					edges.append_array(connections(neighbor * int(DATA.macro_size) + Vector2i(region_x, region_y)))
 			for record in edges:
-				var extent := Rect2i(record.from.cell, Vector2i.ONE).expand(record.to.cell).grow(64)
+				var extent := Rect2i(record.from.cell, Vector2i.ONE).expand(record.to.cell).grow(96 if routing != null else 64)
 				if extent.intersects(bounds):
 					records[record.id] = record
 	var result: Array[Dictionary] = []
@@ -251,12 +252,15 @@ static func raster(points: Array) -> Array[Vector2i]:
 	var result: Array[Vector2i] = []
 	if points.is_empty():
 		return result
-	var point: Vector2i = points[0]
-	result.append(point)
+	var from: Vector2i = points[0]
+	result.append(from)
 	for target in points.slice(1):
-		while point != target:
-			point += Vector2i(signi(target.x - point.x), signi(target.y - point.y))
-			result.append(point)
+		var length: int = maxi(absi(target.x - from.x),absi(target.y - from.y))
+		for index in range(1,length + 1):
+			var point := from + Vector2i((Vector2(target - from) * (float(index) / length)).round())
+			if result[-1] != point:
+				result.append(point)
+		from = target
 	return result
 
 func bypass(points: Array[Vector2i], boxes: Array[Rect2i]) -> Array[Vector2i]:
@@ -308,16 +312,21 @@ func path(a: Dictionary, b: Dictionary) -> Array[Vector2i]:
 	var middle_boxes: Array[Rect2i] = boxes.duplicate()
 	middle_boxes.append(record.from.footprint.grow(1))
 	middle_boxes.append(record.to.footprint.grow(1))
-	var middle := coarse(start[-1], finish[-1], record.id, middle_boxes)
-	if not middle.is_empty():
-		middle = bypass(middle, middle_boxes)
+	var middle: Array[Vector2i] = []
+	if routing != null:
+		middle = routing.path(start[-1],finish[-1],middle_boxes)
+	if middle.is_empty():
+		middle = coarse(start[-1], finish[-1], record.id, middle_boxes)
+		if not middle.is_empty():
+			middle = bypass(middle,middle_boxes)
 	var points: Array[Vector2i] = []
 	if not middle.is_empty():
 		points.assign(start)
 		points.append_array(middle.slice(1, -1))
 		finish.reverse()
 		points.append_array(finish)
-		points = bypass(points, boxes)
+		if routing == null:
+			points = bypass(points, boxes)
 		for index in range(points.size() - 1, 0, -1):
 			if points[index] == points[index - 1]:
 				points.remove_at(index)

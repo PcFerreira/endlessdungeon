@@ -1,20 +1,26 @@
 extends RefCounted
 
 const World = preload("res://scripts/world.gd")
+const IntegerText = preload("res://scripts/integer_text.gd")
 const Catalog = preload("res://scripts/world_life_catalog.gd")
 const AnimalHabitat = preload("res://scripts/animal_habitat.gd")
 const Activity = preload("res://scripts/world_activity.gd")
 const Travel = preload("res://scripts/surface_travel.gd")
+const Roamers = preload("res://scripts/wilderness_roamers.gd")
+const Wonder = preload("res://scripts/wonder_catalog.gd")
 const VERSION := 1
-const MAX_ACTORS := 20
+const MAX_ACTORS := 24
 const MAX_LOCAL_ACTORS := 12
 const MAX_ROAD_ACTORS := 8
 const MAX_CITIES := 3
 const MAX_ROUTE_CELLS := 169
 var catalog := Catalog.new()
 var activity := Activity.new()
+var roamers := Roamers.new()
 var seed := 0
 var world_edition := 4
+var road_version := 1
+var pending_road_version := 1
 var tick := 0
 var fraction := 0.0
 var actors: Dictionary = {}
@@ -26,7 +32,10 @@ var last_step_tick := 0
 
 func reset(seed_value: int) -> void:
 	seed = seed_value
+	roamers = Roamers.new()
 	world_edition = 4
+	road_version = 1
+	pending_road_version = 1
 	tick = 0
 	fraction = 0
 	actors.clear()
@@ -61,6 +70,7 @@ func event_at(city_id: String) -> Dictionary:
 
 func sync(world, point: Vector2) -> void:
 	world_edition = world.generator_version
+	road_version = 2 if world.generator_version >= 6 else 1
 	if pending.is_empty() and tick - last_step_tick > 10:
 		for id in actors.keys():
 			if id.begins_with("road:") or id.begins_with("road5:"):
@@ -87,17 +97,49 @@ func sync(world, point: Vector2) -> void:
 			if not animal.is_empty():
 				_add_actor(world, animal, wanted)
 	_add_habitats(world, point, wanted)
+	_add_roamers(world, point, wanted)
 	_add_travel(world, point, wanted)
 	for id in actors.keys():
 		if not wanted.has(id):
 			actors.erase(id)
 	pending.clear()
+	pending_road_version = road_version
 
-func _animal(id: String, habitat: String, biome: int, point: Vector2, city: Dictionary) -> Dictionary:
-	var definition := catalog.species_for(habitat, biome, _salt(id))
+func _add_roamers(world, point: Vector2, wanted: Dictionary) -> void:
+	var hazards := Roamers.grounds(world)
+	var preferred: Array = (pending.keys() if not pending.is_empty() else actors.keys()).filter(func(id): return id.begins_with("roamer:"))
+	for source in roamers.sources(world,point,preferred,not pending.is_empty()):
+		if not pending.is_empty() and not pending.has(source.id):
+			continue
+		wanted[source.id] = true
+		if actors.has(source.id) and Roamers.allowed(world, actors[source.id].point, hazards):
+			continue
+		var actor: Dictionary = source.duplicate(true)
+		actor.next_tick = tick + _salt(actor.id) % 6
+		if pending.has(source.id):
+			var record: Dictionary = pending[source.id]
+			roamers.set_wonder(actor,record.get("wonder_id",""))
+			var restored := Vector2(record.point[0],record.point[1])
+			var envelope := Roamers.routing_bounds(World.chunk_at(actor.origin),World.CHUNK_SIZE)
+			if envelope.has_point(Vector2i(restored.round())) and Roamers.allowed(world,restored,hazards):
+				actor.point = restored
+				actor.target = Vector2(record.target[0],record.target[1])
+				actor.heading = Vector2(record.heading[0],record.heading[1])
+				actor.activity = record.activity
+				actor.next_tick = int(record.next_tick)
+				actor.path = record.path.map(func(cell): return Vector2(cell[0],cell[1]))
+				if not envelope.has_point(Vector2i(actor.target.round())) or not Roamers.allowed(world,actor.target,hazards) or actor.path.any(func(cell): return not envelope.has_point(Vector2i(cell.round())) or not Roamers.allowed(world,cell,hazards)):
+					actor.target = actor.point
+					actor.path.clear()
+		actors[source.id] = actor
+
+func _animal(id: String, habitat: String, biome: int, point: Vector2, city: Dictionary, ecology_id: String = "") -> Dictionary:
+	var definition := Wonder.ambient_for(ecology_id, _salt(id)) if habitat == "wild" else {}
+	if definition.is_empty():
+		definition = catalog.species_for(habitat, biome, _salt(id))
 	if definition.is_empty():
 		return {}
-	return {"id": id, "kind": "animal", "biome": biome, "species": definition.id, "asset_id": definition.asset_id, "height": definition.height, "speed": definition.speed, "idle": definition.idle, "walk": definition.walk, "medium": definition.get("medium", "land"), "point": point, "city_id": city.get("id", ""), "city_name": city.get("name", "")}
+	return {"id": id, "kind": "animal", "biome": biome, "species": definition.id, "asset_id": definition.asset_id, "height": definition.height, "speed": definition.speed, "idle": definition.idle, "walk": definition.walk, "medium": definition.get("medium", "land"), "point": point, "city_id": city.get("id", ""), "city_name": city.get("name", ""), "wonder_seed": _salt(id)}
 
 func _add_habitats(world, point: Vector2, wanted: Dictionary) -> void:
 	var candidates: Array = world.chunks.keys()
@@ -124,7 +166,7 @@ func _add_habitats(world, point: Vector2, wanted: Dictionary) -> void:
 			continue
 		var info: Dictionary = world.cell_info(Vector2i(origin.round()))
 		for index in range(2):
-			var animal := _animal("habitat:%s:%s:animal:%s" % [chunk.x, chunk.y, index], "water" if medium == "water" else "wild", info.biome, origin, city)
+			var animal := _animal("habitat:%s:%s:animal:%s" % [chunk.x, chunk.y, index], "water" if medium == "water" else "wild", info.biome, origin, city, info.get("biome_id", ""))
 			if not animal.is_empty():
 				animal.point = AnimalHabitat.origin(world, origin + Vector2(index, 0), animal.medium)
 				_add_actor(world, animal, wanted)
@@ -145,8 +187,8 @@ func _add_actor(world, source: Dictionary, wanted: Dictionary) -> void:
 		actor.biome = world._biome_at(Vector2i(source.point.round()))
 	if actor.kind == "animal" and pending.has(id):
 		var record: Dictionary = pending[id]
-		if not catalog.species(record.species).is_empty() and catalog.model_choices[record.species].any(func(model): return model.id == record.asset_id):
-			var definition := catalog.species(record.species)
+		var definition := Wonder.ambient(record.species) if Wonder.source(record.asset_id) else catalog.species(record.species)
+		if not definition.is_empty() and (record.asset_id == "wonder:" + record.species if Wonder.source(record.asset_id) else catalog.model_choices[record.species].any(func(model): return model.id == record.asset_id)):
 			actor.species = record.species
 			actor.asset_id = record.asset_id
 			actor.medium = definition.get("medium", "land")
@@ -200,6 +242,7 @@ func step(world, player: Vector2, delta: float) -> void:
 	ordered.sort()
 	if ordered.is_empty():
 		return
+	var roaming_grounds := Roamers.grounds(world)
 	for id in ordered:
 		var actor: Dictionary = actors[id]
 		actor.moving = false
@@ -218,7 +261,7 @@ func step(world, player: Vector2, delta: float) -> void:
 		if actor.get("traveling", false) and not policing:
 			continue
 		if actor.path.is_empty() and actor.point.distance_to(actor.target) > .1 and not _pauses_near_player(actor, player):
-			actor.path = _route(world, actor.point, actor.target, actor.point if policing else actor.origin, actor.get("medium", "land"))
+			actor.path = _route(world, actor.point, actor.target, actor.point if policing else actor.origin, "roamer" if actor.get("roaming",false) else actor.get("medium", "land"), roaming_grounds)
 			if policing and actor.path.any(func(point): return point.distance_to(actor.origin) > 20):
 				actor.path.clear()
 			route_requests = 1
@@ -243,6 +286,8 @@ func step(world, player: Vector2, delta: float) -> void:
 			actor.point = next if AnimalHabitat.usable(world, next, "water") else before
 		else:
 			actor.point = world.move_actor(before, direction * distance)
+			if actor.get("roaming",false) and not Roamers.allowed(world,actor.point,roaming_grounds):
+				actor.point = before
 		actor.moving = not actor.point.is_equal_approx(before)
 		if actor.moving:
 			actor.heading = direction
@@ -258,10 +303,12 @@ static func _pauses_near_player(actor: Dictionary, player: Vector2) -> bool:
 	return actor.point.distance_to(player) < (.85 if actor.get("law_mode", "patrol") == "guard_pursuit" else 1.75)
 
 func _decide(actor: Dictionary, player: Vector2) -> void:
-	var episode := event_at(actor.city_id)
+	var episode := {} if actor.get("roaming",false) else event_at(actor.city_id)
 	var phase := floori(float(tick) / (actor.routine.phase_seconds * 2 if actor.kind == "npc" else 36))
 	var index: int = (_salt(actor.id) + phase) % actor.spots.size()
 	actor.activity = "graze" if actor.kind == "animal" else ("rest" if index == 0 else "work")
+	if actor.get("roaming",false) and index != 0:
+		actor.activity = "roam"
 	if actor.kind == "npc" and not episode.is_empty() and episode.phase == "active":
 		actor.activity = episode.kind
 	if actor.kind == "animal" and actor.point.distance_to(player) < 1.4:
@@ -278,10 +325,12 @@ func _decide(actor: Dictionary, player: Vector2) -> void:
 		actor.path.clear()
 		actor.target = target
 
-func _route(world, from: Vector2, to: Vector2, origin: Vector2, medium: String = "land") -> Array[Vector2]:
+func _route(world, from: Vector2, to: Vector2, origin: Vector2, medium: String = "land", hazards: Array = []) -> Array[Vector2]:
 	var start := Vector2i(from.round())
 	var goal := Vector2i(to.round())
 	var bounds := Rect2i(Vector2i(origin.round()) - Vector2i(6,6), Vector2i(13,13))
+	if medium == "roamer":
+		bounds = Roamers.routing_bounds(World.chunk_at(origin),World.CHUNK_SIZE)
 	var parents := {start: start}
 	var queue: Array[Vector2i] = [start]
 	var cursor := 0
@@ -290,7 +339,7 @@ func _route(world, from: Vector2, to: Vector2, origin: Vector2, medium: String =
 		cursor += 1
 		for direction in World.DIRECTIONS:
 			var next: Vector2i = cell + direction
-			if bounds.has_point(next) and not parents.has(next) and AnimalHabitat.can_step(world, Vector2(cell), Vector2(next), medium):
+			if bounds.has_point(next) and not parents.has(next) and AnimalHabitat.can_step(world, Vector2(cell), Vector2(next), medium) and (medium != "roamer" or Roamers.allowed(world,Vector2(next),hazards)):
 				parents[next] = cell
 				queue.append(next)
 	var result: Array[Vector2] = []
@@ -324,6 +373,8 @@ func snapshot() -> Dictionary:
 		if actor.kind == "animal":
 			records[id].species = actor.species
 			records[id].asset_id = actor.asset_id
+		if actor.get("roaming",false):
+			records[id].wonder_id = actor.get("wonder_id","")
 		if actor.get("traveling", false):
 			records[id].road_direction = actor.road_direction
 			records[id].rest_until = actor.rest_until
@@ -333,7 +384,7 @@ func snapshot() -> Dictionary:
 				records[id].law_windup_tick = actor.get("law_windup_tick", 0)
 	var result := {"version": VERSION, "tick": tick, "fraction": fraction, "actors": records}
 	if world_edition >= 5:
-		result.context = {"edition": world_edition, "seed": str(seed)}
+		result.context = {"edition": world_edition, "seed": str(seed), "roads": road_version}
 	return result
 
 static func _number(value) -> bool:
@@ -347,12 +398,23 @@ static func valid_snapshot(data, seed_value: String = "", edition: int = 0) -> b
 		return false
 	if not _number(data.get("fraction")) or data.fraction < 0 or data.fraction >= .5 or not data.get("actors") is Dictionary or data.actors.size() > MAX_ACTORS:
 		return false
+	if data.actors.keys().filter(func(id): return id is String and id.begins_with("roamer:")).size() > Roamers.MAX_ACTORS:
+		return false
 	var planner = null
+	var road_world
 	if data.has("context"):
 		var context = data.context
-		if not context is Dictionary or not _number(context.get("edition")) or context.edition != int(context.edition) or int(context.edition) not in [5, 6] or (edition != 0 and context.edition != edition) or not context.get("seed") is String or not context.seed.is_valid_int() or (not seed_value.is_empty() and context.seed != seed_value):
+		if not context is Dictionary or not _number(context.get("edition")) or context.edition != int(context.edition) or int(context.edition) not in [5, 6, 7] or (edition != 0 and context.edition != edition) or not IntegerText.valid(context.get("seed")) or (not seed_value.is_empty() and context.seed != seed_value):
 			return false
-		planner = Travel.Planner.new(context.seed.to_int())
+		var roads = context.get("roads",1)
+		if not _number(roads) or roads != int(roads) or int(roads) not in [1,2] or (roads == 2 and context.edition < 6):
+			return false
+		if roads == 2:
+			road_world = World.new()
+			road_world.generate(context.seed.to_int(),int(context.edition))
+			planner = road_world.site_planner
+		else:
+			planner = Travel.Planner.new(context.seed.to_int())
 	elif edition >= 5:
 		return false
 	for id in data.actors:
@@ -363,11 +425,18 @@ static func valid_snapshot(data, seed_value: String = "", edition: int = 0) -> b
 			if not _valid_travel_record(id, data.actors[id], data.tick, planner):
 				return false
 			continue
-		if fields.size() != 5 or fields[0] not in ["city", "habitat"] or not fields[1].is_valid_int() or not fields[2].is_valid_int() or fields[3] not in ["npc", "animal"] or fields[4] not in ["0", "1"] or (fields[0] == "habitat" and fields[3] != "animal"):
+		var roaming := fields[0] == "roamer"
+		if roaming:
+			if fields.size() != 4 or not fields[1].is_valid_int() or not fields[2].is_valid_int() or fields[3] not in ["0", "1"]:
+				return false
+		elif fields.size() != 5 or fields[0] not in ["city", "habitat"] or not fields[1].is_valid_int() or not fields[2].is_valid_int() or fields[3] not in ["npc", "animal"] or fields[4] not in ["0", "1"] or (fields[0] == "habitat" and fields[3] != "animal"):
+			return false
+		var size := World.REGION_SIZE if fields[0] == "city" else World.CHUNK_SIZE
+		if not IntegerText.bounded(fields[1], 9600000.0 / size) or not IntegerText.bounded(fields[2], 9600000.0 / size):
 			return false
 		var coordinate := Vector2i(fields[1].to_int(), fields[2].to_int())
-		var size := World.REGION_SIZE if fields[0] == "city" else World.CHUNK_SIZE
-		if absi(coordinate.x * size) > 9600000 or absi(coordinate.y * size) > 9600000 or id != "%s:%s:%s:%s:%s" % [fields[0], coordinate.x, coordinate.y, fields[3], fields[4]]:
+		var canonical := "roamer:%s:%s:%s" % [coordinate.x,coordinate.y,fields[3]] if roaming else "%s:%s:%s:%s:%s" % [fields[0], coordinate.x, coordinate.y, fields[3], fields[4]]
+		if absi(coordinate.x * size) > 9600000 or absi(coordinate.y * size) > 9600000 or id != canonical:
 			return false
 		var record = data.actors[id]
 		var center := Vector2(coordinate * size) + Vector2.ONE * size * .5
@@ -378,12 +447,21 @@ static func valid_snapshot(data, seed_value: String = "", edition: int = 0) -> b
 			center = Vector2(town.cell)
 		if not record is Dictionary or not _point(record.get("point"), center) or not _point(record.get("target"), center) or not _point(record.get("heading"), Vector2.ZERO):
 			return false
+		var envelope := Roamers.routing_bounds(coordinate,size)
+		if roaming and (not envelope.has_point(Vector2i(Vector2(record.point[0],record.point[1]).round())) or not envelope.has_point(Vector2i(Vector2(record.target[0],record.target[1]).round()))):
+			return false
+		if record.has("wonder_id") and (not roaming or not record.wonder_id is String or (not record.wonder_id.is_empty() and Roamers.Wonder.npc(record.wonder_id).is_empty())):
+			return false
 		if fields[3] == "animal" and (not record.get("species") is String or record.species.is_empty() or record.species.length() > 128 or not record.get("asset_id") is String or record.asset_id.is_empty() or record.asset_id.length() > 512):
+			return false
+		if not roaming and fields[3] == "animal" and (record.asset_id.begins_with("wonder:") or Wonder.DATA.creatures.has(record.species)) and (fields[0] != "habitat" or not Wonder.source(record.asset_id) or record.asset_id != "wonder:" + record.species):
 			return false
 		if not record.get("path") is Array or record.path.size() > 32 or not record.get("activity") is String or record.activity.length() > 128 or not _number(record.get("next_tick")) or record.next_tick < 0 or record.next_tick > data.tick + 64 or record.next_tick != floorf(record.next_tick):
 			return false
 		for point in record.path:
 			if not _point(point, center):
+				return false
+			if roaming and not envelope.has_point(Vector2i(Vector2(point[0],point[1]).round())):
 				return false
 	return true
 
@@ -392,6 +470,8 @@ func restore(data: Dictionary, seed_value: int) -> bool:
 		return false
 	reset(seed_value)
 	world_edition = int(data.context.edition) if data.has("context") else 4
+	road_version = int(data.get("context",{}).get("roads",1))
+	pending_road_version = road_version
 	tick = int(data.tick)
 	last_step_tick = tick
 	fraction = data.fraction
@@ -504,6 +584,8 @@ func _independent_road_sources(world, point: Vector2) -> Array:
 			var reverse: bool = phase >= travel_seconds + definition.pause_seconds
 			var leg: float = phase - (travel_seconds + definition.pause_seconds if reverse else 0)
 			var sample := Travel.at_distance(resolved.points, minf(leg, travel_seconds) * definition.speed, reverse)
+			if pending.has(id) and pending_road_version == 1 and road_version == 2:
+				_remap_road_record(id,resolved)
 			var actual: Vector2 = actors[id].point if actors.has(id) else sample.point
 			if pending.has(id):
 				actual = Vector2(pending[id].point[0], pending[id].point[1])
@@ -514,6 +596,22 @@ func _independent_road_sources(world, point: Vector2) -> Array:
 			var last: Dictionary = world.region_at(resolved.to.cell).city
 			sources.append({"id": id, "kind": "npc", "role": definition.id, "point": sample.point, "origin": resolved.points[0], "city_id": first.id, "city_name": first.name, "destination": last.name, "biome": world._biome_at(Vector2i(actual.round())), "appearance": slot, "waypoints": resolved.points, "waypoint": sample.waypoint, "road_direction": -1 if reverse else 1, "rest_until": tick + maxi(0, ceili((travel_seconds + definition.pause_seconds - leg) * 2)) if leg >= travel_seconds else tick, "traveling": true, "polyline": true})
 	return sources
+
+func _remap_road_record(id: String, route: Dictionary) -> void:
+	var legacy := Travel.resolve(Travel.Planner.new(seed),id)
+	if legacy.is_empty():
+		return
+	var record: Dictionary = pending[id]
+	var old_length := Travel.length(legacy.points)
+	var new_length := Travel.length(route.points)
+	for key in ["point","target"]:
+		var point := Vector2(record[key][0],record[key][1])
+		var fraction := Travel.projected_distance(legacy.points,point) / maxf(.001,old_length)
+		var reverse: bool = record.road_direction == -1
+		var mapped := Travel.at_distance(route.points,new_length * (1 - fraction if reverse else fraction),reverse)
+		record[key] = [mapped.point.x,mapped.point.y]
+		if key == "point":
+			record.waypoint = mapped.waypoint
 
 func _road_decide(actor: Dictionary) -> void:
 	if actor.get("law_mode", "patrol") in ["guard_demand", "guard_pursuit", "guard_return"]:
@@ -562,8 +660,10 @@ static func _valid_travel_record(id: String, record, tick_value: float, planner 
 	var guard := fields[0] == "watch"
 	if fields.size() != (4 if guard else 5):
 		return false
+	if not IntegerText.bounded(fields[1], 9600000.0 / World.REGION_SIZE) or not IntegerText.bounded(fields[2], 9600000.0 / World.REGION_SIZE):
+		return false
 	for field in fields.slice(1):
-		if not field.is_valid_int() or str(field.to_int()) != field:
+		if not IntegerText.valid(field) or str(field.to_int()) != field:
 			return false
 	var coordinate := Vector2i(fields[1].to_int(), fields[2].to_int())
 	if absi(coordinate.x * World.REGION_SIZE) > 9600000 or absi(coordinate.y * World.REGION_SIZE) > 9600000 or int(fields[3]) not in [0,1] or (not guard and int(fields[4]) not in [0,1,2]):

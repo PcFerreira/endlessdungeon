@@ -2,11 +2,16 @@ extends CanvasLayer
 
 const Catalog = preload("res://scripts/store_catalog.gd")
 const Items = preload("res://scripts/item_catalog.gd")
+const Wonder = preload("res://scripts/wonder_catalog.gd")
+const Roamers = preload("res://scripts/wilderness_roamers.gd")
 static var catalog := Catalog.new()
 var game
 var records: Dictionary = {}
 var current: Dictionary = {}
 var feedback := ""
+var selected_item := ""
+var selling := false
+var grid_page := 0
 var overlay := Control.new()
 var marker := Label3D.new()
 
@@ -41,7 +46,7 @@ static func valid(data) -> bool:
 		if not id is String or not id.begins_with("city:") or id.length() > 240 or not record is Dictionary or not catalog.data.profiles.has(record.get("profile", "")) or not record.get("stock") is Dictionary or record.stock.size() > 128 or not Catalog.integer(record.get("purse"),0,999999):
 			return false
 		for item in record.stock:
-			if not Items.definitions.has(item) or not catalog.accepts(record.profile,item) or not Catalog.integer(record.stock[item],0,int(catalog.data.stock_limit)):
+			if not Items.definitions.has(item) or not catalog.accepts(record.profile,item,true) or not Catalog.integer(record.stock[item],0,int(catalog.data.stock_limit)):
 				return false
 	return true
 
@@ -58,6 +63,10 @@ func restore(data: Dictionary) -> bool:
 
 func sources() -> Array[Dictionary]:
 	var result: Array[Dictionary] = []
+	if game.state == "store" and current.has("wonder_actor"):
+		var source := _wonder_source(game.life.actors.get(current.wonder_actor, {}))
+		if not source.is_empty():
+			result.append(source)
 	if game.layer == "interior":
 		var place: Dictionary = game.interiors.current
 		var definition: Dictionary = catalog.data.interiors.get(place.get("type", ""), {})
@@ -82,6 +91,43 @@ func sources() -> Array[Dictionary]:
 		if records.has(source.id):
 			source.profile = records[source.id].profile
 	return result
+
+func _wonder_source(speaker: Dictionary) -> Dictionary:
+	if game.layer != "overworld" or not game.offline_actions_allowed() or not Roamers.supports(game.world, game.player_point) or speaker.is_empty():
+		return {}
+	var id: String = speaker.get("id", "")
+	var actor: Dictionary = game.life.actors.get(id, {})
+	var definition: Dictionary = Wonder.DATA.npcs.get(actor.get("wonder_id", ""), {})
+	if actor.get("kind") != "npc" or not actor.get("roaming", false) or definition.get("trade_profile", "").is_empty() or not Roamers.supports(game.world, actor.point):
+		return {}
+	return {"id": "city:wonder:" + id, "name": definition.name + "'s Pack", "city_id": "", "point": actor.point, "profile": definition.trade_profile, "wonder_actor": id}
+
+func open_wonder(speaker: Dictionary) -> bool:
+	if game.state not in ["playing", "dialogue"]:
+		return false
+	var source := _wonder_source(speaker)
+	if source.is_empty() or game.player_point.distance_to(source.point) >= 1.4 or not game.dungeon.line_clear(game.player_point, source.point) or not game.grounded:
+		game.notify("Come closer on safe ground to trade.")
+		return false
+	var problem: String = game.sanctum_problem(true)
+	if not problem.is_empty():
+		game.notify("Find safe ground before trading.")
+		return false
+	if not records.has(source.id) and records.size() >= 4096:
+		game.notify("The trade ledger is full. Existing traders still keep their stock.")
+		return false
+	if records.has(source.id):
+		source.profile = records[source.id].profile
+	current = source
+	feedback = ""
+	selected_item = ""
+	selling = false
+	grid_page = 0
+	offers(source)
+	game.rotating_camera = false
+	game.state = "store"
+	_show()
+	return true
 
 func target() -> Dictionary:
 	var result := {}
@@ -109,6 +155,9 @@ func interact() -> bool:
 		return true
 	current = source
 	feedback = ""
+	selected_item = ""
+	selling = false
+	grid_page = 0
 	if not records.has(source.id) and records.size() >= 4096:
 		game.notify("The trade ledger is full. Existing traders still keep their stock.")
 		return true
@@ -123,6 +172,8 @@ func offers(source: Dictionary) -> Dictionary:
 		records[source.id] = catalog.initial(source,game.run_seed)
 	var result := {}
 	for item in records[source.id].stock:
+		if not catalog.accepts(source.profile,item):
+			continue
 		var price := catalog.price(item)
 		result[item] = {"count": int(records[source.id].stock[item]), "buy": price, "sell": maxi(1,floori(price * catalog.data.buyback_fraction))}
 	return result
@@ -191,6 +242,7 @@ func _clear() -> void:
 func _show() -> void:
 	_clear()
 	overlay.show()
+	var ui = game.interface
 	var shade := ColorRect.new()
 	shade.color = Color(.025,.04,.065,.88)
 	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -198,36 +250,76 @@ func _show() -> void:
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	overlay.add_child(center)
-	var panel = game.interface._panel(center,Vector2(760,0),Color("766950"))
-	var box = game.interface._vbox(panel,10)
-	game.interface._label(box,current.name,27,Color("e5e0d5"),true)
+	var panel = ui._panel(center,Vector2(960,0),Color("766950"))
+	var box = ui._vbox(panel,12)
+	ui._label(box,current.name,27,ui.INK,true)
 	var currency: String = catalog.data.currency
-	game.interface._label(box,"%s / Your coins: %s / Trader coins: %s" % [catalog.data.profiles[current.profile].name,game.inventory.count(currency) - game.inventory.stolen_count(currency),records[current.id].purse],14,Color("c3a576"))
-	game.interface._label(box,"Stock stays with this trader. Clean, unequipped goods can be sold here.",14)
-	var scroll := ScrollContainer.new()
-	scroll.custom_minimum_size = Vector2(0,340)
-	box.add_child(scroll)
-	var rows := VBoxContainer.new()
-	rows.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	scroll.add_child(rows)
-	var list := offers(current)
-	for item in game.inventory.items:
-		if catalog.accepts(current.profile,item) and not list.has(item):
-			list[item] = {"count":0,"buy":catalog.price(item),"sell":maxi(1,floori(catalog.price(item) * catalog.data.buyback_fraction))}
-	for item in list:
-		var row := HBoxContainer.new()
-		rows.add_child(row)
-		var label = game.interface._label(row,"%s  /  Stock %s" % [Items.definitions[item].name,list[item].count],15)
-		label.custom_minimum_size.x = 385
-		label.clip_text = true
-		label.tooltip_text = Items.definitions[item].get("description", "")
-		var purchase: Button = game.interface._button(row,"Buy %s" % list[item].buy,_button_trade.bind(item,true),Vector2(100,32))
-		purchase.disabled = list[item].count <= 0 or game.inventory.count(currency) - game.inventory.stolen_count(currency) < list[item].buy
-		var sale: Button = game.interface._button(row,"Sell %s" % list[item].sell,_button_trade.bind(item,false),Vector2(100,32))
-		sale.disabled = game.inventory.count(item) - game.inventory.stolen_count(item) <= (1 if game.inventory.equipment.values().has(item) else 0) or records[current.id].purse < list[item].sell or list[item].count >= catalog.data.stock_limit
-	var receipt: Label = game.interface._label(box,feedback,14,Color("e9cb85"))
+	ui._label(box,"%s / Your coins: %s / Trader coins: %s" % [catalog.data.profiles[current.profile].name,game.inventory.count(currency) - game.inventory.stolen_count(currency),records[current.id].purse],14,ui.GOLD)
+	var modes := HBoxContainer.new()
+	box.add_child(modes)
+	for buying in [true,false]:
+		var tab: Button = ui._button(modes,"Trader stock" if buying else "Your goods",_change_mode.bind(not buying),Vector2(160,34))
+		tab.toggle_mode = true
+		tab.button_pressed = selling != buying
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation",20)
+	box.add_child(row)
+	var left: VBoxContainer = ui._vbox(row,10)
+	var entries: Dictionary = offers(current)
+	var ids: Array = entries.keys() if not selling else game.inventory.items.keys().filter(func(id): return game.inventory.count(id) > 0 and catalog.accepts(current.profile,id))
+	ids.sort_custom(func(a,b): return Items.definitions[a].name.naturalnocasecmp_to(Items.definitions[b].name) < 0)
+	grid_page = clampi(grid_page,0,maxi(0,ceili(ids.size() / 24.0) - 1))
+	if selected_item not in ids:
+		selected_item = ids[0] if not ids.is_empty() else ""
+	var grid: GridContainer = ui.IconGrid.grid(left,6)
+	for id in ui.IconGrid.page(ids,grid_page):
+		ui.IconGrid.item(ui,grid,id,_select.bind(id),game.inventory.count(id) if selling else entries[id].count,id == selected_item)
+	if ids.is_empty():
+		ui._label(left,"No eligible goods to sell." if selling else "This trader has no stock.",14,ui.MUTED)
+	if ids.size() > 24:
+		var paging := HBoxContainer.new()
+		left.add_child(paging)
+		var previous: Button = ui._button(paging,"Previous",_page.bind(-1),Vector2(120,30))
+		previous.disabled = grid_page <= 0
+		ui._label(paging,"%s / %s" % [grid_page + 1,ceili(ids.size() / 24.0)],14,ui.GOLD)
+		var next: Button = ui._button(paging,"Next",_page.bind(1),Vector2(120,30))
+		next.disabled = (grid_page + 1) * 24 >= ids.size()
+	var details = ui._vbox(ui._panel(row,Vector2(340,0)),10)
+	if not selected_item.is_empty():
+		var item: Dictionary = Items.definitions[selected_item]
+		var price: int = catalog.price(selected_item)
+		var sale: int = maxi(1,floori(price * catalog.data.buyback_fraction))
+		ui._label(details,item.name,21,ui.INK,true)
+		var owned: int = game.inventory.count(selected_item) - game.inventory.stolen_count(selected_item)
+		var stock: int = records[current.id].stock.get(selected_item,0)
+		ui._label(details,"Stock %s / Owned %s" % [stock,owned],13,ui.GOLD)
+		var description: Label = ui._label(details,item.description,14,ui.MUTED)
+		description.custom_minimum_size.x = 295
+		description.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		var purchase: Button = ui._button(details,"Buy / %s coins" % price,_button_trade.bind(selected_item,true),Vector2(0,38))
+		purchase.set_meta("trade_action","buy")
+		purchase.disabled = stock <= 0 or game.inventory.count(currency) - game.inventory.stolen_count(currency) < price
+		var sell_button: Button = ui._button(details,"Sell / %s coins" % sale,_button_trade.bind(selected_item,false),Vector2(0,38))
+		sell_button.set_meta("trade_action","sell")
+		sell_button.disabled = owned <= (1 if game.inventory.equipment.values().has(selected_item) else 0) or records[current.id].purse < sale or stock >= catalog.data.stock_limit
+		ui._label(details,"Trade only unequipped goods and coins you own.",13,ui.MUTED).autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	var receipt: Label = ui._label(box,feedback,14,Color("e9cb85"))
 	receipt.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	game.interface._button(box,"Return  [Esc]",close,Vector2(0,36))
+	ui._button(box,"Return",close,Vector2(0,36))
+
+func _select(id: String) -> void:
+	selected_item = id
+	_show()
+
+func _change_mode(value: bool) -> void:
+	selling = value
+	grid_page = 0
+	selected_item = ""
+	_show()
+
+func _page(offset: int) -> void:
+	grid_page = maxi(0,grid_page + offset)
+	_show()
 
 func _button_trade(item: String, buying: bool) -> void:
 	_transaction(item,buying)

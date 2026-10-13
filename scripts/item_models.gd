@@ -8,6 +8,7 @@ const Conversion = preload("res://scripts/animated_model_style.gd")
 const Icons = preload("res://scripts/icon_item_geometry.gd")
 const Rewards = preload("res://scripts/native_reward_models.gd")
 const Bounds = preload("res://scripts/decor_geometry.gd")
+const Cache = preload("res://scripts/render_cache.gd")
 var registry := Registry.new()
 var styles := Styles.new(registry)
 var renderer := Conversion.new()
@@ -62,6 +63,9 @@ func source_model(source: String, family: String) -> Node3D:
 	if not styles.data.families.has(family):
 		error = "Unknown item visual family"
 		return null
+	var cached := Cache.scene("item", source, family)
+	if cached != null:
+		return cached
 	if Scenery.is_native(source):
 		var fields := source.split(":")
 		var target := styles.native_id(family, fields[2])
@@ -83,6 +87,7 @@ func source_model(source: String, family: String) -> Node3D:
 	if not adapt(body, source, family):
 		body.free()
 		return null
+	Cache.remember("item", source, family, body)
 	return body
 
 func fitted(body: Node3D, footprint: Vector2, height: float, yaw: float = 0) -> Node3D:

@@ -379,6 +379,258 @@
       ],
       "source_sha256": "0ef5e973827531a7f633e4b3e142291095fb0d878214c25df45dbe461cd963d8"
     },
+    "gameplay.items.forage_amber_drips.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_amber_drips",
+      "placeholders": [
+
+      ],
+      "source_sha256": "2e57459e9d9114ca3c1679ba3a9d0ad2cfdff0e7efbf6317487fffcc6474c215"
+    },
+    "gameplay.items.forage_bog_pearl.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_bog_pearl",
+      "placeholders": [
+
+      ],
+      "source_sha256": "2c5652c9049fc1ac1018bf17ef2f261a2388b643eb22b8ce2a4a75745f5cf9a1"
+    },
+    "gameplay.items.forage_bramble_berries.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_bramble_berries",
+      "placeholders": [
+
+      ],
+      "source_sha256": "c006af7ea3d413df9b4853ea31bc4e5ee581e0207661bfd83cd4d563c10b33da"
+    },
+    "gameplay.items.forage_cactus_fiber.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_cactus_fiber",
+      "placeholders": [
+
+      ],
+      "source_sha256": "62604402eed5897194073454efc94b066fc632b0375710ac75921f89c5c74867"
+    },
+    "gameplay.items.forage_cinder_crystal.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_cinder_crystal",
+      "placeholders": [
+
+      ],
+      "source_sha256": "b0f2e27068baf05bd4d07241cb993880a96d504501ee729e2a88f3b107378be7"
+    },
+    "gameplay.items.forage_dreaming_spores.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_dreaming_spores",
+      "placeholders": [
+
+      ],
+      "source_sha256": "2f791ef637bfc7757ef208320aad2c37d2c9462df4c9f5509e81f9ca5f59d76b"
+    },
+    "gameplay.items.forage_fern_curl.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_fern_curl",
+      "placeholders": [
+
+      ],
+      "source_sha256": "f5d710a4a65b7c979524618882a605638bfb4e861af1c405dd06d77daa4f6346"
+    },
+    "gameplay.items.forage_ghost_petals.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_ghost_petals",
+      "placeholders": [
+
+      ],
+      "source_sha256": "45faabace60f28c4ec10d75d4064d0158228d76703a1a4ba5c94433362d38b2f"
+    },
+    "gameplay.items.forage_glass_lichen.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_glass_lichen",
+      "placeholders": [
+
+      ],
+      "source_sha256": "1b59773d2ba0e3f7c9f6cbc90aff16de4587436d935f751f38462d8afe1b7cd0"
+    },
+    "gameplay.items.forage_ice_resin.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_ice_resin",
+      "placeholders": [
+
+      ],
+      "source_sha256": "73fcc82170a097084ee95c26f922f91d48f87788eb10bb1ec706e3e05ad5c599"
+    },
+    "gameplay.items.forage_ironbark.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_ironbark",
+      "placeholders": [
+
+      ],
+      "source_sha256": "d1c86e9499e0dfe4876e920e0ed545b0695202a19a4a833e6ce3816ff575b2a4"
+    },
+    "gameplay.items.forage_lantern_fruit.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_lantern_fruit",
+      "placeholders": [
+
+      ],
+      "source_sha256": "d834cb36864fea1c8645d8639ebf46862b5f0e0e97c4cd8385194b0dcc063116"
+    },
+    "gameplay.items.forage_mooncap.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_mooncap",
+      "placeholders": [
+
+      ],
+      "source_sha256": "e77fc44b57d98ca1af5d0d7999b0ddf4b52bd4d9f093a913f6eee05690559167"
+    },
+    "gameplay.items.forage_moth_moss.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_moth_moss",
+      "placeholders": [
+
+      ],
+      "source_sha256": "f320585f2bb0c1b14ce1e8c1dc4c68866544f7ba07e654e7cdcbacccef6440c5"
+    },
+    "gameplay.items.forage_obsidian_flakes.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_obsidian_flakes",
+      "placeholders": [
+
+      ],
+      "source_sha256": "9934a1383367ccfd778781efd055c340bcf795b3b086c091a0e9dac27c2dc703"
+    },
+    "gameplay.items.forage_prism_heart.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_prism_heart",
+      "placeholders": [
+
+      ],
+      "source_sha256": "db8b885e1996191a7f6d18b48ee70678b5d1fe86ccf354be43b2ffd33838c27f"
+    },
+    "gameplay.items.forage_red_ginger.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_red_ginger",
+      "placeholders": [
+
+      ],
+      "source_sha256": "7b0ec6e7a409d78d9d3cbce02ddd9f5de09433109f79f60ba77e604900597755"
+    },
+    "gameplay.items.forage_russet_nuts.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_russet_nuts",
+      "placeholders": [
+
+      ],
+      "source_sha256": "c3819aeee68c0a91badcd2a434112a29dcb17cb1d1816de4cc78417bd7cd1b1b"
+    },
+    "gameplay.items.forage_silver_reed.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_silver_reed",
+      "placeholders": [
+
+      ],
+      "source_sha256": "205049b07c55fa1864f02ac53133b49d9a9d73ae2d8f1509176323ba47661c18"
+    },
+    "gameplay.items.forage_sky_flint.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_sky_flint",
+      "placeholders": [
+
+      ],
+      "source_sha256": "ac7fc0b6342140cb6892fa469fbfebb67855e2397ae75d36c6f7a5c12d0bffe6"
+    },
+    "gameplay.items.forage_starlight_petals.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_starlight_petals",
+      "placeholders": [
+
+      ],
+      "source_sha256": "ced2633720af673ba1207e530ec0aac52bf64fb6dcf91ce19120822f9e50a89f"
+    },
+    "gameplay.items.forage_sunstone.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_sunstone",
+      "placeholders": [
+
+      ],
+      "source_sha256": "b55e5ef821bd52203d4a84753aced2dfceaa67da4c64190dd2f2bfce3fcd317e"
+    },
+    "gameplay.items.forage_tide_kelp.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_tide_kelp",
+      "placeholders": [
+
+      ],
+      "source_sha256": "9e0145fc42ef554c9d0a9ef7f6507fad2d17f683d91bb4c47f4134ebeb0df733"
+    },
+    "gameplay.items.forage_wayside_sage.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_wayside_sage",
+      "placeholders": [
+
+      ],
+      "source_sha256": "57ad9ab8dd64aec94cb31d7e0c1a37238b0825fb04763550db199efffa9179ec"
+    },
+    "gameplay.items.forage_whisper_shell.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_whisper_shell",
+      "placeholders": [
+
+      ],
+      "source_sha256": "891c377931bbc33374632dfec5894a0f206982453537289929776b2a9aa6107c"
+    },
+    "gameplay.items.forage_wind_thyme.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_wind_thyme",
+      "placeholders": [
+
+      ],
+      "source_sha256": "f8c79f7798ead5ca4fb5fc42054dfa2129d60152a0078378cd9dd2e7b31fd5e4"
+    },
+    "gameplay.items.forage_winter_mint.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_winter_mint",
+      "placeholders": [
+
+      ],
+      "source_sha256": "d2f0fd370f1e68fb2353b669aada3ec1824ea7ddb01c05343baaa299923526b9"
+    },
+    "gameplay.items.forage_wisp_glass.name": {
+      "source_file": "config/player_text.json",
+      "content_type": "gameplay_name",
+      "target_id": "forage_wisp_glass",
+      "placeholders": [
+
+      ],
+      "source_sha256": "5031625ca448804f6f4a0d9589c7273c8b9f5557d0b995ecf6116646cda83006"
+    },
     "gameplay.items.gold_coin.name": {
       "source_file": "config/player_text.json",
       "content_type": "gameplay_name",

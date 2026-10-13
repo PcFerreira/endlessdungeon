@@ -24,8 +24,8 @@ func run() -> void:
 	var styles := {}
 	var states := {}
 	for enemy in game.enemies:
-		assert(enemy.model.get_meta("representation") == "generated_voxel")
-		styles[enemy.id] = enemy.model.get_meta("monster_style")
+		assert(enemy.model.get_meta("representation") == ("original_wonder_voxel" if enemy.model.has_meta("wonder_id") else "generated_voxel"))
+		styles[enemy.id] = signature(enemy.model)
 		states[enemy.id] = {"hp":enemy.hp,"species":enemy.species,"variant":enemy.variant}
 	var rng_state: int = game.rng.state
 	var probes: Array[Node3D] = []
@@ -44,15 +44,15 @@ func run() -> void:
 	game = _game()
 	assert(game.load_game(1) and game.layer == "dungeon")
 	for enemy in game.enemies:
-		assert(styles.has(enemy.id) and enemy.model.get_meta("monster_style") == styles[enemy.id])
+		assert(styles.has(enemy.id) and signature(enemy.model) == styles[enemy.id])
 		assert(enemy.variant == states[enemy.id].variant and enemy.species == states[enemy.id].species and is_equal_approx(enemy.hp,states[enemy.id].hp))
 	var legacy: Dictionary = game.make_save_data()
 	for record in legacy.progress.encounters.values():
 		record.variant = "old/imported/monster.glb"
 	assert(game.saves.validate(legacy) and game.Journey.restore(game,legacy))
 	for enemy in game.enemies:
-		assert(enemy.model.get_meta("representation") == "generated_voxel")
-		assert(enemy.variant.begins_with("voxel-monster:1:"))
+		assert(enemy.model.get_meta("representation") == ("original_wonder_voxel" if enemy.model.has_meta("wonder_id") else "generated_voxel"))
+		assert(enemy.variant.begins_with("wonder:" if enemy.model.has_meta("wonder_id") else "voxel-monster:1:"))
 	var defeated: Dictionary = game.enemies[0]
 	var defeated_id: String = defeated.id
 	game.select_target(defeated)
@@ -75,3 +75,8 @@ func run() -> void:
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(directory))
 	print("PASS: actual generated dungeon encounters, independent RNG, fresh-disk descriptors/health, imported-variant legacy compatibility, combat/coin/death persistence and surface renderer separation")
 	quit()
+
+func signature(body: Node3D) -> Dictionary:
+	if body.has_meta("wonder_id"):
+		return {"template": body.get_meta("wonder_id"), "variant": body.get_meta("appearance_variant"), "family": body.get_meta("visual_family")}
+	return body.get_meta("monster_style")

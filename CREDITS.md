@@ -51,6 +51,8 @@ The generated [imported credits](assets/imported/CREDITS.md) preserve the full a
 - Wind1 by Luke.RUSTLTD. [Source](https://opengameart.org/content/wind1), CC0. Included [source record](assets/imported/packs/wind_ambience/SOURCE.json).
 - Loopable Dungeon Ambience by JaggedStone. [Source](https://opengameart.org/content/loopable-dungeon-ambience), CC0. Included [source record](assets/imported/packs/dungeon_ambience/SOURCE.json).
 - RPG Audio by Kenney: footsteps, books, doors and creaks, CC0. Included [source record](assets/imported/packs/kenney_rpg_audio/SOURCE.json).
+- Combat spells: [80 CC0 RPG SFX](https://opengameart.org/content/80-cc0-rpg-sfx) by rubberduck and [Magic Spell SFX](https://opengameart.org/content/magic-spell-sfx) by JaggedStone, CC0. Short mono PCM derivatives remove leading silence, bound duration, fade endings and normalize peaks; original downloads are retained. [Source and conversion records](assets/combat_audio/SOURCE.json), [license notes](assets/combat_audio/LICENSE.md).
+- Combat contacts: [Impact Sounds](https://kenney.nl/assets/impact-sounds) by Kenney, CC0. Existing recordings are used unchanged with playback pitch/volume variation.
 
 The separately supplied PCM WAV conversions of Blender Foundation recordings are used without additional file changes. Godot loops selected beds and changes playback volume. Footstep pitch varies slightly during playback. Magical wisps, accessory recipes, three-note chimes and the Sanctum harmonic hum are original project work. Imported resident silhouettes and animations retain the character-pack credits above.
 

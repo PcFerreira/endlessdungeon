@@ -61,7 +61,7 @@ static func preview(item: Dictionary, size: Vector2 = Vector2(52, 52)) -> Contro
 	viewport.size = Vector2i(size)
 	viewport.transparent_bg = true
 	viewport.own_world_3d = true
-	viewport.render_target_update_mode = SubViewport.UPDATE_ALWAYS
+	viewport.render_target_update_mode = SubViewport.UPDATE_WHEN_VISIBLE
 	container.add_child(viewport)
 	var body := model(item, 1.25)
 	if body != null:

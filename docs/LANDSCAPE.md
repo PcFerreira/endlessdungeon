@@ -36,6 +36,8 @@ Edit `config/world_areas.json` to adjust town spacing, building uses, required/e
 
 The four broad climate classes remain the supported foundation. A new dungeon family also needs its layout/encounter handlers. Catalogue changes affect seeded choices; validate the new data and consider a generator edition change when altering existing geography. Optional life/exploration records alone do not require resetting worlds.
 
+Current edition6 wilderness roads use terrain-aware diagonal routing, rounded land turns and continuous bridge spans with explicit bank landings. Old traveler snapshots migrate their route progress without changing hero saves. See [ROAD_PATHS.md](ROAD_PATHS.md) for the current planner, compatibility rules and native gallery.
+
 ## Verification
 
 `tests/test_landscape.gd` measures climate boundaries, checks minimum town spacing and mixed building uses, rejects invalid layouts, checks front-door/NPC/book/lot reachability, bounds wilderness encounters, and physically walks streamed town links across region boundaries. Existing world checks cover four biomes, vertical variation, finite ruins, collision, deterministic reload and bounded streaming. The physical entrance-route regression covers 128 positive/negative regions. Interior tests verify all five handlers and exact outside return points.

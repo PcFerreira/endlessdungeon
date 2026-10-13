@@ -248,6 +248,14 @@
         "block_voxel",
         "flat_lowpoly"
       ]
+    },
+    {
+      "path": "res://config/town_voxel_runtime.json",
+      "prefix": "town_voxel",
+      "families": [
+        "block_voxel",
+        "flat_lowpoly"
+      ]
     }
   ],
   "native_dungeon_roles": [

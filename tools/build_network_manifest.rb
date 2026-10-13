@@ -11,7 +11,7 @@ class NetworkManifest
 
   def initialize(root, engine_version:, roots:ROOTS, generator_version:4)
     @root, @engine_version, @roots = File.realpath(root), engine_version, roots
-    raise Error, "Unsupported generator edition: #{generator_version}" unless generator_version.is_a?(Integer) && [4,5,6].include?(generator_version)
+    raise Error, "Unsupported generator edition: #{generator_version}" unless generator_version.is_a?(Integer) && [4,5,6,7].include?(generator_version)
     @generator_version = generator_version
   end
 

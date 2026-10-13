@@ -105,7 +105,7 @@ func generate(run_seed: int, depth: int, family_id: String = "dungeon_ashen_cryp
 					continue
 				occupied[cell] = true
 				var pool: Array = Enemies.dungeon_pool(family)
-				spawns.append({"cell": cell, "kind": pool[posmod(index + rooms.find(room) + depth, pool.size())]})
+				spawns.append({"cell": cell, "kind": pool[posmod(hash("dungeon-species:%s:%s:%s" % [rng.seed, family, cell]), pool.size())]})
 				break
 
 func _add_room(room: Rect2i) -> void:

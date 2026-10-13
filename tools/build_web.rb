@@ -5,15 +5,17 @@ require 'fileutils'
 require 'json'
 require 'open3'
 require 'zlib'
+require_relative 'release_inputs'
 
 root = File.expand_path('..', __dir__)
 Dir.chdir(root)
 debug = ARGV.delete('--debug')
 abort 'Usage: ruby tools/build_web.rb [--debug]' unless ARGV.empty?
+abort 'Render cache is stale; rebuild it before packaging' if File.file?('assets/render_cache/catalog.json') && !system('ruby', 'tools/check_render_cache.rb')
 abort 'Network manifest is stale; refresh the coordinated release first' unless system('ruby', 'tools/build_network_manifest.rb', '--check')
 manifest_hash = Digest::SHA256.file('config/network_manifest.json').hexdigest
 manifest = JSON.parse(File.read('config/network_manifest.json'))
-game_sources = -> { (Dir.glob('{scripts,scenes,addons/web_raw_files}/**/*').select { |path| File.file?(path) && ['.gd', '.tscn', '.tres', '.cfg'].include?(File.extname(path)) } + ['project.godot', 'export_presets.cfg']).sort.to_h { |path| [path, Digest::SHA256.file(path).hexdigest] } }
+game_sources = -> { ReleaseInputs.snapshot(root) }
 source_hashes = game_sources.call
 launcher_hashes = ['tools/web_shell.html','tools/web_lan_policy.mjs'].to_h { |path| [path,Digest::SHA256.file(path).hexdigest] }
 engine = File.join(root, 'godot.sh')
@@ -63,6 +65,7 @@ sizes = files.to_h do |path|
 end
 abort 'Network manifest changed during export; build again after publication' unless Digest::SHA256.file('config/network_manifest.json').hexdigest == manifest_hash && system('ruby', 'tools/build_network_manifest.rb', '--check')
 abort 'Game source changed during export; repeat after source is stable' unless game_sources.call == source_hashes
+abort 'Render cache changed during export; repeat after source is stable' if File.file?('assets/render_cache/catalog.json') && !system('ruby', 'tools/check_render_cache.rb')
 abort 'Launcher changed during export; repeat after source is stable' unless launcher_hashes.all? { |path,hash| Digest::SHA256.file(path).hexdigest == hash }
 report = {godot: version.strip, mode: debug ? 'debug' : 'release', thread_support: false, content_revision: manifest.fetch('content_revision'), manifest_sha256: manifest_hash, game_source_revision: Digest::SHA256.hexdigest(JSON.generate(source_hashes)), built_at: Time.now.utc.strftime('%Y-%m-%dT%H:%M:%SZ'), files: sizes, bytes: sizes.values.sum { |entry| entry[:bytes] }, gzip_bytes: sizes.values.sum { |entry| entry[:gzip_bytes] }, notice_files: notices.length}
 report[:launcher_revision] = Digest::SHA256.hexdigest(JSON.generate(launcher_hashes))

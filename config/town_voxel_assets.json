@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "pitch": 0.125,
+  "themes": {
+    "japanese": {"wall":"d6c9a6","wood":"614637","roof":"384951","trim":"b77a4d","light":"eddaa4","plant":"659075","names":["Rainwood Lattice House","Reedpaper Workshop","Timber Lane Gate","Cloth Market Shelter","Paper Lantern Monument"]},
+    "chinese": {"wall":"ded0a6","wood":"7c352e","roof":"407b73","trim":"d9b66a","light":"dce6be","plant":"669868","names":["Jadebeam Courtyard Hall","Porcelain Tea Workshop","Bracketed Court Gate","Tea Exchange Pavilion","Jadebeam Bell Pavilion"]},
+    "korean": {"wall":"e0d6bc","wood":"795844","roof":"536273","trim":"a6b5b9","light":"f3e9cf","plant":"849c72","names":["Warmstone Timber House","Moonjar Pottery Workshop","Quiet Tile Gate","Potters Market Shelter","White Moonjar Monument"]},
+    "halloween": {"wall":"9b849f","wood":"493547","roof":"473059","trim":"e39542","light":"ffc65b","plant":"798457","names":["Harvestmask Crooked House","Candlewake Tall Workshop","Harvest Face Gate","Maskmakers Night Stall","Great Pumpkin Lantern"]},
+    "christmas": {"wall":"b97b57","wood":"6c4837","roof":"dbe8e8","trim":"a83e45","light":"f2d58f","plant":"39785b","names":["Evergreen Snow Lodge","Giftmakers Toy Workshop","Ribbon Feast Gate","Gift Market Stall","Evergreen Village Tree"]},
+    "cyberpunk": {"wall":"38465e","wood":"55657d","roof":"253348","trim":"cf74c6","light":"6fe5df","plant":"91b9a4","names":["Neon Relay Tower","Chrome Component Workshop","Circuit Relay Gate","Component Exchange Kiosk","Signal Relay Spire"]},
+    "mage": {"wall":"acafcb","wood":"665180","roof":"4c4275","trim":"d3ba75","light":"a4dded","plant":"969ac1","names":["Spellbinders Tower","Observatory Chart House","Working Circle Gate","Ink and Charm Stall","Armillary Light Monument"]},
+    "fairy": {"wall":"bdcda7","wood":"796a61","roof":"b16b96","trim":"edbad9","light":"b0e7cc","plant":"759c74","names":["Dewbell Mushroom House","Petalweave Flower Cottage","Bramble Bloom Gate","Leaf Weavers Market","Dewdrop Flower Monument"]}
+  },
+  "derivatives": [
+    {"id":"halloween/kaykit_pumpkin","theme":"halloween","name":"KayKit Voxel Pumpkin","source_asset":"kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange.gltf","width":0.9,"height":0.85},
+    {"id":"halloween/kaykit_jackolantern","theme":"halloween","name":"KayKit Voxel Jack-o-lantern","source_asset":"kaykit_halloween/content/addons/kaykit_halloween_bits/Assets/gltf/pumpkin_orange_jackolantern.gltf","width":0.9,"height":0.85},
+    {"id":"christmas/kenney_tree","theme":"christmas","name":"Kenney Voxel Decorated Tree","source_asset":"kenney_holiday_kit/Models/GLB format/tree-decorated.glb","width":1.4,"height":2.4},
+    {"id":"christmas/kenney_present","theme":"christmas","name":"Kenney Voxel Wrapped Present","source_asset":"kenney_holiday_kit/Models/GLB format/present-b-cube.glb","width":0.6,"height":0.6}
+  ]
+}

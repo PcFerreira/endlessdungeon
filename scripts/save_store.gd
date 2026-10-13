@@ -1,7 +1,12 @@
 extends RefCounted
 
+const Population = preload("res://scripts/dimension_population.gd")
+
+const DimensionTravel = preload("res://scripts/dimension_travel.gd")
+
 const VERSION := 2
-const WORLD_EDITIONS := [4, 5, 6]
+const IntegerText = preload("res://scripts/integer_text.gd")
+const WORLD_EDITIONS := [4, 5, 6, 7]
 const Build = preload("res://scripts/character_build.gd")
 const World = preload("res://scripts/world.gd")
 const Profile = preload("res://scripts/character_profile.gd")
@@ -12,6 +17,7 @@ const Life = preload("res://scripts/world_life.gd")
 const Furnishings = preload("res://scripts/furnishings.gd")
 const WorldItems = preload("res://scripts/world_item_state.gd")
 const Stores = preload("res://scripts/stores.gd")
+const Foraging = preload("res://scripts/foraging.gd")
 const FloatingHub = preload("res://scripts/floating_hub.gd")
 var directory := "user://saves"
 var last_error := ""
@@ -49,10 +55,10 @@ static func strings(value) -> bool:
 			return false
 	return true
 
-func validate(data, allow_sanctum: bool = true, allow_interior: bool = true) -> bool:
+func validate(data, allow_sanctum: bool = true, allow_interior: bool = true, allow_dimension: bool = true) -> bool:
 	if not data is Dictionary or not number(data.get("generator_version")) or data.generator_version != int(data.generator_version) or int(data.generator_version) not in WORLD_EDITIONS or not number(data.get("saved_at")):
 		return false
-	if not data.get("seed") is String or not data.seed.is_valid_int() or not data.get("rng_state") is String or not data.rng_state.is_valid_int():
+	if not IntegerText.valid(data.get("seed")) or not IntegerText.valid(data.get("rng_state")):
 		return false
 	for key in ["build", "location", "stats", "progress", "view"]:
 		if not data.get(key) is Dictionary:
@@ -67,13 +73,22 @@ func validate(data, allow_sanctum: bool = true, allow_interior: bool = true) -> 
 	if data.has("inventory") and not inventory.restore(data.inventory, build.class_id):
 		return false
 	var place: Dictionary = data.location
+	var dimension = data.progress.get("dimension", {})
+	if not DimensionTravel.valid_snapshot(dimension) or not allow_dimension and not dimension.is_empty():
+		return false
+	if not dimension.is_empty():
+		var origin: Dictionary = dimension.get("outside_return", {})
+		if not origin.is_empty() and (not validate(origin, false, true, false) or origin.seed != data.seed or origin.generator_version != data.generator_version):
+			return false
+		if dimension.active and (place.get("layer") != "overworld" or not vector(place.get("point")) or Vector2(place.point[0], place.point[1]) != Vector2(dimension.last_point[0], dimension.last_point[1])):
+			return false
 	if not place.get("layer") in ["overworld", "dungeon", "sanctum", "interior"] or not place.get("name") is String:
 		return false
 	var home = data.get("home", {"item": "sanctum_sigil", "return_journey": {}})
 	if not home is Dictionary or home.get("item") != "sanctum_sigil" or not home.get("return_journey") is Dictionary:
 		return false
 	if place.layer == "sanctum":
-		if not allow_sanctum or home.return_journey.is_empty() or not validate(home.return_journey, false):
+		if not allow_sanctum or home.return_journey.is_empty() or not validate(home.return_journey, false, true, allow_dimension):
 			return false
 		if home.return_journey.seed != data.seed or home.return_journey.generator_version != data.generator_version:
 			return false
@@ -92,7 +107,7 @@ func validate(data, allow_sanctum: bool = true, allow_interior: bool = true) -> 
 			return false
 		if indoors.has("zoom") and (not number(indoors.zoom) or indoors.zoom < 10 or indoors.zoom > 46):
 			return false
-		if not indoors.get("return_journey") is Dictionary or not validate(indoors.return_journey, false, false) or indoors.return_journey.location.layer != "overworld" or indoors.return_journey.seed != data.seed or indoors.return_journey.generator_version != data.generator_version:
+		if not indoors.get("return_journey") is Dictionary or not validate(indoors.return_journey, false, false, allow_dimension) or indoors.return_journey.location.layer != "overworld" or indoors.return_journey.seed != data.seed or indoors.return_journey.generator_version != data.generator_version:
 			return false
 	elif not indoors.is_empty():
 		return false
@@ -113,15 +128,24 @@ func validate(data, allow_sanctum: bool = true, allow_interior: bool = true) -> 
 	if not stats.get("cooldowns") is Dictionary:
 		return false
 	for spell in Build.ABILITIES:
+		if spell in Build.NEW_ABILITIES and not stats.cooldowns.has(spell):
+			continue
 		if not number(stats.cooldowns.get(spell)) or stats.cooldowns[spell] < 0:
+			return false
+	for spell in stats.cooldowns:
+		if not Build.ABILITIES.has(spell):
 			return false
 	for key in ["yaw", "target_yaw", "surface_zoom", "dungeon_zoom"]:
 		if not number(data.view.get(key)):
 			return false
 	var progress: Dictionary = data.progress
+	if not Population.valid_snapshot(progress.get("population", {}), data.seed):
+		return false
 	if not FloatingHub.valid(progress.get("floating_city", {})):
 		return false
 	if not Stores.valid(progress.get("stores", {})):
+		return false
+	if not Foraging.valid(progress.get("foraging", {}),data.seed):
 		return false
 	if progress.has("furnishings") and not Furnishings.valid(progress.furnishings):
 		return false

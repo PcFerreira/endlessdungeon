@@ -9,6 +9,7 @@ The player belongs to the Milewardens, a traveling guild that maps the world and
 | File | Contents |
 | --- | --- |
 | [Adventure Time research](research/adventure-time.md) | Sourced observations about the inspiration and original design applications |
+| [Adventure Time character pools](research/adventure-time-character-pools.md) | 24 character references, original NPC and creature proposals, biome mapping and implementation handoff |
 | [Breath of the Wild research](research/breath-of-the-wild.md) | Terrain, route choices, visual reveals, and exploration principles |
 | [World generation](world-generation.md) | Proposed generation passes, connected places, and a coding handoff |
 | [Area guide](areas-guide.md) | 72 surface, city, dungeon, and transition archetypes with implementation stages |

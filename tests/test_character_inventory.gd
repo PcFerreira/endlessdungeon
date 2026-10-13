@@ -31,6 +31,7 @@ func run_checks() -> void:
 	assert(bag.add("iron_sword", 1) and not game.equip_item("iron_sword"), "Mage cannot equip a sword")
 	var style := {"name": "Mira", "ancestry": "elf", "skin": 3, "hair": 2, "outfit": 4, "head": "long", "costume": "class_default", "model": "custom"}
 	assert(game.customize_character(style))
+	style = game.profile.snapshot()
 	assert(not game.customize_character({"name": "bad\nname"}))
 	game._drop(game.player_point, "oak_chair")
 	game._update_pickups(.01)

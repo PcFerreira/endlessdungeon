@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "edition": 7,
+  "profiles": {
+    "greenwood": {
+      "patch_size": 36,
+      "clearing_radius": 5,
+      "grove_density": 145,
+      "open_density": 18,
+      "grove_details": 0.2,
+      "open_details": 0.025,
+      "motif": "copse",
+      "focal_roles": [
+        "oak",
+        "tree_b",
+        "rock"
+      ],
+      "focal_radius": 4
+    },
+    "meadows": {
+      "patch_size": 40,
+      "clearing_radius": 7,
+      "grove_density": 70,
+      "open_density": 3,
+      "grove_details": 0.32,
+      "open_details": 0.018,
+      "motif": "flowers",
+      "focal_roles": [
+        "flowers",
+        "flowers_b",
+        "biome:coastal_grass"
+      ],
+      "focal_radius": 5
+    },
+    "desert": {
+      "patch_size": 48,
+      "clearing_radius": 7,
+      "grove_density": 90,
+      "open_density": 4,
+      "grove_details": 0.05,
+      "open_details": 0.002,
+      "motif": "cactus",
+      "focal_roles": [
+        "cactus",
+        "rock_b",
+        "biome:highland_rock"
+      ],
+      "focal_radius": 4
+    },
+    "frostlands": {
+      "patch_size": 40,
+      "clearing_radius": 6,
+      "grove_density": 145,
+      "open_density": 12,
+      "grove_details": 0.08,
+      "open_details": 0.01,
+      "motif": "pines",
+      "focal_roles": [
+        "pine",
+        "biome:highland_rock"
+      ],
+      "focal_radius": 5
+    },
+    "dense_forest": {
+      "patch_size": 32,
+      "clearing_radius": 4,
+      "grove_density": 250,
+      "open_density": 15,
+      "grove_details": 0.45,
+      "open_details": 0.055,
+      "motif": "copse",
+      "focal_roles": [
+        "biome:dense_crown",
+        "biome:forest_understory",
+        "tree_b"
+      ],
+      "focal_radius": 6
+    },
+    "haunted_hollows": {
+      "patch_size": 40,
+      "clearing_radius": 6,
+      "grove_density": 130,
+      "open_density": 8,
+      "grove_details": 0.2,
+      "open_details": 0.012,
+      "motif": "memorial",
+      "focal_roles": [
+        "biome:grave",
+        "biome:haunted_tree",
+        "biome:pumpkin"
+      ],
+      "focal_radius": 4
+    },
+    "marsh": {
+      "patch_size": 32,
+      "clearing_radius": 5,
+      "grove_density": 105,
+      "open_density": 10,
+      "grove_details": 0.4,
+      "open_details": 0.045,
+      "motif": "wetland",
+      "focal_roles": [
+        "biome:marsh_tree",
+        "biome:reeds",
+        "biome:lily"
+      ],
+      "focal_radius": 5
+    },
+    "jungle": {
+      "patch_size": 32,
+      "clearing_radius": 4,
+      "grove_density": 230,
+      "open_density": 12,
+      "grove_details": 0.42,
+      "open_details": 0.045,
+      "motif": "jungle",
+      "focal_roles": [
+        "biome:jungle_crown",
+        "biome:jungle_understory",
+        "biome:jungle_canopy"
+      ],
+      "focal_radius": 6
+    },
+    "autumn_woodland": {
+      "patch_size": 36,
+      "clearing_radius": 5,
+      "grove_density": 165,
+      "open_density": 12,
+      "grove_details": 0.23,
+      "open_details": 0.025,
+      "motif": "harvest",
+      "focal_roles": [
+        "biome:autumn_tree",
+        "biome:forest_understory",
+        "biome:pumpkin"
+      ],
+      "focal_radius": 5
+    },
+    "fungal_grove": {
+      "patch_size": 32,
+      "clearing_radius": 5,
+      "grove_density": 175,
+      "open_density": 8,
+      "grove_details": 0.28,
+      "open_details": 0.025,
+      "motif": "mushrooms",
+      "focal_roles": [
+        "biome:giant_mushroom",
+        "mushroom",
+        "dead_a"
+      ],
+      "focal_radius": 5
+    },
+    "volcanic_wastes": {
+      "patch_size": 40,
+      "clearing_radius": 7,
+      "grove_density": 145,
+      "open_density": 5,
+      "grove_details": 0.2,
+      "open_details": 0.005,
+      "motif": "fissure",
+      "focal_roles": [
+        "biome:basalt",
+        "biome:lava_crack"
+      ],
+      "focal_radius": 6
+    },
+    "highlands": {
+      "patch_size": 48,
+      "clearing_radius": 7,
+      "grove_density": 110,
+      "open_density": 8,
+      "grove_details": 0.15,
+      "open_details": 0.015,
+      "motif": "outcrop",
+      "focal_roles": [
+        "biome:highland_rock",
+        "rock",
+        "biome:coastal_grass"
+      ],
+      "focal_radius": 5
+    },
+    "coast": {
+      "patch_size": 40,
+      "clearing_radius": 7,
+      "grove_density": 85,
+      "open_density": 4,
+      "grove_details": 0.23,
+      "open_details": 0.035,
+      "motif": "shore",
+      "focal_roles": [
+        "biome:coastal_palm",
+        "rock",
+        "biome:coastal_grass"
+      ],
+      "focal_radius": 5
+    },
+    "crystal_tundra": {
+      "patch_size": 40,
+      "clearing_radius": 6,
+      "grove_density": 145,
+      "open_density": 6,
+      "grove_details": 0.2,
+      "open_details": 0.015,
+      "motif": "crystals",
+      "focal_roles": [
+        "biome:crystal",
+        "biome:highland_rock",
+        "pine"
+      ],
+      "focal_radius": 4
+    }
+  }
+}

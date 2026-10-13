@@ -1,2 +1,2 @@
 #!/bin/zsh
-exec "${0:A:h}/godot.sh"
+exec "${0:A:h}/godot.sh" "$@"

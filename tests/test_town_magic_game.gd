@@ -19,7 +19,7 @@ func run_checks() -> void:
 	game._generate_surface(keeper.point - Vector2(1,0))
 	game.interact()
 	assert(game.state == "dialogue","Resident approach must open conversation: %s / %s" % [game.state,game.layer])
-	var buttons: Array = game.expansion.overlay.find_children("*","Button",true,false).filter(func(node): return node.text == "Town charm")
+	var buttons: Array = game.expansion.overlay.find_children("*","Button",true,false).filter(func(node): return node.text == "Town charm" or node.tooltip_text == "Town charm")
 	assert(buttons.size() == 1)
 	var inventory: Dictionary = game.inventory.snapshot()
 	var rng_state: int = game.rng.state

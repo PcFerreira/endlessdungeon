@@ -22,14 +22,15 @@ func run() -> void:
 	var silhouettes := {}
 	var variants := {}
 	for kind in range(Enemies.TYPES.size()):
+		var wonder: bool = Enemies.TYPES[kind].has("wonder_id")
 		var profile := Generator.catalog.profile(Enemies.TYPES[kind])
-		assert(profile.has("ids") or profile.has("names"), "Every current enemy needs explicit semantic classification")
+		assert(Enemies.TYPES[kind].wonder_id in Models.WonderModels.IDS if wonder else profile.has("ids") or profile.has("names"), "Every current enemy needs an explicit authored body classification")
 		for biome in range(4):
 			var body := Models.create(kind,kind * 47,"",biome,true)
 			root.add_child(body)
-			assert(body.get_meta("representation") == "generated_voxel")
-			assert(body.get_meta("visual_family") == "block_voxel")
-			var style: Dictionary = body.get_meta("monster_style")
+			assert(body.get_meta("representation") == ("original_wonder_voxel" if wonder else "generated_voxel"))
+			assert(body.get_meta("visual_family") == (Models.creatures.styles.family_for(biome) if wonder else "block_voxel"))
+			var style: Dictionary = signature(body)
 			silhouettes[style.template] = true
 			variants[body.get_meta("asset_id")] = true
 			var box := Models.bounds(body)
@@ -40,14 +41,14 @@ func run() -> void:
 			var player: AnimationPlayer = body.find_children("*","AnimationPlayer",true,false)[0]
 			for mode in ["idle","walk","attack"]:
 				Models.animate(body,mode)
-				assert(player.current_animation == mode)
+				assert(player.current_animation.to_lower() == mode)
 				player.advance(.15)
 				for track in player.get_animation(mode).get_track_count():
 					var path := str(player.get_animation(mode).track_get_path(track)).split(":")[0]
 					assert(player.get_parent().has_node(path))
 				assert(Models.bounds(body).position.is_finite() and Models.bounds(body).size.is_finite())
 			var restored := Models.create(kind,999,body.get_meta("asset_id"),biome,true)
-			assert(restored.get_meta("monster_style") == style, "Saved generated descriptors must restore their actual selected appearance")
+			assert(signature(restored) == style and restored.get_meta("asset_id") == body.get_meta("asset_id"), "Saved generated descriptors must restore their actual selected appearance")
 			restored.free()
 			body.free()
 	assert(silhouettes.size() >= 16, "The full species catalogue must retain varied monster silhouettes")
@@ -63,3 +64,8 @@ func run() -> void:
 	body.free()
 	print("PASS: %s dungeon profiles, %s body templates and %s appearances; validated recipes, grounded bounded bodies, actual combat animation, saved descriptors and bounded meshes" % [Enemies.TYPES.size(),silhouettes.size(),variants.size()])
 	quit()
+
+func signature(body: Node3D) -> Dictionary:
+	if body.has_meta("wonder_id"):
+		return {"template": body.get_meta("wonder_id"), "variant": body.get_meta("appearance_variant"), "family": body.get_meta("visual_family")}
+	return body.get_meta("monster_style")

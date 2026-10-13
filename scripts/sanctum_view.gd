@@ -90,6 +90,20 @@ func build(home) -> void:
 	gate_motes.position = portal.position + Vector3(0, .7, 0)
 	add_child(gate_motes)
 	_label("Journey [E]", portal.position + Vector3(0, 1.7, 0))
+	var hub_gate := Voxels.instance(Voxels.portal())
+	hub_gate.name = "LanternwakeGate"
+	hub_gate.position = Vector3(5, 0, 7)
+	hub_gate.scale = Vector3.ONE * .65
+	add_child(hub_gate)
+	var hub_beacon := Voxels.cube(Vector3.ONE * .42, Color("b388f2"), true)
+	hub_beacon.name = "LanternwakeBeacon"
+	hub_beacon.position = hub_gate.position + Vector3(0, 2.5, 0)
+	hub_beacon.rotation = Vector3(PI / 4, 0, PI / 4)
+	add_child(hub_beacon)
+	var hub_motes := Ambience.emitter("magic", Color("b388f2"), 12)
+	hub_motes.position = hub_gate.position + Vector3(0, 2.3, 0)
+	add_child(hub_motes)
+	_label("Lanternwake [E]", hub_gate.position + Vector3(0, 2.95, 0))
 	for cell in [Vector2(3, 5), Vector2(17, 5), Vector2(3, 16), Vector2(17, 16)]:
 		var pot := scenery.model("pot", .65, .65)
 		pot.position = Vector3(cell.x, 0, cell.y)

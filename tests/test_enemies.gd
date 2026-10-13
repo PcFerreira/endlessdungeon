@@ -27,7 +27,7 @@ func run_checks() -> void:
 				var city: Dictionary = world.region_at(spawn.cell).city
 				assert(Vector2(spawn.cell).distance_to(city.cell) >= 15)
 				assert(chunk.cells[spawn.cell].walkable)
-				assert(spawn.kind in Enemies.surface_pool(chunk.cells[spawn.cell].biome, chunk.cells[spawn.cell].facet))
+				assert(spawn.kind in Enemies.surface_pool(chunk.cells[spawn.cell].biome, chunk.cells[spawn.cell].facet, chunk.cells[spawn.cell].get("biome_id", "") if world.generator_version >= 6 else ""))
 				kinds[spawn.kind] = true
 	assert(kinds.size() >= 6, "Wilderness should contain varied native creatures")
 	var site: Dictionary = game.world.nearest_site(game.player_point, "dungeon")

@@ -6,6 +6,7 @@ const UISkin = preload("res://scripts/ui_skin.gd")
 const HudSkin = preload("res://scripts/hud_skin.gd")
 const CharacterMenu = preload("res://scripts/character_menu.gd")
 const InventoryMenu = preload("res://scripts/inventory_menu.gd")
+const IconGrid = preload("res://scripts/icon_grid.gd")
 const INK := HudSkin.INK
 const MUTED := HudSkin.MUTED
 const GOLD := HudSkin.GOLD
@@ -34,6 +35,8 @@ var previous_bar: Array[String] = []
 var hotbar: HBoxContainer
 var grimoire_tabs: TabContainer
 var grimoire_tab := 0
+var grimoire_selected_skill := "power"
+var grimoire_selected_spell := "bolt"
 var title_font: Font
 var hud := Control.new()
 var target_panel: PanelContainer
@@ -84,6 +87,8 @@ func _panel(parent: Node, minimum: Vector2, accent: Color = Color("36444f")) -> 
 	return panel
 
 func _label(parent: Node, text: String, font_size: int = 16, color: Color = INK, serif: bool = false) -> Label:
+	if parent.has_meta("collection_columns"):
+		parent.set_meta("collection_current",null)
 	var label := Label.new()
 	label.text = text
 	label.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
@@ -103,6 +108,12 @@ func _vbox(parent: Node, separation: int = 9) -> VBoxContainer:
 	return box
 
 func _button(parent: Node, text: String, callback: Callable, minimum: Vector2 = Vector2(0, 49)) -> Button:
+	if parent.has_meta("collection_columns"):
+		var grid: GridContainer = parent.get_meta("collection_current") if parent.has_meta("collection_current") else null
+		if not is_instance_valid(grid):
+			grid = IconGrid.grid(parent,parent.get_meta("collection_columns"))
+			parent.set_meta("collection_current",grid)
+		return IconGrid.tile(self,grid,text.split(" [")[0],IconGrid.inferred_icon(text,callback),callback,Vector2(parent.get_meta("collection_width",136),100))
 	var button := Button.new()
 	button.text = text
 	if text.ends_with("]") and text.contains(" ["):
@@ -119,6 +130,10 @@ func _button(parent: Node, text: String, callback: Callable, minimum: Vector2 = 
 		button.pressed.connect(callback)
 	parent.add_child(button)
 	return button
+
+func collections(parent: Node, columns: int = 4, width: int = 136) -> void:
+	parent.set_meta("collection_columns",columns)
+	parent.set_meta("collection_width",width)
 
 func _hud_panel(parent: Node, minimum: Vector2 = Vector2.ZERO, margin: int = 12) -> PanelContainer:
 	var panel := PanelContainer.new()
@@ -349,6 +364,11 @@ func _process(_delta: float) -> void:
 			map_title.text = "LANTERNWAKE"
 			objective_label.text = "Guilds, markets and companions"
 			map_panel.tooltip_text = "Floating districts and sky bridges\nGold: arrival commons\nWhite: you"
+		if not game.online.session and game.world.has_method("dimension_record"):
+			var area: Dictionary = game.world.area_at(Vector2i(game.player_point.round()))
+			map_title.text = str(game.world.definition.get("name", game.world.dimension_id)).to_upper()
+			objective_label.text = area.get("name", game.world.dimension_id.capitalize())
+			map_panel.tooltip_text = "A finite realm with an authored chart\nOnly known destinations are marked\nWhite dot: you"
 		if not game.waypoint.is_empty():
 			objective_label.text = "%s  /  %.0f away" % [game.waypoint.name, game.player_point.distance_to(game.waypoint.cell)]
 	elif game.layer == "sanctum":
@@ -372,6 +392,8 @@ func _process(_delta: float) -> void:
 	utility_buttons[4].tooltip_text = "Chart a route through the lands\nTab: atlas" if game.layer == "overworld" else "The atlas charts the surface."
 	if game.online.session:
 		utility_buttons[4].tooltip_text = "Nearby downloaded places\nTab: atlas"
+	elif game.layer == "overworld" and game.world.has_method("dimension_record"):
+		utility_buttons[4].tooltip_text = "View the whole realm and its named areas\nTab: atlas"
 	vitality_label.text = "%s / %s" % [ceili(game.hp), int(game.max_hp)]
 	aether_label.text = "%s / %s" % [int(game.mana), int(game.max_mana)]
 	hp_bar.max_value = game.max_hp
@@ -390,7 +412,7 @@ func _process(_delta: float) -> void:
 		target_bar.max_value = target.max_hp
 		target_bar.value = target.hp
 		var problem: String = game.target_problem()
-		target_status.text = "%s / %s" % [ceili(target.hp), int(target.max_hp)] if problem.is_empty() else problem
+		target_status.text = "%s / %s" % [ceili(target.hp), ceili(target.max_hp)] if problem.is_empty() else problem
 		target_status.modulate = Color.WHITE if problem.is_empty() else Color("eca49d")
 		target_panel.tooltip_text = "%s\nDistance: %.1f\n%s" % [target_name.text, game.player_point.distance_to(target.point), "In sight" if problem.is_empty() else problem]
 	message.text = game.notification if game.notification_time > 0 and game.state == "playing" else ""
@@ -458,6 +480,7 @@ func _rebuild_overlay() -> void:
 			if not game.menu_notice.is_empty():
 				_center_label(box, game.menu_notice, 15, GOLD)
 			_separator(box)
+			collections(box,3,190)
 			_button(box, "Online world", game.online.open_lobby)
 			if not OS.has_feature("web"):
 				var resume := _button(box, "Continue", game.continue_journey)
@@ -472,13 +495,13 @@ func _rebuild_overlay() -> void:
 			_center_label(box, "Steel and spells. A world beyond the gate.", 17, MUTED)
 			_separator(box)
 			_center_label(box, "Explore biomes. Rest in cities. Discover old dungeons.\nThe lands unfold as you travel.", 16, INK)
-			var classes := HBoxContainer.new()
-			classes.add_theme_constant_override("separation", 8)
-			box.add_child(classes)
+			var classes := IconGrid.grid(box,3)
 			for id in game.CharacterBuild.CLASSES:
 				var data: Dictionary = game.CharacterBuild.CLASSES[id]
-				var button := _button(classes, data.name, game.choose_class.bind(id), Vector2(190, 40))
+				var button := IconGrid.tile(self,classes,data.name,load("res://assets/spells/%s.svg" % data.starter[0]),game.choose_class.bind(id),Vector2(190,100))
 				button.tooltip_text = data.description
+				button.toggle_mode = true
+				button.button_pressed = id == game.build.class_id
 			_center_label(box, "Selected: " + game.CharacterBuild.CLASSES[game.build.class_id].name, 15, GOLD)
 			_center_label(box, game.CharacterBuild.CLASSES[game.build.class_id].description, 13, MUTED)
 			_button(box, "Customize your character  [C]", game.open_character_menu, Vector2(0, 36))
@@ -486,37 +509,37 @@ func _rebuild_overlay() -> void:
 			_button(box, "Online world", game.online.open_lobby)
 			_button(box, "Back to main menu  [Esc]", func(): game.state = "menu", Vector2(0, 36))
 		"map":
-			_center_label(box, "Nearby lands" if game.online.session else "Atlas of the wandering lands", 25, INK, true)
-			_center_label(box, "Downloaded places around you" if game.online.session else "Outlined: reported   /   Filled: seen   /   Marked center: visited", 13, GOLD)
 			var atlas := Minimap.new()
 			atlas.game = game
 			atlas.world_map_mode = true
+			var title: String = "Atlas of " + atlas.realm_title() if atlas.finite_world() else ("Nearby lands" if game.online.session else "Atlas of the wandering lands")
+			_center_label(box, title, 25, INK, true)
+			_center_label(box, "Authored terrain and named areas" if atlas.finite_world() else ("Downloaded places around you" if game.online.session else "Outlined: reported   /   Filled: seen   /   Marked center: visited"), 13, GOLD)
 			atlas.custom_minimum_size = Vector2(700, 440)
 			atlas.mouse_filter = Control.MOUSE_FILTER_STOP
 			box.add_child(atlas)
-			_center_label(box, "Nearby downloaded places are marked. Click a place to set your route." if game.online.session else "Only reported or discovered places are marked. Click a known place to set your route.", 12, MUTED)
+			var caption: String = "Named areas are charted; destination markers reflect your discoveries. Click a known place to set a route." if atlas.finite_world() else ("Nearby downloaded places are marked. Click a place to set your route." if game.online.session else "Only reported or discovered places are marked. Click a known place to set your route.")
+			_center_label(box, caption, 12, MUTED)
 			_button(box, "Return to the journey  [Tab / Esc]", game.toggle_map)
 		"paused":
 			if game.online.session:
 				_center_label(box, "The public world", 30, INK, true)
 				_center_label(box, "The world continues while you rest here.\nCombat, trade and building are forthcoming.", 16, MUTED)
+				collections(box,3,180)
 				_button(box, "Continue  [Esc]", game.toggle_pause)
 				_button(box, "Options", game.open_options, Vector2(0, 36))
 				_button(box, "Leave the public world", game.online.disconnect_world)
 				return
 			_center_label(box, "A moment of stillness", 30, INK, true)
 			_center_label(box, game.location_name(), 16, MUTED)
+			collections(box,3,180)
 			_button(box, "Continue  [Esc]", game.toggle_pause)
-			var saves := HBoxContainer.new()
-			saves.add_theme_constant_override("separation", 12)
-			box.add_child(saves)
+			var saves: Node = box
 			_button(saves, "Save Game  [F5]", game.open_save_menu.bind(false), Vector2(296, 40))
 			_button(saves, "Load Game  [F9]", game.open_save_menu.bind(true), Vector2(296, 40))
 			_button(box, "Grimoire  [G]", game.toggle_grimoire, Vector2(0, 36))
 			_button(box, "Field journal  [J]", game.expansion.toggle_journal, Vector2(0,36))
-			var character_actions := HBoxContainer.new()
-			character_actions.add_theme_constant_override("separation", 12)
-			box.add_child(character_actions)
+			var character_actions: Node = box
 			_button(character_actions, "Backpack [I]", game.toggle_inventory, Vector2(296, 36))
 			_button(character_actions, "Appearance [C]", game.open_character_menu, Vector2(296, 36))
 			_button(box, "Options", game.open_options, Vector2(0, 36))
@@ -533,11 +556,13 @@ func _rebuild_overlay() -> void:
 			var loading: bool = game.state == "load"
 			_center_label(box, "Load Game" if loading else "Save Game", 30, INK, true)
 			_center_label(box, "Choose a journey to continue." if loading else "Choose one of three manual slots.", 15, MUTED)
+			collections(box,2,285)
 			for slot in range(0 if loading else 1, 4):
 				var info: Dictionary = game.saves.summary(slot)
 				var callback: Callable = game.load_game.bind(slot) if loading else game.save_game.bind(slot)
 				var button := _button(box, "%s\n%s" % [info.label, info.text], callback, Vector2(0, 82))
 				button.disabled = loading and not info.valid
+			box.remove_meta("collection_columns")
 			_button(box, "Back  [Esc]", game.close_save_menu, Vector2(0, 36))
 		"options":
 			_center_label(box, "Options", 30, INK, true)
@@ -593,6 +618,7 @@ func _rebuild_overlay() -> void:
 			_center_label(credits, "Fantascape  /  Netherplace  /  Lost Jungle\nFantasy Game Background  /  Our Mountain\nCity Beneath the Waves v001  /  Misty Bog\nSpells a-Brewin  /  Strange Phenomenon", 15, INK)
 			_center_label(credits, "Music: Soundimage International Public License\nsoundimage.org/sample-page/\nSource recordings used unchanged; playback loops and crossfades.", 12, MUTED)
 			_center_label(credits, "Fantasy Song Pack Volume 1 by troubadour (CC0)\nopengameart.org/content/fantasy-song-pack-volume-1", 13, GOLD)
+			_center_label(credits, "Spell and combat recordings: rubberduck and JaggedStone (CC0)\nopengameart.org/content/80-cc0-rpg-sfx\nopengameart.org/content/magic-spell-sfx\nShort normalized PCM derivatives; original sources preserved.", 12, MUTED)
 			_center_label(credits, "Forest, mountain, river and wildlife ambience: Blender Foundation; submitted by Lamoot\nCC-BY-3.0 / creativecommons.org/licenses/by/3.0/\nopengameart.org/content/ambient-bird-cricket-and-frog\nopengameart.org/content/ambient-mountain-river-wind-and-forest-and-waterfall\nWind: Luke.RUSTLTD / Rain: Ylmir / Dungeon ambience: JaggedStone\nRPG, impact and interface sounds: Kenney (CC0)", 12, MUTED)
 			_separator(credits)
 			_center_label(credits, "KayKit Dungeon, Furniture, Medieval Hexagon and Halloween: Kay Lousberg\nwww.kaylousberg.com\nRuins, Monsters, Cube World, Village and Fantasy Props: Quaternius\nquaternius.com\nNature, Town, Survival, Food, Castle, Holiday and Graveyard: Kenney\nkenney.nl", 13, INK)
@@ -610,6 +636,7 @@ func _rebuild_overlay() -> void:
 			_center_label(box, "Return to your sanctuary and continue the journey.", 17, INK)
 			_center_label(box, "Deepest dungeon: %s  /  World seed: %s" % [game.best_depth, game.run_seed], 13, MUTED)
 			_separator(box)
+			collections(box,2,285)
 			_button(box, "Return to sanctuary  [R / Enter]", game.respawn)
 			_button(box, "Load Game", game.open_save_menu.bind(true), Vector2(0, 36))
 			_button(box, "Main Menu", game.return_to_menu, Vector2(0, 36))
@@ -649,64 +676,73 @@ func _audio_slider(parent: Node, caption: String, value: float, callback: Callab
 	row.add_child(slider)
 
 func _build_grimoire(box: VBoxContainer) -> void:
-	_center_label(box, "Grimoire of the " + game.CharacterBuild.CLASSES[game.build.class_id].name, 29, INK, true)
-	_center_label(box, "%s skill %s / Earn one from each dungeon's final chest" % [game.build.skill_points, "point" if game.build.skill_points == 1 else "points"], 15, GOLD)
+	_center_label(box,"Grimoire of the " + game.CharacterBuild.CLASSES[game.build.class_id].name,29,INK,true)
+	_center_label(box,"%s skill points" % game.build.skill_points,15,GOLD)
 	var tabs := TabContainer.new()
 	grimoire_tabs = tabs
-	tabs.custom_minimum_size = Vector2(1040, 430)
+	tabs.custom_minimum_size = Vector2(1040,420)
 	box.add_child(tabs)
-	var skill_scroll := ScrollContainer.new()
-	skill_scroll.name = "Skill tree"
-	tabs.add_child(skill_scroll)
-	var grid := GridContainer.new()
-	grid.columns = 3
-	grid.add_theme_constant_override("h_separation", 10)
-	grid.add_theme_constant_override("v_separation", 12)
-	skill_scroll.add_child(grid)
-	for skill in game.build.tree():
-		var panel := _panel(grid, Vector2(334, 185), GOLD if game.build.ranks.get(skill.id, 0) > 0 else Color("36444f"))
-		var column := _vbox(panel, 8)
-		_label(column, skill.name, 18, INK, true)
-		_label(column, "Rank %s / %s" % [game.build.ranks.get(skill.id, 0), skill.max], 12, GOLD)
-		var description := _label(column, skill.description, 13, MUTED)
-		description.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		description.custom_minimum_size.x = 275
-		var parent_name := ""
-		for other in game.build.tree():
-			if other.id == skill.parent:
-				parent_name = other.name
-		_label(column, "Root skill" if parent_name.is_empty() else "Requires: " + parent_name, 12, GOLD)
-		var button := _button(column, "Learn / 1 point", game.learn_skill.bind(skill.id), Vector2(0, 34))
-		button.disabled = not game.build.can_learn(skill.id)
-		if game.build.ranks.get(skill.id, 0) >= skill.max:
-			button.text = "Mastered"
-	var ability_scroll := ScrollContainer.new()
-	ability_scroll.name = "Abilities and action bar"
-	tabs.add_child(ability_scroll)
-	var list := _vbox(ability_scroll, 10)
-	list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	for spell in game.build.unlocked:
-		var ability: Dictionary = game.ABILITIES[spell]
-		var panel := _panel(list, Vector2(1010, 0), ability.color.darkened(.4))
-		var row := HBoxContainer.new()
-		row.add_theme_constant_override("separation", 24)
-		panel.add_child(row)
-		var info := _vbox(row, 6)
-		info.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		_label(info, ability.name, 19, ability.color, true)
-		_label(info, ability.description, 14, INK)
-		_label(info, "%s %s / %.2fs recharge%s" % [int(ability.cost), game.CharacterBuild.CLASSES[game.build.class_id].resource.to_lower(), ability.recharge, " / Target range %.1f" % ability.range if ability.range > 0 else ""], 12, MUTED)
-		var slots := OptionButton.new()
-		slots.custom_minimum_size = Vector2(180, 40)
-		slots.add_item("Unassigned")
-		for index in range(10):
-			slots.add_item("Slot %s" % ((index + 1) % 10))
-		slots.select(game.ACTION_BAR.find(spell) + 1)
-		slots.item_selected.connect(_assign_slot.bind(spell))
-		row.add_child(slots)
+	for skills in [true,false]:
+		var page := HBoxContainer.new()
+		page.name = "Skills" if skills else "Abilities and action bar"
+		page.add_theme_constant_override("separation",20)
+		tabs.add_child(page)
+		var left := _vbox(page,10)
+		var grid := IconGrid.grid(left,4)
+		var entries: Array = game.build.tree() if skills else game.build.unlocked
+		var selected: String = grimoire_selected_skill if skills else grimoire_selected_spell
+		if not entries.any(func(entry): return (entry.id if skills else str(entry)) == selected):
+			selected = entries[0].id if skills else str(entries[0])
+		for entry in entries:
+			var id: String = entry.id if skills else str(entry)
+			var caption: String = entry.name if skills else game.ABILITIES[id].name
+			var art: String = entry.ability if skills else id
+			var texture: Texture2D = load("res://assets/spells/%s.svg" % art) if not art.is_empty() else IconGrid.symbol("skill")
+			var rank: String = "%s/%s" % [game.build.ranks.get(id,0),entry.max] if skills else ""
+			var choice := IconGrid.tile(self,grid,caption,texture,_select_grimoire.bind(id,skills),Vector2(112,104),rank)
+			choice.set_meta("skill_id" if skills else "ability_id",id)
+			choice.toggle_mode = true
+			choice.button_pressed = id == selected
+		var details := _vbox(_panel(page,Vector2(500,0)),10)
+		if skills:
+			var skill: Dictionary = game.build.tree().filter(func(entry): return entry.id == selected)[0]
+			_label(details,skill.name,22,INK,true)
+			_label(details,"Rank %s / %s" % [game.build.ranks.get(selected,0),skill.max],14,GOLD)
+			var text := _label(details,skill.description,15,MUTED)
+			text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			text.custom_minimum_size.x = 430
+			var parent: Array = game.build.tree().filter(func(entry): return entry.id == skill.parent)
+			_label(details,"Root skill" if parent.is_empty() else "Requires " + parent[0].name,13,GOLD)
+			var learn := _button(details,"Learn / 1 point",game.learn_skill.bind(selected),Vector2(0,36))
+			learn.set_meta("learn_skill",selected)
+			learn.disabled = not game.build.can_learn(selected)
+		else:
+			var ability: Dictionary = game.ABILITIES[selected]
+			_label(details,ability.name,22,INK,true)
+			var text := _label(details,ability.description,15,MUTED)
+			text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			text.custom_minimum_size.x = 430
+			_label(details,"%s %s / %.2fs recharge" % [int(ability.cost),game.CharacterBuild.CLASSES[game.build.class_id].resource,ability.recharge],13,GOLD)
+			_label(details,"Choose an action-bar slot",14,INK)
+			var slots := IconGrid.grid(details,5)
+			for index in range(10):
+				var spell: String = game.ACTION_BAR[index]
+				var icon: Texture2D = load("res://assets/spells/%s.svg" % spell) if not spell.is_empty() else IconGrid.symbol("slot")
+				var slot := IconGrid.tile(self,slots,"Slot %s" % ((index + 1) % 10),icon,_assign_slot.bind(index + 1,selected),Vector2(80,88))
+				slot.set_meta("action_slot",index)
+				slot.toggle_mode = true
+				slot.button_pressed = spell == selected
+			_button(details,"Remove from action bar",_assign_slot.bind(0,selected),Vector2(0,32))
 	tabs.current_tab = grimoire_tab
 	tabs.tab_changed.connect(func(index: int): grimoire_tab = index)
-	_button(box, "Return  [G / Esc]", game.toggle_grimoire)
+	_button(box,"Return",game.toggle_grimoire)
+
+func _select_grimoire(id: String, skills: bool) -> void:
+	if skills:
+		grimoire_selected_skill = id
+	else:
+		grimoire_selected_spell = id
+	previous_state = ""
 
 func _assign_slot(index: int, spell: String) -> void:
 	if index > 0:

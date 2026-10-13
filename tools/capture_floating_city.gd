@@ -54,6 +54,19 @@ func capture() -> void:
 	game._snap_camera()
 	game.camera.size = 20
 	await frame("worldgate")
+	game.player_point = game.floating_hub.portal_point("sanctum")
+	game._snap_camera()
+	game.camera.size = 25
+	game.notification_time = 0
+	await frame("portal-court")
+	game.interact()
+	assert(game.layer == "sanctum")
+	game.player_point = game.floating_hub.sanctum_portal_point()
+	game._snap_camera()
+	game.notification_time = 0
+	await frame("sanctum-lanternwake-gate")
+	game.interact()
+	assert(game.floating_hub.active())
 	assert(game.floating_hub.set_theme("arcane"))
 	game.camera.size = 52
 	game.camera_focus = Vector3(hub.cell.x, hub.height, hub.cell.y + 4)
@@ -66,5 +79,5 @@ func capture() -> void:
 	for file in DirAccess.get_files_at(directory):
 		DirAccess.remove_absolute(directory.path_join(file))
 	DirAccess.remove_absolute(directory)
-	print("PASS: native actual Lanternwake arrival, Halloween/arcane layouts, guild charter, finite market receipt and accessible Worldgate")
+	print("PASS: native Lanternwake arrival, seasonal layouts, guild/market, connected Portal Court and actual Sanctum Lanternwake gate travel")
 	quit()
